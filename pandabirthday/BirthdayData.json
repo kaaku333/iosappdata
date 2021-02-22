@@ -1,6 +1,6 @@
 [
     {
-        "name":"ベビ浜",
+        "name":"ベビ浜(仮)",
         "category": "誕生日",
         "date":"2020-11-22",
         "id": 1000,
@@ -11,6 +11,8 @@
         "birthplaceurl" : "http://pandababy-aws.com",
         "parents" : "永明、良浜",
         "preset" : true,
+        "note" : "メモ　：正式名選考中",
+
         
         "imageName": "yachubo1"
     },
