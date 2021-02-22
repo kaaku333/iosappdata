@@ -1,0 +1,185 @@
+[
+    {
+        "name":"ベビ浜",
+        "category": "誕生日",
+        "date":"2020-11-22",
+        "id": 1000,
+        "location" : "Adventure World",
+        "locationurl" : "http://pandababy-aws.com",
+        "gender" : "メス",
+        "birthplace" : "Adventure World",
+        "birthplaceurl" : "http://pandababy-aws.com",
+        "parents" : "永明、良浜",
+        "preset" : true,
+        
+        "imageName": "yachubo1"
+    },
+    {
+        "name":"彩浜",
+        "category": "誕生日",
+        "date":"2018-08-14",
+        "id": 1001,
+        "location" : "Adventure World",
+        "locationurl" : "https://www.aws-s.com/animals/panda/",
+        "gender" : "メス",
+        "birthplace" : "Adventure World",
+        "birthplaceurl" : "https://www.aws-s.com/animals/panda/",
+        "parents" : "永明、良浜",
+        "preset" : true,
+
+        "imageName": "saihin1"
+    },
+    {
+        "name":"シャンシャン",
+        "category": "誕生日",
+        "date":"2017-06-12",
+        "id": 1002,
+        "location" : "上野動物園",
+        "locationurl" : "https://www.ueno-panda.jp/",
+        "gender" : "メス",
+        "birthplace" : "上野動物園",
+        "birthplaceurl" : "https://www.ueno-panda.jp/",
+        "returndate" : "2021-05-31",
+        "parents" : "リーリー、シンシン",
+        "preset" : true,
+
+
+        "imageName": "shanshan1"
+    },
+    {
+        "name":"結浜",
+        "category": "誕生日",
+        "date":"2016-09-18",
+        "id": 1003,
+        "location" : "Adventure World",
+        "locationurl" : "https://www.aws-s.com/animals/panda/",
+        "gender" : "メス",
+        "birthplace" : "Adventure World",
+        "birthplaceurl" : "https://www.aws-s.com/animals/panda/",
+        "parents" : "永明、良浜",
+        "preset" : true,
+
+        "imageName": "yuihin1"
+    },
+    {
+        "name":"桜浜",
+        "category": "誕生日",
+        "date":"2014-12-02",
+        "id": 1004,
+        "location" : "Adventure World",
+        "locationurl" : "https://www.aws-s.com/animals/panda/",
+        "gender" : "メス",
+        "birthplace" : "Adventure World",
+        "birthplaceurl" : "https://www.aws-s.com/animals/panda/",
+        "parents" : "永明、良浜",
+        "preset" : true,
+
+        "imageName": "ouhin1"
+    },
+    {
+        "name":"桃浜",
+        "category": "誕生日",
+        "date":"2014-12-02",
+        "id": 1005,
+        "isFavorite": false,
+        "location" : "Adventure World",
+        "locationurl" : "https://www.aws-s.com/animals/panda/",
+        "gender" : "メス",
+        "birthplace" : "Adventure World",
+        "birthplaceurl" : "https://www.aws-s.com/animals/panda/",
+        "parents" : "永明、良浜",
+        "preset" : true,
+
+        "imageName": "touhin1"
+    },
+    {
+        "name":"リーリー",
+        "category": "誕生日",
+        "date":"2005-08-16",
+        "id": 1006,
+        "isFavorite": false,
+        "location" : "上野動物園",
+        "locationurl" : "https://www.ueno-panda.jp/",
+        "gender" : "オス",
+        "birthplace" : "臥龍保護センター",
+        "birthplaceurl" : "https://www.pandachina.jp/panda/garyu.html",
+        "parents" : "灵灵、公主",
+        "comingdate" : "2011-02-21",
+        "note" : "帰国予定日：交渉中（当初10年予定）",
+        "preset" : true,
+
+        "imageName": "riri1"
+    },
+    {
+        "name":"シンシン",
+        "category": "誕生日",
+        "date":"2005-07-03",
+        "id": 1007,
+        "isFavorite": true,
+        "location" : "上野動物園",
+        "locationurl" : "https://www.ueno-panda.jp/",
+        "gender" : "メス",
+        "birthplace" : "臥龍保護センター",
+        "birthplaceurl" : "https://www.pandachina.jp/panda/garyu.html",
+        "parents" : "琳琳、英英",
+        "comingdate" : "2011-02-21",
+        "note" : "帰国予定日：交渉中（当初10年予定）",
+        "preset" : true,
+
+        "imageName": "shinshin1"
+    },
+    {
+        "name":"良浜",
+        "category": "誕生日",
+        "date":"2000-09-06",
+        "id": 1008,
+        "isFavorite": false,
+        "location" : "Adventure World",
+        "locationurl" : "https://www.aws-s.com/animals/panda/",
+        "gender" : "メス",
+        "birthplace" : "Adventure World",
+        "birthplaceurl" : "https://www.aws-s.com/animals/panda/",
+        "parents" : "哈藍、梅梅",
+        "note" : "メモ　：誕生国は日本",
+        "preset" : true,
+
+        "imageName": "rauhin1"
+    },
+    {
+        "name":"タンタン",
+        "category": "誕生日",
+        "date":"1995-09-16",
+        "id": 1009,
+        "isFavorite": true,
+        "location" : "神戸市立王子動物園",
+        "locationurl" : "https://thanks-tantan.com/",
+        "gender" : "メス",
+        "birthplace" : "臥龍保護センター",
+        "birthplaceurl" : "https://www.pandachina.jp/panda/garyu.html",
+        "parents" : "振振、冬冬",
+        "comingdate" : "2000-07-16",
+        "note" : "帰国予定日：近日中（当初20年予定）",
+        "preset" : true,
+
+        "imageName": "tantan1"
+    },
+    {
+        "name":"永明",
+        "category": "誕生日",
+        "date":"1992-09-14",
+        "id": 1010,
+        "isFavorite": true,
+        "location" : "Adventure World",
+        "locationurl" : "https://www.aws-s.com/animals/panda/",
+        "gender" : "オス",
+        "birthplace" : "北京動物園",
+        "birthplaceurl" : "https://ja.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E5%8B%95%E7%89%A9%E5%9C%92",
+        "parents" : "良良、永永",
+        "comingdate" : "1994-09-06",
+
+        "preset" : true,
+
+        "imageName": "eimei1"
+    },
+
+]
