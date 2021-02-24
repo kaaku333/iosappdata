@@ -12,7 +12,7 @@
         "birthplaceurl" : "http://pandababy-aws.com",
         "parents" : "永明、良浜",
         "preset" : true,
-        "note" : "メモ　：名前選考中",
+        "note" : "特徴　：名前は現在選考中です。公式Youtubeチャンネルで毎日可愛い姿が見られます。",
 
         
         "imageName": "yachubo1"
@@ -30,6 +30,7 @@
         "birthplaceurl" : "https://www.aws-s.com/animals/panda/",
         "parents" : "永明、良浜",
         "preset" : true,
+        "note" : "特徴　：体重わずか７５gで生まれました。お姉ちゃん達に負けずに元気におてんばに育ちました。",
 
         "imageName": "saihin1"
     },
@@ -47,7 +48,7 @@
         "returndate" : "2021-05-31",
         "parents" : "リーリー、シンシン",
         "preset" : true,
-
+        "note" : "特徴　：およそ３０年ぶりに上野動物園で生まれたパンダで、最近のパンダブームの立役者です。丸顔の美人さんです。",
 
         "imageName": "shanshan1"
     },
@@ -64,6 +65,8 @@
         "birthplaceurl" : "https://www.aws-s.com/animals/panda/",
         "parents" : "永明、良浜",
         "preset" : true,
+        "note" : "特徴　：体重１９７gで大きく生まれました。好奇心旺盛で、尖った頭の毛がチャームポイントです。",
+
 
         "imageName": "yuihin1"
     },
@@ -80,6 +83,8 @@
         "birthplaceurl" : "https://www.aws-s.com/animals/panda/",
         "parents" : "永明、良浜",
         "preset" : true,
+        "note" : "特徴　：双子の桃浜の姉です。おっとりマイペースです。丸顔と大きな耳が特徴です。",
+
 
         "imageName": "ouhin1"
     },
@@ -97,6 +102,8 @@
         "birthplaceurl" : "https://www.aws-s.com/animals/panda/",
         "parents" : "永明、良浜",
         "preset" : true,
+        "note" : "特徴　：双子の桜浜の妹です。好奇心旺盛なおてんばさんです。頭が三角形で両耳の間が狭く鼻が長いのが特徴です。",
+
 
         "imageName": "touhin1"
     },
@@ -114,8 +121,9 @@
         "birthplaceurl" : "https://www.pandachina.jp/panda/garyu.html",
         "parents" : "灵灵、公主",
         "comingdate" : "2011-02-21",
-        "note" : "帰国予定日：交渉中（当初10年予定）",
         "preset" : true,
+        "note" : "帰国予定日：交渉中（当初10年間の予定）\n特徴　：頭がとんがっていて木登り大好きです。シンシンとは幼なじみです。",
+
 
         "imageName": "riri1"
     },
@@ -133,8 +141,8 @@
         "birthplaceurl" : "https://www.pandachina.jp/panda/garyu.html",
         "parents" : "琳琳、英英",
         "comingdate" : "2011-02-21",
-        "note" : "帰国予定日：交渉中（当初10年予定）",
         "preset" : true,
+        "note" : "帰国予定日：交渉中（当初10年間の予定）\n特徴　：超マイペースで食事中は周りが見えなくなります。リーリーとは幼なじみです。",
 
         "imageName": "shinshin1"
     },
@@ -151,8 +159,8 @@
         "birthplace" : "Adventure World",
         "birthplaceurl" : "https://www.aws-s.com/animals/panda/",
         "parents" : "哈藍、梅梅",
-        "note" : "メモ　：誕生国は日本",
         "preset" : true,
+        "note" : "特徴　：日本生まれとして初めてのお母さんパンダです。２０２１年現在１０頭の子供がいるベテランママです。",
 
         "imageName": "rauhin1"
     },
@@ -170,8 +178,8 @@
         "birthplaceurl" : "https://www.pandachina.jp/panda/garyu.html",
         "parents" : "振振、冬冬",
         "comingdate" : "2000-07-16",
-        "note" : "帰国予定日：近日中（当初20年予定）",
         "preset" : true,
+        "note" : "帰国予定日：近日中（当初20年間の予定）\n特徴　：床につきそうな大きなお腹を持っています。子供のような愛くるしい体型をしています。",
 
         "imageName": "tantan1"
     },
@@ -189,6 +197,7 @@
         "birthplaceurl" : "https://ja.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E5%8B%95%E7%89%A9%E5%9C%92",
         "parents" : "良良、永永",
         "comingdate" : "1994-09-06",
+        "note" : "特徴　：ダンディーで女性に優しい超ベテランパパです。２０２１年現在１６頭の子供がいます。竹の好き嫌いがはっきりしているグルメです。",
 
         "preset" : true,
 
