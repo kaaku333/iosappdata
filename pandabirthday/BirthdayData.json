@@ -12,6 +12,13 @@
         "birthplaceurl" : "http://pandababy-aws.com",
         "parents" : "永明、良浜",
         "preset" : true,
+        "relations" : [
+                
+                [ "Panda Family Site", "http://pandababy-aws.com/"],
+                [ "赤ちゃんパンダトピックス", "https://www.aws-s.com/topics/?c=20"],
+                [ "公式Youtube", "https://www.youtube.com/c/adventureworld_official" ],
+                [ "公式Facebook", "https://m.facebook.com/adventureworld.official/" ],
+            ],
         "note" : "特徴　：名前は現在選考中です。公式Youtubeチャンネルで毎日可愛い姿が見られます。",
 
         
@@ -30,6 +37,14 @@
         "birthplaceurl" : "https://www.aws-s.com/animals/panda/",
         "parents" : "永明、良浜",
         "preset" : true,
+        "relations" : [
+                [ "パンダ紹介", "https://www.aws-s.com/animals/panda/"],
+                [ "彩浜トピックス", "https://www.aws-s.com/topics/?c=16"],
+                [ "彩浜フォトギャラリー", "http://pandababy-aws.com/gallery/index.html"],
+                [ "彩浜のYouTube", "https://www.youtube.com/results?search_query=%E5%BD%A9%E6%B5%9C" ],
+                [ "和歌山経済新聞「彩浜」2年の歩み", "https://wakayama.keizai.biz/column/14/"],
+            ],
+
         "note" : "特徴　：体重わずか７５gで生まれました。お姉ちゃん達に負けずに元気におてんばに育ちました。",
 
         "imageName": "saihin1"
@@ -48,6 +63,12 @@
         "returndate" : "2021-05-31",
         "parents" : "リーリー、シンシン",
         "preset" : true,
+        "relations" : [
+                [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
+                [ "プロフィール", "https://www.ueno-panda.jp/press/"],
+                [ "シャンシャンのYouTube", "https://www.youtube.com/results?search_query=%E3%82%B7%E3%83%A3%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%B3" ],
+            ],
+
         "note" : "特徴　：およそ３０年ぶりに上野動物園で生まれたパンダで、最近のパンダブームの立役者です。丸顔の美人さんです。",
 
         "imageName": "shanshan1"
@@ -65,6 +86,12 @@
         "birthplaceurl" : "https://www.aws-s.com/animals/panda/",
         "parents" : "永明、良浜",
         "preset" : true,
+        "relations" : [
+                [ "パンダ紹介", "https://www.aws-s.com/animals/panda/"],
+                [ "結浜トピックス", "https://www.aws-s.com/topics/?c=14"],
+                [ "結浜フォトギャラリー", "http://pandababy-aws.com/gallery/baby_index.html"],
+                [ "結浜のYouTube", "https://www.youtube.com/results?search_query=%E7%B5%90%E6%B5%9C" ],
+            ],
         "note" : "特徴　：体重１９７gで大きく生まれました。好奇心旺盛で、尖った頭の毛がチャームポイントです。",
 
 
@@ -83,6 +110,11 @@
         "birthplaceurl" : "https://www.aws-s.com/animals/panda/",
         "parents" : "永明、良浜",
         "preset" : true,
+        "relations" : [
+                [ "パンダ紹介", "https://www.aws-s.com/animals/panda/"],
+                [ "桜浜・桃浜トピックス", "https://www.aws-s.com/topics/?c=12"],
+                [ "桜浜のYouTube", "https://www.youtube.com/results?search_query=%E6%A1%9C%E6%B5%9C" ],
+            ],
         "note" : "特徴　：双子の桃浜の姉です。おっとりマイペースです。丸顔と大きな耳が特徴です。",
 
 
@@ -102,6 +134,11 @@
         "birthplaceurl" : "https://www.aws-s.com/animals/panda/",
         "parents" : "永明、良浜",
         "preset" : true,
+        "relations" : [
+                [ "パンダ紹介", "https://www.aws-s.com/animals/panda/"],
+                [ "桜浜・桃浜トピックス", "https://www.aws-s.com/topics/?c=12"],
+                [ "桃浜のYouTube", "https://www.youtube.com/results?search_query=%E6%A1%83%E6%B5%9C" ],
+            ],
         "note" : "特徴　：双子の桜浜の妹です。好奇心旺盛なおてんばさんです。頭が三角形で両耳の間が狭く鼻が長いのが特徴です。",
 
 
@@ -122,6 +159,11 @@
         "parents" : "灵灵、公主",
         "comingdate" : "2011-02-21",
         "preset" : true,
+        "relations" : [
+                [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
+                [ "プロフィール", "https://www.ueno-panda.jp/press/"],
+                [ "リーリーのYouTube", "https://www.youtube.com/results?search_query=%E3%83%AA%E3%83%BC%E3%83%AA%E3%83%BC" ],
+            ],
         "note" : "帰国予定日：交渉中（当初10年間の予定）\n特徴　：頭がとんがっていて木登り大好きです。シンシンとは幼なじみです。",
 
 
@@ -142,6 +184,11 @@
         "parents" : "琳琳、英英",
         "comingdate" : "2011-02-21",
         "preset" : true,
+        "relations" : [
+                [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
+                [ "プロフィール", "https://www.ueno-panda.jp/press/"],
+                [ "シンシンのYouTube", "https://www.youtube.com/results?search_query=%E3%82%B7%E3%83%B3%E3%82%B7%E3%83%B3+%E3%83%91%E3%83%B3%E3%83%80" ],
+            ],
         "note" : "帰国予定日：交渉中（当初10年間の予定）\n特徴　：超マイペースで食事中は周りが見えなくなります。リーリーとは幼なじみです。",
 
         "imageName": "shinshin1"
@@ -160,6 +207,10 @@
         "birthplaceurl" : "https://www.aws-s.com/animals/panda/",
         "parents" : "哈藍、梅梅",
         "preset" : true,
+        "relations" : [
+                [ "パンダ紹介", "https://www.aws-s.com/animals/panda/"],
+                [ "良浜のYouTube", "https://www.youtube.com/results?search_query=%E8%89%AF%E6%B5%9C" ],
+            ],
         "note" : "特徴　：日本生まれとして初めてのお母さんパンダです。２０２１年現在１０頭の子供がいるベテランママです。",
 
         "imageName": "rauhin1"
@@ -179,6 +230,10 @@
         "parents" : "振振、冬冬",
         "comingdate" : "2000-07-16",
         "preset" : true,
+        "relations" : [
+                [ "パンダの部屋", "http://www.kobe-ojizoo.jp/animal/panda/"],
+                [ "タンタンのYouTube", "https://www.youtube.com/results?search_query=%E3%82%BF%E3%83%B3%E3%82%BF%E3%83%B3+%E3%83%91%E3%83%B3%E3%83%80" ],
+            ],
         "note" : "帰国予定日：近日中（当初20年間の予定）\n特徴　：床につきそうな大きなお腹を持っています。子供のような愛くるしい体型をしています。",
 
         "imageName": "tantan1"
@@ -197,9 +252,14 @@
         "birthplaceurl" : "https://ja.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E5%8B%95%E7%89%A9%E5%9C%92",
         "parents" : "良良、永永",
         "comingdate" : "1994-09-06",
+        "preset" : true,
+        "relations" : [
+                [ "パンダ紹介", "https://www.aws-s.com/animals/panda/"],
+                [ "永明のYouTube", "https://www.youtube.com/results?search_query=%E6%B0%B8%E6%98%8E+%E3%83%91%E3%83%B3%E3%83%80" ],
+            ],
+
         "note" : "特徴　：ダンディーで女性に優しい超ベテランパパです。２０２１年現在１６頭の子供がいます。竹の好き嫌いがはっきりしているグルメです。",
 
-        "preset" : true,
 
         "imageName": "eimei1"
     },
