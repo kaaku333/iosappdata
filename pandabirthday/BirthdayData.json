@@ -1,5 +1,22 @@
 [
     {
+        "name":"赤ちゃんパンダ名前投票",
+        "category": "イベント",
+        "date":"2021-03-11",
+        "id": 900,
+        "location" : "Adventure World",
+        "locationurl" : "https://www.aws-s.com/",
+        "preset" : true,
+        "relations" : [
+                [ "投票サイト", "https://aws-smile-birth.com" ],
+            ],
+        "note" : "概要：アドベンチャーワールドにてパンダの赤ちゃんの３つの名前候補への投票を募っています。\n名前候補：「光浜（こうひん）」「咲浜（しょうひん）」「楓浜（ふうひん）」\n投票受付期間：２０２１年３月４日（木）～３月１１日（木）",
+
+        "imageName": "calendar_pink"
+    },
+
+    
+    {
         "name":"ベビ浜(仮)",
         "category": "誕生日",
         "date":"2020-11-22",
