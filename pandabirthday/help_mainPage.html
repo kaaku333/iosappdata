@@ -5,7 +5,6 @@
     <title>help_mainPage.html</title>
     <style type="text/css">
     #body {
-      background-color: #dbffc4;
       font-family: "Helvetica", "ヒラギノ丸ゴ ProN";
       font-size: 20pt;
     }
@@ -18,16 +17,33 @@
       }
       
       img {
- 	 		max-width: 100%;
-  		width: 100%;
- 			 height: auto;
-			}
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+      }
+
+       ol  {
+        margin: 0;
+        padding: 0
+      }
+      ol li  {
+        list-style: none;
+        padding-left: 1.3em;
+        text-indent: -1.3em;
+      }
       
       
 </style></head>
-  <body id="body">
+  <body id="body" style="  background-color: #c5e0b4;">
     <p></p>
-    <img src="help_mainpage.png" alt="main page image" title="main page "
-      >
+    <img src="help_mainpage.png" alt="main page image" title="main page ">
+    <ol>
+      <li>①グループ編集画面へ<br>
+      グループ編集画面に移動します。表示したいグループを変更したり、グループの表示順を変えたりできます。
+      </li>
+      <li>②新規登録画面へ<br>
+      新規登録画面に移動します。自分で誕生日やイベントを登録できます。
+      </li>
+    </ol>
   </body>
 </html>
