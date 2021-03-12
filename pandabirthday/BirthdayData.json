@@ -1,5 +1,23 @@
 [
     {
+        "name":"パンダの赤ちゃん命名セレモニー",
+        "category": "イベント",
+        "date":"2021-03-18",
+        "id": 900,
+        "location" : "Adventure World",
+        "locationurl" : "https://www.aws-s.com/",
+        "preset" : true,
+        "relations" : [
+                [ "アドベンチャーワールド パンダの赤ちゃん命名セレモニーのお知らせ", "https://www.aws-s.com/topics/detail?id=top2284" ],
+                [ "アドベンチャーワールド 公式YouTubeチャンネル", "https://www.youtube.com/channel/UCVEmpbL5VzfXsULPFeRsj4Q" ],
+            ],
+        "note" : "概要：２０２１年３月１８日（木）午前１０時３０分〜午前１１時００分「パンダの赤ちゃん命名セレモニー」においてベビ浜ちゃんの名前が発表されます。公式YouTubeチャンネルでも配信されます。",
+
+        "imageName": "calendar_pink"
+    },
+
+    
+    {
         "name":"ベビ浜(仮)",
         "category": "誕生日",
         "date":"2020-11-22",
