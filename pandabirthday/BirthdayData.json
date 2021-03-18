@@ -1,24 +1,7 @@
 [
-    {
-        "name":"パンダの赤ちゃん命名セレモニー",
-        "category": "イベント",
-        "date":"2021-03-18",
-        "id": 900,
-        "location" : "Adventure World",
-        "locationurl" : "https://www.aws-s.com/",
-        "preset" : true,
-        "relations" : [
-                [ "アドベンチャーワールド パンダの赤ちゃん命名セレモニーのお知らせ", "https://www.aws-s.com/topics/detail?id=top2284" ],
-                [ "アドベンチャーワールド 公式YouTubeチャンネル", "https://www.youtube.com/channel/UCVEmpbL5VzfXsULPFeRsj4Q" ],
-            ],
-        "note" : "概要：２０２１年３月１８日（木）午前１０時３０分〜午前１１時００分「パンダの赤ちゃん命名セレモニー」においてベビ浜ちゃんの名前が発表されます。公式YouTubeチャンネルでも配信されます。",
-
-        "imageName": "calendar_pink"
-    },
-
     
     {
-        "name":"ベビ浜(仮)",
+        "name":"楓浜",
         "category": "誕生日",
         "date":"2020-11-22",
         "id": 1000,
@@ -38,7 +21,7 @@
                 [ "公式Youtube", "https://www.youtube.com/c/adventureworld_official" ],
                 [ "公式Facebook", "https://m.facebook.com/adventureworld.official/" ],
             ],
-        "note" : "特徴　：名前は現在選考中です。公式Youtubeチャンネルで毎日可愛い姿が見られます。",
+        "note" : "特徴　：赤ちゃんパンダの名前は楓浜（ふうひん）に決まりました！公式Youtubeチャンネルで毎日可愛い姿が見られます。",
 
         
         "imageName": "yachubo1"
