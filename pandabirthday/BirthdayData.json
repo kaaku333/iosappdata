@@ -63,8 +63,8 @@
         "animaltype" : "パンダ",
         "birthplace" : "上野動物園",
         "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
-        "returndate" : "2021-05-31",
-        "returnexpdate" : "2021-05-31",
+        "returndate" : "2021-12-31",
+        "returnexpdate" : "2021-12-31",
         "parents" : "リーリー、シンシン",
         "preset" : true,
         "relations" : [
