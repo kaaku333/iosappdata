@@ -2,6 +2,7 @@
     
     {
         "name":"楓浜",
+        "yomi":"ふうひん",
         "category": "誕生日",
         "date":"2020-11-22",
         "id": 1000,
@@ -20,6 +21,8 @@
                 [ "アドベンチャーワールド 赤ちゃんパンダトピックス", "https://www.aws-s.com/topics/?c=20"],
                 [ "公式Youtube", "https://www.youtube.com/c/adventureworld_official" ],
                 [ "公式Facebook", "https://m.facebook.com/adventureworld.official/" ],
+                [ "楓浜のYouTube", "https://www.youtube.com/results?search_query=%E6%A5%93%E6%B5%9C" ],
+
             ],
         "note" : "特徴　：赤ちゃんパンダの名前は楓浜（ふうひん）に決まりました！公式Youtubeチャンネルで毎日可愛い姿が見られます。",
 
@@ -28,6 +31,7 @@
     },
     {
         "name":"彩浜",
+        "yomi":"さいひん",
         "category": "誕生日",
         "date":"2018-08-14",
         "id": 1001,
@@ -82,6 +86,7 @@
     },
     {
         "name":"結浜",
+        "yomi":"ゆいひん",
         "category": "誕生日",
         "date":"2016-09-18",
         "id": 1003,
@@ -107,6 +112,7 @@
     },
     {
         "name":"桜浜",
+        "yomi":"おうひん",
         "category": "誕生日",
         "date":"2014-12-02",
         "id": 1004,
@@ -131,6 +137,7 @@
     },
     {
         "name":"桃浜",
+        "yomi":"とうひん",
         "category": "誕生日",
         "date":"2014-12-02",
         "id": 1005,
@@ -215,6 +222,7 @@
     },
     {
         "name":"良浜",
+        "yomi":"らうひん",
         "category": "誕生日",
         "date":"2000-09-06",
         "id": 1008,
@@ -268,6 +276,7 @@
     },
     {
         "name":"永明",
+        "yomi":"えいめい",
         "category": "誕生日",
         "date":"1992-09-14",
         "id": 1010,
