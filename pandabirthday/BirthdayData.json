@@ -1,29 +1,5 @@
 [
     {
-        "name":"上野双子赤ちゃんパンダ",
-        "category": "誕生日",
-        "date":"2021-06-23",
-        "id": 999,
-        "location" : "上野動物園",
-        "locationurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
-        "gender" : "その他",
-        "animaltype" : "パンダ",
-        "birthplace" : "上野動物園",
-        "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
-        "returnexpdate" : "2025-06-23",
-        "parents" : "リーリー、シンシン",
-        "preset" : true,
-        "relations" : [
-                [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
-                [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
-                [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
-            ],
-
-        "note" : "特徴　：上野動物園で初めて生まれた双子のパンダです。",
-
-        "imageName": "kopanda_gray"
-    },
-    {
         "name":"楓浜",
         "yomi":"ふうひん",
         "category": "誕生日",
@@ -325,6 +301,54 @@
 
 
         "imageName": "eimei1"
+    },
+    {
+        "name":"双子歳下赤ちゃんパンダ",
+        "category": "誕生日",
+        "date":"2021-06-23",
+        "id": 1012,
+        "location" : "上野動物園",
+        "locationurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
+        "gender" : "その他",
+        "animaltype" : "パンダ",
+        "birthplace" : "上野動物園",
+        "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
+        "returnexpdate" : "2025-06-23",
+        "parents" : "リーリー、シンシン",
+        "preset" : true,
+        "relations" : [
+                [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
+                [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
+                [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
+            ],
+
+        "note" : "特徴　：上野動物園で初めて生まれた双子パンダの妹（もしくは弟）です。名前はまだありません。",
+
+        "imageName": "kopanda_gray"
+    },
+    {
+        "name":"双子歳上赤ちゃんパンダ",
+        "category": "誕生日",
+        "date":"2021-06-23",
+        "id": 1011,
+        "location" : "上野動物園",
+        "locationurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
+        "gender" : "その他",
+        "animaltype" : "パンダ",
+        "birthplace" : "上野動物園",
+        "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
+        "returnexpdate" : "2025-06-23",
+        "parents" : "リーリー、シンシン",
+        "preset" : true,
+        "relations" : [
+                [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
+                [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
+                [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
+            ],
+
+        "note" : "特徴　：上野動物園で初めて生まれた双子パンダの姉（もしくは兄）です。名前はまだありません。",
+
+        "imageName": "kopanda_gray"
     },
 
 ]
