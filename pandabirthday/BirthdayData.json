@@ -1,5 +1,28 @@
 [
-    
+    {
+        "name":"上野双子赤ちゃんパンダ",
+        "category": "誕生日",
+        "date":"2021-06-23",
+        "id": 999,
+        "location" : "上野動物園",
+        "locationurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
+        "gender" : "その他",
+        "animaltype" : "パンダ",
+        "birthplace" : "上野動物園",
+        "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
+        "returnexpdate" : "2025-06-23",
+        "parents" : "リーリー、シンシン",
+        "preset" : true,
+        "relations" : [
+                [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
+                [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
+                [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
+            ],
+
+        "note" : "特徴　：上野動物園で初めて生まれた双子のパンダです。",
+
+        "imageName": "kopanda_gray"
+    },
     {
         "name":"楓浜",
         "yomi":"ふうひん",
@@ -26,7 +49,6 @@
             ],
         "note" : "特徴　：アドベンチャーワールドのパンダ一家の末っ子です。公式Youtubeチャンネルで毎日可愛い姿が見られます。",
 
-        
         "imageName": "yachubo1"
     },
     {
@@ -75,6 +97,7 @@
                 [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
                 [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
                 [ "シャンシャンのYouTube", "https://www.youtube.com/results?search_query=%E3%82%B7%E3%83%A3%E3%83%B3%E3%82%B7%E3%83%A3%E3%83%B3" ],
+                [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
                 [ "朝日新聞デジタル 「特集 シャンシャン（香香）」",
                 "https://www.asahi.com/topics/word/%E4%B8%8A%E9%87%8E%E5%8B%95%E7%89%A9%E5%9C%92%E3%81%AE%E8%B5%A4%E3%81%A1%E3%82%83%E3%82%93%E3%83%91%E3%83%B3%E3%83%80.html" ],
                 [ "西日本新聞 シャンシャン トピックス", "https://www.nishinippon.co.jp/theme/x54vswan5l/" ],
@@ -183,6 +206,7 @@
         "relations" : [
                 [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
                 [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
+                [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
                 [ "リーリーのYouTube", "https://www.youtube.com/results?search_query=%E3%83%AA%E3%83%BC%E3%83%AA%E3%83%BC" ],
                 [ "東京都 パンダ保護研究実施の協力協定の延長", "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/12/11/11.html" ],
                 
@@ -213,6 +237,7 @@
         "relations" : [
                 [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
                 [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
+                [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
                 [ "シンシンのYouTube", "https://www.youtube.com/results?search_query=%E3%82%B7%E3%83%B3%E3%82%B7%E3%83%B3+%E3%83%91%E3%83%B3%E3%83%80" ],
                 [ "東京都 パンダ保護研究実施の協力協定の延長", "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/12/11/11.html" ],
             ],
