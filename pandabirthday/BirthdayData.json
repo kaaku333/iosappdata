@@ -303,7 +303,7 @@
         "imageName": "eimei1"
     },
     {
-        "name":"双子歳下赤ちゃんパンダ",
+        "name":"赤ちゃんパンダ１号",
         "category": "誕生日",
         "date":"2021-06-23",
         "id": 1012,
@@ -322,12 +322,12 @@
                 [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
             ],
 
-        "note" : "特徴　：上野動物園で初めて生まれた双子パンダの妹（もしくは弟）です。名前はまだありません。",
+        "note" : "特徴　：上野動物園で初めて生まれた双子パンダの１頭です。誕生当日の体重は１２４gでした。",
 
         "imageName": "kopanda_gray"
     },
     {
-        "name":"双子歳上赤ちゃんパンダ",
+        "name":"赤ちゃんパンダ２号",
         "category": "誕生日",
         "date":"2021-06-23",
         "id": 1011,
@@ -346,7 +346,7 @@
                 [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
             ],
 
-        "note" : "特徴　：上野動物園で初めて生まれた双子パンダの姉（もしくは兄）です。名前はまだありません。",
+        "note" : "特徴　：上野動物園で初めて生まれた双子パンダの１頭です。誕生２日目の体重は１４６gでした。",
 
         "imageName": "kopanda_gray"
     },
