@@ -2,7 +2,7 @@
     { "category": "db",
             "basename": "BirthdayData",
             "extname": "json",
-            "version": 2,
+            "version": 3,
             "stored": "preset" },
     { "category": "image",
                 "basename": "eimei1",
