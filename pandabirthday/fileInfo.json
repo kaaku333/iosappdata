@@ -12,7 +12,7 @@
     { "category": "image",
                 "basename": "fuhin1",
                 "extname":"jpg",
-                "version":  4,
+                "version":  5,
                 "stored": "userfile" },
     { "category": "image",
                 "basename": "ouhin1",
