@@ -31,7 +31,7 @@
                 "stored": "preset" },
     { "category": "image",
                 "basename": "saihin1",
-                "extname":"png",
+                "extname":"jpg",
                 "version":  3,
                 "stored": "appfile" },
     { "category": "image",
