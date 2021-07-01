@@ -54,4 +54,9 @@
                 "extname":"jpg",
                 "version":  1,
                 "stored": "preset" },
+    { "category": "image",
+                "basename": "yuihin1",
+                "extname":"png",
+                "version":  1,
+                "stored": "preset" },
 ]
