@@ -277,33 +277,6 @@
         "imageName": "tantan1"
     },
     {
-        "name":"永明",
-        "yomi":"えいめい",
-        "category": "誕生日",
-        "date":"1992-09-14",
-        "id": 1010,
-        "isFavorite": true,
-        "location" : "Adventure World",
-        "locationurl" : "https://www.aws-s.com/",
-        "gender" : "オス",
-        "animaltype" : "パンダ",
-        "birthplace" : "北京動物園",
-        "birthplaceurl" : "https://ja.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E5%8B%95%E7%89%A9%E5%9C%92",
-        "parents" : "良良、永永",
-        "comingdate" : "1994-09-06",
-        "returnexpdate" : "2026-09-06",
-        "preset" : true,
-        "relations" : [
-                [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
-                [ "永明のYouTube", "https://www.youtube.com/results?search_query=%E6%B0%B8%E6%98%8E+%E3%83%91%E3%83%B3%E3%83%80" ],
-            ],
-
-        "note" : "特徴　：ダンディーで女性に優しい超ベテランパパです。２０２１年現在１６頭の子供がいます。竹の好き嫌いがはっきりしているグルメです。",
-
-
-        "imageName": "eimei1"
-    },
-    {
         "name":"赤ちゃんパンダ１号",
         "category": "誕生日",
         "date":"2021-06-23",
