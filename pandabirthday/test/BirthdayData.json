@@ -25,8 +25,7 @@
             ],
         "note" : "特徴　：アドベンチャーワールドのパンダ一家の末っ子です。公式Youtubeチャンネルで毎日可愛い姿が見られます。",
 
-        "imageName": "yachubo1",
-        "newImageName": "fuhin1"
+        "imageName": "yachubo1"
     },
     {
         "name":"彩浜",
@@ -53,7 +52,7 @@
 
         "note" : "特徴　：体重わずか７５gで生まれました。お姉ちゃん達に負けずに元気におてんばに育ちました。",
 
-        "imageName": "saihin1",
+        "imageName": "saihin1"
     },
     {
         "name":"シャンシャン",
@@ -277,54 +276,6 @@
         "imageName": "tantan1"
     },
     {
-        "name":"赤ちゃんパンダ１号",
-        "category": "誕生日",
-        "date":"2021-06-23",
-        "id": 1012,
-        "location" : "上野動物園",
-        "locationurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
-        "gender" : "その他",
-        "animaltype" : "パンダ",
-        "birthplace" : "上野動物園",
-        "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
-        "returnexpdate" : "2025-06-23",
-        "parents" : "リーリー、シンシン",
-        "preset" : true,
-        "relations" : [
-                [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
-                [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
-                [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
-            ],
-
-        "note" : "特徴　：上野動物園で初めて生まれた双子パンダの１頭です。誕生当日の体重は１２４gでした。",
-
-        "imageName": "kopanda_gray"
-    },
-    {
-        "name":"赤ちゃんパンダ２号",
-        "category": "誕生日",
-        "date":"2021-06-23",
-        "id": 1011,
-        "location" : "上野動物園",
-        "locationurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
-        "gender" : "その他",
-        "animaltype" : "パンダ",
-        "birthplace" : "上野動物園",
-        "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
-        "returnexpdate" : "2025-06-23",
-        "parents" : "リーリー、シンシン",
-        "preset" : true,
-        "relations" : [
-                [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
-                [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
-                [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
-            ],
-
-        "note" : "特徴　：上野動物園で初めて生まれた双子パンダの１頭です。誕生２日目の体重は１４６gでした。",
-
-        "imageName": "kopanda_gray"
-    },
-   {
         "name":"永明",
         "yomi":"えいめい",
         "category": "誕生日",
@@ -351,4 +302,56 @@
 
         "imageName": "eimei1"
     },
+    {
+        "name":"赤ちゃんパンダ１号",
+        "category": "誕生日",
+        "date":"2021-06-23",
+        "id": 1012,
+        "location" : "上野動物園",
+        "locationurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
+        "gender" : "その他",
+        "animaltype" : "パンダ",
+        "birthplace" : "上野動物園",
+        "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
+        "returnexpdate" : "2025-06-23",
+        "parents" : "リーリー、シンシン",
+        "preset" : true,
+        "relations" : [
+                [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
+                [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
+                [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
+            ],
+
+        "note" : "特徴　：上野動物園で初めて生まれた双子パンダの１頭です。誕生当日の体重は１２４gでした。",
+
+        "imageName": "kopanda_gray",
+        "newImageName": "ichigou"
+    },
+    {
+        "name":"赤ちゃんパンダ２号",
+        "category": "誕生日",
+        "date":"2021-06-23",
+        "id": 1011,
+        "location" : "上野動物園",
+        "locationurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
+        "gender" : "その他",
+        "animaltype" : "パンダ",
+        "birthplace" : "上野動物園",
+        "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
+        "returnexpdate" : "2025-06-23",
+        "parents" : "リーリー、シンシン",
+        "preset" : true,
+        "relations" : [
+                [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
+                [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
+                [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
+            ],
+
+        "note" : "特徴　：上野動物園で初めて生まれた双子パンダの１頭です。誕生２日目の体重は１４６gでした。",
+
+        "imageName": "kopanda_gray",
+        "newImageName": "nigou"
+
+    },
+
 ]
