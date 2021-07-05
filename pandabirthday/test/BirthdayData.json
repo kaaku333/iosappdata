@@ -22,7 +22,7 @@
         "note" : "特徴　：上野動物園で初めて生まれた双子パンダの１頭です。誕生当日の体重は１２４gでした。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "kopanda_gray",
-        "newImageNames": ["ichigou"],
+        "newImageNames": ["ichigou", "ichigounigou" ],
     },
     {
         "name":"赤ちゃんパンダ２号",
@@ -47,7 +47,7 @@
         "note" : "特徴　：上野動物園で初めて生まれた双子パンダの１頭です。誕生２日目の体重は１４６gでした。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "kopanda_gray",
-        "newImageNames": ["nigou"],
+        "newImageNames": ["nigou", "ichigounigou"],
     },
     {
         "name":"楓浜",

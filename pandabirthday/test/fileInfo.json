@@ -161,4 +161,9 @@
                 "extname":"jpg",
                 "version": 2,
                 "stored": "appfile" },
+    { "category": "image",
+                "basename": "ichigounigou",
+                "extname":"jpg",
+                "version": 2,
+                "stored": "appfile" },
 ]
