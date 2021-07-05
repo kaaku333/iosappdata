@@ -22,7 +22,7 @@
         "note" : "特徴　：上野動物園で初めて生まれた双子パンダの１頭です。誕生当日の体重は１２４gでした。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "kopanda_gray",
-        "newImageName": "ichigou",
+        "newImageNames": ["ichigou"],
     },
     {
         "name":"赤ちゃんパンダ２号",
@@ -47,7 +47,7 @@
         "note" : "特徴　：上野動物園で初めて生まれた双子パンダの１頭です。誕生２日目の体重は１４６gでした。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "kopanda_gray",
-        "newImageName": "nigou",
+        "newImageNames": ["nigou"],
     },
     {
         "name":"楓浜",
@@ -76,7 +76,7 @@
         "note" : "特徴　：アドベンチャーワールドのパンダ一家の末っ子です。公式Youtubeチャンネルで毎日可愛い姿が見られます。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "yachubo1",
-        "newImageName": "fuhin1",
+        "newImageNames": ["fuhin1"],
     },
     {
         "name":"彩浜",
