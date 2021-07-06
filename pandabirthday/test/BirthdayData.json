@@ -21,8 +21,7 @@
 
         "note" : "特徴　：上野動物園で初めて生まれた双子パンダの１頭です。誕生当日の体重は１２４gでした。",
         "_comment": "imageName は App ver1.X の互換性のため",
-        "imageName": "kopanda_gray",
-        "newImageNames": ["ichigou1", "ichigounigou1" ],
+        "imageName": "kopanda_blue",
     },
     {
         "name":"赤ちゃんパンダ２号",
@@ -46,8 +45,7 @@
 
         "note" : "特徴　：上野動物園で初めて生まれた双子パンダの１頭です。誕生２日目の体重は１４６gでした。",
         "_comment": "imageName は App ver1.X の互換性のため",
-        "imageName": "kopanda_gray",
-        "newImageNames": ["nigou1", "ichigounigou1"],
+        "imageName": "kopanda_blue",
     },
     {
         "name":"楓浜",
@@ -75,8 +73,7 @@
             ],
         "note" : "特徴　：アドベンチャーワールドのパンダ一家の末っ子です。公式Youtubeチャンネルで毎日可愛い姿が見られます。",
         "_comment": "imageName は App ver1.X の互換性のため",
-        "imageName": "yachubo1",
-        "newImageNames": ["fuhin1"],
+        "imageName": "kopanda_blue",
     },
     {
         "name":"彩浜",
@@ -103,7 +100,7 @@
 
         "note" : "特徴　：体重わずか７５gで生まれました。お姉ちゃん達に負けずに元気におてんばに育ちました。",
 
-        "imageName": "saihin1",
+        "imageName": "kopanda_blue",
     },
     {
         "name":"シャンシャン",
@@ -132,7 +129,7 @@
 
         "note" : "特徴　：およそ３０年ぶりに上野動物園で生まれたパンダで、最近のパンダブームの立役者です。丸顔の美人さんです。",
 
-        "imageName": "shanshan1",
+        "imageName": "kopanda_blue",
     },
     {
         "name":"結浜",
@@ -157,7 +154,7 @@
             ],
         "note" : "特徴　：体重１９７gで大きく生まれました。好奇心旺盛で、尖った頭の毛がチャームポイントです。",
 
-        "imageName": "yuihin1",
+        "imageName": "kopanda_blue",
     },
     {
         "name":"桜浜",
@@ -181,7 +178,7 @@
             ],
         "note" : "特徴　：双子の桃浜の姉です。おっとりマイペースです。丸顔と大きな耳が特徴です。",
 
-        "imageName": "ouhin1",
+        "imageName": "kopanda_blue",
     },
     {
         "name":"桃浜",
@@ -207,7 +204,7 @@
             ],
         "note" : "特徴　：双子の桜浜の妹です。好奇心旺盛なおてんばさんです。頭が三角形で両耳の間が狭く鼻が長いのが特徴です。",
 
-        "imageName": "touhin1",
+        "imageName": "kopanda_blue",
     },
     {
         "name":"リーリー",
@@ -238,7 +235,7 @@
         "note" : "特徴　：頭がとんがっていて木登り大好きです。シンシンとは幼なじみです。",
 
 
-        "imageName": "riri1",
+        "imageName": "kopanda_blue",
     },
     {
         "name":"シンシン",
@@ -267,7 +264,7 @@
             ],
         "note" : "特徴　：超マイペースで食事中は周りが見えなくなります。リーリーとは幼なじみです。",
 
-        "imageName": "shinshin1",
+        "imageName": "kopanda_blue",
     },
     {
         "name":"良浜",
@@ -292,7 +289,7 @@
             ],
         "note" : "特徴　：日本生まれとして初めてのお母さんパンダです。２０２１年現在１０頭の子供がいるベテランママです。",
 
-        "imageName": "rauhin1",
+        "imageName": "kopanda_blue",
     },
     {
         "name":"タンタン",
@@ -321,7 +318,7 @@
             ],
         "note" : "帰国予定日：近日中（当初20年間の予定）\n特徴　：床につきそうな大きなお腹を持っています。子供のような愛くるしい体型をしています。",
 
-        "imageName": "tantan1",
+        "imageName": "kopanda_blue",
     },
     {
         "name":"永明",
@@ -347,6 +344,6 @@
 
         "note" : "特徴　：ダンディーで女性に優しい超ベテランパパです。２０２１年現在１６頭の子供がいます。竹の好き嫌いがはっきりしているグルメです。",
 
-        "imageName": "eimei1",
+        "imageName": "kopanda_blue",
     },
 ]
