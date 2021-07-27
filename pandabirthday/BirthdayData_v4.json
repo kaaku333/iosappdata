@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v5 2021/7/28",
+        "_version": "v4 2021/7/27",
         "name":"赤ちゃんパンダ１号",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -23,7 +23,7 @@
         "note" : "メモ：上野動物園で初めて生まれた双子パンダの１頭です。誕生当日の体重は１２４gでした。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "kopanda_gray",
-        "newImageNames": ["ichigou1", "ichigounigou1", "ichigounigou2", "ichigounigou3" ],
+        "newImageNames": ["ichigou1", "ichigounigou1", "ichigounigou2" ],
     },
     {
         "name":"赤ちゃんパンダ２号",
@@ -48,7 +48,7 @@
         "note" : "メモ：上野動物園で初めて生まれた双子パンダの１頭です。誕生２日目の体重は１４６gでした。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "kopanda_gray",
-        "newImageNames": ["nigou1", "ichigounigou1", "ichigounigou2", "ichigounigou3"],
+        "newImageNames": ["nigou1", "ichigounigou1", "ichigounigou2"],
     },
     {
         "name":"楓浜",
