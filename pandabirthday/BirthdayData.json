@@ -20,7 +20,7 @@
                 [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
             ],
 
-        "note" : "メモ：上野動物園で初めて生まれた双子パンダのオスの方です。誕生当日の体重は１２４gでした。",
+        "note" : "メモ：上野動物園で初めて生まれた双子パンダのオスの赤ちゃんです。誕生当日の体重は１２４gでした。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "kopanda_gray",
         "newImageNames": [ "ichigounigou2", "ichigounigou3" ],
@@ -45,7 +45,7 @@
                 [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
             ],
 
-        "note" : "メモ：上野動物園で初めて生まれた双子パンダのメスの方です。誕生２日目の体重は１４６gでした。",
+        "note" : "メモ：上野動物園で初めて生まれた双子パンダのメスの赤ちゃんです。誕生２日目の体重は１４６gでした。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "kopanda_gray",
         "newImageNames": [ "ichigounigou2", "ichigounigou3"],
