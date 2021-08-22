@@ -46,9 +46,9 @@
             ],
 
         "note" : "メモ：上野動物園で初めて生まれた双子パンダのメスの赤ちゃんです。誕生２日目の体重は１４６gでした。",
-        "_comment": "imageName は App ver1.X の互換性のため",
+        "_comment": "imageName は App ver1.X の互換性のため. newImageNames は２号と順番を入れ替えて違う画像が選ばれるようにする",
         "imageName": "kopanda_gray",
-        "newImageNames": [ "ichigounigou2", "ichigounigou3"],
+        "newImageNames": [ "ichigounigou3", "ichigounigou2"],
     },
     {
         "name":"楓浜",
