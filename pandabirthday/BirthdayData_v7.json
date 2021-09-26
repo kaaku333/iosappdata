@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v8 2021/9/26",
+        "_version": "v7 2021/8/22",
         "name":"赤ちゃんパンダ１号",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -18,10 +18,9 @@
                 [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
                 [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
                 [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
-                [ "東洋経済オンライン 中川さんのパンダ記事", "https://toyokeizai.net/list/author/%E4%B8%AD%E5%B7%9D_%E7%BE%8E%E5%B8%86" ],
             ],
 
-        "note" : "メモ：上野動物園の双子パンダのオスの子です。毎週火曜日に公式サイトで可愛い姿を見れます。",
+        "note" : "メモ：上野動物園で初めて生まれた双子パンダのオスの赤ちゃんです。誕生当日の体重は１２４gでした。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "kopanda_gray",
         "newImageNames": [ "ichigounigou2", "ichigounigou3" ],
@@ -44,10 +43,9 @@
                 [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
                 [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
                 [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
-                [ "東洋経済オンライン 中川さんのパンダ記事", "https://toyokeizai.net/list/author/%E4%B8%AD%E5%B7%9D_%E7%BE%8E%E5%B8%86" ],
             ],
 
-        "note" : "メモ：上野動物園の双子パンダのメスの子です。毎週火曜日に公式サイトで可愛い姿を見れます。",
+        "note" : "メモ：上野動物園で初めて生まれた双子パンダのメスの赤ちゃんです。誕生２日目の体重は１４６gでした。",
         "_comment": "imageName は App ver1.X の互換性のため. newImageNames は２号と順番を入れ替えて違う画像が選ばれるようにする",
         "imageName": "kopanda_gray",
         "newImageNames": [ "ichigounigou3", "ichigounigou2"],
@@ -76,7 +74,7 @@
                 [ "楓浜のYouTube", "https://www.youtube.com/results?search_query=%E6%A5%93%E6%B5%9C" ],
 
             ],
-        "note" : "メモ：アドベンチャーワールドのパンダ一家の末っ子です。お姉ちゃんたちに負けずにおてんばに育ちました。公式Youtubeチャンネルで毎日可愛い姿が見られます。",
+        "note" : "メモ：アドベンチャーワールドのパンダ一家の末っ子です。公式Youtubeチャンネルで毎日可愛い姿が見られます。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "yachubo1",
         "newImageNames": ["fuhin1"],
@@ -104,7 +102,7 @@
                 [ "和歌山経済新聞「彩浜」2年の歩み", "https://wakayama.keizai.biz/column/14/"],
             ],
 
-        "note" : "メモ：体重わずか７５gで生まれました。お姉ちゃん達に負けずに元気に育ちました。仕草に貫禄があって社長というニックネームを持ってます。",
+        "note" : "メモ：体重わずか７５gで生まれました。お姉ちゃん達に負けずに元気におてんばに育ちました。貫禄があって社長というニックネームを持ってます。",
 
         "imageName": "saihin1",
     },
@@ -325,9 +323,8 @@
                 [ "神戸市 タンタンの返還について", "https://www.city.kobe.lg.jp/a84159/shise/shichoshitsu/letter/r2/ojizoo.html" ],
                 [ "関西ウォーカー パンダのタンタンお別れ", "https://www.walkerplus.com/trend/matome/article/1004233/" ],
                 [ "東洋経済デジタル 20年ぶりに中国へ帰る背景", "https://toyokeizai.net/articles/-/357872" ],
-                [ "LMaga.jp 二木さんの記事", "https://www.lmaga.jp/news/2021/09/317054/" ],
             ],
-        "note" : "帰国予定日：近日中（当初20年間の予定）\nメモ：神戸のお嬢さまというニックネームを持っています。手足が短くてお腹が大きく子供のような愛くるしい体型をしています。",
+        "note" : "帰国予定日：近日中（当初20年間の予定）\nメモ：床につきそうな大きなお腹を持っています。子供のような愛くるしい体型をしています。",
 
         "imageName": "tantan1",
     },
