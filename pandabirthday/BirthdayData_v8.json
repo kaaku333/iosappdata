@@ -1,7 +1,7 @@
 [
     {
-        "_version": "v9 2021/10/9",
-        "name":"シャオシャオ",
+        "_version": "v8 2021/9/26",
+        "name":"赤ちゃんパンダ１号",
         "category": "誕生日",
         "date":"2021-06-23",
         "id": 1012,
@@ -21,13 +21,13 @@
                 [ "東洋経済オンライン 中川さんのパンダ記事", "https://toyokeizai.net/list/author/%E4%B8%AD%E5%B7%9D_%E7%BE%8E%E5%B8%86" ],
             ],
 
-        "note" : "メモ：上野動物園の双子パンダのオスの子です。名前は漢字で暁暁と書きます。夜明けの光が差し明るくなるという意味です。",
+        "note" : "メモ：上野動物園の双子パンダのオスの子です。毎週火曜日に公式サイトで可愛い姿を見れます。",
         "_comment": "imageName は App ver1.X の互換性のため",
-        "imageName": "ichigounigou3",
-        "newImageNames": [ "shaoshao1" ],
+        "imageName": "kopanda_gray",
+        "newImageNames": [ "ichigounigou2", "ichigounigou3" ],
     },
     {
-        "name":"レイレイ",
+        "name":"赤ちゃんパンダ２号",
         "category": "誕生日",
         "date":"2021-06-23",
         "id": 1011,
@@ -47,10 +47,10 @@
                 [ "東洋経済オンライン 中川さんのパンダ記事", "https://toyokeizai.net/list/author/%E4%B8%AD%E5%B7%9D_%E7%BE%8E%E5%B8%86" ],
             ],
 
-        "note" : "メモ：上野動物園の双子パンダのメスの子です。名前は漢字で蕾蕾と書きます。つぼみから美しい花が咲き、未来へ繋がっていくという意味です。",
+        "note" : "メモ：上野動物園の双子パンダのメスの子です。毎週火曜日に公式サイトで可愛い姿を見れます。",
         "_comment": "imageName は App ver1.X の互換性のため. newImageNames は２号と順番を入れ替えて違う画像が選ばれるようにする",
-        "imageName": "ichigounigou3",
-        "newImageNames": [ "rayray1" ],
+        "imageName": "kopanda_gray",
+        "newImageNames": [ "ichigounigou3", "ichigounigou2"],
     },
     {
         "name":"楓浜",
