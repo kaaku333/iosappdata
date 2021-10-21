@@ -2,22 +2,36 @@
 <html lang="ja">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>help_mainPage.html</title>
+    <title>help_mainPage</title>
     <style type="text/css">
     #body {
       font-family: "Helvetica", "ヒラギノ角ゴ ProN W3";
-      font-size: 22pt;
+      font-size: 3vmax;
       background-color: #eeeeee;
       color: #333333
     }
 
-    #h1 {
-      font-size: 30pt;
+    h1 {
+      font-size: 5vmax;
     }
-    #h2 {
-      font-size: 24pt;
+    h2 {
+      font-size: 4vmax;
+      padding: 0.4em 0.5em;
+      border-left: solid 5px #7db4e6;
     }
     
+    a:link {
+          color: #333333;
+          background: #c2edff;
+          text-decoration: none;
+
+    }
+    a:visited { 
+          color: #333333;
+          background: #c2edff;
+          text-decoration: none;
+    }
+
     img {
       max-width: 100%;
       width: 100%;
@@ -31,35 +45,28 @@
     
     dt {
       font-weight: bold; 
-      margin-top: 10px;
+      margin-top: 2vmax;
       margin-bottom: 5px;
       font-size: 3vmax;
     }
     dd {
       font-size: 3vmax;
+
     }
     </style>
       <script type="text/javascript">
       <!--
+        var paramArray =[]
         window.onload = loadFinished;
 
         function loadFinished(){
-          parseParams()
+          getUrlParams()
           initSetting()
         }
-        function parseParams(){
-          // URLのパラメータを取得
+        function getUrlParams(){
           var urlParam = location.search.substring(1);
-          
-          // URLにパラメータが存在する場合
           if(urlParam) {
-            // 「&」が含まれている場合は「&」で分割
             var param = urlParam.split('&');
-          
-            // パラメータを格納する用の配列を用意
-            var paramArray = [];
-          
-            // 用意した配列にパラメータを格納
             for (i = 0; i < param.length; i++) {
               var paramItem = param[i].split('=');
               paramArray[paramItem[0]] = paramItem[1];
@@ -102,9 +109,9 @@
         function colorModeSelect(colorMode){
           if(colorMode == 'dark'){
             document.body.style.color = '#eeeeee';          
-            document.body.style.backgroundColor = '#333333';  
+            document.body.style.backgroundColor = '#444444';  
           }else{
-            document.body.style.color = '#333333';          
+            document.body.style.color = '#444444';          
             document.body.style.backgroundColor = '#eeeeee';
           }
         }
@@ -112,6 +119,7 @@
     </script>
 </head>
   <body id="body">
+      <!--
   <input type="radio" name="lang" id="ja" onClick="langSelect('ja')" checked>
       Japanese
   <input type="radio" name="lang" id="en" onClick="langSelect('en')">
@@ -122,17 +130,77 @@
  
   <input type="radio" name="colorMode" id="dark" onClick="colorModeSelect('dark')">
         dark color
- 
+ -->
 
-    <p>
+    目次
     <dl>
-      <dt class="langSel" lang="ja">メイン画面とは</dt>
-      <dt class="langSel" lang="en">Main</dt>
-      <dd class="langSel" lang="ja">起動直後に表示される、アプリの基本画面です。パンダ情報を一覧表示します。</dd>
-      <dd class="langSel" lang="en">asdfasfsadfadsfdsaf</dd>
-      <dd><br></dd>
-      <dd></dd>
+      <dd class="langSel" lang="ja"><a href="#howtouse">使い方概要</a></dd>
+      <dd class="langSel" lang="ja"><a href="#makelist">本 App でリストを作る方法</a></dd>
+      <dd class="langSel" lang="ja"><a href="#outliner">CarbonFin Outliner のリストを使う方法</a></dd>
+
+      </dl>
+    <p>
+    <h2 class="langSel" lang="ja">lightlist について</h2>
+    <h2 class="langSel" lang="en">About lightlist</h2>
+        <dl>
+          <dt class="langSel" lang="ja">この App は シンプルで使いやすい Apple Watch 用の買い物リストを提供します。</dt>
+          <dd class="langSel" lang="ja">買い物リストの中であらかじめ買いたい物だけを絞り込んだ チェックリストを Apple Watch で使えます。</dd>
+        </dl>
+    <a name="howtouse">
+    <h2 class="langSel" lang="ja">使い方概要</h2>
+        <dl>
+          <dt class="langSel" lang="ja">1. まず iPhone で買い物リストを作ります。</dt>
+          <dd class="langSel" lang="ja">買い物リストは iPhone の本Appで作るか、他のApp(現在はCarnbonFin Outlinerのみサポート)のリストのURLを登録します。</dd>
+          <dt class="langSel" lang="ja">2. 買い物に行く前に iPhone で買い物リストの中の不要な項目をチェックします。</dt>
+          <dd class="langSel" lang="ja">Apple Watch の買い物リストに表示したくない項目は、iPhone で項目にチェックを入れておきます。他の App のリスト場合は、その App で不要項目にチェックします。</dd>
+          <dt class="langSel" lang="ja">3. 買い物に行ったら Apple Watch で買い物リストを使います。</dt>
+          <dd class="langSel" lang="ja">Apple Watch の lightlist App でその店用のリストを選び、買ったものからチェックしていきます。チェックした項目をまとめて削除することもできます。</dd>
     </dl>
-      </p>
+
+        <a name="makelist">
+        <h2 class="langSel" lang="ja">本 App でリストを作る方法</h2>
+        <dl>
+          <dt class="langSel" lang="ja">1. リストの追加</dt>
+          <dd class="langSel" lang="ja">「新規リスト追加」の入力欄をタップして、リストの名前を入れてから「リスト追加」ボタンを押す。「登録ずみリスト」の先頭に登録したリストが表示されます。</dd>
+          <dt class="langSel" lang="ja">2. リストの選択</dt>
+          <dd class="langSel" lang="ja">「登録ずみリスト」から項目を追加・変更したいリスト名を選んでタップすると、リスト編集画面に移ります。他AppのリストはこのAppではなく、該当Appで項目編集します。</dd>
+          <dt class="langSel" lang="ja">3. 項目の追加</dt>
+          <dd class="langSel" lang="ja">+ ボタンの右側をタップすると新しい項目名が入力でき、改行で項目として追加できます。<dd>
+          <dd class="langSel" lang="ja">下の大きな四角をタップするとそこに改行で区切った複数の項目名をまとめて入力できます。「各行を項目として追加」ボタンを押すとまとめて登録されます。<dd>
+          <dd class="langSel" lang="ja">１つのリストに登録できる項目すうは最大９９個です。</dd>
+          <dt class="langSel" lang="ja">4. 項目の編集</dt>
+
+          <dd class="langSel" lang="ja">登録された項目名をタップすると項目名を編集することができます。</dd>
+          <dd class="langSel" lang="ja">項目名を左にドラッグすると削除ボタンが出てきて項目を削除することができます。</dd>
+          <dd class="langSel" lang="ja">画面右上の編集ボタンをタップすると、各項目の右側の３本線をドラッグして項目を並び替えることができます。終わったら右上の完了ボタンを押します。</dd>
+          <dt class="langSel" lang="ja">5. リスト名の変更</dt>
+
+          <dd class="langSel" lang="ja">左上のリスト名をタップすると、リスト名を変更することもできます。</dd>
+        </dl>
+        
+        <a name="outliner">
+        <h2 class="langSel" lang="ja">CarbonFin Outliner のリストを使う方法</h2>
+        <dl>
+          <dt class="langSel" lang="ja">1. Outliner でリストの作成</dt>
+          <dd class="langSel" lang="ja">CarbonFin Outliner で買い物リストを作ってください。階層があっても構いませんが、lightlist では階層を無くしてフラットなリストになります。</dd>
+          <dt class="langSel" lang="ja">2. Outliner でリストのPublish</dt>
+          <dd class="langSel" lang="ja">lightlist で使いたいリストの設定画面で「Publish」チェックを入れてください。その下の「Copy URL」を押して、リストのURLをコピーしてください。</dd>
+          <dt class="langSel" lang="ja">3. lightlistでリストのURLのペースト</dt>
+          <dd class="langSel" lang="ja">lightlist でリストデータURL登録の入力欄にタップを2回すると、「ペースト」と表示されるので、それをタップして コピーしたURLをペーストしてください。</dd>
+          <dt class="langSel" lang="ja">4. リストの登録</dt>
+          <dd class="langSel" lang="ja">入力欄の下のリスト追加ボタンを押してURLにリストを追加します。うまく登録できれば、リストのタイトルが登録ずみタイトルの先頭に追加されます。リストが追加されない場合は、URLが間違っていないかブラウザで確認してみてください。</dd>
+          
+        </dl>
+              
+              
+        <a name="editlist">
+        <h2 class="langSel" lang="ja">登録ずみリストの編集方法</h2>
+        <dl>
+          <dt class="langSel" lang="ja">リストの削除</dt>
+          <dd class="langSel" lang="ja">リスト名を左にドラッグすると削除ボタンが出てくるのでそれを押してリストを削除できます。</dd>
+          <dt class="langSel" lang="ja">リストの並び替え</dt>
+          <dd class="langSel" lang="ja">画面右上の編集ボタンを押すと、リストの右側の３本線をドラッグすることでリストを並び替えできます。</dd>
+          
+        </dl>
   </body>
 </html>
