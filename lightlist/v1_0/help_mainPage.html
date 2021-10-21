@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>help_mainPage.html</title>
+    <style type="text/css">
+    #body {
+      font-family: "Helvetica", "ヒラギノ角ゴ ProN W3";
+      font-size: 22pt;
+      background-color: #eeeeee;
+      color: #333333
+    }
+
+    #h1 {
+      font-size: 30pt;
+    }
+    #h2 {
+      font-size: 24pt;
+    }
+    
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+
+    dl  {
+      padding: 10px 20px 20px 30px;
+      line-height: 1.4;
+    }
+    
+    dt {
+      font-weight: bold; 
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 3vmax;
+    }
+    dd {
+      font-size: 3vmax;
+    }
+    </style>
+      <script type="text/javascript">
+      <!--
+        window.onload = loadFinished;
+
+        function loadFinished(){
+          parseParams()
+          initSetting()
+        }
+        function parseParams(){
+          // URLのパラメータを取得
+          var urlParam = location.search.substring(1);
+          
+          // URLにパラメータが存在する場合
+          if(urlParam) {
+            // 「&」が含まれている場合は「&」で分割
+            var param = urlParam.split('&');
+          
+            // パラメータを格納する用の配列を用意
+            var paramArray = [];
+          
+            // 用意した配列にパラメータを格納
+            for (i = 0; i < param.length; i++) {
+              var paramItem = param[i].split('=');
+              paramArray[paramItem[0]] = paramItem[1];
+            }
+          }
+        }
+        function initSetting(){
+          // check paramator option and setting
+          // language setting
+          var lang
+          if (paramArray.lang == 'ja') {
+            lang ='ja'
+          }else{
+            lang = 'en'
+          }
+          langSelect(lang);
+          
+          // color setting
+          var colorMode
+          if (paramArray.colorMode == 'dark'){
+            colorMode = 'dark'
+          }else{
+            colorMode = 'normal'
+          }
+          colorModeSelect(colorMode)
+        }
+        
+        function langSelect(lang){
+          var elm = document.getElementsByClassName("langSel");
+          // set all langSel class object display or not
+          for (var i = 0; i < elm.length; i++) {
+            if(elm[i].getAttribute("lang") == lang){
+              elm[i].style.display = '';
+            }
+            else{
+              elm[i].style.display = 'none';
+            }
+          }
+        }
+        function colorModeSelect(colorMode){
+          if(colorMode == 'dark'){
+            document.body.style.color = '#eeeeee';          
+            document.body.style.backgroundColor = '#333333';  
+          }else{
+            document.body.style.color = '#333333';          
+            document.body.style.backgroundColor = '#eeeeee';
+          }
+        }
+    // -->
+    </script>
+</head>
+  <body id="body">
+  <input type="radio" name="lang" id="ja" onClick="langSelect('ja')" checked>
+      Japanese
+  <input type="radio" name="lang" id="en" onClick="langSelect('en')">
+      English
+      <br>
+   <input type="radio" name="colorMode" id="normal" onClick="colorModeSelect('normal')" checked>
+        normal color
+ 
+  <input type="radio" name="colorMode" id="dark" onClick="colorModeSelect('dark')">
+        dark color
+ 
+
+    <p>
+    <dl>
+      <dt class="langSel" lang="ja">メイン画面とは</dt>
+      <dt class="langSel" lang="en">Main</dt>
+      <dd class="langSel" lang="ja">起動直後に表示される、アプリの基本画面です。パンダ情報を一覧表示します。</dd>
+      <dd class="langSel" lang="en">asdfasfsadfadsfdsaf</dd>
+      <dd><br></dd>
+      <dd></dd>
+    </dl>
+      </p>
+  </body>
+</html>
