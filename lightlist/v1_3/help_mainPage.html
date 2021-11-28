@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>help_mainPage</title>
+    <style type="text/css">
+    #body {
+      font-family: "Helvetica", "ヒラギノ角ゴ ProN W3";
+      font-size: 3vmax;
+      background-color: #777777;
+      color: #333333
+    }
+
+    h1 {
+      font-size: 3vmax;
+    }
+    h2 {
+      font-size: 3vmax;
+      padding: 0.4em 0.5em;
+      border-left: solid 8px #7db4e6;
+    //  border-bottom: solid 8px #3250dd;
+      background-color: #c2edff;
+      color: #333333;
+    }
+    h3 {
+      font-size: 2.5vmax;
+      padding: 0.3em;
+      border-left: solid 5px #7db4e6;
+    }
+    
+    a:link, a:visited {
+          color: #333333;
+          background: #c2edff;
+          padding: 0.2em;
+          text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+
+    dl  {
+      padding: 10px 20px 20px 30px;
+      line-height: 1.4;
+    }
+    
+    dt {
+      font-weight: bold; 
+      margin-top: 2vmax;
+      margin-bottom: 0.3em;
+      font-size: 2.5vmax;
+    }
+    dd {
+      font-size: 2.5vmax;
+      margin-bottom: 0.5em;
+    }
+    </style>
+      <script type="text/javascript">
+      <!--
+        var paramArray =[]
+        window.onload = loadFinished;
+
+        function loadFinished(){
+          getUrlParams()
+          initSetting()
+        }
+        function getUrlParams(){
+          var urlParam = location.search.substring(1);
+          if(urlParam) {
+            var param = urlParam.split('&');
+            for (i = 0; i < param.length; i++) {
+              var paramItem = param[i].split('=');
+              paramArray[paramItem[0]] = paramItem[1];
+            }
+          }
+        }
+        function initSetting(){
+          // check paramator option and setting
+          // language setting
+          var lang
+          if (paramArray.lang == 'ja') {
+            lang ='ja'
+          }else{
+            lang = 'en'
+          }
+          langSelect(lang);
+          
+          // color setting
+          var colorMode
+          if (paramArray.colorMode == 'dark'){
+            colorMode = 'dark'
+          }else{
+            colorMode = 'normal'
+          }
+          colorModeSelect(colorMode)
+        }
+        
+        function langSelect(lang){
+          var elm = document.getElementsByClassName("langSel");
+          // set all langSel class object display or not
+          for (var i = 0; i < elm.length; i++) {
+            if(elm[i].getAttribute("lang") == lang){
+              elm[i].style.display = '';
+            }
+            else{
+              elm[i].style.display = 'none';
+            }
+          }
+        }
+        function colorModeSelect(colorMode){
+          if(colorMode == 'dark'){
+            document.body.style.color = '#eeeeee';          
+            document.body.style.backgroundColor = '#444444';  
+          }else{
+            document.body.style.color = '#444444';          
+            document.body.style.backgroundColor = '#eeeeee';
+          }
+        }
+    // -->
+    </script>
+</head>
+  <body id="body">
+      <!--
+  <input type="radio" name="lang" id="ja" onClick="langSelect('ja')" checked>
+      Japanese
+  <input type="radio" name="lang" id="en" onClick="langSelect('en')">
+      English
+      <br>
+   <input type="radio" name="colorMode" id="normal" onClick="colorModeSelect('normal')" checked>
+        normal color
+ 
+  <input type="radio" name="colorMode" id="dark" onClick="colorModeSelect('dark')">
+        dark color
+ -->
+
+    <a name="top">
+
+    <h3 class="langSel" lang="ja">目次</h3>
+    <h3 class = "langSel" lang = "en"> Table of Contents </h3>
+    <dl>
+      <dd class="langSel" lang="ja"><a href="#howtouse">典型的な使い方</a></dd>
+      <dd class="langSel" lang="ja"><a href="#role">iPhone App と Apple Watch App の役割</a></dd>
+      <dd class="langSel" lang="ja"><a href="#makelist">本 App でリストを作る方法</a></dd>
+      <dd class="langSel" lang="ja"><a href="#outliner">他 App のリストを使う方法</a></dd>
+      <dd class="langSel" lang="ja"><a href="#editlist">登録ずみリストの編集方法</a></dd>
+      <dd class="langSel" lang="ja"><a href="#settings">設定画面</a></dd>
+      <dd class="langSel" lang="ja"><a href="#applewatch1">Apple Watch App のリスト一覧画面</a></dd>
+      <dd class="langSel" lang="ja"><a href="#applewatch2">Apple Watch App の項目一覧画面</a></dd>
+      <dd class="langSel" lang="ja"><a href="#applewatch3">Apple Watch App の設定画面</a></dd>
+      <dd class="langSel" lang="ja"><a href="#widget">ウィジェット</a></dd>
+      <dd class="langSel" lang="ja"><a href="#trouble">困った時は</a></dd>
+      <dd class="langSel" lang="ja"><a href="#history">バージョン履歴</a></dd>
+
+      <dd class = "langSel" lang = "en"> <a href="#howtouse"> Typical usage </a> </dd>
+      <dd class = "langSel" lang = "en"><a href="#role">Roles of iPhone App and Apple Watch App</a></dd>
+      <dd class = "langSel" lang = "en"> <a href="#makelist"> How to make a list with this app </a> </dd>
+      <dd class = "langSel" lang = "en"> <a href="#outliner"> How to use a list of other apps </a> </dd>
+      <dd class = "langSel" lang = "en"> <a href="#editlist"> How to edit the registered list </a> </dd>
+      <dd class="langSel" lang="en"><a href="#settings"> Settings </a></dd>
+      <dd class = "langSel" lang = "en"> <a href="#applewatch1"> Apple Watch App lists screen </a> </dd>
+      <dd class = "langSel" lang = "en"> <a href="#applewatch2"> Apple Watch App items screen </a> </dd>
+      <dd class = "langSel" lang = "en"> <a href="#applewatch3"> Apple Watch App settings screen </a> </dd>
+      <dd class="langSel" lang="en"><a href="#widget"> Widget </a></dd>
+      <dd class = "langSel" lang = "en"> <a href="#trouble"> Trouble shooting </a> </dd>
+      <dd class = "langSel" lang = "en"> <a href="#history"> Version History </a></dd>
+    </dl>
+    <p>
+    <h2 class="langSel" lang="ja">この App について</h2>
+    <h2 class = "langSel" lang = "en"> About this App </h2>
+        <dl>
+          <dt class="langSel" lang="ja">この App は シンプルで使いやすい Apple Watch 用のチェックリストです。</dt>
+          <dd class="langSel" lang="ja">特に買い物リストとして使いやすいように機能を最適化しています。</dd>
+          
+          <dt class = "langSel" lang = "en"> This app is a simple and easy-to-use checklist for Apple Watch. </ dt>
+           <dd class = "langSel" lang = "en"> Features are optimized to make it especially easy to use as a shopping list. </ dd>
+
+        </dl>
+        
+        <a href="#top">↑</a>
+        <a name="howtouse">
+        <h2 class="langSel" lang="ja">典型的な使い方</h2>
+        <h2 class = "langSel" lang = "en"> Typical usage </h2>
+
+        <dl>
+          <dt class="langSel" lang="ja">1. まず iPhone で買い物リストを作ります。</dt>
+          <dd class="langSel" lang="ja">買い物リストは iPhone の本Appで作るか、他のApp(現在は CarnbonFin outliner のみサポート)のリストのURLを登録します。</dd>
+          <dt class="langSel" lang="ja">2. 買い物に行く前に iPhone で買い物リストの中の不要な項目をチェックします。</dt>
+          <dd class="langSel" lang="ja">Apple Watch の買い物リストに表示したくない項目は、iPhone で項目にチェックを入れておきます。他の App のリストの場合は、その App で不要項目にチェックします。</dd>
+          <dt class="langSel" lang="ja">3. 買い物に行ったら Apple Watch で買い物リストを使います。</dt>
+          <dd class="langSel" lang="ja">Apple Watch App でその店用のリストを選び、買ったものからチェックしていきます。チェックした項目をまとめて削除することもできます。</dd>
+
+          <dt class = "langSel" lang = "en"> 1. First, create a shopping list on your iPhone. </dt>
+          <dd class = "langSel" lang = "en"> Create a shopping list with this iPhone app, or register the URL of the list of other apps (currently only the CarnbonFin Outliner is supported). </dd>
+          <dt class = "langSel" lang = "en"> 2. Check unnecessary items in the shopping list on your iPhone before going shopping. </dt>
+          <dd class = "langSel" lang = "en"> Check the items on your iPhone if you don't want them to appear in your Apple Watch shopping list. For a list of other apps, check the unwanted fields in that app. </dd>
+          <dt class = "langSel" lang = "en"> 3. When you go shopping, use the shopping list on your Apple Watch. </dt>
+          <dd class = "langSel" lang = "en"> Use the Apple Watch App to select a list for that store and check the ones you bought first. You can also delete all the checked items at once. </dd>
+
+        </dl>
+
+        <a href="#top">↑</a>
+        <a name="role">
+        <h2 class="langSel" lang="ja">iPhone App と Apple Watch App の役割</h2>
+        <h2 class = "langSel" lang = "en"> Roles of iPhone App and Apple Watch App</h2>
+        <dl>
+          <dt class="langSel" lang="ja">iPhone App の役割</dt>
+          <dd class="langSel" lang="ja">全てのリストを登録、管理します。</dd>
+          <dd class="langSel" lang="ja">全てのリスト項目を追加、編集、管理します。</dd>
+          <dd class="langSel" lang="ja">Apple Watch App に送らない項目をチェックでフィルターします。</dd>
+          <dd class="langSel" lang="ja">更新したリストおよび項目を Apple Watch App に送信します。</dd>
+          <dd class="langSel" lang="ja">Apple Watch App からの要求に応じてリストや項目を送信します。</dd>
+          <dt class="langSel" lang="ja">Apple Watch App の役割</dt>
+          <dd class="langSel" lang="ja">リストや項目を iPhone App から受け取リます。</dd>
+          <dd class="langSel" lang="ja">近々必要なリストを管理します。</dd>
+          <dd class="langSel" lang="ja">今使う項目をチェック、編集します。</dd>
+          <dd class="langSel" lang="ja">リストや項目を削除、編集しても iPhone App には反映されません。</dd>
+
+          <dt class = "langSel" lang = "en"> iPhone App Role </ dt>
+          <dd class = "langSel" lang = "en"> Register and manage all lists. </ dd>
+          <dd class = "langSel" lang = "en"> Add, edit and manage all list items. </ dd>
+          <dd class = "langSel" lang = "en"> Check to filter items that are not sent to the Apple Watch App. </ dd>
+          <dd class = "langSel" lang = "en"> Send updated lists and items to the Apple Watch App. </ dd>
+          <dd class = "langSel" lang = "en"> Submit lists and items as requested by the Apple Watch App. </ dd>
+          <dt class = "langSel" lang = "en"> Apple Watch App Role </ dt>
+          <dd class = "langSel" lang = "en"> Receive lists and items from the iPhone App. </ dd>
+          <dd class = "langSel" lang = "en"> Manage the lists you will need soon. </ dd>
+          <dd class = "langSel" lang = "en"> Check and edit the items you are using now. </ dd>
+          <dd class = "langSel" lang = "en"> Deleting or editing a list or item in the Apple Watch App does not take effect on the iPhone App. </ dd>
+          
+        </dl>
+
+        <a href="#top">↑</a>
+        <a name="makelist">
+        <h2 class="langSel" lang="ja">本 App でリストを作る方法</h2>
+        <h2 class = "langSel" lang = "en"> How to make a list with this app </h2>
+
+        <dl>
+          <dt class="langSel" lang="ja">1. リストの追加</dt>
+          <dd class="langSel" lang="ja">「新規リスト追加」の入力欄をタップして、リストの名前を入れてから「リスト追加」ボタンを押す。「登録ずみリスト」の先頭に登録したリストが表示されます。</dd>
+          <dt class="langSel" lang="ja">2. リストの選択</dt>
+          <dd class="langSel" lang="ja">「登録ずみリスト」から項目を追加・変更したいリスト名を選んでタップすると、項目編集画面に移ります。他AppのリストはこのAppではなく、該当のAppで項目編集します。</dd>
+          <dt class="langSel" lang="ja">3. 項目の追加</dt>
+          <dd class="langSel" lang="ja">項目名一覧の最後の + ボタンの右側をタップすると新しい項目名が入力でき、改行入力で新しい項目として追加できます。<dd>
+          <dd class="langSel" lang="ja">画面上部の + ボタンをタップすると先頭もしくは編集中の項目名の次に空の項目を挿入できます。<dd>
+          <dd class="langSel" lang="ja">項目名として + で始まる名前を入れると、ラベルを入力できます。</dd>
+          <dd class="langSel" lang="ja">ラベルとはチェクボタンが無い項目のことで、背景色が少し明るく目立つ表示です。項目をグルーピングするときのグループ名のラベルとして使うと便利です。</dd>
+          <dd class="langSel" lang="ja">一括登録の四角をタップするとそこに改行で区切った複数の項目名をまとめて入力できます。「各行を項目として追加」ボタンを押すとまとめて登録されます。<dd>
+          <dt class="langSel" lang="ja">項目の編集</dt>
+
+          <dd class="langSel" lang="ja">登録された項目名をタップすると項目名を編集することができます。</dd>
+          <dd class="langSel" lang="ja">項目名を左にドラッグすると削除ボタンが出てきて項目を削除することができます。</dd>
+          <dd class="langSel" lang="ja">画面右上の編集ボタンをタップすると、各項目の右側の３本線をドラッグして項目を並び替えることができます。終わったら右上の完了ボタンを押します。</dd>
+          <dd class="langSel" lang="ja">チェックした項目を一括削除したい場合は、画面上部の３本線アイコンをタップしてチェック項目の削除を選んでください。</dd>
+          <dt class="langSel" lang="ja">項目のチェック方法</dt>
+          <dd class="langSel" lang="ja">各項目のチェックボックスをタップするとチェックしたりチェックを外したりできます。</dd>
+          <dd class="langSel" lang="ja">画面の上の合計欄のチェックずみチェックボックスをタップすると全項目をまとめてチェックできます。その隣のチェックなしチェックボックスをタップすると全項目のチェックをまとめて消せます。</dd>
+          <dd class="langSel" lang="ja">画面の上の鉛筆アイコンをタップして鉛筆＋斜め線アイコンにすると、項目名をタップした時もチェックできるようになります。項目名を編集したい時は鉛筆アイコンを再度タップしてください。</dd>
+          <dt class="langSel" lang="ja">項目のラベル化の方法</dt>
+          <dd class="langSel" lang="ja">一度入力したチェック項目をラベル化するには、鉛筆＋斜め線アイコンが表示された状態で該当する項目名を長押ししてください。表示されるコンテクストメニューでラベル化を選ぶと、項目とラベルを切り替えできます。</dd>
+          <dt class="langSel" lang="ja">リスト名の変更</dt>
+          <dd class="langSel" lang="ja">左上のリスト名をタップすると、リスト名を変更することもできます。</dd>
+          <dt class="langSel" lang="ja">リスト色の変更</dt>
+          <dd class="langSel" lang="ja">画面上部の３本線アイコンをタップしてカラーを選ぶと、リストの色を変更することができます。</dd>
+          <dt class="langSel" lang="ja">項目一覧のコピー</dt>
+          <dd class="langSel" lang="ja">画面上部の３本線アイコンをタップしてテキストとしてコピーを選ぶと、項目一覧をテキストとしてクリップボードにコピーできます。</dd>
+          <dd class="langSel" lang="ja">コピーする項目として、全項目か未チェック項目かチェック済み項目かを選べます。</dd>
+          <dd class="langSel" lang="ja">コピーした項目は、他のリストの一括登録で使ったり、メールなどに貼り付けて共有したりすることができます。</dd>
+
+          <dt class = "langSel" lang = "en"> 1. Add list </dt>
+          <dd class = "langSel" lang = "en"> Tap the "Add new list" input field, enter the name of the list, and then press the "Add list" button. The registered list is displayed at the top of the "Registered list". </dd>
+          <dt class = "langSel" lang = "en"> 2. Select list </dt>
+          <dd class = "langSel" lang = "en"> Select the list name you want to add / change from the "Registered list" and tap it to move to the item edit screen. For the list of other apps, edit the item with the corresponding app instead of this app. </dd>
+          <dt class = "langSel" lang = "en"> 3. Add item </ dt>
+           <dd class = "langSel" lang = "en"> Tap the right side of the + button at the end of the item name list to enter a new item name, and enter a line feed to add it as a new item. <dd>
+           <dd class = "langSel" lang = "en"> Tap the + button at the top of the screen to insert an empty item at the beginning or after the item name being edited. <dd>
+           <dd class = "langSel" lang = "en"> You can enter a label by entering a name starting with + as the item name. </ dd>
+           <dd class = "langSel" lang = "en"> A label is an item that does not have a check button , and the background color is a little bright and conspicuous. It is useful as a label for group names when grouping items. </ dd>
+          <dd class = "langSel" lang = "en"> Tap the large square below of Collective registration to enter multiple item names separated by line breaks. Click the "Add each line as an item" button to register them all at once. <dd>
+          <dt class = "langSel" lang = "en"> Edit items </dt>
+          <dd class = "langSel" lang = "en"> You can edit the item name by tapping the registered item name. </dd>
+          <dd class = "langSel" lang = "en"> If you drag the item name to the left, the delete button will appear and you can delete the item. </dd>
+          <dd class = "langSel" lang = "en"> By tapping the edit button on the upper right of the screen, you can rearrange the items by dragging the three lines on the right side of each item. When you're done, press the Done button in the upper right. </dd>
+          <dd class = "langSel" lang = "en"> If you want to delete all the checked items at once, tap the three-line icon at the top of the screen and select Delete checked items. </ dd>
+          <dt class = "langSel" lang = "en"> How to check items </ dt>
+          <dd class = "langSel" lang = "en"> You can check or uncheck by tapping the check box of each item. </ dd>
+          <dd class = "langSel" lang = "en"> You can check all items at once by tapping the checked check box in the total column at the top of the screen. If you tap the unchecked check box next to it, you can uncheck all items at once. </ dd>
+          <dd class = "langSel" lang = "en"> If you tap the pencil icon on the screen to make it a pencil + slash line icon, you can check it even when you tap the item name. If you want to edit the item name, tap the pencil icon again. </ dd>
+          <dt class = "langSel" lang = "en"> How to label items </ dt>
+           <dd class = "langSel" lang = "en"> To switch to label from a item , press and hold the corresponding item name when the pencil + diagonal line icon displayed. On context menu , you can switch between item and label. </ dd>
+          <dt class = "langSel" lang = "en"> Rename list </dt>
+
+          <dd class = "langSel" lang = "en"> You can also change the list name by tapping the list name on the upper left. </dd>
+          <dt class = "langSel" lang = "en"> Change list color </ dt>
+           <dd class = "langSel" lang = "en"> You can change the color of the list by tapping the three-line icon at the top of the screen and selecting a color. </ dd>
+           <dt class = "langSel" lang = "en"> Copy item list </ dt>
+           <dd class = "langSel" lang = "en"> Tap the three-line icon at the top of the screen and select Copy as text to copy the item list to the clipboard as text. </ dd>
+           <dd class = "langSel" lang = "en"> You can select all items, unchecked items, or checked items to copy. </ dd>
+           <dd class = "langSel" lang = "en"> You can use the copied items for batch registration of other lists, or paste them into emails and share them. </ dd>
+
+        </dl>
+        
+        <a href="#top">↑</a>
+        <a name="outliner">
+        <h2 class="langSel" lang="ja">他App のリストを使う方法</h2>
+        <h2 class = "langSel" lang = "en"> How to use the list of other apps </h2>
+
+        <dl>
+                <dd class="langSel" lang="ja">他App として CarbonFin Outliner が使えます。</dd>
+          <dt class="langSel" lang="ja">1. Outliner でリストの作成</dt>
+          <dd class="langSel" lang="ja">CarbonFin Outliner で買い物リストを作ってください。階層があっても構いませんが、本App では階層を無くしてフラットなリストになります。</dd>
+          <dt class="langSel" lang="ja">2. Outliner でリストのPublish</dt>
+          <dd class="langSel" lang="ja">本App で使いたいリストの設定画面で「Publish」チェックを入れてください。その下の「Copy URL」を押して、リストのURLをコピーしてください。</dd>
+          <dt class="langSel" lang="ja">3. 本AppでリストのURLのペースト</dt>
+          <dd class="langSel" lang="ja">本App でリストデータURL登録の入力欄にタップを2回すると、「ペースト」と表示されるので、それをタップして コピーしたURLをペーストしてください。</dd>
+          <dt class="langSel" lang="ja">4. リストの登録</dt>
+          <dd class="langSel" lang="ja">入力欄の下のリストのリンク追加ボタンかリストの取り込みボタンを押してURLにリストを追加します。</dd>
+          <dd class="langSel" lang="ja">項目の編集やチェックを他アプリで行いたい場合はリストのリンク追加を選びます。項目の編集やチェックを本アプリで行いたい場合はリストの取り込みを選びます。</dd>
+           <dd class="langSel" lang="ja">うまく登録できれば、リストのタイトルが登録ずみタイトルに追加されます。リストが追加されない場合は、URLが間違っていないかブラウザで確認してみてください。</dd>
+
+          <dd class = "langSel" lang = "en"> CarbonFin Outliner can be used as another app. </dd>
+          <dt class = "langSel" lang = "en"> 1. Create a list with Outliner </dt>
+          <dd class = "langSel" lang = "en"> Create a shopping list with CarbonFin Outliner. It doesn't matter if there is a hierarchy, but this App eliminates the hierarchy and makes the list flat. </dd>
+          <dt class = "langSel" lang = "en"> 2. Publish list with Outliner </dt>
+          <dd class = "langSel" lang = "en"> Check "Publish" on the setting screen of the list you want to use in this App. Press "Copy URL" below it to copy the URLs in the list. </dd>
+          <dt class = "langSel" lang = "en"> 3. Paste the list URL with this App </dt>
+          <dd class = "langSel" lang = "en"> When you tap twice in the input field of list data URL registration in this App, "Paste" is displayed. Tap it and paste the copied URL. </dd>
+          <dt class = "langSel" lang = "en"> 4. List registration </dt>
+          <dd class = "langSel" lang = "en"> Click the Add Link button or the Import List button below the input field to add the list to the URL. </ dd>
+           <dd class = "langSel" lang = "en"> If you want to edit or check the items in another application, select Add link in the list. If you want to edit or check items with this application, select Import list. </ dd>
+            <dd class = "langSel" lang = "en"> If you can register successfully, the title of the list will be added to the registered title. If the list isn't added, check your browser for the wrong URL. </ dd>
+        </dl>
+              
+        <a href="#top">↑</a>
+        <a name="editlist">
+        <h2 class="langSel" lang="ja">登録ずみリスト一覧の編集方法</h2>
+        <h2 class = "langSel" lang = "en"> How to edit the registered list </h2>
+        <dl>
+          <dt class="langSel" lang="ja">リストの削除</dt>
+          <dd class="langSel" lang="ja">リスト名を左にドラッグすると削除ボタンが出てくるのでそれを押してリストを削除できます。</dd>
+          <dt class="langSel" lang="ja">リストの並び替え</dt>
+          <dd class="langSel" lang="ja">画面右上の編集ボタンを押すと、リストの右側の３本線をドラッグすることでリストを並び替えできます。</dd>
+          <dt class="langSel" lang="ja">リスト名の変更</dt>
+          <dd class="langSel" lang="ja">本Appで作ったリストは、リスト項目の編集画面で変更できます。他AppのリストはそのAppでリスト名を変更してからリスト名の右にある丸矢印を押すかリスト名長押しで出てくるコンテクストメニューで名前再読み込みを選んでリスト名を読み込み直してください。</dd>
+          
+          <dt class="langSel" lang="ja">リスト色の変更</dt>
+          <dd class="langSel" lang="ja">リスト名を長押しして出てくるコンテキストメニューで、カラーを選んで色変更できます。</dd>
+          <dt class="langSel" lang="ja">リストの Apple Watch への送信</dt>
+          <dd class="langSel" lang="ja">リスト名を長押しして出てくるコンテキストメニューで、Watch に送信を選んで任意のリストのみを Apple Watch に送信できます。</dd>
+          <dt class="langSel" lang="ja">リストの複製</dt>
+          <dd class="langSel" lang="ja">本Appで作ったリストはリスト名を長押しして出てくるコンテキストメニューで、リスト複製を選んで、内容が同じリストを追加することができます。追加したリスト名の最後には + が付きます。</dd>
+          <dt class="langSel" lang="ja">他Appリストの取り込み</dt>
+          <dd class="langSel" lang="ja">他Appのリストはリスト名を長押しして出てくるコンテキストメニューで、リスト取り込みを選んで、自Appのリストとして取り込めます。</dd>
+
+          <dt class = "langSel" lang = "en"> Delete list </dt>
+          <dd class = "langSel" lang = "en"> Drag the list name to the left and a delete button will appear. You can press it to delete the list. </dd>
+          <dt class = "langSel" lang = "en"> Sort list </dt>
+          <dd class = "langSel" lang = "en"> If you press the edit button on the upper right of the screen, you can rearrange the list by dragging the three lines on the right side of the list. </dd>
+          <dt class = "langSel" lang = "en"> Rename list </ dt>
+           <dd class = "langSel" lang = "en"> The list created by this app can be changed on the list item edit screen. For the list of other apps, change the list name in that app and then press the circle arrow to the right of the list name or press and hold the list name and select Reload Name from the context menu that appears to reload the list name. </ dd>
+          <dt class = "langSel" lang = "en"> Change list color </ dt>
+          <dd class = "langSel" lang = "en"> You can change the color by selecting a color in the context menu that appears when you press and hold the list name. </ dd>
+          <dt class = "langSel" lang = "en"> Send list to Apple Watch </ dt>
+          <dd class = "langSel" lang = "en"> In the context menu that appears when you press and hold a list name, you can select Send to Watch to send only any list to your Apple Watch. </ dd>
+          <dt class = "langSel" lang = "en"> List duplication </ dt>
+           <dd class = "langSel" lang = "en"> The list created by this app is a context menu that appears by long-pressing the list name, you can select Clone list and add a list with the same content. The added list name ends with a +.
+          <dt class = "langSel" lang = "en"> Import other App list </ dt>
+          <dd class = "langSel" lang = "en"> The list of other apps can be imported as a list of your own application by long-pressing the list name and selecting Import List from the context menu that appears. </dd>
+        </dl>
+
+        <a href="#top">↑</a>
+        <a name="settings">
+        <h2 class="langSel" lang="ja">設定画面</h2>
+        <h2 class = "langSel" lang = "en"> Settings </h2>
+        <dl>
+          <dd class="langSel" lang="ja">画面の左上の歯車アイコンをタップすると設定画面を開くことができます。</dd>
+          <dt class="langSel" lang="ja">リスト一覧画面の設定</dt>
+          <dd class="langSel" lang="ja">他Appのリストを使わないときは、URLによるリスト登録表示を消すことができます。</dd>
+          <dt class="langSel" lang="ja">項目一覧画面の設定</dt>
+          <dd class="langSel" lang="ja">同じ項目の追加を禁止することができます。</dd>
+          <dt class="langSel" lang="ja">App内購入の設定</dt>
+          <dd class="langSel" lang="ja">App内購入を行うと、５つ以上のリストや30個以上の項目を使うことができるようになります。</dd>
+
+<dd class = "langSel" lang = "en"> You can open the setting screen by tapping the gear icon on the upper left of the screen. </ dd>
+           <dt class = "langSel" lang = "en"> Lists screen settings </ dt>
+           <dd class = "langSel" lang = "en"> When you do not use the list of other apps, you can turn off the Regist List by URL field. </ dd>
+           <dt class = "langSel" lang = "en"> Item list screen settings </ dt>
+           <dd class = "langSel" lang = "en"> You can prohibit the addition of the same item. </ dd>
+           <dt class = "langSel" lang = "en"> In-app purchase settings </ dt>
+           <dd class = "langSel" lang = "en"> If you buy the in-app purchase, you will be able to use 5 or more lists and 30 or more items. </ dd>
+        </dl>
+
+
+        <a href="#top">↑</a>
+        <a name="applewatch1">
+        <h2 class="langSel" lang="ja">Apple Watch App のリスト一覧画面</h2>
+        <h2 class = "langSel" lang = "en"> Apple Watch App lists screen </h2>
+
+        <dl>
+          <dd class="langSel" lang="ja">lightlist App が起動した時の画面です。</dd>
+          <dt class="langSel" lang="ja">リストの登録</dt>
+          <dd class="langSel" lang="ja">iPhoneで登録や編集したリストは Apple Watch にも自動的に同期されます。同期されてなかった時は、リロードボタンを押して全てのリストを同期するか、iPhone で個別にリストを選んで送信します。</dd>
+          <dt class="langSel" lang="ja">リストの選択</dt>
+          <dd class="langSel" lang="ja">リスト名の一覧画面から使いたいリスト名をタップすると項目一覧画面に移ります。</dd>
+          <dt class="langSel" lang="ja">リストの編集</dt>
+          <dd class="langSel" lang="ja">リストの削除は iPhone と同じくリスト名を左ドラッグして、削除ボタンを表示して押します。リストの移動は移動したいリスト名を長押しすると上下に動かせます。リスト名の変更は iPhone で変更して同期してください。</dd>
+          <dt class="langSel" lang="ja">リストの再読み込み</dt>
+          <dd class="langSel" lang="ja">iPhone にあるリストを読み込み直すときはリロードボタンを長押ししてください。</dd>
+          <dt class="langSel" lang="ja">リストのクリア</dt>
+          <dd class="langSel" lang="ja">Apple Watch のリストを一旦全クリアする場合はクリアボタンを長押ししてください。</dd>
+          <dt class="langSel" lang="ja">コンプリケーションへの登録</dt>
+          <dd class="langSel" lang="ja">ウォッチフェースに コンプリケーションとして登録すると、ウォッチフェースから直接 Appを開けます。</dd>
+          
+          <dd class = "langSel" lang = "en"> This is the screen when the lightlist App is started. </ dd>
+          <dt class = "langSel" lang = "en"> Register list </dt>
+          <dd class = "langSel" lang = "en"> Lists registered or edited on iPhone are automatically synced to Apple Watch. If it's not synced, press the reload button to sync the entire list, or select the list individually on your iPhone and send it. </ dd>
+          <dt class = "langSel" lang = "en"> Select list </dt>
+          <dd class = "langSel" lang = "en"> Tap the list name you want to use from the list name list screen to move to the item list screen. </dd>
+          <dt class = "langSel" lang = "en"> Edit list </dt>
+          <dd class = "langSel" lang = "en"> To delete the list, drag the list name to the left as in the iPhone to display the delete button and press it. You can move the list up and down by long-pressing the list name you want to move. Please change the list name on your iPhone and synchronize. </dd>
+          <dt class = "langSel" lang = "en"> Reload list </dt>
+          <dd class = "langSel" lang = "en"> Press and hold the Reload button to reload from the iPhone list. </dd>
+          <dt class = "langSel" lang = "en"> Clear list </dt>
+          <dd class = "langSel" lang = "en"> To clear the entire list of Apple Watch once, press and hold the clear button. </ dd>
+          <dt class = "langSel" lang = "en"> Registration for complications </dt>
+          <dd class = "langSel" lang = "en"> If you register as a complication on your watch face, you can open the app directly from your watch face. </dd>
+        </dl>
+
+        <a href="#top">↑</a>
+        <a name="applewatch2">
+        <h2 class="langSel" lang="ja">Apple Watch App の項目一覧画面</h2>
+        <h2 class = "langSel" lang = "en"> Apple Watch App items screen </h2>
+        <dl>
+          <dd class="langSel" lang="ja">リスト一覧画面でリストを選んだ時に表示される画面です。</dd>
+          <dt class="langSel" lang="ja">画面の説明</dt>
+          <dd class="langSel" lang="ja">左上にはリスト一覧画面に戻るボタンがあります。また、今日の日付（月はありません）とチェックずみ項目数と全項目数があります。チェックずみ項目数は動的に更新されます。</dd>
+          <dd class="langSel" lang="ja">項目一覧の先頭にはリスト名があります。リスト名の右には項目の保持状態を示すピン表示があり、タップすると状態が切り替わります。</dd>
+          <dd class="langSel" lang="ja">ピンが暗い取り消し表示の場合は項目一覧画面に入るたびに毎回項目をダウンロードし直しますが、明るいピン表示の時は画面を抜けても項目情報を保持し続けます。</dd>
+          <dt class="langSel" lang="ja">項目のチェック</dt>
+          <dd class="langSel" lang="ja">項目名をタップするとチェックマークがついて、もう一度タップするとチェックが消えます。</dd>
+          <dt class="langSel" lang="ja">項目の削除</dt>
+          <dd class="langSel" lang="ja">項目名を左にドラッグして削除ボタンを押します。</dd>
+          <dt class="langSel" lang="ja">チェックした項目の削除</dt>
+          <dd class="langSel" lang="ja">チェックした項目の削除はチェックした項目を削除するボタンを押します。</dd>
+          <dt class="langSel" lang="ja">項目の並べ替え</dt>
+          <dd class="langSel" lang="ja">項目を長押しするとドラッグで移動できます。</dd>
+
+          <dd class = "langSel" lang = "en"> This screen is displayed when a list is selected on the lists screen. </ dd>
+          <dt class = "langSel" lang = "en"> Screen description </ dt>
+          <dd class = "langSel" lang = "en"> There is a button to return to the list list screen on the upper left. In addition, there are today's date (there is no month), the number of checked items, and the total number of items. The number of checked items is updated dynamically. </ dd>
+          <dd class = "langSel" lang = "en"> There is a list name at the beginning of the item list. To the right of the list name, there is a pin display that shows the holding status of the item, and tap it to switch the status. </ dd>
+<dd class = "langSel" lang = "en"> If the pin is dark and the cancellation display is displayed, the item is downloaded again every time the item list screen is entered, but if the pin is bright, the item information is displayed even if the screen is exited. Continue to hold. </ dd>
+          <dt class = "langSel" lang = "en"> Check item </dt>
+          <dd class = "langSel" lang = "en"> Tap the item name to check it, and tap it again to remove the check. </dd>
+          <dt class = "langSel" lang = "en"> Delete item </dt>
+          <dd class = "langSel" lang = "en"> Drag the item name to the left and press the delete button. </dd>
+          <dt class = "langSel" lang = "en"> Delete checked items </dt>
+          <dd class = "langSel" lang = "en"> To delete the checked items, press the button of delete checked items. </dd>
+          <dt class = "langSel" lang = "en"> Sort items </dt>
+          <dd class = "langSel" lang = "en"> Press and hold an item to move it by dragging. </dd>
+
+        </dl>
+
+        <a href="#top">↑</a>
+        <a name="applewatch3">
+        <h2 class="langSel" lang="ja">Apple Watch App の設定画面</h2>
+        <h2 class = "langSel" lang = "en"> Apple Watch App setting screen </h2>
+
+        <dl>
+          <dd class="langSel" lang="ja">リスト一覧画面の左上の３本線アイコンをタップして表示される画面です。</dd>
+          <dt class="langSel" lang="ja">残りの項目数を表示する</dt>
+          <dd class="langSel" lang="ja">項目一覧画面の左上の項目数表示をチェックしていない項目数にします。</dd>
+          <dt class="langSel" lang="ja">デフォルトで項目を保持する</dt>
+          <dd class="langSel" lang="ja">項目一覧画面を最初に表示した時から項目名を保持する設定にします。リスト名の右のピン表示が最初から明るいピン表示になります。</dt>
+          <dd class="langSel" lang="ja">項目を再読み込みしたいときは一度ピン表示をタップして取り消し表示にしてから、リスト一覧画面に戻ってから一度項目一覧画面に入り直してください。</dt>
+          
+          <dd class = "langSel" lang = "en"> This screen is displayed by tapping the three-line icon on the upper left of the list list screen. </ dd>
+           <dt class = "langSel" lang = "en"> Display the number of remaining items </ dt>
+           <dd class = "langSel" lang = "en"> Set the number of items in the upper left of the item list screen to the number of unchecked items. </ dd>
+           <dt class = "langSel" lang = "en"> Keep items by default </ dt>
+           <dd class = "langSel" lang = "en"> Set to retain the item name from the time the item list screen is first displayed. The pin display to the right of the list name becomes a bright pin display from the beginning. </ dt>
+           <dd class = "langSel" lang = "en"> If you want to reload the item, tap the pin display once to cancel the display, then return to the lists screen and then re-enter the item list screen. </ dt>
+        </dl>
+
+
+        <a href="#top">↑</a>
+        <a name="widget">
+        <h2 class="langSel" lang="ja">ウィジェット</h2>
+        <h2 class = "langSel" lang = "en"> Widget </h2>
+        <dl>
+          <dt class="langSel" lang="ja">ウィジェットについて</dt>
+          <dd class="langSel" lang="ja">iPhone のホーム画面にチェックリストの一部を常時表示できます。</dd>
+          <dt class="langSel" lang="ja">ウィジェットの追加方法</dt>
+          <dd class="langSel" lang="ja">iPhone のホーム画面を長押しすると画面の上の方に表示される「＋」ボタンでウィジェットの選択画面になります。ここで lightlist を選んでください。</dd>
+          <dd class="langSel" lang="ja">ウィジットのサイズを選んでください。ウィジットサイズによって表示できる項目数が変わります。</dd>
+          <dd class="langSel" lang="ja">違うリストを表示するウィジェットを複数配置することもできます。</dd>
+          <dt class="langSel" lang="ja">ウィジェットに好きなリストを追加する</dt>
+          <dd class="langSel" lang="ja">ウィジェットを長押ししてウィジェットを編集を選んでください。</dd>
+          <dd class="langSel" lang="ja">そのウィジェットに表示するリストを選べます。選べるリストは自Appで登録したリストです。他Appのリストは選択できません。</dd>
+          <dd class="langSel" lang="ja">ウィジェットの文字サイズを変更したり、ラベルを表示しないようにすることもできます。</dd>
+
+          <dt class="langSel" lang="ja">ウィジェットの表示</dt>
+          <dd class="langSel" lang="ja">ウィジェットには設定したリストのタイトルと、未チェックの項目が上から５つもしくは１２個まで表示されます。ウィジェットの背景色はリストの背景色と同じです。ウィジェットをタップすると lightlist が起動して該当のリストを表示できます。</dd>
+          
+          <dt class = "langSel" lang = "en"> About widgets </ dt>
+          <dd class = "langSel" lang = "en"> You can always display a part of the checklist on the iPhone home screen. </ dd>
+          <dt class = "langSel" lang = "en"> How to add a widget </ dt>
+          <dd class = "langSel" lang = "en"> Press and hold the iPhone home screen to display the "+" button at the top of the screen to display the widget selection screen. Select lightlist here. </ dd>
+          <dd class = "langSel" lang = "en"> Choose the size of the widget.. The number of items that can be displayed varies depending on the size. </ dd>
+          <dd class = "langSel" lang = "en"> You can also place multiple widgets that display different lists. </ dd>
+          <dt class = "langSel" lang = "en"> Add your favorite list to the widget </ dt>
+          <dd class = "langSel" lang = "en"> Press and hold the widget and select Edit Widget. </ dd>
+          <dd class = "langSel" lang = "en"> You can choose the list to display in the widget. The list that can be selected is the list registered in your own app. You cannot select the list of other apps. </ dd>
+          <dd class = "langSel" lang = "en"> You can also change the font size of the widget and hide the label. </ dd>
+          <dt class = "langSel" lang = "en"> Widget display </ dt>
+          <dd class = "langSel" lang = "en"> The widget displays the title of the set list and up to 5 or 12 unchecked items from the top. The background color of the widget is the same as the background color of the list. Tap the widget to launch lightlist and display the list. </ dd>
+        </dl>
+
+
+        <a href="#top">↑</a>
+        <a name="trouble">
+        <h2 class="langSel" lang="ja">困った時は</h2>
+        <h2 class = "langSel" lang = "en"> Trouble shooting </h2>
+        <dl>
+          <dt class="langSel" lang="ja">項目を更新しても Apple Watch に送れない</dt>
+          <dd class="langSel" lang="ja">iPhone の項目編集画面から一旦リスト一覧画面に戻ってください。そのときに項目が登録されて Apple Watch に新しい項目が反映できるようになります。</dd>
+          <dt class="langSel" lang="ja">Apple Watch にリストが全く送れない</dt>
+          <dd class="langSel" lang="ja">Apple Watch App で 「iPhone からリロード」をしても iPhone からリストが送られない時は下記の操作を試してください。</dd>
+          <dd class="langSel" lang="ja">Apple Watch のサイドボタンを押して lightlist を選んで左にドラッグして削除ボタンを押して App を一旦終わらせてください。その後に再度 Apple Watch App を起動してから Apple Watch App で リロードボタンを長押ししてみてください。</dd>
+          <dt class="langSel" lang="ja">機能制限解除の購入で画面が変わらない</dt>
+          <dd class="langSel" lang="ja">一度リスト一覧画面に戻ってから再度設定画面を表示してみてください。</dd>
+          
+          <dt class = "langSel" lang = "en"> Updated items cannot be sent to Apple Watch </ dt>
+           <dd class = "langSel" lang = "en"> Please return to the list list screen from the item edit screen of iPhone and register the item. </ dd>
+          <dt class = "langSel" lang = "en"> Unable to send list to Apple Watch at all</ dt>
+          <dd class = "langSel" lang = "en"> If the list is not sent from the iPhone even after "Reload from iPhone" on the Apple Watch App, try the following operations. </ dd>
+           <dd class = "langSel" lang = "en"> Press the side button on your Apple Watch, select lightlist and drag to the left and press the delete button to quit the app. Then launch the Apple Watch App again and try holding down his reload button in the Apple Watch App. </ dd>
+           <dt class = "langSel" lang = "en"> The screen does not change with the purchase of the function restriction release </ dt>
+           <dd class = "langSel" lang = "en"> Please return to the list list screen from the item edit screen of iPhone. At that time, the item will be registered and the new item can be reflected on Apple Watch. </ dd>
+        </dl>
+
+        <a href="#top">↑</a>
+        <a name="history">
+        <h2 class="langSel" lang="ja">バージョン履歴</h2>
+        <h2 class = "langSel" lang = "en"> Version History </h2>
+        <dl>
+          <dt class="langSel" lang="ja">ver.1.3</dt>
+          <dd class="langSel" lang="ja">項目編集画面で未チェック項目のみ、チェック済み項目のみの絞り込み表示ができるようになりました。</dd>
+          <dd class="langSel" lang="ja">リストの複製ができるようになりました。</dd>
+          <dt class="langSel" lang="ja">ver.1.2</dt>
+          <dd class="langSel" lang="ja">ウィジェットとして先頭の数個から十数個の未チェック項目をiPhoneのホーム画面上に常時表示できるようになりました。</dd>
+          <dd class="langSel" lang="ja">項目のグルーピングのためにラベルを使えるようになりました。</dd>
+          <dd class="langSel" lang="ja">項目編集画面で新しい項目を好きな位置に挿入できるようになりました。</dd>
+          <dd class="langSel" lang="ja">項目一覧をテキストとしてクリップボードにコピーして再利用できるようになりました。</dd>
+          <dd class="langSel" lang="ja">項目編集画面でチェック済み項目を一括削除できるようになりました。</dd>
+          <dd class="langSel" lang="ja">他Appのリストを後からいつでも取り込めるようになりました。</dd>
+          <dt class="langSel" lang="ja">ver.1.1</dt>
+          <dd class="langSel" lang="ja">リスト毎に好きな色を設定できるようになりました。</dd>
+          <dd class="langSel" lang="ja">項目名をタップしたときに項目名を編集する代わりにチェックできるようになりました。</dd>
+          <dd class="langSel" lang="ja">他アプリのリストのリンクを登録する代わりにリストを取り込むことができるようになりました。</dd>
+          <dt class="langSel" lang="ja">ver.1.0</dt>
+          <dd class="langSel" lang="ja">新規開発</dd>
+          
+          <dt class = "langSel" lang = "en"> ver.1.3 </ dt>
+           <dd class = "langSel" lang = "en"> It is now possible to narrow down and display only unchecked items and checked items on the item edit screen. </ dd>
+           <dd class = "langSel" lang = "en"> You can now duplicate the list. </ dd>
+           <dt class = "langSel" lang = "en"> ver.1.2 </ dt>
+           <dd class = "langSel" lang = "en"> As a widget, some of unchecked items from the top can now be displayed on the iPhone home screen at all times. </ dd>
+           <dd class = "langSel" lang = "en"> You can now use labels for grouping items. </ dd>
+           <dd class = "langSel" lang = "en"> You can now insert a new item at any position on the item edit screen. </ dd>
+           <dd class = "langSel" lang = "en"> You can now copy the item list as text to the clipboard and reuse it. </ dd>
+           <dd class = "langSel" lang = "en"> Checked items can now be deleted at once on the item edit screen. </ dd>
+           <dd class = "langSel" lang = "en"> You can now import the list of other apps at any time later. </ dd>
+           <dt class = "langSel" lang = "en"> ver.1.1 </ dt>
+           <dd class = "langSel" lang = "en"> You can now set your favorite color for each list. </ dd>
+           <dd class = "langSel" lang = "en"> You can now check the item name instead of editing it when you tap it. </ dd>
+           <dd class = "langSel" lang = "en"> You can now import the list instead of registering the link of the list of other apps. </ dd>
+           <dt class = "langSel" lang = "en"> ver.1.0 </ dt>
+           <dd class = "langSel" lang = "en"> New development </ dd>
+        </dl>
+        
+  </body>
+</html>
