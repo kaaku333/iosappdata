@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v12 2021/12/28",
+        "_version": "v11 2021/12/8",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -13,10 +13,10 @@
         "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
         "returnexpdate" : "2025-06-23",
         "parents" : "リーリー、シンシン",
-        "brothers" : "レイレイ、シャンシャン",
         "preset" : true,
         "relations" : [
                 [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
+                [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
                 [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
                 [ "東洋経済オンライン 中川さんのパンダ記事", "https://toyokeizai.net/list/author/%E4%B8%AD%E5%B7%9D_%E7%BE%8E%E5%B8%86" ],
             ],
@@ -39,10 +39,10 @@
         "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
         "returnexpdate" : "2025-06-23",
         "parents" : "リーリー、シンシン",
-        "brothers" : "シャオシャオ、シャンシャン",
         "preset" : true,
         "relations" : [
                 [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
+                [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
                 [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
                 [ "東洋経済オンライン 中川さんのパンダ記事", "https://toyokeizai.net/list/author/%E4%B8%AD%E5%B7%9D_%E7%BE%8E%E5%B8%86" ],
             ],
@@ -65,7 +65,6 @@
         "birthplace" : "Adventure World",
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、良浜",
-        "brothers" : "彩浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
         "returnexpdate" : "2025-11-22",
         "preset" : true,
         "relations" : [
@@ -95,7 +94,6 @@
         "birthplace" : "Adventure World",
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、良浜",
-        "brothers" : "楓浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
         "returnexpdate" : "2023-08-14",
         "preset" : true,
         "relations" : [
@@ -124,7 +122,6 @@
         "returndate" : "2022-06-30",
         "returnexpdate" : "2022-06-30",
         "parents" : "リーリー、シンシン",
-        "brothers" : "シャオシャオ、レイレイ",
         "preset" : true,
         "relations" : [
                 [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
@@ -153,7 +150,6 @@
         "birthplace" : "Adventure World",
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、良浜",
-        "brothers" : "楓浜、彩浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
         "returnexpdate" : "2022-09-18",
         "preset" : true,
         "relations" : [
@@ -179,7 +175,6 @@
         "birthplace" : "Adventure World",
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、良浜",
-        "brothers" : "楓浜、彩浜、結浜、桃浜、優浜、陽浜、海浜、永浜、梅浜",
         "returnexpdate" : "2021-12-02",
         "preset" : true,
         "relations" : [
@@ -205,7 +200,6 @@
         "birthplace" : "Adventure World",
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、良浜",
-        "brothers" : "楓浜、彩浜、結浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
         "returnexpdate" : "2021-12-02",
 
         "preset" : true,
@@ -231,7 +225,6 @@
         "birthplace" : "臥龍保護センター",
         "birthplaceurl" : "https://www.pandachina.jp/panda/garyu.html",
         "parents" : "灵灵、公主",
-        "brothers" : "好奇、友友、蘭香、亮亮",
         "children" : "シャオシャオ、レイレイ、シャンシャン",
         "comingdate" : "2011-02-21",
         "returndate" : "2026-02-20",
@@ -264,7 +257,6 @@
         "birthplace" : "臥龍保護センター",
         "birthplaceurl" : "https://www.pandachina.jp/panda/garyu.html",
         "parents" : "琳琳、英英",
-        "brothers" : "仙子",
         "children" : "シャオシャオ、レイレイ、シャンシャン",
         "comingdate" : "2011-02-21",
         "returndate" : "2026-02-20",
@@ -296,7 +288,6 @@
         "birthplace" : "Adventure World",
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "哈藍、梅梅",
-        "brothers" : "明浜、愛浜、幸浜、秋浜、隆浜、雄浜、奇珍、奇縁",
         "children" : "楓浜、彩浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
         "returnexpdate" : "2026-09-06",
 
@@ -322,10 +313,8 @@
         "birthplace" : "臥龍保護センター",
         "birthplaceurl" : "https://www.pandachina.jp/panda/garyu.html",
         "parents" : "振振、冬冬",
-        "brothers" : "大地、希望",
         "comingdate" : "2000-07-16",
-        "returndate" : "2022-12-31",
-        "returnexpdate" : "2022-12-31",
+        "returnexpdate" : "2020-07-16",
 
         "preset" : true,
         "relations" : [
@@ -338,7 +327,7 @@
                 [ "東洋経済デジタル 20年ぶりに中国へ帰る背景", "https://toyokeizai.net/articles/-/357872" ],
                 [ "LMaga.jp 二木さんの記事", "https://www.lmaga.jp/news/2021/09/317054/" ],
             ],
-        "note" : "メモ：神戸のお嬢さまというニックネームを持っています。手足が短くてお腹が大きく子供のような愛くるしい体型をしています。",
+        "note" : "帰国予定日：近日中（当初20年間の予定）\nメモ：神戸のお嬢さまというニックネームを持っています。手足が短くてお腹が大きく子供のような愛くるしい体型をしています。",
 
         "imageName": "tantan1",
     },
@@ -356,7 +345,6 @@
         "birthplace" : "北京動物園",
         "birthplaceurl" : "https://ja.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E5%8B%95%E7%89%A9%E5%9C%92",
         "parents" : "良良、永永",
-        "brothers" : "園園、吉妮",
         "children" : "楓浜、彩浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜、雄浜、秋浜、隆浜、幸浜、明浜、愛浜",
         "comingdate" : "1994-09-06",
         "returnexpdate" : "2026-09-06",
