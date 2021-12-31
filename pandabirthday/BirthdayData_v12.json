@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v13 2021/12/31",
+        "_version": "v12 2021/12/28",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -20,6 +20,7 @@
                 [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
                 [ "東洋経済オンライン 中川さんのパンダ記事", "https://toyokeizai.net/list/author/%E4%B8%AD%E5%B7%9D_%E7%BE%8E%E5%B8%86" ],
             ],
+
         "note" : "メモ：上野動物園の双子パンダのオスの子です。名前は漢字で暁暁と書きます。夜明けの光が差し明るくなるという意味です。毎週火曜日に公式 YouTube チャンネルでレイレイやシンシンとのかわいい絡みが見れます。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "ichigounigou3",
@@ -230,7 +231,7 @@
         "birthplace" : "臥龍保護センター",
         "birthplaceurl" : "https://www.pandachina.jp/panda/garyu.html",
         "parents" : "灵灵、公主",
-        "brothers" : "好奇、友友、麗麗",
+        "brothers" : "好奇、友友、蘭香、亮亮",
         "children" : "シャオシャオ、レイレイ、シャンシャン",
         "comingdate" : "2011-02-21",
         "returndate" : "2026-02-20",
@@ -263,7 +264,7 @@
         "birthplace" : "臥龍保護センター",
         "birthplaceurl" : "https://www.pandachina.jp/panda/garyu.html",
         "parents" : "琳琳、英英",
-        "brothers" : "蘭香、亮亮、仙子",
+        "brothers" : "仙子",
         "children" : "シャオシャオ、レイレイ、シャンシャン",
         "comingdate" : "2011-02-21",
         "returndate" : "2026-02-20",
