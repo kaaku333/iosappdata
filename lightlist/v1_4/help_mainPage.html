@@ -457,7 +457,9 @@
           <dd class="langSel" lang="ja">リスト一覧画面でリストを選んだ時に表示される画面です。</dd>
           <dt class="langSel" lang="ja">画面の説明</dt>
           <dd class="langSel" lang="ja">左上にはリスト一覧画面に戻るボタンがあります。また、今日の日付（月はありません）とチェックずみ項目数と全項目数があります。チェックずみ項目数は動的に更新されます。</dd>
-          <dd class="langSel" lang="ja">項目一覧の先頭にはリスト名があります。リスト名の右には項目の保持状態を示すピン表示があり、タップすると状態が切り替わります。</dd>
+          <dd class="langSel" lang="ja">項目一覧の先頭にはリスト名があります。リスト名の右にあるアイコンは、設定画面の「常に項目を保持する」設定の状態に応じて表示が変わります。</dd>
+          <dd class="langSel" lang="ja">「常に項目を保持する」設定がONの時は再読み込みボタンが表示され、項目を再読み込みしたいときにそれを押します。</dd>
+          <dd class="langSel" lang="ja">「常に項目を保持する」設定がOFFの時はピンボタンが表示され、タップすると状態が切り替わります。</dd>
           <dd class="langSel" lang="ja">ピンが暗い取り消し表示の場合は項目一覧画面に入るたびに毎回項目をダウンロードし直しますが、明るいピン表示の時は画面を抜けても項目情報を保持し続けます。</dd>
           <dt class="langSel" lang="ja">項目のチェック</dt>
           <dd class="langSel" lang="ja">項目名をタップするとチェックマークがついて、もう一度タップするとチェックが消えます。</dd>
@@ -471,8 +473,10 @@
           <dd class = "langSel" lang = "en"> This screen is displayed when a list is selected on the lists screen. </ dd>
           <dt class = "langSel" lang = "en"> Screen description </ dt>
           <dd class = "langSel" lang = "en"> There is a button to return to the list list screen on the upper left. In addition, there are today's date (there is no month), the number of checked items, and the total number of items. The number of checked items is updated dynamically. </ dd>
-          <dd class = "langSel" lang = "en"> There is a list name at the beginning of the item list. To the right of the list name, there is a pin display that shows the holding status of the item, and tap it to switch the status. </ dd>
-<dd class = "langSel" lang = "en"> If the pin is dark and the cancellation display is displayed, the item is downloaded again every time the item list screen is entered, but if the pin is bright, the item information is displayed even if the screen is exited. Continue to hold. </ dd>
+          <dd class = "langSel" lang = "en"> There is a list name at the beginning of the item list. The icon to the right of the list name changes depending on the status of the "Always hold items" setting on the setting screen. </ dd>
+           <dd class = "langSel" lang = "en"> When the "Keep items always" setting is ON, the reload button is displayed, and when you want to reload the item, press it. </ dd>
+           <dd class = "langSel" lang = "en"> When the "Keep items always" setting is OFF, the pin button is displayed, and tap it to switch the state. </ dd>
+           <dd class = "langSel" lang = "en"> If the pin is dark and the cancellation display is displayed, the item is downloaded again every time the item list screen is entered, but if the pin is bright, the item information is displayed even if the screen is exited. Continue to hold. </ dd>
           <dt class = "langSel" lang = "en"> Check item </dt>
           <dd class = "langSel" lang = "en"> Tap the item name to check it, and tap it again to remove the check. </dd>
           <dt class = "langSel" lang = "en"> Delete item </dt>
@@ -492,19 +496,20 @@
         <dl>
           <dd class="langSel" lang="ja">リスト一覧画面の左上の３本線アイコンをタップして表示される画面です。</dd>
           <dt class="langSel" lang="ja">残りの項目数を表示する</dt>
-          <dd class="langSel" lang="ja">項目一覧画面の左上の項目数表示をチェックしていない項目数にします。</dd>
-          <dt class="langSel" lang="ja">デフォルトで項目を保持する</dt>
-          <dd class="langSel" lang="ja">項目一覧画面を最初に表示した時から項目名を保持する設定にします。リスト名の右のピン表示が最初から明るいピン表示になります。</dt>
-          <dd class="langSel" lang="ja">項目を再読み込みしたいときは一度ピン表示をタップして取り消し表示にしてから、リスト一覧画面に戻ってから一度項目一覧画面に入り直してください。</dt>
+          <dd class="langSel" lang="ja">ONの場合、項目一覧画面の左上の項目数表示にチェックしていない項目数を表示します。</dd>
+          <dd class="langSel" lang="ja">OFFの場合、合計数とチェック済み項目数を表示します。</dd>
+          <dt class="langSel" lang="ja">常に項目を保持する</dt>
+          <dd class="langSel" lang="ja">ONの場合、項目一覧画面から抜けても常に項目状態を保持する設定にします。項目一覧画面の項目名の右の再読み込みボタンを押すと、項目を再読み込みできます。</dt>
+          <dd class="langSel" lang="ja">OFFの場合、リスト毎に項目一覧画面から抜けた時に項目状態を保持するかどうかを選択できる設定にします。項目一覧画面の項目名の右のピンボタンを押して、保持と非保持を切り替えられます。</dt>
           
           <dd class = "langSel" lang = "en"> This screen is displayed by tapping the three-line icon on the upper left of the list list screen. </ dd>
            <dt class = "langSel" lang = "en"> Display the number of remaining items </ dt>
-           <dd class = "langSel" lang = "en"> Set the number of items in the upper left of the item list screen to the number of unchecked items. </ dd>
-           <dt class = "langSel" lang = "en"> Keep items by default </ dt>
-           <dd class = "langSel" lang = "en"> Set to retain the item name from the time the item list screen is first displayed. The pin display to the right of the list name becomes a bright pin display from the beginning. </ dt>
-           <dd class = "langSel" lang = "en"> If you want to reload the item, tap the pin display once to cancel the display, then return to the lists screen and then re-enter the item list screen. </ dt>
+          <dd class = "langSel" lang = "en"> When ON, the number of items that are not checked in the item number display on the upper left of the item list screen is displayed. </ dd>
+          <dd class = "langSel" lang = "en"> If OFF, the total number and the number of checked items are displayed. </ dd>
+          <dt class = "langSel" lang = "en"> Keep items always </ dt>
+          <dd class = "langSel" lang = "en"> When ON, set to always keep the item status even if you exit the item list screen. You can reload the item by pressing the reload button to the right of the item name on the item list screen. </ dt>
+          <dd class = "langSel" lang = "en"> When OFF, set whether to keep the item status when exiting the item list screen for each list. You can switch between holding and non-holding by pressing the pin button to the right of the item name on the item list screen. </ dt>
         </dl>
-
 
         <a href="#top">↑</a>
         <a name="widget">
@@ -566,7 +571,7 @@
            <dd class = "langSel" lang = "en"> Please complete the sort editing once and then press the edit button again. </ dd>
         </dl>
 
-        <a href="#top">↑</a>
+        <a href="#top">↑🔝</a>
         <a name="history">
         <h2 class="langSel" lang="ja">バージョン履歴</h2>
         <h2 class = "langSel" lang = "en"> Version History </h2>
@@ -575,6 +580,7 @@
           <dd class="langSel" lang="ja">項目編集画面のコンテキストメニューで任意の項目の次に項目追加できるようになりました。</dd>
           <dd class="langSel" lang="ja">項目編集画面のオプションメニューで同じ項目名の追加の許可不許可を設定できるようになりました。</dd>
           <dd class="langSel" lang="ja">設定画面でこのAppのバージョンを確認したり、AppStoreのページを開いたり、App作者にフィードバックすることができるようになりました。</dd>
+          <dd class="langSel" lang="ja">Apple Watchで常に項目を保持する設定の時はピンボタンの代わりに再読み込みボタンを表示するようにして、再読み込みがやりやすくなりました。</dd>
           <dt class="langSel" lang="ja">ver.1.3</dt>
           <dd class="langSel" lang="ja">項目編集画面で未チェック項目のみやチェック済み項目のみの絞り込み表示ができるようになりました。</dd>
           <dd class="langSel" lang="ja">項目表示画面で任意のラベルの下の項目を一括チェック、クリアできるようになりました</dd>
@@ -598,6 +604,7 @@
            <dd class = "langSel" lang = "en"> You can now add the next item in the context menu of the item edit screen. </ dd>
            <dd class = "langSel" lang = "en"> You can now set whether to allow or disallow additional items with the same item name in the option menu of the item edit screen. </ dd>
            <dd class = "langSel" lang = "en"> You can now check the version of this app on the settings screen, open the AppStore page, and give feedback to the app author. </ dd>
+           <dd class = "langSel" lang = "en"> When setting to always keep items on Apple Watch, the reload button is displayed instead of the pin button, making reloading easier. </ dd>
           <dt class = "langSel" lang = "en"> ver.1.3 </ dt>
            <dd class = "langSel" lang = "en"> It is now possible to narrow down and display only unchecked items or checked items on the item edit screen. </ dd>
            <dd class = "langSel" lang = "en"> Items under any label can now be checked and cleared at once on the item display screen </ dd>
