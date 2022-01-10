@@ -459,7 +459,7 @@
           <dd class="langSel" lang="ja">左上にはリスト一覧画面に戻るボタンがあります。また、今日の日付（月はありません）とチェックずみ項目数と全項目数があります。チェックずみ項目数は動的に更新されます。</dd>
           <dd class="langSel" lang="ja">項目一覧の先頭にはリスト名があります。リスト名の右にあるアイコンは、設定画面の「常に項目を保持する」設定の状態に応じて表示が変わります。</dd>
           <dd class="langSel" lang="ja">「常に項目を保持する」設定がONの時は再読み込みボタンが表示され、項目を再読み込みしたいときにそれを押します。</dd>
-          <dd class="langSel" lang="ja">項目のチェック状態を維持したまま再読み込みするか、チェック状態を無視して再読み込みするか選びます。</dd>
+          <dd class="langSel" lang="ja">すでに項目のチェックを開始していたら項目のチェック状態を維持したままを選び、最初からチェクをやり直すなら全置き換えを選んでください。</dd>
           <dd class="langSel" lang="ja">「常に項目を保持する」設定がOFFの時はピンボタンが表示され、タップすると状態が切り替わります。</dd>
           <dd class="langSel" lang="ja">ピンが暗い取り消し表示の場合は項目一覧画面に入るたびに毎回項目をダウンロードし直しますが、明るいピン表示の時は画面を抜けても項目情報を保持し続けます。</dd>
           <dt class="langSel" lang="ja">項目のチェック</dt>
@@ -476,7 +476,7 @@
           <dd class = "langSel" lang = "en"> There is a button to return to the list list screen on the upper left. In addition, there are today's date (there is no month), the number of checked items, and the total number of items. The number of checked items is updated dynamically. </ dd>
           <dd class = "langSel" lang = "en"> There is a list name at the beginning of the item list. The icon to the right of the list name changes depending on the status of the "Keep items always" setting on the setting screen. </ dd>
            <dd class = "langSel" lang = "en"> When the "Keep items always" setting is ON, the reload button is displayed, and when you want to reload the item, press it. </ dd>
-           <dd class = "langSel" lang = "en"> Select whether to reload while maintaining the checked state of the item, or to ignore the checked state and reload. </ dd>
+           <dd class = "langSel" lang = "en"> If you have already started checking items, select Keep checked state, and if you want to start over from the beginning, select Replace All. </ dd>
            <dd class = "langSel" lang = "en"> When the "Keep items always" setting is OFF, the pin button is displayed, and tap it to switch the state. </ dd>
            <dd class = "langSel" lang = "en"> If the pin is dark and the cancellation display is displayed, the item is downloaded again every time the item list screen is entered, but if the pin is bright, the item information is displayed even if the screen is exited. Continue to hold. </ dd>
           <dt class = "langSel" lang = "en"> Check item </dt>
@@ -581,6 +581,7 @@
           <dt class="langSel" lang="ja">ver.1.5</dt>
           <dd class="langSel" lang="ja">Apple Watch のリスト一覧画面で再読み込みした際に iPhone側のリスト順に並ばない場合があったのを修正しました。</dd>
           <dd class="langSel" lang="ja">Apple Watch の項目一覧画面の再読み込み時に、Apple Watch で設定したチェック状態を維持するオプションを追加しました。</dd>
+          <dd class="langSel" lang="ja">項目編集画面のメニューでApple Watch に送信した時に、Apple Watch でチェックした状態を維持するオプションのダイアログを出すようにしました。</dd>
           <dt class="langSel" lang="ja">ver.1.4</dt>
           <dd class="langSel" lang="ja">項目編集画面のコンテキストメニューで任意の項目の次に項目追加できるようになりました。</dd>
           <dd class="langSel" lang="ja">項目編集画面のオプションメニューで同じ項目名の追加の許可不許可を設定できるようになりました。</dd>
@@ -608,6 +609,7 @@
           <dt class="langSel" lang="en">ver.1.5</dt>
           <dd class = "langSel" lang = "en">Fixed an issue where reloading the list on Apple Watch sometimes did not line up in the same order on iPhone.　</ dd>
           <dd class = "langSel" lang = "en"> Added an option that keeps the checked state of items on the Apple Watch when the reload button is pressed. </ dd>
+          <dd class = "langSel" lang = "en"> When sending items to Apple Watch in the menu of the item edit screen, the option dialog to keep the checked state on Apple Watch is displayed. </ dd>
           <dt class = "langSel" lang = "en"> ver.1.4 </ dt>
            <dd class = "langSel" lang = "en"> You can now add the next item in the context menu of the item edit screen. </ dd>
            <dd class = "langSel" lang = "en"> You can now set whether to allow or disallow additional items with the same item name in the option menu of the item edit screen. </ dd>
