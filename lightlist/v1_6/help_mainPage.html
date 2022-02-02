@@ -264,8 +264,8 @@
           
           <dt class="langSel" lang="ja">項目の絞り込み表示の方法</dt>
           <dd class="langSel" lang="ja">画面の上の合計欄の未チェック項目数をタップすると、未チェック項目とラベルだけに絞り込み表示できます。チェック済み項目数をタップするとチェック項目とラベルだけの絞り込み表示します。元の表示に戻すには合計数をタップしてください。</dd>
-           <dd class="langSel" lang="ja">>画面上部の３本線アイコンをタップしてオプションを選ぶと、絞り込み表示した時に常に全ラベルを表示するかどうか選べます。</dd>
-          
+           <dd class="langSel" lang="ja">画面上部の３本線アイコンをタップしてオプションを選ぶと、絞り込み表示した時に常に全ラベルを表示するかどうか選べます。</dd>
+          <dd class="langSel" lang="ja">オプションメニューでは、項目編集画面を抜けても絞り込み状態を保持するか選べます。</dd>
           <dt class="langSel" lang="ja">項目のラベル化の方法</dt>
           <dd class="langSel" lang="ja">一度入力したチェック項目をラベル化するには、鉛筆＋斜め線アイコンが表示された状態で該当する項目名を長押ししてください。表示されるコンテクストメニューでラベル化を選ぶと、通常の項目とラベルを切り替えできます。</dd>
           <dt class="langSel" lang="ja">リスト名の変更</dt>
@@ -303,6 +303,7 @@
           <dt class = "langSel" lang = "en"> How to narrow down the items </ dt>
            <dd class = "langSel" lang = "en"> Tap the number of unchecked items in the total column at the top of the screen to narrow down and display only the unchecked items and labels. Tap the number of checked items to narrow down and display only the checked items and labels. Tap the total number to return to the original display. </ dd>
            <dd class = "langSel" lang = "en" > Tap the three-line icon at the top of the screen and select the option to select whether to always display all labels when narrowed down. </ dd>
+           <dd class = "langSel" lang = "en"> In the option menu, you can select whether to keep the narrow down state even if you exit the item edit screen. </ dd>
            
           <dt class = "langSel" lang = "en"> How to label items </ dt>
            <dd class = "langSel" lang = "en"> To switch to label from a item , press and hold the corresponding item name when the pencil + diagonal line icon displayed. On context menu , you can switch between normal item and label. </ dd>
@@ -508,6 +509,10 @@
           <dt class="langSel" lang="ja">チェック項目を削除時にiPhoneに反映する</dt>
           <dd class="langSel" lang="ja">ONの場合、チェック項目を削除すると iPhone にその項目のチェック状態を反映します。</dd>
           <dd class="langSel" lang="ja">OFFの場合、チェック項目を削除しても iPhone のその項目のチェック状態は変わりません。</dd>
+          <dt class="langSel" lang="ja">未チェックなら再読み込み確認しない</dt>
+          <dd class="langSel" lang="ja">ONの場合、Apple Watch で何もチェックしていないリストは確認なしでリロードされます。</dd>
+          <dd class="langSel" lang="ja">OFFの場合、Apple Watch で何もチェックしていないリストでもリロード時は確認します。</dd>
+
 
           <dd class = "langSel" lang = "en"> This screen is displayed by tapping the three-line icon on the upper left of the list list screen. </ dd>
            <dt class = "langSel" lang = "en"> Display the number of remaining items </ dt>
@@ -519,6 +524,9 @@
           <dt class = "langSel" lang = "en"> Reflect check items on iPhone when deleted </ dt>
            <dd class = "langSel" lang = "en"> If the check item is deleted, the check status of the item will be reflected on the iPhone. </ dd>
            <dd class = "langSel" lang = "en"> If the check item is deleted, the check status of that item on the iPhone will not change. </ dd>
+           <dt class = "langSel" lang = "en"> Reload with no confirmation when unchecked </ dt>
+           <dd class = "langSel" lang = "en"> If ON, unchecked lists on your Apple Watch will be reloaded without confirmation. </ dd>
+           <dd class = "langSel" lang = "en"> If OFF, even a list that has not been checked on the Apple Watch will be checked when reloading. </ dd>
         </dl>
 
         <a href="#top">🔝</a>
@@ -587,8 +595,10 @@
         <h2 class = "langSel" lang = "en"> Version History </h2>
         <dl>
           <dt class="langSel" lang="ja">ver.1.6</dt>
+          <dd class="langSel" lang="ja">項目編集画面のオプションメニューで絞り込み状態の保持を設定できるようになりました。</dd>
           <dd class="langSel" lang="ja">Apple Watch でチェックした項目を削除したときに、iPhone側の項目にチェック状態を反映できるようになりました。</dd>
           <dd class="langSel" lang="ja">iPhone App で複数のリストを更新した時に Apple Watch App が操作中でなくてもリストが反映されるようになりました。</dd>
+          <dd class="langSel" lang="ja">iPhone App で項目を変更した特に、Apple Watch で項目にチェックしていない時は確認無しにリロードできるようになりました。</dd>
           <dt class="langSel" lang="ja">ver.1.5</dt>
           <dd class="langSel" lang="ja">Apple Watch のリスト一覧画面で再読み込みした際に iPhone側のリスト順に並ばない場合があったのを修正しました。</dd>
           <dd class="langSel" lang="ja">Apple Watch の項目一覧画面の再読み込み時に、Apple Watch のチェックを継続するか最初からチェックを行うか選択できるようにしました。</dd>
@@ -618,8 +628,10 @@
           <dd class="langSel" lang="ja">新規開発</dd>
           
           <dt class = "langSel" lang = "en"> ver.1.6 </ dt>
+          <dd class = "langSel" lang = "en"> It is now possible to set the retention of the narrow down state in the option menu of the item edit screen. </ dd>
           <dd class = "langSel" lang = "en"> When you delete the checked item on Apple Watch, the checked state can be reflected in the item on the iPhone side. </ dd>
           <dd class = "langSel" lang = "en"> When updating multiple lists in the iPhone App, the lists are now reflected even when the Apple Watch App is not in operation. </ dd>
+          <dd class = "langSel" lang = "en"> When changed the item in the iPhone App, if items are not checked on the Apple Watch, it can be reloaded without confirmation. </ dd>
           <dt class="langSel" lang="en">ver.1.5</dt>
           <dd class = "langSel" lang = "en">Fixed an issue where reloading the list on Apple Watch sometimes did not line up in the same order on iPhone. </ dd>
           <dd class = "langSel" lang = "en"> When reloading the item list screen of Apple Watch, you can now select whether to continue checking on Apple Watch or start checking. </ dd>
