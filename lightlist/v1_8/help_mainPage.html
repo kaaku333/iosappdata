@@ -5,7 +5,7 @@
     <title>help_mainPage</title>
     <style type="text/css">
     #body {
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica", "ヒラギノ角ゴ ProN W3";
+      font-family: "Helvetica", "ヒラギノ角ゴ ProN W3";
       font-size: 3vmax;
       background-color: #777777;
       color: #333333
@@ -31,9 +31,10 @@
     }
     
     img {
-      width : 3%;
+      width : 4%;
+      background: white;
     }
-    
+
     a:link, a:visited {
           color: #333333;
           background: #c2edff;
@@ -41,6 +42,83 @@
           text-decoration: none;
     }
 
+    .icon_white {
+      display: inline-block;
+      margin: 0 5 0 5;
+      width: 1.5em;
+      height: 1.5em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #EEEEEE;
+    }
+    .icon_black {
+      display: inline-block;
+      margin: 0 5 0 5;
+      width: 1.5em;
+      height: 1.5em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #111111;
+    }
+    .icon_blue {
+      display: inline-block;
+      margin: 0 5 0 5;
+      width: 1.5em;
+      height: 1.5em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #5555FF;
+    }
+    .icon_darkblue {
+      display: inline-block;
+      margin: 0 5 0 5;
+      width: 1.5em;
+      height: 1.5em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #2222FF;
+    }
+
+    .mask-pencil {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil@2x.png);
+    }
+    .mask-pencil_slash {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.slash@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.slash@2x.png);
+    }
+    .mask-line_3_h {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/line.3.horizontal@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/line.3.horizontal@2x.png);
+    }
+    .mask-gear {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/gear@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/gear@2x.png);
+    }
+    .mask-arrow_up_down {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrow.up.arrow.down.circle@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrow.up.arrow.down.circle@2x.png);
+    }
+    .mask-tag {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/tag@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/tag@2x.png);
+    }
+    .mask-plus {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/plus@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/plus@2x.png);
+    }
+    .mask-info {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/info.circle@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/info.circle@2x.png);
+    }
+    .mask-square {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/square@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/square@2x.png);
+    }
+    .mask-checkmark {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark@2x.png);
+    }
 
     dl  {
       padding: 10px 20px 20px 30px;
@@ -113,10 +191,15 @@
         function colorModeSelect(colorMode){
           if(colorMode == 'dark'){
             document.body.style.color = '#eeeeee';          
-            document.body.style.backgroundColor = '#444444';  
+            document.body.style.backgroundColor = '#444444';
           }else{
             document.body.style.color = '#444444';          
             document.body.style.backgroundColor = '#eeeeee';
+            var elements = document.getElementsByTagName("div");
+            for (var i = 0 ; i < elements.length; i++) {
+                elements[i].classList.replace("icon_white", "icon_black")
+                elements[i].classList.replace("icon_blue", "icon_darkblue")
+            }
           }
         }
     // -->
@@ -137,7 +220,7 @@
  -->
 
     <a name="top">
-
+test1<div class="pencil"></div>test2
 
     <h3 class="langSel" lang="ja">目次</h3>
     <h3 class = "langSel" lang = "en"> Table of Contents </h3>
@@ -261,8 +344,8 @@
           <dt class="langSel" lang="ja">項目のチェック方法</dt>
           <dd class="langSel" lang="ja">各項目のチェックボックスをタップするとチェックしたりチェックを外したりできます。</dd>
           <dd class="langSel" lang="ja">画面の上の鉛筆アイコンをタップして鉛筆＋斜め線アイコンにすると、項目名をタップした時もチェックできるようになります。項目名を編集したい時は鉛筆アイコンを再度タップしてください。</dd>
-          <dd class="langSel" lang="ja">画面上部の３本線アイコン<a class="sf"><!--􀌇 three lines --></a>をタップしてチェックとクリアを選ぶと、全項目をまとめてチェックしたり、全項目のチェックをまとめて消したりできます。チェック状態を反転することもできます。</dd>
-          <dd class="langSel" lang="ja">画面の上の鉛筆アイコン<img src="pencil@2x.png"><font face="SF Pro"><!--􀈊 pencil --></font>が鉛筆＋斜め線アイコン<font face="SF Pro"><!--􀈍 pencil.slash --></font>の時、ラベルを長押しして出てくるコンテキストメニューで、次のラベルまでの間にある項目をまとめてチェックしたりクリアしたりできます。</dd>
+          <dd class="langSel" lang="ja">画面上部の３本線アイコン<div class="inline-icon pencil"></div>をタップしてチェックとクリアを選ぶと、全項目をまとめてチェックしたり、全項目のチェックをまとめて消したりできます。チェック状態を反転することもできます。</dd>
+          <dd class="langSel" lang="ja">画面の上の鉛筆アイコン<img src="pencil@2x.png"><font face="SF Pro"><!--􀈊 pencil --></font>が鉛筆＋斜め線アイコン<font face="SF Pro"><!--􀈍 pencil.slash --></font><img src="pencil.slash@2x.png" width="4%">の時、ラベルを長押しして出てくるコンテキストメニューで、次のラベルまでの間にある項目をまとめてチェックしたりクリアしたりできます。</dd>
           
           <dt class="langSel" lang="ja">項目の絞り込み表示の方法</dt>
           <dd class="langSel" lang="ja">画面の上の合計欄の未チェックアイコンをタップすると、未チェック項目とラベルだけに絞り込み表示できます。チェック済みアイコンをタップするとチェック項目とラベルだけの絞り込み表示します。またラベルアイコンをタップするとラベルだけの絞り込み表示もできます。全項目表示に戻すには合計数をタップしてください。</dd>
