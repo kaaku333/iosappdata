@@ -44,80 +44,84 @@
 
     .icon_white {
       display: inline-block;
-      margin: 0 5 0 5;
-      width: 1.5em;
-      height: 1.5em;
+      margin: 0 7 0 7;
+      width: 1.2em;
+      height: 1.2em;
       mask: no-repeat center / contain;
       -webkit-mask: no-repeat center / contain ;
       background: #EEEEEE;
     }
     .icon_black {
       display: inline-block;
-      margin: 0 5 0 5;
-      width: 1.5em;
-      height: 1.5em;
+      margin: 0 7 0 7;
+      width: 1.2em;
+      height: 1.2em;
       mask: no-repeat center / contain;
       -webkit-mask: no-repeat center / contain ;
       background: #111111;
     }
     .icon_blue {
       display: inline-block;
-      margin: 0 5 0 5;
-      width: 1.5em;
-      height: 1.5em;
+      margin: 0 7 0 7;
+      width: 1.2em;
+      height: 1.2em;
       mask: no-repeat center / contain;
       -webkit-mask: no-repeat center / contain ;
-      background: #5555FF;
+      background: #7788FF;
     }
     .icon_darkblue {
       display: inline-block;
-      margin: 0 5 0 5;
-      width: 1.5em;
-      height: 1.5em;
+      margin: 0 7 0 7;
+      width: 1.2em;
+      height: 1.2em;
       mask: no-repeat center / contain;
       -webkit-mask: no-repeat center / contain ;
       background: #2222FF;
     }
 
-    .mask-pencil {
+    .mask_pencil {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil@2x.png);
     }
-    .mask-pencil_slash {
+    .mask_pencil_slash {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.slash@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.slash@2x.png);
     }
-    .mask-line_3_h {
+    .mask_line_3 {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/line.3.horizontal@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/line.3.horizontal@2x.png);
     }
-    .mask-gear {
+    .mask_gear {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/gear@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/gear@2x.png);
     }
-    .mask-arrow_up_down {
+    .mask_arrow_up_down {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrow.up.arrow.down.circle@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrow.up.arrow.down.circle@2x.png);
     }
-    .mask-tag {
+    .mask_tag {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/tag@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/tag@2x.png);
     }
-    .mask-plus {
+    .mask_plus {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/plus@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/plus@2x.png);
     }
-    .mask-info {
+    .mask_info {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/info.circle@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/info.circle@2x.png);
     }
-    .mask-square {
+    .mask_square {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/square@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/square@2x.png);
     }
-    .mask-checkmark {
-         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark@2x.png);
-         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark@2x.png);
+    .mask_checkmark {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.square.fill@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.square.fill@2x.png);
+    }
+    .mask_arrow_clockwise {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrow.clockwise@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrow.clockwise@2x.png);
     }
 
     dl  {
@@ -220,8 +224,6 @@
  -->
 
     <a name="top">
-test1<div class="pencil"></div>test2
-
     <h3 class="langSel" lang="ja">目次</h3>
     <h3 class = "langSel" lang = "en"> Table of Contents </h3>
     <dl>
@@ -330,42 +332,42 @@ test1<div class="pencil"></div>test2
           <dd class="langSel" lang="ja">「登録ずみリスト」から項目を追加・変更したいリスト名を選んでタップすると、項目編集画面に移ります。他AppのリストはこのAppではなく、該当のAppで項目編集します。</dd>
           <dt class="langSel" lang="ja">3. 項目の追加</dt>
           <dd class="langSel" lang="ja">項目名一覧の最後の + ボタンの右側をタップすると新しい項目名が入力でき、改行入力で新しい項目として追加できます。<dd>
-          <dd class="langSel" lang="ja">画面上部の + ボタンをタップすると先頭もしくは編集中の項目名の次に空の項目を挿入できます。<dd>
-          <dd class="langSel" lang="ja">項目名として + で始まる名前を入れると、ラベルを入力できます。</dd>
+          <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_plus"></div> ボタンをタップすると先頭もしくは編集中の項目名の次に空の項目を挿入できます。<dd>
+          <dd class="langSel" lang="ja">項目名として + で始まる名前を入力すると、その項目をラベルにできます。</dd>
           <dd class="langSel" lang="ja">ラベルとはチェクボタンが無い項目のことで、背景色が少し明るく目立つ表示です。項目をグルーピングするときのグループ名のラベルとして使うと便利です。</dd>
-          <dd class="langSel" lang="ja">一括登録の四角をタップするとそこに改行で区切った複数の項目名をまとめて入力できます。「各行を項目として追加」ボタンを押すとまとめて登録されます。<dd>
+          <dd class="langSel" lang="ja">一括登録の枠内をタップするとそこに改行で区切った複数の項目名をまとめて入力できます。「各行を項目として追加」ボタンを押すとまとめて登録されます。<dd>
           
           <dt class="langSel" lang="ja">項目の編集</dt>
           <dd class="langSel" lang="ja">登録された項目名をタップすると項目名を編集することができます。</dd>
           <dd class="langSel" lang="ja">項目名を左にドラッグすると削除ボタンが出てきて項目を削除することができます。</dd>
-          <dd class="langSel" lang="ja">画面右上の上下矢印ボタンをタップすると、各項目の右側の３本線をドラッグして項目を並び替えることができます。終わったら再び上下矢印ボタンを押します。</dd>
-          <dd class="langSel" lang="ja">チェックした項目を一括削除したい場合は、画面上部の３本線アイコンをタップしてチェック項目の削除を選んでください。</dd>
+          <dd class="langSel" lang="ja">画面右上の <div class="icon_blue mask_arrow_up_down"></div> をタップすると、各項目の右側の <div class="icon_white mask_line_3"></div> をドラッグして項目を並び替えることができます。終わったら再び <div class="icon_blue mask_arrow_up_down"></div> を押します。</dd>
+          <dd class="langSel" lang="ja">チェックした項目を一括削除したい場合は、画面上部の <div class="icon_blue mask_line_3"></div> をタップしてチェック項目の削除を選んでください。</dd>
           
           <dt class="langSel" lang="ja">項目のチェック方法</dt>
-          <dd class="langSel" lang="ja">各項目のチェックボックスをタップするとチェックしたりチェックを外したりできます。</dd>
-          <dd class="langSel" lang="ja">画面の上の鉛筆アイコンをタップして鉛筆＋斜め線アイコンにすると、項目名をタップした時もチェックできるようになります。項目名を編集したい時は鉛筆アイコンを再度タップしてください。</dd>
-          <dd class="langSel" lang="ja">画面上部の３本線アイコン<div class="inline-icon pencil"></div>をタップしてチェックとクリアを選ぶと、全項目をまとめてチェックしたり、全項目のチェックをまとめて消したりできます。チェック状態を反転することもできます。</dd>
-          <dd class="langSel" lang="ja">画面の上の鉛筆アイコン<img src="pencil@2x.png"><font face="SF Pro"><!--􀈊 pencil --></font>が鉛筆＋斜め線アイコン<font face="SF Pro"><!--􀈍 pencil.slash --></font><img src="pencil.slash@2x.png" width="4%">の時、ラベルを長押しして出てくるコンテキストメニューで、次のラベルまでの間にある項目をまとめてチェックしたりクリアしたりできます。</dd>
+          <dd class="langSel" lang="ja">各項目のチェックボックス<div class="icon_white mask_square"></div>をタップするとチェックしたり<div class="icon_white mask_checkmark"></div>チェックを外したり<div class="icon_white mask_square"></div>できます。</dd>
+          <dd class="langSel" lang="ja">画面の上の <div class="icon_blue mask_pencil"></div> をタップして <div class="icon_blue mask_pencil_slash"></div> にすると、項目名をタップした時もチェックできるようになります。項目名を編集したい時は <div class="icon_blue mask_pencil_slash"></div> を再度タップしてください。</dd>
+          <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_line_3"></div> をタップしてチェックとクリアを選ぶと、全項目をまとめてチェックしたり、全項目のチェックをまとめて消したりできます。チェック状態を反転することもできます。</dd>
+          <dd class="langSel" lang="ja">画面の上の <div class="icon_blue mask_pencil"></div> が <div class="icon_blue mask_pencil_slash"></div> の時、ラベルを長押しして出てくるコンテキストメニューで、次のラベルまでの間にある項目をまとめてチェックしたりクリアしたりできます。</dd>
           
           <dt class="langSel" lang="ja">項目の絞り込み表示の方法</dt>
-          <dd class="langSel" lang="ja">画面の上の合計欄の未チェックアイコンをタップすると、未チェック項目とラベルだけに絞り込み表示できます。チェック済みアイコンをタップするとチェック項目とラベルだけの絞り込み表示します。またラベルアイコンをタップするとラベルだけの絞り込み表示もできます。全項目表示に戻すには合計数をタップしてください。</dd>
+          <dd class="langSel" lang="ja">画面の上の合計欄の <div class="icon_blue mask_square"></div> をタップすると、未チェック項目とラベルだけに絞り込み表示できます。 <div class="icon_blue mask_checkmark"></div をタップするとチェック項目とラベルだけの絞り込み表示します。また <div class="icon_blue mask_tag"></div> をタップするとラベルだけの絞り込み表示もできます。全項目表示に戻すには合計数をタップしてください。</dd>
           <dd class="langSel" lang="ja">ラベルだけの絞り込み表示をしているときに項目の移動や削除をすると、ラベルと次のラベルの間にある項目もまとめて移動や削除できます。</dd>
-          <dd class="langSel" lang="ja">画面上部の３本線アイコンをタップしてオプションを選ぶと、絞り込み表示した時に常に全ラベルを表示するかどうか選べます。</dd>
+          <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_line_3"></div> をタップしてオプションを選ぶと、絞り込み表示した時に常に全ラベルを表示するかどうか選べます。</dd>
           <dd class="langSel" lang="ja">オプションメニューでは、項目編集画面を抜けても絞り込み状態を保持するか選べます。</dd>
           <dt class="langSel" lang="ja">項目のラベル化の方法</dt>
-          <dd class="langSel" lang="ja">一度入力したチェック項目をラベル化するには、鉛筆＋斜め線アイコンが表示された状態で該当する項目名を長押ししてください。表示されるコンテクストメニューでラベル化を選ぶと、通常の項目とラベルを切り替えできます。</dd>
+          <dd class="langSel" lang="ja">一度入力したチェック項目をラベル化するには、<div class="icon_blue mask_pencil_slash"></div> が表示された状態で該当する項目名を長押ししてください。表示されるコンテクストメニューでラベル化を選ぶと、通常の項目とラベルを切り替えできます。</dd>
           <dt class="langSel" lang="ja">リスト名の変更</dt>
           <dd class="langSel" lang="ja">左上のリスト名をタップすると、リスト名を変更することもできます。</dd>
           <dt class="langSel" lang="ja">リスト色の変更</dt>
-          <dd class="langSel" lang="ja">画面上部の３本線アイコンをタップしてカラーを選ぶと、リストの色を変更することができます。</dd>
+          <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_line_3"></div> をタップしてカラーを選ぶと、リストの色を変更することができます。</dd>
           <dt class="langSel" lang="ja">項目の共有</dt>
-          <dd class="langSel" lang="ja">画面上部の３本線アイコンをタップして共有を選ぶと、項目一覧をテキストとして他のAppに共有できます。</dd>
+          <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_line_3"></div> をタップして共有を選ぶと、項目一覧をテキストとして他のAppに共有できます。</dd>
           <dd class="langSel" lang="ja">共有する項目として、全項目か未チェック項目かチェック済み項目かを選べます。</dd>
-          <dd class="langSel" lang="ja">画面の上の鉛筆アイコンが鉛筆＋斜め線アイコンの時、ラベルを長押しして出てくるコンテキストメニューで、次のラベルまでの間にある項目をまとめて共有することができます。</dd>
+          <dd class="langSel" lang="ja">画面の上の <div class="icon_blue mask_pencil"></div> が <div class="icon_blue mask_pencil_slash"></div> の時、ラベルを長押しして出てくるコンテキストメニューで、次のラベルまでの間にある項目をまとめて共有することができます。</dd>
           <dt class="langSel" lang="ja">項目のコピー</dt>
-          <dd class="langSel" lang="ja">画面上部の３本線アイコンをタップしてテキストとしてコピーを選ぶと、項目一覧をテキストとしてクリップボードにコピーできます。</dd>
+          <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_line_3"></div> をタップしてテキストとしてコピーを選ぶと、項目一覧をテキストとしてクリップボードにコピーできます。</dd>
           <dd class="langSel" lang="ja">コピーする項目として、全項目か未チェック項目かチェック済み項目かを選べます。</dd>
-          <dd class="langSel" lang="ja">画面の上の鉛筆アイコンが鉛筆＋斜め線アイコンの時、ラベルを長押しして出てくるコンテキストメニューで、その項目のみか次のラベルまでの間にある項目をまとめてコピーすることができます。</dd>
+          <dd class="langSel" lang="ja">画面の上の <div class="icon_blue mask_pencil"></div> が <div class="icon_blue mask_pencil_slash"></div> の時、ラベルを長押しして出てくるコンテキストメニューで、その項目のみか次のラベルまでの間にある項目をまとめてコピーすることができます。</dd>
           <dd class="langSel" lang="ja">コピーした項目は、他のリストに貼り付けできます。</dd>
 
           <dt class = "langSel" lang = "en"> 1. Add list </dt>
@@ -458,9 +460,9 @@ test1<div class="pencil"></div>test2
           <dt class="langSel" lang="ja">リストの削除</dt>
           <dd class="langSel" lang="ja">リスト名を左にドラッグすると削除ボタンが出てくるのでそれを押してリストを削除できます。</dd>
           <dt class="langSel" lang="ja">リストの並び替え</dt>
-          <dd class="langSel" lang="ja">画面右上の上下矢印ボタンを押すと、リストの右側の３本線をドラッグすることでリストを並び替えできます。もう一度上下矢印ボタンを押すと並び替えモードを終了します。</dd>
+          <dd class="langSel" lang="ja">画面右上の <div class="icon_blue mask_arrow_up_down"></div> を押すと、リストの右側の <div class="icon_white mask_line_3"></div> をドラッグすることでリストを並び替えできます。もう一度 <div class="icon_blue mask_arrow_up_down"></div> を押すと並び替えモードを終了します。</dd>
           <dt class="langSel" lang="ja">リスト名の変更</dt>
-          <dd class="langSel" lang="ja">本Appで作ったリストは、リスト項目の編集画面で変更できます。他AppのリストはそのAppでリスト名を変更してからリスト名の右にある丸矢印を押すかリスト名長押しで出てくるコンテクストメニューで名前再読み込みを選んでリスト名を読み込み直してください。</dd>
+          <dd class="langSel" lang="ja">本Appで作ったリストは、リスト項目の編集画面で変更できます。他AppのリストはそのAppでリスト名を変更してからリスト名の右にある <div class="icon_white mask_arrow_clockwise"></div> を押すかリスト名長押しで出てくるコンテクストメニューで名前再読み込みを選んでリスト名を読み込み直してください。</dd>
           
           <dt class="langSel" lang="ja">リスト色の変更</dt>
           <dd class="langSel" lang="ja">リスト名を長押しして出てくるコンテキストメニューで、カラーを選んで色変更できます。</dd>
@@ -492,7 +494,7 @@ test1<div class="pencil"></div>test2
         <h2 class="langSel" lang="ja">設定画面</h2>
         <h2 class = "langSel" lang = "en"> Settings </h2>
         <dl>
-          <dd class="langSel" lang="ja">画面の左上の歯車アイコンをタップすると設定画面を開くことができます。</dd>
+          <dd class="langSel" lang="ja">画面の左上の歯車アイコン<div class="icon_blue mask_gear"></div>をタップすると設定画面を開くことができます。</dd>
           <dt class="langSel" lang="ja">リスト一覧画面の設定</dt>
           <dd class="langSel" lang="ja">他Appのリストを使わないときは、URLによるリスト登録表示を消すことができます。</dd>
           <dt class="langSel" lang="ja">項目一覧画面の設定</dt>
