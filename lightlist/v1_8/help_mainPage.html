@@ -44,7 +44,7 @@
 
     .icon_white {
       display: inline-block;
-      margin: 0 7 0 7;
+      margin: 0 7 -7 7;
       width: 1.2em;
       height: 1.2em;
       mask: no-repeat center / contain;
@@ -53,7 +53,7 @@
     }
     .icon_black {
       display: inline-block;
-      margin: 0 7 0 7;
+      margin: 0 7 -7 7;
       width: 1.2em;
       height: 1.2em;
       mask: no-repeat center / contain;
@@ -62,7 +62,7 @@
     }
     .icon_blue {
       display: inline-block;
-      margin: 0 7 0 7;
+      margin: 0 7 -7 7;
       width: 1.2em;
       height: 1.2em;
       mask: no-repeat center / contain;
@@ -71,7 +71,7 @@
     }
     .icon_darkblue {
       display: inline-block;
-      margin: 0 7 0 7;
+      margin: 0 7 -7 7;
       width: 1.2em;
       height: 1.2em;
       mask: no-repeat center / contain;
@@ -192,6 +192,7 @@
             }
           }
         }
+        
         function colorModeSelect(colorMode){
           if(colorMode == 'dark'){
             document.body.style.color = '#eeeeee';          
@@ -334,7 +335,7 @@
           <dd class="langSel" lang="ja">項目名一覧の最後の + ボタンの右側をタップすると新しい項目名が入力でき、改行入力で新しい項目として追加できます。<dd>
           <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_plus"></div> ボタンをタップすると先頭もしくは編集中の項目名の次に空の項目を挿入できます。<dd>
           <dd class="langSel" lang="ja">項目名として + で始まる名前を入力すると、その項目をラベルにできます。</dd>
-          <dd class="langSel" lang="ja">ラベルとはチェクボタンが無い項目のことで、背景色が少し明るく目立つ表示です。項目をグルーピングするときのグループ名のラベルとして使うと便利です。</dd>
+          <dd class="langSel" lang="ja">ラベルとはチェックボックス <div class="icon_white mask_square"></div> が無い項目のことで、背景色が少し明るく目立つ表示です。項目をグルーピングするときのグループ名のラベルとして使うと便利です。</dd>
           <dd class="langSel" lang="ja">一括登録の枠内をタップするとそこに改行で区切った複数の項目名をまとめて入力できます。「各行を項目として追加」ボタンを押すとまとめて登録されます。<dd>
           
           <dt class="langSel" lang="ja">項目の編集</dt>
@@ -344,7 +345,7 @@
           <dd class="langSel" lang="ja">チェックした項目を一括削除したい場合は、画面上部の <div class="icon_blue mask_line_3"></div> をタップしてチェック項目の削除を選んでください。</dd>
           
           <dt class="langSel" lang="ja">項目のチェック方法</dt>
-          <dd class="langSel" lang="ja">各項目のチェックボックス<div class="icon_white mask_square"></div>をタップするとチェックしたりチェックを外したりできます。</dd>
+          <dd class="langSel" lang="ja">各項目のチェックボックス <div class="icon_white mask_square"></div> をタップするとチェックしたりチェックを外したりできます。</dd>
           <dd class="langSel" lang="ja">画面の上の <div class="icon_blue mask_pencil"></div> をタップして <div class="icon_blue mask_pencil_slash"></div> にすると、項目名をタップした時もチェックできるようになります。項目名を編集したい時は <div class="icon_blue mask_pencil_slash"></div> を再度タップしてください。</dd>
           <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_line_3"></div> をタップしてチェックとクリアを選ぶと、全項目をまとめてチェックしたり、全項目のチェックをまとめて消したりできます。チェック状態を反転することもできます。</dd>
           <dd class="langSel" lang="ja">画面の上の <div class="icon_blue mask_pencil"></div> が <div class="icon_blue mask_pencil_slash"></div> の時、ラベルを長押しして出てくるコンテキストメニューで、次のラベルまでの間にある項目をまとめてチェックしたりクリアしたりできます。</dd>
@@ -378,7 +379,7 @@
            <dd class = "langSel" lang = "en"> Tap the right side of the + button at the end of the item name list to enter a new item name, and enter a line feed to add it as a new item. <dd>
            <dd class = "langSel" lang = "en"> Tap the <div class="icon_blue mask_plus"></div> at the top of the screen to insert an empty item at the beginning or after the item name being edited. <dd>
            <dd class = "langSel" lang = "en"> You can enter a label by entering a name starting with + as the item name. </ dd>
-           <dd class = "langSel" lang = "en"> A label is an item that does not have a check button , and the background color is a little bright and conspicuous. It is useful as a label for group names when grouping items. </ dd>
+           <dd class = "langSel" lang = "en"> A label is an item that does not have checkbox <div class="icon_white mask_square"></div> , and the background color is a little bright and conspicuous. It is useful as a label for group names when grouping items. </ dd>
           <dd class = "langSel" lang = "en"> Tap the large square below of Collective registration to enter multiple item names separated by line breaks. Click the "Add each line as an item" button to register them all at once. <dd>
           
           <dt class = "langSel" lang = "en"> Edit items </dt>
@@ -476,7 +477,7 @@
           <dt class = "langSel" lang = "en"> Delete list </dt>
           <dd class = "langSel" lang = "en"> Drag the list name to the left and a delete button will appear. You can press it to delete the list. </dd>
           <dt class = "langSel" lang = "en"> Sort list </dt>
-          <dd class = "langSel" lang = "en"> If you press <div class="icon_blue mask_arrow_up_down"></div> on the upper right of the screen, you can rearrange the list by dragging the three lines on the right side of the list. Press <div class="icon_blue mask_arrow_up_down"></div> again to exit the sort mode. </ dd>
+          <dd class = "langSel" lang = "en"> If you press <div class="icon_blue mask_arrow_up_down"></div> on the upper right of the screen, you can rearrange the list by dragging <div class="icon_white mask_line_3"></div> on the right side of the list. Press <div class="icon_blue mask_arrow_up_down"></div> again to exit the sort mode. </ dd>
           <dt class = "langSel" lang = "en"> Rename list </ dt>
            <dd class = "langSel" lang = "en"> The list created by this app can be changed on the list item edit screen. For the list of other apps, change the list name in that app and then press <div class="icon_white mask_arrow_clockwise"></div> to the right of the list name or press and hold the list name and select Reload Name from the context menu that appears to reload the list name. </ dd>
           <dt class = "langSel" lang = "en"> Change list color </ dt>
@@ -583,7 +584,7 @@
           <dt class = "langSel" lang = "en"> Screen description </ dt>
           <dd class = "langSel" lang = "en"> There is a button to return to the list list screen on the upper left. In addition, there are today's date (there is no month), the number of checked items, and the total number of items. The number of checked items is updated dynamically. </ dd>
           <dd class = "langSel" lang = "en"> There is a list name at the beginning of the item list. The icon to the right of the list name changes depending on the status of the "Keep items always" setting on the setting screen. </ dd>
-           <dd class = "langSel" lang = "en"> When the "Keep items always" setting is ON, the reload button is displayed, and when you want to reload the item, press it. </ dd>
+           <dd class = "langSel" lang = "en"> When the "Keep items always" setting is ON, <div class="icon_white mask_arrow_clockwise"></div> is displayed, and when you want to reload the item, press it. </ dd>
            <dd class = "langSel" lang = "en"> If there is already one checked item, the options will be displayed. If you want to continue checking the items, select "Continue checking". If you want to start the check again from the beginning, select "Start check". </ dd>
            <dd class = "langSel" lang = "en"> When the "Keep items always" setting is OFF, a pin button is displayed, and tapping it switches the holding state of item information. </ dd>
            <dd class = "langSel" lang = "en"> If the pin is dark and the cancellation display is displayed, the item is downloaded again every time the item list screen is entered, but if the pin is bright, the item information is displayed even if the screen is exited. Continue to hold. </ dd>
@@ -604,7 +605,7 @@
         <h2 class = "langSel" lang = "en"> Apple Watch App setting screen </h2>
 
         <dl>
-          <dd class="langSel" lang="ja">リスト一覧画面の左上の３本線アイコンをタップして表示される画面です。</dd>
+          <dd class="langSel" lang="ja">リスト一覧画面の左上の <div class="icon_white mask_line_3"></div> をタップして表示される画面です。</dd>
           <dt class="langSel" lang="ja">残りの項目数を表示する</dt>
           <dd class="langSel" lang="ja">ONの場合、項目一覧画面の左上の項目数表示にチェックしていない項目数を表示します。</dd>
           <dd class="langSel" lang="ja">OFFの場合、合計数とチェック済み項目数を表示します。</dd>
@@ -619,12 +620,12 @@
           <dd class="langSel" lang="ja">OFFの場合、Apple Watch で何もチェックしていないリストでもリロード時は確認します。</dd>
 
 
-          <dd class = "langSel" lang = "en"> This screen is displayed by tapping the three-line icon on the upper left of the list list screen. </ dd>
+          <dd class = "langSel" lang = "en"> This screen is displayed by tapping <div class="icon_white mask_line_3"></div> on the upper left of the list list screen. </ dd>
            <dt class = "langSel" lang = "en"> Display the number of remaining items </ dt>
           <dd class = "langSel" lang = "en"> When ON, the number of items that are not checked in the item number display on the upper left of the item list screen is displayed. </ dd>
           <dd class = "langSel" lang = "en"> If OFF, the total number and the number of checked items are displayed. </ dd>
           <dt class = "langSel" lang = "en"> Keep items always </ dt>
-          <dd class = "langSel" lang = "en"> When ON, set to always keep the item status even if you exit the item list screen. You can reload the item by pressing the reload button to the right of the item name on the item list screen. </ dt>
+          <dd class = "langSel" lang = "en"> When ON, set to always keep the item status even if you exit the item list screen. You can reload the item by pressing <div class="icon_white mask_arrow_clockwise"></div> to the right of the item name on the item list screen. </ dt>
           <dd class = "langSel" lang = "en"> When OFF, set whether to keep the item status when exiting the item list screen for each list. You can switch between holding and non-holding by pressing the pin button to the right of the item name on the item list screen. </ dt>
           <dt class = "langSel" lang = "en"> Reflect check items on iPhone when deleted </ dt>
            <dd class = "langSel" lang = "en"> If the check item is deleted, the check status of the item will be reflected on the iPhone. </ dd>
