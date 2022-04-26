@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v14 2022/04/26",
+        "_version": "v13 2021/12/31",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -18,10 +18,9 @@
         "relations" : [
                 [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
                 [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
-                [ "シャオシャオのYouTube", "https://www.youtube.com/results?sp=mAEB&search_query=%E3%82%B7%E3%83%A3%E3%82%AA%E3%82%B7%E3%83%A3%E3%82%AA" ],
                 [ "東洋経済オンライン 中川さんのパンダ記事", "https://toyokeizai.net/list/author/%E4%B8%AD%E5%B7%9D_%E7%BE%8E%E5%B8%86" ],
             ],
-        "note" : "メモ：上野動物園の双子パンダのオスの子です。名前は漢字で暁暁と書きます。夜明けの光が差し明るくなるという意味です。公式 YouTube チャンネルでレイレイやシンシンとのかわいい絡みが見れます。",
+        "note" : "メモ：上野動物園の双子パンダのオスの子です。名前は漢字で暁暁と書きます。夜明けの光が差し明るくなるという意味です。毎週火曜日に公式 YouTube チャンネルでレイレイやシンシンとのかわいい絡みが見れます。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "ichigounigou3",
         "newImageNames": [ "shaoshao1" ],
@@ -44,11 +43,10 @@
         "relations" : [
                 [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
                 [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
-                [ "レイレイのYouTube", "https://www.youtube.com/results?search_query=%E3%83%AC%E3%82%A4%E3%83%AC%E3%82%A4+%E3%83%91%E3%83%B3%E3%83%80" ],
                 [ "東洋経済オンライン 中川さんのパンダ記事", "https://toyokeizai.net/list/author/%E4%B8%AD%E5%B7%9D_%E7%BE%8E%E5%B8%86" ],
             ],
 
-        "note" : "メモ：上野動物園の双子パンダのメスの子です。名前は漢字で蕾蕾と書きます。つぼみから美しい花が咲き、未来へ繋がっていくという意味です。公式 YouTube チャンネルでシャオシャオやシンシンとのかわいい絡みが見れます。",
+        "note" : "メモ：上野動物園の双子パンダのメスの子です。名前は漢字で蕾蕾と書きます。つぼみから美しい花が咲き、未来へ繋がっていくという意味です。毎週火曜日に公式 YouTube チャンネルでシャオシャオやシンシンとのかわいい絡みが見れます。",
         "_comment": "imageName は App ver1.X の互換性のため. newImageNames は２号と順番を入れ替えて違う画像が選ばれるようにする",
         "imageName": "ichigounigou3",
         "newImageNames": [ "rayray1" ],
@@ -78,7 +76,7 @@
                 [ "楓浜のYouTube", "https://www.youtube.com/results?search_query=%E6%A5%93%E6%B5%9C" ],
 
             ],
-        "note" : "メモ：アドベンチャーワールドのパンダ一家の末っ子です。お姉ちゃんたちに負けずにおてんばに育ちました。2022年４月から独り立ちしました。",
+        "note" : "メモ：アドベンチャーワールドのパンダ一家の末っ子です。お姉ちゃんたちに負けずにおてんばに育ちました。公式Youtubeチャンネルで毎日可愛い姿が見られます。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "yachubo1",
         "newImageNames": ["fuhin1"],
@@ -337,7 +335,7 @@
                 [ "神戸市 タンタンの返還について", "https://www.city.kobe.lg.jp/a84159/shise/shichoshitsu/letter/r2/ojizoo.html" ],
                 [ "関西ウォーカー パンダのタンタンお別れ", "https://www.walkerplus.com/trend/matome/article/1004233/" ],
                 [ "東洋経済デジタル 20年ぶりに中国へ帰る背景", "https://toyokeizai.net/articles/-/357872" ],
-                [ "LMaga.jp 二木さんの記事", "https://gendai.ismedia.jp/list/tag/%E3%83%91%E3%83%B3%E3%83%80" ],
+                [ "LMaga.jp 二木さんの記事", "https://www.lmaga.jp/news/2021/09/317054/" ],
             ],
         "note" : "メモ：神戸のお嬢さまというニックネームを持っています。手足が短くてお腹が大きく子供のような愛くるしい体型をしています。",
 
