@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v15 2022/05/13",
+        "_version": "v14 2022/04/26",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -23,8 +23,8 @@
             ],
         "note" : "メモ：上野動物園の双子パンダのオスの子です。名前は漢字で暁暁と書きます。夜明けの光が差し明るくなるという意味です。公式 YouTube チャンネルでレイレイやシンシンとのかわいい絡みが見れます。",
         "_comment": "imageName は App ver1.X の互換性のため",
-        "imageName": "shaoshao1",
-        "newImageNames": [ "shaoshao2" ],
+        "imageName": "ichigounigou3",
+        "newImageNames": [ "shaoshao1" ],
     },
     {
         "name":"レイレイ",
@@ -50,8 +50,8 @@
 
         "note" : "メモ：上野動物園の双子パンダのメスの子です。名前は漢字で蕾蕾と書きます。つぼみから美しい花が咲き、未来へ繋がっていくという意味です。公式 YouTube チャンネルでシャオシャオやシンシンとのかわいい絡みが見れます。",
         "_comment": "imageName は App ver1.X の互換性のため. newImageNames は２号と順番を入れ替えて違う画像が選ばれるようにする",
-        "imageName": "rayray1",
-        "newImageNames": [ "rayray2" ],
+        "imageName": "ichigounigou3",
+        "newImageNames": [ "rayray1" ],
     },
     {
         "name":"楓浜",
@@ -80,8 +80,8 @@
             ],
         "note" : "メモ：アドベンチャーワールドのパンダ一家の末っ子です。お姉ちゃんたちに負けずにおてんばに育ちました。2022年４月から独り立ちしました。",
         "_comment": "imageName は App ver1.X の互換性のため",
-        "imageName": "fuhin1",
-        "newImageNames": ["fuhin2"],
+        "imageName": "yachubo1",
+        "newImageNames": ["fuhin1"],
     },
     {
         "name":"彩浜",
@@ -122,8 +122,8 @@
         "animaltype" : "パンダ",
         "birthplace" : "上野動物園",
         "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
-        "returndate" : "2022-12-31",
-        "returnexpdate" : "2022-12-31",
+        "returndate" : "2022-06-30",
+        "returnexpdate" : "2022-06-30",
         "parents" : "リーリー、シンシン",
         "brothers" : "シャオシャオ、レイレイ",
         "preset" : true,
