@@ -277,7 +277,10 @@
           <dd class="langSel" lang="ja">リストをテキストとして簡単に他の人に共有することができます。</dd>
           <dt class="langSel" lang="ja">複数のリストの間で同じ名前の項目のチェック状態を連動させることもできます。</dt>
           <dd class="langSel" lang="ja">複数の店毎の買い物リストに共通な商品を買ったら、自動的に他の店のリストにもチェックを反映することができます。</dd>
-          <dd class="langSel" lang="ja">Apple Watch でチェックすると、そのリストにリンクした iPhone App や Widget の 他のリスト表示にも自動的に反映できます。
+          <dd class="langSel" lang="ja">Apple Watch でチェックすると、そのリストにリンクした iPhone App や Widget の 他のリスト表示にも自動的に反映できます。</dd>
+          <dt class="langSel" lang="ja">iPhone と iPad を iCloud経由でデータ同期したり、データのバックアップを取ることもできます。</dt>
+          <dd class="langSel" lang="ja">iCloud経由で自分のiPhoneとiPadのアプリ間でデータ同期させることもできます。</dd>
+          <dd class="langSel" lang="ja">念の為、自分でデータのバックアップを取ることもできます。</dd>
 
           <dt class = "langSel" lang = "en"> This app is a simple and easy-to-use checklist . </ dt>
           <dd class = "langSel" lang = "en"> The iPhone App alone is easy to use, but the features have been optimized to make it easy to use as a shopping list or to-do list for the Apple Watch. </ dd>
@@ -289,7 +292,9 @@
           <dd class = "langSel" lang = "en"> You can easily share the list as text with others. </ dd>
           <dt class = "langSel" lang = "en"> You can also link the check status of items with the same name among multiple lists. </ dt>
           <dd class = "langSel" lang = "en"> If you buy a product that is common to the shopping list of multiple stores, you can automatically reflect the check in the list of other stores. </ dd>
-          <dd class = "langSel" lang = "en"> If you check it on your Apple Watch, it will automatically be reflected in other list displays of iPhone apps and widgets linked to that list.
+          <dd class = "langSel" lang = "en"> If you check it on your Apple Watch, it will automatically be reflected in other list displays of iPhone apps and widgets linked to that list.</dd>
+          <dd class = "langSel" lang = "en"> You can also sync data between your iPhone and iPad apps via iCloud. </ dd>
+           <dd class = "langSel" lang = "en"> You can also back up your data yourself, just in case. </ dd>
 
         </dl>
         
@@ -593,10 +598,19 @@
           <dt class="langSel" lang="ja">バックアップ</dt>
           <dd class="langSel" lang="ja">バックアップ管理画面を開くことができます。</dd>
           <dd class="langSel" lang="ja">バックアップ管理画面でバックアップを復元するときに、念の為に自動的にバックアップを自動的に作成するかどうかを変更することができます。</dd>
-          <dt class="langSel" lang="ja">iPhone/iPad 同期設定</dt>
-          <dd class="langSel" lang="ja">自分の複数のiPhone/iPadのデータをiCloud経由で同期できます。同期をONにした時には自動的にバックアップを取ります。</dd>
-          <dd class="langSel" lang="ja">同期中は複数のデバイスで同時にデータを編集したりすると、最初に保存した方の更新データが失われる可能性があります。たくさんのデータを編集するときは適宜バックアップを取るなどしてご注意ください。</dd>
-          <dd class="langSel" lang="ja">同期中にiPad のデータを編集した場合、iPhone のウィジェットやiPhoneとペアリングされているApple Watchのデータは自動的には同期されません。iPhone の Appを一回起動することで同期および反映します。iPhone のデータを編集したときに iPad のウィジェットへの反映も同様です。</dd>
+          
+          <dt class="langSel" lang="ja">iPhone/iPad iCloud設定</dt>
+          <dd class="langSel" lang="ja">自分の複数のiPhone/iPadのデータを iCloud経由で同期できます。自動同期させることも、マニュアルで同期、アップロード、ダウンロードすることもできます。</dd>
+          <dd class="langSel" lang="ja">iCloud で自動同期スイッチをONにすると、本アプリの起動時にデータをロードする時にiCloud上のデータの方が新しければダウンロードし、アプリを抜けるときに iCloudにも保存します。</dd>
+          <dd class="langSel" lang="ja">参考のため、本デバイスのデータの更新時間とiCloud上のデータの更新時間が表示されます。もし同じAppleアカウントでアクセスしたデバイスでiCloud上のデータの更新時間が違う場合は、iCloudのファイル同期に時間がかかっています。数分経ってからアプリを立ち上げ直して下さい。</dd>
+          <dd class="langSel" lang="ja">同期ボタンを押したら、現在のデータと iCloud上 のデータの新しい方を現在のアプリとiCloudの両方に保存します。</dd>
+          <dd class="langSel" lang="ja">アップロードボタンを押したら、現在のデバイスのデータを iCloud上 にアップロードします。</dd>
+          <dd class="langSel" lang="ja">ダウンロードボタンを押したら、iCloud上にあるデータをダウンロードします。</dd>
+          <dd class="langSel" lang="ja">デフォルトでは自動同期をONにした時や同期ボタンやダウンロードボタンを押したときに自動的にバックアップを取りますが、それをOFFにすることもできます。</dd>
+          <dd class="langSel" lang="ja">もし「iCloud を有効にして下さい」というメッセージが表示されていたら、本アプリ(lightlist)の iCloud設定がOFFになっています。メッセージをタップして iCloud設定画面を開き、lightlist の設定をONにして下さい。</dd>
+          <dd class="langSel" lang="ja">自動同期中に複数のデバイスで同時に本アプリを開いてデータを編集したりすると、最初にアプリを終了した方のデータが後からアプリを終了した方のデータに上書きされる可能性があります。複数のデバイスで同時に本アプリを開く使い方をする場合は自動同期をOFFにして、マニュアルでアップロードやダウンロードした方が安全です。</dd>
+          <dd class="langSel" lang="ja">自動同期がうまく働かない時はiCloudとデバイスとの間のデータ反映に時間がかかっている可能性があります。数分経ってから再度アプリを開いてみて下さい。どうしてもうまく同期されない時は、データを有効にしたいデバイスでアップロードボタンを押し、データを取り込みたいデバイスでダウンロードボタンを押してマニュアルでデータを反映させて下さい。</dd>
+          <dd class="langSel" lang="ja">自動同期中にiPad のアプリでデータを編集した場合、iPhone のウィジェットやiPhoneとペアリングされているApple Watchのデータは自動的には同期されません。iPhone の Appを一回起動することでこれらに同期および反映します。iPhone のアプリでデータを編集したときに iPad のウィジェットへの反映も同様です。</dd>
           <dt class="langSel" lang="ja">制限解除</dt>
           <dd class="langSel" lang="ja">App内購入を行うと、制限解除によって６つ以上のリストを作ったり、３つ以上のリンクを作ったりできます。</dd>
           <dt class="langSel" lang="ja">このAppについて</dt>
@@ -614,16 +628,24 @@
            <dt class = "langSel" lang = "en"> backup </ dt>
            <dd class = "langSel" lang = "en"> You can open the backup management screen. </ dd>
            <dd class = "langSel" lang = "en"> When you restore a backup on the backup management screen, you can change whether to automatically create a backup just in case. </ dd>
-           <dt class = "langSel" lang = "en"> iPhone / iPad sync settings </ dt>
-           <dd class = "langSel" lang = "en"> You can sync your multiple iPhone / iPad data via iCloud. When synchronization is turned on, it will be backed up automatically. </ dd>
-           <dd class = "langSel" lang = "en"> If you edit data on multiple devices at the same time during synchronization, the updated data of the first saved one may be lost. Please be careful when editing a lot of data, such as backing up as appropriate. </ dd>
-           <dd class = "langSel" lang = "en"> If you edit the data on the iPad during sync, the iPhone widgets and the data on the Apple Watch paired with the iPhone will not be synced automatically. Sync and reflect by launching the iPhone App once. The same applies when editing data on the iPhone and reflecting it on the widget on the iPad. </ dd>
+           <dt class = "langSel" lang = "en"> iPhone / iPad iCloud settings </ dt>
+          <dd class = "langSel" lang = "en"> You can sync your multiple iPhone / iPad data via iCloud. You can sync automatically or manually sync, upload, and download. </ dd>
+          <dd class = "langSel" lang = "en"> If you turn on the automatic synchronization switch in iCloud, when you load the data when starting this application, if the data on iCloud is newer, download it and exit the application Also save to iCloud. </ dd>
+          <dd class = "langSel" lang = "en"> For reference, the data update time of this device and the data update time on iCloud are displayed. If the device accessed with the same Apple account has different update times for data on iCloud, iCloud file synchronization is taking a long time. Please restart the app after a few minutes. </ dd>
+          <dd class = "langSel" lang = "en"> After pressing the sync button, the newer one of the current data and the data on iCloud will be saved in both the current app and iCloud. </ dd>
+          <dd class = "langSel" lang = "en"> After pressing the upload button, the data of the current device will be uploaded to iCloud. </ dd>
+          <dd class = "langSel" lang = "en"> Click the download button to download the data on iCloud. </ dd>
+          <dd class = "langSel" lang = "en"> By default, it automatically backs up when you turn on automatic sync or when you press the sync button or download button, but you can also turn it off. increase. </ dd>
+          <dd class = "langSel" lang = "en"> If the message "Please enable iCloud" is displayed, the iCloud setting of this application (lightlist) is turned off. Tap the message to open the iCloud settings screen and turn on the lightlist settings. </ dd>
+          <dd class = "langSel" lang = "en"> If you open this app on multiple devices at the same time and edit the data during automatic synchronization, the data of the person who closed the app first closed the app later. It may be overwritten on one of the data. If you want to open this app on multiple devices at the same time, it is safer to turn off automatic synchronization and upload or download manually. </ dd>
+          <dd class = "langSel" lang = "en"> If automatic synchronization doesn't work, it may take some time to reflect the data between iCloud and the device. Please try opening the app again after a few minutes. If you cannot synchronize properly, press the upload button on the device for which you want to enable data, and press the download button on the device for which you want to import data to reflect the data manually. </ dd>
+          <dd class = "langSel" lang = "en"> If you edit the data in the iPad app during automatic sync, the iPhone widget and the data on the Apple Watch paired with the iPhone will not be synced automatically. Hmm. Sync and reflect on these with a single launch of his app on the iPhone. The same applies when editing data in the iPhone app and reflecting it in the iPad widget. </ dd>
+          
            <dt class = "langSel" lang = "en"> Unrestricted </ dt>
            <dd class = "langSel" lang = "en"> If you make an in-app purchase, you can make 6 or more lists and 3 or more links by removing the restrictions. </ dd>
            <dt class = "langSel" lang = "en"> About this app </ dt>
            <dd class = "langSel" lang = "en"> You can check the App version, open the AppStore page, review the App, and give feedback to the App author. </ dd>
         </dl>
-
 
         <a href="#top">🔝</a>
         <a name="backup">
@@ -633,6 +655,7 @@
           <dd class="langSel" lang="ja">設定画面からバックアップ管理画面を開くことができます。登録した全てのリストデータやリンクデータをまとめてバックアップできます。</dd>
           <dt class="langSel" lang="ja">バックアップの作成</dt>
           <dd class="langSel" lang="ja">バックアップ作成ボタンを押すと登録した全リストデータやリンクデータをまとめたバックアップファイルを作成します。</dd>
+          <dd class="langSel" lang="ja">「iCloudを使う」スイッチをONにすると、バックアップはiCloudにも保存されます。またバックアップ一覧は iCloudに保存されたものを表示し、他のデバイスのバックアップからリストアすることもできます。</dd>
           <dd class="langSel" lang="ja">作成したバックアップはバックアップした日時とサイズで表示します。複数のバックアップは新しいものから順番に表示されます。</dd>
           <dd class="langSel" lang="ja">バックアップにはコメントを追加することもできます。</dd>
           <dd class="langSel" lang="ja">バックアップデータは圧縮されて保持されるので、サイズは目安です。</dd>
@@ -645,14 +668,23 @@
           <dd class="langSel" lang="ja">共有したいバックアップをタップして表示される共有ボタンを押してください。</dd>
           <dd class="langSel" lang="ja">バックアップファイルをメールやメモに添付して共有できます。</dd>
           <dd class="langSel" lang="ja">バックアップファイルはファイルアプリで lightlist アプリに保存するとアプリ内で削除したバックアップを元に戻したり、他のiOSデバイスにリストデータを一括移動することもできます。</dd>
+          <dt class="langSel" lang="ja">バックアップのダウンロード/アップロード</dt>
+          <dd class="langSel" lang="ja">iCloudを使うスイッチがONの時はiCloud上のバックアップをデバイスにダウンロードできます。スイッチがOFFの時はデバイス上のバックアップをiCloudにアップロードできます。</dd>
+          <dd class="langSel" lang="ja">コピー先にすでに同じ名前のバックアップがある時は何もしません。</dd>
           <dt class="langSel" lang="ja">バックアップの復元</dt>
           <dd class="langSel" lang="ja">復元したいバックアップをタップして表示される復元ボタンを押して下さい。</dd>
           <dd class="langSel" lang="ja">バックアップしたリストデータを復元することができます。復元はバックアップした時の過去のリスト状態に戻すということなので、間違えて実施しないように注意してください。</dd>
+          <dd class="langSel" lang="ja">iCloud で自動同期中の場合は、同期している他のデバイスにもリストアしたデータが反映されます。</dd>
           <dd class="langSel" lang="ja">デフォルトでは念の為に復元前に自動的にバックアップを作成します。操作を間違えて復元してしまった場合は、自動作成されたバックアップで再度復元してください。</dd>
+          <dt class="langSel" lang="ja">複数のバックアップの選択</dt>
+          <dd class="langSel" lang="ja">画面右上の選択ボタンを押すと、バックアップを複数選択できます。</dd>
+          <dd class="langSel" lang="ja">選んだバックアップは画面の上の削除ボタンやアップロード/ダウンロードボタンでまとめて処理ができます。</dd>
+          
           
           <dd class = "langSel" lang = "en"> You can open the backup management screen from the setting screen. All registered list data and link data can be backed up at once. </ dd>
           <dt class = "langSel" lang = "en"> Make a backup </ dt>
           <dd class = "langSel" lang = "en"> Click the backup creation button to create a backup file that summarizes all the registered list data and link data. </ dd>
+          <dd class = "langSel" lang = "en"> When the "Use iCloud" switch is ON, the backup will also be saved in iCloud. You can also view the backup list as saved in iCloud and restore from backups on other devices. </ dd>
           <dd class = "langSel" lang = "en"> The created backup is displayed by the date and time and size of the backup. Multiple backups are listed starting with the newest one. </dd>
           <dd class = "langSel" lang = "en"> You can also add comments to the backup. </ dd>
           <dd class = "langSel" lang = "en"> The backup data is compressed and retained, so the size is a guide. </ dd>
@@ -665,12 +697,18 @@
           <dd class = "langSel" lang = "en"> Press and hold the backup you want to share and press the share button that appears. </ dd>
           <dd class = "langSel" lang = "en"> You can share the backup file by attaching it to an email or memo. </ dd>
           <dd class = "langSel" lang = "en"> If you save the backup file in the lightlist app with the file app, you can restore the backup deleted in the app or move the list data to other iOS devices at once. increase. </ dd>
+          <dt class = "langSel" lang = "en"> Backup download, upload </ dt>
+           <dd class = "langSel" lang = "en"> When the "Use iCloud" switch is ON, you can download the backup on iCloud to your device. When the switch is off, you can upload backups on your device to iCloud. </ dd>
+           <dd class = "langSel" lang = "en"> Do nothing if the destination already has a backup with the same name. </ dd>
           <dt class = "langSel" lang = "en"> Restore backup </ dt>
            <dd class = "langSel" lang = "en"> Tap the backup you want to restore and press the restore button that appears. </ dd>
            <dd class = "langSel" lang = "en"> You can restore the backed up list data. Be careful not to make a mistake, as restoration means reverting to the state of the list in the past when you backed up. </ dd>
+           <dd class = "langSel" lang = "en"> If iCloud is auto-syncing, the restored data will be reflected on other syncing devices as well. </ dd>
            <dd class = "langSel" lang = "en"> By default, a backup is automatically created before restoration just in case. If you make a mistake and restore it, restore it again with the automatically created backup. </ dd>
+           <dt class = "langSel" lang = "en"> Select multiple backups </ dt>
+           <dd class = "langSel" lang = "en"> You can select multiple backups by pressing the select button at the top right of the screen. </ dd>
+           <dd class = "langSel" lang = "en"> The selected backups can be processed together with the delete button or upload / download button at the top of the screen. </ dd>
         </dl>
-
 
         <a href="#top">🔝</a>
         <a name="applewatch1">
@@ -837,6 +875,8 @@
       <dt class="langSel" lang="ja">Apple Watch にリストが全く送れない</dt>
           <dd class="langSel" lang="ja">Apple Watch App で 「iPhone からリロード」をしても iPhone からリストが送られない時は下記の操作を試してください。</dd>
           <dd class="langSel" lang="ja">Apple Watch のサイドボタンを押して lightlist を選んで左にドラッグして削除ボタンを押して App を一旦終わらせてください。その後に再度 Apple Watch App を起動してから Apple Watch App で リロードボタンを押してみてください。</dd>
+          <dt class="langSel" lang="ja">iCloudで同期を開始した時にデータがおかしくなった</dt>
+          <dd class="langSel" lang="ja">本アプリは同期開始した時に iCloudにあるデータが他のデバイスで１から作ったデータならデバイスにあるデータとマージし、そうでないならiCloudにあるデータとデバイスのデータの新しい方を使います。もし初回マージがうまくいかなかった時はそのデータを手作業で修正してアップロードするか、もしくは採用したい側のデータのデバイスに自動バックアップされているデータをリストアして下さい。</dd>
           <dt class="langSel" lang="ja">機能制限解除の購入で画面が変わらない</dt>
           <dd class="langSel" lang="ja">一度リスト一覧画面に戻ってから再度設定画面を表示してみてください。</dd>
 
@@ -846,6 +886,8 @@
           <dt class = "langSel" lang = "en"> Unable to send list to Apple Watch at all</ dt>
           <dd class = "langSel" lang = "en"> If the list is not sent from the iPhone even after "Reload from iPhone" on the Apple Watch App, try the following operations. </ dd>
            <dd class = "langSel" lang = "en"> Press the side button on your Apple Watch, select lightlist and drag to the left and press the delete button to quit the app. Then launch the Apple Watch App again and try press reload button in the Apple Watch App. </ dd>
+           <dt class = "langSel" lang = "en"> Data went wrong when I started syncing with iCloud </ dt>
+           <dd class = "langSel" lang = "en"> This app merges the data in iCloud with the data in the device if it was created from 1 on another device when synchronization starts, otherwise the data in iCloud And use the newer one of the device data. If the initial merge does not work correctly, please manually correct and upload the data, or restore the data that is automatically backed up to the device of the data you want to adopt. </ dd>
            <dt class = "langSel" lang = "en"> The screen does not change with the purchase of the function restriction release </ dt>
            <dd class = "langSel" lang = "en"> Please return to the list list screen from the item edit screen of iPhone. At that time, the item will be registered and the new item can be reflected on Apple Watch. </ dd>
         </dl>
@@ -859,8 +901,9 @@
         <dl>
           <dt class="langSel" lang="ja">ver.2.2</dt>
           <dd class="langSel" lang="ja">iPadをサポートしました。</dd>
-          <dd class="langSel" lang="ja">iPadとiPhoneをiCloud経由で同期できるようになりました。</dd>
-          <dd class="langSel" lang="ja">バックアップ管理画面でバックアップにコメントをつけられるようにしました。</dd>
+          <dd class="langSel" lang="ja">iPadとiPhoneのデータをiCloud経由で同期できるようになりました。</dd>
+          <dd class="langSel" lang="ja">バックアップをiCloudに保存できるようになりました。</dd>
+          <dd class="langSel" lang="ja">バックアップにコメントをつけられるようになりました。</dd>
           <dt class="langSel" lang="ja">ver.2.1</dt>
           <dd class="langSel" lang="ja">全リストデータを一括でバックアップや復元できるバックアップ管理機能を追加しました。</dd>
           <dt class="langSel" lang="ja">ver.2.0</dt>
@@ -914,8 +957,9 @@
           
           <dt class = "langSel" lang = "en"> ver.2.2 </ dt>
           <dd class = "langSel" lang = "en"> iPad is supported. </ dd>
-          <dd class = "langSel" lang = "en"> You can now sync your iPad and iPhone via iCloud. </ dd>
-          <dd class = "langSel" lang = "ne"> You can now add comments to backups on the backup management screen. </ dd>
+          <dd class = "langSel" lang = "en"> You can now sync iPad and iPhone data via iCloud. </ dd>
+           <dd class = "langSel" lang = "en"> You can now save backups to iCloud. </ dd>
+           <dd class = "langSel" lang = "en"> You can now comment on backups. </ dd>
           <dt class = "langSel" lang = "en"> ver.2.1 </ dt>
           <dd class = "langSel" lang = "en"> A backup management function has been added that allows you to backup and restore all list data at once. </ dd>
           <dt class = "langSel" lang = "en"> ver.2.0 </ dt>
