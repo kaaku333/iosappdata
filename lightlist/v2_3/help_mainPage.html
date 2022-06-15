@@ -430,9 +430,9 @@
           <dd class="langSel" lang="ja">画面の上の鉛筆アイコン <div class="icon_blue mask_pencil"></div> の表示が <div class="icon_blue mask_pencil_slash"></div> の時、ラベルを長押しして出てくるコンテキストメニューで、その項目のみか次のラベルまでの間にある項目をまとめてコピーすることができます。</dd>
           <dd class="langSel" lang="ja">コピーした項目は、他のリストに貼り付けできます。</dd>
           <dt class="langSel" lang="ja">他のリストと比較</dt>
-          <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_line_3"></div> をタップしてリスト比較を選ぶと他のリストと項目の有無を比較できます。</dd>
-          <dd class="langSel" lang="ja">オプションでリンクしたリストのみ比較をチェックすると、比較対象としてリンク設定でリンクしたリストのみが選べ、チェックを外すと他の全てのリストから選べます。</dd>
-          <dd class="langSel" lang="ja">比較したいリスト名を選ぶと<a href="#listcompare">リスト比較画面</a>が表示されます。</dd>
+          <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_line_3"></div> をタップしてリスト比較を選ぶと<a href="#listcompare">リスト比較画面</a>が表示されて、他のリストと項目の差異を比較できます。</dd>
+          <dt class="langSel" lang="ja">重複項目の表示</dt>
+          <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_line_3"></div> をタップして重複した項目を表示を選ぶと、リストの中で２個以上登録されている項目を表示できます。</dd>
           <dt class="langSel" lang="ja">項目の検索</dt>
           <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_magglass"></div> をタップして項目名を入力すると、すでに入力ずみの項目を検索できます。</dd>
 
@@ -475,9 +475,9 @@
            <dd class = "langSel" lang = "en"> When pencil icon <div class="icon_blue mask_pencil"></div> is displayed as <div class="icon_blue mask_pencil_slash"></div>, in the context menu that appears by pressing and holding the label, only that item or up to the next label You can copy the items in between at once. </ dd>
            <dd class = "langSel" lang = "en"> You can use the copied items for past other list.</ dd>
            <dt class = "langSel" lang = "en"> Compare with other lists </ dt>
-           <dd class = "langSel" lang = "en"> Tap <div class = "icon_blue mask_line_3"> </div> at the top of the screen and select List Compare to compare the presence or absence of items with other lists. </ dd>
-           <dd class = "langSel" lang = "en">If you check only the list linked in the option, you can select only the list linked in the link setting as the comparison target, and if you uncheck it, you can select from all other lists. </ dd>
-           <dd class = "langSel" lang = "en"> Select the list name you want to compare and the <a href="#listcompare"> list comparison screen </a> will be displayed. </ dd>
+           <dt class = "langSel" lang = "en">Tap <div class = "icon_blue mask_line_3"> </ div> at the top of the screen and select list compare. <a href="#listcompare">List compare screen</a> is displayed so that you can compare the item differences with other lists. </ dd>
+           <dt class = "langSel" lang = "en"> Display duplicate items </ dt>
+           <dd class = "langSel" lang = "en"> Tap <div class = "icon_blue mask_line_3"> </ div> at the top of the screen and select Show duplicate items to display two or more registered items in the list. </ dd>
            <dt class = "langSel" lang = "en"> Search for items </ dt>
            <dd class = "langSel" lang = "en"> Tap <div class = "icon_blue mask_magglass"> </ div> at the top of the screen and enter the item name to search for items that have already been entered. </ dd>
         </dl>
@@ -493,7 +493,7 @@
           <dd class="langSel" lang="ja">比較先リストをタップすると、比較先のリストを切り替えることができます。</dd>
           <dd class="langSel" lang="ja">比較元と比較先の切り替えで、今のリストと比較先リストのどちらにしかない項目を表示するか切り替えできます。</dd>
           <dd class="langSel" lang="ja">切り替えしても画面の下に項目が表示されない場合は、それぞれのリストに登録されている項目は同じということです。</dd>
-          <dd class="langSel" lang="ja">画面の下に表示された項目を選ぶと、画面上部に表示されたアイコンで、選択した項目を取り込み・書き出ししたり、項目を削除したりできます。</dd>
+          <dd class="langSel" lang="ja">画面の下に表示された項目を選ぶと、画面上部に表示されたメニューアイコンから、選択した項目を取り込み・書き出ししたり、項目を削除したりできます。</dd>
           
           
           <dd class = "langSel" lang = "en"> You can display the list comparison screen by selecting list comparison from the menu of the item edit screen. </ dd>
@@ -502,7 +502,7 @@
           <dd class = "langSel" lang = "en"> Tap the comparison destination list to switch the comparison destination list. </ dd>
           <dd class = "langSel" lang = "en"> By switching between the comparison source and comparison destination, you can switch whether to display the items that are only in the current list or the comparison destination list. </ dd>
           <dd class = "langSel" lang = "en"> If the items are not displayed at the bottom of the screen even after switching, it means that the items registered in each list are the same. </ dd>
-          <dd class = "langSel" lang = "en"> If you select the item displayed at the bottom of the screen, you can import / export the selected item or delete the item with the icon displayed at the top of the screen. </ dd>
+          <dd class = "langSel" lang = "en"> If you select the item displayed at the bottom of the screen, you can import / export the selected item or delete the item with the menu icon displayed at the top of the screen. </ dd>
         </dl>
         
         <a href="#top">🔝</a>
@@ -635,7 +635,6 @@
           <dd class="langSel" lang="ja">常に全ラベルを表示するかどうかを変更することができます。</dd>
           <dd class="langSel" lang="ja">同じ項目の追加を禁止するかどうか変更することができます。</dd>
           <dd class="langSel" lang="ja">項目を共有やコピーする時にラベルを含めるかどうか変更することができます。</dd>
-          <dd class="langSel" lang="ja">リストの比較で比較対象をリンクしたリストだけにするか全リストにするか変更できます。</dd>
           <dt class="langSel" lang="ja">バックアップ</dt>
           <dd class="langSel" lang="ja">バックアップ管理画面を開くことができます。</dd>
           <dd class="langSel" lang="ja">バックアップ管理画面でバックアップを復元するときに、念の為に自動的にバックアップを自動的に作成するかどうかを変更することができます。</dd>
@@ -643,7 +642,7 @@
           <dt class="langSel" lang="ja">iPhone/iPad iCloud設定</dt>
           <dd class="langSel" lang="ja">自分の複数のiPhone/iPadのデータを iCloud経由で同期できます。自動同期させることも、マニュアルで同期、アップロード、ダウンロードすることもできます。</dd>
           <dd class="langSel" lang="ja">iCloud で自動同期スイッチをONにすると、本アプリの起動時にデータをロードする時にiCloud上のデータの方が新しければダウンロードし、アプリを抜けるときに iCloudにも保存します。</dd>
-          <dd class="langSel" lang="ja">参考のため、本デバイスのデータの更新時間とiCloud上のデータの更新時間が表示されます。もし同じAppleアカウントでアクセスしたデバイスでiCloud上のデータの更新時間が違う場合は、iCloudのファイル同期に時間がかかっています。数分経ってからアプリを立ち上げ直して下さい。</dd>
+          <dd class="langSel" lang="ja">参考のため、本デバイスのデータの更新時間とiCloud上のデータの更新時刻が表示されます。もし同じAppleアカウントでアクセスしたデバイスでiCloud上のデータの更新時間が違う場合は、iCloudのファイル同期に時間がかかっています。数分経ってからアプリを立ち上げ直して下さい。</dd>
           <dd class="langSel" lang="ja">同期ボタンを押したら、現在のデータと iCloud上 のデータの新しい方を現在のアプリとiCloudの両方に保存します。</dd>
           <dd class="langSel" lang="ja">アップロードボタンを押したら、現在のデバイスのデータを iCloud上 にアップロードします。</dd>
           <dd class="langSel" lang="ja">ダウンロードボタンを押したら、iCloud上にあるデータをダウンロードします。</dd>
@@ -666,7 +665,6 @@
            <dd class = "langSel" lang = "en"> You can change whether to always display all labels. </ dd>
            <dd class = "langSel" lang = "en"> You can change whether to prohibit the addition of the same item. </ dd>
            <dd class = "langSel" lang = "en"> You can change whether to include labels when sharing or copying items. </ dd>
-           <dd class = "langSel" lang = "ne"> You can change whether the comparison target is only the linked list or the whole list by comparing the list. </ dd>
            <dt class = "langSel" lang = "en"> backup </ dt>
            <dd class = "langSel" lang = "en"> You can open the backup management screen. </ dd>
            <dd class = "langSel" lang = "en"> When you restore a backup on the backup management screen, you can change whether to automatically create a backup just in case. </ dd>
@@ -943,7 +941,8 @@
         <dl>
           <dt class="langSel" lang="ja">ver.2.3</dt>
           <dd class="langSel" lang="ja">他のリストと項目の有無を比較できるようになりました。</dd>
-          <dd class="langSel" lang="ja">片方のリストにしかない項目をコピーできます。</dd>
+          <dd class="langSel" lang="ja">片方のリストにしかない項目をもう片方にコピーできます。</dd>
+          <dd class="langSel" lang="ja">リストの中で重複している項目を表示できるようになりました。</dd>
           <dt class="langSel" lang="ja">ver.2.2</dt>
           <dd class="langSel" lang="ja">iPadをサポートしました。</dd>
           <dd class="langSel" lang="ja">iPadとiPhoneのデータをiCloud経由で同期できるようになりました。</dd>
@@ -999,8 +998,10 @@
           <dd class="langSel" lang="ja">他アプリのリストのリンクを登録する代わりにリストを取り込むことができるようになりました。</dd>
           <dt class="langSel" lang="ja">ver.1.0</dt>
           <dd class="langSel" lang="ja">新規開発</dd>
-          
-          
+          <dt class = "langSel" lang = "en"> ver.2.3 </ dt>
+           <dd class = "langSel" lang = "en"> You can now compare the presence or absence of items with other lists. </ dd>
+           <dd class = "langSel" lang = "en"> You can copy items that are only in one list to the other. </ dd>
+           <dd class = "langSel" lang = "en"> You can now view duplicate items in the list. </ dd>
           <dt class = "langSel" lang = "en"> ver.2.2 </ dt>
           <dd class = "langSel" lang = "en"> iPad is supported. </ dd>
           <dd class = "langSel" lang = "en"> You can now sync iPad and iPhone data via iCloud. </ dd>
