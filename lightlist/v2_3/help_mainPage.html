@@ -131,6 +131,14 @@
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/magnifyingglass@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/magnifyingglass@2x.png);
     }
+    .mask_checkmark_seal {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.seal@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.seal@2x.png);
+    }
+        .mask_checkmark_seal_fill {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.seal.fill@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.seal.fill@2x.png);
+    }
     dl  {
       padding: 10px 20px 20px 30px;
       line-height: 1.4;
@@ -239,6 +247,7 @@
       <dd class="langSel" lang="ja"><a href="#role">iPhone と Apple Watch の App の役割</a></dd>
       <dd class="langSel" lang="ja"><a href="#makelist">リストを作る方法</a></dd>
       <dd class="langSel" lang="ja"><a href="#edititems">項目を編集する方法</a></dd>
+      <dd class="langSel" lang="ja"><a href="#checkonlymode">チェック専用モード</a></dd>
       <dd class="langSel" lang="ja"><a href="#listcompare">リストの比較</a></dd>
       <dd class="langSel" lang="ja"><a href="#outliner">他 App のリストを使う方法</a></dd>
       <dd class="langSel" lang="ja"><a href="#editlist">リストの編集方法</a></dd>
@@ -256,6 +265,7 @@
       <dd class = "langSel" lang = "en"><a href="#role">App roles of iPhone and Apple Watch</a></dd>
       <dd class = "langSel" lang = "en"> <a href="#makelist"> How to make a list</a> </dd>
       <dd class = "langSel" lang = "en"> <a href="#edititems"> How to edit items</a> </dd>
+      <dd class="langSel" lang="en"><a href="#checkonlymode"> Check-only mode</a></dd>
       <dd class="langSel" lang="en"><a href="#listcompare"> List Compare </a></dd>
       <dd class = "langSel" lang = "en"> <a href="#outliner"> How to use a list of other apps </a> </dd>
       <dd class = "langSel" lang = "en"> <a href="#editlist"> How to edit a list </a> </dd>
@@ -480,7 +490,26 @@
            <dt class = "langSel" lang = "en"> Search for items </ dt>
            <dd class = "langSel" lang = "en"> Tap <div class = "icon_blue mask_magglass"> </div> at the top of the screen and enter the item name to search for items. </ dd>
         </dl>
-        
+
+
+
+        <a href="#top">🔝</a>
+        <a name="checkonlymode">
+        <h2 class="langSel" lang="ja">チェック専用モード</h2>
+        <h2 class = "langSel" lang = "en"> Check-only mode </h2>
+        <dl>
+          <dd class="langSel" lang="ja">項目編集画面の右上にある<div class="icon_blue checkmark_seal"></div> を押して表示が <div class="icon_blue checkmark_seal_fill"></div>にするとチェック専用モードになります。</dd>
+          <dd class="langSel" lang="ja">チェック専用モードは Apple Watch でのチェックリストと同様にチェックの使いやすさに特化したモードで、チェック専用モードに入った時に未チェック状態の項目だけを表示し、チェックしてもその項目は消えません。</dd>
+          <dd class="langSel" lang="ja">リストの最後のチェックした項目を非表示にするボタンを押すか、各項目を左ドラッグして表示される削除ボタンを押せばチェックを確定して該当項目を非表示にすることができます。</dd>
+          <dd class="langSel" lang="ja">チェック専用モードから通常モードに戻るには<div class="icon_blue checkmark_seal_fill"></div>をもう一度押して下さい。
+          
+          <dd class = "langSel" lang = "en"> Press <div class = "icon_blue checkmark_seal"> </div> at the top right of the item edit screen to display <div class = "icon_blue checkmark_seal_fill"> </div> If set to, the check-only mode will be set. </ dd>
+          <dd class = "langSel" lang = "en"> Check-only mode is a mode that specializes in the ease of use of checks, similar to the checklist on Apple Watch, and items that are unchecked when entering check-only mode. Even if you display only and check it, the item will not disappear. </ dd>
+          <dd class = "langSel" lang = "en"> Press the button to hide the last checked item in the list, or left-drag each item and press the delete button to confirm the check. You can hide the corresponding item. </ dd>
+          <dd class = "langSel" lang = "en"> Press <div class = "icon_blue checkmark_seal_fill"> </div> again to return from check-only mode to normal mode.
+        </dl>
+
+
         <a href="#top">🔝</a>
         <a name="listcompare">
         <h2 class="langSel" lang="ja">リストの比較</h2>
@@ -549,7 +578,7 @@
           <dt class="langSel" lang="ja">リストの並び替え</dt>
           <dd class="langSel" lang="ja">画面右上の <div class="icon_blue mask_arrow_up_down"></div> を押すと、リストの右側の <div class="icon_white mask_line_3"></div> をドラッグすることでリストを並び替えできます。もう一度 <div class="icon_blue mask_arrow_up_down"></div> を押すと並び替えモードを終了します。</dd>
           <dt class="langSel" lang="ja">リスト名の変更</dt>
-          <dd class="langSel" lang="ja">本Appで作ったリストは、リスト名をタップして表示されるリスト項目の編集画面で変更できます。他AppのリストはそのAppでリスト名を変更してからリスト名の右にある <div class="icon_white mask_arrow_clockwise"></div> を押すかリスト名長押しで出てくるコンテクストメニューで名前再読み込みを選んでリスト名を読み込み直してください。</dd>
+          <dd class="langSel" lang="ja">リスト名を長押しして出てくるコンテキストメニューで、タイトル変更を選んで名前を変更できます。他AppのリストはそのAppでリスト名を変更してからリスト名の右にある <div class="icon_white mask_arrow_clockwise"></div> を押すかリスト名長押しで出てくるコンテクストメニューで名前再読み込みを選んでリスト名を読み込み直してください。</dd>
           
           <dt class="langSel" lang="ja">リスト色の変更</dt>
           <dd class="langSel" lang="ja">リスト名を長押しして出てくるコンテキストメニューで、カラーを選んで色変更できます。</dd>
@@ -566,7 +595,7 @@
           <dt class = "langSel" lang = "en"> Sort list </dt>
           <dd class = "langSel" lang = "en"> If you press <div class="icon_blue mask_arrow_up_down"></div> on the upper right of the screen, you can rearrange the list by dragging <div class="icon_white mask_line_3"></div> on the right side of the list. Press <div class="icon_blue mask_arrow_up_down"></div> again to exit the sort mode. </ dd>
           <dt class = "langSel" lang = "en"> Rename list </ dt>
-           <dd class = "langSel" lang = "en">The list created by this app can be changed on the edit screen of the list item displayed by tapping the list name. For the list of other apps, change the list name in that app and then press <div class="icon_white mask_arrow_clockwise"></div> to the right of the list name or press and hold the list name and select Reload Name from the context menu that appears to reload the list name. </ dd>
+           <dd class = "langSel" lang = "en">You can change the name by long-pressing the list name and selecting Rename title in the context menu that appears. For the list of other apps, change the list name in that app and then press <div class="icon_white mask_arrow_clockwise"></div> to the right of the list name or press and hold the list name and select Reload Name from the context menu that appears to reload the list name. </ dd>
           <dt class = "langSel" lang = "en"> Change list color </ dt>
           <dd class = "langSel" lang = "en"> You can change the color by selecting a color in the context menu that appears when you press and hold the list name. </ dd>
           <dt class = "langSel" lang = "en"> Send list to Apple Watch </ dt>
@@ -939,10 +968,12 @@
         <h2 class = "langSel" lang = "en"> Version History </h2>
         <dl>
           <dt class="langSel" lang="ja">ver.2.3</dt>
+          <dd class="langSel" lang="ja">項目一覧画面にチェックだけに特化したチェック専用モードを追加しました。</dd>
           <dd class="langSel" lang="ja">項目一覧画面のメニューに調査メニューを追加しました。</dd>
           <dd class="langSel" lang="ja">他のリストと項目の有無を比較し、片側にしかない項目を選んでコピーできるようになりました。
 </dd>
           <dd class="langSel" lang="ja">リストの中の重複している項目を検出できるようになりました。</dd>
+          <dd class="langSel" lang="ja">リスト一覧画面のコンテキストメニューにリスト名変更とリスト比較を追加しました。</dd>
           <dt class="langSel" lang="ja">ver.2.2</dt>
           <dd class="langSel" lang="ja">iPadをサポートしました。</dd>
           <dd class="langSel" lang="ja">iPadとiPhoneのデータをiCloud経由で同期できるようになりました。</dd>
@@ -1002,10 +1033,12 @@
           
           
           <dt class = "langSel" lang = "en"> ver.2.3 </ dt>
+          <dd class = "langSel" lang = "ja"> A check-only mode dedicated to checking has been added to the item list screen. </ dd>
            <dd class = "langSel" lang = "en"> An inspection menu has been added to the menu of the item list screen. </ dd>
            <dd class = "langSel" lang = "en"> You can now compare the presence or absence of items with other lists and select and copy items that are only on one side.
 </ dd>
            <dd class = "langSel" lang = "en"> You can now detect duplicate items in the list. </ dd>
+           <dd class = "langSel" lang = "en"> Added rename list and list comparison to the context menu of the main screen. </ dd>
           <dt class = "langSel" lang = "en"> ver.2.2 </ dt>
           <dd class = "langSel" lang = "en"> iPad is supported. </ dd>
           <dd class = "langSel" lang = "en"> You can now sync iPad and iPhone data via iCloud. </ dd>
