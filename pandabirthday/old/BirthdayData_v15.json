@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v16 2022/07/01",
+        "_version": "v15 2022/05/13",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -19,10 +19,9 @@
                 [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
                 [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
                 [ "シャオシャオのYouTube", "https://www.youtube.com/results?sp=mAEB&search_query=%E3%82%B7%E3%83%A3%E3%82%AA%E3%82%B7%E3%83%A3%E3%82%AA" ],
-                [ "Yahoo News シャオシャオの記事", "https://news.yahoo.co.jp/search?p=%E3%82%B7%E3%83%A3%E3%82%AA%E3%82%B7%E3%83%A3%E3%82%AA&ei=utf-8" ],
                 [ "東洋経済オンライン 中川さんのパンダ記事", "https://toyokeizai.net/list/author/%E4%B8%AD%E5%B7%9D_%E7%BE%8E%E5%B8%86" ],
             ],
-        "note" : "メモ：上野動物園の双子パンダのオスの子です。名前は漢字で暁暁と書きます。夜明けの光が差し明るくなるという意味です。感情表現が豊かでやんちゃです。",
+        "note" : "メモ：上野動物園の双子パンダのオスの子です。名前は漢字で暁暁と書きます。夜明けの光が差し明るくなるという意味です。公式 YouTube チャンネルでレイレイやシンシンとのかわいい絡みが見れます。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "shaoshao1",
         "newImageNames": [ "shaoshao2" ],
@@ -46,11 +45,10 @@
                 [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
                 [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
                 [ "レイレイのYouTube", "https://www.youtube.com/results?search_query=%E3%83%AC%E3%82%A4%E3%83%AC%E3%82%A4+%E3%83%91%E3%83%B3%E3%83%80" ],
-                [ "Yahoo News レイレイの記事", "https://news.yahoo.co.jp/search?p=%E3%83%AC%E3%82%A4%E3%83%AC%E3%82%A4&ei=utf-8"],
                 [ "東洋経済オンライン 中川さんのパンダ記事", "https://toyokeizai.net/list/author/%E4%B8%AD%E5%B7%9D_%E7%BE%8E%E5%B8%86" ],
             ],
 
-        "note" : "メモ：上野動物園の双子パンダのメスの子です。名前は漢字で蕾蕾と書きます。つぼみから美しい花が咲き、未来へ繋がっていくという意味です。マイペースでおっとりしています。",
+        "note" : "メモ：上野動物園の双子パンダのメスの子です。名前は漢字で蕾蕾と書きます。つぼみから美しい花が咲き、未来へ繋がっていくという意味です。公式 YouTube チャンネルでシャオシャオやシンシンとのかわいい絡みが見れます。",
         "_comment": "imageName は App ver1.X の互換性のため. newImageNames は２号と順番を入れ替えて違う画像が選ばれるようにする",
         "imageName": "rayray1",
         "newImageNames": [ "rayray2" ],
@@ -308,7 +306,7 @@
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
                 [ "良浜のYouTube", "https://www.youtube.com/results?search_query=%E8%89%AF%E6%B5%9C" ],
             ],
-        "note" : "メモ：日本生まれとして初めてのお母さんパンダです。１０頭の子供がいるベテランママです。",
+        "note" : "メモ：日本生まれとして初めてのお母さんパンダです。２０２１年現在１０頭の子供がいるベテランママです。",
 
         "imageName": "rauhin1",
     },
@@ -335,7 +333,6 @@
                 [ "神戸市王子動物園 パンダの部屋", "http://www.kobe-ojizoo.jp/animal/panda/"],
                 [ "神戸市王子動物園 ありがとうタンタン", "https://thanks-tantan.com/" ],
                 [ "タンタンのYouTube", "https://www.youtube.com/results?search_query=%E3%82%BF%E3%83%B3%E3%82%BF%E3%83%B3+%E3%83%91%E3%83%B3%E3%83%80" ],
-                [ "Yahoo News タンタンの記事", "https://news.yahoo.co.jp/search?p=%E3%82%BF%E3%83%B3%E3%82%BF%E3%83%B3%E3%80%80%E3%83%91%E3%83%B3%E3%83%80&ei=utf-8" ],
                 [ "現代ビジネス パンダに関する記事", "https://gendai.ismedia.jp/list/tag/%E3%83%91%E3%83%B3%E3%83%80" ],
                 [ "神戸市 タンタンの返還について", "https://www.city.kobe.lg.jp/a84159/shise/shichoshitsu/letter/r2/ojizoo.html" ],
                 [ "関西ウォーカー パンダのタンタンお別れ", "https://www.walkerplus.com/trend/matome/article/1004233/" ],
@@ -370,7 +367,7 @@
                 [ "永明のYouTube", "https://www.youtube.com/results?search_query=%E6%B0%B8%E6%98%8E+%E3%83%91%E3%83%B3%E3%83%80" ],
             ],
 
-        "note" : "メモ：ダンディーで女性に優しい超ベテランパパです。１６頭の子供がいます。竹の好き嫌いがはっきりしているグルメです。",
+        "note" : "メモ：ダンディーで女性に優しい超ベテランパパです。２０２１年現在１６頭の子供がいます。竹の好き嫌いがはっきりしているグルメです。",
 
         "imageName": "eimei1",
     },
