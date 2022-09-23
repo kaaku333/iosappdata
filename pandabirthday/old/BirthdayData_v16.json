@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v17 2022/09/23",
+        "_version": "v16 2022/07/01",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -22,7 +22,7 @@
                 [ "Yahoo News シャオシャオの記事", "https://news.yahoo.co.jp/search?p=%E3%82%B7%E3%83%A3%E3%82%AA%E3%82%B7%E3%83%A3%E3%82%AA&ei=utf-8" ],
                 [ "東洋経済オンライン 中川さんのパンダ記事", "https://toyokeizai.net/list/author/%E4%B8%AD%E5%B7%9D_%E7%BE%8E%E5%B8%86" ],
             ],
-        "note" : "メモ：上野動物園の双子パンダのオスの子です。わんぱくだけど甘えん坊です。",
+        "note" : "メモ：上野動物園の双子パンダのオスの子です。名前は漢字で暁暁と書きます。夜明けの光が差し明るくなるという意味です。感情表現が豊かでやんちゃです。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "shaoshao1",
         "newImageNames": [ "shaoshao2" ],
@@ -50,10 +50,10 @@
                 [ "東洋経済オンライン 中川さんのパンダ記事", "https://toyokeizai.net/list/author/%E4%B8%AD%E5%B7%9D_%E7%BE%8E%E5%B8%86" ],
             ],
 
-        "note" : "メモ：上野動物園の双子パンダのメスの子です。マイペースだけどシャオシャオには負けません。",
+        "note" : "メモ：上野動物園の双子パンダのメスの子です。名前は漢字で蕾蕾と書きます。つぼみから美しい花が咲き、未来へ繋がっていくという意味です。マイペースでおっとりしています。",
         "_comment": "imageName は App ver1.X の互換性のため. newImageNames は２号と順番を入れ替えて違う画像が選ばれるようにする",
         "imageName": "rayray1",
-        "newImageNames": [ "rayray3" ],
+        "newImageNames": [ "rayray2" ],
     },
     {
         "name":"楓浜",
