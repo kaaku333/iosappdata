@@ -25,7 +25,7 @@
         "note" : "メモ：上野動物園の双子パンダのオスの子です。わんぱくだけど甘えん坊です。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "shaoshao1",
-        "newImageNames": [ "shaoshao2" ],
+        "newImageNames": [ "shaoshao3" ],
     },
     {
         "name":"レイレイ",
