@@ -3,6 +3,7 @@
 ◆ファイル
 FileInfoファイル
 　fileInfo.json
+　fileInfo2.json
 　　ファイルバージョン管理ファイル。
 　　サーバー上のDBファイルおよび画像ファイルのバージョン番号を示す。
 　　App内でダウンロード済みのバージョン番号と突き合わせて、
@@ -10,16 +11,23 @@ FileInfoファイル
 　　version は該当ファイルを新しくUPしたら1インクリメント。
 　	　新しいファイル名なら項目追加する。バージョンは１から始まる。
 　　stored はサーバー上のfileInfoでは appfile としておく（app組み込みのfileInfoはpresetとしておく)。★サーバーと組み込みで内容差分があることに注意。
+　　fileInfo.json は App v3.3 まで用の現行パンダのみのデータ。
+　　fileInfo2.json は App v4.0 以降用の過去在日パンダ含むデータ。
+
 
 DBファイル
 　BirthdayData.json
-　　app提供のDB。
+　BirthdayData2.json
+　　プリセットデータのDB。
 		サーバー上には最新のファイルを置いておく。
 		更新したら サーバー上のfileInfo の該当項目のバージョンを上げること。
 		Appをバージョンアップする際はサーバーに上げている最新のデータを使う。
 		その際は preset の fileInfo のバージョン番号も サーバー上のものと合わせること。
 		imageName は App V2.0に組み込まれている画像であること。
 		newImageNames はダウンロードする画像として、App に組み込まれていなくてもいい。複数指定したら、ランダムに表示される。
+　　BirthdayData.json は App v3.3 まで用の現行パンダのみのデータ。
+　　BirthdayData2.json は App v4.0 以降用の過去在日パンダ含むデータ。
+
 		
 
 画像ファイル
