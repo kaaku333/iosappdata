@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v19 2022/11/18",
+        "_version": "v17 2022/09/23",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -124,8 +124,8 @@
         "animaltype" : "パンダ",
         "birthplace" : "上野動物園",
         "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
-        "returndate" : "2023-03-15",
-        "returnexpdate" : "2023-03-15",
+        "returndate" : "2022-12-31",
+        "returnexpdate" : "2022-12-31",
         "parents" : "リーリー、シンシン",
         "brothers" : "シャオシャオ、レイレイ",
         "preset" : true,
