@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v20 2022/12/15",
+        "_version": "v18 2022/11/04",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -124,8 +124,8 @@
         "animaltype" : "パンダ",
         "birthplace" : "上野動物園",
         "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
-        "returndate" : "2023-03-15",
-        "returnexpdate" : "2023-03-15",
+        "returndate" : "2022-12-31",
+        "returnexpdate" : "2022-12-31",
         "parents" : "リーリー、シンシン",
         "brothers" : "シャオシャオ、レイレイ",
         "preset" : true,
@@ -183,8 +183,7 @@
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、良浜",
         "brothers" : "楓浜、彩浜、結浜、桃浜、優浜、陽浜、海浜、永浜、梅浜",
-        "returndate" : "2023-02-28",
-        "returnexpdate" : "2023-02-28",
+        "returnexpdate" : "2021-12-02",
         "preset" : true,
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
@@ -210,8 +209,7 @@
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、良浜",
         "brothers" : "楓浜、彩浜、結浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
-        "returndate" : "2023-02-28",
-        "returnexpdate" : "2023-02-28",
+        "returnexpdate" : "2021-12-02",
 
         "preset" : true,
         "relations" : [
@@ -717,8 +715,7 @@
         "brothers" : "園園、吉妮",
         "children" : "楓浜、彩浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜、雄浜、秋浜、隆浜、幸浜、明浜、愛浜",
         "comingdate" : "1994-09-06",
-        "returndate" : "2023-02-28",
-        "returnexpdate" : "2023-02-28",
+        "returnexpdate" : "2026-09-06",
         "preset" : true,
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
