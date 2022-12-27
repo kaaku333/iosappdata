@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v22 2022/12/23",
+        "_version": "v23 2022/12/27",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -329,7 +329,8 @@
         "parents" : "振振、冬冬",
         "brothers" : "大地、希望",
         "comingdate" : "2000-07-16",
-        "returnexpdate" : "2022-12-31",
+        "returndate" : "2023-12-31",
+        "returnexpdate" : "2023-12-31",
 
         "preset" : true,
         "relations" : [

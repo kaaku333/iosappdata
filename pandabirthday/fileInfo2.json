@@ -2,7 +2,7 @@
     { "category": "db",
             "basename": "BirthdayData2",
             "extname": "json",
-            "version": 22,
+            "version": 23,
             "stored": "appfile" },
     { "category": "image",
                 "basename": "calendar_blue",
