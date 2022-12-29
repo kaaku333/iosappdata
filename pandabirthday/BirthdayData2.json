@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v24 2022/12/28",
+        "_version": "v26 2022/12/29",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -183,8 +183,8 @@
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、良浜",
         "brothers" : "楓浜、彩浜、結浜、桃浜、優浜、陽浜、海浜、永浜、梅浜",
-        "returndate" : "2023-02-28",
-        "returnexpdate" : "2023-02-28",
+        "returndate" : "2023-02-22",
+        "returnexpdate" : "2023-02-22",
         "preset" : true,
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
@@ -210,9 +210,8 @@
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、良浜",
         "brothers" : "楓浜、彩浜、結浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
-        "returndate" : "2023-02-28",
-        "returnexpdate" : "2023-02-28",
-
+        "returndate" : "2023-02-22",
+        "returnexpdate" : "2023-02-22",
         "preset" : true,
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
@@ -629,6 +628,7 @@
         "parents" : "振振、冬冬",
         "brothers" : "大地、希望",
         "comingdate" : "2000-07-16",
+        "returndate" : "2023-12-31",
         "returnexpdate" : "2023-12-31",
 
         "preset" : true,
@@ -716,8 +716,8 @@
         "brothers" : "園園、吉妮",
         "children" : "楓浜、彩浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜、雄浜、秋浜、隆浜、幸浜、明浜、愛浜",
         "comingdate" : "1994-09-06",
-        "returndate" : "2023-02-28",
-        "returnexpdate" : "2023-02-28",
+        "returndate" : "2023-02-22",
+        "returnexpdate" : "2023-02-22",
         "preset" : true,
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
