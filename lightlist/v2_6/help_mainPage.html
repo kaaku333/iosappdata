@@ -79,6 +79,10 @@
       background: #2222FF;
     }
 
+    .mask_ellipsis_circle {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/ellipsis.circle@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/ellipsis.circle@2x.png);
+    }
     .mask_pencil {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.circle.fill@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.circle.fill@2x.png);
@@ -86,6 +90,14 @@
     .mask_pencil_slash {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.circle@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.circle@2x.png);
+    }
+    .mask_pencil_old {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil@2x.png);
+    }
+    .mask_pencil_slash_old {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.slash@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.slash@2x.png);
     }
     .mask_line_3 {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/line.3.horizontal@2x.png);
@@ -441,9 +453,9 @@
           <dd class="langSel" lang="ja">画面の上の鉛筆アイコン <div class="icon_blue mask_pencil"></div> の表示が <div class="icon_blue mask_pencil_slash"></div> の時、ラベルを長押しして出てくるコンテキストメニューで、その項目のみか次のラベルまでの間にある項目をまとめてコピーすることができます。</dd>
           <dd class="langSel" lang="ja">コピーした項目は、他のリストに貼り付けできます。</dd>
           <dt class="langSel" lang="ja">他のリストと比較</dt>
-          <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_line_3"></div> をタップして調査の中の他のリストと比較を選ぶと<a href="#listcompare">リスト比較画面</a>が表示されて、他のリストと項目の差異を比較できます。</dd>
+          <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_line_3"></div> をタップして「ツール」の中の「他のリストと比較」を選ぶと<a href="#listcompare">リスト比較画面</a>が表示されて、他のリストと項目の差異を比較できます。</dd>
           <dt class="langSel" lang="ja">重複項目の表示</dt>
-          <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_line_3"></div> をタップして調査の中の重複する項目を検出を選ぶと、リストの中で２個以上登録されている項目を表示できます。</dd>
+          <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_line_3"></div> をタップして「ツール」の中の「重複する項目を検出」を選ぶと、リストの中で２個以上登録されている項目を表示できます。</dd>
           <dt class="langSel" lang="ja">項目の検索</dt>
           <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_magglass"></div> をタップして項目名を入力すると、リストの中から該当の項目を検索できます。</dd>
           
@@ -489,9 +501,9 @@
            <dd class = "langSel" lang = "en"> When pencil icon <div class="icon_blue mask_pencil"></div> is displayed as <div class="icon_blue mask_pencil_slash"></div>, in the context menu that appears by pressing and holding the label, only that item or up to the next label You can copy the items in between at once. </ dd>
            <dd class = "langSel" lang = "en"> You can use the copied items for past other list.</ dd>
            <dt class = "langSel" lang = "en"> Compare with other lists </ dt>
-           <dd class = "langSel" lang = "en">Tap <div class = "icon_blue mask_line_3"> </div> at the top of the screen and select Compare other list in Inspection. List compare screen is displayed so that you can compare the item differences with other lists. See more detail <a href="#listcompare">list compare</a></ dd>
+           <dd class = "langSel" lang = "en">Tap <div class = "icon_blue mask_line_3"> </div> at the top of the screen and select 'Compare with other lists' in 'Tools'. List compare screen is displayed so that you can compare the item differences with other lists. See more detail <a href="#listcompare">list compare</a></ dd>
            <dt class = "langSel" lang = "en"> Display duplicate items </ dt>
-           <dd class = "langSel" lang = "en"> Tap <div class = "icon_blue mask_line_3"> </div> at the top of the screen and select Detect duplicate items in Inspection to display two or more registered items in the list. </ dd>
+           <dd class = "langSel" lang = "en"> Tap <div class = "icon_blue mask_line_3"> </div> at the top of the screen and select 'Detect duplicate items' in 'Tools' to display two or more registered items in the list. </ dd>
            <dt class = "langSel" lang = "en"> Search for items </ dt>
            <dd class = "langSel" lang = "en"> Tap <div class = "icon_blue mask_magglass"> </div> at the top of the screen and enter the item name to search for items. </ dd>
         </dl>
@@ -520,7 +532,7 @@
         <h2 class="langSel" lang="ja">リストの比較</h2>
         <h2 class = "langSel" lang = "en"> List Compare </h2>
         <dl>
-          <dd class="langSel" lang="ja">項目編集画面のメニューからリスト比較を選ぶとリストの比較画面が表示できます。</dd>
+          <dd class="langSel" lang="ja">項目編集画面のメニューから「ツール＞他のリストと比較」を選ぶとリストの比較画面が表示できます。</dd>
           <dd class="langSel" lang="ja">この画面では今編集していたリストと選んだ比較先のリストの項目の有無を比較し、片方のリストにしか存在しない項目を表示します。</dd>
           <dd class="langSel" lang="ja">また、表示された項目を選んで、互いのリストにコピーしたり、削除したりすることができます。</dd>
           <dd class="langSel" lang="ja">比較先リストをタップすると、比較先のリストを切り替えることができます。</dd>
@@ -529,7 +541,7 @@
           <dd class="langSel" lang="ja">画面の下に表示された項目を選んだ後に、画面上部に表示されたメニューアイコンから、選択した項目を取り込み・書き出ししたり、項目を削除したりできます。</dd>
           
           
-          <dd class = "langSel" lang = "en"> You can display the list comparison screen by selecting list comparison from the menu of the item edit screen. </ dd>
+          <dd class = "langSel" lang = "en"> You can display the list comparison screen by selecting 'Tools > Compare with other lists' from the menu of the item edit screen. </ dd>
           <dd class = "langSel" lang = "en"> This screen compares the existence of items in the list you are currently editing with the items in the selected comparison destination list, and shows items that exist in only one list. </ dd>
           <dd class = "langSel" lang = "en"> You can also select the displayed items and copy or delete them from each other's list. </ dd>
           <dd class = "langSel" lang = "en"> Tap the comparison destination list to switch the comparison destination list. </ dd>
@@ -1009,6 +1021,10 @@
         <h2 class="langSel" lang="ja">バージョン履歴</h2>
         <h2 class = "langSel" lang = "en"> Version History </h2>
         <dl>
+          <dt class="langSel" lang="ja">ver.2.6</dt>
+          <dd class="langSel" lang="ja">リストの各項目にコンテキストメニューボタン<div class = "icon_blue mask_ellipsis_circle"></div>を追加しました。</dd>
+          <dd class="langSel" lang="ja">項目編集画面の項目名編集モード切り替えアイコンのデザインを変更しました。<div class = "icon_blue mask_pencil_old"></div>⇄<div class = "icon_blue mask_pencil_slash_old"></div>の代わりに <div class = "icon_blue mask_pencil"></div>⇄<div class = "icon_blue mask_pencil_slash"></div>になりました。</dd>
+          <dd class="langSel" lang="ja">項目編集画面の調査メニューはツールメニューに名前を修正しました。</dd>
           <dt class="langSel" lang="ja">ver.2.5</dt>
           <dd class="langSel" lang="ja">Apple Watch でリスト項目の再読み込みで長押しすることでチェック済み項目を含めた全項目を再読み込みし、チェックを外すことができるようになりました。</dd>
           <dd class="langSel" lang="ja">Apple Watch のコンプリケーションでリストの先頭項目を表示することができるようになりました。</dd>
@@ -1079,6 +1095,9 @@
           <dt class="langSel" lang="ja">ver.1.0</dt>
           <dd class="langSel" lang="ja">新規開発</dd>
           
+          <dt class="langSel" lang="en">ver.2.6</dt>
+           <dd class="langSel" lang="en">The design of the item name edit mode switching icon on the item edit screen has been changed. <div class="icon_blue mask_pencil"></div>⇄<div class="icon_blue mask_pencil_slash"></div> instead of <div class="icon_blue mask_pencil_old"></div>⇄<div class="icon_blue mask_pencil_slash_old"></div>. </dd>
+           <dd class="langSel" lang="en">The Investigation menu on the item edit screen has been renamed to the Tools menu. </dd>
           <dt class="langSel" lang="en">ver.2.5</dt>
           <dd class="langSel" lang="en">You can now reload all items, including checked items, and then uncheck them by long-pressing on reload list items on Apple Watch. </dd>
           <dd class="langSel" lang="en">Top items of list can now be viewed in complications on Apple Watch. </dd>
