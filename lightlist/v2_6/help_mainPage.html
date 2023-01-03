@@ -147,7 +147,7 @@
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.seal@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.seal@2x.png);
     }
-        .mask_checkmark_seal_fill {
+    .mask_checkmark_seal_fill {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.seal.fill@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.seal.fill@2x.png);
     }
@@ -397,7 +397,7 @@
           <dt class="langSel" lang="ja">3. 項目の追加</dt>
           <dd class="langSel" lang="ja">項目名一覧の最後の + ボタンの右側をタップすると新しい項目名が入力でき、改行入力で新しい項目として追加できます。</dd>
           <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_plus"></div> ボタンをタップすると先頭もしくは編集中の項目名の次に空の項目を挿入できます。</dd>
-          <dd class="langSel" lang="ja">項目名として + で始まる名前を入力すると、その項目をラベルにできます。</dd>
+          <dd class="langSel" lang="ja">項目名として + で始まる名前を入力すると、その項目をラベルにできます。任意の項目を後からラベル化することもできます。</dd>
           <dd class="langSel" lang="ja">ラベルとはチェックボックス <div class="icon_white mask_square"></div> が無い項目のことで、背景色が少し明るく目立つ表示です。項目をグルーピングするときのグループ名のラベルとして使うと便利です。</dd>
           <dd class="langSel" lang="ja">一括登録の枠内をタップするとそこに改行で区切った複数の項目名をまとめて入力できます。「各行を項目として追加」ボタンを押すとまとめて登録されます。</dd>
 
@@ -408,7 +408,7 @@
           <dt class = "langSel" lang = "en"> 3. Add item </ dt>
            <dd class = "langSel" lang = "en"> Tap the right side of the + button at the end of the item name list to enter a new item name, and enter a line feed to add it as a new item. </dd>
            <dd class = "langSel" lang = "en"> Tap the <div class="icon_blue mask_plus"></div> at the top of the screen to insert an empty item at the beginning or after the item name being edited. </dd>
-           <dd class = "langSel" lang = "en"> You can enter a label by entering a name starting with + as the item name. </ dd>
+           <dd class = "langSel" lang = "en"> You can add a label by entering a name starting with + as the item name. You can also to be label any item later.</ dd>
            <dd class = "langSel" lang = "en"> A label is an item that does not have checkbox <div class="icon_white mask_square"></div> , and the background color is a little bright and conspicuous. It is useful as a label for group names when grouping items. </ dd>
           <dd class = "langSel" lang = "en"> Tap the large square below of Collective registration to enter multiple item names separated by line breaks. Click the "Add each line as an item" button to register them all at once. </dd>
         </dl>
@@ -419,27 +419,33 @@
         <h2 class = "langSel" lang = "en"> How to edit items </h2>
         <dl>
           <dd class="langSel" lang="ja">ホーム画面からリスト名をタップして表示される項目編集画面では、項目を編集したりチェックしたりできます。</dd>
-          <dd class="langSel" lang="ja">各項目の右側にあるコンテキストメニューボタン<div class="icon_white mask_ellipsis"></div>を押すと、その項目にいろいろな操作ができるコンテキストメニューが表示できます。</dd>
-          <dt class="langSel" lang="ja">項目の編集</dt>
-          <dd class="langSel" lang="ja">登録された項目名をタップすると項目名を編集することができます。</dd>
-          <dd class="langSel" lang="ja">項目名を左にドラッグすると削除ボタンが出てきて項目を削除することができます。</dd>
-          <dd class="langSel" lang="ja">画面右上の <div class="icon_blue mask_arrow_up_down"></div> をタップすると、各項目の右側の <div class="icon_white mask_line_3"></div> をドラッグして項目を並び替えることができます。終わったら再び <div class="icon_blue mask_arrow_up_down"></div> を押します。</dd>
-          <dd class="langSel" lang="ja">チェックした項目を一括削除したい場合は、画面上部の <div class="icon_blue mask_line_3"></div> をタップしてチェック項目の削除を選んでください。</dd>
-          <dt class="langSel" lang="ja">項目の移動</dt>
-          <dd class="langSel" lang="ja">コンテキストメニューで、他のラベルにこの項目を移動することができます。また次のラベルまでの項目をまとめて移動することもできます。</dd>
-          <dt class="langSel" lang="ja">項目のチェック方法</dt>
+          <dd class="langSel" lang="ja">各項目の右側にあるコンテキストメニューボタン<div class="icon_blue mask_ellipsis"></div>を押すと、その項目にいろいろな操作ができるコンテキストメニューが表示できます。</dd>
+          <dt class="langSel" lang="ja">項目名の編集</dt>
+          <dd class="langSel" lang="ja">画面上の鉛筆アイコンが<div class="icon_blue mask_pencil"></div>(項目名編集モード)の時は各項目の項目名をタップすると項目名を編集することができます。</dd>
+          
+          <dt class="langSel" lang="ja">項目のチェック</dt>
           <dd class="langSel" lang="ja">各項目のチェックボックス <div class="icon_white mask_square"></div> をタップするとチェックしたりチェックを外したりできます。</dd>
-          <dd class="langSel" lang="ja">画面の上の鉛筆アイコン <div class="icon_blue mask_pencil"></div> をタップして表示を <div class="icon_blue mask_pencil_slash"></div> にすると、項目名をタップした時もチェックできるようになります。項目名を編集したい時は <div class="icon_blue mask_pencil_slash"></div> を再度タップしてください。</dd>
+          <dd class="langSel" lang="ja">画面の上の鉛筆アイコン <div class="icon_blue mask_pencil"></div> をタップして表示を <div class="icon_blue mask_pencil_slash"></div> にすると、項目名をタップした時もチェックできるようになります。項目名を編集したい時は <div class="icon_blue mask_pencil_slash"></div> を再度タップして<div class="icon_blue mask_pencil"></div> にしてください。この項目名変更モードの切り替えは、各項目を右スワイプした時に表示される「名前編集する」「名前編集やめる」ボタンでも行えます。</dd>
           <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_line_3"></div> をタップしてチェックとクリアを選ぶと、全項目をまとめてチェックしたり、全項目のチェックをまとめて消したりできます。チェック状態を反転することもできます。</dd>
           <dd class="langSel" lang="ja">コンテキストメニューで、次のラベルまでの間にある項目をまとめてチェックしたりクリアしたりできます。</dd>
+
           
-          <dt class="langSel" lang="ja">項目の絞り込み表示の方法</dt>
+          <dt class="langSel" lang="ja">項目の削除</dt>
+          <dd class="langSel" lang="ja">項目名を左にスワイプすると削除ボタンが出てきて項目を削除することができます。</dd>
+          
+          <dd class="langSel" lang="ja">チェックした項目を一括削除したい場合は、画面上部の <div class="icon_blue mask_line_3"></div> をタップしてチェック項目の削除を選んでください。</dd>
+          <dd class="langSel" lang="ja">コンテキストメニューで、次のラベルまでの間にある項目をまとめて削除できます。</dd>
+          <dt class="langSel" lang="ja">項目の移動</dt>
+          <dd class="langSel" lang="ja">画面右上の <div class="icon_blue mask_arrow_up_down"></div> をタップすると、各項目の右側の <div class="icon_white mask_line_3"></div> をドラッグして項目を並び替えることができます。終わったら再び <div class="icon_blue mask_arrow_up_down"></div> を押します。</dd>
+          <dd class="langSel" lang="ja">コンテキストメニューで、他のラベルにこの項目を移動することができます。また次のラベルまでの項目をまとめて移動することもできます。</dd>
+          
+          <dt class="langSel" lang="ja">項目の絞り込み表示</dt>
           <dd class="langSel" lang="ja">画面の上の合計欄の <div class="icon_blue mask_square"></div> をタップすると、未チェック項目とラベルだけに絞り込み表示できます。 <div class="icon_blue mask_checkmark"></div> をタップするとチェック項目とラベルだけの絞り込み表示します。また <div class="icon_blue mask_tag"></div> をタップするとラベルだけの絞り込み表示もできます。全項目表示に戻すには合計数をタップしてください。</dd>
           <dd class="langSel" lang="ja">ラベルだけの絞り込み表示をしているときに項目の移動や削除をすると、ラベルと次のラベルの間にある項目もまとめて移動や削除できます。</dd>
           <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_line_3"></div> をタップしてオプションを選ぶと、絞り込み表示した時に常に全ラベルを表示するかどうか選べます。</dd>
           <dd class="langSel" lang="ja">オプションメニューでは、項目編集画面を抜けても絞り込み状態を保持するか選べます。</dd>
-          <dt class="langSel" lang="ja">項目のラベル化の方法</dt>
-          <dd class="langSel" lang="ja">一度入力したチェック項目をラベル化するには、コンテキストメニューでラベル化を選ぶと、通常の項目とラベルを切り替えできます。</dd>
+          <dt class="langSel" lang="ja">項目のラベル化</dt>
+          <dd class="langSel" lang="ja">項目をラベル化するには、コンテキストメニューでラベル化を選ぶと、通常の項目とラベルを切り替えできます。項目のラベル化は、各項目を右スワイプした時に表示される「ラベルにする」「ラベルから戻す」ボタンでも行えます。</dd>
           <dt class="langSel" lang="ja">リスト名の変更</dt>
           <dd class="langSel" lang="ja">左上のリスト名をタップすると、リスト名を変更することもできます。</dd>
           <dt class="langSel" lang="ja">リスト色の変更</dt>
@@ -464,28 +470,31 @@
           
           <dd class = "langSel" lang = "en"> You can edit and check items on the item edit screen that is displayed by tapping the list name from the home screen. </dd>
           <dd class="langSel" lang="en">When you press the context menu button <div class="icon_blue mask_ellipsis"></div> on the right side of each item, you can display the context menu that allows you to perform various operations for that item. </dd>
-          <dt class = "langSel" lang = "en"> Edit items </dt>
-          <dd class = "langSel" lang = "en"> You can edit the item name by tapping the registered item name. </dd>
-          <dd class = "langSel" lang = "en"> If you drag the item name to the left, the delete button will appear and you can delete the item. </dd>
-          <dd class = "langSel" lang = "en"> Tap the <div class="icon_blue mask_arrow_up_down"></div> at the top right of the screen to rearrange the items by dragging <div class="icon_white mask_line_3"></div> on the right side of each item. When you're done, press <div class="icon_blue mask_arrow_up_down"></div> again. </ dd>
-          <dd class = "langSel" lang = "en"> If you want to delete all the checked items at once, tap <div class="icon_blue mask_line_3"></div> at the top of the screen and select Delete checked items. </ dd>
-          <dt class = "langSel" lang = "en"> Moving items </ dt>
-           <dd class = "langSel" lang = "en">You can move this item to another label in the context menu that appears when you press and hold the item. You can also move items up to the next label at once. </ dd>
-          <dt class = "langSel" lang = "en"> How to check items </ dt>
+          <dt class = "langSel" lang = "en"> Edit item name </dt>
+          <dd class="langSel" lang="en">When the pencil icon on the screen is <div class="icon_blue mask_pencil"></div> (item name edit mode), tap the item name to edit the name. </dd>
+          
+          <dt class = "langSel" lang = "en"> Check item </ dt>
           <dd class = "langSel" lang = "en"> You can check or uncheck by tapping the check box <div class="icon_white mask_square"></div> of each item. </ dd>
           <dd class = "langSel" lang = "en"> If you tap the pencil icon <div class="icon_blue mask_pencil"></div> on the screen to make it <div class="icon_blue mask_pencil_slash"></div>, you can check it even when you tap the item name. If you want to edit the item name, tap <div class="icon_blue mask_pencil_slash"></div> again. </ dd>
           <dd class = "langSel" lang = "en"> Tap <div class="icon_blue mask_line_3"></div> at the top of the screen and select Check or Clear to check all items at once or uncheck all items at once. You can also invert check status of all items.</ dd>
           <dd class = "langSel" lang = "en"> On context menu , items between the next label You can check and clear all at once. </ dd>
           
-          <dt class = "langSel" lang = "en"> How to narrow down the items </ dt>
-           <dd class = "langSel" lang = "en"> Tap <div class="icon_blue mask_square"></div> in the total column at the top of the screen to narrow down and display only unchecked items and labels. Tap <div class="icon_blue mask_checkmark"></div> to narrow down the check items and labels. You can also narrow down the label by tapping <div class="icon_blue mask_tag"></div>. Tap the total number to return to all items display. </ dd>
-           <dd class = "langSel" lang = "en"> If you move or delete items while narrowing down the display of only labels, you can also move or delete items between one label and the next label at once. </ dd>
-           <dd class = "langSel" lang = "en" > Tap <div class="icon_blue mask_line_3"></div> at the top of the screen and select the option to select whether to always display all labels when narrowed down. </ dd>
-           <dd class = "langSel" lang = "en"> In the option menu, you can select whether to keep the narrow down state even if you exit the item edit screen. </ dd>
+          <dt class="langSel" lang="en"> Delete item </dt>
+          <dd class = "langSel" lang = "en"> If you swipe the item name to the left, the delete button will appear and you can delete the item. </dd>
+          <dd class = "langSel" lang = "en"> If you want to delete all the checked items at once, tap <div class="icon_blue mask_line_3"></div> at the top of the screen and select Delete checked items. </ dd>
+          <dd class="langSel" lang="en">You can delete all items up to the next label in the context menu. </dd>
+          <dt class = "langSel" lang = "en"> Move item </ dt>
+          <dd class = "langSel" lang = "en"> Tap the <div class="icon_blue mask_arrow_up_down"></div> at the top right of the screen to rearrange the items by dragging <div class="icon_white mask_line_3"></div> on the right side of each item. When you're done, press <div class="icon_blue mask_arrow_up_down"></div> again. </ dd>
+           <dd class = "langSel" lang = "en">You can move this item to another label in the context menu. You can also move items up to the next label at once. </ dd>
+          
+          <dt class = "langSel" lang = "en"> Filter display items </ dt>
+           <dd class = "langSel" lang = "en"> Tap <div class="icon_blue mask_square"></div> in the total column at the top of the screen to filter display only unchecked items and labels. Tap <div class="icon_blue mask_checkmark"></div> to filter the check items and labels. You can also filter the label by tapping <div class="icon_blue mask_tag"></div>. Tap the total number to return to all items display. </ dd>
+           <dd class = "langSel" lang = "en"> If you move or delete items while filter display of only labels, you can also move or delete items between one label and the next label at once. </ dd>
+           <dd class = "langSel" lang = "en" > Tap <div class="icon_blue mask_line_3"></div> at the top of the screen and select the option to select whether to always display all labels when filtered. </ dd>
+           <dd class = "langSel" lang = "en"> In the option menu, you can select whether to keep the filter state even if you exit the item edit screen. </ dd>
            
           <dt class = "langSel" lang = "en"> How to label items </ dt>
-           <dd class = "langSel" lang = "en">On context menu , you can switch between normal item and label. </ dd>
-           
+           <dd class = "langSel" lang = "en">On context menu , you can switch between normal item and label. Items can also be labeled using the "Label" and "Unlabel" buttons that appear when you swipe right on each item. </ dd>
           <dt class = "langSel" lang = "en"> Rename list </dt>
 
           <dd class = "langSel" lang = "en"> You can also change the list name by tapping the list name on the upper left. </dd>
@@ -519,12 +528,12 @@
         <dl>
           <dd class="langSel" lang="ja">項目編集画面の右上にある<div class="icon_blue mask_checkmark_seal"></div> を押して表示が <div class="icon_blue mask_checkmark_seal_fill"></div>にするとチェック専用モードになります。</dd>
           <dd class="langSel" lang="ja">チェック専用モードは Apple Watch でのチェックリストと同様にチェックの使いやすさに特化したモードで、チェック専用モードに入った時に未チェック状態の項目だけを表示し、チェックしてもその項目は消えません。</dd>
-          <dd class="langSel" lang="ja">リストの最後のチェックした項目を非表示にするボタンを押すか、各項目を左ドラッグして表示される削除ボタンを押せばチェックを確定して該当項目を非表示にすることができます。</dd>
+          <dd class="langSel" lang="ja">リストの最後のチェックした項目を非表示にするボタンを押すか、各項目を左スワイプして表示される削除ボタンを押せばチェックを確定して該当項目を非表示にすることができます。</dd>
           <dd class="langSel" lang="ja">チェック専用モードから通常モードに戻るには<div class="icon_blue mask_checkmark_seal_fill"></div>をもう一度押して下さい。
           
           <dd class = "langSel" lang = "en"> Press <div class = "icon_blue mask_checkmark_seal"> </div> at the top right of the item edit screen to display <div class = "icon_blue mask_checkmark_seal_fill"> </div> If set to, the check-only mode will be set. </ dd>
           <dd class = "langSel" lang = "en"> Check-only mode is a mode that specializes in the ease of use of checks, similar to the checklist on Apple Watch, and items that are unchecked when entering check-only mode. Even if you display only and check it, the item will not disappear. </ dd>
-          <dd class = "langSel" lang = "en"> Press the button to hide the last checked item in the list, or left-drag each item and press the delete button to confirm the check. You can hide the corresponding item. </ dd>
+          <dd class = "langSel" lang = "en"> Press the button to hide the last checked item in the list, or left-swipe each item and press the delete button to confirm the check. You can hide the corresponding item. </ dd>
           <dd class = "langSel" lang = "en"> Press <div class = "icon_blue mask_checkmark_seal_fill"> </div> again to return from check-only mode to normal mode.
         </dl>
 
@@ -554,20 +563,19 @@
         
 
 
-
         <a href="#top">🔝</a>
         <a name="editlist">
         <h2 class="langSel" lang="ja">リストの編集方法</h2>
         <h2 class = "langSel" lang = "en"> How to edit the list </h2>
         <dl>
           <dd class="langSel" lang="ja">ホーム画面でリストを並び替えたり削除したりできます。</dd>
-          <dd class="langSel" lang="ja">各項目の右側にあるコンテキストメニューボタン<div class="icon_white mask_ellipsis"></div>を押すと、その項目にいろいろな操作ができるコンテキストメニューが表示できます。</dd>
+          <dd class="langSel" lang="ja">各項目の右側にあるコンテキストメニューボタン<div class="icon_blue mask_ellipsis"></div>を押すと、その項目にいろいろな操作ができるコンテキストメニューが表示できます。</dd>
           <dt class="langSel" lang="ja">リストの削除</dt>
-          <dd class="langSel" lang="ja">リスト名を左にドラッグすると削除ボタンが出てくるのでそれを押してリストを削除できます。</dd>
+          <dd class="langSel" lang="ja">リスト名を左にスワイプすると削除ボタンが出てくるのでそれを押してリストを削除できます。</dd>
           <dt class="langSel" lang="ja">リストの並び替え</dt>
           <dd class="langSel" lang="ja">画面右上の <div class="icon_blue mask_arrow_up_down"></div> を押すと、リストの右側の <div class="icon_white mask_line_3"></div> をドラッグすることでリストを並び替えできます。もう一度 <div class="icon_blue mask_arrow_up_down"></div> を押すと並び替えモードを終了します。</dd>
           <dt class="langSel" lang="ja">リスト名の変更</dt>
-          <dd class="langSel" lang="ja">コンテキストメニューでタイトル変更を選んで名前を変更できます。他AppのリストはそのAppでリスト名を変更してからリスト名の右にある <div class="icon_white mask_arrow_clockwise"></div> を押すかリスト名長押しで出てくるコンテクストメニューで名前再読み込みを選んでリスト名を読み込み直してください。</dd>
+          <dd class="langSel" lang="ja">コンテキストメニューでタイトル変更を選んで名前を変更できます。他AppのリストはそのAppでリスト名を変更してからリスト名の右にある <div class="icon_white mask_arrow_clockwise"></div> を押すかリスト名長押しで出てくるコンテキストメニューで名前再読み込みを選んでリスト名を読み込み直してください。</dd>
           
           <dt class="langSel" lang="ja">リスト色の変更</dt>
           <dd class="langSel" lang="ja">カラーを選んで色変更できます。</dd>
@@ -581,7 +589,7 @@
           <dd class = "langSel" lang = "en"> You can sort or delete the list on the home screen. </dd>
           <dd class="langSel" lang="en">When you press the context menu button <div class="icon_blue mask_ellipsis"></div> on the right side of each item, you can display the context menu that allows you to perform various operations for that item. </dd>
           <dt class = "langSel" lang = "en"> Delete list </dt>
-          <dd class = "langSel" lang = "en"> Drag the list name to the left and a delete button will appear. You can press it to delete the list. </dd>
+          <dd class = "langSel" lang = "en"> Swipe the list name to the left and a delete button will appear. You can press it to delete the list. </dd>
           <dt class = "langSel" lang = "en"> Sort list </dt>
           <dd class = "langSel" lang = "en"> If you press <div class="icon_blue mask_arrow_up_down"></div> on the upper right of the screen, you can rearrange the list by dragging <div class="icon_white mask_line_3"></div> on the right side of the list. Press <div class="icon_blue mask_arrow_up_down"></div> again to exit the sort mode. </ dd>
           <dt class = "langSel" lang = "en"> Rename list </ dt>
@@ -611,7 +619,7 @@
           <dt class="langSel" lang="ja">リンク設定名の変更</dt>
           <dd class="langSel" lang="ja">リンク設定名は、リンク設定名をタップすると表示されるリンク設定の編集画面で変更できます。</dd>
           <dt class="langSel" lang="ja">リンク設定の削除</dt>
-          <dd class="langSel" lang="ja">リンク設定を左にドラッグすると削除ボタンが出てくるのでそれを押してリストを削除できます。</dd>
+          <dd class="langSel" lang="ja">リンク設定を左にスワイプすると削除ボタンが出てくるのでそれを押してリストを削除できます。</dd>
           <dt class="langSel" lang="ja">リンク設定の並び替え</dt>
           <dd class="langSel" lang="ja">画面右上の <div class="icon_blue mask_arrow_up_down"></div> を押すと、リンク設定の右側の <div class="icon_white mask_line_3"></div> をドラッグすることでリンク設定を並び替えできます。もう一度 <div class="icon_blue mask_arrow_up_down"></div> を押すと並び替えモードを終了します。</dd>
           <dt class="langSel" lang="ja">リンク設定の編集画面</dt>
@@ -629,7 +637,7 @@
           <dt class = "langSel" lang = "en"> Change link setting name </ dt>
           <dd class = "langSel" lang = "en"> The link setting name can be changed on the link setting edit screen that is displayed by tapping the link setting name. </ dd>
           <dt class = "langSel" lang = "en"> Delete link settings </ dt>
-          <dd class = "langSel" lang = "en"> If you drag the link setting to the left, a delete button will appear, and you can press it to delete the list. </ dd>
+          <dd class = "langSel" lang = "en"> If you swipe the link setting to the left, a delete button will appear, and you can press it to delete the list. </ dd>
           <dt class = "langSel" lang = "en"> Sort link settings </ dt>
           <dd class = "langSel" lang = "en"> Press <div class = "icon_blue mask_arrow_up_down"></div> at the top right of the screen to <div class = "icon_white mask_line_3"></div> on the right side of the link settings. You can rearrange the link settings by dragging. Press <div class = "icon_blue mask_arrow_up_down"></div> again to exit the sort mode. </ dd>
           <dt class = "langSel" lang = "en"> Link setting edit screen </ dt>
@@ -685,7 +693,7 @@
            <dd class="langSel" lang="en">You can hide Apple Watch-related menu items when Apple Watch is not in use. </dd>
            <dd class="langSel" lang="en">You can hide the context menu button when it is in the way. The context menu can also be displayed by long-pressing the item. </dd>
            <dt class = "langSel" lang = "en"> Item list screen settings </ dt>
-           <dd class = "langSel" lang = "en"> You can change whether to keep the refined display state. </ dd>
+           <dd class = "langSel" lang = "en"> You can change whether to keep the filter display state. </ dd>
            <dd class = "langSel" lang = "en"> You can change whether to always display all labels. </ dd>
            <dd class = "langSel" lang = "en"> You can change whether to prohibit the addition of the same item. </ dd>
            <dd class = "langSel" lang = "en"> You can change whether to include labels when sharing or copying items. </ dd>
@@ -727,7 +735,7 @@
           <dd class="langSel" lang="ja">バックアップにはコメントを追加することもできます。</dd>
           <dd class="langSel" lang="ja">バックアップデータは圧縮されて保持されるので、サイズは目安です。</dd>
           <dt class="langSel" lang="ja">バックアップの削除</dt>
-          <dd class="langSel" lang="ja">削除したいバックアップを左ドラッグして表示される削除ボタンを押してください。</dd>
+          <dd class="langSel" lang="ja">削除したいバックアップを左スワイプして表示される削除ボタンを押してください。</dd>
           <dt class="langSel" lang="ja">バックアップのコメント編集</dt>
           <dd class="langSel" lang="ja">コメントを付けたいバックアップをタップして表示されるコメント編集ボタンを押してください。</dd>
           <dd class="langSel" lang="ja">どのようなバックアップかを示す短いコメントをつけることができます。</dd>
@@ -756,7 +764,7 @@
           <dd class = "langSel" lang = "en"> You can also add comments to the backup. </ dd>
           <dd class = "langSel" lang = "en"> The backup data is compressed and retained, so the size is a guide. </ dd>
           <dt class = "langSel" lang = "en"> Delete backup </ dt>
-          <dd class = "langSel" lang = "en"> Left-drag the backup you want to delete and press the delete button that appears. </ dd>
+          <dd class = "langSel" lang = "en"> Left-swipe the backup you want to delete and press the delete button that appears. </ dd>
           <dt class = "langSel" lang = "en"> Edit backup comment </ dt>
            <dd class = "langSel" lang = "en"> Tap the backup you want to comment on and press the comment edit button that appears. </ dd>
            <dd class = "langSel" lang = "en"> You can add a short comment to indicate what kind of backup it is. </ dd>
@@ -822,7 +830,7 @@
           <dt class="langSel" lang="ja">リストの選択</dt>
           <dd class="langSel" lang="ja">リスト名の一覧画面から使いたいリスト名をタップすると項目一覧画面に移ります。</dd>
           <dt class="langSel" lang="ja">リストの編集</dt>
-          <dd class="langSel" lang="ja">リストの削除は iPhone と同じくリスト名を左ドラッグして、削除ボタンを表示して押します。リストの移動は移動したいリスト名を長押しすると上下に動かせます。リスト名の変更は iPhone で変更して同期してください。</dd>
+          <dd class="langSel" lang="ja">リストの削除は iPhone と同じくリスト名を左スワイプして、削除ボタンを表示して押します。リストの移動は移動したいリスト名を長押しすると上下に動かせます。リスト名の変更は iPhone で変更して同期してください。</dd>
           <dt class="langSel" lang="ja">リストの再読み込み</dt>
           <dd class="langSel" lang="ja">iPhone にあるリストを読み込み直すときはリロードボタンを押してください。</dd>
           <dt class="langSel" lang="ja">リストのクリア</dt>
@@ -837,7 +845,7 @@
           <dt class = "langSel" lang = "en"> Select list </dt>
           <dd class = "langSel" lang = "en"> Tap the list name you want to use from the list name list screen to move to the item list screen. </dd>
           <dt class = "langSel" lang = "en"> Edit list </dt>
-          <dd class = "langSel" lang = "en"> To delete the list, drag the list name to the left as in the iPhone to display the delete button and press it. You can move the list up and down by long-pressing the list name you want to move. Please change the list name on your iPhone and synchronize. </dd>
+          <dd class = "langSel" lang = "en"> To delete the list, swipe the list name to the left as in the iPhone to display the delete button and press it. You can move the list up and down by long-pressing the list name you want to move. Please change the list name on your iPhone and synchronize. </dd>
           <dt class = "langSel" lang = "en"> Reload list </dt>
           <dd class = "langSel" lang = "en"> Tap the Reload button to reload from the iPhone list. </dd>
           <dt class = "langSel" lang = "en"> Clear list </dt>
@@ -865,7 +873,7 @@
           <dt class="langSel" lang="ja">項目のチェック</dt>
           <dd class="langSel" lang="ja">項目名をタップするとチェックマークがついて、もう一度タップするとチェックが消えます。</dd>
           <dt class="langSel" lang="ja">項目の削除</dt>
-          <dd class="langSel" lang="ja">項目名を左にドラッグして削除ボタンを押します。iPhone には項目のチェック状態が反映されます。</dd>
+          <dd class="langSel" lang="ja">項目名を左にスワイプして削除ボタンを押します。iPhone には項目のチェック状態が反映されます。</dd>
           <dt class="langSel" lang="ja">チェックした項目の削除</dt>
           <dd class="langSel" lang="ja">チェックした項目の表示を消すときはチェックした項目を削除するボタンを押します。iPhone には項目のチェック状態が反映されます。</dd>
           <dt class="langSel" lang="ja">項目の並べ替え</dt>
@@ -884,7 +892,7 @@
           <dt class = "langSel" lang = "en"> Check item </dt>
           <dd class = "langSel" lang = "en"> Tap the item name to check it, and tap it again to remove the check. </dd>
           <dt class="langSel" lang="en">Delete item</dt>
-          <dd class="langSel" lang="en">Drag the item name to the left and press the delete button. The iPhone reflects the checked state of the item. </dd>
+          <dd class="langSel" lang="en">Swipe the item name to the left and press the delete button. The iPhone reflects the checked state of the item. </dd>
           <dt class="langSel" lang="en">Delete checked items</dt>
           <dd class="langSel" lang="en">To remove the checked items, press the Delete Checked Items button. The iPhone reflects the checked state of the items. </dd>
           <dt class = "langSel" lang = "en"> Sort items </dt>
@@ -1008,7 +1016,7 @@
           <dd class="langSel" lang="ja">項目編集画面のメニューで Watchに送信を選ぶか、一旦リスト一覧画面に戻ってください。そのときに項目が登録されて Apple Watch で再読み込みすれば新しい項目が反映されます。</dd>
       <dt class="langSel" lang="ja">Apple Watch にリストが全く送れない</dt>
           <dd class="langSel" lang="ja">Apple Watch App で 「iPhone からリロード」をしても iPhone からリストが送られない時は下記の操作を試してください。</dd>
-          <dd class="langSel" lang="ja">Apple Watch のサイドボタンを押して lightlist を選んで左にドラッグして削除ボタンを押して App を一旦終わらせてください。その後に再度 Apple Watch App を起動してから Apple Watch App で リロードボタンを押してみてください。</dd>
+          <dd class="langSel" lang="ja">Apple Watch のサイドボタンを押して lightlist を選んで左にスワイプして削除ボタンを押して App を一旦終わらせてください。その後に再度 Apple Watch App を起動してから Apple Watch App で リロードボタンを押してみてください。</dd>
           <dt class="langSel" lang="ja">iCloudで同期を開始した時にデータがおかしくなった</dt>
           <dd class="langSel" lang="ja">本アプリは同期開始した時に iCloudにあるデータが他のデバイスで１から作ったデータならデバイスにあるデータとマージし、そうでないならiCloudにあるデータとデバイスのデータの新しい方を使います。もし初回マージがうまくいかなかった時はそのデータを手作業で修正してアップロードするか、もしくは採用したい側のデータのデバイスに自動バックアップされているデータをリストアして下さい。</dd>
           <dt class="langSel" lang="ja">機能制限解除の購入で画面が変わらない</dt>
@@ -1019,7 +1027,7 @@
           <dd class = "langSel" lang = "en"> Select Send to Watch from the menu of the item edit screen, or return to the list list screen once. If the item is registered at that time and reloaded on Apple Watch, the new item will be reflected. </ dd>
           <dt class = "langSel" lang = "en"> Unable to send list to Apple Watch at all</ dt>
           <dd class = "langSel" lang = "en"> If the list is not sent from the iPhone even after "Reload from iPhone" on the Apple Watch App, try the following operations. </ dd>
-           <dd class = "langSel" lang = "en"> Press the side button on your Apple Watch, select lightlist and drag to the left and press the delete button to quit the app. Then launch the Apple Watch App again and try press reload button in the Apple Watch App. </ dd>
+           <dd class = "langSel" lang = "en"> Press the side button on your Apple Watch, select lightlist and swipe to the left and press the delete button to quit the app. Then launch the Apple Watch App again and try press reload button in the Apple Watch App. </ dd>
            <dt class = "langSel" lang = "en"> Data went wrong when I started syncing with iCloud </ dt>
            <dd class = "langSel" lang = "en"> This app merges the data in iCloud with the data in the device if it was created from 1 on another device when synchronization starts, otherwise the data in iCloud And use the newer one of the device data. If the initial merge does not work correctly, please manually correct and upload the data, or restore the data that is automatically backed up to the device of the data you want to adopt. </ dd>
            <dt class = "langSel" lang = "en"> The screen does not change with the purchase of the function restriction release </ dt>
@@ -1035,6 +1043,7 @@
         <dl>
           <dt class="langSel" lang="ja">ver.2.6</dt>
           <dd class="langSel" lang="ja">リストの各項目の右端にコンテキストメニューボタン<div class = "icon_blue mask_ellipsis"></div>を追加しました。</dd>
+          <dd class="langSel" lang="ja">項目編集画面の各項目を右スワイプして項目名編集モードの切り替えとラベル化の切り替えができるようになりました。</dd>
           <dd class="langSel" lang="ja">設定ページに全般設定を追加しました。</dd>
           <dd class="langSel" lang="ja">項目編集画面の項目名編集モード切り替えアイコンのデザインを変更しました。<div class = "icon_blue mask_pencil_old"></div>⇄<div class = "icon_blue mask_pencil_slash_old"></div>の代わりに <div class = "icon_blue mask_pencil"></div>⇄<div class = "icon_blue mask_pencil_slash"></div>になりました。</dd>
           <dd class="langSel" lang="ja">項目編集画面の調査メニューはツールメニューに名前を修正しました。</dd>
@@ -1109,9 +1118,12 @@
           <dt class="langSel" lang="ja">ver.1.0</dt>
           <dd class="langSel" lang="ja">新規開発</dd>
           
+          
+          
           <dt class="langSel" lang="en">ver.2.6</dt>
-          der45
           <dd class="langSel" lang="en">Added a context menu button <div class = "icon_blue mask_ellipsis"></div> to the right edge of each item in the list. </dd>
+          <dd class="langSel" lang="en">It is now possible to switch between item name edit mode and labeling by swiping right on each item on the item edit screen.</dd>
+          <dd class="langSel" lang="en">Added general settings to the settings page. </dd>
           <dd class="langSel" lang="en">The design of the item name edit mode switching icon on the item edit screen has been changed. <div class="icon_blue mask_pencil"></div>⇄<div class="icon_blue mask_pencil_slash"></div> instead of <div class="icon_blue mask_pencil_old"></div>⇄<div class="icon_blue mask_pencil_slash_old"></div>. </dd>
         <dd class="langSel" lang="en">The Investigation menu on the item edit screen has been renamed to the Tools menu. </dd>
           <dt class="langSel" lang="en">ver.2.5</dt>
@@ -1184,6 +1196,5 @@
            <dt class = "langSel" lang = "en"> ver.1.0 </ dt>
            <dd class = "langSel" lang = "en"> New development </ dd>
         </dl>
-        
   </body>
 </html>
