@@ -79,9 +79,9 @@
       background: #2222FF;
     }
 
-    .mask_ellipsis_circle {
-         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/ellipsis.circle@2x.png);
-         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/ellipsis.circle@2x.png);
+    .mask_ellipsis{
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/ellipsis@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/ellipsis@2x.png);
     }
     .mask_pencil {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.circle.fill@2x.png);
@@ -165,6 +165,8 @@
     dd {
       font-size: 2.5vmax;
       margin-bottom: 0.5em;
+       display: list-item;
+       list-style-type: circle;
     }
     </style>
       <script type="text/javascript">
@@ -393,24 +395,23 @@
           <dt class="langSel" lang="ja">2. リストの選択</dt>
           <dd class="langSel" lang="ja">ホーム画面の登録ずみリストから項目を追加・変更したいリスト名を選んでタップすると、項目編集画面に移ります。他AppのリストはこのAppではなく、該当のAppで項目編集します。</dd>
           <dt class="langSel" lang="ja">3. 項目の追加</dt>
-          <dd class="langSel" lang="ja">項目名一覧の最後の + ボタンの右側をタップすると新しい項目名が入力でき、改行入力で新しい項目として追加できます。<dd>
-          <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_plus"></div> ボタンをタップすると先頭もしくは編集中の項目名の次に空の項目を挿入できます。<dd>
+          <dd class="langSel" lang="ja">項目名一覧の最後の + ボタンの右側をタップすると新しい項目名が入力でき、改行入力で新しい項目として追加できます。</dd>
+          <dd class="langSel" lang="ja">画面上部の <div class="icon_blue mask_plus"></div> ボタンをタップすると先頭もしくは編集中の項目名の次に空の項目を挿入できます。</dd>
           <dd class="langSel" lang="ja">項目名として + で始まる名前を入力すると、その項目をラベルにできます。</dd>
           <dd class="langSel" lang="ja">ラベルとはチェックボックス <div class="icon_white mask_square"></div> が無い項目のことで、背景色が少し明るく目立つ表示です。項目をグルーピングするときのグループ名のラベルとして使うと便利です。</dd>
-          <dd class="langSel" lang="ja">一括登録の枠内をタップするとそこに改行で区切った複数の項目名をまとめて入力できます。「各行を項目として追加」ボタンを押すとまとめて登録されます。<dd>
+          <dd class="langSel" lang="ja">一括登録の枠内をタップするとそこに改行で区切った複数の項目名をまとめて入力できます。「各行を項目として追加」ボタンを押すとまとめて登録されます。</dd>
 
           <dt class = "langSel" lang = "en"> 1. Add list </dt>
           <dd class = "langSel" lang = "en"> On the home screen at startup, tap the "Add new list" input field , enter the name of the list, and then press the "Add list" button. The registered list will be displayed . </dd>
           <dt class = "langSel" lang = "en"> 2. Select list </dt>
           <dd class = "langSel" lang = "en"> Select the list name you want to add / change from the registered list on the home screen and tap it to move to the item edit screen. For the list of other apps, edit the item with the corresponding app instead of this app. </dd>
           <dt class = "langSel" lang = "en"> 3. Add item </ dt>
-           <dd class = "langSel" lang = "en"> Tap the right side of the + button at the end of the item name list to enter a new item name, and enter a line feed to add it as a new item. <dd>
-           <dd class = "langSel" lang = "en"> Tap the <div class="icon_blue mask_plus"></div> at the top of the screen to insert an empty item at the beginning or after the item name being edited. <dd>
+           <dd class = "langSel" lang = "en"> Tap the right side of the + button at the end of the item name list to enter a new item name, and enter a line feed to add it as a new item. </dd>
+           <dd class = "langSel" lang = "en"> Tap the <div class="icon_blue mask_plus"></div> at the top of the screen to insert an empty item at the beginning or after the item name being edited. </dd>
            <dd class = "langSel" lang = "en"> You can enter a label by entering a name starting with + as the item name. </ dd>
            <dd class = "langSel" lang = "en"> A label is an item that does not have checkbox <div class="icon_white mask_square"></div> , and the background color is a little bright and conspicuous. It is useful as a label for group names when grouping items. </ dd>
-          <dd class = "langSel" lang = "en"> Tap the large square below of Collective registration to enter multiple item names separated by line breaks. Click the "Add each line as an item" button to register them all at once. <dd>
+          <dd class = "langSel" lang = "en"> Tap the large square below of Collective registration to enter multiple item names separated by line breaks. Click the "Add each line as an item" button to register them all at once. </dd>
         </dl>
-
 
         <a href="#top">🔝</a>
         <a name="edititems">
@@ -418,7 +419,7 @@
         <h2 class = "langSel" lang = "en"> How to edit items </h2>
         <dl>
           <dd class="langSel" lang="ja">ホーム画面からリスト名をタップして表示される項目編集画面では、項目を編集したりチェックしたりできます。</dd>
-          <dd class="langSel" lang="ja">各項目の右側にあるコンテキストメニューボタン<div class="icon_white mask_ellipsis_circle"></div>を押すと、その項目にいろいろな操作ができるコンテキストメニューが表示できます。</dd>
+          <dd class="langSel" lang="ja">各項目の右側にあるコンテキストメニューボタン<div class="icon_white mask_ellipsis"></div>を押すと、その項目にいろいろな操作ができるコンテキストメニューが表示できます。</dd>
           <dt class="langSel" lang="ja">項目の編集</dt>
           <dd class="langSel" lang="ja">登録された項目名をタップすると項目名を編集することができます。</dd>
           <dd class="langSel" lang="ja">項目名を左にドラッグすると削除ボタンが出てきて項目を削除することができます。</dd>
@@ -462,7 +463,7 @@
           
           
           <dd class = "langSel" lang = "en"> You can edit and check items on the item edit screen that is displayed by tapping the list name from the home screen. </dd>
-          <dd class="langSel" lang="en">When you press the context menu button <div class="icon_blue mask_ellipsis_circle"></div> on the right side of each item, you can display the context menu that allows you to perform various operations for that item. </dd>
+          <dd class="langSel" lang="en">When you press the context menu button <div class="icon_blue mask_ellipsis"></div> on the right side of each item, you can display the context menu that allows you to perform various operations for that item. </dd>
           <dt class = "langSel" lang = "en"> Edit items </dt>
           <dd class = "langSel" lang = "en"> You can edit the item name by tapping the registered item name. </dd>
           <dd class = "langSel" lang = "en"> If you drag the item name to the left, the delete button will appear and you can delete the item. </dd>
@@ -560,7 +561,7 @@
         <h2 class = "langSel" lang = "en"> How to edit the list </h2>
         <dl>
           <dd class="langSel" lang="ja">ホーム画面でリストを並び替えたり削除したりできます。</dd>
-          <dd class="langSel" lang="ja">各項目の右側にあるコンテキストメニューボタン<div class="icon_white mask_ellipsis_circle"></div>を押すと、その項目にいろいろな操作ができるコンテキストメニューが表示できます。</dd>
+          <dd class="langSel" lang="ja">各項目の右側にあるコンテキストメニューボタン<div class="icon_white mask_ellipsis"></div>を押すと、その項目にいろいろな操作ができるコンテキストメニューが表示できます。</dd>
           <dt class="langSel" lang="ja">リストの削除</dt>
           <dd class="langSel" lang="ja">リスト名を左にドラッグすると削除ボタンが出てくるのでそれを押してリストを削除できます。</dd>
           <dt class="langSel" lang="ja">リストの並び替え</dt>
@@ -578,7 +579,7 @@
           <dd class="langSel" lang="ja">他Appのリストは、コンテキストメニューでリスト取り込みを選んで、自Appのリストとして取り込めます。</dd>
 
           <dd class = "langSel" lang = "en"> You can sort or delete the list on the home screen. </dd>
-          <dd class="langSel" lang="en">When you press the context menu button <div class="icon_blue mask_ellipsis_circle"></div> on the right side of each item, you can display the context menu that allows you to perform various operations for that item. </dd>
+          <dd class="langSel" lang="en">When you press the context menu button <div class="icon_blue mask_ellipsis"></div> on the right side of each item, you can display the context menu that allows you to perform various operations for that item. </dd>
           <dt class = "langSel" lang = "en"> Delete list </dt>
           <dd class = "langSel" lang = "en"> Drag the list name to the left and a delete button will appear. You can press it to delete the list. </dd>
           <dt class = "langSel" lang = "en"> Sort list </dt>
@@ -1033,7 +1034,7 @@
         <h2 class = "langSel" lang = "en"> Version History </h2>
         <dl>
           <dt class="langSel" lang="ja">ver.2.6</dt>
-          <dd class="langSel" lang="ja">リストの各項目の右端にコンテキストメニューボタン<div class = "icon_blue mask_ellipsis_circle"></div>を追加しました。</dd>
+          <dd class="langSel" lang="ja">リストの各項目の右端にコンテキストメニューボタン<div class = "icon_blue mask_ellipsis"></div>を追加しました。</dd>
           <dd class="langSel" lang="ja">設定ページに全般設定を追加しました。</dd>
           <dd class="langSel" lang="ja">項目編集画面の項目名編集モード切り替えアイコンのデザインを変更しました。<div class = "icon_blue mask_pencil_old"></div>⇄<div class = "icon_blue mask_pencil_slash_old"></div>の代わりに <div class = "icon_blue mask_pencil"></div>⇄<div class = "icon_blue mask_pencil_slash"></div>になりました。</dd>
           <dd class="langSel" lang="ja">項目編集画面の調査メニューはツールメニューに名前を修正しました。</dd>
@@ -1109,8 +1110,8 @@
           <dd class="langSel" lang="ja">新規開発</dd>
           
           <dt class="langSel" lang="en">ver.2.6</dt>
-          <dd class="langSel" lang="en">Added general settings to the settings page. </dd>
-          <dd class="langSel" lang="en">Added a context menu button <div class = "icon_blue mask_ellipsis_circle"></div> to the right edge of each item in the list. </dd>
+          der45
+          <dd class="langSel" lang="en">Added a context menu button <div class = "icon_blue mask_ellipsis"></div> to the right edge of each item in the list. </dd>
           <dd class="langSel" lang="en">The design of the item name edit mode switching icon on the item edit screen has been changed. <div class="icon_blue mask_pencil"></div>⇄<div class="icon_blue mask_pencil_slash"></div> instead of <div class="icon_blue mask_pencil_old"></div>⇄<div class="icon_blue mask_pencil_slash_old"></div>. </dd>
         <dd class="langSel" lang="en">The Investigation menu on the item edit screen has been renamed to the Tools menu. </dd>
           <dt class="langSel" lang="en">ver.2.5</dt>
