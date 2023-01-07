@@ -736,7 +736,7 @@
           <dd class="langSel" lang="ja">設定画面からバックアップ管理画面を開くことができます。登録した全てのリストデータやリンクデータをまとめてバックアップできます。</dd>
           <dt class="langSel" lang="ja">バックアップの作成</dt>
           <dd class="langSel" lang="ja">バックアップ作成ボタンを押すと登録した全リストデータやリンクデータをまとめたバックアップファイルを作成します。</dd>
-          <dd class="langSel" lang="ja">「iCloudを使う」スイッチをONにすると、バックアップはiCloudにも保存されます。またバックアップ一覧は iCloudに保存されたものを表示し、他のデバイスのバックアップからリストアすることもできます。</dd>
+          <dd class="langSel" lang="ja">「iCloudを使う」スイッチをONにすると、バックアップはiCloudにも保存されます。またバックアップ一覧は iCloudに保存されたものを表示し、他のデバイスでiCloudに保存したバックアップをコピーすることもできます。</dd>
           <dd class="langSel" lang="ja">作成したバックアップはバックアップした日時とサイズで表示します。複数のバックアップは新しいものから順番に表示されます。</dd>
           <dd class="langSel" lang="ja">バックアップにはコメントを追加することもできます。</dd>
           <dd class="langSel" lang="ja">バックアップデータは圧縮されて保持されるので、サイズは目安です。</dd>
@@ -749,8 +749,8 @@
           <dd class="langSel" lang="ja">共有したいバックアップをタップして表示される共有ボタンを押してください。</dd>
           <dd class="langSel" lang="ja">バックアップファイルをメールやメモに添付して共有できます。</dd>
           <dd class="langSel" lang="ja">バックアップファイルはファイルアプリで lightlist アプリに保存するとアプリ内で削除したバックアップを元に戻したり、他のiOSデバイスにリストデータを一括移動することもできます。</dd>
-          <dt class="langSel" lang="ja">バックアップのダウンロード/アップロード</dt>
-          <dd class="langSel" lang="ja">iCloudを使うスイッチがONの時はiCloud上のバックアップをデバイスにダウンロードできます。スイッチがOFFの時はデバイス上のバックアップをiCloudにアップロードできます。</dd>
+          <dt class="langSel" lang="ja">バックアップのコピー</dt>
+          <dd class="langSel" lang="ja">iCloudを使うスイッチがONの時はiCloud上のバックアップをデバイスにコピーできます。スイッチがOFFの時はデバイス上のバックアップをiCloudにコピーできます。</dd>
           <dd class="langSel" lang="ja">コピー先にすでに同じ名前のバックアップがある時は何もしません。</dd>
           <dt class="langSel" lang="ja">バックアップの復元</dt>
           <dd class="langSel" lang="ja">復元したいバックアップをタップして表示される復元ボタンを押して下さい。</dd>
@@ -765,7 +765,7 @@
           <dd class = "langSel" lang = "en"> You can open the backup management screen from the setting screen. All registered list data and link data can be backed up at once. </ dd>
           <dt class = "langSel" lang = "en"> Make a backup </ dt>
           <dd class = "langSel" lang = "en"> Click the backup creation button to create a backup file that summarizes all the registered list data and link data. </ dd>
-          <dd class = "langSel" lang = "en"> When the "Use iCloud" switch is ON, the backup will also be saved in iCloud. You can also view the backup list as saved in iCloud and restore from backups on other devices. </ dd>
+          <dd class="langSel" lang="en">If you turn on the "Use iCloud" switch, the backup will also be saved in iCloud. The backup list also shows what is stored in iCloud, and you can also copy the backups stored in iCloud on other devices. </dd>
           <dd class = "langSel" lang = "en"> The created backup is displayed by the date and time and size of the backup. Multiple backups are listed starting with the newest one. </dd>
           <dd class = "langSel" lang = "en"> You can also add comments to the backup. </ dd>
           <dd class = "langSel" lang = "en"> The backup data is compressed and retained, so the size is a guide. </ dd>
@@ -778,8 +778,8 @@
           <dd class = "langSel" lang = "en"> Press and hold the backup you want to share and press the share button that appears. </ dd>
           <dd class = "langSel" lang = "en"> You can share the backup file by attaching it to an email or memo. </ dd>
           <dd class = "langSel" lang = "en"> If you save the backup file in the lightlist app with the file app, you can restore the backup deleted in the app or move the list data to other iOS devices at once. increase. </ dd>
-          <dt class = "langSel" lang = "en"> Backup download, upload </ dt>
-           <dd class = "langSel" lang = "en"> When the "Use iCloud" switch is ON, you can download the backup on iCloud to your device. When the switch is off, you can upload backups on your device to iCloud. </ dd>
+          <dt class="langSel" lang="en">Backup copy</dt>
+           <dd class="langSel" lang="en">When the switch to use iCloud is ON, you can copy the backup on iCloud to the device. When the switch is OFF, the backup on the device can be copied to iCloud. </dd>
            <dd class = "langSel" lang = "en"> Do nothing if the destination already has a backup with the same name. </ dd>
           <dt class = "langSel" lang = "en"> Restore backup </ dt>
            <dd class = "langSel" lang = "en"> Tap the backup you want to restore and press the restore button that appears. </ dd>
@@ -974,7 +974,6 @@
           <dt class="langSel" lang="en">Complication display</dt>
           <dd class="langSel" lang="en">Displays the first three items of the first or second list selected in the complication settings. </dd>
           <dd class="langSel" lang="en">The order of the list is the display order on Apple Watch. </dd>
-        
         </dl>
 
         <a href="#top">🔝</a>
@@ -1012,7 +1011,6 @@
         </dl>
 
 
-
         <a href="#top">🔝</a>
         <a name="trouble">
         <h2 class="langSel" lang="ja">困った時は</h2>
@@ -1023,7 +1021,9 @@
       <dt class="langSel" lang="ja">Apple Watch にリストが全く送れない</dt>
           <dd class="langSel" lang="ja">Apple Watch App で 「iPhone からリロード」をしても iPhone からリストが送られない時は下記の操作を試してください。</dd>
           <dd class="langSel" lang="ja">Apple Watch のサイドボタンを押して lightlist を選んで左にスワイプして削除ボタンを押して App を一旦終わらせてください。その後に再度 Apple Watch App を起動してから Apple Watch App で リロードボタンを押してみてください。</dd>
-          <dt class="langSel" lang="ja">iCloudで同期を開始した時にデータがおかしくなった</dt>
+          <dt class="langSel" lang="ja">iCloud が使えない</dt>
+          <dd class="langSel" lang="ja">設定アプリで iCloud Drive を有効にしてください。</dd>
+          <dt class="langSel" lang="ja">iCloud で同期を開始した時にデータがおかしくなった</dt>
           <dd class="langSel" lang="ja">本アプリは同期開始した時に iCloudにあるデータが他のデバイスで１から作ったデータならデバイスにあるデータとマージし、そうでないならiCloudにあるデータとデバイスのデータの新しい方を使います。もし初回マージがうまくいかなかった時はそのデータを手作業で修正してアップロードするか、もしくは採用したい側のデータのデバイスに自動バックアップされているデータをリストアして下さい。</dd>
           <dt class="langSel" lang="ja">機能制限解除の購入で画面が変わらない</dt>
           <dd class="langSel" lang="ja">一度リスト一覧画面に戻ってから再度設定画面を表示してみてください。</dd>
@@ -1034,6 +1034,8 @@
           <dt class = "langSel" lang = "en"> Unable to send list to Apple Watch at all</ dt>
           <dd class = "langSel" lang = "en"> If the list is not sent from the iPhone even after "Reload from iPhone" on the Apple Watch App, try the following operations. </ dd>
            <dd class = "langSel" lang = "en"> Press the side button on your Apple Watch, select lightlist and swipe to the left and press the delete button to quit the app. Then launch the Apple Watch App again and try press reload button in the Apple Watch App. </ dd>
+           <dt class="langSel" lang="en">Cannot use iCloud</dt>
+           <dd class="langSel" lang="en">Enable iCloud Drive in the Settings app. </dd>
            <dt class = "langSel" lang = "en"> Data went wrong when I started syncing with iCloud </ dt>
            <dd class = "langSel" lang = "en"> This app merges the data in iCloud with the data in the device if it was created from 1 on another device when synchronization starts, otherwise the data in iCloud And use the newer one of the device data. If the initial merge does not work correctly, please manually correct and upload the data, or restore the data that is automatically backed up to the device of the data you want to adopt. </ dd>
            <dt class = "langSel" lang = "en"> The screen does not change with the purchase of the function restriction release </ dt>
@@ -1050,6 +1052,7 @@
           <dt class="langSel" lang="ja">ver.2.6</dt>
           <dd class="langSel" lang="ja">各画面のリストの各項目の右端にコンテキストメニューボタン<div class = "icon_blue mask_ellipsis"></div>を追加しました。</dd>
           <dd class="langSel" lang="ja">項目編集画面のコンテキストメニューを整理し、できることを増やしました。</dd>
+          <dd class="langSel" lang="ja">項目編集画面のコンテキストメニューに他のリストへのコピーを追加しました。</dd>
           <dd class="langSel" lang="ja">項目編集画面の各項目を右スワイプして項目名編集モードの切り替えとラベル化の切り替えができるようになりました。</dd>
           <dd class="langSel" lang="ja">項目編集画面の項目名編集モード切り替えアイコンのデザインを変更しました。<div class = "icon_blue mask_pencil_old"></div>⇄<div class = "icon_blue mask_pencil_slash_old"></div>の代わりに <div class = "icon_blue mask_pencil"></div>⇄<div class = "icon_blue mask_pencil_slash"></div>になりました。</dd>
           <dd class="langSel" lang="ja">項目編集画面の調査メニューはツールメニューに名前を修正しました。</dd>
@@ -1057,6 +1060,7 @@
           <dd class="langSel" lang="ja">設定ページにデータクリアを追加しました。</dd>
           <dd class="langSel" lang="ja">コピー＆ペーストの動作を改善しました。</dd>
           <dd class="langSel" lang="ja">リンク設定名をコンテキストメニューから変更できるようになりました。</dd>
+          <dd class="langSel" lang="ja">バックアップ画面のコピー機能の文言を修正しました。</dd>
           <dt class="langSel" lang="ja">ver.2.5</dt>
           <dd class="langSel" lang="ja">Apple Watch でリスト項目の再読み込みで長押しすることでチェック済み項目を含めた全項目を再読み込みし、チェックを外すことができるようになりました。</dd>
           <dd class="langSel" lang="ja">Apple Watch のコンプリケーションでリストの先頭項目を表示することができるようになりました。</dd>
@@ -1132,6 +1136,7 @@
           <dt class="langSel" lang="en">ver.2.6</dt>
           <dd class="langSel" lang="en">Added a context menu button <div class = "icon_blue mask_ellipsis"></div> to the right edge of each item in the list. </dd>
           <dd class="langSel" lang="en">The context menu on the item edit screen has been organized and there are more things you can do. </dd>
+          <dd class="langSel" lang="en">Added copy to other list to the context menu of the item edit screen.</dd>
           <dd class="langSel" lang="en">It is now possible to switch between item name edit mode and labeling by swiping right on each item on the item edit screen.</dd>
           <dd class="langSel" lang="en">The design of the item name edit mode switching icon on the item edit screen has been changed. <div class="icon_blue mask_pencil"></div>⇄<div class="icon_blue mask_pencil_slash"></div> instead of <div class="icon_blue mask_pencil_old"></div>⇄<div class="icon_blue mask_pencil_slash_old"></div>. </dd>
           <dd class="langSel" lang="en">The Investigation menu on the item edit screen has been renamed to the Tools menu. </dd>
@@ -1139,6 +1144,7 @@
           <dd class="langSel" lang="en">Added data clear to the settings page. </dd>
           <dd class="langSel" lang="en">Improved copy and paste behavior.</dd>
           <dd class="langSel" lang="en">You can now change the link setting name from the context menu. </dd>
+          <dd class="langSel" lang="en">Fixed the wording of the backup screen copy function. </dd>
           
           <dt class="langSel" lang="en">ver.2.5</dt>
           <dd class="langSel" lang="en">You can now reload all items, including checked items, and then uncheck them by long-pressing on reload list items on Apple Watch. </dd>
