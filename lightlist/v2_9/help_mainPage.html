@@ -30,10 +30,6 @@
       border-left: solid 5px #7db4e6;
     }
     
-    img {
-      width : 4%;
-      background: white;
-    }
 
     a:link, a:visited {
           color: #333333;
@@ -41,7 +37,12 @@
           padding: 0.3em;
           text-decoration: none;
     }
-
+    .img_area img{
+      width: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .icon_white {
       display: inline-block;
       margin: 0 7 -7 7;
@@ -464,9 +465,12 @@
         <a name="home">
         <h2 class="langSel" lang="ja">ホーム画面</h2>
         <h2 class = "langSel" lang = "en"> Home screen </h2>
+        
         <dl>
           <dt class="langSel" lang="ja">ホーム画面について</dt>
-
+          <div class="img_area">
+          <img src="../image/home.png">
+          </div>
           <dd class="langSel" lang="ja">起動時に表示されるホーム画面ではリストの作成や削除、並び替えなどができ、リスト名から<a href="#edititems">項目編集画面</a>を開くことができます。また、<a href="#settings">設定画面</a>や<a href="#linksettings">リンク設定画面</a>を開くことができます。</dd>
           <dd class="langSel" lang="ja">画面左上の歯車アイコン <div class="icon_blue mask_gear"></div> を押すと<a href="#settings">設定画面</a>を開き、各種の設定ができます。</dd>
           <dd class="langSel" lang="ja">その隣の情報アイコン <div class="icon_blue mask_info"></div> を押すと、この使い方画面が表示されます。他の画面でこのアイコンを押すと、その画面に合った使い方が表示されます。使い方画面内のリンクを移動した場合は、左上の戻るボタン <div class="icon_blue mask_chevron_left"></div>で移動前の場所に戻れます。右上の 閉じるアイコン<div class="icon_blue mask_xmark"></div>で画面から抜けられます。</dd>
