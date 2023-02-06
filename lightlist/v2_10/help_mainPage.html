@@ -216,6 +216,7 @@
         function initSetting(){
           // check paramator option and setting
           // language setting
+          // ex.) lang=ja
           var lang
           if (paramArray.lang == 'ja') {
             lang ='ja'
@@ -224,7 +225,14 @@
           }
           langSelect(lang);
           
+          // filter by name section
+          // ex.) name=history
+          if(paramArray.name != null){
+              filterByName(paramArray.name);
+          }
+          
           // color setting
+          // ex.) colorMode=dark
           var colorMode
           if (paramArray.colorMode == 'dark'){
             colorMode = 'dark'
@@ -238,7 +246,8 @@
           var elm = document.getElementsByClassName("langSel");
           // set all langSel class object display or not
           for (var i = 0; i < elm.length; i++) {
-            if(elm[i].getAttribute("lang") == lang){
+            var langValue = elm[i].getAttribute("lang");
+            if(langValue == lang || langValue == "any"){
               elm[i].style.display = '';
             }
             else{
@@ -247,12 +256,29 @@
           }
         }
         
+        function filterByName(){
+          var filtername = "history";
+          var elm = document.getElementsByClassName("langSel");
+          var isDisplay = false;
+          for (var i = 0; i < elm.length; i++) {
+            var thisname = elm[i].getAttribute("name");
+            if (thisname == filtername) {
+              isDisplay = true;
+            }else if (thisname != null ){
+              isDisplay = false;
+            }
+            if (isDisplay == false) {
+              elm[i].style.display = 'none';
+            }
+          }
+        }
+
         function colorModeSelect(colorMode){
           if(colorMode == 'dark'){
-            document.body.style.color = '#eeeeee';          
+            document.body.style.color = '#eeeeee';
             document.body.style.backgroundColor = '#444444';
           }else{
-            document.body.style.color = '#444444';          
+            document.body.style.color = '#444444';
             document.body.style.backgroundColor = '#eeeeee';
             var elements = document.getElementsByTagName("div");
             for (var i = 0 ; i < elements.length; i++) {
@@ -281,7 +307,7 @@
     <a name="top">
     <h3 class="langSel" lang="ja">目次</h3>
     <h3 class = "langSel" lang = "en"> Table of Contents </h3>
-    <dl>
+    <dl  class="langSel" lang="any">
       <dd class="langSel" lang="ja"><a href="#howtouse">買い物リストとしての典型的な使い方</a></dd>
       <dd class="langSel" lang="ja"><a href="#role">iPhone App, iPad App と Apple Watch App</a></dd>
       <dd class="langSel" lang="ja"><a href="#makelist">リストを作る方法</a></dd>
@@ -324,7 +350,7 @@
     <p>
     <h2 class="langSel" lang="ja">この App について</h2>
     <h2 class= "langSel" lang = "en"> About this App </h2>
-        <dl>
+        <dl  class="langSel" lang="any">
           <dt class="langSel" lang="ja">この App は シンプルで使いやすいチェックリストです。</dt>
           <dd class="langSel" lang="ja">iPhone や Apple Watch を外に持ち出して買い物リストやToDoリストとして使いやすいように設計しています。</dd>
           <dt class="langSel" lang="ja">iPhone 上の App でリストをメンテナンスし、Apple Watch や Widget で連動して使えます。</dt>
@@ -350,14 +376,12 @@
 
         </dl>
         
-        
-        
-        <a href="#top">🔝</a>
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="howtouse">
         <h2 class="langSel" lang="ja">買い物リストとしての典型的な使い方</h2>
         <h2 class = "langSel" lang = "en">Typical use as a shopping list</h2>
 
-        <dl>
+        <dl class="langSel" lang = "any">
           <dt class="langSel" lang="ja">1. まず iPhone App で買い物リストを作ります。</dt>
           <dd class="langSel" lang="ja">買い物リストを iPhone Appで作ります。</dd>
           <dd class="langSel" lang="ja">リストの項目は売り場で歩く経路順に登録しておくとチェックする時に項目を探す手間が減らせて便利です。</dd>
@@ -377,11 +401,11 @@
            <dd class = "langSel" lang = "en">You can reflect the checked status in the iPhone App by deleting all the checked items on the Apple Watch. </ dd>
         </dl>
 
-        <a href="#top">🔝</a>
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="role">
         <h2 class="langSel" lang="ja">iPhone App, iPad App と Apple Watch App</h2>
         <h2 class = "langSel" lang = "en"> Differences between iPhone app and Apple Watch app </h2>
-        <dl>
+        <dl  class="langSel" lang="any">
           <dt class="langSel" lang="ja">概要</dt>
           <dd class="langSel" lang="ja">iPhone App (iPad App) と Apple Watch App の機能はデバイスの特性に合わせてできることが違います。</dd>
           <dd class="langSel" lang="ja">iPhone App (iPad App) はリストの作成、編集、チェック、の全てが可能です。</dd>
@@ -413,7 +437,7 @@
           <dd class="langSel" lang="ja">コンプリケーションとして時計の文字盤に登録すると、時計の文字盤から App を直接起動したり、リスト先頭の未チェック項目を1,2個表示することができます。</dd>
 
 
-<dt class="langSel" lang="en">Overview</dt>
+          <dt class="langSel" lang="en">Overview</dt>
            <dd class="langSel" lang="en">The features of the iPhone App (iPad App) and the Apple Watch App are different in that they can be adapted to the characteristics of the device. </dd>
            <dd class="langSel" lang="en">iPhone App (iPad App) can create, edit, and check lists. </dd>
            <dd class="langSel" lang="en">iPhone and iPad apps share most of the same functionality, but only iPhone apps work directly with Apple Watch apps. </dd>
@@ -446,11 +470,11 @@
         </dl>
 
 
-        <a href="#top">🔝</a>
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="makelist">
         <h2 class="langSel" lang="ja">リストを作る方法</h2>
         <h2 class = "langSel" lang = "en"> How to make a list </h2>
-        <dl>
+        <dl  class="langSel" lang="any">
           <dt class="langSel" lang="ja">1. リストの追加</dt>
           <dd class="langSel" lang="ja">起動時のホーム画面で「新規リスト追加」の入力欄をタップして、リストの名前を入れてから「リスト追加」ボタンを押してください。画面の上に登録したリスト名が表示されます。</dd>
           <dt class="langSel" lang="ja">2. リストの選択</dt>
@@ -468,7 +492,8 @@
         </dl>
 
 
-        <a href="#top">🔝</a>
+
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="home">
         <h2 class="langSel" lang="ja">ホーム画面</h2>
         <h2 class = "langSel" lang = "en"> Home screen </h2>
@@ -476,7 +501,7 @@
           <img class ="langSel" lang="en" src="https://kaaku333.github.io/iosappdata/lightlist/image/home_e.png">
           <img class ="langSel" lang="ja" src="https://kaaku333.github.io/iosappdata/lightlist/image/home_j.png">
           </div>
-        <dl>
+        <dl class="langSel" lang = "any">
           <dt class="langSel" lang="ja">ホーム画面について</dt>
           <dd class="langSel" lang="ja">起動時に表示されるホーム画面ではリストの作成や削除、並び替えなどができ、リスト名から<a href="#edititems">項目編集画面</a>を開くことができます。また、<a href="#settings">設定画面</a>や<a href="#linksettings">リンク設定画面</a>を開くことができます。</dd>
           <dd class="langSel" lang="ja">画面左上の歯車アイコン <div class="icon_blue mask_gear"></div> を押すと<a href="#settings">設定画面</a>を開き、各種の設定ができます。</dd>
@@ -530,7 +555,7 @@
         </dl>
 
 
-        <a href="#top">🔝</a>
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="edititems">
         <h2 class="langSel" lang="ja">項目編集画面</h2>
         <h2 class = "langSel" lang = "en"> Item edit screen </h2>
@@ -538,7 +563,7 @@
           <img class ="langSel" lang="en" src="https://kaaku333.github.io/iosappdata/lightlist/image/itemedit_e.png">
           <img class ="langSel" lang="ja" src="https://kaaku333.github.io/iosappdata/lightlist/image/itemedit_j.png">
           </div>
-        <dl>
+        <dl  class="langSel" lang="any">
           <dt class="langSel" lang="ja">項目編集画面について</dt>
           <dd class="langSel" lang="ja"><a href="#home">ホーム画面</a>からリスト名をタップして表示される項目編集画面では、項目を編集したりチェックしたりできます。</dd>
           <dd class="langSel" lang="ja">各項目の右側にあるコンテキストメニューボタン<div class="icon_white mask_ellipsis"></div>を押すと、その項目にいろいろな操作ができるコンテキストメニューが表示できます。</dd>
@@ -701,8 +726,7 @@
         </dl>
 
 
-
-        <a href="#top">🔝</a>
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="checkonlymode">
         <h2 class="langSel" lang="ja">チェック専用モード</h2>
         <h2 class = "langSel" lang = "en"> Check-only mode </h2>
@@ -710,7 +734,7 @@
           <img class ="langSel" lang="en" src="https://kaaku333.github.io/iosappdata/lightlist/image/checkonly_e.png">
           <img class ="langSel" lang="ja" src="https://kaaku333.github.io/iosappdata/lightlist/image/checkonly_j.png">
           </div>
-        <dl>
+        <dl  class="langSel" lang="any">
           <dt class="langSel" lang="ja">チェック専用モードについて</dt>
           <dd class="langSel" lang="ja"><a href="#edititems">項目編集画面</a>の右上にある<div class="icon_blue mask_checkmark_seal"></div> を押して表示を <div class="icon_blue mask_checkmark_seal_fill"></div>にするとチェック専用モードになります。</dd>
           <dd class="langSel" lang="ja">チェック専用モードは外出時などに未チェック項目をチェックすることに特化したモードで、チェック専用モードに入った時に未チェック状態の項目だけを表示し、チェックしてもその項目は消えません。</dd>
@@ -726,8 +750,7 @@
           <dd class = "langSel" lang = "en"> Press <div class = "icon_blue mask_checkmark_seal_fill"> </div> again to return from check-only mode to normal mode.
         </dl>
 
-
-        <a href="#top">🔝</a>
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="listcompare">
         <h2 class="langSel" lang="ja">リスト比較画面</h2>
         <h2 class = "langSel" lang = "en"> List Compare </h2>
@@ -735,7 +758,7 @@
           <img class ="langSel" lang="en" src="https://kaaku333.github.io/iosappdata/lightlist/image/listcomp_e.png">
           <img class ="langSel" lang="ja" src="https://kaaku333.github.io/iosappdata/lightlist/image/listcomp_j.png">
           </div>
-        <dl>
+        <dl  class="langSel" lang="any">
           <dt class="langSel" lang="ja">リスト比較画面について</dt>
           <dd class="langSel" lang="ja"><a href="#edititems">項目編集画面</a>のメニューから「ツール＞他のリストと比較」を選ぶとリスト比較画面が表示できます。</dd>
           <dd class="langSel" lang="ja">この画面では今編集していたリストと選んだ比較先のリストの項目の有無を比較し、片方のリストにしか存在しない項目を表示します。</dd>
@@ -759,7 +782,7 @@
         
 
 
-        <a href="#top">🔝</a>
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="linksettings">
         <h2 class="langSel" lang="ja">リンク設定画面</h2>
         <h2 class = "langSel" lang = "en"> Link Settings </h2>
@@ -767,7 +790,7 @@
           <img class ="langSel" lang="en" src="https://kaaku333.github.io/iosappdata/lightlist/image/linksetting_e.png">
           <img class ="langSel" lang="ja" src="https://kaaku333.github.io/iosappdata/lightlist/image/linksetting_j.png">
           </div>
-        <dl>
+        <dl  class="langSel" lang="any">
           <dt class="langSel" lang="ja">リンク設定画面について</dt>
           <dd class="langSel" lang="ja"><a href="#home">ホーム画面</a>の右上のリンクアイコン<div class="icon_blue mask_link"></div>をタップするとリンク設定画面を開くことができます。</dd>
           <dd class="langSel" lang="ja">リンク設定機能を使うと、複数のリンク間で同じ名前の項目のチェック状態を連動させることができます。</dd>
@@ -806,7 +829,7 @@
 
 
 
-        <a href="#top">🔝</a>
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="linkedit">
         <h2 class="langSel" lang="ja">リンク編集画面</h2>
         <h2 class = "langSel" lang = "en"> Link Edit </h2>
@@ -814,7 +837,7 @@
           <img class ="langSel" lang="en" src="https://kaaku333.github.io/iosappdata/lightlist/image/linkedit_e.png">
           <img class ="langSel" lang="ja" src="https://kaaku333.github.io/iosappdata/lightlist/image/linkedit_j.png">
           </div>
-        <dl>
+        <dl  class="langSel" lang="any">
           <dt class="langSel" lang="ja">リンク編集画面について</dt>
           <dd class="langSel" lang="ja"><a href="#linksettings">リンク設定画面</a>でリンク設定名をタップすると表示される画面です。</dd>
           <dd class="langSel" lang="ja">お互いにチェック状態を反映させたい複数のリスト名にチェックを入れてください。</dd>
@@ -829,7 +852,7 @@
 
 
 
-        <a href="#top">🔝</a>
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="settings">
         <h2 class="langSel" lang="ja">設定画面</h2>
         <h2 class = "langSel" lang = "en"> Settings </h2>
@@ -837,7 +860,7 @@
           <img class ="langSel" lang="en" src="https://kaaku333.github.io/iosappdata/lightlist/image/settings_e.png">
           <img class ="langSel" lang="ja" src="https://kaaku333.github.io/iosappdata/lightlist/image/settings_j.png">
           </div>
-        <dl>
+        <dl  class="langSel" lang="any">
           <dt class="langSel" lang="ja">設定画面について</dt>
           <dd class="langSel" lang="ja"><a href="#home">ホーム画面</a>の左上の歯車アイコン<div class="icon_blue mask_gear"></div>をタップすると設定画面を開くことができます。</dd>
           <dd class="langSel" lang="ja">設定画面では各種設定の変更を行ったり、データのバックアップを行ったりできます。</dd>
@@ -925,7 +948,7 @@
 
 
 
-        <a href="#top">🔝</a>
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="backup">
         <h2 class="langSel" lang="ja">バックアップ管理</h2>
         <h2 class = "langSel" lang = "en"> Backup management </h2>
@@ -933,7 +956,7 @@
           <img class ="langSel" lang="en" src="https://kaaku333.github.io/iosappdata/lightlist/image/backup_e.png">
           <img class ="langSel" lang="ja" src="https://kaaku333.github.io/iosappdata/lightlist/image/backup_j.png">
           </div>
-        <dl>
+        <dl  class="langSel" lang="any">
           <dt class="langSel" lang="ja">バックアップ管理画面について</dt>
           <dd class="langSel" lang="ja"><a href="#settings">設定画面</a>からバックアップ管理画面を開くことができます。</dd>
           <dd class="langSel" lang="ja">登録した全てのリストデータやリンク設定をまとめて１つのファイルに保存し、必要な時に復元できます。</dd>
@@ -1002,12 +1025,12 @@
         </dl>
 
 
-        <a href="#top">🔝</a>
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="outliner">
         <h2 class="langSel" lang="ja">他App のリストを使う方法</h2>
         <h2 class = "langSel" lang = "en"> How to use the list of other apps </h2>
 
-        <dl>
+        <dl  class="langSel" lang="any">
           <dd class="langSel" lang="ja">他App の CarbonFin Outliner のリストデータを取り込めます。</dd>
           <dt class="langSel" lang="ja">1. Outliner でリストの作成</dt>
           <dd class="langSel" lang="ja">CarbonFin Outliner で買い物リストを作ってください。階層があっても構いませんが、本App では階層を無くしてフラットなリストになります。</dd>
@@ -1034,12 +1057,12 @@
 
 
 
-        <a href="#top">🔝</a>
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="applewatch1">
         <h2 class="langSel" lang="ja">Apple Watch App のホーム画面</h2>
         <h2 class = "langSel" lang = "en"> Apple Watch App home screen </h2>
 
-        <dl>
+        <dl class="langSel" lang = "any">
           <dd class="langSel" lang="ja">lightlist App が起動した時の画面です。リストの一覧が表示されます。</dd>
           <dt class="langSel" lang="ja">リストの登録</dt>
           <dd class="langSel" lang="ja">iPhoneで登録や編集したリストは Apple Watch にも自動的に同期されます。同期されてなかった時は、リロードボタンを押して全てのリストを同期するか、iPhone で個別にリストを選んで送信します。</dd>
@@ -1072,11 +1095,11 @@
 
 
 
-        <a href="#top">🔝</a>
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="applewatch2">
         <h2 class="langSel" lang="ja">Apple Watch App の項目一覧画面</h2>
         <h2 class = "langSel" lang = "en"> Apple Watch App items screen </h2>
-        <dl>
+        <dl  class="langSel" lang="any">
           <dd class="langSel" lang="ja">リスト一覧画面でリストを選んだ時に表示される画面です。</dd>
           <dt class="langSel" lang="ja">画面の説明</dt>
           <dd class="langSel" lang="ja">左上にはリスト一覧画面に戻るボタンがあります。また、今日の日付（月はありません）とチェックずみ項目数と全項目数があります。チェックずみ項目数は動的に更新されます。</dd>
@@ -1117,12 +1140,12 @@
 
 
 
-        <a href="#top">🔝</a>
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="applewatch3">
         <h2 class="langSel" lang="ja">Apple Watch App の設定画面</h2>
         <h2 class = "langSel" lang = "en"> Apple Watch App setting screen </h2>
 
-        <dl>
+        <dl  class="langSel" lang="any">
           <dd class="langSel" lang="ja">リスト一覧画面の左上の <div class="icon_white mask_line_3"></div> をタップして表示される画面です。</dd>
           <dt class="langSel" lang="ja">残りの項目数を表示する</dt>
           <dd class="langSel" lang="ja">ONの場合、項目一覧画面の左上の項目数表示にチェックしていない項目数を表示します。</dd>
@@ -1156,11 +1179,11 @@
            <dd class = "langSel" lang = "en"> Reset all the setting values to the initial values. </ dd>
         </dl>
 
-        <a href="#top">🔝</a>
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="complication">
         <h2 class="langSel" lang="ja">コンプリケーション</h2>
         <h2 class = "langSel" lang = "en"> Complication </h2>
-        <dl>
+        <dl  class="langSel" lang="any">
           <dt class="langSel" lang="ja">コンプリケーションについて</dt>
           <dd class="langSel" lang="ja">Apple Watch の文字盤にチェックリストの一部を表示できます。</dd>
           <dt class="langSel" lang="ja">対象となる文字盤</dt>
@@ -1186,11 +1209,11 @@
           <dd class="langSel" lang="en">The order of the list is the display order on Apple Watch. </dd>
         </dl>
 
-        <a href="#top">🔝</a>
+        <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="widget">
         <h2 class="langSel" lang="ja">ウィジェット</h2>
         <h2 class = "langSel" lang = "en"> Widget </h2>
-        <dl>
+        <dl  class="langSel" lang="any">
           <dt class="langSel" lang="ja">ウィジェットについて</dt>
           <dd class="langSel" lang="ja">iPhone のホーム画面にチェックリストの一部を常時表示できます。</dd>
           <dt class="langSel" lang="ja">ウィジェットの追加方法</dt>
@@ -1221,11 +1244,11 @@
         </dl>
 
 
-        <a href="#top">🔝</a>
-        <a name="trouble">
+        <a href="#top" class="langSel" lang="any">🔝</a>
+        <a name="trouble" class="langSel" lang="any">
         <h2 class="langSel" lang="ja">困った時は</h2>
         <h2 class = "langSel" lang = "en"> Trouble shooting </h2>
-        <dl>
+        <dl  class="langSel" lang="any">
           <dt class="langSel" lang="ja">iPhone の項目を更新しても Apple Watch に送れない</dt>
           <dd class="langSel" lang="ja">項目編集画面のメニューで Watchに送信を選ぶか、一旦リスト一覧画面に戻ってください。そのときに項目が登録されて Apple Watch で再読み込みすれば新しい項目が反映されます。</dd>
       <dt class="langSel" lang="ja">Apple Watch にリストが全く送れない</dt>
@@ -1253,12 +1276,11 @@
         </dl>
 
 
-
-        <a href="#top">🔝</a>
-        <a name="history">
+        <a href="#top" class="langSel" lang="any">🔝</a>
+        <a name="history" class="langSel" lang="any">
         <h2 class="langSel" lang="ja">バージョン履歴</h2>
         <h2 class = "langSel" lang = "en"> Version History </h2>
-        <dl>
+        <dl  class="langSel" lang="any">
           <dt class="langSel" lang="ja">ver.2.10</dt>
           <dd class="langSel" lang="ja">使い方画面に進むボタンを追加しました。</dd>
           <dd class="langSel" lang="ja">軽微な不具合を修正しました。</dd>
@@ -1459,8 +1481,6 @@
            <dd class = "langSel" lang = "en"> You can now import the list instead of registering the link of the list of other apps. </ dd>
            <dt class = "langSel" lang = "en"> ver.1.0 </ dt>
            <dd class = "langSel" lang = "en"> New development </ dd>
-           
-           <dt class="langSel" lang="en"><a href="#history">goto latest version information ↑</a></dt>
 
         </dl>
         <dl>
