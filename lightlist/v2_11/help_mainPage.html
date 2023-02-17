@@ -68,8 +68,18 @@
       height: 1.2em;
       mask: no-repeat center / contain;
       -webkit-mask: no-repeat center / contain ;
-      background: #7788FF;
+      background: #5588FF;
     }
+    .icon_red {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #FF5588;
+    }
+
     .icon_darkblue {
       display: inline-block;
       margin: 0 7 -7 7;
@@ -174,6 +184,18 @@
     .mask_chevron_right {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/chevron.right@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/chevron.right@2x.png);
+    }
+    .mask_triangle_up {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrowtriangle.up@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrowtriangle.up@2x.png);
+    }
+    .mask_triangle_up_fill {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrowtriangle.up.fill@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrowtriangle.up.fill@2x.png);
+    }
+    .mask_triangle_down_fill {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrowtriangle.down.fill@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrowtriangle.down.fill@2x.png);
     }
     dl  {
       padding: 10px 20px 20px 30px;
@@ -322,11 +344,11 @@
       <dd class="langSel" lang="ja"><a href="#settings">設定画面</a></dd>
       <dd class="langSel" lang="ja"><a href="#backup">バックアップ管理画面</a></dd>
       <dd class="langSel" lang="ja"><a href="#outliner">他 App のリストを使う方法</a></dd>
+      <dd class="langSel" lang="ja"><a href="#widget">ウィジェット</a></dd>
       <dd class="langSel" lang="ja"><a href="#applewatch1">Apple Watch App のリスト一覧画面</a></dd>
       <dd class="langSel" lang="ja"><a href="#applewatch2">Apple Watch App の項目一覧画面</a></dd>
       <dd class="langSel" lang="ja"><a href="#applewatch3">Apple Watch App の設定画面</a></dd>
       <dd class="langSel" lang="ja"><a href="#complication">コンプリケーション</a></dd>
-      <dd class="langSel" lang="ja"><a href="#widget">ウィジェット</a></dd>
       <dd class="langSel" lang="ja"><a href="#trouble">困った時は</a></dd>
       <dd class="langSel" lang="ja"><a href="#history">バージョン履歴</a></dd>
 
@@ -344,10 +366,10 @@
       <dd class = "langSel" lang="en"><a href="#settings"> Settings </a></dd>
       <dd class="langSel" lang="en"><a href="#backup">Backup management</a></dd>
       <dd class = "langSel" lang = "en"> <a href="#outliner"> How to use a list of other apps </a> </dd>
+      <dd class="langSel" lang="en"><a href="#widget"> Widget </a></dd>
       <dd class = "langSel" lang = "en"> <a href="#applewatch1"> Apple Watch App lists screen </a> </dd>
       <dd class = "langSel" lang = "en"> <a href="#applewatch2"> Apple Watch App items screen </a> </dd>
       <dd class = "langSel" lang = "en"> <a href="#applewatch3"> Apple Watch App settings screen </a> </dd>
-      <dd class="langSel" lang="en"><a href="#widget"> Widget </a></dd>
       <dd class = "langSel" lang = "en"> <a href="#trouble"> Trouble shooting </a> </dd>
       <dd class = "langSel" lang = "en"> <a href="#history"> Version History </a></dd>
     </dl>
@@ -588,8 +610,8 @@
         <h2 class="langSel" lang="ja">項目編集画面</h2>
         <h2 class = "langSel" lang = "en"> Item edit screen </h2>
           <div class="img_area">
-          <img class ="langSel" lang="en" src="https://kaaku333.github.io/iosappdata/lightlist/image/itemedit_e.png">
-          <img class ="langSel" lang="ja" src="https://kaaku333.github.io/iosappdata/lightlist/image/itemedit_j.png">
+          <img class ="langSel" lang="en" src="https://kaaku333.github.io/iosappdata/lightlist/image/itemedit_e1.png">
+          <img class ="langSel" lang="ja" src="https://kaaku333.github.io/iosappdata/lightlist/image/itemedit_j1.png">
           </div>
         <dl  class="langSel" lang="any">
           <dt class="langSel" lang="ja">項目編集画面について</dt>
@@ -607,11 +629,23 @@
           <dd class="langSel" lang="ja">項目名として + で始まる名前を入力すると、その項目をラベルにできます。任意の項目を後からラベル化することもできます。</dd>
 
           <dt class="langSel" lang="ja">項目のラベル化</dt>
-          <dd class="langSel" lang="ja">項目をラベル化するには、コンテキストメニューでラベル化を選ぶと、通常の項目とラベルを切り替えできます。項目のラベル化は、各項目を右スワイプした時に表示される「ラベルにする」「ラベルから戻す」ボタンでも行えます。</dd>
+          <dd class="langSel" lang="ja">項目をラベル化するには、コンテキストメニューで「ラベルにする」を選ぶと、通常の項目とラベルを切り替えできます。項目のラベル化は、各項目を右スワイプした時に表示される「ラベルにする」「ラベルから戻す」ボタンでも行えます。</dd>
 
           <dt class="langSel" lang="ja">項目名の変更</dt>
           <dd class="langSel" lang="ja">項目を右スワイプするかコンテキストメニューを開くと、「名前編集」ボタンが表示されます。このボタンを押すと項目名の下に青線が表示され、項目名をタップすると名前を変更することができます。Enter を押すと名前変更が確定します。</dd>
           <dd class="langSel" lang="ja">名前変更を確定した時、このリストにリンクされた他のリストにも同じ名前の項目がある場合は、まとめて名前変更するかどうか選べます。もしリンクしたリストの項目名を一緒に変更することがない場合は設定画面で停止できます。</dd>
+          
+          <dt class="langSel" lang="ja">項目の優先度変更</dt>
+          <dd class="langSel" lang="ja">項目を右にスワイプするかコンテキストメニューを開くと「優先度」ボタンが表示されます。このボタンを押すと優先度を高・中・低から選び、項目の優先度を設定できます。</dd>
+          <dd class="langSel" lang="ja">買い忘れたくないものは優先度高、今は買わなくてもいいものは優先度低、のように項目の優先度を区別するのに使えます。</dd>
+          <dd class="langSel" lang="ja">優先度中は既定値で、優先度高の場合は項目名の右側に赤い三角<div class="icon_red mask_triangle_up_fill"></div>、優先度低の場合は青い三角<div class="icon_blue mask_triangle_down_fill"></div> が表示されます。</dd>
+          <dd class="langSel" lang="ja">ラベルにも優先度を設定することができます。ラベルの優先度が中や低の時、ラベルの下にある項目の中で未チェックで優先度高のものがある場合は、赤い三角<div class="icon_red mask_triangle_up"></div> が表示され、ラベルを折りたたんでも優先度高の項目があることがわかります。</dd>
+          <dd class="langSel" lang="ja">また、リストの中に１つでも未チェックで優先度高の項目がある場合は、リストのタイトルの横にも赤い三角<div class="icon_red mask_triangle_up"></div> が表示され、見逃しを防ぎます。</dd>
+          
+          <dt class="langSel" lang="ja">項目の個数変更</dt>
+          <dd class="langSel" lang="ja">項目を右にスワイプするかコンテキストメニューを開くと「個数」ボタンが表示されます。このボタンを押すと個数を１から１０までの間から選び、項目の個数を設定できます。</dd>
+          <dd class="langSel" lang="ja">複数個買いたい項目などにその個数を設定することによって、項目名の右にその数を表示しておくことができます。</dd>
+          <dd class="langSel" lang="ja">既定値は１で１を指定すると項目表示から個数表示が消えます。</dd>
           
           <dt class="langSel" lang="ja">項目のチェック</dt>
           <dd class="langSel" lang="ja">各項目のチェックボックス <div class="icon_white mask_square"></div> をタップするとチェックしたりチェックを外したりできます。</dd>
@@ -694,7 +728,19 @@
            <dt class="langSel" lang="en">Change item name</dt>
            <dd class="langSel" lang="en">If you swipe right on the item or open the context menu, you will see an "Edit name" button. When you press this button, a blue line is displayed under the item name, and you can change the name by tapping the item name at this time. Press Enter to confirm the rename. </dd>
            <dd class="langSel" lang="en">When you confirm the name change, if there are items with the same name in other lists linked to this list, you can choose whether to rename them all at once. If you don't want to change the linked list item names together, you can stop it in the settings screen. </dd>
-           
+          
+          <dt class="langSel" lang="en">Change item priority</dt>
+           <dd class="langSel" lang="en">Swipe the item to the right or open the context menu to see the "Priority" button. By pressing this button, you can select the priority from high, medium, and low to set the priority of the item. </dd>
+           <dd class="langSel" lang="en">It can be used to distinguish the priority of items, such as items that you do not want to forget to buy have high priority, and items that you do not need to buy now have low priority. </dd>
+           <dd class="langSel" lang="en">Medium priority is the default value, high priority has a red triangle <div class="icon_red mask_triangle_up_fill"></div> on the right side of the item name, priority If it's low, you'll see a blue triangle <div class="icon_blue mask_triangle_down_fill"></div>. </dd>
+           <dd class="langSel" lang="en">You can also set priority for labels. When the priority of the label is medium or low, a red triangle <div class="icon_red mask_triangle_up"></div> is displayed if there is an unchecked high priority item under the label. and you can see that there are high priority items even with the labels collapsed. </dd>
+           <dd class="langSel" lang="en">Also, if there is at least one unchecked and high priority item in the list, a red triangle <div class="icon_red" mask_triangle_up"></div> will appear next to the list title will be displayed to avoid missing it. </dd>
+          
+           <dt class="langSel" lang="en">Change quantity of item</dt>
+           <dd class="langSel" lang="en">Swipe right on the item or open the context menu to display the "Quantity" button. If you press this button, you can set the quantity of item by selecting the number from 1 to 10. </dd>
+           <dd class="langSel" lang="en">By setting the quantity of items you want to buy more than once, you can display the number to the right of the item name. </dd>
+           <dd class="langSel" lang="ja">The default value is 1. If you specify 1, the number display disappears from the item display. </dd>
+          
           <dt class = "langSel" lang = "en"> Check item </ dt>
           <dd class = "langSel" lang = "en"> You can check or uncheck by tapping the check box <div class="icon_white mask_square"></div> of each item. </ dd>
           <dd class = "langSel" lang = "en"> Tap <div class="icon_blue mask_line_3"></div> at the top of the screen and select Check or uncheck to check all items at once or uncheck all items at once. You can also invert check status of all items.</ dd>
@@ -1094,6 +1140,42 @@
         </dl>
 
 
+        <a href="#top" class="langSel" lang="any">🔝</a>
+        <a name="widget">
+        <h2 class="langSel" lang="ja">ウィジェット</h2>
+        <h2 class = "langSel" lang = "en"> Widget </h2>
+        <dl  class="langSel" lang="any">
+          <dt class="langSel" lang="ja">ウィジェットについて</dt>
+          <dd class="langSel" lang="ja">iPhone のホーム画面にチェックリストの一部を常時表示できます。</dd>
+          <dt class="langSel" lang="ja">ウィジェットの追加方法</dt>
+          <dd class="langSel" lang="ja">iPhone のホーム画面を長押しすると画面の上の方に表示される「＋」ボタンでウィジェットの選択画面になります。ここで lightlist を選んでください。</dd>
+          <dd class="langSel" lang="ja">ウィジットのサイズを選んでください。ウィジットサイズによって表示できる項目数が変わります。</dd>
+          <dd class="langSel" lang="ja">違うリストを表示するウィジェットを複数配置することもできます。</dd>
+          <dt class="langSel" lang="ja">ウィジェットに好きなリストを追加する</dt>
+          <dd class="langSel" lang="ja">ウィジェットを長押ししてウィジェットを編集を選んでください。</dd>
+          <dd class="langSel" lang="ja">そのウィジェットに表示するリストを選べます。選べるリストは自Appで登録したリストです。他Appのリストは選択できません。</dd>
+          <dd class="langSel" lang="ja">ウィジェットの文字サイズを変更したり、ラベルを表示しないようにすることもできます。また、優先度マークや個数表示をしないようにすることもできます。</dd>
+
+          <dt class="langSel" lang="ja">ウィジェットの表示</dt>
+          <dd class="langSel" lang="ja">ウィジェットには設定したリストのタイトルと、未チェックの項目が先頭から表示できる数だけ表示されます。ウィジェットの背景色はリストの背景色と同じです。ウィジェットをタップすると iPhone App が起動して該当のリストを直接表示できます。</dd>
+          
+          
+          <dt class = "langSel" lang = "en"> About widgets </ dt>
+          <dd class = "langSel" lang = "en"> You can always display a part of the checklist on the iPhone home screen. </ dd>
+          <dt class = "langSel" lang = "en"> How to add a widget </ dt>
+          <dd class = "langSel" lang = "en"> Press and hold the iPhone home screen to display the "+" button at the top of the screen to display the widget selection screen. Select lightlist here. </ dd>
+          <dd class = "langSel" lang = "en"> Choose the size of the widget.. The number of items that can be displayed varies depending on the size. </ dd>
+          <dd class = "langSel" lang = "en"> You can also place multiple widgets that display different lists. </ dd>
+          <dt class = "langSel" lang = "en"> Add your favorite list to the widget </ dt>
+          <dd class = "langSel" lang = "en"> Press and hold the widget and select Edit Widget. </ dd>
+          <dd class = "langSel" lang = "en"> You can choose the list to display in the widget. The list that can be selected is the list registered in your own app. You cannot select the list of other apps. </ dd>
+          <dd class="langSel" lang="en">You can also change the font size of the widget or hide the label. You can also turn off the priority mark and quantity number display. </dd>
+          <dt class = "langSel" lang = "en"> Widget display </ dt>
+          <dd class = "langSel" lang = "en"> The widget will display the title of the set list and the number of unchecked items that can be displayed from the beginning. The background color of the widget is the same as the background color of the list. Tap the widget to launch the iPhone App and browse the list directory. </ dd>
+        </dl>
+
+
+
 
         <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="applewatch1">
@@ -1247,39 +1329,6 @@
           <dd class="langSel" lang="en">The order of the list is the display order on Apple Watch. </dd>
         </dl>
 
-        <a href="#top" class="langSel" lang="any">🔝</a>
-        <a name="widget">
-        <h2 class="langSel" lang="ja">ウィジェット</h2>
-        <h2 class = "langSel" lang = "en"> Widget </h2>
-        <dl  class="langSel" lang="any">
-          <dt class="langSel" lang="ja">ウィジェットについて</dt>
-          <dd class="langSel" lang="ja">iPhone のホーム画面にチェックリストの一部を常時表示できます。</dd>
-          <dt class="langSel" lang="ja">ウィジェットの追加方法</dt>
-          <dd class="langSel" lang="ja">iPhone のホーム画面を長押しすると画面の上の方に表示される「＋」ボタンでウィジェットの選択画面になります。ここで lightlist を選んでください。</dd>
-          <dd class="langSel" lang="ja">ウィジットのサイズを選んでください。ウィジットサイズによって表示できる項目数が変わります。</dd>
-          <dd class="langSel" lang="ja">違うリストを表示するウィジェットを複数配置することもできます。</dd>
-          <dt class="langSel" lang="ja">ウィジェットに好きなリストを追加する</dt>
-          <dd class="langSel" lang="ja">ウィジェットを長押ししてウィジェットを編集を選んでください。</dd>
-          <dd class="langSel" lang="ja">そのウィジェットに表示するリストを選べます。選べるリストは自Appで登録したリストです。他Appのリストは選択できません。</dd>
-          <dd class="langSel" lang="ja">ウィジェットの文字サイズを変更したり、ラベルを表示しないようにすることもできます。</dd>
-
-          <dt class="langSel" lang="ja">ウィジェットの表示</dt>
-          <dd class="langSel" lang="ja">ウィジェットには設定したリストのタイトルと、未チェックの項目が先頭から表示できる数だけ表示されます。ウィジェットの背景色はリストの背景色と同じです。ウィジェットをタップすると iPhone App が起動して該当のリストを編集できます。</dd>
-          
-          
-          <dt class = "langSel" lang = "en"> About widgets </ dt>
-          <dd class = "langSel" lang = "en"> You can always display a part of the checklist on the iPhone home screen. </ dd>
-          <dt class = "langSel" lang = "en"> How to add a widget </ dt>
-          <dd class = "langSel" lang = "en"> Press and hold the iPhone home screen to display the "+" button at the top of the screen to display the widget selection screen. Select lightlist here. </ dd>
-          <dd class = "langSel" lang = "en"> Choose the size of the widget.. The number of items that can be displayed varies depending on the size. </ dd>
-          <dd class = "langSel" lang = "en"> You can also place multiple widgets that display different lists. </ dd>
-          <dt class = "langSel" lang = "en"> Add your favorite list to the widget </ dt>
-          <dd class = "langSel" lang = "en"> Press and hold the widget and select Edit Widget. </ dd>
-          <dd class = "langSel" lang = "en"> You can choose the list to display in the widget. The list that can be selected is the list registered in your own app. You cannot select the list of other apps. </ dd>
-          <dd class = "langSel" lang = "en"> You can also change the font size of the widget and hide the label. </ dd>
-          <dt class = "langSel" lang = "en"> Widget display </ dt>
-          <dd class = "langSel" lang = "en"> The widget will display the title of the set list and the number of unchecked items that can be displayed from the beginning. The background color of the widget is the same as the background color of the list. Tap the widget to launch the iPhone App and edit the list. </ dd>
-        </dl>
 
 
         <a href="#top" class="langSel" lang="any">🔝</a>
