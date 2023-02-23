@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v29 2023/2/23",
+        "_version": "v28 2023/2/22",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -184,8 +184,7 @@
         "parents" : "永明、良浜",
         "brothers" : "楓浜、彩浜、結浜、桃浜、優浜、陽浜、海浜、永浜、梅浜",
         "returndate" : "2023-02-22",
-        "returned" : true,
-
+        "returnexpdate" : "2023-02-22",
         "preset" : true,
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
@@ -212,7 +211,7 @@
         "parents" : "永明、良浜",
         "brothers" : "楓浜、彩浜、結浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
         "returndate" : "2023-02-22",
-        "returned" : true,
+        "returnexpdate" : "2023-02-22",
         "preset" : true,
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
@@ -718,7 +717,7 @@
         "children" : "楓浜、彩浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜、雄浜、秋浜、隆浜、幸浜、明浜、愛浜",
         "comingdate" : "1994-09-06",
         "returndate" : "2023-02-22",
-        "returned" : true,
+        "returnexpdate" : "2023-02-22",
         "preset" : true,
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
