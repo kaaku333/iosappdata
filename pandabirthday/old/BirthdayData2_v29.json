@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v30 2023/3/15",
+        "_version": "v29 2023/2/23",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -410,7 +410,7 @@
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、良浜",
         "brothers" : "楓浜、彩浜、結浜、桜浜、桃浜、優浜、陽浜、海浜、永浜",
-        "children" : "梅蘭",
+        "children" : "",
         "returned" : true,
         "returndate" : "2013-02-26",
 
@@ -464,7 +464,7 @@
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、梅梅",
         "brothers" : "明浜、幸浜、秋浜、隆浜、雄浜、良浜、奇珍、奇縁",
-        "children" : "善仔、路路",
+        "children" : "",
         "returned" : true,
         "returndate" : "2012-12-14",
 
@@ -519,7 +519,7 @@
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、梅梅",
         "brothers" : "明浜、愛浜、幸浜、隆浜、雄浜、良浜、奇珍、奇縁",
-        "children" : "二喜、二巧、艾莉、君君",
+        "children" : "",
         "returned" : true,
         "returndate" : "2007-10-27",
 
@@ -573,7 +573,7 @@
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、梅梅",
         "brothers" : "明浜、愛浜、幸浜、秋浜、隆浜、良浜、奇珍、奇縁",
-        "children" : "大毛、毛桃、毛竹、毛二、双欣、双雄、双喜、星輝、星繁、小喬、茜茜、包程、包航、溜溜、順順",
+        "children" : "大毛",
         "returned" : true,
         "returndate" : "2004-07-21",
 
@@ -582,7 +582,7 @@
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
                 ["成都ジャイアントパンダ繁殖研究基金会 白浜パンダファミリーの長男「雄浜」", "http://www.panda.org.cn/jp/news/xmqw/2019-05-09/7515.html"],
             ],
-        "note" : "メモ：飼育下のパンダで初の冬に生まれたパンダです。お父さんの永明に似てグルメで子沢山パパになりました。",
+        "note" : "メモ：飼育下のパンダで初の冬に生まれたパンダです。",
 
         "imageName": "oopanda_blue",
     },
@@ -642,6 +642,7 @@
                 [ "神戸市 タンタンの返還について", "https://www.city.kobe.lg.jp/a84159/shise/shichoshitsu/letter/r2/ojizoo.html" ],
                 [ "関西ウォーカー パンダのタンタンお別れ", "https://www.walkerplus.com/trend/matome/article/1004233/" ],
                 [ "東洋経済デジタル 20年ぶりに中国へ帰る背景", "https://toyokeizai.net/articles/-/357872" ],
+                [ "LMaga.jp 二木さんの記事", "https://gendai.ismedia.jp/list/tag/%E3%83%91%E3%83%B3%E3%83%80" ],
             ],
         "note" : "メモ：神戸のお嬢さまというニックネームを持っています。手足が短くてお腹が大きく子供のような愛くるしい体型をしています。",
 
@@ -660,7 +661,6 @@
         "locationurl" : "https://www.aws-s.com/",
         "birthplace" : "成都動物園",
         "parents" : "林楠、蘇蘇",
-        "brothers" : "科比、蜀蘭",
         "children" : "明浜、愛浜、幸浜、秋浜、隆浜、雄浜、良浜、奇缘、奇珍",
         "comingdate" : "2000-07-07",
         "died" : true,
