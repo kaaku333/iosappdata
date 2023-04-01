@@ -173,6 +173,10 @@
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.seal.fill@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.seal.fill@2x.png);
     }
+    .mask_checkmark {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark@2x.png);
+    }
     .mask_xmark {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/xmark.circle@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/xmark.circle@2x.png);
@@ -628,10 +632,11 @@
           <dd class="langSel" lang="ja">複数の項目をグルーピングするために、任意の項目をグループ名を示す「ラベル」にすることができます。ラベルの下に続く項目は１つのグループとしてまとめて扱うことができます。</dd>
           <dd class="langSel" lang="ja">ラベルはチェックボックス <div class="icon_white mask_square"></div> が無く、通常の項目よりも背景色が明るく文字サイズが大きい項目です。</dd>
           <dd class="langSel" lang="ja">項目のグループ毎にラベルを追加しておくと、そのラベルの下の項目をまとめて閉じたり、まとめてチェックしたりできるので、活用してください。</dd>
+          
           <dt class="langSel" lang="ja">項目の追加</dt>
-          <dd class="langSel" lang="ja">項目名一覧の後にある + ボタンの右側をタップすると新しい項目名が入力でき、Enter入力で新しい項目として追加できます。</dd>
+          <dd class="langSel" lang="ja">画面の下にある + ボタンの右側をタップすると新しい項目名が入力でき、Enter入力で新しい項目として追加できます。</dd>
           <dd class="langSel" lang="ja">各項目のコンテキストメニューの「この下に項目追加」を選ぶと、任意の場所に項目を追加できます。</dd>
-          <dd class="langSel" lang="ja">画面の一番下にある「一括登録」を開いてその枠内をタップするとそこに改行で区切った複数の項目名をまとめて入力できます。「各行を項目として追加」ボタンを押すとまとめて登録されます。</dd>
+          <dd class="langSel" lang="ja">画面の一番下にある「一括登録」を開いてその枠内をタップするとそこに改行で区切った複数の項目名をまとめて入力できます。「各行を項目として追加」ボタンや決定ボタン <div class="icon_blue checkmark"></div> を押すとまとめて登録されます。</dd>
           <dd class="langSel" lang="ja">項目名として + で始まる名前を入力すると、その項目をラベルにできます。任意の項目を後からラベル化することもできます。</dd>
 
           <dt class="langSel" lang="ja">項目のラベル化</dt>
@@ -738,9 +743,9 @@
            <dd class="langSel" lang="en">If you add a label for each group of items, you can close or check the items under that label all at once. </dd>
           
            <dt class="langSel" lang="en">Add Item</dt>
-           <dd class="langSel" lang="en">You can enter a new item name by tapping the right side of the + button after the item name list, and add it as a new item by entering Enter. </dd>
+           <dd class="langSel" lang="en">You can enter a new item name by tapping the right side of the + button at the bottom of the screen, and add it as a new item by entering Enter. </dd>
            <dd class="langSel" lang="en">You can add an item anywhere by selecting "Add item below this" from the context menu of each item. </dd>
-           <dd class="langSel" lang="en">Open "Batch registration" at the bottom of the screen and tap inside the frame to enter multiple item names separated by line breaks. When you press the "Add each line as an item" button, it will be registered all at once. </dd>
+           <dd class="langSel" lang="en">Open "Batch registration" at the bottom of the screen and tap inside the frame to enter multiple item names separated by line breaks. When you press the "Add each line as an item" button or checkmark button <div class="icon_blue checkmark"></div>, it will be registered all at once. </dd>
            <dd class="langSel" lang="en">If you enter a name starting with + as the item name, you can make that item a label. You can also label any item later. </dd>
 
            <dt class="langSel" lang="en">Label item </dt>
@@ -1410,7 +1415,8 @@
           <dt class="langSel" lang="ja">ver.2.16</dt>
           <dd class="langSel" lang="ja">項目編集画面でメニューやラベルのコンテキストメニューに項目の並び替えを追加しました。</dd>
           <dd class="langSel" lang="ja">項目編集画面で並べ替えや削除などの一括処理を取り消しできる取り消しボタンをメニューに追加しました。</dd>
-          <dd class="langSel" lang="ja">項目編集画面で項目追加時にキーボードを避ける機能の制限を iOS16.4 以降向けに制限解除しました。</dd>
+          <dd class="langSel" lang="ja">項目編集画面で項目追加や一括項目追加領域を画面の一番下に配置しました。</dd>
+          <dd class="langSel" lang="ja">iOS 16.4 で項目移動モード時の画面が正しく表示されないことがある不具合を修正しました。</dd>
           <dt class="langSel" lang="ja">ver.2.15</dt>
           <dd class="langSel" lang="ja">iOS16で項目編集画面で１項目追加や複数項目一括追加を繰り返した時にクラッシュする不具合を修正しました(この時のキーボードを避けるスクロール動作は一時的に停止)</dd>
           <dd class="langSel" lang="ja">項目編集画面とリンク編集画面でタイトル名が長い時に自動的にフォントサイズを縮小するようにしました。</dd>
@@ -1540,7 +1546,8 @@
            <dt class="langSel" lang="en">ver.2.16</dt>
            <dd class="langSel" lang="en">Added item sorting to the menu and the label context menu on the item edit screen. </dd>
            <dd class="langSel" lang="en">Undo button has been added to the menu that allows you to undo batch processing such as sorting and deleting items on the item edit screen. </dd>
-           <dd class="langSel" lang="en">The restrict of avoiding behavior to the keyboard when adding item on the item edit screen has been lifted for iOS16.4 or later. </dd>
+           <dd class="langSel" lang="en">In the item edit screen, the item addition and batch item addition areas have been placed at the bottom of the screen. </dd>
+           <dd class="langSel" lang="en">Fixed a bug that the screen may not be displayed correctly when moving item mode on iOS 16.4. </dd>
            <dt class="langSel" lang="en">ver.2.15</dt>
            <dd class="langSel" lang="en">Fix for a bug that crashes when repeatedly adding one item or adding multiple items at once on the item edit screen on iOS16. Auto scrolling to avoid the keyboard at this time is stopped temporarily.</dd>
            <dd class="langSel" lang="en">The font size is automatically reduced when the title name is long on the item edit screen and link edit screen. </dd>
