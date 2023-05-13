@@ -140,72 +140,79 @@
         width: 1.0em;
         height: 1.0em;
         background-size: contain;
-
         background-repeat: no-repeat;
-        &.trash {
-          background-image: url(../../image/trash@2x.png) ;
-        }
-        &.threelines {
-          background-image: url(../../image/line.3.horizontal@2x.png) ;
-        }
-        &.threedots {
-          background-image: url(../../image/ellipsis@2x.png) ;
-        }
-        &.info {
-          background-image: url(../../image/info.circle@2x.png) ;
-        }
-        &.gear {
-          background-image: url(../../image/gear@2x.png) ;
-        }
-        &.updown {
-          background-image: url(../../image/arrow.up.arrow.down.circle@2x.png) ;
-        }
-        &.updown_fill {
-          background-image: url(../../image/arrow.up.arrow.down.circle.fill@2x.png) ;
-        }
-        &.dec3lines {
-          background-image: url(../../image/line.3.horizontal.decrease.circle@2x.png) ;
-        }
-        &.dec3lines_fill {
-          background-image: url(../../image/line.3.horizontal.decrease.circle.fill@2x.png) ;
-        }
-        &.wrench {
-          background-image: url(../../image/wrench.adjustable@2x.png) ;
-        }
-        &.xmark {
-          background-image: url(../../image/xmark.circle@2x.png) ;
-        }
-        &.plus {
-          background-image: url(../../image/plus@2x.png) ;
-        }
-        &.pencil {
-          background-image: url(../../image/pencil@2x.png) ;
-        }
-        &.mag {
-          background-image: url(../../image/magnifyingglass@2x.png) ;
-        }
-        &.eyeslash {
-          background-image: url(../../image/eye.slash@2x.png) ;
-        }
-        
-        &.icloudup {
-          background-image: url(../../image/icloud.and.arrow.up@2x.png) ;
-        }
-        &.questionkey {
-          background-image: url(../../image/questionmark.key.filled@2x.png) ;
-        }
-        &.coin {
-          background-image: url(../../image/dollarsign.circle@2x.png) ;
-        }
-        &.coin_fill {
-          background-image: url(../../image/dollarsign.circle.fill@2x.png) ;
-        }
-        &.person2 {
-          background-image: url(../../image/person.2@2x.png) ;
-        }
+    }
+    /*
+     safari(webkit)では background-image の相対パスがうまく指定できないので絶対パスにしている
+     safari(webkit)では 要素の中の入れ子の &.xxx 定義がうまくできないので定義を分離している
+    */
+    .icon.trash {
+        background-image: url(https://kaaku333.github.io/iosappdata/account/image/trash@2x.png);
+    }
+    .icon.threelines {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal@2x.png) ;
+    }
+    .icon.threedots {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/ellipsis@2x.png) ;
+    }
+    .icon.info {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/info.circle@2x.png) ;
+    }
+    .icon.gear {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/gear@2x.png) ;
+    }
+    .icon.updown {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.up.arrow.down.circle@2x.png) ;
+    }
+    .icon.updown_fill {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.up.arrow.down.circle.fill@2x.png) ;
+    }
+    .icon.dec3lines {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal.decrease.circle@2x.png) ;
+    }
+    .icon.dec3lines_fill {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal.decrease.circle.fill@2x.png) ;
+    }
+    .icon.wrench {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/wrench.adjustable@2x.png) ;
+    }
+    .icon.xmark {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/xmark.circle@2x.png) ;
+    }
+    .icon.plus {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/plus@2x.png) ;
+    }
+    .icon.pencil {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/pencil@2x.png) ;
+    }
+    .icon.mag {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/magnifyingglass@2x.png) ;
+    }
+    .icon.eyeslash {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/eye.slash@2x.png) ;
     }
     
-   
+    .icon.icloudup {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/icloud.and.arrow.up@2x.png) ;
+    }
+    .icon.questionkey {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/questionmark.key.filled@2x.png) ;
+    }
+    .icon.coin {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/dollarsign.circle@2x.png) ;
+    }
+    .icon.coin_fill {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/dollarsign.circle.fill@2x.png) ;
+    }
+    .icon.person2 {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/person.2@2x.png) ;
+    }
+    .icon.calendarex {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/calendar.badge.exclamationmark@2x.png) ;
+    }
+
+
+
     </style>
       <script type="text/javascript">
       <!--
@@ -370,8 +377,6 @@
         <dd>今現在のユーザーデータを丸ごとバックアップファイルとして保存したり、バックアップファイルを保存のため他のアプリに共有したり、バックアップファイルから復元したりできます。</dd>
 
     </dl>
-
-
 
     <a name="item">
     <a href="#top">🔝</a>
@@ -622,14 +627,15 @@
         <dd>任意のカラーのアイテムを探したい時に使う</dd>
         </dl>
         <dt>アイテム一覧表示</dt>
-        <dd>画面右側のアイテム一覧表示の先頭は絞り込み表示ボタンと現在表示中のアイテム総数です。絞り込み表示ボタンをタップすると様々な絞り込みを選べます。</dd>
+        <dd>画面右側のアイテム一覧表示の先頭は <i class="icon dec3lines"></i> 絞り込みアイコンと現在表示中のアイテム総数です。 <i class="icon dec3lines"></i> 絞り込みアイコンをタップすると様々な絞り込みを選べます。</dd>
         <dd>絞り込みの種類には、カテゴリー、重要度、更新日時、期限、カラー以外にも、アカウント連携かどうかや支払い状況、利用廃止状況なども選べます。</dd>
-        <dd>複数の絞り込みを選ぶと全ての条件にマッチしたアイテムのみが表示されます。また、全ての絞り込みをまとめてリセットすることもできます。</dd>
-        <dd>絞り込み中の場合は <i class="icon dec3lines"></i> 絞り込みアイコンが塗りつぶし状態 <i class="icon dec3lines_fill"></i> で表示されます。</dd>
+        <dd>複数の絞り込みを選ぶと全ての条件にマッチしたアイテムのみが表示されます。アイテム総数はマッチしたアイテムの合計で、何もマッチしないと 0 となります。</dd>
+        <dd>絞り込み中の場合は 絞り込みアイコンが塗りつぶし状態 <i class="icon dec3lines_fill"></i> で表示されます。</dd>
+        <dd> <i class="icon dec3lines_fill"></i> 絞り込みアイコンを押して表示される、絞り込みをリセットを選ぶと、全ての絞り込みをまとめてリセットすることもできます。</dd>
         <dd>アカウント一覧表示は、グループ名の下にそのグループに所属するアイテムの一覧が表示されます。アイテムのタイトルにコメントをつけておくと、アイテムタイトルと一緒に表示されます。</dd>
         <dd>アイテム名をタップすると、アイテムの詳細情報を表示する <a href="#detail">アイテム詳細画面</a> に移動します。</dd>
         <dd>アイテムの状態によってアイテム名の右にアイコンが表示されることがあります。</dd>
-        <dd>アイテム名の右に表示されるアイコンの意味</dd>
+        <dd>アイテム名の右に表示されるアイコンの意味は以下の通りです。</dd>
         <dl class="sub1">
         <dt><i class="icon person2"></i></dt>
         <dd>別名アイテム</dd>
@@ -637,6 +643,8 @@
         <dd>支払い継続中アイテム</dd>
         <dt><i class="icon coin"></i></dt>
         <dd>支払い済みアイテム</dd>
+        <dt><i class="icon calendarex"></i></dt>
+        <dd>期限が１ヶ月以内のアイテム</dd>
         <dt>🪦</dt>
         <dd>利用廃止アイテム</dd>
         
