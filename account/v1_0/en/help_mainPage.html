@@ -108,6 +108,19 @@
        line-height: 150%;
     }
     
+    dl.sub0  {
+      padding: 0px 0px 0px 50px;
+    }
+    dl.sub0 dt{
+      margin-top: 1vmax;
+      font-size: 2.2vmax;
+    }
+    dl.sub0 dd{
+      font-size: 2.2vmax;
+      margin-bottom: 0.4em;
+      list-style-type: circle;
+    }
+    
     dl.sub1{
       display:flex;
       flex-wrap: wrap;
@@ -295,16 +308,17 @@
      <h3>Contents</h3>
      <dl class="main">
        <dd><a href="#about">About this app</a></dd>
-       <dd><a href="#pages">Screen type</a></dd>
+       <dd><a href="#pages">App Screen type</a></dd>
        <dd><a href="#item">Items</a></dd>
        <dd><a href="#field">Fields</a></dd>
        <dd><a href="#selectList">Selection lists</a></dd>
        <dd><a href="#home">Home screen</a></dd>
-       <dd><a href="#detail">Item detail screen</a></dd>
-       <dd><a href="#editItem">Item edit type</a></dd>
+       <dd><a href="#detail">Item details screen</a></dd>
+       <dd><a href="#editItem">Item edit screen</a></dd>
        <dd><a href="#editList">Edit Selection List</a></dd>
        <dd><a href="#setting">Setting screen</a></dd>
        <dd><a href="#backup">Backup screen</a></dd>
+       <dd><a href="#postscript">Postscript</a></dd>
        <dd><a href="#history">Version history</a></dd>
      </dl>
 
@@ -347,13 +361,13 @@
 
 <a name="pages">
      <a href="#top">🔝</a>
-     <h2>Screen type</h2>
+     <h2>App Screen type</h2>
      <dl class="main">
          <dd>Types of screens that appear in this app</dd>
         
          <dt>Home screen</dt>
          <dd>The first thing you see when you start is the <a href="#home">Home screen</a>. </dd>
-         <dd>On the home screen, you can add a new <a href="#item">item (account information)</a>, select an item and move to the details screen, or move to the settings screen. </dd>
+         <dd>On the home screen, you can add a new <a href="#item">items</a> (account information), select an item and move to the details screen, or move to the settings screen. </dd>
         
          <dt>Item details screen</dt>
          <dd>When you tap an item name on the home screen, the <a href="#detail">Item detail screen</a> is displayed. </dd>
@@ -368,7 +382,7 @@
          <dd>On the setting screen, you can switch and back up various settings. </dd>
         
          <dt>Selection list edit screen</dt>
-         <dd>Press the <i class="icon wrench"></i>wrench icon from the home screen and select the name of the selection list to move to the <a href="#editList">selection list editing screen</a> is. </dd>
+         <dd>Press the <i class="icon wrench"></i> wrench icon from the home screen and select the name of the selection list to move to the <a href="#editList">selection list editing screen</a> is. </dd>
          <dd>On the selection list edit screen, you can edit various selection string lists such as category names, your own email address, and types of URL information. </dd>
         
          <dt>Backup management screen</dt>
@@ -390,13 +404,13 @@
          <dd>Account link items are items that rely on other items for login. Refers to account-linked items instead of login account names and password names. </dd>
          <dd> An alias item is an item that is an alias for another item. There are fewer items that can be set compared to other types. <a href="#detail">Item detail screen</a> You can create it from the menu to create an alias item. </dd>
          <dd>The 3 types of items can be changed to each other's type on the <a href="#editItem">item edit screen</a> even after they are created. </dd>
-         <dt>fields</dt>
+         <dt>Fields</dt>
          <dd>A item consists of multiple elements such as the title and account name. </dd>
          <dd>This element is called a field. </dd>
          <dd>Fields can be registered on the <a href="#editItem">item edit screen</a> and displayed on the <a href="#detail">item detail screen</a>. </dd>
          <dd>Some fields are used for home screen grouping and filtering. </dd>
          <dd>For fields that refer to other items, you can jump to the corresponding item on the <a href="#detail">Item detail screen</a>. </dd>
-         <dd>See <a href="#field">About Fields</a> to see what fields are available. </dd>
+         <dd>See <a href="#field">Fields</a> to see what fields are available. </dd>
      </dl>
      
 
@@ -460,7 +474,7 @@
          <dd>You can also add comments. </dd>
 
          <dt>Password</dt>
-         The password associated with the <dd> account. </dd>
+         <dd>The password associated with the account. </dd>
          <dd>Can be used when account linkage is OFF. </dd>
          <dd>On the item edit screen, you can also generate a password automatically. </dd>
          <dd>In the item detail screen, you can hide the display. </dd>
@@ -476,7 +490,7 @@
          <dd>If you use two-factor authentication, select its type. </dd>
          <dd>For example, SMS, email, authentication apps, etc. </dd>
          <dd>Two-step verification type is one of the <a href="#selectList">Selection List</a> that users can add or change by themselves. </dd>
-         You can also add <dd> comments. </dd>
+         <dd>You can also add comments. </dd>
 
          <dt>Refer to other accounts</dt>
          <dd>You can select other related accounts. </dd>
@@ -678,17 +692,17 @@
      <h2>Item details screen</h2>
      <dl class="main">
          <dt>Item details screen</dt>
-         <dd>This screen displays information (<a href="#field">field</a>) registered in one item. </dd>
+         <dd>This screen displays information (<a href="#field">fields</a>) registered in one item. </dd>
          <dd>This is a screen that you can move from the home screen by pressing the item name. </dd>
          <dd>The item name at the top of the screen is a landmark. </dd>
          <dd>Only the items entered on the item edit screen are displayed on the item details screen. </dd>
          <dt>Screen configuration</dt>
          <dd>At the top of the screen is the title in large font and the title comment in small font. </dd>
          <dd>There are icons in the upper right corner of the screen. </dd>
-         <dt>Icons at the top of the screen (from right)</dt>
+         <dt>Icons at the top of the screen</dt>
          <dl class="sub1">
          <dt>edit</dt>
-         <dd>You can go to the <a href="#editItem">Edit Item screen</a> to edit the item. </dd>
+         <dd>You can go to the <a href="#editItem">Item edit screen</a> to edit the item. </dd>
          <dt><i class="icon trash"></i></dt>
          <dd>You can delete items. Make sure you really want to delete it. </dd>
          <dt><i class="icon threelines"></i></dt>
@@ -708,7 +722,7 @@
          <dd>Use this when you want to create an item that you want to link with this item. </dd>
          </dl>
          <dt>Field information</dt>
-         <dd>The bottom of the screen displays the fields entered in the <a href="#editItem">Edit Item screen</a>. </dd>
+         <dd>The bottom of the screen displays the fields entered in the <a href="#editItem">Item edit screen</a>. </dd>
          <dd>Accounts and passwords are copied to the clipboard just by tapping. It is convenient to use while going back and forth between apps and web pages where you enter accounts and passwords. </dd>
          <dd>Passwords and PINs are hidden by default. You can display it by tapping the <i class="icon eyeslash"></i> eyeball icon on the far right. You can also make it the default display in the option settings. </dd>
          <dd>If the item is an alias or an account link item, a link to the referenced account will be displayed, and linking will take you to the detail screen for that item. </dd>
@@ -727,7 +741,7 @@
          <dd>From the <a href="#home">home screen</a> press the <i class="icon plus"></i> plus icon or <a href="#detail" This screen is accessed by pressing the edit icon from the >Item details screen</a>. </dd>
          <dd>The title "New item" or "Edit item" at the top of the screen is a landmark. </dd>
          <dd>There are icons in the upper right corner of the screen. </dd>
-         <dt>Icons at the top of the screen (from right)</dt>
+         <dt>Icons at the top of the screen</dt>
          <dl class="sub1">
          <dt>Register</dt>
          <dd>You can register the edited item information. </dd>
@@ -858,6 +872,37 @@
          <dd>Backup files can be copied or restored from the Account app folder using Apple's Files app, iTunes (Windows), or Finder (Mac). </dd>
          <dd>Please note that if you change the file name, it may not be visible on the backup management screen. </dd>
      </dl>
+
+
+<a name="postscript">
+     <a href="#top">🔝</a>
+     <h2>Afterword</h2>
+     <dl class="main">
+         <dt>Why I made this app<dt>
+         <dd>Thank you for using this app. </dd>
+         <dd>The impetus for creating this app was that the database app I had been using for password management was no longer compatible with the new version of iOS. </dd>
+         <dd>The database app is very functional, but it cost 20 USD to purchase the new version, and I didn't need that much functionality for password management, so I looked for other password management apps. </dd>
+         <dd>However, I couldn't find a reasonable app that matches my usage. </dd>
+         <dd>Therefore, I decided to create my own account management application with the functions I wanted to use, and decided to develop it as a public application. </dd>
+         <dd>I hope you like it and use it. </dd>
+        
+         <dt>Future enhancement plans</dt>
+         <dd>This app has all the necessary functions from the beginning, but there are still some functions that I think are not enough. </dd>
+         <dd>The following are features that we would like to support in the future. </dd>
+         <dl class="sub0">
+         <dt>CSV file import & export function</dt>
+         <dd> Allow user data to be exchanged with other apps in text files. </dd>
+         <dt>Input field switching by type of input information</dt>
+         <dd>Hide unnecessary fields depending on the type of information when entering completely different types of information, such as login account information or card information. </dd>
+         <dt>Add User Custom Field Type</dt>
+         <dd>Allow users to add field types other than ULR and free string. </dd>
+         <dt>Custom functions for grouping and filtering</dt>
+         <dd>Allow grouping and filtering to target other fields, including user custom fields</dd>
+         </dl>
+         <dd>If there are any features you would like to see added, please leave feedback in the app review. </dd>
+     </dl>
+
+
 
      <a name="history">
      <a href="#top">🔝</a>
