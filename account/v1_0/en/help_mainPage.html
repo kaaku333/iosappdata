@@ -860,14 +860,33 @@
          <dd>On the item edit screen, you can toggle whether to hide the reading input field for the title. </dd>
 
          <dt>iPhone/iPad iCloud Settings<dt>
-         <dd>You can choose to sync data between your girlfriend's iPhone and her iPad using iCloud. </dd>
-         <dd>The information that is synced is item data and picklist data. Other configuration information is not synchronized. </dd>
-         <dd>You can also force sync, upload, or download. </dd>
-         <dd>Since the last update date and time of your iPhone/iPad is displayed, it can be used as a guideline for the synchronization status. </dd>
-         <dd>If you think the sync is not working properly, force upload to iCloud on the device you want to enable and download on the other device. </dd>
-         <dd>Although backups are automatically created when you start iCloud synchronization, please make backups from time to time just in case. </dd>
-         <dd>The method of automatic synchronization between iPhone and iPad is to save to iCloud (and main unit) when this app goes to the background, and compare the update date and time of the data on the main unit and iCloud when the app is started, and the newer one to adopt </dd>
-         <dd> So if you open and edit this app on both iPhone and iPad at the same time, be aware that the edits made on one side may be ignored. </dd>
+         <dd>You can use iCloud to sync data between your iPhone and iPad so you can share the same data. </dd>
+         <dd>The data that is synced is item data and select list data. Other configuration information is not synchronized. </dd>
+         <dd>Synced data is shared only between devices logged in with the same Apple account through the user's own iCloud Drive folders that are not directly visible to the user. Furthermore, the item data itself is encrypted. </dd>
+         <dd>In addition to automatic synchronization, you can also explicitly upload to and download from iCloud. </dd>
+         <dt>About iCloud sync</dt>
+         <dl class="sub0">
+         <dt>Synchronization mechanism when iCloud auto-sync is ON</dt>
+         <dd>When the application is launched, this application compares the update date and time of the data on the device (iPhone/iPad) and the data on iCloud, and loads the newer data. </dd>
+         <dd>Save data to both the device and iCloud when the app is closed. </dd>
+         <dd>Data update date comparison, saving and loading are performed collectively for all items.</dd>
+         <dt>Precautions before iCloud synchronization</dt>
+         <dd>Please note that if you enter data separately for multiple devices before iCloud sync, only the data for the last updated device will be valid. </dd>
+         <dd>If you want to share data between multiple devices, please turn on iCloud sync before entering data on each device. </dd>
+         <dt>When iCloud sync is turned on</dt>
+         <dd>If you have entered data on multiple devices separately, follow the steps below. </dd>
+         <dd>1. Upload to iCloud from the device that has the data you want to share with other devices. </dd>
+         <dd>2. For devices other than the above, download from iCloud. </dd>
+         <dd>3. Turn on iCloud sync on each device. </dd>
+         <dd>This procedure is also useful during sync if you think something is not syncing. </dd>
+         <dt>Data update date and time and data communication</dt>
+         <dd>The last update date and time of the data on the device (iPhone/iPad) and iCloud is displayed, which can be used as a guideline for the synchronization status. </dd>
+         <dd>Due to the mechanism of iCloud, it may take several minutes to reflect the data between the device and iCloud regardless of the update time. Also, when the network environment is bad, it will be reflected collectively when the network environment recovers. </dd>
+         <dt>Notes during iCloud synchronization</dt>
+         <dd>Please note that if you open this app on both iPhone and iPad at the same time and edit data on each device, the edits made on one device may be ignored. </dd>
+         <dd>If you use as above frequently, it is safer to use upload to iCloud or download from iCloud instead of turning sync ON. </dd>
+         <dd>It is a good idea to create backups from time to time, just in case, as you may unintentionally use the above when syncing with iCloud. </dd>
+         </dl>
         
          <dt>Backup</dt>
          <dd>Takes you to the <a href="#backup">Backup Manager</a> where you can back up and restore. </dd>
