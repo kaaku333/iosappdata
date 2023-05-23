@@ -485,9 +485,14 @@
          <dd>You can add a comment to the title. If you add a comment, it will be displayed together under the item name in the item list on the home screen. </dd>
         
          <dt>Category</dt>
-         <dd>You can choose the type of item information. </dd>
+         <dd>You can choose the category of item information. </dd>
          <dd>Category is one of the <a href="#selectList">select list</a> which can be added or changed by the user. </dd>
          <dd> Categories can be used for grouping and filtering on the home screen. </dd>
+
+         <dt>tags</dt>
+         <dd>A label that indicates the type of item information, and can be given multiple times for one item. </dd>
+         <dd> The tag is one of the <a href="#selectList">select list</a> and can be added or changed by the user. </dd>
+         <dd> The tag can be used for filtering on the home screen. </dd>
 
          <dt>Severity</dt>
          <dd>You can express the importance of the item with the number of ⭐️. </dd>
@@ -633,6 +638,11 @@
          <dd> Indicates the classification name of item information. </dd>
          <dd>Used for category selection on the item edit screen. </dd>
          <dd>Can be used for grouping and filtering on the home screen. </dd>
+
+         <dt>tags</dt>
+         <dd>A label that indicates the type of item information. </dd>
+         <dd>Used for adding/selecting tags on the item edit screen. </dd>
+         <dd>Available in filtering on the home screen. </dd>
 
          <dt>Two-step verification type</dt>
          <dd>Indicates the type of two-factor authentication. </dd>
@@ -891,7 +901,7 @@
          <dt>Precautions when upgrading the app</dt>
          <dd>Please try to upgrade the iPhone and iPad apps that exchange files with iCloud as much as possible at the same time. </dd>
          <dd>If you update data while only one device is upgraded, the old version device can read the data saved by the new version device, but you cannot save the data using the new function due to the version upgrade. Therefore, you may lose data using the new features. </dd>
-         <dd>When synchronizing with iCloud, make a backup before and after the version upgrade. </dd>
+         <dd>If the data file format is expanded due to the addition of functions in the app, the file format version will be increased. If a bigger version of the data was stored on iCloud, iCloud sync and upload will stop until the app on that device is updated to prevent data loss. </dd>
          </dl>
         
          <dt>Backup</dt>
@@ -931,6 +941,7 @@
          <dd>The date and time of saving and the number of items at saving time are saved as comments in the backup file. </dd>
          <dd>Backup files are listed from newest to oldest. </dd>
          <dd>You can select multiple backup files by pressing the select icon on the screen. Tap the  <i class="icon trash"></i> trash can icon if it is displayed additionally on the screen to delete it all at once. Press the Done icon to exit selection mode. </dd>
+         <dd>The switch below the backup button lets you choose whether to back up synced data on iCloud when you create a backup, and whether to automatically back up before restoring a backup. It is recommended to leave both ON just in case. </dd>
          <dd>Tap the backup file to display the file operation menu. </dd>
 
          <dt>File operation menu for backup file</dt>
@@ -956,7 +967,7 @@
      <h2>Afterword</h2>
      <dl class="main">
          <dt>What's next</dt>
-         <dd>I have implemented all necessary functions in this app since Ver.1.0, but I would like to extend the functions in the future. </dd>
+         <dd>I would like to extend the functionality of this app in the future. </dd>
          <dd>The following are features that we would like to support in the future. </dd>
          <dd>If there are any features you would like us to support, please give us feedback in the app review. </dd>
          <dd>Of course, if there is a bug, we will prioritize fixing it. If you have any problems, it would be helpful if you could let me know from the feedback on the setting screen. </dd>
@@ -967,8 +978,6 @@
          <dd>If there are any features you would like to see added, please leave feedback in the app review. 
 
          <dl class="sub0">
-         <dt>Tag function</dt>
-         <dd>Set multiple tags for items so that you can refine your search. </dd>
          <dt>CSV file import & export function</dt>
          <dd> Allow user data to be exchanged with other apps in text files. </dd>
          <dt>Input field switching by type of input information</dt>
@@ -992,6 +1001,14 @@
      <a href="#top">🔝</a>
      <h2>Version history</h2>
      <dl class="main">
+          <dt>ver.1.1</dt>
+           <dd> Added tag functionality. Similar to categories, but you can register multiple tags for a single item. </dd>
+           <dd>Added tags to filter conditions on the home screen. You can filter only items with specified tags. </dd>
+           <dd>The sync data on iCloud is automatically backed up when backing up. </dd>
+           <dd>The number of items and the file format version are also displayed in the comparison with the data for iCloud synchronization on the setting screen. </dd>
+           <dd>The title comment of the item is also displayed in the other item display such as the reference item on the item detail screen. </dd>
+     
+     
            <dt>ver.1.0</dt>
            <dd>New</dd>
      </dl>
