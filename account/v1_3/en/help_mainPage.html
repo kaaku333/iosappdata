@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>help_mainPage</title>
+    <style type="text/css">
+    #body {
+      font-family: "Helvetica", "ヒラギノ角ゴ ProN W3";
+      font-size: 3vmax;
+      background-color: #777777;
+      color: #333333
+    }
+    
+    a.sf {font-family: 'SF Pro'}
+
+    h1 {
+      font-size: 3vmax;
+    }
+    h2 {
+      font-size: 3vmax;
+      padding: 0.4em 0.5em;
+      border-left: solid 8px #7de6b4;
+    /*  border-bottom: solid 8px #3250dd; */
+      background-color: #c2ffed;
+      color: #333333;
+    }
+    h3 {
+      font-size: 2.5vmax;
+      padding: 0.3em;
+      border-left: solid 5px #7de6b4;
+    }
+    
+
+    a:link, a:visited {
+          color: #333333;
+          background: #c2ffed;
+          padding: 0.2em;
+          text-decoration: none;
+    }
+    .img_area img{
+      width: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .icon_white {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #EEEEEE;
+    }
+    .icon_black {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #111111;
+    }
+    .icon_blue {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #5588FF;
+    }
+    .icon_red {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #FF5588;
+    }
+
+    .icon_darkblue {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #2222FF;
+    }
+    dl.main  {
+      padding: 10px 20px 20px 30px;
+      line-height: 1.4em;
+    }
+    
+    dl.main dt{
+      font-weight: bold; 
+      margin-top: 2vmax;
+      margin-bottom: 0.3em;
+      font-size: 2.5vmax;
+    }
+    dl.main dd{
+      font-size: 2.5vmax;
+      margin-bottom: 0.6em;
+       display: list-item;
+       list-style-type: circle;
+       line-height: 150%;
+    }
+    
+    dl.sub0  {
+      padding: 0px 0px 0px 50px;
+    }
+    dl.sub0 dt{
+      margin-top: 1vmax;
+      font-size: 2.2vmax;
+    }
+    dl.sub0 dd{
+      font-size: 2.2vmax;
+      margin-bottom: 0.4em;
+      list-style-type: circle;
+    }
+    
+    dl.sub1{
+      display:flex;
+      flex-wrap: wrap;
+      text-align: left;
+      padding: 20px;
+      margin: 10px;
+      line-height: normal;
+    }
+    dl.sub1 dt{
+        font-size: 2vmax;
+        vertical-align: baseline;
+        background: #ddd;
+        padding: 20px;
+        margin: 0;
+        width: 30%;
+        box-sizing: border-box;
+        border: 1px solid #ccc; 
+    }
+    dl.sub1 dd{
+       list-style-type: none;
+       font-size: 2vmax;
+       padding: 20px;
+       margin: 0;
+       width: 70%;
+       border: 1px solid #ccc;
+       box-sizing: border-box;
+    }
+    .icon {
+        display: inline-block;
+        width: 1.0em;
+        height: 1.0em;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .icon.trash {
+        background-image: url(https://kaaku333.github.io/iosappdata/account/image/trash@2x.png);
+    }
+    .icon.threelines {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal@2x.png) ;
+    }
+    .icon.threedots {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/ellipsis@2x.png) ;
+    }
+    .icon.info {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/info.circle@2x.png) ;
+    }
+    .icon.gear {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/gear@2x.png) ;
+    }
+    .icon.updown {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.up.arrow.down.circle@2x.png) ;
+    }
+    .icon.updown_fill {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.up.arrow.down.circle.fill@2x.png) ;
+    }
+    .icon.dec3lines {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal.decrease.circle@2x.png) ;
+    }
+    .icon.dec3lines_fill {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal.decrease.circle.fill@2x.png) ;
+    }
+    .icon.wrench {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/wrench.adjustable@2x.png) ;
+    }
+    .icon.xmark {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/xmark.circle@2x.png) ;
+    }
+    .icon.plus {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/plus@2x.png) ;
+    }
+    .icon.pencil {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/pencil@2x.png) ;
+    }
+    .icon.mag {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/magnifyingglass@2x.png) ;
+    }
+    .icon.eyeslash {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/eye.slash@2x.png) ;
+    }
+    
+    .icon.icloudup {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/icloud.and.arrow.up@2x.png) ;
+    }
+    .icon.key {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/key@2x.png) ;
+    }
+    .icon.coin {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/dollarsign.circle@2x.png) ;
+    }
+    .icon.coin_fill {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/dollarsign.circle.fill@2x.png) ;
+    }
+    .icon.person2 {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/person.2@2x.png) ;
+    }
+    .icon.calendarex {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/calendar.badge.exclamationmark@2x.png) ;
+    }
+
+
+
+    </style>
+      <script type="text/javascript">
+      <!--
+        var paramArray =[]
+        window.onload = loadFinished;
+
+        function loadFinished(){
+          getUrlParams()
+          initSetting()
+        }
+        function getUrlParams(){
+          var urlParam = location.search.substring(1);
+          if(urlParam) {
+            var param = urlParam.split('&');
+            for (i = 0; i < param.length; i++) {
+              var paramItem = param[i].split('=');
+              paramArray[paramItem[0]] = paramItem[1];
+            }
+          }
+        }
+        function initSetting(){
+
+          
+          // filter by name section
+          // ex.) name=history
+          if(paramArray.name != null){
+              filterByName(paramArray.name);
+          }
+          
+          // color setting
+          // ex.) colorMode=dark
+          var colorMode
+          if (paramArray.colorMode == 'dark'){
+            colorMode = 'dark'
+          }else{
+            colorMode = 'normal'
+          }
+          colorMode = 'normal'
+          colorModeSelect(colorMode)
+        }
+        
+        
+        function filterByName(){
+          var filtername = "history";
+          var elm = document.getElementsByClassName("langSel");
+          var isDisplay = false;
+          for (var i = 0; i < elm.length; i++) {
+            var thisname = elm[i].getAttribute("name");
+            if (thisname == filtername) {
+              isDisplay = true;
+            }else if (thisname != null ){
+              isDisplay = false;
+            }
+            if (isDisplay == false) {
+              elm[i].style.display = 'none';
+            }
+          }
+        }
+
+        function colorModeSelect(colorMode){
+          if(colorMode == 'dark'){
+            document.body.style.color = '#eeeeee';
+            document.body.style.backgroundColor = '#444444';
+          }else{
+            document.body.style.color = '#444444';
+            document.body.style.backgroundColor = '#eeeeee';
+            var elements = document.getElementsByTagName("div");
+            for (var i = 0 ; i < elements.length; i++) {
+                elements[i].classList.replace("icon_white", "icon_black")
+                elements[i].classList.replace("icon_blue", "icon_darkblue")
+            }
+          }
+        }
+    // -->
+    </script>
+</head>
+  <body id="body">
+
+<a name="top">
+     <h3>Contents</h3>
+     <dl class="main">
+       <dd><a href="#welcome">Welcome</a></dd>
+       <dd><a href="#about">About this app</a></dd>
+       <dd><a href="#usage">Basic usage of this app</a></dd>
+       <dd><a href="#pages">App Screen type</a></dd>
+       <dd><a href="#item">Items</a></dd>
+       <dd><a href="#field">Fields</a></dd>
+       <dd><a href="#selectList">Selection lists</a></dd>
+       <dd><a href="#home">Home screen</a></dd>
+       <dd><a href="#detail">Item details screen</a></dd>
+       <dd><a href="#editItem">Item edit screen</a></dd>
+       <dd><a href="#editList">Edit Selection List</a></dd>
+       <dd><a href="#setting">Setting screen</a></dd>
+       <dd><a href="#backup">Backup screen</a></dd>
+       <dd><a href="#postscript">Postscript</a></dd>
+       <dd><a href="#history">Version history</a></dd>
+     </dl>
+
+     <a name="welcome">
+     <h2>Welcome</h2>
+     <dl class="main">
+         <dd>Thank you for using the Account app. </dd>
+         <dd>This online manual can be viewed at any time with the <i class="icon info"></i> information icon in the top left corner of the home screen. </dd>
+         <dd>Press the <i class="icon plus"></i> plus icon in the top right corner of the home screen to add new account information. </dd>
+         <dd>Please see <a href="#usage">Basic usage of this app</a> for basic usage of this app. </dd>
+         <dd>See <a href="#pages">Types of App Screens</a> for descriptions of app screens. </dd>
+         <dd>Close this online manual by pressing the <i class="icon xmark"></i> X icon on the top right. </dd>
+     </dl>
+
+
+     <a name="about">
+     <a href="#top">🔝</a>
+     <h2>About this app</h2>
+     <dl class="main">
+        <dt>Introduction</dt>
+        <dd>This app is an account and password management app that allows you to associate and manage various information such as internet service access information, member information, card information, and shop information as account information</dd>
+        <dd>Account linkage and two-factor authentication using SNS and common company accounts are common for recent internet accounts. </dd>
+        <dd>It is also common for a single company to provide many services, such as online shopping and video subscription services. </dd>
+        <dd>It's also common for multiple apps and games to share a single login. </dd>
+        <dd>This application does not manage those related service names, application names, product names, account names, etc. as one account information with a lot of attached information, but as multiple account information linked with each other. make it manageable. </dd>
+        <dd>By doing this, you can search for the names of the services and apps you are using in a list, and finally, you can treat common login account information as one account information. </dd>
+        <dd>Also, in order to quickly find what you are looking for from a lot of information, you can easily combine incremental search, grouping, and narrowing down. </dd>
+       
+        <dt>Main Features</dt>
+        <dd>Account information, including passwords, is stored with AES256bit encryption, and encryption keys are securely managed with Apple's Keychain. </dd>
+        <dd>You can log in securely and easily with face recognition/fingerprint recognition and a dedicated passcode. </dd>
+        <dd>With a wealth of grouping and filtering functions, you can easily find the desired item from a large amount of account information. </dd>
+        <dd>The list screen consists of two panes, a group list and an individual item list, so you can quickly access the item of the corresponding group. </dd>
+        <dd>You can prioritize and color individual item to make it easier to find item. </dd>
+        <dd>You can also register the expiration date of the item and display only the ones that are about to expire. </dd>
+        <dd>You can give your item an alias. You can jump to this item from an alias. </dd>
+        <dd>You can link the login information of other item. You can jump to linked item. </dd>
+        <dd>You can manage your two-factor authentication information. </dd>
+        <dd>You can manage payment-related information such as subscription billing and prepaid billing. You can jump by linking your payment instrument item. </dd>
+        <dd>Items that are no longer in use, expired items, items with continuous billing, etc. can be displayed as easy-to-understand icons, and you can narrow down your search. </dd>
+        <dd>You can freely add and edit categories and tags yourself. </dd>
+        <dd>You can freely add items that allow you to enter URLs, free strings, dates, and other item references. </dd>
+        <dd>The account string or password string can be copied to the clipboard by tapping it. </dd>
+        <dd>You can also auto-generate passwords. </dd>
+        <dd>You can share data between your iPad/iPhone via iCloud. </dd>
+        <dd>You can always create an encrypted backup file and restore it when needed. </dd>
+     </dl>
+
+
+<a name="usage">
+     <a href="#top">🔝</a>
+     <h2>Basic usage of this app</h2>
+     <dl class="main">
+         <dt>1. Item registration</dt>
+         <dd>First, register the item (account information). </dd>
+         <dl class="sub0">
+         <dt>1. Press the Add Item button on the home screen</dt>
+         <dd>Press the <i class="icon plus"></i> plus icon at the top right of the <a href="#home">home screen</a>. </dd>
+         <dd>This will bring up the <a href="#editItem">Edit Item screen</a> with nothing entered. </dd>
+         <dt>2. Enter the required elements on the item edit screen</dt>
+         <dd>On the item edit screen, enter the title first. </dd>
+         <dd>The elements (fields) other than the title are optional, so you can enter them later. </dd>
+         <dd>Please refer to <a href="#field">About fields</a> for fields that can be entered. </dd>
+         <dt>3. Register the item entered on the item edit screen</dt>
+         <dd>Press the registration icon on the upper right of the item edit screen to register the item. </dd>
+         <dd>When the item is registered, it automatically returns to the home screen. </dd>
+         </dl>
+
+         <dt>2. Show Items</dt>
+         <dd>Find and select the item you want to see more information about. </dd>
+         <dl class="sub0">
+         <dt>1. Grouping on the home screen</dt>
+         <dd>Press the category button on the top left of the home screen and select a grouping that makes it easy for you to find the item. </dd>
+         <dd>For example, if you want to search by name, you can easily search by title, and if you want to search for recently edited items, you can easily search by date. </dd>
+         <dd>If you tap the group to which the item you want to find belongs from the group name on the left side of the screen, the item list on the right side will scroll to the location of that group. </dd>
+         <dt>2. Filter on the home screen</dt>
+         <dd>If there are many target items even after grouping, narrow down. </dd>
+         <dd>If you tap the search box on the screen and enter part of the word in the title name or the comment or memo registered in the title, only the items that contain that character string will be displayed in the item list display on the right. </dd>
+         <dd>Tap the <i class="icon dec3lines"></i> filter icon on the right side of the screen to display the filter menu. </dd>
+         <dd>In the filter menu, you can select display conditions by attributes of some fields of items. When you select a filter condition, the filter icon will change to <i class="icon dec3lines_fill"></i> and only the items that meet the condition will be displayed in the item list. </dd>
+         <dd>If you set multiple filtering conditions, only items that meet all of the conditions will be displayed. </dd>
+         <dd>If you want to clear the filtering conditions, please press the reset filtering button at the bottom of the filtering menu. </dd>
+         <dt>3. Select items</dt>
+         <dd>When you find the name of the item you want to view in detail, tap the item name to display the <a href="#detail">Item Details Screen</a> and display the registered information of the item. </dd>
+         </dl>
+        
+         <dt>3. Edit items</dt>
+         <dd>You can move to the <a href="#editItem">Item Edit Screen</a> by pressing the edit button on the top right of the <a href="#detail">Item Details Screen</a>. </dd>
+         <dd> After rewriting the item information, press the register button at the top right of the screen. If you want to cancel without registering the edit, press the left arrow icon on the upper left of the screen to return to the item details screen. </dd>
+     </dl>
+
+
+
+<a name="pages">
+     <a href="#top">🔝</a>
+     <h2>App Screen type</h2>
+     <dl class="main">
+         <dd>Types of screens that appear in this app</dd>
+        
+         <dt>Home screen</dt>
+         <dd>The first thing you see when you start is the <a href="#home">Home screen</a>. </dd>
+         <dd>On the home screen, you can add a new <a href="#item">items</a> (account information), select an item and move to the details screen, or move to the settings screen. </dd>
+        
+         <dt>Item details screen</dt>
+         <dd>When you tap an item name on the home screen, the <a href="#detail">Item detail screen</a> is displayed. </dd>
+         <dd>On the item detail screen, you can check the detailed information of the item, copy the account name and password, delete or duplicate the item, move to the item edit screen, etc. </dd>
+        
+         <dt>Item edit screen</dt>
+         <dd>The <a href="#editItem">item edit screen</a> is accessed by pressing the edit button from the item details screen. </dd>
+         <dd>On the item edit screen, you can edit the item information. </dd>
+        
+         <dt>Setting screen</dt>
+         <dd>Press the <i class="icon gear"></i> gear icon from the home screen to go to the <a href="#setting">setting screen</a>. </dd>
+         <dd>On the setting screen, you can switch and back up various settings. </dd>
+        
+         <dt>Selection list edit screen</dt>
+         <dd>Press the <i class="icon wrench"></i> wrench icon from the home screen and select the name of the selection list to move to the <a href="#editList">selection list editing screen</a> is. </dd>
+         <dd>On the selection list edit screen, you can edit various selection string lists such as category names, your own email address, and types of URL information. </dd>
+        
+         <dt>Backup management screen</dt>
+         <dd>The <a href="#backup">Backup management screen</a> can be accessed from the Settings screen. </dd>
+         <dd>You can save the entire current user data as a backup file, share the backup file for saving to other apps, and restore from the backup file. </dd>
+
+     </dl>
+
+     <a name="item">
+     <a href="#top">🔝</a>
+     <h2>Items</h2>
+     <dl class="main">
+         <dt>Items</dt>
+         <dd>This app handles account information in units of items. </dd>
+         <dd> Various elements (fields) such as title, account name, password, etc. can be set in the item. </dd>
+         <dt>Item type</dt>
+         <dd>There are three types of items, normal items, account link items, and alias items, depending on how they are related to other items. </dd>
+         <dd>Normal items are items that do not depend on other items. You can set the most items. </dd>
+         <dd>Account link items are items that rely on other items for login. Refers to account-linked items instead of login account names and password names. </dd>
+         <dd> An alias item is an item that is an alias for another item. There are fewer items that can be set compared to other types. <a href="#detail">Item detail screen</a> You can create it from the menu to create an alias item. </dd>
+         <dd>The 3 types of items can be changed to each other's type on the <a href="#editItem">item edit screen</a> even after they are created. </dd>
+         <dt>Fields</dt>
+         <dd>A item consists of multiple elements such as the title and account name. </dd>
+         <dd>This element is called a field. </dd>
+         <dd>Fields can be registered on the <a href="#editItem">item edit screen</a> and displayed on the <a href="#detail">item detail screen</a>. </dd>
+         <dd>Some fields are used for home screen grouping and filtering. </dd>
+         <dd>For fields that refer to other items, you can jump to the corresponding item on the <a href="#detail">Item detail screen</a>. </dd>
+         <dd>See <a href="#field">Fields</a> to see what fields are available. </dd>
+     </dl>
+     
+
+
+
+
+<a name="field">
+     <a href="#top">🔝</a>
+     <h2>Fields</h2>
+     <dl class="main">
+         <dt>About fields</dt>
+         <dd>A field is an element in a item that the user enters. </dd>
+         <dd>Fields other than the title are not mandatory. </dd>
+         <dd>Item fields are entered on the <a href="#editItem">item edit screen</a> and viewed on the <a href="#detail">item detail screen</a>. </dd>
+         <dd>Some fields are used for grouping and filtering. </dd>
+        
+         <dt>Title</dt>
+         <dd>A title is a name of the item. </dd>
+         <dd>You cannot use the same name as an item name that has already been registered. </dd>
+         <dd>You can add a reading field to the title. This can be enabled in the option settings. If you use the reading, it will be used for sorting instead of the item name in the grouping of the item name on the home screen. </dd>
+         <dd>You can add a comment to the title. If you add a comment, it will be displayed together under the item name in the item list on the home screen. </dd>
+        
+         <dt>Category</dt>
+         <dd>You can choose the category of item information. </dd>
+         <dd>Category is one of the <a href="#selectList">select list</a> which can be added or changed by the user. </dd>
+         <dd> Categories can be used for grouping and filtering on the home screen. </dd>
+
+         <dt>tags</dt>
+         <dd>A label that indicates the type of item information, and can be given multiple times for one item. </dd>
+         <dd> The tag is one of the <a href="#selectList">select list</a> and can be added or changed by the user. </dd>
+         <dd> The tag can be used for filtering on the home screen. </dd>
+
+         <dt>Severity</dt>
+         <dd>You can express the importance of the item with the number of ⭐️. </dd>
+         <dd>Set important or frequently used items to ⭐️⭐⭐⭐⭐ to distinguish them from other items. </dd>
+         <dd>Importance can be used for grouping and filtering on the home screen. </dd>
+
+         <dt>Color</dt>
+         <dd>You can choose a color that visually identifies the item. </dd>
+         <dd>Make your own rules for the meaning of colors. </dd>
+         <dd>The color can be set from the menu on the item detail screen or item edit screen. </dd>
+         <dd>Importance can be used for grouping and filtering on the home screen. </dd>
+
+         <dt>Deprecated state</dt>
+         <dd>Turn on when the item is no longer in use. </dd>
+         <dd>Use this when you don't want to use the item anymore but want to keep it just in case. </dd>
+         <dd>When ON, a 🪦grave icon will be displayed next to the item name in the item list on the home screen. </dd>
+         <dd>The deprecated status can be used in the filter on the home screen. </dd>
+
+         <dt>Account link usage status</dt>
+         <dd>Set this to ON when performing account authentication with another account. </dd>
+         <dd>For example, it is used when using Twitter authentication or Google authentication. </dd>
+         <dd>When set to ON, the item will be an account linked item, and the account and password of the linked account will be used. </dd>
+         <dd>Account linkage status can be used in filtering on the home screen. </dd>
+
+         <dt>Linked Account</dt>
+         <dd>This item is linked to your account. </dd>
+         <dd>Can be used when account linkage is turned on. </dd>
+         <dd>Select the item to link the account from the registered items. </dd>
+         <dd>You can jump to the linked item on the item detail screen. </dd>
+         <dd>It is also displayed on the item detail screen of the linked item. </dd>
+
+         <dt>Account</dt>
+         <dd>Account name, login name, etc. </dd>
+         <dd>Can be used when account linkage is OFF. </dd>
+         <dd>You can also add comments. </dd>
+
+         <dt>Password</dt>
+         <dd>The password associated with the account. </dd>
+         <dd>Can be used when account linkage is OFF. </dd>
+         <dd>On the item edit screen, you can also generate a password automatically. </dd>
+         <dd>In the item detail screen, you can hide the display. </dd>
+
+         <dt>PIN</dt>
+         <dd>This is a 4-6 digit personal identification number that is used separately from the password. </dd>
+         <dd>In the item detail screen, you can hide the display. </dd>
+
+         <dt>Two-factor authentication usage status</dt>
+         <dd>Turn on if you use two-factor authentication. </dd>
+
+         <dt>Two-step verification type</dt>
+         <dd>If you use two-factor authentication, select its type. </dd>
+         <dd>For example, SMS, email, authentication apps, etc. </dd>
+         <dd>Two-step verification type is one of the <a href="#selectList">Selection List</a> that users can add or change by themselves. </dd>
+         <dd>You can also add comments. </dd>
+
+         <dt>Refer to other accounts</dt>
+         <dd>You can select other related accounts. </dd>
+         <dd>Can be used when account linkage is OFF. </dd>
+         <dd>You can also add comments. </dd>
+
+         <dt>Payment type</dt>
+         <dd>Choose if billing is involved with your account. </dd>
+         <dd>For example, subscription, prepaid, postpaid, etc. </dd>
+         <dd>Payment type is one of the <a href="#selectList">select list</a> that can be added or changed by the user. </dd>
+
+         <dt>Payment reference item</dt>
+         <dd>Select any other items related to payment. </dd>
+         <dd>You can also add comments. </dd>
+
+         <dt>Payment in progress</dt>
+         <dd>Turn on when billing is ongoing, such as with a subscription. </dd>
+         <dd>Continuing payment status can be used in filtering on the home screen. </dd>
+        
+         <dt>Paid State</dt>
+         <dd>Turn on when payment is made in advance. </dd>
+         <dd>You can use the paid status in the filter on the home screen. </dd>
+        
+         <dt>Expired State</dt>
+         <dd>If the account has an expiration date or billing expiration date, turn it on. </dd>
+         <dd>Expired status can be used in filtering on the home screen. </dd>
+        
+         <dt>deadline type</dt>
+         <dd>If there is a deadline, select the type of deadline. </dd>
+         <dd>For example, expiry date, prepaid expiry date, application date, service termination date, etc. </dd>
+         <dd>The deadline type is one of the <a href="#selectList">select list</a> and can be added or changed by the user. </dd>
+        
+         <dt>Deadline</dt>
+         <dd>If there is a due date, set the date. </dd>
+         <dd>You can group and narrow down on the home screen by the number of days until the deadline. </dd>
+         <dd>You can also add comments. </dd>
+
+         <dt>Registered email address</dt>
+         <dd>Specify your email address that is registered with your account. </dd>
+         <dd>The registered email address can be added or changed by the user. </dd>
+
+         <dt>Registered phone number</dt>
+         <dd>Specify your phone number registered to your account. </dd>
+         <dd>The registered phone number can be added or changed by the user. </dd>
+
+         <dt>URL</dt>
+         <dd>You can register multiple item homepages, map information, links to Twitter and Instagram, etc. </dd>
+
+         <dt>URL type</dt>
+         <dd>Choose the type of URL. </dd>
+         <dd>For example, home page, map, twitter, etc. </dd>
+         <dd>The URL type is one of <a href="#selectList">select list</a> and can be added or changed by the user. </dd>
+
+         <dt>URL address</dt>
+         <dd>Register a URL that starts with https://. </dd>
+         <dd>Tap the item detail screen to open the corresponding page in the browser. </dd>
+         <dd>You can also add comments. </dd>
+
+         <dt>Free string</dt>
+         <dd>You can register multiple fields as fields that can freely record strings. </dd>
+
+         <dt>Free string type</dt>
+         <dd>Choose the type of free string. </dd>
+         <dd>For example, business hours or contact information. </dd>
+         <dd>The free string type is one of <a href="#selectList">select list</a> and can be added or changed by the user. </dd>
+
+         <dt>Date</dt>
+         <dd>You can register multiple dates other than the deadline. </dd>
+        
+         <dt>Date type</dt>
+         <dd>Choose the type of date. </dd>
+         <dd>For example, registration date, opening date, etc. </dd>
+         <dd>The date type is one of the <a href="#selectList">select list</a> and can be added or changed by the user. </dd>
+
+         <dt>item reference</dt>
+         <dd>You can register multiple references to other items. </dd>
+        
+         <dt>Item reference type</dt>
+         <dd>Choose the type of item reference. </dd>
+         <dd>Item reference type is one of <a href="#selectList">select list</a> and can be added or changed by the user. </dd>
+
+
+         <dt>Notes</dt>
+         <dd> Freely enter various information related to the item. </dd>
+
+         <dt>Modified Date</dt>
+         <dd>The date and time when the item was updated by editing/registering. It updates automatically when you edit the item. </dd>
+        
+         <dt>Creation date</dt>
+         <dd>The date and time when the item was first created. Filled in automatically. </dd>
+     </dl>
+
+
+
+<a name="selectList">
+     <a href="#top">🔝</a>
+     <h2>Selection list</h2>
+     <dl class="main">
+         <dt>About selection list</dt>
+         <dd>Selection lists are user-editable selection lists, such as categories and registered email addresses. </dd>
+         <dd>Selection lists can be edited in the <a href="#editList">selection list editing screen</a>, accessible from the <a href="#home">home screen</a>. </a>
+         <dd>There are the following types of selection lists. </dd>
+
+         <dt>Category</dt>
+         <dd> Indicates the classification name of item information. </dd>
+         <dd>Used for category selection on the item edit screen. </dd>
+         <dd>Can be used for grouping and filtering on the home screen. </dd>
+
+         <dt>tags</dt>
+         <dd>A label that indicates the type of item information. </dd>
+         <dd>Used for adding/selecting tags on the item edit screen. </dd>
+         <dd>Available in filtering on the home screen. </dd>
+
+         <dt>Two-step verification type</dt>
+         <dd>Indicates the type of two-factor authentication. </dd>
+         <dd>Used to enter the category on the item edit screen. </dd>
+
+         <dt>Payment type</dt>
+         <dd> Indicates the type of payment. </dd>
+         <dd>Used to select the payment type on the item edit screen. </dd>
+
+         <dt>deadline type</dt>
+         <dd>Indicates the type of deadline, such as expiration date. </dd>
+         <dd>Used to select the deadline type on the item edit screen. </dd>
+
+         <dt>URL type</dt>
+         <dd> Indicates the type of URL information. </dd>
+         <dd>Used in selecting the URL type on the item edit screen. </dd>
+
+         <dt>Free string type</dt>
+         <dd> Indicates the type of free string information. </dd>
+         <dd>Used to select free character string information on the item edit screen. </dd>
+
+         <dt>Date type</dt>
+         <dd> Indicates the type of date information. </dd>
+         <dd>Used to select date information on the item edit screen. </dd>
+
+         <dt>Item reference type</dt>
+         <dd> Indicates the type of item reference information. </dd>
+         <dd>Used to select item reference information on the item edit screen. </dd>
+
+         <dt>Email address</dt>
+         <dd>Indicate your email address to subscribe to the item. </dd>
+         <dd>Used to select the registered email address on the item edit screen. </dd>
+
+         <dt>phone number</dt>
+         <dd>Indicates your phone number to register with the item. </dd>
+         <dd>Used to select the registered phone number on the item edit screen. </dd>
+
+     </dl>
+
+     <a name="home">
+     <a href="#top">🔝</a>
+     <h2>Home Screen</h2>
+     <dl class="main">
+         <dt>About the home screen</dt>
+         <dd>The home screen is the first thing you see when you start. </dd>
+         <dd>Look for the name of the app at the top of the screen. </dd>
+         <dd>The screen consists of two panes, the left side is the group display and the right side is the item list display. </dd>
+        
+         <dt>Group Display</dt>
+         <dd>The top of the group display on the left side of the screen is the grouping name. You can switch the grouping type by tapping the grouping name. </dd>
+         <dd>Grouping can be selected from category, title (in alphabetical order), importance, modified date, due date, and color. </dd>
+         <dd> If you change the grouping, the grouping of the item list display on the right will also be changed. </dd>
+         <dd>If you tap any group name from the group list under the grouping name, the account list in the right pane will scroll to that group. </dd>
+
+         <dt>Grouping type list</dt>
+         <dl class="sub1">
+         <dt>Category</dt>
+         <dd>Used when you want to find items in any category</dd>
+         <dt>Title</dt>
+         <dd>When you want to search for an item by name</dd>
+         <dt>Priority</dt>
+         <dd>Used when you want to find items of any importance</dd>
+         <dt>Update time</dt>
+         <dd>Used when you want to find recently updated items</dd>
+         <dt>Deadline</dt>
+         <dd>Use this when you want to find items whose due date is close</dd>
+         <dt>Color</dt>
+         <dd>Used when you want to find items of any color</dd>
+         </dl>
+         <dt>Item list display</dt>
+         <dd>The top of the item list display on the right side of the screen is the <i class="icon dec3lines"></i> filter icon and the total number of items currently being displayed. Tap the <i class="icon dec3lines"></i> filter icon to select various filters. </dd>
+         <dd>In addition to category, Tags, importance, update date, deadline, and color, you can also select account linkage, payment status, and usage cancellation status. </dd>
+         <dd>If you select multiple filters, only items matching all conditions will be displayed. The total number of items is the total number of matched items, 0 if none match. </dd>
+         <dd>When filtering is in progress, the filter icon is displayed in a filled state as <i class="icon dec3lines_fill"></i> . </dd>
+         <dd>You can also reset all filters at once by pressing the <i class="icon dec3lines_fill"></i> filter icon and selecting Reset filters. </dd>
+         <dd>The account list display shows a list of items belonging to the group under the group name. If you add a comment to the item title, it will be displayed together with the item title. </dd>
+         <dd>Tap an item name to go to the <a href="#detail">Item Detail Screen</a>, which displays detailed information about the item. </dd>
+         <dd>An icon may be displayed to the right of the item name depending on the status of the item. </dd>
+         
+         <dt>List of icons displayed to the right of item names</dt>
+         <dl class="sub1">
+         <dt><i class="icon person2"></i></dt>
+         <dd>alias item</dd>
+         <dt><i class="icon coin_fill"></i></dt>
+         <dd>Pending Items</dd>
+         <dt><i class="icon coin"></i></dt>
+         <dd>Paid Items</dd>
+         <dt><i class="icon calendarex"></i></dt>
+         <dd>Items with an expiry date of less than a month</dd>
+         <dt>🪦</dt>
+         <dd>Deprecated items</dd>
+        
+         </dl>
+         <dt>Search box</dt>
+         <dd>You can enter a search string in the search box at the top of the screen. As you enter a character string, it will automatically narrow down to only items with names, notes, comments, etc. that include that character string. </dd>
+         <dd>If you press the <i class="icon xmark"></i> icon on the right side, the character string will disappear and you can cancel the refinement state. </dd>
+        
+         <dt>icons at the top of the screen</dt>
+         <dd>You can go to the settings screen or add a new account from the icons at the top of the screen. </dd>
+         <dl class="sub1">
+         <dt><i class="icon gear"></i></dt>
+         <dd>Move to the <a href="#setting">Settings screen</a> where you can make various settings and backups</dd>
+         <dt><i class="icon info"></i></dt>
+         <dd>Show this how-to screen</dd>
+         <dt><i class="icon wrench"></i></dt>
+         <dd>Move to <a href="#editList">Edit list screen</a> where you can edit various string lists</dd>
+         <dt><i class="icon plus"></i></dt>
+         <dd>Go to <a href="#editItem">Edit Item</a> where you can add new items</dd>
+         </dl>
+     </dl>
+
+
+
+<a name="detail">
+     <a href="#top">🔝</a>
+     <h2>Item details screen</h2>
+     <dl class="main">
+         <dt>Item details screen</dt>
+         <dd>This screen displays information (<a href="#field">fields</a>) registered in one item. </dd>
+         <dd>This is a screen that you can move from the home screen by pressing the item name. </dd>
+         <dd>The item name at the top of the screen is a landmark. </dd>
+         <dd>Only the items entered on the item edit screen are displayed on the item details screen. </dd>
+         <dt>Screen configuration</dt>
+         <dd>At the top of the screen is the title in large font and the title comment in small font. </dd>
+         <dd>There are icons in the upper right corner of the screen. </dd>
+         <dt>Icons at the top of the screen</dt>
+         <dl class="sub1">
+         <dt>edit</dt>
+         <dd>You can go to the <a href="#editItem">Item edit screen</a> to edit the item. </dd>
+         <dt><i class="icon trash"></i></dt>
+         <dd>You can delete items. Make sure you really want to delete it. </dd>
+         <dt><i class="icon threelines"></i></dt>
+         <dd> Display the menu. </dd>
+         </dl>
+         <dt>Menu contents</dt>
+         <dl class="sub1">
+         <dt>Options</dt>
+         <dd> Optional setting. You can toggle whether passwords are hidden by default. </dd>
+         <dt>Color</dt>
+         <dd>You can set the color of the item. Please choose the color of the item according to your own rules. Colors are used for grouping and filtering on the home screen. </dd>
+         <dt>Create Alias Item</dt>
+         <dd> Used when you want to use a different name, such as the old name of the service or the application of the service. </dd>
+         <dt>Create Duplicate Item</dt>
+         <dd>Used when you want to create another item with almost the same content. </dd>
+         <dt>Create account link item</dt>
+         <dd>Use this when you want to create an item that you want to link with this item. </dd>
+         </dl>
+         <dt>Field information</dt>
+         <dd>The bottom of the screen displays the fields entered in the <a href="#editItem">Item edit screen</a>. </dd>
+         <dd>Accounts and passwords are copied to the clipboard just by tapping. It is convenient to use while going back and forth between apps and web pages where you enter accounts and passwords. </dd>
+         <dd>Passwords and PINs are hidden by default. You can display it by tapping the <i class="icon eyeslash"></i> eyeball icon on the far right. You can also make it the default display in the option settings. </dd>
+         <dd>If the item is an alias or an account link item, a link to the referenced account will be displayed, and linking will take you to the detail screen for that item. </dd>
+         <dd> Tap a URL to open a web browser and display the corresponding URL. </dd>
+         <dd>If it is referenced by another item, the list of that item will be displayed, and you can also tap the item to move to the detail screen of that item. </dd>
+       <dl class="main">
+     </dl>
+
+
+     <a name="editItem">
+     <a href="#top">🔝</a>
+     <h2>Item edit screen</h2>
+     <dl class="main">
+         <dt>Item edit screen</dt>
+         <dd>This is the screen for editing the <a href="#field">field</a> of an item. </dd>
+         <dd>From the <a href="#home">home screen</a> press the <i class="icon plus"></i> plus icon or <a href="#detail" This screen is accessed by pressing the edit icon from the >Item details screen</a>. </dd>
+         <dd>The title "New item" or "Edit item" at the top of the screen is a landmark. </dd>
+         <dd>There are icons in the upper right corner of the screen. </dd>
+         <dt>Icons at the top of the screen</dt>
+         <dl class="sub1">
+         <dt>Register</dt>
+         <dd>You can register the edited item information. </dd>
+         <dt><i class="icon threelines"></i></dt>
+         <dd> Display the menu. </dd>
+         </dl>
+         <dt>Menu contents</dt>
+         <dl class="sub1">
+         <dt>Options</dt>
+         <dd>Toggles whether to display the reading field for the title. </dd>
+         <dt>Color</dt>
+         <dd>You can set the color for this item. </dd>
+         <dt>Change to Alias Item</dt>
+         <dd>Can be changed to alias item in case of normal item. </dd>
+         <dt>Change to normal item</dt>
+         <dd> Can be changed to a normal item if it is an alias item. </dd>
+         </dl>
+         <dt>Field information</dt>
+         <dd>You can fill in each field. Some fields are not displayed for alias items or account link items. </dd>
+         <dd>In the password field, tap the <i class="icon key"></i> key icon on the far right to automatically generate a password. </dd>
+         <dd>In fields where you can select other items, you can select items from a pop-up menu when tapped. Grouping selection is displayed on the first line of the menu, and grouping names are displayed on the second and subsequent lines. Tap an item in it to select it. </dd>
+         <dd>For fields where you select from options such as two-step verification type, payment type, registered email address, etc., a selection list will appear when tapped. </dd>
+         <dd>You can add a new option by tapping the <i class="icon plus"></i> plus icon in the last line of the selection list. Options can be changed, rearranged, or deleted on the <a href="#editList">Selection list edit screen</a>, which can be accessed from the <a href="#home">Home screen</a>.
+         </dl>
+     </dl>
+
+<a name="editList">
+     <a href="#top">🔝</a>
+     <h2>Selection list edit screen</h2>
+     <dl class="main">
+         <dt>About the selection list edit screen</dt>
+         <dd>Edit options (<a href="#selectList">selection list</a>) used in the <a href="#editItem">item edit screen</a>, such as categories and registered email addresses It's the screen.
+         <dd>Press the <i class="icon wrench"></i> wrench icon at the top of the <a href="#home">home screen</a> to select a list name and move to it. </dd>
+         <dd>Look for the Edit by Selection List title at the top of the screen. </dd>
+        
+         <dt>Screen description</dt>
+         <dd>You can add new options with the <i class="icon plus"></i> plus icon at the top of the screen. </dd>
+         <dd>Press the <i class="icon updown"></i> up/down arrow icon at the top of the screen and drag the three lines on the right side of the option to move it up or down to rearrange the options. Press <i class="icon updown_fill"></i> again to exit move mode. </dd>
+         <dd>The background color of the option indicates how many items it is used for. Gray is unused. If it's yellow, it can be used on more than one item. If it's red, it's in use for 10 or more items. </dd>
+         <dd>Press the <i class="icon threedots"></i> three dots icon on the right of the option to change the name of the option or display the name of the item that uses the option. . </dd>
+         <dd>If you drag the option to the left, a delete button will appear and you can delete it by pressing it. If the option is used in an item, it calls attention to it. If you still delete it, the corresponding fields for items using that option will be cleared. </dd>
+     </dl>
+
+     <a name="setting">
+     <a href="#top">🔝</a>
+     <h2>Setting screen</h2>
+     <dl class="main">
+         <dt>Setting screen</dt>
+         <dd>This screen allows you to make various settings. </dd>
+         <dd>From the <a href="#home">home screen</a>, press the <i class="icon gear"></i> gear button to move. </dd>
+         <dd>Look for the title "Settings" at the top of the screen. </dd>
+
+         <dt>Login Settings</dt>
+         <dd>You can set whether to use a dedicated passcode to log in to the app</dd>
+         <dd>If you don't use a dedicated passcode, she will perform biometric authentication (face authentication or fingerprint authentication), and if that fails, she will perform common passcode authentication for iPhone / iPad. </dd>
+         <dd>Press the <i class="icon pencil"></i> pencil icon to set a 4-digit number or more for the special passcode. </dd>
+         <dd>If you do not use biometric authentication, the special password input screen will be displayed from the beginning when you log in. When used in combination with biometric authentication, biometric authentication is performed first, and if it fails, a dedicated passcode entry screen is displayed instead of the common iPhone/iPad passcode. </dd>
+        
+         <dt>Home screen settings</dt>
+         <dd>You can switch whether or not to include comments and memo information of items other than titles when narrowing down the search by entering search characters on the home screen. </dd>
+        
+         <dt> Detailed screen settings <dt>
+         <dd>On the item detail screen, you can toggle whether passwords are hidden by default. </dd>
+        
+         <dt> Edit screen settings <dt>
+         <dd>On the item edit screen, you can toggle whether to hide the reading input field for the title. </dd>
+
+         <dt>iPhone/iPad iCloud Settings<dt>
+         <dd>You can use iCloud to sync data between your iPhone and iPad so you can share the same data. </dd>
+         <dd>The data that is synced is item data and select list data. Other configuration information is not synchronized. </dd>
+         <dd>Synced data is shared only between devices logged in with the same Apple account through the user's own iCloud Drive folders that are not directly visible to the user. Furthermore, the item data itself is encrypted. </dd>
+         <dd>In addition to automatic synchronization, you can also explicitly upload to and download from iCloud. </dd>
+         <dt>About iCloud sync</dt>
+         <dl class="sub0">
+         <dt>Synchronization mechanism when iCloud auto-sync is ON</dt>
+         <dd>When the application is launched, this application compares the update date and time of the data on the device (iPhone/iPad) and the data on iCloud, and loads the newer data. </dd>
+         <dd>Save data to both the device and iCloud when the app is closed. </dd>
+         <dd>Data update date comparison, saving and loading are performed collectively for all items.</dd>
+         <dt>Precautions before iCloud synchronization</dt>
+         <dd>Please note that if you enter data separately for multiple devices before iCloud sync, only the data for the last updated device will be valid. </dd>
+         <dd>If you want to share data between multiple devices, please turn on iCloud sync before entering data on each device. </dd>
+         <dt>When iCloud sync is turned on</dt>
+         <dd>If you have entered data on multiple devices separately, follow the steps below. </dd>
+         <dd>1. Upload to iCloud from the device that has the data you want to share with other devices. </dd>
+         <dd>2. For devices other than the above, download from iCloud. </dd>
+         <dd>3. Turn on iCloud sync on each device. </dd>
+         <dd>This procedure is also useful during sync if you think something is not syncing. </dd>
+         <dt>Data update date and time and data communication</dt>
+         <dd>The last update date and time of the data on the device (iPhone/iPad) and iCloud is displayed, which can be used as a guideline for the synchronization status. </dd>
+         <dd>Due to the mechanism of iCloud, it may take several minutes to reflect the data between the device and iCloud regardless of the update time. Also, when the network environment is bad, it will be reflected collectively when the network environment recovers. </dd>
+         
+         <dt>Notes during iCloud synchronization</dt>
+         <dd>Please note that if you open this app on both iPhone and iPad at the same time and edit data on each device, the edits made on one device may be ignored. </dd>
+         <dd>If you use as above frequently, it is safer to use upload to iCloud or download from iCloud instead of turning sync ON. </dd>
+         <dd>It is a good idea to create backups from time to time, just in case, as you may unintentionally use the above when syncing with iCloud. </dd>
+         
+         <dt>Precautions when upgrading the app</dt>
+         <dd>Please try to upgrade the iPhone and iPad apps that exchange files with iCloud as much as possible at the same time. </dd>
+         <dd>If you update data while only one device is upgraded, the old version device can read the data saved by the new version device, but you cannot save the data using the new function due to the version upgrade. Therefore, you may lose data using the new features. </dd>
+         <dd>If the data file format is expanded due to the addition of functions in the app, the file format version will be increased. If a bigger version of the data was stored on iCloud, iCloud sync and upload will stop until the app on that device is updated to prevent data loss. </dd>
+         </dl>
+        
+         <dt>Backup</dt>
+         <dd>Takes you to the <a href="#backup">Backup Manager</a> where you can back up and restore. </dd>
+         <dd>You can also automatically take a backup before restoring. </dd>
+        
+         <dt>Reset Settings</dt>
+         <dd>Resets the settings changed on this setting screen to their initial values. </dd>
+         <dd>No item data or picklist data will be deleted. </dd>
+        
+         <dt>Clear data</dt>
+         <dd>Item data and selection list data can be deleted all at once. </dd>
+         <dd>The backup file will not be deleted, so delete it on the backup management screen if necessary. </dd>
+         <dd>You can also take a backup automatically when clearing the data. </dd>
+        
+         <dt>Full Version</dt>
+         <dd>This app can create up to 50 items by default. If you want to add more items, please consider purchasing the full version as an in-app purchase. </dd>
+         <dd>Once you purchase the full version, all features added in future updates are free. </dd>
+        
+         <dt>About this app</dt>
+         <dd>You can open the AppStore page of this app, write a review, or give feedback such as problems by email to the author. </dd>
+        
+     </dl>
+
+     <a name="backup">
+     <a href="#top">🔝</a>
+     <h2>Backup management screen</h2>
+     <dl class="main">
+         <dt>Backup management screen</dt>
+         <dd>This screen allows you to back up and restore data. </dd>
+         <dd>This screen is accessed from the <a href="#setting">setting screen</a> with a link to the backup management screen. </dd>
+         <dd>Look for the Backup Management title at the top of the screen. </dd>
+
+         <dt>Screen description</dt>
+         <dd>When you press the Create Backup button, all the current item data and selection list data will be saved in one backup file. </dd>
+         <dd>Because the backup file is encrypted with the encryption key associated with your Apple account, it can only be restored on the iPhone or iPad used with your Apple account. </dd>
+         <dd>The date and time of saving and the number of items at saving time are saved as comments in the backup file. </dd>
+         <dd>Backup files are listed from newest to oldest. </dd>
+         <dd>You can select multiple backup files by pressing the select icon on the screen. Tap the  <i class="icon trash"></i> trash can icon if it is displayed additionally on the screen to delete it all at once. Press the Done icon to exit selection mode. </dd>
+         <dd>The switch below the backup button lets you choose whether to back up synced data on iCloud when you create a backup, and whether to automatically back up before restoring a backup. It is recommended to leave both ON just in case. </dd>
+         <dd>Tap the backup file to display the file operation menu. </dd>
+
+         <dt>File operation menu for backup file</dt>
+         <dl class="sub1">
+         <dt>Edit comment</dt>
+         <dd>You can change the comment in the file. </dd>
+         <dt>Share</dt>
+         <dd>You can share files to other apps (e.g. email or notepad) for storage. </dd>
+         <dt>Restore</dt>
+         <dd>Restore item data and selection list data. </dd>
+         </dl>
+         
+         <dt>About backup files</dt>
+         <dd>Since the backup file is encrypted with the encryption key associated with your Apple account, it cannot be restored except by this App on your iPhone or iPad that is used with your Apple account.</dd>
+         <dd>The backup file can be shared with other apps such as Notepad for storage, and if you share the backup file from that app to this app, you can restore it to the backup folder. </a>
+         <dd>In addition, when you connect your iPhone/iPad to a PC, you can use iTunes (Windows) or Finder (Mac) to copy the backup file from the Account app folder to another folder for storage, or copy it back to the app folder. You can </dd>
+         <dd>Please note that if you change the file name, it may not be visible on the backup management screen. </dd>
+     </dl>
+
+
+<a name="postscript">
+     <a href="#top">🔝</a>
+     <h2>Afterword</h2>
+     <dl class="main">
+         <dt>What's next</dt>
+         <dd>I would like to extend the functionality of this app in the future. </dd>
+         <dd>The following are features that we would like to support in the future. </dd>
+         <dd>If there are any features you would like us to support, please give us feedback in the app review. </dd>
+         <dd>Of course, if there is a bug, we will prioritize fixing it. If you have any problems, it would be helpful if you could let me know from the feedback on the setting screen. </dd>
+
+         <dt>Enhancement candidate</dt>
+         <dd>This app has all the necessary functions from the beginning, but there are still some functions that I think are not enough. </dd>
+         <dd>The following are features that we would like to support in the future. </dd>
+         <dd>If there are any features you would like to see added, please leave feedback in the app review. 
+
+         <dl class="sub0">
+         <dt>CSV file import & export function</dt>
+         <dd> Allow user data to be exchanged with other apps in text files. </dd>
+         <dt>Input field switching by type of input information</dt>
+         <dd>Hide unnecessary fields depending on the type of information when entering completely different types of information, such as login account information or card information. </dd>
+         <dt>Custom functions for grouping and filtering</dt>
+         <dd>Allow grouping and filtering to target other fields, including user custom fields</dd>
+         <dt>Open the detail screen of a specific item directly from the widget</dt>
+         <dd>If any item is registered in the widget, when you tap the widget, the detail screen of that item will be open directly</dd>
+         <dt>Deadline Notice</dt>
+         <dd>Use an iOS notification to notify you when the deadline is approaching</dd>
+         </dl>
+</dd>
+
+     </dl>
+
+
+
+     <a name="history">
+     <a href="#top">🔝</a>
+     <h2>Version history</h2>
+     <dl class="main">
+          <dt>ver.1.2.1</dt>
+           <dd>Fixed minor bug. </dd>
+     
+          <dt>ver.1.2</dt>
+           <dd> Added date field. You can register multiple date information other than the deadline. </dd>
+           <dd>Added item reference field. You can register multiple references to other items. </dd>
+           <dd>Improved tag display and deadline date display on the item detail screen. </dd>
+           <dd>On the selection list edit screen, it is now possible to distinguish by background color whether each name is used for items. </dd>
+           <dd>Fixed minor bugs. </dd>
+     
+     
+          <dt>ver.1.1</dt>
+           <dd> Added tag functionality. Similar to categories, but you can register multiple tags for a single item. </dd>
+           <dd>Added tags to filter conditions on the home screen. You can filter only items with specified tags. </dd>
+           <dd>The sync data on iCloud is automatically backed up when backing up. </dd>
+           <dd>The number of items and the file format version are also displayed in the comparison with the data for iCloud synchronization on the setting screen. </dd>
+           <dd>The title comment of the item is also displayed in the other item display such as the reference item on the item detail screen. </dd>
+           <dd>Fixed minor bugs. </dd>
+     
+           <dt>ver.1.0</dt>
+           <dd>New</dd>
+     </dl>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+  </body>
+</html>
