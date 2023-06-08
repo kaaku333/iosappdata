@@ -638,6 +638,7 @@
           <dd class="langSel" lang="ja">各項目のコンテキストメニューの「この下に項目追加」を選ぶと、任意の場所に項目を追加できます。</dd>
           <dd class="langSel" lang="ja">画面の一番下にある「一括登録」を開いてその枠内をタップするとそこに改行で区切った複数の項目名をまとめて入力できます。「各行を項目として追加」ボタンや決定ボタン <div class="icon_blue mask_checkmark"></div> を押すとまとめて登録されます。</dd>
           <dd class="langSel" lang="ja">項目名として + で始まる名前を入力すると、その項目をラベルにできます。任意の項目を後からラベル化することもできます。</dd>
+          <dd class="langSel" lang="ja">デフォルトでは同名の項目を追加できませんが、メニューのオプションで同名項目の登録を許可することもできます。このオプションは該当リストのみ有効です。</dd>
 
           <dt class="langSel" lang="ja">項目のラベル化</dt>
           <dd class="langSel" lang="ja">項目をラベル化するには、コンテキストメニューで「ラベルにする」を選ぶと、通常の項目とラベルを切り替えできます。項目のラベル化は、各項目を右スワイプした時に表示される「ラベルにする」「ラベルから戻す」ボタンでも行えます。</dd>
@@ -710,7 +711,7 @@
           
           <dt class="langSel" lang="ja">項目の貼り付け</dt>
           <dd class="langSel" lang="ja">メニューから「貼り付け」を選ぶと、クリップボードにあるテキストを未チェック項目もしくはチェック済み項目として追加できます。リストの中にすでにある項目は該当の項目をチェックもしくはクリアのみします。また、クリップボードに何もない場合は貼り付けを選べません。</dd>
-          <dd class="langSel" lang="ja">コンテキストメニューの「貼り付け」から、その項目の下に挿入貼り付けすることもできます。この時もすでにリストの中に同じ項目があるときはチェックもしくはクリアのみします。</dd>
+          <dd class="langSel" lang="ja">コンテキストメニューの「貼り付け」から、その項目の下に挿入貼り付けすることもできます。このリストのオプションで同名項目の登録を許可していない場合、すでにリストの中に同じ項目があるときはチェックもしくはクリアのみします。</dd>
           <dd class="langSel" lang="ja">リストの中にすでにある同名項目をチェック・クリアする動作は設定画面で停止することもできます。</dd>
           <dd class="langSel" lang="ja">メニューの「貼り付け」からクリップボードの中身を参照したり、クリップボードをクリアすることもできます。</dd>
           
@@ -751,6 +752,8 @@
            <dd class="langSel" lang="en">You can add an item anywhere by selecting "Add item below this" from the context menu of each item. </dd>
            <dd class="langSel" lang="en">Open "Batch registration" at the bottom of the screen and tap inside the frame to enter multiple item names separated by line breaks. When you press the "Add each line as an item" button or checkmark button <div class="icon_blue mask_checkmark"></div>, it will be registered all at once. </dd>
            <dd class="langSel" lang="en">If you enter a name starting with + as the item name, you can make that item a label. You can also label any item later. </dd>
+           <dd class="langSel" lang="en">Items with the same name cannot be added by default, but you can allow the registration of items with the same name in the menu options. This option is valid only for the list. </dd>
+
 
            <dt class="langSel" lang="en">Label item </dt>
            <dd class="langSel" lang="en">To label an item, select Label in the context menu to switch between normal item and labeled item. Items can also be labeled using the "Label" and "Unlabel" buttons that appear when you swipe right on each item. </dd>
@@ -824,7 +827,7 @@
            
            <dt class="langSel" lang="en">Paste item</dt>
            <dd class="langSel" lang="en">You can add the text in the clipboard as an unchecked or checked item by selecting "Paste" from the menu. Items already in the list only check or clear the corresponding item. Also, if there is nothing on the clipboard, you cannot select Paste. </dd>
-           <dd class="langSel" lang="en">You can also insert and paste below the item from "Paste" in the context menu. At this time, if the same item already exists in the list, it will only be checked or cleared. </dd>
+           <dd class="langSel" lang="en">You can also insert and paste below the item from "Paste" in the context menu. If you do not allow registration of items with the same name in this list option, only check or clear if the same item already exists in the list. </dd>
            <dd class="langSel" lang="en">You can also stop checking/clearing items with the same name in the list on the setting screen. </dd>
            <dd class="langSel" lang="en">You can also refer to the contents of the clipboard and clear the clipboard from "Paste" in the menu. </dd>
            
@@ -1422,6 +1425,7 @@
         <dl  class="langSel" lang="any">
           <dt class="langSel" lang="ja">ver.2.18</dt>
           <dd class="langSel" lang="ja">項目編集画面の検索をインクリメンタルサーチにしました。検索開始ボタンを押さなくても文字を入力していくと逐次検索します。</dd>
+          <dd class="langSel" lang="ja">項目編集画面のメニューで設定できる重複項目の許可オプションの有効範囲はそのリストのみになりました。リスト別にオプションを設定できます。</dd>
 
 
           <dt class="langSel" lang="ja">ver.2.17</dt>
@@ -1571,6 +1575,7 @@
 
           <dt class="langSel" lang="en">ver.2.18</dt>
            <dd class="langSel" lang="en">The search on the item edit screen has been changed to incremental search. Even if you do not press the search start button, it will search sequentially as you enter characters. </dd>
+           <dd class="langSel" lang="en">The Allow Duplicate Items option that can be set in the menu of the item edit screen is now only valid for that list. You can set the option for each list. </dd>
 
           <dt class="langSel" lang="en">ver.2.17</dt>
           <dd class="langSel" lang="en">If there is a match in the search on the item edit screen, only the matching item is opened. </dd>
