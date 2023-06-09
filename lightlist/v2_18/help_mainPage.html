@@ -201,6 +201,14 @@
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrowtriangle.down.fill@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrowtriangle.down.fill@2x.png);
     }
+    .mask_applewatch {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/applewatch@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/applewatch@2x.png);
+    }
+    .mask_circle_arrow_2 {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrow.triangle.2.circlepath@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrow.triangle.2.circlepath@2x.png);
+    }
     dl  {
       padding: 10px 20px 20px 30px;
       line-height: 1.4em;
@@ -579,6 +587,10 @@
           <dd class="langSel" lang="ja">コンテキストメニューでカラーを選んでリスト毎の色変更ができます。</dd>
           <dt class="langSel" lang="ja">リストの Apple Watch への送信</dt>
           <dd class="langSel" lang="ja">コンテキストメニューでWatch に送信を選んで任意のリストのみを Apple Watch に送信できます。</dd>
+          <dt class="langSel" lang="ja">Apple Watch 同期リスト選択</dt>
+          <dd  class="langSel" lang="ja">画面の上の Apple Watch アイコン <div class="icon_blue applewatch"></div> を押すと、Apple Watch 同期リスト選択モードに入ります。リストの左側に Apple Watch アイコンが表示され、そのリストをApple Watch に送信するかどうかを選択できます。</dd>
+          <dd class="langSel" lang="ja">画面右上の同期アイコン  <div class="icon_blue mask_circle_arrow_2"></div>  を押すと、選択した全リストを Apple Watch に送信します。</dd>
+          <dd  class="langSel" lang="ja">もう一度 Apple Watch アイコン  <div class="icon_blue applewatch"></div>  を押すと、Apple Watch 同期リスト選択モードから抜けます。</dd>
           <dt class="langSel" lang="ja">リストの複製</dt>
           <dd class="langSel" lang="ja">コンテキストメニューでリスト複製を選んで、内容が同じリストを追加することができます。追加したリスト名の最後には + が付きます。</dd>
 
@@ -609,6 +621,12 @@
            <dd class="langSel" lang="en">You can change the color of each list by selecting a color from the context menu. </dd>
            <dt class="langSel" lang="en">Send list to Apple Watch</dt>
            <dd class="langSel" lang="en">You can send just any list to your Apple Watch by selecting Send to Watch in the context menu. </dd>
+           
+           <dt class="langSel" lang="en">Apple Watch sync list selection</dt>
+           <dd class="langSel" lang="en">Press the Apple Watch icon <div class="icon_blue applewatch"></div> on the screen to enter the Apple Watch sync list selection mode. An Apple Watch icon appears to the left of the list and you can choose whether to send the list to your Apple Watch. </dd>
+           <dd class="langSel" lang="en">Press the sync icon <div class="icon_blue mask_circle_arrow_2"></div> at the top right of the screen to send all selected lists to your Apple Watch. </dd>
+           <dd class="langSel" lang="en">Press the Apple Watch icon <div class="icon_blue applewatch"></div> again to exit Apple Watch sync list selection mode. </dd>
+           
            <dt class="langSel" lang="en">Duplicate list</dt>
            <dd class="langSel" lang="en">You can add a list with the same content by choosing Duplicate List in the context menu. The added list name has a + at the end. </dd>
         </dl>
@@ -1426,6 +1444,7 @@
           <dt class="langSel" lang="ja">ver.2.18</dt>
           <dd class="langSel" lang="ja">項目編集画面の検索をインクリメンタルサーチにしました。検索開始ボタンを押さなくても文字を入力していくと逐次検索します。</dd>
           <dd class="langSel" lang="ja">項目編集画面のメニューで設定できる重複項目の許可オプションの有効範囲はそのリストのみになりました。リスト別にオプションを設定できます。</dd>
+          <dd class="langSel" lang="ja">iPhoneのホーム画面で AppleWatch同期リスト選択ができるようになりました。AppleWatch に送りたくないリストを選択できます。</dd>
 
 
           <dt class="langSel" lang="ja">ver.2.17</dt>
@@ -1576,6 +1595,9 @@
           <dt class="langSel" lang="en">ver.2.18</dt>
            <dd class="langSel" lang="en">The search on the item edit screen has been changed to incremental search. Even if you do not press the search start button, it will search sequentially as you enter characters. </dd>
            <dd class="langSel" lang="en">The Allow Duplicate Items option that can be set in the menu of the item edit screen is now only valid for that list. You can set the option for each list. </dd>
+           <dd class="langSel" lang="en">You can now select the AppleWatch sync list on the iPhone home screen. You can choose which lists you don't want to send to your AppleWatch. </dd>
+
+
 
           <dt class="langSel" lang="en">ver.2.17</dt>
           <dd class="langSel" lang="en">If there is a match in the search on the item edit screen, only the matching item is opened. </dd>
