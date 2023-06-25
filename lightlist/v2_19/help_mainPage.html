@@ -1017,12 +1017,14 @@
           <dd class="langSel" lang="ja">明暗テーマをシステム設定に連動せずに light(明)　、dark(暗) を直接指定できます。</dd>
 
           <dt class="langSel" lang="ja">項目一覧画面の設定</dt>
-          <dd class="langSel" lang="ja">絞り込み表示状態を保持するかどうか変更することができます。</dd>
-          <dd class="langSel" lang="ja">常に全ラベルを表示するかどうかを変更することができます。</dd>
-          <dd class="langSel" lang="ja">項目を共有やコピーする時にラベルを含めるかどうか変更することができます。</dd>
-          <dd class="langSel" lang="ja">項目の貼り付けや一括登録時に既存項目のチェック状態を変えるかどうか変更することができます。</dd>
-          <dd class="langSel" lang="ja">項目名変更時にリンクされた他のリストにも同名の項目があった場合はまとめて名前変更するかどうか変更することができます。</dd>
+          <dd class="langSel" lang="ja">絞り込み表示状態を保持するかどうか設定することができます。</dd>
+          <dd class="langSel" lang="ja">常に全ラベルを表示するかどうかを設定することができます。</dd>
+          <dd class="langSel" lang="ja">項目を共有やコピーする時にラベルを含めるかどうか設定することができます。</dd>
+          <dd class="langSel" lang="ja">項目の貼り付けや一括登録時に既存項目のチェック状態を変えるかどうか設定することができます。</dd>
+          <dd class="langSel" lang="ja">項目名変更時にリンクされた他のリストにも同名の項目があった場合はまとめて名前変更するかどうか設定することができます。</dd>
+          <dd class="langSel" lang="ja">項目追加時にリンクされた他のリストにも同名の項目追加するかどうか設定することができます。</dd>
           <dd class="langSel" lang="ja">インクリメンタルサーチの文字を入力するたびに発生する効果音を止めるかどうか設定することができます。</dd>
+
           
           <dt class="langSel" lang="ja">バックアップ</dt>
           <dd class="langSel" lang="ja">全リストデータおよびリンク設定の保存ができる<a href="#backup">バックアップ管理画面</a>を開くことができます。</dd>
@@ -1065,11 +1067,12 @@
            <dd class="langSel" lang="en">You can directly specify light and dark theme without interlocking the system settings. </dd>
            
            <dt class = "langSel" lang = "en"> Item list screen settings </ dt>
-           <dd class = "langSel" lang = "en"> You can change whether to keep the filter display state. </ dd>
-           <dd class = "langSel" lang = "en"> You can change whether to always display all labels. </ dd>
-           <dd class = "langSel" lang = "en"> You can change whether to include labels when sharing or copying items. </ dd>
-           <dd class="langSel" lang="en">You can change whether to change the check status of existing items when pasting items or batch registration. </dd>
-           <dd class="langSel" lang="en">If there are items with the same name in other linked lists when renaming an item, you can change whether to rename them all at once. </dd>
+           <dd class = "langSel" lang = "en"> You can set whether to keep the filter display state. </ dd>
+           <dd class = "langSel" lang = "en"> You can set whether to always display all labels. </ dd>
+           <dd class = "langSel" lang = "en"> You can set whether to include labels when sharing or copying items. </ dd>
+           <dd class="langSel" lang="en">You can set whether to change the check status of existing items when pasting items or batch registration. </dd>
+           <dd class="langSel" lang="en">If there are items with the same name in other linked lists when renaming an item, you can set whether to rename them all at once. </dd>
+           <dd class="langSel" lang="en">You can set whether to add items with the same name to other linked lists when adding an item. </dd>
            <dd class="langSel" lang="en">You can set whether to stop the sound effect that occurs each time you enter a character for incremental search. </dd>
            
            <dt class = "langSel" lang = "en"> backup </ dt>
@@ -1444,6 +1447,11 @@
         <h2 class="langSel" lang="ja">バージョン履歴</h2>
         <h2 class = "langSel" lang = "en"> Version History </h2>
         <dl  class="langSel" lang="any">
+          <dt class="langSel" lang="ja">ver.2.19</dt>
+          <dd class="langSel" lang="ja">項目編集画面で項目を追加するとき、リンクした他のリストにも追加できるようになりました。設定画面で機能を有効にしてください。</dd>
+          <dd class="langSel" lang="ja">軽微な不具合を修正しました。</dd>
+        
+        
           <dt class="langSel" lang="ja">ver.2.18</dt>
           <dd class="langSel" lang="ja">項目編集画面の項目検索はインクリメンタルサーチになりました。検索開始ボタンを押さなくても文字を入力していくと逐次検索を実行します。</dd>
           <dd class="langSel" lang="ja">アイテム重複許可設定はリスト別に設定できるようになりました。</dd>
@@ -1592,15 +1600,18 @@
           <dd class="langSel" lang="ja">新規開発</dd>
 
 
+          
+          
+          
 
 
+          <dd class="langSel" lang="en">When you add an item on the item edit screen, you can now add it to other linked lists. Please enable the function on the setting screen. </dd>
+           <dd class="langSel" lang="en">Fixed minor bugs. </dd>
 
           <dt class="langSel" lang="en">ver.2.18</dt>
            <dd class="langSel" lang="en">The item search on the item edit screen is now an incremental search. Even if you do not press the search start button, if you enter characters, the search will be executed one by one. </dd>
            <dd class="langSel" lang="en">Duplicate item permission setting can now be set for each list.</dd>
            <dd class="langSel" lang="en">You can now choose which lists not to sync with your Apple Watch on the iPhone app home screen. </dd>
-
-
 
           <dt class="langSel" lang="en">ver.2.17</dt>
           <dd class="langSel" lang="en">If there is a match in the search on the item edit screen, only the matching item is opened. </dd>
