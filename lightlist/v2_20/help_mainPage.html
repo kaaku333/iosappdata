@@ -657,6 +657,7 @@
           <dd class="langSel" lang="ja">画面の一番下にある「一括登録」を開いてその枠内をタップするとそこに改行で区切った複数の項目名をまとめて入力できます。「各行を項目として追加」ボタンや決定ボタン <div class="icon_blue mask_checkmark"></div> を押すとまとめて登録されます。</dd>
           <dd class="langSel" lang="ja">項目名として + で始まる名前を入力すると、その項目をラベルにできます。任意の項目を後からラベル化することもできます。</dd>
           <dd class="langSel" lang="ja">デフォルトでは同名の項目を追加できませんが、メニューのオプションで同名項目の登録を許可することもできます。このオプションは該当リストのみ有効です。</dd>
+          <dd class="langSel" lang="ja">オプション設定で「リンクリストに同時に追加する」をONにしておくと、項目追加時に任意のリンクされたリストに同名の項目を追加できます。</dd>
 
           <dt class="langSel" lang="ja">項目のラベル化</dt>
           <dd class="langSel" lang="ja">項目をラベル化するには、コンテキストメニューで「ラベルにする」を選ぶと、通常の項目とラベルを切り替えできます。項目のラベル化は、各項目を右スワイプした時に表示される「ラベルにする」「ラベルから戻す」ボタンでも行えます。</dd>
@@ -739,6 +740,8 @@
           
           <dt class="langSel" lang="ja">他のリストへコピー</dt>
           <dd class="langSel" lang="ja">メニューやコンテキストメニューの「他のリストへのコピー」で他のリストに直接コピーすることもできます。</dd>
+          <dd class="langSel" lang="ja">コピー先として「複数リスト選択」もしくは「リンクリスト選択」を選ぶと、複数のリストにまとめて項目コピーすることができます。</dd>
+          
           
           <dt class="langSel" lang="ja">他のリストと比較</dt>
           <dd class="langSel" lang="ja">メニューの「ツール」の中の「他のリストと比較」を選ぶと<a href="#listcompare">リスト比較画面</a>が表示されて、他のリストと項目の差異を比較して一部の項目を選択コピーできます。</dd>
@@ -771,6 +774,7 @@
            <dd class="langSel" lang="en">Open "Batch registration" at the bottom of the screen and tap inside the frame to enter multiple item names separated by line breaks. When you press the "Add each line as an item" button or checkmark button <div class="icon_blue mask_checkmark"></div>, it will be registered all at once. </dd>
            <dd class="langSel" lang="en">If you enter a name starting with + as the item name, you can make that item a label. You can also label any item later. </dd>
            <dd class="langSel" lang="en">Items with the same name cannot be added by default, but you can allow the registration of items with the same name in the menu options. This option is valid only for the list. </dd>
+           <dd class="langSel" lang="en">If you turn on "Add to linked list at the same time" in the option settings, you can add an item with the same name to any linked list when adding an item. </dd>
 
 
            <dt class="langSel" lang="en">Label item </dt>
@@ -855,6 +859,7 @@
            
            <dt class="langSel" lang="en">Copy item to other list</dt>
            <dd class="langSel" lang="en">You can also copy directly to other list with "Copy to other list" in the menu and the context menu. </dd>
+           <dd class="langSel" lang="en">If you select "select multiple lists" or "select Linked lists" as the copy destination, you can copy items to multiple lists at once. </dd>
            
            <dt class = "langSel" lang = "en"> Compare with other lists </ dt>
            <dd class="langSel" lang="en">Select "Compare with other lists" from "Tools" in the menu to display the <a href="#listcompare">List comparison screen</a>. You can select and copy some items by comparing the item differences with other lists. </dd>
@@ -1022,7 +1027,6 @@
           <dd class="langSel" lang="ja">項目を共有やコピーする時にラベルを含めるかどうか設定することができます。</dd>
           <dd class="langSel" lang="ja">項目の貼り付けや一括登録時に既存項目のチェック状態を変えるかどうか設定することができます。</dd>
           <dd class="langSel" lang="ja">項目名変更時にリンクされた他のリストにも同名の項目があった場合はまとめて名前変更するかどうか設定することができます。</dd>
-          <dd class="langSel" lang="ja">項目追加時にリンクされた他のリストにも同名の項目追加するかどうか設定することができます。</dd>
           <dd class="langSel" lang="ja">インクリメンタルサーチの文字を入力するたびに発生する効果音を止めるかどうか設定することができます。</dd>
 
           
@@ -1072,7 +1076,6 @@
            <dd class = "langSel" lang = "en"> You can set whether to include labels when sharing or copying items. </ dd>
            <dd class="langSel" lang="en">You can set whether to change the check status of existing items when pasting items or batch registration. </dd>
            <dd class="langSel" lang="en">If there are items with the same name in other linked lists when renaming an item, you can set whether to rename them all at once. </dd>
-           <dd class="langSel" lang="en">You can set whether to add items with the same name to other linked lists when adding an item. </dd>
            <dd class="langSel" lang="en">You can set whether to stop the sound effect that occurs each time you enter a character for incremental search. </dd>
            
            <dt class = "langSel" lang = "en"> backup </ dt>
@@ -1252,7 +1255,6 @@
 
 
 
-
         <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="applewatch1" class="langSel" lang="any">
         <h2 class="langSel" lang="ja">Apple Watch App のホーム画面</h2>
@@ -1358,6 +1360,7 @@
           <dt class="langSel" lang="ja">設定を初期値に戻す</dt>
           <dd class="langSel" lang="ja">全ての設定値を初期値に戻します。</dd>
 
+
           <dd class = "langSel" lang = "en"> This screen is displayed by tapping <div class="icon_white mask_line_3"></div> on the upper left of the list list screen. </ dd>
            <dt class = "langSel" lang = "en"> Display the number of remaining items </ dt>
           <dd class = "langSel" lang = "en"> When ON, the number of items that are not checked in the item number display on the upper left of the item list screen is displayed. </ dd>
@@ -1447,8 +1450,14 @@
         <h2 class="langSel" lang="ja">バージョン履歴</h2>
         <h2 class = "langSel" lang = "en"> Version History </h2>
         <dl  class="langSel" lang="any">
+
+          <dt class="langSel" lang="ja">ver.2.20</dt>
+          <dd class="langSel" lang="ja">カラーの選択肢にオレンジとシアンを追加しました。</dd>
+          <dd class="langSel" lang="ja">項目追加時にリンクした他のリストに追加するオプション設定は、リスト別に設定するように変更しました。</dd>
+          <dd class="langSel" lang="ja">項目編集画面で他のリストに項目をコピーするときに、複数のリストを選択できるようになりました。</dd>
+
           <dt class="langSel" lang="ja">ver.2.19</dt>
-          <dd class="langSel" lang="ja">項目編集画面で項目を追加するとき、リンクした他のリストにも追加できるようになりました。設定画面で機能を有効にしてください。</dd>
+          <dd class="langSel" lang="ja">項目編集画面で項目を追加するとき、リンクした他のリストにも追加できるようになりました。オプション設定で機能を有効にしてください。</dd>
           <dd class="langSel" lang="ja">軽微な不具合を修正しました。</dd>
         
         
@@ -1603,9 +1612,16 @@
           
           
           
+          
+
+
+          <dt class="langSel" lang="ja">ver.2.20</dt>
+          <dd class="langSel" lang="en">Added Orange and Cyan to the color selections. </dd>
+          <dd class="langSel" lang="en">The option setting to add to other linked lists when adding items has been changed to be set for each list. </dd>
+           <dd class="langSel" lang="en">You can now select multiple lists when copying items to other lists on the item edit screen. </dd>
 
           <dt class="langSel" lang="en">ver.2.19</dt>
-          <dd class="langSel" lang="en">When you add an item on the item edit screen, you can now add it to other linked lists. Please enable the function on the setting screen. </dd>
+          <dd class="langSel" lang="en">When you add an item on the item edit screen, you can now add it to other linked lists. Please enable the function on the option setting. </dd>
            <dd class="langSel" lang="en">Fixed minor bugs. </dd>
 
           <dt class="langSel" lang="en">ver.2.18</dt>
