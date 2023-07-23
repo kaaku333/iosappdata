@@ -310,10 +310,15 @@
        <dd><a href="#item">Items</a></dd>
        <dd><a href="#field">Fields</a></dd>
        <dd><a href="#selectList">Selection lists</a></dd>
+       <dd><a href="#displayFormat">Display format</a></dd>
        <dd><a href="#home">Home screen</a></dd>
        <dd><a href="#detail">Item details screen</a></dd>
        <dd><a href="#editItem">Item edit screen</a></dd>
        <dd><a href="#editList">Edit Selection List</a></dd>
+       <dd><a href="#savedFilter">Saved Filter Edit Screen</a></dd>
+       <dd><a href="#displayFormatList">Display format list screen</a></dd>
+       <dd><a href="#editDisplayFormat">Display format edit screen
+</a></dd>
        <dd><a href="#setting">Setting screen</a></dd>
        <dd><a href="#backup">Backup screen</a></dd>
        <dd><a href="#postscript">Postscript</a></dd>
@@ -359,6 +364,7 @@
         <dd>Items that are no longer in use, expired items, items with continuous billing, etc. can be displayed as easy-to-understand icons, and you can narrow down your search. </dd>
         <dd>You can freely add and edit categories and tags yourself. </dd>
         <dd>You can freely add items that allow you to enter URLs, free strings, dates, and other item references. </dd>
+        <dd>The items to be entered and their options can be limited depending on the type of account information to be entered. </dd>
         <dd>The account string or password string can be copied to the clipboard by tapping it. </dd>
         <dd>You can also auto-generate passwords. </dd>
         <dd>You can share data between your iPad/iPhone via iCloud. </dd>
@@ -435,6 +441,19 @@
          <dt>Selection list edit screen</dt>
          <dd>Press the <i class="icon wrench"></i> wrench icon from the home screen and select the name of the selection list to move to the <a href="#editList">selection list editing screen</a> is. </dd>
          <dd>On the selection list edit screen, you can edit various selection string lists such as category names, your own email address, and types of URL information. </dd>
+         
+         <dt>Saved filter edit screen</dt>
+         <dd>You can go to the <a href="#savedFilter">Saved Filters Edit Screen</a> by selecting Edit Saved Filters from the Filter menu on the home screen. </dd>
+         <dd>The saved filter edit screen allows you to rename, reorder and delete saved filters. </dd>
+        
+         <dt>Display format list screen</dt>
+         <dd>Press the <i class="icon threelines"></i> menu icon on the home screen and select Edit Display Format to move to the <a href="#displayFormatList">Display Format List screen</a>. </dd>
+         <dd>On the display format list screen, <a href="#displayFormat">display format</a> can be added or renamed. </dd>
+
+         <dt>Display format edit screen</dt>
+         <dd>You can select a display format name on the <a href="#displayFormatList">Display Format List Screen</a>, or move to the <a href="#EditDisplayFormat">Display Format List Screen<a> from the Item Detail Screen or Item Edit Screen. </dd>
+         <dd>On the display format edit screen, you can add fields to the <a href="#displayFormat">display format</a> and rearrange the fields. </dd>
+        
         
          <dt>Backup management screen</dt>
          <dd>The <a href="#backup">Backup management screen</a> can be accessed from the Settings screen. </dd>
@@ -455,6 +474,7 @@
          <dd>Account link items are items that rely on other items for login. Refers to account-linked items instead of login account names and password names. </dd>
          <dd> An alias item is an item that is an alias for another item. There are fewer items that can be set compared to other types. <a href="#detail">Item detail screen</a> You can create it from the menu to create an alias item. </dd>
          <dd>The 3 types of items can be changed to each other's type on the <a href="#editItem">item edit screen</a> even after they are created. </dd>
+         
          <dt>Fields</dt>
          <dd>A item consists of multiple elements such as the title and account name. </dd>
          <dd>This element is called a field. </dd>
@@ -646,8 +666,9 @@
      <h2>Selection list</h2>
      <dl class="main">
          <dt>About selection list</dt>
-         <dd>Selection lists are user-editable selection lists, such as categories and registered email addresses. </dd>
+         <dd>A selection list is a list of choices to fill in a field, such as a category or a registered email address. </dd>
          <dd>Selection lists can be edited in the <a href="#editList">selection list editing screen</a>, accessible from the <a href="#home">home screen</a>. </a>
+         <dd>In the selection list, categories and tags have a large number of registrations, so you can create groups to make it easier to search hierarchically. </dd>
          <dd>There are the following types of selection lists. </dd>
 
          <dt>Category</dt>
@@ -704,6 +725,34 @@
 
      </dl>
 
+
+<a name="displayFormat">
+     <a href="#top">🔝</a>
+     <h2>Display format</h2>
+     <dl class="main">
+         <dt>Display format</dt>
+         <dd>On the <a href="#detail">Item detail screen</a> and <a href="#editItem">Item edit screen</a>, the display format allows you to specify the display order and whether or not to display fields. </dd>
+         <dd> The main purpose of the display format is to make it easier to enter fields by limiting the fields and options to be entered when creating a new item of a specific type. </dd>
+         <dd>On the item edit screen, including when creating a new item, all fields are displayed in app's default order. But by creating an display format in advance and using it, you can display only arbitrary fields in an arbitrary order. </dd>
+         <dd>On the item detail screen, only the specified fields can be displayed in the order according to the display format associated with the item. </dd>
+         <dd>Display formats can be named and re-used by the user. </dd>
+         <dd>Display formats can be added on the item detail screen, item edit screen, or <a href="#displayFormatList">display format list screen</a>, and edited on the <a href="#editDisplayFormat">display format edit screen</a>. </dd>
+         <dd>You can switch the display format associated with the item at any time on the item detail screen or item edit screen. </dd>
+        
+         <dt>About fields</dt>
+         <dd>Create the display format by arranging the desired fields in the desired order on the <a href="#editDisplayFormat">Display Format Edit Screen</a>. </dd>
+         <dd> Some fields group together multiple directly related fields, such as payment information. </dd>
+         <dd>Some fields, such as the reading of the title, the creation date for the update date, and the list of items that refer to the item, are displayed at fixed positions on the item details screen and item display screen. </dd>
+
+         <dt>About field parameters <dt>
+         <dd>Fields that use choice lists can also pin the available choices to a specific choice. </dd>
+         <dd>Furthermore, for items that have groups of options, such as categories and tabs, you can limit the options to those that belong to a specific group. </dd>
+         <dd>Also, in the select item field, you can pin the selection to any item only, or to items belonging to a specific saved filter. </dd>
+         <dd> See <a href="#editDisplayFormat">Display Format Edit Screen</a> for details of the field parameters. </dd>
+     </dl>
+
+
+
      <a name="home">
      <a href="#top">🔝</a>
      <h2>Home Screen</h2>
@@ -734,13 +783,23 @@
          <dt>Color</dt>
          <dd>Used when you want to find items of any color</dd>
          </dl>
+         
+         <dt>Filter view</dt>
+         <dd>Above the item list display on the right side of the screen is a <i class="icon dec3lines"></i> filter icon and the total number of items currently displayed. <i class="icon dec3lines"></i> Tap the filter icon to display the filter menu, where you can select various conditions to filter and display items. </dd>
+         <dd>In addition to category, tag, importance, update date, time limit, and color, you can also select account linkage, payment status, and usage cancellation status as filtering conditions. </dd>
+         <dd>If you select multiple filters, only items matching all conditions will be displayed. The total number of items is the total number of matched items, 0 if none match. </dd>
+         <dd>When filtering is in progress, the filter icon is displayed in a filled state <i class="icon dec3lines_fill"></i> . </dd>
+         <dd>  If you press the <i class="icon dec3lines_fill"></i> filter icon and select "Reset Filters", you can reset all filter conditions at once. </dd>
+         <dd>If you select a saved filter from the filter menu, you can save the filter condition at that time with a name, and later you can reproduce the filter condition by simply selecting the name. </d>
+         <dd>Selecting the Edit Saved Filter button displays the <a href="#savedFilter">Saved Filter Edit Screen</a>, where you can rename or delete the saved filter. </dd>
+         <dd>If you want to change the filtering conditions of a saved filter, change the filtering conditions after selecting that filter, and save it with the same name to overwrite it. </dd>
+         <dt>Search box</dt>
+         <dd>You can enter a search string in the search box at the top of the screen. As you enter a character string, it will automatically narrow down to only items with names, notes, comments, etc. that include that character string. </dd>
+         <dd>If you press the <i class="icon xmark"></i> icon on the right side, the character string will disappear and you can cancel the refinement state. </dd>
+         <dd>The search string is also a filter condition, so it can be reused in saved filters. </dd>
+         
+
          <dt>Item list display</dt>
-         <dd>The top of the item list display on the right side of the screen is the <i class="icon dec3lines"></i> filter icon and the total number of items currently being displayed. Tap the <i class="icon dec3lines"></i> filter icon to display the filter menu, and you can filter and display items by various conditions. </dd>
-         <dd>In addition to category, Tags, importance, update date, deadline, and color, you can also select account linkage, payment status, and deprecated status. </dd>
-         <dd>If you select multiple filter conditions, only items matching all conditions will be displayed. The total number of items is the total number of matched items, 0 if none match. </dd>
-         <dd>When filtering is in progress, the filter icon is displayed in a filled state as <i class="icon dec3lines_fill"></i> . </dd>
-         <dd>You can also reset all filters at once by pressing the <i class="icon dec3lines_fill"></i> filter icon and selecting Reset filters. </dd>
-         <dd> If you select a registered filter in the filter menu, you can save the filter conditions at that time with a name, and later you can reproduce the filter conditions simply by selecting the name. You can change the name of the registered filter, delete it, or rearrange it with the edit button. </dd>
          <dd>The account list display shows a list of items belonging to the group under the group name. If you add a comment to the item title, it will be displayed together with the item title. </dd>
          <dd>Tap an item name to go to the <a href="#detail">Item Detail Screen</a>, which displays detailed information about the item. </dd>
          <dd>An icon may be displayed to the right of the item name depending on the status of the item. </dd>
@@ -757,12 +816,8 @@
          <dd>Items with an expiry date of less than a month</dd>
          <dt>🪦</dt>
          <dd>Deprecated items</dd>
-        
          </dl>
-         <dt>Search box</dt>
-         <dd>You can enter a search string in the search box at the top of the screen. As you enter a character string, it will automatically narrow down to only items with names, notes, comments, etc. that include that character string. </dd>
-         <dd>If you press the <i class="icon xmark"></i> icon on the right side, the character string will disappear and you can cancel the refinement state. </dd>
-        
+
          <dt>icons at the top of the screen</dt>
          <dd>You can go to the settings screen or add a new account from the icons at the top of the screen. </dd>
          <dl class="sub1">
@@ -770,6 +825,8 @@
          <dd>Move to the <a href="#setting">Settings screen</a> where you can make various settings and backups</dd>
          <dt><i class="icon info"></i></dt>
          <dd>Show this how-to screen</dd>
+         <dt><i class="icon threelines"></i></dt>
+         <dd> Menu display. Move to <a href="#displayFormatList">Display format list screen</a> where you can edit the display format</dd>
          <dt><i class="icon wrench"></i></dt>
          <dd>Move to <a href="#editList">Edit list screen</a> where you can edit various string lists</dd>
          <dt><i class="icon plus"></i></dt>
@@ -791,6 +848,7 @@
          <dt>Screen configuration</dt>
          <dd>At the top of the screen is the title in large font and the title comment in small font. </dd>
          <dd>There are icons in the upper right corner of the screen. </dd>
+         
          <dt>Icons at the top of the screen</dt>
          <dl class="sub1">
          <dt>edit</dt>
@@ -800,10 +858,13 @@
          <dt><i class="icon threelines"></i></dt>
          <dd> Display the menu. </dd>
          </dl>
+         
          <dt>Menu contents</dt>
          <dl class="sub1">
          <dt>Options</dt>
-         <dd> Optional setting. You can toggle whether passwords are hidden by default. </dd>
+         <dd> Optional setting. You can toggle whether passwords are hidden by default. Toggles whether to display the reading field for the title.</dd>
+         <dt>Display format</dt>
+         <dd>Displays the <a href="#displayFormat">Display Format</a> submenu. <br>If you select a registered display format name, you can switch to that display format. <br>Selecting "Edit" will take you to the <a href="#editDisplayFormat">Edit Display Format screen</a> where you can edit the corresponding display format. <br>If you select "+", a new display field will be created. <br>If you select "All Fields", it will return to the default display of all fields. <br>Switching to a display format with fewer fields will not remove data from fields you have already entered. </dd>
          <dt>Color</dt>
          <dd>You can set the color of the item. The color label name can be changed on the color label selection list edit screen. Colors are used for grouping and filtering on the home screen. </dd>
          <dt>Create Alias Item</dt>
@@ -813,8 +874,10 @@
          <dt>Create account link item</dt>
          <dd>Use this when you want to create an item that you want to link with this item. </dd>
          </dl>
+         
          <dt>Field information</dt>
          <dd>The bottom of the screen displays the fields entered in the <a href="#editItem">Item edit screen</a>. </dd>
+         <dd>If <a href="#displayFormat">display format</a> is set, only display fields set to that display format.</dd>
          <dd>Accounts and passwords are copied to the clipboard just by tapping. It is convenient to use while going back and forth between apps and web pages where you enter accounts and passwords. </dd>
          <dd>Passwords and PINs are hidden by default. You can display it by tapping the <i class="icon eyeslash"></i> eyeball icon on the far right. You can also make it the default display in the option settings. </dd>
          <dd>If the item is an alias or an account link item, a link to the referenced account will be displayed, and linking will take you to the detail screen for that item. </dd>
@@ -844,6 +907,8 @@
          <dl class="sub1">
          <dt>Options</dt>
          <dd>Toggles whether to display the reading field for the title. </dd>
+         <dt>Display format</dt>
+         <dd>Displays the <a href="#displayFormat">Display Format</a> submenu. <br>If you select a registered display format name, you can switch to that display format. <br>Selecting "Edit" will take you to the <a href="#editDisplayFormat">Edit Display Format screen</a> where you can edit the corresponding display format. <br>If you select "+", a new display field will be created. <br>If you select "All Fields", it will return to the default display of all fields. <br>Switching to a display format with fewer fields will not remove data from fields you have already entered. </dd>
          <dt>Color</dt>
          <dd>You can set the color for this item. </dd>
          <dt>Change to Alias Item</dt>
@@ -851,8 +916,10 @@
          <dt>Change to normal item</dt>
          <dd> Can be changed to a normal item if it is an alias item. </dd>
          </dl>
+         
          <dt>Field information</dt>
          <dd>You can fill in each field. Some fields are not displayed for alias items or account link items. </dd>
+         <dd>If <a href="#displayFormat">display format</a> is set, only the fields set for that display format will be displayed, and the choices will also follow the settings for that display format. </dd>
          <dd>In the password field, tap the <i class="icon key"></i> key icon on the far right to automatically generate a password. </dd>
          <dd>In fields where you can select other items, you can select items from a pop-up menu when tapped. Grouping selection is displayed on the first line of the menu, and grouping names are displayed on the second and subsequent lines. Tap an item in it to select it. </dd>
          <dd>For fields where you select from options such as two-step verification type, payment type, registered email address, etc., a selection list will appear when tapped. </dd>
@@ -878,13 +945,117 @@
          
          <dt>Group</dt>
          <dd>As the number of categories and tags increases, you can group them to make them easier to choose from in the selection menu. </dd>
-         <dd>When you create a group, the option "Groups" will be displayed in the filter selection menu on the home screen and the selection menu on the item edit screen.</dd>
+         <dd>When you create a group, the option "Groups" will be displayed in the filter selection menu on the home screen and the selection menu on the item edit screen. Also, you can use this group to limit the options on the display format edit screen. </dd>
          <dd>You can add a group by pressing the <i class="icon plus"></i> plus icon in the menu displayed by pressing the "All groups" button under the screen title of the selection list edit screen. </dd>
          <dd>When you add a group, a check button is displayed on the left side of the option, and by turning on the check, you can specify which option belongs to that group. </dd>
          <dd>You can also go to the group edit screen with the <i class="icon wrench"></i> wrench icon at the top of the screen. </dd>
          <dd>On the edit group screen, you can rename, add, delete, and rearrange groups in the same way as on the edit selection list screen. </dd>
          <dd>You can create up to 30  groups for each category and tag. </dd>
      </dl>
+
+
+     <a name="savedFilter">
+     <a href="#top">🔝</a>
+     <h2>Saved filter edit screen</h2>
+     <dl class="main">
+         <dt>About the saved filter edit screen</dt>
+         <dd>This is the screen for editing the saved filters used in the saved filter selection on the home screen and the item filter selection on the display format edit screen. </dd>
+         <dd>You can display it by selecting "Edit" under "Saved Filters" in the filter menu displayed by pressing the filter button at the top of the right pane of <a href="#home">Home Screen</a>. </dd>
+         <dd>On this screen you can rename, rearrange the order of, or delete saved filters. </dd>
+         <dd>The operation method of the screen is the same as <a href="#editList">selection list edit screen</a>. </dd>
+         <dd>You cannot change the filter condition for saved filters on this screen. Change the filter settings on the home screen and save it with the same name. </dd>
+     </dl>
+
+
+     <a name="displayFormatList">
+     <a href="#top">🔝</a>
+     <h2>Display format list screen</h2>
+     <dl class="main">
+         <dt>Display format list screen</dt>
+         <dd>You can add, rename, reorder, delete <a href="#displayFormat">display formats</a>. </dd>
+         <dd>You can display it by pressing the <i class="icon threelines"></i> menu icon at the top of the <a href="#home">Home screen</a> and selecting "Edit display format". </dd>
+         <dd>Tap the display format name to go to the <a href="#editDisplayFormat">Display format edit screen</a> where you can edit the display format. </dd>
+         <dd>The operation method of the screen is the same as <a href="#editList">selection list edit screen</a>. </dd>
+     </dl>
+
+
+
+
+<a name="editDisplayFormat">
+     <a href="#top">🔝</a>
+     <h2>Display format edit screen</h2>
+     <dl class="main">
+         <dt>Display format edit screen</dt>
+         <dd>You can edit the <a href="#displayFormat">display format</a>. </dd>
+         <dd>Tap the display format name on the <a href="#displayFormatList">Display Format List</a> screen, or select "Edit" from the "Display Format" menu on the item detail screen or item edit screen. </dd>
+         <dd>The display format adds only the fields you want to display and edits. </dd>
+
+         <dt>Screen Description</dt>
+         <dd>A new field can be added with the <i class="icon plus"></i> plus icon at the top of the screen. The field edit sheet will be displayed, so select the field type, set the option limiting parameters as necessary, and then press the register button at the bottom of the sheet to register the field. </dd>
+         <dd>Press the <i class="icon updown"></i> up/down arrow icon at the top of the screen and drag the three lines on the right side of the option to move it up or down to rearrange the fields. Press <i class="icon updown_fill"></i> again to exit move mode. </dd>
+         <dd>Tap the field name to display the field edit sheet and change the field type and parameters. </dd>
+         <dd>If you press the <i class="icon threedots"></i> three dots icon to the right of the field name, you can change the name of the option or display the name of the item that uses the option. </dd>
+         <dd> If you drag the field name to the left, a delete button will appear and you can delete it by pressing it. </dd>
+        
+         <dt>Menu</dt>
+         <dd>If you tap the <i class="icon threelines"></i> menu icon at the top of the screen to display the menu, you can batch add or remove fields. </dd>
+         <dl class="sub1">
+         <dt>Copy from other display format</dt>
+         <dd>This is displayed when another display format has already been registered. Copies all fields from other display formats. This is useful when you want to change some fields of a display format that has already been created. </dd>
+         <dt>Add All Fields</dt>
+         <dd> Add all fields as default. When using most fields, it is convenient to delete unnecessary fields from here. </dd>
+         <dt>Add normal minimum fields</dt>
+         <dd> Add minimal fields for items that have relationships with other items. It is usually convenient to add the necessary fields from here. </dd>
+         <dt>Add single minimum fields</dt>
+         <dd> Add minimal fields for items that have no relationship to other items. </dd>
+         <dt>Delete all fields</dt>
+         <dd>Remove all fields. </dd>
+         </dl>
+
+         <dt>Field editing sheet</dt>
+         <dd>This is the screen that appears when you tap the <i class="icon plus"></i> plus icon or field name at the top of the screen. </dd>
+         <dd>Only the field type must be selected. </dd>
+         <dd>It is grayed out so that the same field cannot be added to one display format, except for fields that can be registered multiple times. </dd>
+         <dd>The following parameters are displayed to further set the conditions for selecting field options according to the type of field. </dd>
+        
+<dl class="sub1">
+         <dt>Field alias</dt>
+         <dd>You can change the field names on the item edit screen and item detail screen. <br>Appears only if the field is "Account", "Password" or "PIN".</dd>
+         <dt>Selection list selection settings</dt>
+         <dd>You can set whether to limit the choices when displaying the selection list of the corresponding field on the item edit screen.<br>
+ Appears only for fields that have a selection list. </dd>
+
+         <dt>Item selection settings</dt>
+         <dd>You can set whether to limit the options when displaying the item selection list for the corresponding field on the item edit screen.<br>
+ Appears only for fields that reference other items. </dd>
+         <dt>Disable multiple registration</dt>
+         <dd>Turn it On if you want to prevent multiple data from being registered.<br>
+ It is displayed only when the field is "URL", "Date", "Free string", and "Item reference". <br>
+         This is useful when you want to "fix" a select list selection so that you can only enter data for one of the selects. </dd>
+         </dl>
+        
+         <dt>Selection list selection configuration parameters</dt>
+         <dl class="sub1">
+         <dt>Any</dt>
+         <dd>Do not limit the options when selecting from a selection list. </dd>
+         <dt>From Group</dt>
+         <dd> Only visible if the field is category and tag. Limits the choices to items in any group set in each select list. </dd>
+         <dt>Fixed</dt>
+         <dd>Make sure that only the options specified here can be selected. </dd>
+         </dl>
+        
+         <dt>Item selection configuration parameters</dt>
+         <dl class="sub1">
+         <dt>Any</dt>
+         <dd>Do not limit options when selecting items. </dd>
+         <dt>From Filter</dt>
+         <dd>Limits the selection to items that match the specified saved filter. </dd>
+         <dt>Fixed</dt>
+         <dd>Make sure that only the items specified here can be selected. </dd>
+         </dl>
+     </dl>
+
+
 
      <a name="setting">
      <a href="#top">🔝</a>
@@ -1038,8 +1209,11 @@
      <h2>Version history</h2>
      <dl class="main">
           <dt>ver.1.5</dt>
-           <dd>Added Registered filter feature. You can save filter settings with name that are frequently used on the home screen. </dd>
-           <dd>It is now possible to collectively set the elements of any group when filtering categories and tags. </dd>
+           <dd>Added display format function. Depending on the type of item, you can set the display order of the fields on the item edit screen and item detail screen, whether to display the fields, and options when editing. </dd>
+           <dd>Improved the display of fields that can register multiple data such as dates and URLs on the item details screen, and now displays them collectively for each selection type. </dd>
+           <dd>Added a saved filter function to the item filtering display function. You can name and reuse frequently used filter settings. </dd>
+           <dd>It is now possible to collectively set options for any group in category and tag filter settings. </dd>
+           <dd>It is now possible to sort by date when there are multiple date type data on the item edit screen. </dd>
            <dd>Added a backup creation button to the settings screen. </dd>
            <dd>Fixed minor bugs. </dd>
 
