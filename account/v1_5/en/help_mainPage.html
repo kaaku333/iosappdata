@@ -465,14 +465,14 @@
      <a href="#top">🔝</a>
      <h2>Items</h2>
      <dl class="main">
-         <dt>Items</dt>
-         <dd>This app handles account information in units of items. </dd>
-         <dd> Various elements (fields) such as title, account name, password, etc. can be set in the item. </dd>
+         <dt>Item</dt>
+         <dd>This app handles account information in units of "item". </dd>
+         <dd> An item consists of Various elements (fields) such as title, account name, password, etc. </dd>
          <dt>Item type</dt>
-         <dd>There are three types of items, normal items, account link items, and alias items, depending on how they are related to other items. </dd>
-         <dd>Normal items are items that do not depend on other items. You can set the most items. </dd>
-         <dd>Account link items are items that rely on other items for login. Refers to account-linked items instead of login account names and password names. </dd>
-         <dd> An alias item is an item that is an alias for another item. There are fewer items that can be set compared to other types. <a href="#detail">Item detail screen</a> You can create it from the menu to create an alias item. </dd>
+         <dd>There are three types of items, "normal item", "account link item", and "alias item", depending on how they are related to other items. </dd>
+         <dd>"Normal item" is item that do not depend on other items. You can use most fields. </dd>
+         <dd>"Account link item" is item that rely on other items login account. Refers to account-linked item instead of login account names and password names. </dd>
+         <dd> "Alias item" is item that is an alias for another item. There are fewer fields that can be set compared to other types. <a href="#detail">Item detail screen</a> You can create it from the menu to create an alias item. </dd>
          <dd>The 3 types of items can be changed to each other's type on the <a href="#editItem">item edit screen</a> even after they are created. </dd>
          
          <dt>Fields</dt>
@@ -482,6 +482,20 @@
          <dd>Some fields are used for home screen grouping and filtering. </dd>
          <dd>For fields that refer to other items, you can jump to the corresponding item on the <a href="#detail">Item detail screen</a>. </dd>
          <dd>See <a href="#field">Fields</a> to see what fields are available. </dd>
+         
+         <dt>Fields not visible by item type</dt>
+         <dl class="sub1">
+         <dt>Normal Item</dt>
+         <dd> "Alias original item", "Link account"
+         </dd>
+         <dt>Account link item</dt>
+         <dd> "Account", "Password", "Alias original item", "Refer other item"
+         </dd>
+         <dt>Alias item</dt>
+         <dd> "Account", "Password", "Link account", "Refer other item", "PIN", "Two-factor authentication" 
+         </dd>
+         </dl>
+         
      </dl>
      
 
@@ -1189,12 +1203,10 @@
          <dl class="sub0">
          <dt>CSV file import & export function</dt>
          <dd> Allow user data to be exchanged with other apps in text files. </dd>
-         <dt>Input field switching by type of input information</dt>
-         <dd>Hide unnecessary fields depending on the type of information when entering completely different types of information, such as login account information or card information. </dd>
-         <dt>Custom functions for grouping and filtering</dt>
-         <dd>Allow grouping and filtering to target other fields, including user custom fields</dd>
+         
          <dt>Open the detail screen of a specific item directly from the widget</dt>
          <dd>If any item is registered in the widget, when you tap the widget, the detail screen of that item will be open directly</dd>
+         
          <dt>Deadline Notice</dt>
          <dd>Use an iOS notification to notify you when the deadline is approaching</dd>
          </dl>
