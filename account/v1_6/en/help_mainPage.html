@@ -1182,6 +1182,8 @@
          </dl>
          
          <dt>About backup files</dt>
+         <dd>Backups whose comments start with "auto" are backups created automatically by the app. </dd>
+         <dd> Backups whose comments start with "auto daily backup" are backups that are automatically created every day when the first data is saved. Only the last 10 days are retained, and older backups are automatically deleted. </dd>
          <dd>Since the backup file is encrypted with the encryption key associated with your Apple account, it cannot be restored except by this App on your iPhone or iPad that is used with your Apple account.</dd>
          <dd>The backup file can be shared with other apps such as Notepad for storage, and if you share the backup file from that app to this app, you can restore it to the backup folder. </a>
          <dd>In addition, when you connect your iPhone/iPad to a PC, you can use iTunes (Windows) or Finder (Mac) to copy the backup file from the Account app folder to another folder for storage, or copy it back to the app folder. You can </dd>
@@ -1220,6 +1222,12 @@
      <a href="#top">🔝</a>
      <h2>Version history</h2>
      <dl class="main">
+     
+          <dt>ver.1.5</dt>
+          <dd>Arbitrary date data of items can now be treated as a deadline. If multiple dates are set as deadline, the closest date will be used on filter search. </dd>
+           <dd>Item due date data can now be copied to date data. </dd>
+           <dd>It is now automatically backed up once a day. Daily backups for the last 10 days remain. </dd>
+     
           <dt>ver.1.5</dt>
            <dd>Added "display format" function. You can adjust the display order and presence/absence of fields on the item edit screen and item detail screen, and the options when editing. </dd></dd>
            <dd>Improved the display of fields that can register multiple data such as dates and URLs on the item details screen, and now displays them collectively for each selection type. </dd>
