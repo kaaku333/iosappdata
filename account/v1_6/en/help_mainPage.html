@@ -649,6 +649,7 @@
 
          <dt>Date</dt>
          <dd>You can register multiple dates other than the deadline. </dd>
+         <dd> It can also be treated as an additional deadline. </dd>
         
          <dt>Date type</dt>
          <dd>Choose the type of date. </dd>
@@ -827,7 +828,7 @@
          <dt><i class="icon coin"></i></dt>
          <dd>Paid Items</dd>
          <dt><i class="icon calendarex"></i></dt>
-         <dd>Items with an expiry date of less than a month</dd>
+         <dd>Items that have a deadline. red within a week</dd>
          <dt>🪦</dt>
          <dd>Deprecated items</dd>
          </dl>
@@ -1086,6 +1087,13 @@
          <dd>Press the <i class="icon pencil"></i> pencil icon to set a 4-digit number or more for the special passcode. </dd>
          <dd>If you do not use biometric authentication, the special password input screen will be displayed from the beginning when you log in. When used in combination with biometric authentication, biometric authentication is performed first, and if it fails, a dedicated passcode entry screen is displayed instead of the common iPhone/iPad passcode. </dd>
         
+         <dt>Notification Settings</dt>
+         <dd>You can set the notification when the item deadline is approached. </dd>
+         <dd>If notifications are not enabled, enable them in the Settings app. </dd>
+         <dd>Notifications can be received on the day of the deadline, one day before, one week before, and one month before. </dd>
+         <dd>You can specify time that you want to be notified. </dd>
+         
+        
          <dt>Home screen settings</dt>
          <dd>You can switch whether or not to include comments and memo information of items other than titles when narrowing down the search by entering search characters on the home screen. </dd>
         
@@ -1098,6 +1106,7 @@
          <dt>Backup</dt>
          <dd>You can create a backup of your data. </dd>
          <dd>Takes you to the <a href="#backup">Backup Management Screen</a> where you can restore from your backed up data. </dd>
+         <dd>You can enable daily backups. Create a backup at the first data save of the day. Backups for the last 10 days remain. </dd>
 
          <dt>iPhone/iPad iCloud Settings<dt>
          <dd>You can use iCloud to sync data between your iPhone and iPad so you can share the same data. </dd>
@@ -1209,8 +1218,6 @@
          <dt>Open the detail screen of a specific item directly from the widget</dt>
          <dd>If any item is registered in the widget, when you tap the widget, the detail screen of that item will be open directly</dd>
          
-         <dt>Deadline Notice</dt>
-         <dd>Use an iOS notification to notify you when the deadline is approaching</dd>
          </dl>
 </dd>
 
@@ -1223,10 +1230,12 @@
      <h2>Version history</h2>
      <dl class="main">
      
-          <dt>ver.1.5</dt>
-          <dd>Arbitrary date data of items can now be treated as a deadline. If multiple dates are set as deadline, the closest date will be used on filter search. </dd>
-           <dd>Item due date data can now be copied to date data. </dd>
-           <dd>It is now automatically backed up once a day. Daily backups for the last 10 days remain. </dd>
+          <dt>ver.1.6</dt>
+           <dd> Arbitrary date data of items can now be treated as a deadline. If multiple dates are set as deadlines, the closest dates will be used. </dd>
+           <dd>Item deadline data can now be copied to date data. </dd>
+           <dd>You will now be notified when an item deadline is approached. You will be notified on the day, one day before, one week before, and one month before. </dd>
+           <dd>It now automatically creates a backup once a day. The daily backups for the last 10 days remain. </dd>
+           <dd>Fixed minor bugs. </dd>
      
           <dt>ver.1.5</dt>
            <dd>Added "display format" function. You can adjust the display order and presence/absence of fields on the item edit screen and item detail screen, and the options when editing. </dd></dd>
