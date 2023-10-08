@@ -663,6 +663,7 @@
           <dd class="langSel" lang="ja">各項目のコンテキストメニューの「この下に項目追加」を選ぶと、任意の場所に項目を追加できます。</dd>
           <dd class="langSel" lang="ja">画面の一番下にある「一括登録」を開いてその枠内をタップするとそこに改行で区切った複数の項目名をまとめて入力できます。「各行を項目として追加」ボタンや決定ボタン <div class="icon_blue mask_checkmark"></div> を押すとまとめて登録されます。</dd>
           <dd class="langSel" lang="ja">項目名として + で始まる名前を入力すると、その項目をラベルにできます。任意の項目を後からラベル化することもできます。</dd>
+          <dd class="langSel" lang="ja">項目名として > で終わる名前を入力すると、その項目名のリストの参照になります。正確に一致した名前のリストがあれば、項目名の後ろの > の代わりに 参照アイコン <div class="icon_white mask_greaterthan_circle_fill"></div> が表示され、そのアイコンをタップするとそのリストの項目編集画面に移動できます。 </dd>
           <dd class="langSel" lang="ja">デフォルトでは同名の項目を追加できませんが、メニューのオプションで同名項目の登録を許可することもできます。このオプションは該当リストのみ有効です。</dd>
           <dd class="langSel" lang="ja">オプション設定で「リンクリストに同時に追加する」をONにしておくと、項目追加時に任意のリンクされたリストに同名の項目を追加できます。</dd>
 
@@ -675,8 +676,9 @@
           
           <dt class="langSel" lang="ja">他のリストを参照する項目に変更</dt>
           <dd class="langSel" lang="ja">コンテキストメニューを開き、「項目情報変更」の「他リスト参照に変更」ボタンを押すと他のリスト名が表示されます。参照したいリスト名をタップするとその項目は指定したリストへの参照になります。</dd>
-          <dd class="langSel" lang="ja">項目名の後ろに表示される <div class="icon_white mask_greaterthan_circle_fill"><div> をタップすると参照するリストの編集画面が開きます。</dd>
-          <dd class="langSel" lang="ja">項目名の変更で 項目名の後ろに表示される ">" を削除すると、他のリストへの参照がなくなります。</dd>
+          <dd class="langSel" lang="ja">他のリストの参照を使うことにより、複数のチェックリストをまとめたチェックリストのように使うことができます。</dd>
+          <dd class="langSel" lang="ja">項目名の後ろに表示される <div class="icon_white mask_greaterthan_circle_fill"></div> をタップすると参照するリストの項目編集画面が開きます。</dd>
+          <dd class="langSel" lang="ja">項目名の変更で 項目名の後ろに表示される 「>」 を削除すると、他のリストへの参照ではなくなります。</dd>
           
           <dt class="langSel" lang="ja">項目の優先度変更</dt>
           <dd class="langSel" lang="ja">項目を右にスワイプするかコンテキストメニューを開くと「優先度」ボタンが表示されます。このボタンを押すと優先度を高・中・低から選び、項目の優先度を設定できます。</dd>
@@ -796,6 +798,13 @@
            <dd class="langSel" lang="en">If you swipe right on the item or open the context menu, you will see an "Edit name" button. When you press this button, a blue line is displayed under the item name, and you can change the name by tapping the item name at this time. Press Enter to confirm the rename. </dd>
            <dd class="langSel" lang="en">When you confirm the name change, if there are items with the same name in other lists linked to this list, you can choose whether to rename them all at once. If you don't want to change the linked list item names together, you can stop it in the settings screen. </dd>
           
+          <dt class="langSel" lang="en">Change item that refers to another list</dt>
+           <dd class="langSel" lang="en">Open the context menu and press the "Change to other list reference" button under "Change item info." to display other list names. If you tap the name of the list you want to refer to, that item will become a reference to the specified list. </dd>
+           <dd class="langSel" lang="en">By using references to other lists, you can use it like a checklist that combines multiple checklists. </dd>
+           <dd class="langSel" lang="en">Tap reference icon <div class="icon_white mask_greaterthan_circle_fill"></div> displayed after the item name to open the item edit screen for the list to be referenced. </dd>
+           <dd class="langSel" lang="en">If you change the item name and remove the ">" that appears after the item name, it will no longer be a reference to another list. </dd>
+          
+
           <dt class="langSel" lang="en">Change item priority</dt>
            <dd class="langSel" lang="en">Swipe the item to the right or open the context menu to see the "Priority" button. By pressing this button, you can select the priority from high, medium, and low to set the priority of the item. </dd>
            <dd class="langSel" lang="en">It can be used to distinguish the priority of items, such as items that you do not want to forget to buy have high priority, and items that you do not need to buy now have low priority. </dd>
