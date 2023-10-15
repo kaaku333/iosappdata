@@ -804,7 +804,7 @@
          
          <dt>Filter view</dt>
          <dd>Above the item list display on the right side of the screen is a <i class="icon dec3lines"></i> filter icon , filter status and the total number of items currently displayed. <i class="icon dec3lines"></i> Tap the filter icon to display the filter menu, where you can select various conditions to filter and display items. </dd>
-         <dd>In addition to category, tag, importance, update date, time limit, and color, you can also select account linkage, payment status, and usage cancellation status as filtering conditions. </dd>
+         <dd>In addition to category, tag, importance, update date, time limit, and color, you can also select account linkage, payment status, deprecated status, and No login required as filtering conditions. </dd>
          <dd>If you select multiple filters, only items matching all conditions will be displayed. The total number of items is the total number of matched items, 0 if none match. </dd>
          <dd>When filtering is in progress, the filter icon is displayed in a filled state <i class="icon dec3lines_fill"></i> . </dd>
          <dd>  If you press the <i class="icon dec3lines_fill"></i> filter icon and select "Reset Filters", you can reset all filter conditions at once. </dd>
@@ -827,13 +827,13 @@
          <dt><i class="icon person2"></i></dt>
          <dd>alias item</dd>
          <dt><i class="icon coin_fill"></i></dt>
-         <dd>Pending Items</dd>
+         <dd>Item with ongoing payment</dd>
          <dt><i class="icon coin"></i></dt>
-         <dd>Paid Items</dd>
+         <dd>Paid Item</dd>
          <dt><i class="icon calendarex"></i></dt>
-         <dd>Items that have a deadline. If it is close to the deadline, it will be displayed in red.</dd>
+         <dd>Item that have a deadline. If it is close to the deadline, it will be displayed in red</dd>
          <dt>🪦</dt>
-         <dd>Deprecated items</dd>
+         <dd>Deprecated item</dd>
          </dl>
 
          <dt>icons at the top of the screen</dt>
@@ -881,6 +881,8 @@
          <dl class="sub1">
          <dt>Options</dt>
          <dd> Optional setting. You can toggle whether passwords are hidden by default. Toggles whether to display the reading field for the title.</dd>
+         <dt>Login required/Login not required</dt>
+         <dd>When logging in is set to the minimum required on the settings screen, you can switch whether or not items can be displayed and edited without logging in. </dd>
          <dt>Display format</dt>
          <dd>Displays the <a href="#displayFormat">Display Format</a> submenu. <br>If you select a registered display format name, you can switch to that display format. <br>Selecting "Edit" will take you to the <a href="#editDisplayFormat">Edit Display Format screen</a> where you can edit the corresponding display format. <br>If you select "+", a new display field will be created. <br>If you select "All Fields", it will return to the default display of all fields. <br>Switching to a display format with fewer fields will not remove data from fields you have already entered. </dd>
          <dt>Color</dt>
@@ -926,6 +928,8 @@
          <dl class="sub1">
          <dt>Options</dt>
          <dd>Toggles whether to display the reading field for the title. </dd>
+         <dt>Login required/Login not required</dt>
+         <dd>When logging in is set to the minimum required on the settings screen, you can switch whether or not items can be displayed and edited without logging in. </dd>
          <dt>Display format</dt>
          <dd>Displays the <a href="#displayFormat">Display Format</a> submenu. <br>If you select a registered display format name, you can switch to that display format. <br>Selecting "Edit" will take you to the <a href="#editDisplayFormat">Edit Display Format screen</a> where you can edit the corresponding display format. <br>If you select "+", a new display field will be created. <br>If you select "All Fields", it will return to the default display of all fields. <br>Switching to a display format with fewer fields will not remove data from fields you have already entered. </dd>
          <dt>Color</dt>
@@ -1086,6 +1090,7 @@
          <dd>Look for the title "Settings" at the top of the screen. </dd>
 
          <dt>Login Settings</dt>
+         <dd>You can set whether to require minimal login. If you minimize login requirements, you can display the home screen without logging in. Whether or not the contents of each item can be displayed without logging in can be changed by switching the login not required/login required setting for each item. Default setting requires login. </dd>
          <dd>You can set whether to use a dedicated passcode to log in to the app</dd>
          <dd>If you don't use a dedicated passcode, she will perform biometric authentication (face authentication or fingerprint authentication), and if that fails, she will perform common passcode authentication for iPhone / iPad. </dd>
          <dd>Press the <i class="icon pencil"></i> pencil icon to set a 4-digit number or more for the special passcode. </dd>
@@ -1250,6 +1255,8 @@
      <h2>Version history</h2>
      <dl class="main">
           <dt>ver.1.9</dt>
+          <dd>It is now possible to minimize login requirements. You can change it in the login settings on the <a href="#setting">settings screen</a>. </dd>
+           <dd>You can now set whether or not login is required for each item. </dd>
            <dd>Improved the display of filter status on the home screen. </dd>
            <dd>The date is now displayed in the item display when grouping deadlines and update dates on the home screen. </dd>
            <dd>The number of days from today is now displayed on all dates on the item detail screen. </dd>
