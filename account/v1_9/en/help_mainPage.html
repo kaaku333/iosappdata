@@ -219,6 +219,12 @@
     .icon.calendarex {
       background-image: url(https://kaaku333.github.io/iosappdata/account/image/calendar.badge.exclamationmark@2x.png) ;
     }
+    .icon.lock {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/lock@2x.png) ;
+    }
+    .icon.lock_slash {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/lock.slash@2x.png) ;
+    }
 
 
 
@@ -869,20 +875,20 @@
          
          <dt>Icons at the top of the screen</dt>
          <dl class="sub1">
-         <dt>edit</dt>
-         <dd>You can go to the <a href="#editItem">Item edit screen</a> to edit the item. </dd>
-         <dt><i class="icon trash"></i></dt>
-         <dd>You can delete items. Make sure you really want to delete it. </dd>
          <dt><i class="icon threelines"></i></dt>
          <dd> Display the menu. </dd>
+         <dt><i class="icon lock"></i></dt>
+         <dd>Toggle whether login required <i class="icon lock"></i> or no login required <i class="icon lock_slash"></i> to view details or edit for this item. Default is login required. </dd>
+         <dt><i class="icon trash"></i></dt>
+         <dd>You can delete items. Make sure you really want to delete it. </dd>
+         <dt>edit</dt>
+         <dd>You can go to the <a href="#editItem">Item edit screen</a> to edit the item. </dd>
          </dl>
          
          <dt>Menu contents</dt>
          <dl class="sub1">
          <dt>Options</dt>
          <dd> Optional setting. You can toggle whether passwords are hidden by default. Toggles whether to display the reading field for the title.</dd>
-         <dt>Login required/Login not required</dt>
-         <dd>When logging in is set to the minimum required on the settings screen, you can switch whether or not items can be displayed and edited without logging in. </dd>
          <dt>Display format</dt>
          <dd>Displays the <a href="#displayFormat">Display Format</a> submenu. <br>If you select a registered display format name, you can switch to that display format. <br>Selecting "Edit" will take you to the <a href="#editDisplayFormat">Edit Display Format screen</a> where you can edit the corresponding display format. <br>If you select "+", a new display field will be created. <br>If you select "All Fields", it will return to the default display of all fields. <br>Switching to a display format with fewer fields will not remove data from fields you have already entered. </dd>
          <dt>Color</dt>
@@ -917,19 +923,21 @@
          <dd>From the <a href="#home">home screen</a> press the <i class="icon plus"></i> plus icon or <a href="#detail" This screen is accessed by pressing the edit icon from the >Item details screen</a>. </dd>
          <dd>The title "New item" or "Edit item" at the top of the screen is a landmark. </dd>
          <dd>There are icons in the upper right corner of the screen. </dd>
+
          <dt>Icons at the top of the screen</dt>
          <dl class="sub1">
-         <dt>Register</dt>
-         <dd>You can register the edited item information. </dd>
          <dt><i class="icon threelines"></i></dt>
          <dd> Display the menu. </dd>
+         <dt><i class="icon lock"></i></dt>
+         <dd>Toggle whether login required <i class="icon lock"></i> or no login required <i class="icon lock_slash"></i> to view details or edit for this item. Default is login required. </dd>
+         <dt>Register</dt>
+         <dd>You can register the edited item information. </dd>
          </dl>
+
          <dt>Menu contents</dt>
          <dl class="sub1">
          <dt>Options</dt>
          <dd>Toggles whether to display the reading field for the title. </dd>
-         <dt>Login required/Login not required</dt>
-         <dd>When logging in is set to the minimum required on the settings screen, you can switch whether or not items can be displayed and edited without logging in. </dd>
          <dt>Display format</dt>
          <dd>Displays the <a href="#displayFormat">Display Format</a> submenu. <br>If you select a registered display format name, you can switch to that display format. <br>Selecting "Edit" will take you to the <a href="#editDisplayFormat">Edit Display Format screen</a> where you can edit the corresponding display format. <br>If you select "+", a new display field will be created. <br>If you select "All Fields", it will return to the default display of all fields. <br>Switching to a display format with fewer fields will not remove data from fields you have already entered. </dd>
          <dt>Color</dt>
@@ -1090,7 +1098,7 @@
          <dd>Look for the title "Settings" at the top of the screen. </dd>
 
          <dt>Login Settings</dt>
-         <dd>You can set whether to require minimal login. If you minimize login requirements, you can display the home screen without logging in. Whether or not the contents of each item can be displayed without logging in can be changed by switching the login not required/login required setting for each item. Default setting requires login. </dd>
+         <dd>You can set whether to require minimal login. If you minimize login requirements, you can display the home screen without logging in.</dd>
          <dd>You can set whether to use a dedicated passcode to log in to the app</dd>
          <dd>If you don't use a dedicated passcode, she will perform biometric authentication (face authentication or fingerprint authentication), and if that fails, she will perform common passcode authentication for iPhone / iPad. </dd>
          <dd>Press the <i class="icon pencil"></i> pencil icon to set a 4-digit number or more for the special passcode. </dd>
@@ -1255,8 +1263,9 @@
      <h2>Version history</h2>
      <dl class="main">
           <dt>ver.1.9</dt>
-          <dd>It is now possible to minimize login requirements. You can change it in the login settings on the <a href="#setting">settings screen</a>. </dd>
-           <dd>You can now set whether or not login is required for each item. </dd>
+          <dd>To improve usability, changed to login only when necessary. You can restore the setting to always login on the <a href="#setting">settings screen</a>. </dd>
+           <dd>You can now set whether login is not required for each item on the <a href="#detail">Item details screen</a> or <a href="#editItem">Item edit screen</a> . </dd>
+           <dd>Added "No login required" as a filter type on the home screen. </dd>
            <dd>Improved the display of filter status on the home screen. </dd>
            <dd>The date is now displayed in the item display when grouping deadlines and update dates on the home screen. </dd>
            <dd>The number of days from today is now displayed on all dates on the item detail screen. </dd>
