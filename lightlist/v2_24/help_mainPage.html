@@ -560,8 +560,6 @@
         </dl>
 
 
-
-
         <a href="#top" class="langSel" lang="any">🔝</a>
         <a name="home" class="langSel" lang="any">
         <h2 class="langSel" lang="ja">ホーム画面</h2>
@@ -1069,6 +1067,7 @@
           <dd class="langSel" lang="ja">もし「iCloud を有効にして下さい」というメッセージが表示されていたら、本アプリ(lightlist)の iCloud設定がOFFになっています。メッセージをタップして iCloud設定画面を開き、lightlist の設定をONにして下さい。</dd>
           <dd class="langSel" lang="ja">自動同期中に複数のデバイスで同時に本アプリを開いてデータを編集したりすると、最初にアプリを終了した方のデータが後からアプリを終了した方のデータに上書きされる可能性があります。複数のデバイスで同時に本アプリを開く使い方をする場合は自動同期をOFFにして、マニュアルでアップロードやダウンロードした方が安全です。</dd>
           <dd class="langSel" lang="ja">自動同期がうまく働かない時はiCloudとデバイスとの間のデータ反映に時間がかかっている可能性があります。数分経ってから再度アプリを開いてみて下さい。どうしてもうまく同期されない時は、データを有効にしたいデバイスでアップロードボタンを押し、データを取り込みたいデバイスでダウンロードボタンを押してマニュアルでデータを反映させて下さい。</dd>
+          <dd class="langSel" lang="ja">もしそれでも同期が働かない場合は、ファイル アプリで iCloud Drive の lightlist フォルダの syncwork フォルダにある同期作業ファイルを全て削除してください。新しいデータがあるデバイスのアプリを立ち上げ、終了した後に、古いデータのデバイスのファイル アプリを開いて、syncwork フォルダのファイルがダウンロード中の場合はタップしてマニュアルでダウンロードしてください。</dd>
           <dd class="langSel" lang="ja">自動同期中にiPad のアプリでデータを編集した場合、iPhone のウィジェットやiPhoneとペアリングされているApple Watchのデータは自動的には同期されません。iPhone の Appを一回起動することでこれらに同期および反映します。iPhone のアプリでデータを編集したときに iPad のウィジェットへの反映も同様です。</dd>
           
           <dt class="langSel" lang="ja">設定リセット</dt>
@@ -1118,6 +1117,7 @@
           <dd class = "langSel" lang = "en"> If the message "Please enable iCloud" is displayed, the iCloud setting of this application (lightlist) is turned off. Tap the message to open the iCloud settings screen and turn on the lightlist settings. </ dd>
           <dd class = "langSel" lang = "en"> If you open this app on multiple devices at the same time and edit the data during automatic synchronization, the data of the person who closed the app first closed the app later. It may be overwritten on one of the data. If you want to open this app on multiple devices at the same time, it is safer to turn off automatic synchronization and upload or download manually. </ dd>
           <dd class = "langSel" lang = "en"> If automatic synchronization doesn't work, it may take some time to reflect the data between iCloud and the device. Please try opening the app again after a few minutes. If you cannot synchronize properly, press the upload button on the device for which you want to enable data, and press the download button on the device for which you want to import data to reflect the data manually. </ dd>
+          <dd class="langSel" lang="en">If sync still doesn't work, use the Files App to delete all sync work files in the syncwork folder in the iCloud Drive lightlist folder. After launching and closing the app on the device with the new data, open the Files App on the device with the old data, and if a file in the syncwork folder is downloading, tap it to manually download it. </dd>
           <dd class = "langSel" lang = "en"> If you edit the data in the iPad app during automatic sync, the iPhone widget and the data on the Apple Watch paired with the iPhone will not be synced automatically. Hmm. Sync and reflect on these with a single launch of his app on the iPhone. The same applies when editing data in the iPhone app and reflecting it in the iPad widget. </ dd>
            <dt class = "langSel" lang = "en"> Reset settings </ dt>
            <dd class = "langSel" lang = "en"> Various setting values can be reset to the initial values. </ dd>
@@ -1486,6 +1486,7 @@
           <dd class="langSel" lang="ja">最大３行２列の６項目表示できます。</dd>
           <dd class="langSel" lang="ja">設定画面で、コンプリケーションに背景色を付けるか付けないかを設定できます。</dd>
           <dd class="langSel" lang="ja">コンプリケーションをタップすると、該当のリストを直接開きます。</dd>
+          <dd class="langSel" lang="ja">文字盤でベゼルを回して表示されるスマートスタックにウィジェットを追加できます。</dd>
 
 
           <dt class="langSel" lang="en">About complications</dt>
@@ -1504,8 +1505,8 @@
           <dd class="langSel" lang="en">Can display up to 6 items in 3 rows and 2 columns. </dd>
            <dd class="langSel" lang="en">On the settings screen, you can set whether or not to add a background color to the complication. </dd>
            <dd class="langSel" lang="en">Tap a complication to open the corresponding list directly. </dd>
+           <dd class="langSel" lang="en">You can add widgets to the smart stack that appears by rotating the bezel on the watch face. </dd>
         </dl>
-
 
 
         <a href="#top" class="langSel" lang="any">🔝</a>
@@ -1522,9 +1523,6 @@
           <dd class="langSel" lang="ja">設定アプリで iCloud Drive を有効にしてください。</dd>
           <dt class="langSel" lang="ja">iCloud で同期を開始した時にデータがおかしくなった</dt>
           <dd class="langSel" lang="ja">本アプリは同期開始した時に iCloudにあるデータが他のデバイスで１から作ったデータならデバイスにあるデータとマージし、そうでないならiCloudにあるデータとデバイスのデータの新しい方を使います。もし初回マージがうまくいかなかった時はそのデータを手作業で修正してアップロードするか、もしくは採用したい側のデータのデバイスに自動バックアップされているデータをリストアして下さい。</dd>
-          <dt class="langSel" lang="ja">iCloud 同期をONにしているのに同期されなくなった</dt>
-          <dd class="langSel" lang="ja">iCloud のダウンロードが失敗している可能性があります。WiFiでも同期されない場合は、内容が古くなった方のデバイスの lightlist App で設定画面を開いて iCloud のリセットを行なってから、内容が新しい方の App を開いて iCloud同期させてください。数分経ってから再び iCloud リセットしたデバイスの App を起動してください。</dd>
-          <dd class="langSel" lang="ja">もしこれでも同期できない場合は、新しいデータがある デバイスの lightlist App でバックアップを行い、バックアップ管理画面から最新のバックアップをメモAppなどに共有して、古いデータの デバイスの メモAppでそれを lightlist App に共有してからバックアップ管理画面でリストアしてください。</dd>
           <dt class="langSel" lang="ja">機能制限解除の購入で画面が変わらない</dt>
           <dd class="langSel" lang="ja">一度リスト一覧画面に戻ってから再度設定画面を表示してみてください。</dd>
 
@@ -1538,9 +1536,6 @@
            <dd class="langSel" lang="en">Enable iCloud Drive in the Settings app. </dd>
            <dt class = "langSel" lang = "en"> Data went wrong when I started syncing with iCloud </ dt>
            <dd class = "langSel" lang = "en"> This app merges the data in iCloud with the data in the device if it was created from 1 on another device when synchronization starts, otherwise the data in iCloud And use the newer one of the device data. If the initial merge does not work correctly, please manually correct and upload the data, or restore the data that is automatically backed up to the device of the data you want to adopt. </ dd>
-           <dt class="langSel" lang="en">Even though iCloud sync is turned on, it no longer syncs</dt>
-           <dd class="langSel" lang="en">iCloud download may be failing. If it doesn't sync with WiFi, open the settings screen of the lightlist app on the device with the older content and reset iCloud, then open the app with the newer content and sync with iCloud. Wait a few minutes and then launch the app again on the device you just reset iCloud. </dd>
-           <dd class="langSel" lang="en">If you still can't sync, back up using the lightlist App on the device that has the new data, share the latest backup from the backup management screen to the Note app, etc. Please share the old data in the Note App on your device to the lightlist App and then restore it in the backup management screen. </dd>
            <dt class = "langSel" lang = "en"> The screen does not change with the purchase of the function restriction release </ dt>
            <dd class = "langSel" lang = "en"> Please return to the list list screen from the item edit screen of iPhone. At that time, the item will be registered and the new item can be reflected on Apple Watch. </ dd>
         </dl>
