@@ -695,6 +695,7 @@
          <dd>A selection list is a list of choices to fill in a field, such as a category or a registered email address. </dd>
          <dd>Selection lists can be edited in the <a href="#editList">selection list editing screen</a>, accessible from the <a href="#home">home screen</a>. </a>
          <dd>In the selection list, categories and tags have a large number of registrations, so you can create groups to make it easier to search hierarchically. </dd>
+         <dd>Some types of selection list (categories, tags, dates, item references, URLs, free strings) are expected to have a large number of registrations, so it is recommended to create groups to make it easier to search hierarchically. can. </dd>
          <dd>There are the following types of selection lists. </dd>
 
          <dt>Category</dt>
@@ -980,13 +981,13 @@
          <dd>If you drag the option to the left, a delete button will appear and you can delete it by pressing it. If the option is used in an item, it calls attention to it. If you still delete it, the corresponding fields for items using that option will be cleared. </dd>
          
          <dt>Group</dt>
-         <dd>As the number of categories and tags increases, you can group them to make them easier to choose from in the selection menu. </dd>
-         <dd>When you create a group, the option "Groups" will be displayed in the filter selection menu on the home screen and the selection menu on the item edit screen. Also, you can use this group to limit the options on the display format edit screen. </dd>
+<dd>Some types (categories, tags, dates, item references, URLs, free strings) are expected to increase in number, so you can create groups to make them easier to select from the selection menu. </dd>
+         <dd>When you create a group in the selection list, the option "Group" will be displayed in the filter selection menu on the home screen or the selection menu on the item editing screen, and by selecting a group, the options belonging to that group will be displayed hierarchically. You will be able to choose. You can also use this group to limit the options on the display format editing screen. </dd>         
          <dd>You can add a group by pressing the <i class="icon plus"></i> plus icon in the menu displayed by pressing the "All groups" button under the screen title of the selection list edit screen. </dd>
          <dd>When you add a group, a check button is displayed on the left side of the option, and by turning on the check, you can specify which option belongs to that group. </dd>
          <dd>You can also go to the group edit screen with the <i class="icon wrench"></i> wrench icon at the top of the screen. </dd>
          <dd>On the edit group screen, you can rename, add, delete, and rearrange groups in the same way as on the edit selection list screen. </dd>
-         <dd>You can create up to 30  groups for each category and tag. </dd>
+         <dd>Up to 30 groups can be created for each selection list. </dd>
      </dl>
 
 
@@ -1110,15 +1111,15 @@
          <dd>If you do not use biometric authentication, the special password input screen will be displayed from the beginning when you log in. When used in combination with biometric authentication, biometric authentication is performed first, and if it fails, a dedicated passcode entry screen is displayed instead of the common iPhone/iPad passcode. </dd>
         
          <dt>Notification Settings</dt>
-         <dd>You can set the notification when the item deadline is approached. </dd>
+         <dd>You can set the notification when the item due date is approached. </dd>
          <dd>If notifications are not enabled, enable them in the Settings app. </dd>
-         <dd>Notifications can be received on the day of the deadline, one day before, one week before, and one month before. </dd>
+         <dd>Notifications can be received on the day of the due date, one day before, one week before, and one month before. </dd>
          <dd>You can specify time that you want to be notified. </dd>
          
         
          <dt>Home screen settings</dt>
          <dd>You can switch whether or not to include comments and memo information of items other than titles when narrowing down the search by entering search characters on the home screen. </dd>
-        <dd>You can set the number of days before the deadline calendar icon on the home screen and item details screen to turn red. </dd>
+        <dd>You can set the number of days before the due date calendar icon on the home screen and item details screen to turn red. </dd>
         
          <dt> Detailed screen settings <dt>
          <dd>On the item detail screen, you can toggle whether passwords are hidden by default. </dd>
@@ -1267,12 +1268,16 @@
      <a href="#top">🔝</a>
      <h2>Version history</h2>
      <dl class="main">
+          <dt>ver.2.0</dt>
+          <dd>Changed to use due date instead of the word deadline.</dd>
+           <dd>Fixed a minor bug. </dd>
+     
           <dt>ver.1.9</dt>
           <dd>To improve usability, login is now required only when necessary. You can also return to always logging in using the login settings on the <a href="#setting">settings screen</a>. </dd>
            <dd>You can now set whether login is required or not for each item on the <a href="#detail">Item details screen</a> or <a href="#editItem">Item edit screen</a> became. </dd>
            <dd>Added "No login required" as a filter type on the home screen. </dd>
            <dd>The filter status display on the home screen has been made easier to understand. </dd>
-           <dd>The date is now displayed in the item display when grouping deadlines and update dates on the home screen. </dd>
+           <dd>The date is now displayed in the item display when grouping due dates and update dates on the home screen. </dd>
            <dd>The number of days from today is now displayed on all dates on the item detail screen. </dd>
            <dd>You can now set the "Hide password by default" option setting separately on the item detail screen and item edit screen. </dd>
            <dd>The option setting "Hide reading field for title" can now be set separately on the item detail screen and item edit screen. </dd>
@@ -1286,7 +1291,7 @@
           <dt>ver.1.7</dt>
           <dd>With the Apple Shortcuts App , you can place a bookmark icon on the desktop that directly opens the detail screen for any item.</dd>
           <dd>Also with the Shortcuts app, you can place a bookmark icon on the desktop that opens the home screen with any combination of groupings and saved filters.</dd>
-          <dd>You can now set the number of days before the deadline of an item to display the icon in red.</dd>
+          <dd>You can now set the number of days before the due date of an item to display the icon in red.</dd>
            <dd>Fixed minor bugs. </dd>
 
           <dt>ver.1.6</dt>
