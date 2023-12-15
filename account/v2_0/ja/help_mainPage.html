@@ -236,7 +236,7 @@
       background-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark@2x.png) ;
     }
     .icon.bookmark_fill {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark_fill@2x.png) ;
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark.fill@2x.png) ;
     }
 
     </style>
@@ -818,7 +818,7 @@
         <dd>絞り込みの条件には、カテゴリー、タグ、重要度、更新日時、期限、カラー以外にも、アカウント連携かどうかや支払い状況、利用廃止状況、ログイン要不要なども選べます。</dd>
         <dd>複数の絞り込みを選ぶと全ての条件にマッチしたアイテムのみが表示されます。アイテム総数はマッチしたアイテムの合計で、何もマッチしないと 0 となります。</dd>
         <dd>絞り込み中の場合は 絞り込みアイコンが塗りつぶし状態 <i class="icon dec3lines_fill"></i> で表示されます。</dd>
-        <dd> <i class="icon dec3lines_fill"></i> フィルターアイコンを押して表示される、「絞り込みをリセット」を選ぶと、全ての絞り込み条件をまとめてリセットすることができます。</dd>
+        <dd> <i class="icon dec3lines_fill"></i> フィルターアイコンを押して表示される、「フィルターをリセット」を選ぶと、全ての絞り込み条件をまとめてリセットすることができます。</dd>
         <dd>絞り込みメニューで保存済みフィルターを選ぶと、その時の絞り込み条件を名前をつけて保存し、後からその名前を選ぶだけで絞り込み条件を再現することができます。</d>
         <dd>保存済みフィルターの編集ボタンを選ぶと<a href="#savedFilter">保存済みフィルター一覧画面</a>を表示して、保存済みフィルター名を変えたり削除したりできます。</dd>
         <dd>保存済みフィルターの絞り込み条件を変更したい場合は、そのフィルターを選んだ後に絞り込み条件を変更し、同じ名前で保存して上書きしてください。</dd>
@@ -852,25 +852,30 @@
         
         <dl class="sub1">
         <dt><i class="icon gear"></i></dt>
-        <dd>各種設定やバックアップなどができる <a href="#setting">設定画面</a> に移動</dd>
+        <dd>各種設定やバックアップなどができる <a href="#setting">設定画面</a> に移動します</dd>
         <dt><i class="icon info"></i></dt>
-        <dd>この使い方画面を表示</dd>
+        <dd>この使い方画面を表示します</dd>
+        </dl>
+        
+        <dl class="sub1">
         <dt><i class="icon threelines"></i></dt>
         <dd>メニューを表示します</dd>
+        <dt><i class="icon bookmark"></i></dt>
+        <dd>ブックマークによるフィルターの On/Off を切り替えします</dd>
         <dt><i class="icon lock"></i></dt>
-        <dd>ログイン状態（未ログイン <i class="icon lock"></i> / ログイン済み <i class="icon lock_open"></i> ）。未ログイン状態の時にタップするとログインできる</dd>
+        <dd>ログイン状態を示します（未ログイン <i class="icon lock"></i> / ログイン済み <i class="icon lock_open"></i> ）。未ログイン状態の時にタップするとログインできます</dd>
         <dt><i class="icon plus"></i></dt>
-        <dd>新規アイテムの追加ができる <a href="#editItem">アイテム編集画面</a> に移動</dd>
+        <dd>新規アイテムの追加ができる <a href="#editItem">アイテム編集画面</a> に移動します</dd>
         </dl>
         
         <dt>メニューの内容</dt>
         <dl class="sub1">
         <dt>デフォルト設定</dt>
-        <dd>起動時のグルーピングとフィルターを設定できます。フィルターは保存済みフィルターから選択できます。</dd>
+        <dd>起動時に設定されるデフォルトのグルーピングとフィルターを設定できます。フィルターは保存済みフィルターから選択できます</dd>
         <dt>選択リスト編集</dt>
-        <dd>任意の文字列リストを編集できる <a href="#editList">リスト編集画面</a> に移動します。</dd>
+        <dd>個々の文字列リストを編集できる <a href="#editList">リスト編集画面</a> に移動します</dd>
         <dt>表示フォーマット編集</dt>
-        <dd>表示フォーマットの編集ができる<a href="#displayFormatList">表示フォーマット一覧画面</a> に移動します。</dd>
+        <dd>表示フォーマットの編集ができる<a href="#displayFormatList">表示フォーマット一覧画面</a> に移動します</dd>
         </dl>
     </dl>
 
@@ -892,13 +897,15 @@
         <dt>画面の上部のアイコン</dt>
         <dl class="sub1">
         <dt><i class="icon threelines"></i></dt>
-        <dd>メニューを表示します。</dd>
+        <dd>メニューを表示します</dd>
+        <dt><i class="icon bookmark"></i></dt>
+        <dd>ブックマーク状態を切り替えできます。ブックマークを On すると、ホーム画面の <i class="icon bookmark"></i> ブックマークボタンで絞り込み表示できます</dd>
         <dt><i class="icon lock"></i></dt>
-        <dd>このアイテムの詳細表示・編集にログインが必要（未ログイン <i class="icon lock"></i> / ログイン済み <i class="icon lock_open"></i> ）かログインが不要 <i class="icon lock_slash"></i> かを切り替えできます。デフォルトはログイン必要です。</dd>
+        <dd>このアイテムの詳細表示・編集にログインが必要（未ログイン <i class="icon lock"></i> / ログイン済み <i class="icon lock_open"></i> ）かログインが不要 <i class="icon lock_slash"></i> かを切り替えできます。デフォルトはログイン必要です</dd>
         <dt><i class="icon trash"></i></dt>
-        <dd>アイテムを削除できます。念の為本当に削除していいか確認します。</dd>
+        <dd>アイテムを削除できます。念の為本当に削除していいか確認します</dd>
         <dt>編集</dt>
-        <dd><a href="#editItem">アイテム編集画面</a> に移動してアイテムを編集できます。</dd>
+        <dd><a href="#editItem">アイテム編集画面</a> に移動してアイテムを編集できます</dd>
         </dl>
         
         <dt>メニューの内容</dt>
@@ -944,6 +951,7 @@
         <dl class="sub1">
         <dt><i class="icon threelines"></i></dt>
         <dd>メニューを表示します。</dd>
+        <dd>ブックマーク状態を切り替えできます。ブックマークを On すると、ホーム画面の <i class="icon bookmark"></i> ブックマークボタンで絞り込み表示できます</dd>
         <dt><i class="icon lock"></i></dt>
         <dd>このアイテムの表示・編集にログインが必要<i class="icon lock"></i>か不要<i class="icon lock_slash"></i>かを切り替えできます。デフォルトはログイン必要です。</dd>
         <dt>登録</dt>
