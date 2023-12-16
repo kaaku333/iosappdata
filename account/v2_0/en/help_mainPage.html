@@ -228,7 +228,12 @@
     .icon.lock_open {
       background-image: url(https://kaaku333.github.io/iosappdata/account/image/lock.open@2x.png) ;
     }
-
+    .icon.bookmark {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark@2x.png) ;
+    }
+    .icon.bookmark_fill {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark.fill@2x.png) ;
+    }
 
     </style>
       <script type="text/javascript">
@@ -378,7 +383,7 @@
         <dd>You can also auto-generate passwords. </dd>
         <dd>You can share data between your iPad/iPhone via iCloud. </dd>
         <dd>You can always create an encrypted backup file and restore it when needed. </dd>
-        <dd>You can be notified when an item with a deadline is about to expire. </dd>
+        <dd>You can be notified when an item with a due date is about to expire. </dd>
         <dd> With Shortcuts app from Apple, you can put an icon on your desktop that opens the details screen for any item directly. </dd>
      </dl>
 
@@ -619,14 +624,14 @@
          <dd>If the account has an expiration date or billing expiration date, turn it on. </dd>
          <dd>Expired status can be used in filtering on the home screen. </dd>
         
-         <dt>deadline type</dt>
-         <dd>If there is a deadline, select the type of deadline. </dd>
+         <dt>Due date type</dt>
+         <dd>If there is a due date, select the type of due date. </dd>
          <dd>For example, expiry date, prepaid expiry date, application date, service termination date, etc. </dd>
-         <dd>The deadline type is one of the <a href="#selectList">select list</a> and can be added or changed by the user. </dd>
+         <dd>The due date type is one of the <a href="#selectList">select list</a> and can be added or changed by the user. </dd>
         
-         <dt>Deadline</dt>
+         <dt>Due date</dt>
          <dd>If there is a due date, set the date. </dd>
-         <dd>You can group and narrow down on the home screen by the number of days until the deadline. </dd>
+         <dd>You can group and narrow down on the home screen by the number of days until the due date. </dd>
          <dd>You can also add comments. </dd>
 
          <dt>Registered email address</dt>
@@ -659,8 +664,8 @@
          <dd>The free string type is one of <a href="#selectList">select list</a> and can be added or changed by the user. </dd>
 
          <dt>Date</dt>
-         <dd>You can register multiple dates other than the deadline. </dd>
-         <dd> It can also be treated as an additional deadline. </dd>
+         <dd>You can register multiple dates other than the due date. </dd>
+         <dd> It can also be treated as an additional due date. </dd>
         
          <dt>Date type</dt>
          <dd>Choose the type of date. </dd>
@@ -694,7 +699,7 @@
          <dt>About selection list</dt>
          <dd>A selection list is a list of choices to fill in a field, such as a category or a registered email address. </dd>
          <dd>Selection lists can be edited in the <a href="#editList">selection list editing screen</a>, accessible from the <a href="#home">home screen</a>. </a>
-         <dd>In the selection list, categories and tags have a large number of registrations, so you can create groups to make it easier to search hierarchically. </dd>
+         <dd>For some types of selection lists (categories, tags, dates, item references, URLs, free strings), you can create groups to make it easier to search hierarchically. </dd>
          <dd>Some types of selection list (categories, tags, dates, item references, URLs, free strings) are expected to have a large number of registrations, so it is recommended to create groups to make it easier to search hierarchically. can. </dd>
          <dd>There are the following types of selection lists. </dd>
 
@@ -716,9 +721,9 @@
          <dd> Indicates the type of payment. </dd>
          <dd>Used to select the payment type on the item edit screen. </dd>
 
-         <dt>deadline type</dt>
-         <dd>Indicates the type of deadline, such as expiration date. </dd>
-         <dd>Used to select the deadline type on the item edit screen. </dd>
+         <dt>Due date type</dt>
+         <dd>Indicates the type of due date, such as expiration date. </dd>
+         <dd>Used to select the due date type on the item edit screen. </dd>
 
          <dt>URL type</dt>
          <dd> Indicates the type of URL information. </dd>
@@ -806,7 +811,7 @@
          <dd>Used when you want to find items of any importance</dd>
          <dt>Update time</dt>
          <dd>Used when you want to find recently updated items</dd>
-         <dt>Deadline</dt>
+         <dt>Due date</dt>
          <dd>Use this when you want to find items whose due date is close</dd>
          <dt>Color</dt>
          <dd>Used when you want to find items of any color</dd>
@@ -841,9 +846,11 @@
          <dt><i class="icon coin"></i></dt>
          <dd>Paid Item</dd>
          <dt><i class="icon calendarex"></i></dt>
-         <dd>Item that have a deadline. If it is close to the deadline, it will be displayed in red</dd>
+         <dd>Item that have a due date. If it is close to the due date, it will be displayed in red</dd>
          <dt>🪦</dt>
          <dd>Deprecated item</dd>
+         <dt><i class="icon bookmark_fill"></i></dt>
+         <dd>Bookmarked item</dd>
          </dl>
 
          <dt>icons at the top of the screen</dt>
@@ -853,20 +860,33 @@
          <dd>Move to the <a href="#setting">Settings screen</a> where you can make various settings and backups</dd>
          <dt><i class="icon info"></i></dt>
          <dd>Show this how-to screen</dd>
+        </dl>
+        
+        <dl class="sub1">
          <dt><i class="icon threelines"></i></dt>
-         <dd> Menu display. Move to <a href="#displayFormatList">Display format list screen</a> where you can edit the display format</dd>
+         <dd>Show menu</dd>
+         <dt><i class="icon bookmark"></i></dt>
+         <dd>Turn on/off filtering by bookmark</dd>
          <dt><i class="icon lock"></i></dt>
-         <dd>Login status (not logged in <i class="icon lock"></i> / logged in <i class="icon lock_open"></i> ). You can login by tapping it when you are not logged in</dd>
-         <dt><i class="icon wrench"></i></dt>
-         <dd>Move to <a href="#editList">Edit list screen</a> where you can edit various string lists</dd>
+         <dd>Indicates login status (not logged in <i class="icon lock"></i> / logged in <i class="icon lock_open"></i> ). If you are not logged in, tap to log in</dd>
          <dt><i class="icon plus"></i></dt>
-         <dd>Go to <a href="#editItem">Edit Item</a> where you can add new items</dd>
+         <dd>Go to the <a href="#editItem">Item edit screen</a> where you can add new items</dd>
+         </dl>
+         
+         <dt>Menu contents</dt>
+         <dl class="sub1">
+         <dt>Default settings</dt>
+         <dd>You can set default grouping and filter that are set at startup. Filter can be selected from saved filters</dd>
+         <dt>Edit selection list</dt>
+         <dd>Go to the <a href="#editList">list editing screen</a> where you can edit individual string lists</dd>
+         <dt>Edit display format</dt>
+         <dd>Go to the <a href="#displayFormatList">display format list screen</a> where you can edit the display format</dd>
          </dl>
      </dl>
 
 
 
-<a name="detail">
+    <a name="detail">
      <a href="#top">🔝</a>
      <h2>Item details screen</h2>
      <dl class="main">
@@ -882,13 +902,15 @@
          <dt>Icons at the top of the screen</dt>
          <dl class="sub1">
          <dt><i class="icon threelines"></i></dt>
-         <dd> Display the menu. </dd>
+         <dd>Show menu</dd>
+         <dt><i class="icon bookmark"></i></dt>
+         <dd>You can switch the bookmark state of this item. If you turn on bookmarks, you can narrow down the display using the <i class="icon bookmark"></i> bookmark button on the home screen</dd>
          <dt><i class="icon lock"></i></dt>
-         <dd>Toggle whether Login required ( Not logged in <i class="icon lock"></i> or Logged in <i class="icon lock_open"></i> ) or No login required <i class="icon lock_slash"></i> to view details or edit for this item. Default is login required. </dd>
+         <dd>You must be logged in to view/edit this item's details (not logged in <i class="icon lock"></i> / logged in <i class="icon lock_open"></i> ) or logged in You can toggle whether <i class="icon lock_slash"></i> is required or not. Default is login required</dd>
          <dt><i class="icon trash"></i></dt>
-         <dd>You can delete items. Make sure you really want to delete it. </dd>
-         <dt>edit</dt>
-         <dd>You can go to the <a href="#editItem">Item edit screen</a> to edit the item. </dd>
+         <dd>You can delete items. Just to be sure, please confirm if you really want to delete it</dd>
+         <dt>Edit</dt>
+         <dd>You can edit the item by going to the <a href="#editItem">Item edit screen</a></dd>
          </dl>
          
          <dt>Menu contents</dt>
@@ -914,7 +936,7 @@
          <dd>Passwords and PINs are hidden by default. You can display it by tapping the <i class="icon eyeslash"></i> eyeball icon on the far right. You can also make it the default display in the option settings. </dd>
          <dd>If the item is an alias or an account link item, a link to the referenced account will be displayed, and linking will take you to the detail screen for that item. </dd>
          <dd> Tap a URL to open a web browser and display the corresponding URL. </dd>
-         <dd>Dates that have a deadline will have a <i class="icon calendarex"></i> calendar icon. The calendar icon turns red when the deadline is approaching. The default is within 7 days, but you can change the number of days on the setting screen. </dd>
+         <dd>Dates that have a due date will have a <i class="icon calendarex"></i> calendar icon. The calendar icon turns red when the due date is approaching. The default is within 7 days, but you can change the number of days on the setting screen. </dd>
          <dd>If it is referenced by another item, the list of that item will be displayed, and you can also tap the item to move to the detail screen of that item. </dd>
        <dl class="main">
      </dl>
@@ -934,6 +956,8 @@
          <dl class="sub1">
          <dt><i class="icon threelines"></i></dt>
          <dd> Display the menu. </dd>
+         <dt><i class="icon bookmark"></i></dt>
+         <dd>You can toggle the bookmark state of this item. If you turn on bookmarks, you can narrow down the display using the <i class="icon bookmark"></i> bookmark button on the home screen</dd>
          <dt><i class="icon lock"></i></dt>
          <dd>Toggle whether Login required ( Not logged in <i class="icon lock"></i> or Logged in <i class="icon lock_open"></i> ) or No login required <i class="icon lock_slash"></i> to view details or edit for this item. Default is login required. </dd>
          <dt>Register</dt>
@@ -983,9 +1007,9 @@
          <dt>Group</dt>
 <dd>Some types (categories, tags, dates, item references, URLs, free strings) are expected to increase in number, so you can create groups to make them easier to select from the selection menu. </dd>
          <dd>When you create a group in the selection list, the option "Group" will be displayed in the filter selection menu on the home screen or the selection menu on the item editing screen, and by selecting a group, the options belonging to that group will be displayed hierarchically. You will be able to choose. You can also use this group to limit the options on the display format editing screen. </dd>         
-         <dd>You can add a group by pressing the <i class="icon plus"></i> plus icon in the menu displayed by pressing the "All groups" button under the screen title of the selection list edit screen. </dd>
+         <dd>You can add a group by pressing the <i class="icon plus"></i> plus icon in the group selection list that is displayed by pressing the "All data" button under the screen title on the selection list editing screen. Masu. </dd>
          <dd>When you add a group, a check button is displayed on the left side of the option, and by turning on the check, you can specify which option belongs to that group. </dd>
-         <dd>You can also go to the group edit screen with the <i class="icon wrench"></i> wrench icon at the top of the screen. </dd>
+         <dd>Selecting "Group Edit" in the group selection list will move you to the group editing screen. </dd>
          <dd>On the edit group screen, you can rename, add, delete, and rearrange groups in the same way as on the edit selection list screen. </dd>
          <dd>Up to 30 groups can be created for each selection list. </dd>
      </dl>
@@ -1269,7 +1293,11 @@
      <h2>Version history</h2>
      <dl class="main">
           <dt>ver.2.0</dt>
-          <dd>Changed to use due date instead of the word deadline.</dd>
+          <dd>You can now set bookmarks on items. You can filter only the items you are currently interested in. </dd>
+           <dd>You can now set default grouping and filter at startup. </dd>
+           <dd>Groups can now be used in fields that allow multiple registrations (date, free string, URL, item reference). </dd>
+           <dd>Improved iCloud sync behavior. </dd>
+           <dd>Improved the UI. </dd>
            <dd>Fixed a minor bug. </dd>
      
           <dt>ver.1.9</dt>
@@ -1295,9 +1323,9 @@
            <dd>Fixed minor bugs. </dd>
 
           <dt>ver.1.6</dt>
-           <dd> Arbitrary date data of items can now be treated as a deadline. If multiple dates are set as deadlines, the closest dates will be used. </dd>
-           <dd>Item deadline data can now be copied to date data. </dd>
-           <dd>You will now be notified when an item deadline is approached. You will be notified on the day, one day before, one week before, and one month before. </dd>
+           <dd> Arbitrary date data of items can now be treated as a due date. If multiple dates are set as due dates, the closest dates will be used. </dd>
+           <dd>Item due date data can now be copied to date data. </dd>
+           <dd>You will now be notified when an item due date is approached. You will be notified on the day, one day before, one week before, and one month before. </dd>
            <dd>It now automatically creates a backup once a day. The daily backups for the last 10 days remain. </dd>
            <dd>Fixed minor bugs. </dd>
      
@@ -1327,9 +1355,9 @@
            <dd>Fixed minor bug. </dd>
      
           <dt>ver.1.2</dt>
-           <dd> Added date field. You can register multiple date information other than the deadline. </dd>
+           <dd> Added date field. You can register multiple date information other than the due date. </dd>
            <dd>Added item reference field. You can register multiple references to other items. </dd>
-           <dd>Improved tag display and deadline date display on the item detail screen. </dd>
+           <dd>Improved tag display and due date display on the item detail screen. </dd>
            <dd>On the selection list edit screen, it is now possible to distinguish by background color whether each name is used for items. </dd>
            <dd>Fixed minor bugs. </dd>
      
