@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v31 2023/12/27",
+        "_version": "v30 2023/3/15",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -629,15 +629,13 @@
         "parents" : "振振、冬冬",
         "brothers" : "大地、希望",
         "comingdate" : "2000-07-16",
-        "returndate" : "2024-12-31",
-        "returnexpdate" : "2024-12-31",
+        "returndate" : "2023-12-31",
+        "returnexpdate" : "2023-12-31",
 
         "preset" : true,
         "relations" : [
                 [ "神戸市王子動物園 パンダの部屋", "http://www.kobe-ojizoo.jp/animal/panda/"],
                 [ "神戸市王子動物園 ありがとうタンタン", "https://thanks-tantan.com/" ],
-				[ "神戸市王子動物園 「タンタン」の返還の延長について", "https://www.kobe-ojizoo.jp/info/detail/?id=639" ],
-
                 [ "タンタンのYouTube", "https://www.youtube.com/results?search_query=%E3%82%BF%E3%83%B3%E3%82%BF%E3%83%B3+%E3%83%91%E3%83%B3%E3%83%80" ],
                 [ "Yahoo News タンタンの記事", "https://news.yahoo.co.jp/search?p=%E3%82%BF%E3%83%B3%E3%82%BF%E3%83%B3%E3%80%80%E3%83%91%E3%83%B3%E3%83%80&ei=utf-8" ],
                 [ "現代ビジネス パンダに関する記事", "https://gendai.ismedia.jp/list/tag/%E3%83%91%E3%83%B3%E3%83%80" ],
