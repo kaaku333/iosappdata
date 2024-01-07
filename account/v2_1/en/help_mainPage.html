@@ -1226,14 +1226,24 @@
 
          <dt>Screen description</dt>
          <dd>When you press the Create Backup button, all the current item data and selection list data will be saved in one backup file. </dd>
-         <dd>Because the backup file is encrypted with the encryption key associated with your Apple account, it can only be restored on the iPhone or iPad used with your Apple account. </dd>
          <dd>The date and time of saving and the number of items at saving time are saved as comments in the backup file. </dd>
+         <dd>Encrypted backup files display a lock mark <i class="icon lock"></i> at the beginning, and unencrypted backup files display an open lock mark <i class=" icon lock_open"></i>.
          <dd>Backup files are listed from newest to oldest. </dd>
          <dd>You can select multiple backup files by pressing the select icon on the screen. Tap the  <i class="icon trash"></i> trash can icon if it is displayed additionally on the screen to delete it all at once. Press the Done icon to exit selection mode. </dd>
-         <dd>The switch below the backup button lets you choose whether to back up synced data on iCloud when you create a backup, and whether to automatically back up before restoring a backup. It is recommended to leave both ON just in case. </dd>
-         <dd>Tap the backup file to display the file operation menu. </dd>
+         
+         <dd>Switch below backup button<dt>
+         <dl class="sub1">
+         <dt>Encrypt backup</dt>
+         <dd>Encrypt backups when creating them by default. Turn encryption off if you want to share backup data with devices that do not share the encryption key associated with your Apple account. Unencrypted data has a smaller file size. Leave it ON unless necessary</dd>
+         <dt>Also back up iCloud data</dt>
+         <dd>By default, sync data on iCloud is also backed up. Backups from iCloud are always encrypted. If you do not need to back up your iCloud data, please turn it off</dd>
+         <dt>Automatically back up before restoring backup</dt>
+         <dd>Automatically back up backup files before restoring them by default. We recommend leaving it ON just in case.</dd>
+         </dl>
+
 
          <dt>File operation menu for backup file</dt>
+         <dd>Tap the backup file to display the file operation menu. </dd>
          <dl class="sub1">
          <dt>Edit comment</dt>
          <dd>You can change the comment in the file. </dd>
@@ -1247,9 +1257,12 @@
          <dd>Backups whose comments start with "auto" are backups created automatically by the app. </dd>
          <dd> Backups whose comments start with "auto daily backup" are backups that are automatically created every day when the first data is saved. Only the last 10 days are retained, and older backups are automatically deleted. </dd>
          <dd>Since the backup file is encrypted with the encryption key associated with your Apple account, it cannot be restored except by this App on your iPhone or iPad that is used with your Apple account.</dd>
-         <dd>The backup file can be shared with other apps such as Notepad for storage, and if you share the backup file from that app to this app, you can restore it to the backup folder. </a>
-         <dd>In addition, when you connect your iPhone/iPad to a PC, you can use iTunes (Windows) or Finder (Mac) to copy the backup file from the Account app folder to another folder for storage, or copy it back to the app folder. You can </dd>
-         <dd>Please note that if you change the file name, it may not be visible on the backup management screen. </dd>
+         <dd>If you want to copy data to the iPhone or iPad that is used with an Apple account other than your own, please use a backup file with encryption turned off. </dd>
+         <dd>By sharing the backup file with other apps such as Notepad, you can store your data outside of the app. If you share a backup file from that app to this app, you can move it back to the backup folder. </a>
+         <dd>Also, when you connect your iPhone/iPad to your PC, you can use iTunes (Windows) or Finder (Mac) to copy the backup file from the Account app folder to another folder and save it, or copy it back to the app folder.</dd>
+         <dd>Please note that if you change the file name, it may no longer be visible on the backup management screen. </dd>
+         <dd>Backup files with encryption OFF are compressed data with the extension .zip. The zip file can be opened on your PC. The data files in the zip file are text files in JSON format, so they can be viewed with a text editor. </dd>
+         <dd>If you place a backup file with encryption turned off on the iCloud folder, there is a risk that your password data will be leaked if your iCloud is hacked. So, do not create backup files with encryption turned off unless necessary, and even if you do, please be careful about the storage location of the shared the backup. </dd>
      </dl>
 
 
@@ -1297,6 +1310,10 @@
      <a href="#top">🔝</a>
      <h2>Version history</h2>
      <dl class="main">
+          <dt>ver.2.1</dt>
+           <dd>A history list has been added to the home screen menu for quick access to recently viewed items. </dd>
+           <dd>Added option not to encrypt when creating backup. </dd>
+           
           <dt>ver.2.0</dt>
           <dd>You can now use bookmarks on items. You can filter only the items you are currently interested in. </dd>
            <dd>You can now use default grouping and filter at startup. </dd>
