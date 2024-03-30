@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v32 2024/3/31",
+        "_version": "v31 2023/12/27",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -238,7 +238,6 @@
         "parents" : "灵灵、公主",
         "brothers" : "好奇、友友、麗麗",
         "children" : "シャオシャオ、レイレイ、シャンシャン",
-        "partners" : "シンシン",
         "comingdate" : "2011-02-21",
         "returndate" : "2026-02-20",
         "returnexpdate" : "2026-02-20",
@@ -271,7 +270,6 @@
         "birthplaceurl" : "https://www.pandachina.jp/panda/garyu.html",
         "parents" : "琳琳、英英",
         "brothers" : "蘭香、亮亮、仙子",
-        "partners" : "リーリー",
         "children" : "シャオシャオ、レイレイ、シャンシャン",
         "comingdate" : "2011-02-21",
         "returndate" : "2026-02-20",
@@ -604,7 +602,6 @@
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "哈藍、梅梅",
         "brothers" : "明浜、愛浜、幸浜、秋浜、隆浜、雄浜、奇珍、奇縁",
-        "partners" : "永明",
         "children" : "楓浜、彩浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
         "returnexpdate" : "2026-09-06",
 
@@ -631,16 +628,16 @@
         "birthplaceurl" : "https://www.pandachina.jp/panda/garyu.html",
         "parents" : "振振、冬冬",
         "brothers" : "大地、希望",
-        "partners" : "コウコウ(２代目)、コウコウ(初代)",
-
         "comingdate" : "2000-07-16",
-        "returndate" : "2023-12-31",
-        "returnexpdate" : "2023-12-31",
+        "returndate" : "2024-12-31",
+        "returnexpdate" : "2024-12-31",
 
         "preset" : true,
         "relations" : [
                 [ "神戸市王子動物園 パンダの部屋", "http://www.kobe-ojizoo.jp/animal/panda/"],
                 [ "神戸市王子動物園 ありがとうタンタン", "https://thanks-tantan.com/" ],
+				[ "神戸市王子動物園 「タンタン」の返還の延長について", "https://www.kobe-ojizoo.jp/info/detail/?id=639" ],
+
                 [ "タンタンのYouTube", "https://www.youtube.com/results?search_query=%E3%82%BF%E3%83%B3%E3%82%BF%E3%83%B3+%E3%83%91%E3%83%B3%E3%83%80" ],
                 [ "Yahoo News タンタンの記事", "https://news.yahoo.co.jp/search?p=%E3%82%BF%E3%83%B3%E3%82%BF%E3%83%B3%E3%80%80%E3%83%91%E3%83%B3%E3%83%80&ei=utf-8" ],
                 [ "現代ビジネス パンダに関する記事", "https://gendai.ismedia.jp/list/tag/%E3%83%91%E3%83%B3%E3%83%80" ],
@@ -666,7 +663,6 @@
         "birthplace" : "成都動物園",
         "parents" : "林楠、蘇蘇",
         "brothers" : "科比、蜀蘭",
-        "partners" : "永明",
         "children" : "明浜、愛浜、幸浜、秋浜、隆浜、雄浜、良浜、奇缘、奇珍",
         "comingdate" : "2000-07-07",
         "died" : true,
@@ -721,7 +717,6 @@
         "birthplaceurl" : "https://ja.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E5%8B%95%E7%89%A9%E5%9C%92",
         "parents" : "良良、永永",
         "brothers" : "園園、吉妮",
-        "partners" : "良浜、梅梅、蓉浜",
         "children" : "楓浜、彩浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜、雄浜、秋浜、隆浜、幸浜、明浜、愛浜",
         "comingdate" : "1994-09-06",
         "returndate" : "2023-02-22",
@@ -749,8 +744,6 @@
         "locationurl" : "http://www.kobe-ojizoo.jp/",
         "birthplace" : "臥龍保護センター",
         "parents" : "Pan Pan、佳佳",
-        "partners" : "タンタン",
-
         "comingdate" : "2002-12-09",
 
         "gender" : "オス",
@@ -775,8 +768,6 @@
         "locationurl" : "http://www.kobe-ojizoo.jp/",
         "birthplace" : "臥龍保護センター",
         "parents" : "Pan Pan、永巴",
-        "partners" : "タンタン",
-
         "comingdate" : "2000-07-16",
 
         "returndate" : "2002-12-05",
@@ -916,8 +907,6 @@
         "gender" : "メス",
         "animaltype" : "パンダ",
         "birthplace" : "野生",
-        "partners" : "フェイフェイ",
-
         "comingdate" : "1980-1-29",
         "preset" : true,
         "relations" : [
@@ -938,7 +927,6 @@
         "isFavorite": false,
         "location" : "上野動物園",
         "locationurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
-        "partners" : "ホアンホアン",
         "children" : "ユウユウ、トントン",
 
         "gender" : "オス",
@@ -968,7 +956,6 @@
         "gender" : "メス",
         "animaltype" : "パンダ",
         "birthplace" : "野生",
-        "partners" : "カンカン",
         "comingdate" : "1972-10-28",
         "preset" : true,
         "relations" : [
@@ -993,7 +980,6 @@
         "gender" : "オス",
         "animaltype" : "パンダ",
         "birthplace" : "野生",
-        "partners" : "ランラン",
         "comingdate" : "1972-10-28",
         "preset" : true,
         
