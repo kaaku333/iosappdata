@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v33 2024/4/1",
+        "_version": "v32 2024/3/31",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -634,12 +634,11 @@
         "partners" : "コウコウ(２代目)、コウコウ(初代)",
 
         "comingdate" : "2000-07-16",
-        "died" : true,
-        "dieddate":"2024-04-01",
+        "returndate" : "2023-12-31",
+        "returnexpdate" : "2023-12-31",
 
         "preset" : true,
         "relations" : [
-				[ "神戸市王子動物園 タンタン病死の報告", "https://www.kobe-ojizoo.jp/info/detail/?id=662" ],
                 [ "神戸市王子動物園 パンダの部屋", "http://www.kobe-ojizoo.jp/animal/panda/"],
                 [ "神戸市王子動物園 ありがとうタンタン", "https://thanks-tantan.com/" ],
                 [ "タンタンのYouTube", "https://www.youtube.com/results?search_query=%E3%82%BF%E3%83%B3%E3%82%BF%E3%83%B3+%E3%83%91%E3%83%B3%E3%83%80" ],
@@ -649,7 +648,7 @@
                 [ "関西ウォーカー パンダのタンタンお別れ", "https://www.walkerplus.com/trend/matome/article/1004233/" ],
                 [ "東洋経済デジタル 20年ぶりに中国へ帰る背景", "https://toyokeizai.net/articles/-/357872" ],
             ],
-        "note" : "メモ：神戸のお嬢さまというニックネームを持っていました。手足が短くてお腹が大きく子供のような愛くるしい体型をしていました。",
+        "note" : "メモ：神戸のお嬢さまというニックネームを持っています。手足が短くてお腹が大きく子供のような愛くるしい体型をしています。",
 
         "imageName": "tantan1",
     },
