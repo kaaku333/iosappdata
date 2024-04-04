@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v34 2024/4/4",
+        "_version": "v33 2024/4/1",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -635,7 +635,7 @@
 
         "comingdate" : "2000-07-16",
         "died" : true,
-        "dieddate":"2024-03-31",
+        "dieddate":"2024-04-01",
 
         "preset" : true,
         "relations" : [
