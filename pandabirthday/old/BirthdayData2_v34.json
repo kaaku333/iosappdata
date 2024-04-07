@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v35 2024/4/7",
+        "_version": "v34 2024/4/4",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -22,7 +22,7 @@
                 [ "Yahoo News シャオシャオの記事", "https://news.yahoo.co.jp/search?p=%E3%82%B7%E3%83%A3%E3%82%AA%E3%82%B7%E3%83%A3%E3%82%AA&ei=utf-8" ],
                 [ "東洋経済オンライン 中川さんのパンダ記事", "https://toyokeizai.net/list/author/%E4%B8%AD%E5%B7%9D_%E7%BE%8E%E5%B8%86" ],
             ],
-        "note" : "上野動物園の双子パンダのオスの子です。わんぱくだけど甘えん坊です。",
+        "note" : "メモ：上野動物園の双子パンダのオスの子です。わんぱくだけど甘えん坊です。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "shaoshao1",
         "newImageNames": [ "shaoshao3" ],
@@ -50,7 +50,7 @@
                 [ "東洋経済オンライン 中川さんのパンダ記事", "https://toyokeizai.net/list/author/%E4%B8%AD%E5%B7%9D_%E7%BE%8E%E5%B8%86" ],
             ],
 
-        "note" : "上野動物園の双子パンダのメスの子です。マイペースだけどシャオシャオには負けません。",
+        "note" : "メモ：上野動物園の双子パンダのメスの子です。マイペースだけどシャオシャオには負けません。",
         "_comment": "imageName は App ver1.X の互換性のため. newImageNames は２号と順番を入れ替えて違う画像が選ばれるようにする",
         "imageName": "rayray1",
         "newImageNames": [ "rayray3" ],
@@ -69,7 +69,7 @@
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、良浜",
         "brothers" : "彩浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
-        "returnexpdate" : "2028-11-22",
+        "returnexpdate" : "2025-11-22",
         "preset" : true,
         "relations" : [
                 
@@ -80,7 +80,7 @@
                 [ "楓浜のYouTube", "https://www.youtube.com/results?search_query=%E6%A5%93%E6%B5%9C" ],
 
             ],
-        "note" : "アドベンチャーワールドのパンダ一家の末っ子です。お姉ちゃんたちに負けずにおてんばに育ちました。2022年４月から独り立ちしました。",
+        "note" : "メモ：アドベンチャーワールドのパンダ一家の末っ子です。お姉ちゃんたちに負けずにおてんばに育ちました。2022年４月から独り立ちしました。",
         "_comment": "imageName は App ver1.X の互換性のため",
         "imageName": "fuhin1",
         "newImageNames": ["fuhin2"],
@@ -99,7 +99,7 @@
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、良浜",
         "brothers" : "楓浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
-        "returnexpdate" : "2026-08-14",
+        "returnexpdate" : "2023-08-14",
         "preset" : true,
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
@@ -109,7 +109,7 @@
                 [ "和歌山経済新聞「彩浜」2年の歩み", "https://wakayama.keizai.biz/column/14/"],
             ],
 
-        "note" : "体重わずか７５gで生まれました。お姉ちゃん達に負けずに元気に育ちました。仕草に貫禄があって社長というニックネームを持ってます。",
+        "note" : "メモ：体重わずか７５gで生まれました。お姉ちゃん達に負けずに元気に育ちました。仕草に貫禄があって社長というニックネームを持ってます。",
 
         "imageName": "saihin1",
     },
@@ -139,7 +139,7 @@
                 [ "西日本新聞 シャンシャン トピックス", "https://www.nishinippon.co.jp/theme/x54vswan5l/" ],
             ],
 
-        "note" : "およそ３０年ぶりに上野動物園で生まれたパンダで、最近のパンダブームの立役者です。丸顔の美人さんです。",
+        "note" : "メモ：およそ３０年ぶりに上野動物園で生まれたパンダで、最近のパンダブームの立役者です。丸顔の美人さんです。",
 
         "imageName": "shanshan1",
     },
@@ -165,7 +165,7 @@
                 [ "アドベンチャーワールド 結浜フォトギャラリー", "http://pandababy-aws.com/gallery/baby_index.html"],
                 [ "結浜のYouTube", "https://www.youtube.com/results?search_query=%E7%B5%90%E6%B5%9C" ],
             ],
-        "note" : "体重１９７gで大きく生まれました。好奇心旺盛で、尖った頭の毛がチャームポイントです。",
+        "note" : "メモ：体重１９７gで大きく生まれました。好奇心旺盛で、尖った頭の毛がチャームポイントです。",
 
         "imageName": "yuihin1",
     },
@@ -192,7 +192,7 @@
                 [ "アドベンチャーワールド 桜浜・桃浜トピックス", "https://www.aws-s.com/topics/?c=12"],
                 [ "桜浜のYouTube", "https://www.youtube.com/results?search_query=%E6%A1%9C%E6%B5%9C" ],
             ],
-        "note" : "双子の桃浜の姉です。おっとりマイペースです。丸顔と大きな耳が特徴です。",
+        "note" : "メモ：双子の桃浜の姉です。おっとりマイペースです。丸顔と大きな耳が特徴です。",
 
         "imageName": "ouhin1",
     },
@@ -219,7 +219,7 @@
                 [ "アドベンチャーワールド 桜浜・桃浜トピックス", "https://www.aws-s.com/topics/?c=12"],
                 [ "桃浜のYouTube", "https://www.youtube.com/results?search_query=%E6%A1%83%E6%B5%9C" ],
             ],
-        "note" : "双子の桜浜の妹です。好奇心旺盛なおてんばさんです。頭が三角形で両耳の間が狭く鼻が長いのが特徴です。",
+        "note" : "メモ：双子の桜浜の妹です。好奇心旺盛なおてんばさんです。頭が三角形で両耳の間が狭く鼻が長いのが特徴です。",
 
         "imageName": "touhin1",
     },
@@ -252,7 +252,7 @@
                 [ "東京都 パンダ保護研究実施の協力協定の延長", "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/12/11/11.html" ],
                 
             ],
-        "note" : "頭がとんがっていて木登り大好きです。優しくおっとりとしたマイペースな性格ですが、おっちょこちょいな面も持っています。シンシンとは幼なじみです。",
+        "note" : "メモ：頭がとんがっていて木登り大好きです。優しくおっとりとしたマイペースな性格ですが、おっちょこちょいな面も持っています。シンシンとは幼なじみです。",
 
 
         "imageName": "riri1",
@@ -285,7 +285,7 @@
                 [ "シンシンのYouTube", "https://www.youtube.com/results?search_query=%E3%82%B7%E3%83%B3%E3%82%B7%E3%83%B3+%E3%83%91%E3%83%B3%E3%83%80" ],
                 [ "東京都 パンダ保護研究実施の協力協定の延長", "https://www.metro.tokyo.lg.jp/tosei/hodohappyo/press/2020/12/11/11.html" ],
             ],
-        "note" : "超マイペースで食事中は周りが見えなくなる食いしん坊です。音に敏感な繊細な面も持っています。リーリーとは幼なじみです。",
+        "note" : "メモ：超マイペースで食事中は周りが見えなくなる食いしん坊です。音に敏感な繊細な面も持っています。リーリーとは幼なじみです。",
 
         "imageName": "shinshin1",
     },
@@ -312,7 +312,7 @@
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
             ],
-        "note" : "海浜と共に良浜の２組目の双子です。",
+        "note" : "メモ：海浜と共に良浜の２組目の双子です。",
 
         "imageName": "oopanda_pink",
     },
@@ -339,7 +339,7 @@
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
             ],
-        "note" : "海浜と共に良浜の２組目の双子です。",
+        "note" : "メモ：海浜と共に良浜の２組目の双子です。",
 
         "imageName": "oopanda_pink",
     },
@@ -366,7 +366,7 @@
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
             ],
-        "note" : "陽浜と共に良浜の２組目の双子です。",
+        "note" : "メモ：陽浜と共に良浜の２組目の双子です。",
 
         "imageName": "oopanda_blue",
     },
@@ -393,7 +393,7 @@
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
             ],
-        "note" : "良浜の初の子供で梅浜と双子です。",
+        "note" : "メモ：良浜の初の子供で梅浜と双子です。",
 
         "imageName": "oopanda_blue",
     },
@@ -420,7 +420,7 @@
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
             ],
-        "note" : "良浜の初の子供で永浜と双子です。",
+        "note" : "メモ：良浜の初の子供で永浜と双子です。",
 
         "imageName": "oopanda_pink",
     },
@@ -447,7 +447,7 @@
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
             ],
-        "note" : "愛浜と共にアドベンチャーワールドで生まれた二組目の双子パンダです。",
+        "note" : "メモ：愛浜と共にアドベンチャーワールドで生まれた二組目の双子パンダです。",
 
         "imageName": "oopanda_blue",
     },
@@ -474,7 +474,7 @@
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
             ],
-        "note" : "明浜と共にアドベンチャーワールドで生まれた二組目の双子パンダです。",
+        "note" : "メモ：明浜と共にアドベンチャーワールドで生まれた二組目の双子パンダです。",
 
         "imageName": "oopanda_pink",
     },
@@ -502,7 +502,7 @@
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
                 [ "アドベンチャーワールド いってらっしゃい「幸浜」", "https://www.aws-s.com/topics/detail?id=top066"],
             ],
-        "note" : "アドベンチャーワールドで初めて一般公募で名前が決まったパンダです。",
+        "note" : "メモ：アドベンチャーワールドで初めて一般公募で名前が決まったパンダです。",
 
         "imageName": "oopanda_blue",
     },
@@ -529,7 +529,7 @@
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
             ],
-        "note" : "隆浜と共に日本で初めて生まれた双子のパンダです。",
+        "note" : "メモ：隆浜と共に日本で初めて生まれた双子のパンダです。",
 
         "imageName": "oopanda_blue",
     },
@@ -556,7 +556,7 @@
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
             ],
-        "note" : "秋浜と共に日本で初めて生まれた双子のパンダです。",
+        "note" : "メモ：秋浜と共に日本で初めて生まれた双子のパンダです。",
 
         "imageName": "oopanda_blue",
     },
@@ -584,7 +584,7 @@
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
                 ["成都ジャイアントパンダ繁殖研究基金会 白浜パンダファミリーの長男「雄浜」", "http://www.panda.org.cn/jp/news/xmqw/2019-05-09/7515.html"],
             ],
-        "note" : "飼育下のパンダで初の冬に生まれたパンダです。お父さんの永明に似てグルメで子沢山パパになりました。",
+        "note" : "メモ：飼育下のパンダで初の冬に生まれたパンダです。お父さんの永明に似てグルメで子沢山パパになりました。",
 
         "imageName": "oopanda_blue",
     },
@@ -606,14 +606,14 @@
         "brothers" : "明浜、愛浜、幸浜、秋浜、隆浜、雄浜、奇珍、奇縁",
         "partners" : "永明",
         "children" : "楓浜、彩浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
-        "returnexpdate" : "2030-09-06",
+        "returnexpdate" : "2026-09-06",
 
         "preset" : true,
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
                 [ "良浜のYouTube", "https://www.youtube.com/results?search_query=%E8%89%AF%E6%B5%9C" ],
             ],
-        "note" : "日本生まれとして初めてのお母さんパンダです。１０頭の子供がいるベテランママです。",
+        "note" : "メモ：日本生まれとして初めてのお母さんパンダです。１０頭の子供がいるベテランママです。",
 
         "imageName": "rauhin1",
     },
@@ -639,7 +639,7 @@
 
         "preset" : true,
         "relations" : [
-                [ "神戸市王子動物園 タンタン病死の報告", "https://www.kobe-ojizoo.jp/info/detail/?id=662" ],
+				[ "神戸市王子動物園 タンタン病死の報告", "https://www.kobe-ojizoo.jp/info/detail/?id=662" ],
                 [ "神戸市王子動物園 パンダの部屋", "http://www.kobe-ojizoo.jp/animal/panda/"],
                 [ "神戸市王子動物園 ありがとうタンタン", "https://thanks-tantan.com/" ],
                 [ "タンタンのYouTube", "https://www.youtube.com/results?search_query=%E3%82%BF%E3%83%B3%E3%82%BF%E3%83%B3+%E3%83%91%E3%83%B3%E3%83%80" ],
@@ -649,7 +649,7 @@
                 [ "関西ウォーカー パンダのタンタンお別れ", "https://www.walkerplus.com/trend/matome/article/1004233/" ],
                 [ "東洋経済デジタル 20年ぶりに中国へ帰る背景", "https://toyokeizai.net/articles/-/357872" ],
             ],
-        "note" : "神戸のお嬢さまというニックネームを持っていました。手足が短くてお腹が大きく子供のような愛くるしい体型をしていました。",
+        "note" : "メモ：神戸のお嬢さまというニックネームを持っていました。手足が短くてお腹が大きく子供のような愛くるしい体型をしていました。",
 
         "imageName": "tantan1",
     },
@@ -679,7 +679,7 @@
         "relations" : [
             ["成都ジャイアントパンダ繁殖研究基金会 パンダ梅梅と日本の縁", "http://www.pandahome.org/jp/news/pandanew/2014-08-01/2695.html"],
             ],
-        "note" : "良浜のお母さんです。日中で合わせて９頭の子供を産んだビッグマザーでした。",
+        "note" : "メモ：良浜のお母さんです。日中で合わせて９頭の子供を産んだビッグマザーです。",
         "imageName": "oopanda_pink",
     },
 
@@ -703,7 +703,7 @@
         "preset" : true,
         "relations" : [
             ],
-        "note" : "永明と一緒に来日しましたが、残念ながら３年後に亡くなってしまいました。",
+        "note" : "メモ：永明と一緒に来日しましたが、残念ながら３年後に亡くなってしまいました。",
         "imageName": "oopanda_pink",
     },
     
@@ -733,7 +733,7 @@
                 [ "永明のYouTube", "https://www.youtube.com/results?search_query=%E6%B0%B8%E6%98%8E+%E3%83%91%E3%83%B3%E3%83%80" ],
             ],
 
-        "note" : "ダンディーで女性に優しい超ベテランパパです。１６頭の子供がいます。竹の好き嫌いがはっきりしているグルメです。",
+        "note" : "メモ：ダンディーで女性に優しい超ベテランパパです。１６頭の子供がいます。竹の好き嫌いがはっきりしているグルメです。",
 
         "imageName": "eimei1",
     },
@@ -761,7 +761,7 @@
             ["王子動物園 パンダの部屋", "http://www.kobe-ojizoo.jp/animal/panda/" ],
             ["現代メディア記事　動物園のパンダと今は亡きお婿さん", "https://gendai.media/articles/-/87329?page=3"],
             ],
-        "note" : "優しくてなんでも食べるパンダでした。",
+        "note" : "メモ：優しくてなんでも食べるパンダでした。",
         "imageName": "oopanda_blue",
     },
     {
@@ -789,7 +789,7 @@
             ["王子動物園 パンダの部屋", "http://www.kobe-ojizoo.jp/animal/panda/" ],
             ["AFP BBNews 中国で「オス」と思われていたパンダが出産", "https://www.afpbb.com/articles/-/2265552"],
             ],
-        "note" : "タンタンのペアとして来日しました。来日時はオスだと思われていましたが、後からメスだということがわかりました。",
+        "note" : "メモ：タンタンのペアとして来日しました。来日時はオスだと思われていましたが、後からメスだということがわかりました。",
         "imageName": "oopanda_pink",
     },
     
@@ -819,7 +819,7 @@
                 [ "上野動物園のシュアンシュアン来日日決定のお知らせ", "https://www.tokyo-zoo.net/topic/topics_detail?kind=news&link_num=633" ],
                 [ "上野動物園のシュアンシュアン到着のお知らせ", "https://www.tokyo-zoo.net/topic/topics_detail?kind=news&link_num=671"],
             ],
-        "note" : "陽気で豪快なメキシコ娘でした。メキシコから来てメキシコに戻り、長生きしました。",
+        "note" : "メモ：陽気で豪快なメキシコ娘でした。メキシコから来てメキシコに戻り、長生きしました。",
         "imageName": "oopanda_pink",
     },
     {
@@ -847,7 +847,7 @@
                 [ "上野動物園のリンリン３度出発のお知らせ", "https://www.tokyo-zoo.net/topic/topics_detail?kind=news&link_num=269"],
                 [ "上野動物園のリンリン死亡のお知らせ", "https://www.tokyo-zoo.net/topic/topics_detail?inst=ueno&link_num=9050"],
             ],
-        "note" : "メキシコと飛行機で３往復した経験があるパンダでした。",
+        "note" : "メモ：メキシコと飛行機で３往復した経験があるパンダでした。",
 
         "imageName": "oopanda_blue",
     },
@@ -873,7 +873,7 @@
         "relations" : [
             [ "上野動物園の歴代のパンダたち", "https://www.ueno-panda.jp/history/"],
             ],
-        "note" : "おっとりした性格のパンダでした。リンリンとの交換で北京動物園に行きました。",
+        "note" : "メモ：おっとりした性格のパンダでした。リンリンとの交換で北京動物園に行きました。",
 
         "imageName": "oopanda_blue",
     },
@@ -897,7 +897,7 @@
         "relations" : [
             [ "上野動物園の歴代のパンダたち", "https://www.ueno-panda.jp/history/"],
             ],
-        "note" : "日本で初めて繁殖に成功したパンダでした。木登りが大好きなおてんば娘でした。",
+        "note" : "メモ：日本で初めて繁殖に成功したパンダでした。木登りが大好きなおてんば娘でした。",
 
         "imageName": "oopanda_pink",
     },
@@ -924,7 +924,7 @@
         "relations" : [
             [ "上野動物園の歴代のパンダたち", "https://www.ueno-panda.jp/history/"],
             ],
-        "note" : "日本で初めて出産、子育てした逞しい母パンダでした。",
+        "note" : "メモ：日本で初めて出産、子育てした逞しい母パンダでした。",
 
         "imageName": "oopanda_pink",
     },
@@ -950,7 +950,7 @@
         "relations" : [
             [ "上野動物園の歴代のパンダたち", "https://www.ueno-panda.jp/history/"],
             ],
-        "note" : "大人（たいじん）の風格を持つパンダでした。",
+        "note" : "メモ：大人（たいじん）の風格を持つパンダでした。",
 
         "imageName": "oopanda_blue",
     },
@@ -975,7 +975,7 @@
         "relations" : [
             [ "上野動物園の歴代のパンダたち", "https://www.ueno-panda.jp/history/"],
             ],
-        "note" : "カンカンと一緒に初めて日本に来たパンダです。丸顔美人と言われた美しいパンダでした。",
+        "note" : "メモ：カンカンと一緒に初めて日本に来たパンダです。丸顔美人と言われた美しいパンダでした。",
 
         "imageName": "oopanda_pink",
     },
@@ -1001,7 +1001,7 @@
         "relations" : [
                 [ "上野動物園の歴代のパンダたち", "https://www.ueno-panda.jp/history/"],
             ],
-        "note" : "ランランと一緒に初めて日本に来たパンダです。吊るしたタイヤで遊ぶのが大好きでした。",
+        "note" : "メモ：ランランと一緒に初めて日本に来たパンダです。吊るしたタイヤで遊ぶのが大好きでした。",
 
         "imageName": "oopanda_blue",
     },
