@@ -23,8 +23,8 @@
       color: #333333;
     }
     h3 {
-      font-size: 2.5vmax;
-      padding: 0.3em;
+      font-size: 2.6vmax;
+      padding: 0.4em;
       border-left: solid 8px #7e7;
     }
 
@@ -116,5 +116,9 @@
     .mask_qmark {
          mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/questionmark.square.fill@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/questionmark.square.fill@2x.png);
+    }
+    .plusminus_qmark {
+         mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/plusminus.circle@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/plusminus.circle@2x.png);
     }
 </style>
