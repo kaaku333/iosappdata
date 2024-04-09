@@ -44,15 +44,23 @@
       .icon {
        display: inline-block;
        margin: 0 7 -7 7;
-       width: 1.2em;
-       height: 1.2em;
+       width: 1.0em;
+       height: 1.0em;
        mask: no-repeat center / contain;
        -webkit-mask: no-repeat center / contain ;
-       background: #448844;
+       background: #224422;
       }
     .mask_plus {
          mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/plus@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/plus@2x.png);
+    }
+    .mask_trash {
+         mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/trash@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/trash@2x.png);
+    }
+    mask_filter {
+             mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/line.3.horizontal.decrease.circle@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/line.3.horizontal.decrease.circle@2x.png);
     }
       
       
@@ -66,17 +74,17 @@
       <dd><br></dd>
       <dt>アイコンの説明</dt>
       <dd></dd>
-      <dt><div class="icon mask_plus"></div>（新規データ追加）</dt>
-      <dd>タップすると新規登録画面に移動します。ユーザーが誕生日やイベントを登録できます。 </dd>
-      <dt>表示絞り込みフィルター</dt>
-      <dd>フィルターを選んでメイン画面に表示する項目を絞り込んで表示できます。</dd>
+      <dt>「<div class="icon mask_plus"></div>」新規データ追加</dt>
+      <dd>タップすると新規登録画面に移動します。ユーザーデータ（誕生日やイベント）を登録できます。 </dd>
+      <dt>「<div class="icon mask_filter"></div>」(表示絞り込みフィルター)</dt>
+      <dd>データを絞り込んで表示できます。</dd>
       <ul>
-      <li>デフォルト...現在いるパンダとユーザー登録データ
-      <li>ユーザーデータ...ユーザー登録データ
+      <li>デフォルト...現在日本にいるパンダとユーザーデータ
+      <li>ユーザーデータ...ユーザーが登録したデータ
       <li>お気に入り...お気に入り登録したデータ
-      <li>今いるパンダ...今日本にいるパンダ
+      <li>今いるパンダ...現在日本にいるパンダ
       <li>過去も含むパンダ...過去日本にいたパンダを含むパンダ
-      <li>全てのデータ...過去日本にいたパンダを含むパンダとユーザー登録データ
+      <li>全てのデータ...過去日本にいたパンダを含むパンダとユーザーデータ
       </ul>
       <dt>④日付表示切替</dt>
       <dd>情報欄の日付表示を年表示、年月日表示、日数表示に切り換えます。現在表示中の分類によって切り替わる日数表示が変わります。分類ごとに設定を覚えます。</dd>
