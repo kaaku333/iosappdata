@@ -3,90 +3,46 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>help_mainPage.html</title>
+    <link href="style.css" rel="stylesheet" />
     <style type="text/css">
-    #body {
+    
+     #body {
       font-family: "Helvetica", "ヒラギノ角ゴ ProN W3";
       font-size: 22pt;
       background-color: #c5e0b4;
     }
-
-      #h1 {
-        font-size: 30pt;
-      }
-      #h2 {
-        font-size: 24pt;
-      }
-      
-      img {
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-      }
-
-      dl  {
-        padding: 10px 20px 20px 30px;
-        line-height: 1.4;
-      }
-      
-      dt {
-        font-weight: bold; 
-        margin-top: 10px;
-        margin-bottom: 5px;
-        font-size: 3vmax;
-      }
-      dd {
-        font-size: 3vmax;
-      }
-      ul {
-        margin-left:20px;
-        font-size: 3vmax;
-      }
-      .icon {
-       display: inline-block;
-       margin: 0 7 -7 7;
-       width: 1.0em;
-       height: 1.0em;
-       mask: no-repeat center / contain;
-       -webkit-mask: no-repeat center / contain ;
-       background: #224422;
-      }
-    .mask_plus {
-         mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/plus@2x.png);
-         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/plus@2x.png);
-    }
-    .mask_trash {
-         mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/trash@2x.png);
-         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/trash@2x.png);
-    }
-    mask_filter {
-             mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/line.3.horizontal.decrease.circle@2x.png);
-         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/line.3.horizontal.decrease.circle@2x.png);
-    }
-      
-      
-</style></head>
+    </style>
+  </head>
   <body id="body">
     <p></p>
     <img src="help_mainpage.png" alt="main page image" title="main page ">
-    <dl>
-      <dt>メイン画面とは</dt>
-      <dd>起動直後に表示される、アプリの基本画面です。パンダ情報を一覧表示します。</dd>
-      <dd><br></dd>
-      <dt>アイコンの説明</dt>
-      <dd></dd>
-      <dt>「<div class="icon mask_plus"></div>」新規データ追加</dt>
-      <dd>タップすると新規登録画面に移動します。ユーザーデータ（誕生日やイベント）を登録できます。 </dd>
-      <dt>「<div class="icon mask_filter"></div>」(表示絞り込みフィルター)</dt>
+    <h2>メイン画面とは</h2>
+    <dl class="main">
+      <dd>起動直後に表示される、アプリの基本画面です。パンダ情報を一覧で表示します。</dd>
+    </dl>
+    
+    <h2>画面の説明</h2>
+    <h3>画面上部のアイコン</h3>
+    <dl class="main">
+      <dt><div class="icon mask_plus"></div> (新規データ追加)</dt>
+      <dd>タップすると新規登録画面に移動します。ユーザーデータ（ユーザーが登録する誕生日やイベント）を登録できます。 </dd>
+      <dt><div class="icon mask_filter"></div> (表示絞り込みフィルター)</dt>
       <dd>データを絞り込んで表示できます。</dd>
-      <ul>
-      <li>デフォルト...現在日本にいるパンダとユーザーデータ
-      <li>ユーザーデータ...ユーザーが登録したデータ
-      <li>お気に入り...お気に入り登録したデータ
-      <li>今いるパンダ...現在日本にいるパンダ
-      <li>過去も含むパンダ...過去日本にいたパンダを含むパンダ
-      <li>全てのデータ...過去日本にいたパンダを含むパンダとユーザーデータ
-      </ul>
-      <dt>④日付表示切替</dt>
+      <dl class="sub1">
+      <dt>デフォルト</dt>
+      <dd>現在日本にいるパンダとユーザーデータ</dd>
+      <dt>ユーザーデータ</dt>
+      <dd>ユーザーが登録したデータ</dd>
+      <dt>お気に入り</dt>
+      <dd>お気に入り登録したデータ</dd>
+      <dt>今いるパンダ</dt>
+      <dd>現在日本にいるパンダ</dd>
+      <dt>過去も含むパンダ</dt>
+      <dd>過去日本にいたパンダを含むパンダ</dd>
+      <dt>全てのデータ</dt>
+      <dd>過去日本にいたパンダを含むパンダとユーザーデータ</dd>
+      </dl>
+      <dt><div class="icon mask_timer"></div> (日付表示切り替え)</dt>
       <dd>情報欄の日付表示を年表示、年月日表示、日数表示に切り換えます。現在表示中の分類によって切り替わる日数表示が変わります。分類ごとに設定を覚えます。</dd>
       <dt>⑤分類名</dt>
       <dd>現在表示している分類の種類を示します。タップすると分類選択メニューから表示分類を選べます。</dd>

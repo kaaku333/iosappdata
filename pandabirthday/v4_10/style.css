@@ -1,0 +1,120 @@
+    <style type="text/css">
+      #h1 {
+        font-size: 30pt;
+      }
+      #h2 {
+        font-size: 24pt;
+      }
+      
+      img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+      }
+    h1 {
+      font-size: 3vmax;
+    }
+    h2 {
+      font-size: 3vmax;
+      padding: 0.4em 0.5em;
+      border-left: solid 8px #7e7;
+    /*  border-bottom: solid 8px #3250dd; */
+      background-color: #cfc;
+      color: #333333;
+    }
+    h3 {
+      font-size: 2.5vmax;
+      padding: 0.3em;
+      border-left: solid 8px #7e7;
+    }
+
+    dl.main  {
+      padding: 10px 20px 20px 30px;
+      line-height: 1.4em;
+    }
+    
+    dl.main dt{
+      font-weight: bold; 
+      margin-top: 2vmax;
+      margin-bottom: 0.3em;
+      font-size: 2.5vmax;
+    }
+    dl.main dd{
+      font-size: 2.5vmax;
+      margin-bottom: 0.6em;
+       display: list-item;
+       list-style-type: circle;
+       line-height: 150%;
+    }
+    dl.sub1{
+      display:flex;
+      flex-wrap: wrap;
+      text-align: left;
+      padding: 20px;
+      margin: 10px;
+      line-height: normal;
+    }
+    dl.sub1 dt{
+        font-size: 2vmax;
+        vertical-align: baseline;
+        background: #cfc;
+        padding: 20px;
+        margin: 0;
+        width: 30%;
+        box-sizing: border-box;
+        border: 1px solid #242; 
+    }
+    dl.sub1 dd{
+	   list-style-type: none;
+	   background: #aca;
+       font-size: 2vmax;
+       padding: 20px;
+       margin: 0;
+       width: 70%;
+       border: 1px solid #242;
+       box-sizing: border-box;
+    }
+
+
+      .icon {
+       display: inline-block;
+       margin: 0 7 -7 7;
+       width: 1.0em;
+       height: 1.0em;
+       mask: no-repeat center / contain;
+       -webkit-mask: no-repeat center / contain ;
+       background: #224422;
+      }
+    .mask_plus {
+         mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/plus@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/plus@2x.png);
+    }
+    .mask_trash {
+         mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/trash@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/trash@2x.png);
+    }
+    .mask_filter {
+             mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/line.3.horizontal.decrease.circle@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/line.3.horizontal.decrease.circle@2x.png);
+    }
+    .mask_timer {
+         mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/timer@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/timer@2x.png);
+    }
+    .mask_house {
+         mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/house.fill@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/house.fill@2x.png);
+    }
+    .mask_gear {
+         mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/gearshape.fill@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/gearshape.fill@2x.png);
+    }
+    .mask_info {
+         mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/info.circle.fill@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/info.circle.fill@2x.png);
+    }
+    .mask_qmark {
+         mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/questionmark.square.fill@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/questionmark.square.fill@2x.png);
+    }
+</style>
