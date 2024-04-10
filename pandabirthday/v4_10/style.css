@@ -1,16 +1,20 @@
-    <style type="text/css">
-      #h1 {
-        font-size: 30pt;
-      }
-      #h2 {
-        font-size: 24pt;
-      }
-      
-      img {
+<style type="text/css">
+     #body {
+      font-family: "Helvetica", "ヒラギノ角ゴ ProN W3";
+      font-size: 22pt;
+      background-color: #c5e0b4;
+    }
+    img {
         max-width: 100%;
         width: 100%;
         height: auto;
-      }
+    }
+    a:link, a:visited {
+          color: #353;
+          background: #cfc;
+          padding: 0.2em;
+          text-decoration: none;
+    }
     h1 {
       font-size: 3vmax;
     }
@@ -113,11 +117,11 @@
          mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/info.circle.fill@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/info.circle.fill@2x.png);
     }
-    .mask_qmark {
+    .mask_question {
          mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/questionmark.square.fill@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/questionmark.square.fill@2x.png);
     }
-    .plusminus_qmark {
+    .mask_plusminus {
          mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/plusminus.circle@2x.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/pandabirthday/icons/plusminus.circle@2x.png);
     }
