@@ -545,16 +545,16 @@
          <dd> The tag is one of the <a href="#selectList">select list</a> and can be added or changed by the user. </dd>
          <dd> The tag can be used for filtering on the home screen. </dd>
 
-         <dt>Severity</dt>
-         <dd>You can express the importance of the item with the number of ⭐️. </dd>
+         <dt>Priority</dt>
+         <dd>You can express the priority of the item with the number of ⭐️. </dd>
          <dd>Set important or frequently used items to ⭐️⭐⭐⭐⭐ to distinguish them from other items. </dd>
-         <dd>Importance can be used for grouping and filtering on the home screen. </dd>
+         <dd>Priority can be used for grouping and filtering on the home screen. </dd>
 
          <dt>Color</dt>
          <dd>You can choose a color that visually identifies the item. </dd>
          <dd>The color label name is one of the <a href="#selectList">select list</a> and can be renamed. </dd>
          <dd>The color can be set from the menu on the item detail screen or item edit screen. </dd>
-         <dd>Importance can be used for grouping and filtering on the home screen. </dd>
+         <dd>Color can be used for grouping and filtering on the home screen. </dd>
 
          <dt>Deprecated state</dt>
          <dd>Turn on when the item is no longer in use. </dd>
@@ -665,8 +665,8 @@
          <dd>The free string type is one of <a href="#selectList">select list</a> and can be added or changed by the user. </dd>
 
          <dt>Date</dt>
-         <dd>You can register multiple dates other than the due date. </dd>
-         <dd> It can also be treated as an additional due date. </dd>
+         <dd>You can register multiple dates. </dd>
+         <dd> It can also be treated as due date. </dd>
         
          <dt>Date type</dt>
          <dd>Choose the type of date. </dd>
@@ -776,6 +776,7 @@
 
          <dt>About fields</dt>
          <dd>Create the display format by arranging the desired fields in the desired order on the <a href="#editDisplayFormat">Display Format Edit Screen</a>. </dd>
+         <dd>Category, tag, priority, and notes are the minimum required fields. </dd>
          <dd> Some fields group together multiple directly related fields, such as payment information. </dd>
          <dd>Some fields, such as the reading of the title, the creation date for the update date, and the list of items that refer to the item, are displayed at fixed positions on the item details screen and item display screen. </dd>
 
@@ -799,7 +800,7 @@
         
          <dt>Group Display</dt>
          <dd>The top of the group display on the left side of the screen is the grouping name. You can switch the grouping type by tapping the grouping name. </dd>
-         <dd>Grouping can be selected from category, title (in alphabetical order), importance, modified date, due date, and color. </dd>
+         <dd>Grouping can be selected from category, title (in alphabetical order), priority, modified date, due date, and color. </dd>
          <dd> If you change the grouping, the grouping of the item list display on the right will also be changed. </dd>
          <dd>If you tap any group name from the group list under the grouping name, the account list in the right pane will scroll to that group. </dd>
 
@@ -810,7 +811,7 @@
          <dt>Title</dt>
          <dd>When you want to search for an item by name</dd>
          <dt>Priority</dt>
-         <dd>Used when you want to find items of any importance</dd>
+         <dd>Used when you want to find items of any priority</dd>
          <dt>Update time</dt>
          <dd>Used when you want to find recently updated items</dd>
          <dt>Due date</dt>
@@ -821,7 +822,7 @@
          
          <dt>Filter view</dt>
          <dd>Above the item list display on the right side of the screen is a <i class="icon dec3lines"></i> filter icon , filter status and the total number of items currently displayed. <i class="icon dec3lines"></i> Tap the filter icon to display the filter menu, where you can select various conditions to filter and display items. </dd>
-         <dd>In addition to category, tag, importance, update date, time limit, and color, you can also select account linkage, payment status, deprecated status, and No login required as filtering conditions. </dd>
+         <dd>In addition to category, tag, priority, update date, time limit, and color, you can also select account linkage, payment status, deprecated status, and No login required as filtering conditions. </dd>
          <dd>If you select multiple filters, only items matching all conditions will be displayed. The total number of items is the total number of matched items, 0 if none match. </dd>
          <dd>When filtering is in progress, the filter icon is displayed in a filled state <i class="icon dec3lines_fill"></i> . </dd>
          <dd>  If you press the <i class="icon dec3lines_fill"></i> filter icon and select "Reset Filters", you can reset all filter conditions at once. </dd>
@@ -1082,8 +1083,8 @@
          <dd> Add minimal fields for items that have relationships with other items. It is usually convenient to add the necessary fields from here. </dd>
          <dt>Add single minimum fields</dt>
          <dd> Add minimal fields for items that have no relationship to other items. </dd>
-         <dt>Delete all fields</dt>
-         <dd>Remove all fields. </dd>
+         <dt>Reset fields</dt>
+         <dd>Revert to minimal fields. </dd>
          </dl>
 
          <dt>Field editing sheet</dt>
