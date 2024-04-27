@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>help_mainPage</title>
+    <style type="text/css">
+    #body {
+      font-family: "Helvetica", "ヒラギノ角ゴ ProN W3";
+      font-size: 3vmax;
+      background-color: #777777;
+      color: #333333
+    }
+    
+    a.sf {font-family: 'SF Pro'}
+
+    h1 {
+      font-size: 3vmax;
+    }
+    h2 {
+      font-size: 3vmax;
+      padding: 0.4em 0.5em;
+      border-left: solid 8px #7de6b4;
+    /*  border-bottom: solid 8px #3250dd; */
+      background-color: #c2ffed;
+      color: #333333;
+    }
+    h3 {
+      font-size: 2.5vmax;
+      padding: 0.3em;
+      border-left: solid 5px #7de6b4;
+    }
+    
+
+    a:link, a:visited {
+          color: #333333;
+          background: #c2ffed;
+          padding: 0.2em;
+          text-decoration: none;
+    }
+    .img_area img{
+      width: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .icon_white {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #EEEEEE;
+    }
+    .icon_black {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #111111;
+    }
+    .icon_blue {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #5588FF;
+    }
+    .icon_red {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #FF5588;
+    }
+
+    .icon_darkblue {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #2222FF;
+    }
+    dl.main  {
+      padding: 10px 20px 20px 30px;
+      line-height: 1.4em;
+    }
+    
+    dl.main dt{
+      font-weight: bold; 
+      margin-top: 2vmax;
+      margin-bottom: 0.3em;
+      font-size: 2.5vmax;
+    }
+    dl.main dd{
+      font-size: 2.5vmax;
+      margin-bottom: 0.6em;
+       display: list-item;
+       list-style-type: circle;
+       line-height: 150%;
+    }
+
+    dl.sub0  {
+      padding: 0px 0px 0px 50px;
+    }
+    dl.sub0 dt{
+      margin-top: 1vmax;
+      font-size: 2.2vmax;
+    }
+    dl.sub0 dd{
+      font-size: 2.2vmax;
+      margin-bottom: 0.4em;
+      list-style-type: circle;
+    }
+    
+    dl.sub1{
+      display:flex;
+      flex-wrap: wrap;
+      text-align: left;
+      padding: 20px;
+      margin: 10px;
+      line-height: normal;
+    }
+    dl.sub1 dt{
+        font-size: 2vmax;
+        vertical-align: baseline;
+        background: #ddd;
+        padding: 20px;
+        margin: 0;
+        width: 30%;
+        box-sizing: border-box;
+        border: 1px solid #ccc; 
+    }
+    dl.sub1 dd{
+       list-style-type: none;
+       font-size: 2vmax;
+       padding: 20px;
+       margin: 0;
+       width: 70%;
+       border: 1px solid #ccc;
+       box-sizing: border-box;
+    }
+    .icon {
+        display: inline-block;
+        width: 1.0em;
+        height: 1.0em;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    /*
+     safari(webkit)では background-image の相対パスがうまく指定できないので絶対パスにしている
+     safari(webkit)では 要素の中の入れ子の &.xxx 定義がうまくできないので定義を分離している
+    */
+    .icon.trash {
+        background-image: url(https://kaaku333.github.io/iosappdata/account/image/trash@2x.png);
+    }
+    .icon.threelines {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal@2x.png) ;
+    }
+    .icon.threedots {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/ellipsis@2x.png) ;
+    }
+    .icon.info {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/info.circle@2x.png) ;
+    }
+    .icon.gear {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/gear@2x.png) ;
+    }
+    .icon.updown {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.up.arrow.down.circle@2x.png) ;
+    }
+    .icon.updown_fill {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.up.arrow.down.circle.fill@2x.png) ;
+    }
+    .icon.dec3lines {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal.decrease.circle@2x.png) ;
+    }
+    .icon.dec3lines_fill {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal.decrease.circle.fill@2x.png) ;
+    }
+    .icon.wrench {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/wrench.adjustable@2x.png) ;
+    }
+    .icon.xmark {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/xmark.circle@2x.png) ;
+    }
+    .icon.plus {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/plus@2x.png) ;
+    }
+    .icon.pencil {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/pencil@2x.png) ;
+    }
+    .icon.mag {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/magnifyingglass@2x.png) ;
+    }
+    .icon.eyeslash {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/eye.slash@2x.png) ;
+    }
+    
+    .icon.icloudup {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/icloud.and.arrow.up@2x.png) ;
+    }
+    .icon.key {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/key@2x.png) ;
+    }
+    .icon.coin {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/dollarsign.circle@2x.png) ;
+    }
+    .icon.coin_fill {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/dollarsign.circle.fill@2x.png) ;
+    }
+    .icon.person2 {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/person.2@2x.png) ;
+    }
+    .icon.calendarex {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/calendar.badge.exclamationmark@2x.png) ;
+    }
+    .icon.lock {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/lock@2x.png) ;
+    }
+    .icon.lock_slash {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/lock.slash@2x.png) ;
+    }
+    .icon.lock_open {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/lock.open@2x.png) ;
+    }
+    .icon.bookmark {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark@2x.png) ;
+    }
+    .icon.bookmark_fill {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark.fill@2x.png) ;
+    }
+
+    </style>
+      <script type="text/javascript">
+      <!--
+        var paramArray =[]
+        window.onload = loadFinished;
+
+        function loadFinished(){
+          getUrlParams()
+          initSetting()
+        }
+        function getUrlParams(){
+          var urlParam = location.search.substring(1);
+          if(urlParam) {
+            var param = urlParam.split('&');
+            for (i = 0; i < param.length; i++) {
+              var paramItem = param[i].split('=');
+              paramArray[paramItem[0]] = paramItem[1];
+            }
+          }
+        }
+        function initSetting(){
+
+          
+          // filter by name section
+          // ex.) name=history
+          if(paramArray.name != null){
+              filterByName(paramArray.name);
+          }
+          
+          // color setting
+          // ex.) colorMode=dark
+          var colorMode
+          if (paramArray.colorMode == 'dark'){
+            colorMode = 'dark'
+          }else{
+            colorMode = 'normal'
+          }
+          colorMode = 'normal'
+          colorModeSelect(colorMode)
+        }
+        
+        
+        function filterByName(){
+          var filtername = "history";
+          var elm = document.getElementsByClassName("main");
+          var isDisplay = false;
+          for (var i = 0; i < elm.length; i++) {
+            var thisname = elm[i].getAttribute("name");
+            if (thisname == filtername) {
+              isDisplay = true;
+            }else if (thisname != null ){
+              isDisplay = false;
+            }
+            if (isDisplay == false) {
+              elm[i].style.display = 'none';
+            }
+          }
+        }
+
+        function colorModeSelect(colorMode){
+          if(colorMode == 'dark'){
+            document.body.style.color = '#eeeeee';
+            document.body.style.backgroundColor = '#444444';
+          }else{
+            document.body.style.color = '#444444';
+            document.body.style.backgroundColor = '#eeeeee';
+            var elements = document.getElementsByTagName("div");
+            for (var i = 0 ; i < elements.length; i++) {
+                elements[i].classList.replace("icon_white", "icon_black")
+                elements[i].classList.replace("icon_blue", "icon_darkblue")
+            }
+          }
+        }
+    // -->
+    </script>
+</head>
+  <body id="body">
+
+
+    <a name="top">
+    <h3>目次</h3>
+    <dl class="main">
+      <dd><a href="#welcome">ようこそ</a></dd>
+      <dd><a href="#about">このアプリについて</a></dd>
+      <dd><a href="#usage">このアプリの基本的な使い方</a></dd>
+      <dd><a href="#pages">アプリ画面の種類</a></dd>
+      <dd><a href="#item">アイテムについて</a></dd>
+      <dd><a href="#field">フィールドについて</a></dd>
+      <dd><a href="#selectList">選択リストについて</a></dd>
+      <dd><a href="#displayFormat">表示フォーマットについて</a></dd>
+      <dd><a href="#home">ホーム画面</a></dd>
+      <dd><a href="#detail">アイテム詳細画面</a></dd>
+      <dd><a href="#editItem">アイテム編集画面</a></dd>
+      <dd><a href="#editList">選択リスト編集画面</a></dd>
+      <dd><a href="#savedFilter">保存済みフィルター一覧画面</a></dd>
+      <dd><a href="#displayFormatList">表示フォーマット一覧画面</a></dd>
+      <dd><a href="#editDisplayFormat">表示フォーマット編集画面</a></dd>
+      <dd><a href="#setting">設定画面</a></dd>
+      <dd><a href="#backup">バックアップ画面</a></dd>
+      <dd><a href="#bookmark">ブックマークアイコン</a></dd>
+      <dd><a href="#support">ユーザーサポート</a></dd>
+      <dd><a href="#history">バージョン履歴</a></dd>
+    </dl>
+
+    <a name="welcome">
+    <h2>ようこそ</h2>
+    <dl class="main">
+        <dd>Account アプリをお使いいただきありがとうございます。</dd>
+        <dd>このオンラインマニュアルはホーム画面の左上にある <i class="icon info"></i> インフォメーションアイコンでいつでも表示できます。</dd>
+        <dd>新しいアカウント情報を追加するにはホーム画面の右上にある <i class="icon plus"></i> プラスアイコンを押してください。</dd>
+        <dd>このアプリの基本的な使い方については <a href="#usage">このアプリの基本的な使い方</a> をご覧ください。</dd>
+        <dd>アプリ画面の説明については <a href="#pages">アプリ画面の種類</a> をご覧ください。</dd>
+        <dd>このオンラインマニュアルは右上の <i class="icon xmark"></i> Xアイコンを押して閉じてください。</dd>
+    </dl>
+
+
+    <a name="about">
+    <a href="#top">🔝</a>
+    <h2>このアプリについて</h2>
+    <dl class="main">
+       <dt>はじめに</dt>
+       <dd>このアプリはネットサービスアクセス情報やメンバー情報、カード情報、お店情報など様々な情報をアカウント情報として関連づけて管理できるアカウント＆パスワード管理アプリです</dd>
+       <dd>最近のネットのアカウントは、SNSや企業の共通アカウントを使ったアカウント連携や２段階認証が一般的になっています。</dd>
+       <dd>また、一つの企業がネットショッピングや動画のサブスクリプションサービスなど沢山のサービスを提供することも一般的です。</dd>
+       <dd>また、複数のアプリやゲームが１つのログイン情報を共有していることもよくあります。</dd>
+       <dd>本アプリはそれらの関連するサービス名やアプリ名や商品名やアカウント名などを沢山の付属情報を持った１つのアカウント情報として管理するのではなく、お互いに連携した複数のアイテムとして管理できるようにします。</dd>
+       <dd>それによって、サービス名やアプリ名、コンテンツ名などを一覧で検索でき、かつ最終的に共通のログインアカウント情報は一つのアカウント情報として扱えるようにします。</dd>
+       <dd>また、多くの情報から目指すものを素早く探すため、インクリメンタルサーチやグルーピングや絞り込みなどを簡単に組み合わせて使えます。</dd>
+       
+       <dt>主な特徴</dt>
+       <dd>パスワードを含むアカウント情報はAES256bit暗号化で保存し、暗号キーは Apple の Keychain で安全に管理されます。</dd>
+       <dd>顔認証/指紋認証および専用パスコードでセキュアかつ使いやすくログインできます。</dd>
+       <dd>豊富なグルーピング機能・絞り込み機能によって、沢山のアイテム（アカウント情報）の中から容易に目的のアイテムを見つけられます。</dd>
+       <dd>一覧画面はグループ一覧と個別データ一覧の２ペイン構成で、該当グループのアイテムをすぐに探せます。</dd>
+       <dd>個々のアイテムに優先度や色を付けて、データを見つけやすくできます。</dd>
+       <dd>アイテムの有効期限や発売日などの期限日を登録し、期限が近いものだけを表示することもできます。</dd>
+       <dd>アイテムに別名を付けることができます。別名から本名のアイテムにジャンプできます。</dd>
+       <dd>他のアイテムのログイン情報を連携させることができます。連携したアイテムにジャンプできます。</dd>
+       <dd>２段階認証の情報を管理することができます。</dd>
+       <dd>サブスク課金や前払い課金などの支払い関係情報を管理することができます。支払い手段のデータをリンクしてジャンプできます。</dd>
+       <dd>使わなくなって利用廃止したアイテム、期限切れのアイテム、継続課金中のアイテムなどをわかりやすくアイコン表示したり、絞り込み検索できます。</dd>
+       <dd>カテゴリーやタグは自分で自由に追加・編集できます。</dd>
+       <dd>URLや自由文字列、日付、他アイテム参照を入力できる項目を自由に追加することができます。</dd>
+       <dd>入力するアカウント情報の種類によって、入力する項目やその選択肢を限定したりすることができます。</dd>
+       <dd>アカウント文字列やパスワード文字列はタップするだけでクリップボードにコピーできます。</dd>
+       <dd>パスワードの自動生成もできます。</dd>
+       <dd>iCloud経由で自分のiPad/iPhone間でデータを共有することができます。</dd>
+       <dd>いつでも暗号化したバックアップファイルを作成することができ、必要なときに復元することができます。</dd>
+       <dd>期限を設定したアイテムの期限が近づくと、通知させることができます。</dd>
+       <dd>Apple の ショートカット App を使って、任意のアイテムの詳細画面を直接開けるアイコンをデスクトップに置くことができます。</dd>
+    </dl>
+
+
+    <a name="usage">
+    <a href="#top">🔝</a>
+    <h2>このアプリの基本的な使い方</h2>
+    <dl class="main">
+        <dt>1. アイテムの登録</dt>
+        <dd>まず、アイテム（アカウント情報）を登録します。</dd>
+        <dl class="sub0">
+        <dt>1. ホーム画面でアイテム追加ボタンを押す</dt>
+        <dd><a href="#home">ホーム画面</a> の右上にある <i class="icon plus"></i> プラスアイコンを押す。</dd>
+        <dd>すると、何も入力されていない、<a href="#editItem">アイテム編集画面</a> が表示されます。</dd>
+        <dt>2. アイテム編集画面で必要な要素を入力する</dt>
+        <dd>アイテム編集画面では、まずタイトルを入力します。</dd>
+        <dd>タイトル以外の要素（フィールド）はオプションなので後から入力しても構いません。</dd>
+        <dd>入力できるフィールドについては <a href="#field">フィールドについて </a> をご覧ください。</dd>
+        <dt>3. アイテム編集画面で入力したアイテムを登録する</dt>
+        <dd>アイテム編集画面の右上の登録アイコンを押して、アイテムを登録します。</dd>
+        <dd>アイテムが登録されたら自動的にホーム画面に戻ります。</dd>
+        </dl>
+
+        <dt>2. アイテムの表示</dt>
+        <dd>詳細情報を表示したいアイテムを探して選びます。</dd>
+        <dl class="sub0">
+        <dt>1. ホーム画面でグルーピングを行う</dt>
+        <dd>ホーム画面の左上のカテゴリーボタンを押して、自分がそのアイテムを探しやすいグルーピングを選択します。</dd>
+        <dd>例えば、名前から探したいならタイトルを、最近編集したアイテムなら更新日時を選ぶと探しやすいです。</dd>
+        <dd>画面の左側のグループ名から探したいアイテムが属しているグループをタップすると、右側のアイテム一覧がそのグループの場所にスクロールします。</dd>
+        <dt>2. ホーム画面で絞り込みを行う</dt>
+        <dd>グルーピングしても対象となるアイテムが多い場合は絞り込みを行います。</dd>
+        <dd>画面上の検索ボックスをタップして、タイトル名やタイトルに登録したコメントやメモの単語の一部を入力すると、その文字列を含むアイテムだけが右側のアイテム一覧表示に表示されます。</dd>
+        <dd>画面右側の <i class="icon dec3lines"></i> フィルターアイコンをタップするとフィルターメニューが表示されます。</dd>
+        <dd>フィルターメニューではアイテムのいくつかのフィールドの属性別に表示条件を選択できます。絞り込み条件を選ぶと絞り込みアイコンが <i class="icon dec3lines_fill"></i> に変化し、アイテム一覧に表示されるアイテムもその条件にあったものだけになります。</dd>
+        <dd>複数の絞り込み条件を設定すると、その条件全てを満たすアイテムだけが表示されます。</dd>
+        <dd>絞り込み条件をクリアしたい場合は、絞り込みメニューの一番下の絞り込みをリセットボタンを押してください。</dd>
+        <dt>3. アイテムの選択</dt>
+        <dd>詳細表示したいアイテム名を見つけたら、そのアイテム名をタップすると、<a href="#detail">アイテム詳細画面</a> を表示し、アイテムの登録情報が表示されます。</dd>
+        </dl>
+        
+        <dt>3. アイテムの編集</dt>
+        <dd><a href="#detail">アイテム詳細画面</a> の右上の編集ボタンを押すと、<a href="#editItem">アイテム編集画面</a> に移動できます。</dd>
+        <dd>アイテムの情報を書き換えたら、最後に画面右上の登録ボタンを押します。編集を登録しないでキャンセルしたい場合は、画面左上の左矢印アイコンを押して、アイテム詳細画面に戻ってください。</dd>
+    </dl>
+
+    <a name="pages">
+    <a href="#top">🔝</a>
+    <h2>アプリ画面の種類</h2>
+    <dl class="main">
+        <dd>このアプリに登場する画面の種類です</dd>
+        
+        <dt>ホーム画面</dt>
+        <dd>起動したときに最初に表示されるのが <a href="#home">ホーム画面</a> です。</dd>
+        <dd>ホーム画面は<a href="#item">アイテム</a>(アカウント情報)を新規追加したり、アイテムを選んで詳細画面に移動したり、設定画面に移動したりできます。</dd>
+        
+        <dt>アイテム詳細画面</dt>
+        <dd>ホーム画面でアイテム名をタップしたときに移動するのが <a href="#detail">アイテム詳細画面</a> です。</dd>
+        <dd>アイテム詳細画面では、アイテムの詳細情報を確認したり、アカウント名やパスワードをコピーしたり、アイテムの削除や複製、アイテムの編集画面への移動などができます。</dd>
+        
+        <dt>アイテム編集画面</dt>
+        <dd>アイテム詳細画面から編集ボタンを押して移動するのが <a href="#editItem">アイテム編集画面</a> です。</dd>
+        <dd>アイテム編集画面では、アイテムの情報を編集することができます。</dd>
+        
+        <dt>設定画面</dt>
+        <dd>ホーム画面から<i class="icon gear"></i>歯車アイコンを押して移動するのが <a href="#setting">設定画面</a> です。</dd>
+        <dd>設定画面では、各種設定を切り替えたり、バックアップしたりできます。</dd>
+        
+        <dt>選択リスト編集画面</dt>
+        <dd>ホーム画面、アイテム詳細画面、アイテム編集画面のメニューから選択リスト編集を選んで移動するのが <a href="#editList">選択リスト編集画面</a> です。</dd>
+        <dd>選択リスト編集画面では、カテゴリー名や自分のメールアドレス、URL情報の種類などの各種の選択文字列リストを編集できます。</dd>
+        
+        <dt>保存済みフィルター一覧画面</dt>
+        <dd>ホーム画面のフィルターメニューから「保存済みフィルター」の編集を選んで移動するのが <a href="#savedFilter">保存済みフィルター一覧画面</a> です。</dd>
+        <dd>保存済みフィルター一覧画面では、保存済みフィルターの名前変更や並べ替え、削除ができます。</dd>
+        
+        <dt>表示フォーマット一覧画面</dt>
+        <dd>ホーム画面、アイテム詳細画面、アイテム編集画面のメニューから表示フォーマット編集を選んで移動するのが <a href="#displayFormatList">表示フォーマット一覧画面</a> です。</dd>
+        <dd>表示フォーマット一覧画面では、<a href="#displayFormat">表示フォーマット</a>を追加したり名前変更したりできます。</dd>
+
+        <dt>表示フォーマット編集画面</dt>
+        <dd><a href="#displayFormatList">表示フォーマット一覧画面</a> で表示フォーマット名を選んで移動できるのが <a href="#EditDisplayFormat">表示フォーマット編集画面<a>です。</dd>
+        <dd>表示フォーマット編集画面では、<a href="#displayFormat">表示フォーマット</a>にフィールドを追加したり、フィールドを並び替えたりできます。</dd>
+
+        
+        <dt>バックアップ管理画面</dt>
+        <dd>設定画面から移動できるのが <a href="#backup">バックアップ管理画面</a> です。</dd>
+        <dd>今現在のユーザーデータを丸ごとバックアップファイルとして保存したり、バックアップファイルを保存のため他のアプリに共有したり、バックアップファイルから復元したりできます。</dd>
+
+    </dl>
+
+    <a name="item">
+    <a href="#top">🔝</a>
+    <h2>アイテムについて</h2>
+    <dl class="main">
+        <dt>アイテムについて</dt>
+        <dd>このアプリではアカウント情報を「アイテム」という単位で扱います。</dd>
+        <dd>アイテムにはタイトル、アカウント名、パスワード、など色々な要素(フィールド) で構成されます。</dd>
+        
+        <dt>アイテムの種類</dt>
+        <dd>アイテムには他のアイテムとの関連の方法によって、「通常アイテム」、「アカウント連携アイテム」、「別名アイテム」の３種類があります。</dd>
+        <dd>「通常アイテム」は他のアイテムに依存していないアイテムです。一番多くのフィールドを設定できます。</dd>
+        <dd>「アカウント連携アイテム」はアカウントログインを他のアイテムに依存しているアイテムです。ログイン用のアカウント名やパスワード名の代わりにアカウント連携しているアイテムを参照します。</dd>
+        <dd>「別名アイテム」は他のアイテムの別名としてのアイテムです。設定できるフィールドは他の種類に比べて少ないです。<a href="#detail">アイテム詳細画面</a>の別名アイテムを作成するメニューから作成できます。</dd>
+        <dd>アイテムを一度作った後でも <a href="#editItem">アイテム編集画面</a> で他の種類に変更することができます。</dd>
+        
+        <dt>フィールド</dt>
+        <dd>アイテムはタイトルやアカウント名など複数の要素から構成されます。</dd>
+        <dd>この要素のことをフィールドと言います。</dd>
+        <dd>フィールドは<a href="#editItem">アイテム編集画面</a>で登録し、 <a href="#detail">アイテム詳細画面</a>で表示できます。</dd>
+        <dd>一部のフィールドは、ホーム画面のグルーピングや絞り込みで使われます。</dd>
+        <dd>他のアイテムを参照するフィールドは <a href="#detail">アイテム詳細画面</a>で該当アイテムにジャンプできます。</dd>
+        <dd>どのようなフィールドがあるかについては、<a href="#field">フィールドについて</a>をご覧ください。</dd>
+
+        <dt>アイテムの種類によって表示されないフィールド</dt>
+        <dl class="sub1">
+        <dt>通常アイテム</dt>
+        <dd>「別名本アイテム」「アカウント連携」
+        </dd>
+        <dt>アカウント連携アイテム</dt>
+        <dd>「別名本アイテム」「他アイテム参照」「アカウント」「パスワード」
+        </dd>
+        <dt>別名アイテム</dt>
+        <dd>「他アイテム参照」「アカウント連携」「アカウント」「パスワード」「PIN」「２段階認証」
+        </dd>
+        </dl>
+
+    </dl>
+    
+
+    <a name="field">
+    <a href="#top">🔝</a>
+    <h2>フィールドについて</h2>
+    <dl class="main">
+        <dt>フィールドについて</dt>
+        <dd>アイテムの中のユーザーが入力する要素をフィールドと言います。</dd>
+        <dd>タイトル以外のフィールドは入力必須ではありません。</dd>
+        <dd>アイテムのフィールドは<a href="#editItem">アイテム編集画面</a>で入力し、<a href="#detail">アイテム詳細画面</a>で参照します。</dd>
+        <dd>一部のフィールドはグルーピングや絞り込みに使われます。</dd>
+        
+        <dt>タイトル</dt>
+        <dd>アイテムの名前です。</dd>
+        <dd>すでに登録済みのアイテム名と同じ名前をつけることはできません。</dd>
+        <dd>タイトルには読みフィールドを追加できます。これはオプション設定で有効にできます。読みを使うとホーム画面のアイテム名のグルーピングでアイテム名の代わりに並び替えに利用されます。</dd>
+        <dd>タイトルにはコメントを追加できます。コメントを追加すると、ホーム画面のアイテム一覧でアイテム名の下に一緒に表示されます。</dd>
+        
+        <dt>カテゴリー</dt>
+        <dd>アイテム情報の分類を選べます。</dd>
+        <dd>カテゴリーは <a href="#selectList">選択リスト</a> の一つで、ユーザーが自分で追加、変更できます。</dd>
+        <dd>カテゴリーはホーム画面のグルーピングや絞り込みで利用できます。</dd>
+        
+        <dt>タグ</dt>
+        <dd>アイテム情報の種類を示すラベルで、１つのアイテムに複数付与できます。</dd>
+        <dd>タグは <a href="#selectList">選択リスト</a> の一つで、ユーザーが自分で追加、変更できます。</dd>
+        <dd>タグはホーム画面の絞り込みで利用できます。</dd>
+
+        <dt>重要度</dt>
+        <dd>アイテムの重要度を⭐️の数で表現できます。</dd>
+        <dd>重要なアイテムやよく使うアイテムを ⭐️⭐⭐⭐⭐ に設定して他のアイテムと区別できます。</dd>
+        <dd>重要度はホーム画面のグルーピングや絞り込みで利用できます。</dd>
+
+        <dt>カラー</dt>
+        <dd>アイテムを見た目で識別できるカラーを選べます。</dd>
+        <dd>カラーのラベル名は <a href="#selectList">選択リスト</a> の一つで、名前の変更ができます。</dd>
+        <dd>カラーはアイテム詳細画面やアイテム編集画面のメニューから設定できます。</dd>
+        <dd>重要度はホーム画面のグルーピングや絞り込みで利用できます。</dd>
+
+        <dt>利用廃止状態</dt>
+        <dd>アイテムをもう利用していない時にONにします。</dd>
+        <dd>もう使わないアイテムだけど念の為残しておきたい場合などに使います。</dd>
+        <dd>ONにするとホーム画面のアイテム一覧のアイテム名の横に🪦お墓アイコンが表示されます。</dd>
+        <dd>利用廃止状態はホーム画面の絞り込みで利用できます。</dd>
+
+        <dt>アカウント連携利用状態</dt>
+        <dd>アカウント認証を他のアカウントで行う場合にONにします。</dd>
+        <dd>例えば、Twitter認証やGoogle認証などを使う場合などに使います。</dd>
+        <dd>ON にするとアイテムはアカウント連携アイテムとなり、アカウントやパスワードは連携先のアカウントのものを使います。</dd>
+        <dd>アカウント連携状態はホーム画面の絞り込みで利用できます。</dd>
+
+        <dt>連携アカウント</dt>
+        <dd>アカウント連携するアイテムです。</dd>
+        <dd>アカウント連携を ON にしたときに使えます。</dd>
+        <dd>アカウント連携をするアイテムを登録済みのアイテムの中から選びます。</dd>
+        <dd>アイテム詳細画面では連携先のアイテムにジャンプできます。</dd>
+        <dd>連携先のアイテムのアイテム詳細画面にも表示されます。</dd>
+
+        <dt>アカウント</dt>
+        <dd>アカウント名、ログイン名などです。</dd>
+        <dd>アカウント連携がOFFの場合に使えます。</dd>
+        <dd>コメントを追加することもできます。</dd>
+
+        <dt>パスワード</dt>
+        <dd>アカウントに対応するパスワードです。</dd>
+        <dd>アカウント連携がOFFの場合に使えます。</dd>
+        <dd>アイテム編集画面では、パスワードを自動生成することもできます。</dd>
+        <dd>アイテム詳細画面では、表示を隠すことができます。</dd>
+
+        <dt>PIN</dt>
+        <dd>パスワードとは別に使う４桁ー６桁程度の暗証番号です。</dd>
+        <dd>アイテム詳細画面では、表示を隠すことができます。</dd>
+
+        <dt>２段階認証利用状態</dt>
+        <dd>２段階認証を使う場合にONにします。</dd>
+
+        <dt>２段階認証タイプ</dt>
+        <dd>２段階認証を使う場合、そのタイプを選択します。</dd>
+        <dd>例えば、SMS やメール、認証アプリなどです。</dd>
+        <dd>２段階認証タイプは <a href="#selectList">選択リスト</a> の一つで、ユーザーが自分で追加、変更できます。</dd>
+        <dd>コメントを追加することもできます。</dd>
+
+        <dt>他アイテム参照</dt>
+        <dd>関連する他のアイテムを参照することができます。</dd>
+        <dd>別名アカウントでなく、アカウント連携がOFFの場合に使えます。</dd>
+        <dd>複数のアイテムを参照したい場合は、アイテム参照が使えます。</dd>
+        <dd>コメントを追加することもできます。</dd>
+
+        <dt>支払いタイプ</dt>
+        <dd>アカウントに課金が関係する場合に選びます。</dd>
+        <dd>例えば、サブスク、前払い、後払いなどです。</dd>
+        <dd>支払いタイプは <a href="#selectList">選択リスト</a> の一つで、ユーザーが自分で追加、変更できます。</dd>
+
+        <dt>支払い参照アイテム</dt>
+        <dd>支払いに関係する他のアイテムがあればそれを選びます。</dd>
+        <dd>コメントを追加することもできます。</dd>
+
+        <dt>支払い継続中状態</dt>
+        <dd>サブスクなどで課金継続中の時にONにします。</dd>
+        <dd>支払い継続中状態はホーム画面の絞り込みで利用できます。</dd>
+        
+        <dt>支払い済み状態</dt>
+        <dd>前払いなどで支払いを行なった場合にONにします。</dd>
+        <dd>支払い済み状態はホーム画面の絞り込みで利用できます。</dd>
+        
+        <dt>期限あり状態</dt>
+        <dd>アカウントに有効期限や課金有効期限などがあればONにします。</dd>
+        <dd>期限あり状態はホーム画面の絞り込みで利用できます。</dd>
+        
+        <dt>期限タイプ</dt>
+        <dd>期限ありの場合、期限の種類を選びます。</dd>
+        <dd>例えば、有効期限、先払い有効期限、申請期限、発売日、サービス終了期限などです。</dd>
+        <dd>期限タイプは <a href="#selectList">選択リスト</a> の一つで、ユーザーが自分で追加、変更できます。</dd>
+        
+        <dt>期限日</dt>
+        <dd>期限ありの場合、その期日を設定します。</dd>
+        <dd>期限日までの日数によってホーム画面でグルーピングや絞り込みができます。</dd>
+        <dd>コメントを追加することもできます。</dd>
+
+        <dt>登録メールアドレス</dt>
+        <dd>アカウントに登録している自分のメールアドレスを指定します。</dd>
+        <dd>登録メールアドレスはユーザーが自分で追加、変更できます。</dd>
+
+        <dt>登録電話番号</dt>
+        <dd>アカウントに登録している自分の電話番号を指定します。</dd>
+        <dd>登録電話番号はユーザーが自分で追加、変更できます。</dd>
+
+        <dt>URL</dt>
+        <dd>アイテムのホームページや地図情報、TwitterやInstagramへのリンクなどを複数登録できます。</dd>
+
+        <dt>URLタイプ</dt>
+        <dd>URLの種類を選びます。</dd>
+        <dd>例えば、ホームページ、地図、twitterなどです。</dd>
+        <dd>URLタイプは <a href="#selectList">選択リスト</a> の一つで、ユーザーが自分で追加、変更できます。</dd>
+
+        <dt>URLアドレス</dt>
+        <dd>https://で始まるURLを登録します。</dd>
+        <dd>アイテム詳細画面でタップすると該当のページをブラウザで開きます。</dd>
+        <dd>コメントを追加することもできます。</dd>
+
+        <dt>自由文字列</dt>
+        <dd>自由に文字列を記録できるフィールドとして複数登録できます。</dd>
+
+        <dt>自由文字列タイプ</dt>
+        <dd>自由文字列の種類を選びます。</dd>
+        <dd>例えば、営業時間や連絡先などです。</dd>
+        <dd>自由文字列タイプは <a href="#selectList">選択リスト</a> の一つで、ユーザーが自分で追加、変更できます。</dd>
+
+        <dt>日付</dt>
+        <dd>期限日以外の日付を複数登録できます。</dd>
+        <dd>追加の期限日として扱うこともできます。</dd>
+        
+        <dt>日付タイプ</dt>
+        <dd>日付の種類を選びます。</dd>
+        <dd>例えば、登録日、開店日などです。</dd>
+        <dd>日付タイプは <a href="#selectList">選択リスト</a> の一つで、ユーザーが自分で追加、変更できます。</dd>
+
+        <dt>アイテム参照</dt>
+        <dd>他のアイテムへの参照を複数登録できます。</dd>
+        
+        <dt>アイテム参照タイプ</dt>
+        <dd>アイテム参照の種類を選びます。</dd>
+        <dd>アイテム参照タイプは <a href="#selectList">選択リスト</a> の一つで、ユーザーが自分で追加、変更できます。</dd>
+
+        <dt>メモ</dt>
+        <dd>アイテムに関連する諸々の情報を自由に記入します。</dd>
+
+        <dt>更新日</dt>
+        <dd>アイテムを編集・登録で更新した日時です。アイテムを編集すると自動的に更新されます。</dd>
+        
+        <dt>作成日</dt>
+        <dd>アイテムを最初に作成した日時です。自動的に記入されます。</dd>
+    </dl>
+
+
+    <a name="selectList">
+    <a href="#top">🔝</a>
+    <h2>選択リストについて</h2>
+    <dl class="main">
+        <dt>選択リストについて</dt>
+        <dd>カテゴリーや登録メールアドレスなど、フィールドに入力するための選択肢のことを選択リストと言います。</dd>
+        <dd>選択リストは、<a href="#editList">選択リスト編集画面</a>で編集できます。</dd>
+        <dd>選択リスト編集画面は、<a href="#home">ホーム画面</a>、 <a href="#detail">アイテム詳細画面</a>、<a href="#editItem">アイテム編集画面</a>のメニューから選択リスト編集を選んで表示します。</a>
+        <dd>選択リストのうち一部のタイプ（カテゴリー、タグ、日付、アイテム参照、URL、自由文字列）については、階層的に探しやすくする目的でグループを作ることができます。</dd>
+        <dd>選択リストには下記のような種類があります。</dd>
+
+        <dt>カテゴリー</dt>
+        <dd>アイテム情報の分類名を示します。</dd>
+        <dd>アイテム編集画面のカテゴリーの選択で利用します。</dd>
+        <dd>ホーム画面のグルーピングや絞り込みで利用できます。</dd>
+
+        <dt>タグ</dt>
+        <dd>アイテム情報の種類を表すラベルです。</dd>
+        <dd>アイテム編集画面のタグの追加・選択で利用します。</dd>
+        <dd>ホーム画面の絞り込みで利用できます。</dd>
+
+        <dt>２段階認証タイプ</dt>
+        <dd>２段階認証の種類を示します。</dd>
+        <dd>アイテム編集画面のカテゴリーの入力で利用します。</dd>
+
+        <dt>支払いタイプ</dt>
+        <dd>支払いの種類を示します。</dd>
+        <dd>アイテム編集画面の支払いタイプの選択で利用します。</dd>
+
+        <dt>期限タイプ</dt>
+        <dd>有効期限などの期限の種類を示します。</dd>
+        <dd>アイテム編集画面の期限タイプの選択で利用します。</dd>
+
+        <dt>URL タイプ</dt>
+        <dd>URL 情報の種類を示します。</dd>
+        <dd>アイテム編集画面のURLタイプの選択で利用します。</dd>
+
+        <dt>自由文字列タイプ</dt>
+        <dd>自由文字列情報の種類を示します。</dd>
+        <dd>アイテム編集画面の自由文字列情報の選択で利用します。</dd>
+
+        <dt>日付タイプ</dt>
+        <dd>日付情報の種類を示します。</dd>
+        <dd>アイテム編集画面の日付情報の選択で利用します。</dd>
+
+        <dt>アイテム参照タイプ</dt>
+        <dd>アイテム参照情報の種類を示します。</dd>
+        <dd>アイテム編集画面のアイテム参照情報の選択で利用します。</dd>
+
+
+        <dt>メールアドレス</dt>
+        <dd>アイテムに登録する自分のメールアドレスを示します。</dd>
+        <dd>アイテム編集画面の登録メールアドレスの選択で利用します。</dd>
+
+        <dt>電話番号</dt>
+        <dd>アイテムに登録する自分の電話番号を示します。</dd>
+        <dd>アイテム編集画面の登録電話番号の選択で利用します。</dd>
+
+        <dt>カラーラベル</dt>
+        <dd>カラーの名前を示します。</dd>
+        <dd>アイテム編集画面のカラーの選択で利用します。</dd>
+        <dd>ホーム画面のグルーピングや絞り込みで利用できます。</dd>
+
+    </dl>
+
+
+    <a name="displayFormat">
+    <a href="#top">🔝</a>
+    <h2>表示フォーマットについて</h2>
+    <dl class="main">
+        <dt>表示フォーマットについて</dt>
+        <dd><a href="#detail">アイテム詳細画面</a>や<a href="#editItem">アイテム編集画面</a>で、フィールドの表示順序や表示有無を指定できるのが表示フォーマットです。</dd>
+        <dd>表示フォーマットは特定の種類のアイテムの新規作成時に、入力するフィールドや選択肢を限定してフィールドを入力しやすくすることが主な目的です。</dd>
+        <dd>アイテムの新規作成時を含むアイテム編集画面ではデフォルトでは全フィールドをアプリ既定の順序で表示します。あらかじめ表示フォーマットを作っておいてそれを使うことで、任意のフィールドのみを任意の順序で表示することができます。</dd>
+        <dd>アイテム詳細画面では該当のアイテムに紐付けた表示フォーマットに従った順序で指定したフィールドのみを表示できます。</dd>
+        <dd>表示フォーマットはユーザーが名前を付けて作り、再利用できます。</dd>
+        <dd>表示フォーマットはアイテム詳細画面やアイテム編集画面、もしくは<a href="#displayFormatList">表示フォーマット一覧画面</a>で追加し、<a href="#editDisplayFormat">表示フォーマット編集画面</a>で編集します。</dd>
+        <dd>アイテム詳細画面やアイテム編集画面ではいつでもそのアイテムに紐づく表示フォーマットを切り替えることができます。</dd>
+        <dd>表示フォーマットを切り替えると表示するフィールドが絞られるだけで、アイテム自身がすでに記録しているフィールドデータが消されることはありません。</dd>
+        <dt>フィールドについて</dt>
+        <dd>表示フォーマットは<a href="#editDisplayFormat">表示フォーマット編集画面</a>にて、好きなフィールドを好きな順序で並べて作成します。</dd>
+        <dd>フィールドの中には支払い情報のように直接関連する複数のフィールドをまとめて配置するものもあります。</dd>
+        <dd>タイトルの読み仮名や更新日は作成日、該当アイテムを参照しているアイテム一覧などの一部のフィールドはアイテム詳細画面やアイテム表示画面で決まった位置に表示されます。</dd>
+
+        <dt>フィールドのパラメータについて<dt>
+        <dd>選択リストを使うフィールドは、選択可能な選択肢を特定の選択肢に固定することもできます。</dd>
+        <dd>さらにカテゴリーやタブのように選択肢のグループを持つものについては、特定のグループに属する選択肢のみに限定することもできます。</dd>
+        <dd>また、アイテムを選択するフィールドでは、選択肢を任意のアイテムのみに固定することも、特定の保存ずみフィルターに属するアイテムのみに限定することもできます。</dd>
+        <dd>フィールドのパラメータ詳細は<a href="#editDisplayFormat">表示フォーマット編集画面</a>を参照してください。</dd>
+    </dl>
+
+
+    <a name="home">
+    <a href="#top">🔝</a>
+    <h2>ホーム画面</h2>
+    <dl class="main">
+        <dt>ホーム画面について</dt>
+        <dd>起動したときに最初に表示されるのがホーム画面です。</dd>
+        <dd>画面の上にあるアプリの名前が目印です。</dd>
+        <dd>画面は２ペイン構成で、左側がグループ表示、右側がアイテム一覧表示です。</dd>
+        
+        <dt>グループ表示</dt>
+        <dd>画面左側のグループ表示の先頭はアイテムのグルーピング(グループ分け)名です。グルーピング名をタップするとグルーピングを切り替えできます。</dd>
+        <dd>グルーピングは、カテゴリー、タイトル（アルファベット順）、重要度、更新日時、期限日、カラーの中から選べます。</dd>
+        <dd>グルーピングを変更すると右側のアイテム一覧表示のグルーピングも変更されます。</dd>
+        <dd>グルーピング名の下のグループ一覧から任意のグループをタップすると、右ペインのアカウント一覧が該当グループにスクロールします。</dd>
+        <dt>グルーピングの種類一覧</dt>
+        <dl class="sub1">
+        <dt>カテゴリー</dt>
+        <dd>任意のカテゴリーの中のアイテムを探したい時に使う</dd>
+        <dt>タイトル</dt>
+        <dd>アイテムを名前で探したい時に使う</dd>
+        <dt>重要度</dt>
+        <dd>任意の重要度のアイテムを探したい時に使う</dd>
+        <dt>更新日時</dt>
+        <dd>最近更新したアイテムなどを探したい時に使う</dd>
+        <dt>期限日</dt>
+        <dd>期限日が近いアイテムを探したい時に使う</dd>
+        <dt>カラー</dt>
+        <dd>任意のカラーのアイテムを探したい時に使う</dd>
+        </dl>
+        
+        <dt>フィルター表示</dt>
+        <dd>画面右側のアイテム一覧表示の上には <i class="icon dec3lines"></i> フィルターアイコンと絞り込み状態、現在表示中のアイテム総数が表示されます。 <i class="icon dec3lines"></i> フィルターアイコンをタップするとフィルターメニューが表示され、様々な条件を選んでアイテムを絞り込んで表示できます。</dd>
+        <dd>絞り込みの条件には、カテゴリー、タグ、重要度、更新日時、期限、カラー以外にも、アカウント連携かどうかや支払い状況、利用廃止状況、ログイン要不要なども選べます。</dd>
+        <dd>複数の絞り込みを選ぶと全ての条件にマッチしたアイテムのみが表示されます。アイテム総数はマッチしたアイテムの合計で、何もマッチしないと 0 となります。</dd>
+        <dd>絞り込み中の場合は 絞り込みアイコンが塗りつぶし状態 <i class="icon dec3lines_fill"></i> で表示されます。</dd>
+        <dd> <i class="icon dec3lines_fill"></i> フィルターアイコンを押して表示される、「フィルターをリセット」を選ぶと、全ての絞り込み条件をまとめてリセットすることができます。</dd>
+        <dd>絞り込みメニューで保存済みフィルターを選ぶと、その時の絞り込み条件を名前をつけて保存し、後からその名前を選ぶだけで絞り込み条件を再現することができます。</d>
+        <dd>保存済みフィルターの編集ボタンを選ぶと<a href="#savedFilter">保存済みフィルター一覧画面</a>を表示して、保存済みフィルター名を変えたり削除したりできます。</dd>
+        <dd>保存済みフィルターの絞り込み条件を変更したい場合は、そのフィルターを選んだ後に絞り込み条件を変更し、同じ名前で保存して上書きしてください。</dd>
+        <dt>検索ボックス</dt>
+        <dd>画面の上にある検索ボックスには絞り込み用の文字列を入力できます。文字列を入力していくと、その文字列を含む名前やメモやコメントなどを持ったアイテムのみに自動的に絞り込まれていきます。</dd>
+        <dd>右側の <i class="icon xmark"></i> アイコンを押すと文字列が消えて絞り込み状態を解除できます。</dd>
+        <dd>検索文字列もフィルター条件の一つなので、保存済みフィルターで再利用することができます。</dd>
+        
+        <dt>アイテム一覧表示</dt>
+        <dd>アカウント一覧表示は、グループ名の下にそのグループに所属するアイテムの一覧が表示されます。アイテムのタイトルにコメントをつけておくと、アイテムタイトルと一緒に表示されます。</dd>
+        <dd>アイテム名をタップすると、アイテムの詳細情報を表示する <a href="#detail">アイテム詳細画面</a> に移動します。</dd>
+        <dd>アイテムの状態によってアイテム名の右にアイコンが表示されることがあります。</dd>
+        <dt>アイテム名の右に表示されるアイコン一覧</dt>
+        <dl class="sub1">
+        <dt><i class="icon person2"></i></dt>
+        <dd>別名アイテム</dd>
+        <dt><i class="icon coin_fill"></i></dt>
+        <dd>支払い継続中アイテム</dd>
+        <dt><i class="icon coin"></i></dt>
+        <dd>支払い済みアイテム</dd>
+        <dt><i class="icon calendarex"></i></dt>
+        <dd>期限を持っているアイテム。期限日に近いと赤く表示される</dd>
+        <dt>🪦</dt>
+        <dd>利用廃止アイテム</dd>
+        <dt><i class="icon bookmark_fill"></i></dt>
+        <dd>ブックマークされているアイテム</dd>
+        </dl>
+
+        <dt>画面の上部のアイコン</dt>
+        <dd>画面の一番上に並んでいるアイコンから設定画面に移動したり、新しいアカウントを追加したりできます。</dd>
+        
+        <dl class="sub1">
+        <dt><i class="icon gear"></i></dt>
+        <dd>各種設定やバックアップなどができる <a href="#setting">設定画面</a> に移動します</dd>
+        <dt><i class="icon info"></i></dt>
+        <dd>この使い方画面を表示します</dd>
+        </dl>
+        
+        <dl class="sub1">
+        <dt><i class="icon threelines"></i></dt>
+        <dd>メニューを表示します</dd>
+        <dt><i class="icon bookmark"></i></dt>
+        <dd>ブックマークによるフィルターの On/Off を切り替えします</dd>
+        <dt><i class="icon lock"></i></dt>
+        <dd>ログイン状態を示します（未ログイン <i class="icon lock"></i> / ログイン済み <i class="icon lock_open"></i> ）。未ログイン状態の時にタップするとログインできます</dd>
+        <dt><i class="icon plus"></i></dt>
+        <dd>新規アイテムの追加ができる <a href="#editItem">アイテム編集画面</a> に移動します</dd>
+        </dl>
+        
+        <dt>メニューの内容</dt>
+        <dl class="sub1">
+        <dt>デフォルト設定</dt>
+        <dd>起動時に設定されるデフォルトのグルーピングとフィルターを設定できます。フィルターは保存済みフィルターから選択できます</dd>
+        <dt>選択リスト編集</dt>
+        <dd>個々の文字列リストを編集できる <a href="#editList">リスト編集画面</a> に移動します</dd>
+        <dt>表示フォーマット編集</dt>
+        <dd>表示フォーマットの編集ができる<a href="#displayFormatList">表示フォーマット一覧画面</a> に移動します</dd>
+        <dt>履歴</dt>
+        <dd>最近開いた項目にすぐにアクセスできる履歴表示をします</dd>
+        </dl>
+    </dl>
+
+
+
+    <a name="detail">
+    <a href="#top">🔝</a>
+    <h2>アイテム詳細画面</h2>
+    <dl class="main">
+        <dt>アイテム詳細画面について</dt>
+        <dd>１つのアイテムに登録されている情報(<a href="#field">フィールド</a>)を表示する画面です。</dd>
+        <dd>ホーム画面からアイテム名を押して移動してくる画面です。</dd>
+        <dd>画面の上にあるアイテム名が目印です。</dd>
+        <dd>アイテム詳細画面では、アイテム編集画面で入力した項目のみが表示されます。</dd>
+        
+        <dt>画面の構成</dt>
+        <dd>画面の上には大きな文字のタイトルと小さな文字のタイトルコメントが表示されます。</dd>
+        <dd>画面の右上にはアイコンが並んでいます。</dd>
+        <dt>画面の上部のアイコン</dt>
+        <dl class="sub1">
+        <dt><i class="icon threelines"></i></dt>
+        <dd>メニューを表示します</dd>
+        <dt><i class="icon bookmark"></i></dt>
+        <dd>このアイテムのブックマーク状態を切り替えできます。ブックマークを On すると、ホーム画面の <i class="icon bookmark"></i> ブックマークボタンで絞り込み表示できます</dd>
+        <dt><i class="icon lock"></i></dt>
+        <dd>このアイテムの詳細表示・編集にログインが必要（未ログイン <i class="icon lock"></i> / ログイン済み <i class="icon lock_open"></i> ）かログインが不要 <i class="icon lock_slash"></i> かを切り替えできます。デフォルトはログイン必要です</dd>
+        <dt><i class="icon trash"></i></dt>
+        <dd>アイテムを削除できます。念の為本当に削除していいか確認します</dd>
+        <dt>編集</dt>
+        <dd><a href="#editItem">アイテム編集画面</a> に移動してアイテムを編集できます</dd>
+        </dl>
+        
+        <dt>メニューの内容</dt>
+        <dl class="sub1">
+        <dt>オプション</dt>
+        <dd>オプション設定です。</br>
+        パスワードをデフォルトで隠すかを切り替えできます。</br>
+        タイトルの読みフィールドを表示するかどうかを切り替えできます。</dd>
+      <dt>表示フォーマット</dt>
+        <dd><a href="#displayFormat">表示フォーマット</a>のサブメニューを表示します。<br>登録済みの表示フォーマット名を選べばその表示フォーマットに一時的に切り替えます。「全フィールド」を選べばデフォルトの全フィールド表示状態に戻ります。</dd>
+        <dt>カラー</dt>
+        <dd>アイテムのカラーを設定できます。<br>カラーのラベル名はカラーラベル選択リスト編集画面で変更できます。カラーはホーム画面のグルーピングや絞り込みで使います。</dd>
+        <dt>別名アイテムを作成</dt>
+        <dd>サービスの旧名やサービスのアプリなど別な名前を使いたい時に使います。</dd>
+        <dt>複製アイテムを作成</dt>
+        <dd>ほぼ同じ内容の別のアイテムを作りたい時に使います。</dd>
+        <dt>アカウント連携アイテムを作成</dt>
+        <dd>このアイテムにアカウント連携したいアイテムを作りたい時に使います。</dd>
+        </dl>
+        
+        <dt>フィールド情報</dt>
+        <dd>画面下側には <a href="#editItem">アイテム編集画面</a> で入力したフィールドを表示します。</dd>
+        <dd><a href="#displayFormat">表示フォーマット</a>が設定されている場合は、その表示フォーマットに設定されているフィールドのみを表示します。</dd>
+        <dd>アカウントやパスワードなどはタップするだけでクリップボードにコピーされます。アカウントやパスワード入力するアプリやWebページと行き来しながら使うのに便利です。</dd>
+        <dd>パスワードやPINはデフォルトで非表示になっています。右端の<i class="icon eyeslash"></i>目玉アイコンをタップすると表示できます。オプション設定でデフォルト表示にすることもできます。</dd>
+        <dd>アイテムが別名やアカウント連携アイテムの場合は参照するアカウントへのリンクが表示され、それをリンクするとそのアイテムの詳細画面に移動します。</dd>
+        <dd>URLをタップするとWebブラウザを開いて該当のURLを表示します。</dd>
+        <dd>期限を持っている日付には <i class="icon calendarex"></i>カレンダーアイコンが表示されます。カレンダーアイコンは期限日が近いと赤く表示されます。デフォルトでは７日後以内ですが、その日数は設定画面で変更できます。</dd>
+        <dd>他のアイテムから参照されている場合は、そのアイテムの一覧が表示され、そのアイテムをタップしてそのアイテムの詳細画面に移動することもできます。</dd>
+      <dl class="main">
+    </dl>
+
+
+    <a name="editItem">
+    <a href="#top">🔝</a>
+    <h2>アイテム編集画面</h2>
+    <dl class="main">
+        <dt>アイテム編集画面について</dt>
+        <dd>アイテムの<a href="#field">フィールド</a>を編集する画面です。</dd>
+        <dd><a href="#home">ホーム画面</a>から<i class="icon plus"></i>プラスアイコンを押して移動してくるか、<a href="#detail">アイテム詳細画面</a>から編集アイコンを押して移動してくる画面です。</dd>
+        <dd>画面の上にある「新規項目」もしくは「項目編集」というタイトルが目印です。</dd>
+        <dd>画面の右上にはアイコンが並んでいます。</dd>
+
+        <dt>画面の上部のアイコン</dt>
+        <dl class="sub1">
+        <dt><i class="icon threelines"></i></dt>
+        <dd>メニューを表示します。</dd>
+        <dt><i class="icon bookmark"></i></dt>
+        <dd>このアイテムのブックマーク状態を切り替えできます。ブックマークを On すると、ホーム画面の <i class="icon bookmark"></i> ブックマークボタンで絞り込み表示できます</dd>
+        <dt><i class="icon lock"></i></dt>
+        <dd>このアイテムの表示・編集にログインが必要<i class="icon lock"></i>か不要<i class="icon lock_slash"></i>かを切り替えできます。デフォルトはログイン必要です。</dd>
+        <dt>登録</dt>
+        <dd>編集したアイテム情報を登録できます。</dd>
+        </dl>
+        
+        <dt>メニューの内容</dt>
+        <dl class="sub1">
+        <dt>オプション</dt>
+        <dd>オプション設定です。</br>
+        パスワードをデフォルトで隠すかを切り替えできます。</br>
+        タイトルの読みフィールドを表示するかどうかを切り替えできます。</dd>
+        <dt>選択リスト編集</dt>
+        <dd>選択リストを選んで<a href="#editList">選択リスト編集画面</a>に移動できます。</dd>
+        <dt>表示フォーマット編集</dt>
+        <dd><a href="#displayFormatList">表示フォーマット一覧画面</a>を表示します。<br>表示フォーマットの内容を編集することができます。</dd>
+        <dt>カラー</dt>
+        <dd>このアイテムのカラーを設定できます。</dd>
+        <dt>別名アイテムに変更</dt>
+        <dd>通常アイテムの場合に別名アイテムに変更できます。</dd>
+        <dt>通常アイテムに変更</dt>
+        <dd>別名アイテムの場合に通常アイテムに変更できます。</dd>
+        </dl>
+        
+        <dt>フィールド情報</dt>
+        <dd>各フィールドを入力できます。別名アイテムかアカウント連携アイテムの場合は一部のフィールドは表示されません。</dd>
+        <dd><a href="#displayFormat">表示フォーマット</a>が全フィールド以外に設定されている場合は、その表示フォーマットに設定されているフィールドのみを表示し、選択肢もその表示フォーマットの設定に従います。画面の一番下には表示されていないフィールドを表示できるスイッチがあり、どのフィールドが表示されていないのか確認することができます。<br>表示フォーマットのプルダウンリストの <i class="icon plus"></i> プラスアイコンを押すとその時点で入力済みのフィールドで新しい表示フォーマットを作成できます。</dd>
+      <dd>パスワードフィールドでは右端の <i class="icon key"></i> 鍵アイコンをタップするとパスワードを自動的に生成することができます。</dd>
+        <dd>他のアイテムを選ぶフィールドでは、タップするとポップアップメニューでアイテムが選べます。メニューの先頭行にグルーピング選択、２行目以降にグルーピング名が表示され、その中にあるアイテムをタップして選びます。</dd>
+        <dd>２段階認証タイプ、支払いタイプ、登録メールアドレスなどの選択肢から選択するフィールドでは、タップすると選択リストが表示されます。</dd>
+        <dd>選択リストの最後の行の <i class="icon plus"></i> プラスアイコンをタップすると新しい選択肢を追加できます。</dd>
+        <dd>日付、URL、自由文字列、アイテム参照のフィールドは、<i class="icon plus"></i> プラスアイコンをタップすると新しいデータを追加できます。</dd>
+        <dd>各データの右の <i class="icon threedots"></i> ３点アイコンを押すとそのデータに関するコンテキストメニューが表示されます。コンテキストメニューでは、データを削除したり、すぐ下に複製したデータを追加したりできます。日付フィールドの２つ目以降のデータでは、直前のデータの日付との差分を足した日付予測データを追加することができます。</dd>
+        </dl>
+    </dl>
+
+
+    <a name="editList">
+    <a href="#top">🔝</a>
+    <h2>選択リスト編集画面</h2>
+    <dl class="main">
+        <dt>選択リスト編集画面について</dt>
+        <dd>カテゴリーや登録メールアドレスなどの<a href="#editItem">アイテム編集画面</a>で使う選択肢 (<a href="#selectList">選択リスト</a>) の編集を行う画面です。
+        <dd><a href="#home">ホーム画面</a>、<a href="#editItem">アイテム編集画面</a> のメニューから移動してきます。</dd>
+        <dd>画面の上部の選択リスト別の編集というタイトルが目印です。</dd>
+        
+        <dt>画面の説明</dt>
+        <dd>画面上部の <i class="icon plus"></i> プラスアイコンで新しい選択肢を追加できます。</dd>
+        <dd>カラーラベルは追加・削除はできません。</dd>
+        <dd>画面上部の <i class="icon updown"></i> 上下矢印アイコンを押すと選択肢の右側の三本線をドラッグして上下に動かすことで選択肢の並び替えができます。もう一度 <i class="icon updown_fill"></i> 上下矢印アイコンを押して移動モードを終わります。</dd>
+        <dd>選択肢の背景色は幾つのアイテムに使われているかを示します。グレーなら未使用。黄色なら１つ以上のアイテムで利用。赤なら10以上のアイテムで利用中です。</dd>
+        <dd>選択肢の右の <i class="icon threedots"></i> ３点アイコンを押すとその選択肢に関するコンテキストメニューが表示されます。コンテキストメニューでは、選択肢の名前を変更したり、すぐ下に新しい項目を追加したり、選択肢を使っているアイテム名を表示したりすることができます。</dd>
+        <dd>選択肢を左にドラッグすると、削除ボタンが出てきて、それを押すと削除できます。もし選択肢がアイテムの中で使われている場合は、その注意を促します。もしそれでも削除した場合は、その選択肢を使っているアイテムの該当フィールドはクリアされます。</dd>
+
+        <dt>グループ</dt>
+        <dd>一部のタイプ（カテゴリー、タグ、日付、アイテム参照、URL、自由文字列）は数が増える想定のため、選択メニューで選びやすくなるようにグループを作ることができます。</dd>
+        <dd>選択リストにグループを作ると、ホーム画面のフィルター選択メニューやアイテム編集画面の選択メニューで「グループ」という選択肢が表示され、その中でグループを選んでそのグループに所属する選択肢を階層的に選べるようになります。また、表示フォーマット編集画面での選択肢の限定をこのグループを使って行えるようになります。</dd>
+        <dd>選択リスト編集画面の画面タイトルの下の「全データ」ボタンを押して表示されるグループ選択リストで <i class="icon plus"></i> プラスアイコンを押すと、グループを追加できます。</dd>
+        <dd>グループを追加すると選択肢の左側にチェックボタンが表示され、チェックをONすることで、どの選択肢をそのグループに所属させるかを指定できます。</dd>
+        <dd>グループ選択リストで「グループ編集」を選ぶとグループ編集画面に移動します。</dd>
+        <dd>グループ編集画面では、選択リスト編集画面と同様にグループの名前を変更、追加、削除、並べ替えができます。</dd>
+        <dd>グループは選択リスト毎に最大30個まで作成することができます。</dd>
+    </dl>
+
+
+
+    <a name="savedFilter">
+    <a href="#top">🔝</a>
+    <h2>保存済みフィルター一覧画面</h2>
+    <dl class="main">
+        <dt>保存済みフィルター一覧画面について</dt>
+        <dd>ホーム画面の保存済みフィルター選択や、表示フォーマット編集画面のアイテムのフィルター選択で使う保存済みフィルターを編集する画面です。</dd>
+        <dd><a href="#home">ホーム画面</a>の右側ペインの上部のフィルターボタンを押して表示されるフィルターメニューの、「保存済みフィルター」の「編集」を選ぶと表示できます。</dd>
+        <dd>この画面でできることは、保存済みフィルターの名前を変えたり、順序を並び替えたり、削除したりすることです。</dd>
+        <dd>画面の操作方法は<a href="#editList">選択リスト編集画面</a>と同等です。</dd>
+        <dd>保存済みフィルターのフィルター条件の変更はこの画面ではできません。ホーム画面でフィルター設定をしなおして、同じ名前で保存してください。</dd>
+    </dl>
+
+
+    <a name="displayFormatList">
+    <a href="#top">🔝</a>
+    <h2>表示フォーマット一覧画面</h2>
+    <dl class="main">
+        <dt>表示フォーマット一覧画面について</dt>
+        <dd><a href="#displayFormat">表示フォーマット</a>の追加、名前変更、並び替え、削除などができます。</dd>
+        <dd>ホーム画面、アイテム表示画面、アイテム編集画面のメニューアイコンを押して「表示フォーマットの編集」を選ぶと表示できます。</dd>
+        <dd>表示フォーマット名をタップすると、該当の表示フォーマットの編集をできる<a href="#editDisplayFormat">表示フォーマット編集画面</a>に移動できます。</dd>
+        <dd>画面の操作方法は<a href="#editList">選択リスト編集画面</a>と同等です。</dd>
+    </dl>
+
+
+    <a name="editDisplayFormat">
+    <a href="#top">🔝</a>
+    <h2>表示フォーマット編集画面</h2>
+    <dl class="main">
+        <dt>表示フォーマット編集画面について</dt>
+        <dd><a href="#displayFormat">表示フォーマット</a>の編集ができます。</dd>
+        <dd><a href="#displayFormatList">表示フォーマット一覧画面</a>で表示フォーマット名をタップして移動してきます。</dd>
+        <dd>表示フォーマットは表示したいフィールドだけを追加します。</dd>
+
+        <dt>画面の説明</dt>
+        <dd>画面上部の <i class="icon plus"></i> プラスアイコンで新しいフィールドを追加できます。フィールド編集シートが表示されるので、フィールドの種類を選び、必要に応じて選択肢の限定パラメータを設定した後にシート下部の登録ボタンを押してフィールドを登録します。</dd>
+        <dd>画面上部の <i class="icon updown"></i> 上下矢印アイコンを押すと選択肢の右側の三本線をドラッグして上下に動かすことでフィールドの並び替えができます。もう一度 <i class="icon updown_fill"></i> 上下矢印アイコンを押して移動モードを終わります。</dd>
+        <dd>フィールド名をタップするとフィールド編集シートが表示され、フィールドの種類やパラメータを変更できます。</dd>
+        <dd>フィールド名の右の <i class="icon threedots"></i> ３点アイコンを押すとコンテキストメニューが表示されます。新しいフィールドをその下に追加できます。</dd>
+        <dd>フィールド名を左にドラッグすると、削除ボタンが出てきて、それを押すと削除できます。</dd>
+        
+        <dt>メニュー</dt>
+        <dd>画面上部の <i class="icon threelines"></i> メニューアイコンをタップしてメニューを表示すると、フィールドを一括追加もしくは一括削除できます。</dd>
+        <dl class="sub1">
+        <dt>他の表示フォーマットからコピー</dt>
+        <dd>他の表示フォーマットが登録済みの場合に表示されます。他の表示フォーマットのフィールドを全てコピーします。作成ずみの表示フォーマットの一部フィールドを変更して使いたい場合に便利です。</dd>
+        <dt>全フィールド追加</dt>
+        <dd>デフォルトと同様の全てのフィールドを追加します。大部分のフィールドを使うときはここから不要なフィールドを削除していくのが便利です。</dd>
+        <dt>通常ミニマムフィールド追加</dt>
+        <dd>他のアイテムと関係を持つアイテムの最小限のフィールドを追加します。通常はここから必要なフィールドを追加していくのが便利です。</dd>
+        <dt>単独ミニマムフィールド追加</dt>
+        <dd>他のアイテムとの関係を持たないアイテムの最小限のフィールドを追加します。</dd>
+        <dt>全フィールド削除</dt>
+        <dd>全てのフィールドを削除します。</dd>
+        </dl>
+
+        <dt>フィールド編集シート</dt>
+        <dd>画面上部の <i class="icon plus"></i> プラスアイコンかフィールド名をタップすると表示される画面です。</dd>
+        <dd>フィールドの種類のみ選択必須です。</dd>
+        <dd>複数登録できるフィールド以外は１つの表示フォーマットに同じフィールドを追加できないようにグレーアウトされます。</dd>
+        <dd>フィールドの種類に応じてさらに下記のパラメータを設定できます。</dd>
+        
+        <dl class="sub1">
+        <dt>フィールド別名</dt>
+        <dd>アイテム編集画面やアイテム詳細画面のフィールド名を変更できます。<br>フィールドが「アカウント」、「パスワード」、「PIN」の場合のみ表示されます。</dd>
+        <dt>選択リスト選択の設定</dt>
+        <dd>アイテム編集画面で該当フィールドの選択リストを表示するときの選択肢を限定するか設定できます。<br>
+選択リストを持つフィールドの場合のみ表示されます。</dd>
+        <dt>アイテム選択の設定</dt>
+        <dd>アイテム編集画面で該当フィールドのアイテム選択リストを表示するときの選択肢を限定するか設定できます。<br>
+他のアイテムを参照するフィールドの場合のみ表示されます。</dd>
+        <dt>複数登録不可</dt>
+        <dd>複数個のデータを登録できないようにしたい場合は On にしてください。<br>フィールドが「URL」「日付」「自由文字列」「アイテム参照」の場合のみ表示されます。<br>
+        これは選択リスト選択を「固定」にして該当の選択肢のデータを１つのみ入力できるようにしたい場合に有用です。</dd>
+        </dl>
+        
+        <dt>選択リスト選択の設定パラメータ</dt>
+        <dl class="sub1">
+        <dt>どれでも</dt>
+        <dd>選択リスト選択時に選択肢を限定しません。</dd>
+        <dt>グループから</dt>
+        <dd>フィールドがカテゴリーとタグの場合のみ表示されます。選択肢をそれぞれの選択リストで設定した任意のグループの項目に限定します。</dd>
+        <dt>固定</dt>
+        <dd>ここで指定する選択肢しか選べないようにします。</dd>
+        </dl>
+        
+        <dt>アイテム選択の設定パラメータ</dt>
+        <dl class="sub1">
+        <dt>どれでも</dt>
+        <dd>アイテム選択時に選択肢を限定しません。</dd>
+        <dt>フィルターから</dt>
+        <dd>指定した保存済みフィルターにマッチするアイテムのみに選択肢を限定します。</dd>
+        <dt>固定</dt>
+        <dd>ここで指定するアイテムしか選べないようにします。</dd>
+        </dl>
+    </dl>
+    
+
+    <a name="setting">
+    <a href="#top">🔝</a>
+    <h2>設定画面</h2>
+    <dl class="main">
+        <dt>設定画面について</dt>
+        <dd>各種の設定などを行うことができる画面です。</dd>
+        <dd><a href="#home">ホーム画面</a>から <i class="icon gear"></i> 歯車ボタンを押して移動してきます。</dd>
+        <dd>画面の上にある設定というタイトルが目印です。</dd>
+
+        <dt>ログイン設定</dt>
+        <dd>ログインを必要最低限にするかどうかを設定できます。ログインを必要最低限にした場合は、ホーム画面はログインなしで表示できます。</dd>
+        <dd>アプリを出てから再び戻って来るまでログイン状態を何秒間維持するかを設定できます。この時間の間は、他のアプリと行き来しながらアカウントやパスワードのコピペを繰り返す時にいちいちログインし直さなくても良くなります。</dd>
+        <dd>アプリのログインに専用パスコードを使うかどうかを設定できます</dd>
+        <dd>専用パスコードを使わない場合は、生体認証(顔認証もしくは指紋認証)と、それが失敗した場合は iPhone/iPad の共通パスコード認証を行います。</dd>
+        <dd>専用パスコードは <i class="icon pencil"></i> 鉛筆アイコンを押して４桁以上の数字を設定します。</dd>
+        <dd>生体認証を使わない設定にすると、ログイン時に最初から専用パスワード入力画面が表示されます。生体認証と併用する場合は、まず生体認証が行われ、それが失敗した場合に iPhone/iPad の共通パスコードの代わりに専用パスコード入力画面が表示されます。</dd>
+        
+        <dt>通知設定</dt>
+        <dd>アイテム期限が近づいた時の通知に関する設定をできます。</dd>
+        <dd>通知を有効にしていない時は設定アプリで有効にしてください。</dd>
+        <dd>通知は期限の当日、１日前、１週間前、１ヶ月前に受け取れます。</dd>
+        <dd>何時に通知を受け取るかを指定できます。</dd>
+        
+        <dt>ホーム画面設定</dt>
+        <dd>ホーム画面で検索文字を入力して絞り込み検索する場合に、タイトル以外のアイテムのコメントやメモ情報も含めるかどうか切り替えできます。</dd>
+        <dd>ホーム画面やアイテム詳細画面の期日日のカレンダーアイコンを何日前から赤くするかどうかの日数を設定できます。</dd>
+        
+        <dt>詳細画面設定<dt>
+        <dd>アイテム詳細画面で、パスワードをデフォルで隠すかどうかを切り替えできます。</dd>
+        
+        <dt>編集画面設定<dt>
+        <dd>アイテム編集画面で、タイトルの読み入力フィールドを隠すかどうかを切り替えできます。</dd>
+
+        <dt>バックアップ</dt>
+        <dd>データのバックアップを作成できます。</dd>
+        <dd>バックアップしたデータから復元できる<a href="#backup">バックアップ管理画面</a>に移動できます。</dd>
+        <dd>毎日バックアップを有効化できます。その日の最初のデータ保存時にバックアップを作成します。直近の10日分のバックアップが残ります。</dd>
+
+        <dt>iPhone/iPad iCloud設定<dt>
+        <dd>自分の iPhone と iPad の間で iCloud を使ってデータを同期して同じデータを共有できます。</dd>
+        <dd>同期されるデータはアイテムデータと選択リストデータです。その他の設定情報は同期されません。</dd>
+        <dd>同期されるデータはユーザーが直接見えないユーザー自身の iCloud ドライブのフォルダを通じて、同じAppleアカウントでログインしているデバイス間でのみ共有されます。さらにアイテムデータ自身は暗号化されています。</dd>
+        <dd>自動同期だけではなく、明示的にiCloudにアップロードしたり、ダウンロードしたりすることもできます。</dd>
+        <dt>iCloud 同期について</dt>
+        <dl class="sub0">
+        <dt>iCloud 自動同期が ON の時の同期の仕組み</dt>
+        <dd>アプリ起動時に、本アプリはそのデバイス(iPhone/iPad)のデータとiCloud 上のデータの更新日時を比較して、新しい方のデータをロードします。</dd>
+        <dd>アプリ終了時に、そのデバイスと iCloud の両方にデータを保存します。</dd>
+        <dd>データの更新日時比較と保存とロードは全項目まとめて行います。</dd>
+        <dt>iCloud 同期前の注意</dt>
+        <dd>iCloud 同期前に 複数のデバイスそれぞれで別々にデータを入力した場合、最後に更新したデバイスのデータのみが有効になるのでご注意ください。</dd>
+        <dd>複数のデバイスの間でデータを共有したい場合は、それぞれのデバイスでデータを入力する前に iCloud 同期を ON にしてください。</dd>
+        <dt>iCloud同期を ON にする時に</dt>
+        <dd>もし複数のデバイスそれぞれでデータ入力してしまっていた場合は、下記の手順を行ってください。</dd>
+        <dd>1. 他のデバイスに共有したいデータがあるデバイスから、iCloud にアップロードしてください。</dd>
+        <dd>2. 上記以外のデバイスでは、iCloud からダウンロードしてください。</dd>
+        <dd>3. それぞれのデバイスで iCloud同期を ON にしてください。</dd>
+        <dd>この手順は同期中にうまく同期できていないと思った時にも有効です。</dd>
+        <dt>データの更新日時とデータ通信</dt>
+        <dd>デバイス(iPhone/iPad)とiCloud上のデータの最終更新日時が表示されるので、同期状態の目安になります。</dd>
+        <dd>iCloud の仕組み上、デバイスとiCloudの間のデータ反映はこの更新日時の反映時間にかかわらず数分から数十分の時間がかかることがあります。また、ネットの環境が悪い時はネット環境が回復した時にまとめて反映されます。</dd>
+        <dt>iCloud 同期中の注意</dt>
+        <dd>もしiPhoneとiPadで同時にこのアプリを開いてそれぞれのデバイスでデータを編集した場合、片方の編集内容が無視される可能性があるので注意してください。</dd>
+        <dd>もしこのような使い方が多い場合は、同期をONにしないで、iCloudへのアップロードやiCloudからのダウンロードを使う方が確実です。</dd>
+        <dd>iCloud同期時は、意図せず上記のような使い方をしてしまう可能性があるため、念の為時々バックアップを作成しておくといいでしょう。</dd>
+        <dt>アプリのバージョンアップ時の注意</dt>
+        <dd>iCloudでファイルをやり取りする iPhone と iPad のアプリのバージョンアップはできるだけ同時に行うようにしてください。</dd>
+        <dd>片方のデバイスのみバージョンアップしたままデータを更新すると、古いバージョンのデバイスは新しいバージョンのデバイスで保存されたデータを読めますが、バージョンアップによる新しい機能を使ったデータを保存することができないため、新しい機能を使ったデータが失われる可能性があります。</dd>
+        <dd>アプリの機能追加によりデータのファイルフォーマットが拡張された場合、ファイルフォーマットバージョンが上がります。iCloud上に大きいバージョンのデータが保存されていた場合は、データの損失を防ぐために そのデバイスのアプリがアップデートされるまで、iCloud同期およびアップロードを停止します。</dd>
+        </dl>
+        
+        
+        <dt>設定リセット</dt>
+        <dd>この設定画面で変更した設定を初期値に戻します。</dd>
+        <dd>アイテムデータや選択リストデータは削除されません。</dd>
+        
+        <dt>データクリア</dt>
+        <dd>アイテムデータと選択リストデータを一括削除することができます。</dd>
+        <dd>バックアップファイルは削除されないので、必要ならばバックアップ管理画面で削除してください。</dd>
+        <dd>データクリア時に自動的にバックアップを取ることもできます。</dd>
+        
+        <dt>フルバージョン</dt>
+        <dd>本アプリはデフォルトで 50アイテムまで作成できます。もしそれ以上のアイテムを追加したい場合は、フルバージョンをアプリ内購入でご購入検討ください。</dd>
+        <dd>フルバージョンを一度購入したら今後のアップデートで追加される機能も無料になります。</dd>
+        
+        <dt>このアプリについて</dt>
+        <dd>このアプリのAppStoreのページを開いたり、レビューを書いたり、作者にメールで不具合などのフィードバックをしたりできます。</dd>
+    </dl>
+
+    <a name="backup">
+    <a href="#top">🔝</a>
+    <h2>バックアップ管理画面</h2>
+    <dl class="main">
+        <dt>バックアップ管理画面について</dt>
+        <dd>データのバックアップや復元ができる画面です。</dd>
+        <dd><a href="#setting">設定画面</a>からバックアップ管理画面へのリンクで移動してくる画面です。</dd>
+        <dd>画面の上にあるバックアップ管理というタイトルが目印です。</dd>
+
+        <dt>画面の説明</dt>
+        <dd>バックアップ作成ボタンを押すと、現時点のアイテムの全データと選択リストデータを１つのバックアップファイルに保存します。</dd>
+        <dd>バックアップファイルには保存した日時とその時のアイテム数がコメントとして保存されます。</dd>
+        <dd>暗号化されたバックアップファイルは先頭に 鍵マーク <i class="icon lock"></i> を表示し、暗号化されていないバックアップファイルは先頭に 開いた鍵マーク <i class="icon lock_open"></i> を表示します。
+        <dd>バックアップファイルは新しいものから古い順に並べて表示されます。</dd>
+        <dd>画面の上の選択アイコンを押すと、バックアップファイルを複数選ぶことができます。画面上に追加で表示された <i class="icon trash"></i> ゴミ箱アイコンをタップするとまとめて削除できます。完了アイコンを押して選択モードを解除します。</dd>
+        
+        <dd>バックアップボタンの下のスイッチ<dt>
+        <dl class="sub1">
+        <dt>バックアップを暗号化する</dt>
+        <dd>デフォルトでバックアップを作成するときに暗号化します。Apple アカウントに紐づいた暗号キーを共有していないデバイスにバックアップデータを共有したい場合に暗号化を OFF します。暗号化していないデータはファイルサイズが小さくなります。必要な場合以外は ON のままにしておいてください</dd>
+        <dt>iCloud のデータもバックアップする</dt>
+        <dd>デフォルトでiCloud上の同期用データもバックアップします。iCloud からのバックアップは常に暗号化されます。iCloudのデータのバックアップが不要な時はOFFしてください</dd>
+        <dt>バックアップの復元前に自動的にバックアップする</dt>
+        <dd>デフォルトでバックアップファイルを復元する前に自動的にバックアップします。万一のためにON のままにしておくことをお勧めします</dd>
+        </dl>
+        
+        <dt>バックアップファイルのファイル操作メニュー</dt>
+        <dd>バックアップファイルをタップすると、ファイル操作メニューが表示されます。</dd>
+        <dl class="sub1">
+        <dt>コメント編集</dt>
+        <dd>ファイルのコメントを変更できます。</dd>
+        <dt>共有</dt>
+        <dd>ファイルを保存のために他アプリ（例えばメールやメモ帳）に共有できます。</dd>
+        <dt>復元</dt>
+        <dd>アイテムデータと選択リストデータを復元します。</dd>
+        </dl>
+        
+        <dt>バックアップファイルについて</dt>
+        <dd>コメントが 「auto」 で始まるバックアップはアプリが自動的に作成したバックアップです。</dd>
+        <dd>コメントが 「auto daily backup」 で始まるバックアップは毎日最初のデータ保存時に自動的に作成されるバックアップです。直近１０日分のみ保持され、それより古いバックアップは自動削除されます。</dd>
+        <dd>バックアップファイルは自分の Appleアカウントと紐付いた暗号キーで暗号化されているため、自分の Appleアカウントで使っている iPhoneもしくは iPad の 本App 以外では復元することはできません。</dd>
+        <dd>自分以外の Appleアカウントで使う iPhone や iPad にデータを移行したいときは、暗号化を OFFしたバックアップファイルを使ってください。</dd>
+        <dd>バックアップファイルは、メモ帳など他のアプリに共有することで、データをアプリの外で保管することができます。そのアプリからバックアップファイルをこのアプリに共有するとバックアップフォルダに戻すことができます。</a>
+        <dd>また、iPhone/iPad を PC に 接続するとiTunes(Windows) や Finder(Mac)で 本 Account アプリのフォルダからバックアップファイルを別のフォルダにコピーして保管したり、アプリのフォルダにコピーで戻したりすることができます。</dd>
+        <dd>ファイル名を変えるとバックアップ管理画面で見えなくなることがあるのでご注意ください。</dd>
+        <dd>暗号化OFFのバックアップファイルは拡張子が .zip の圧縮データになっています。zip ファイルは PC で開くことができます。zip ファイル内のデータファイルは JSON というフォーマットのテキストファイルになっているのでテキストエディタで参照することも可能です。</dd>
+        <dd>暗号化OFFのバックアップファイルを iCloud フォルダ上に置くと、iCloud をハッキングされるとパスワードデータが流出するリスクがあります。必要な時以外は暗号化をOFFしたバックアップファイルを作らず、作った場合も共有先の保存場所に十分に注意してください。</dd>
+    </dl>
+
+    
+    <a name="bookmark">
+     <a href="#top">🔝</a>
+     <h2>ブックマークアイコン</h2>
+     <dl class="main">
+        <dt>ブックマークアイコンについて</dt>
+        <dd>iPhone や iPad にデフォルトでインストールされている ショートカット Appを使うと、デスクトップ上にブックマークアイコンを置くことができます。</dd>
+        <dd>このアプリ用のブックマークアイコンとして下記の２種類のアイコンを作れます。</dd>
+        <dl class="sub1">
+        <dt>アイテム表示</dt>
+        <dd>任意のアイテムの詳細表示画面を開きます。</dd>
+        <dt>リスト表示</dt>
+        <dd>任意のグルーピングと保存済みフィルターの組み合わせでホーム画面を開きます。</dd>
+        </dl>
+        <dt>ブックマークアイコンの作り方</dt>
+        <dd>1. ショートカットアプリを開き、画面上部の＋ボタンを押して新規ショートカットの作成画面を表示します。</dd>
+        <dd>2. アクションの追加で「App」から「Account」を選びます。</dd>
+        <dd>3. 「アイテム表示」と「リスト表示」の好きな方を選びます。</dd>
+        <dd>4. 必要なパラメータを入力します。「アイテム表示」ならアイテム名を正確に入力します。「リスト表示」ならグルーピングを選び、保存済みフィルター名を正確に入力します。</dd>
+        <dd>5. 再生ボタンを押して、想定した画面が表示されることを確認します。正しく表示されない場合は、アイテム名や保存済みフィルター名がミススペリングしていないか確認してください。</dd>
+        <dd>6. 共有ボタンを押して「ホーム画面に追加」を選びます。</dd>
+        <dd>7. ブックマークアイコンにつける画像と名前を変更します。画像は「ファイルを選択」で「Account」アプリのフォルダの中に「AccountIcon」という名前で本アプリのアイコン画像が入っているので、ご自由にお使いください。</dd>
+        <dd>8. 追加ボタンを押すと、デスクトップにブックマークアイコンが追加されます。</dd>
+     </dl>
+
+
+    <a name="support">
+    <a href="#top">🔝</a>
+    <h2>ユーザーサポート</h2>
+    <dl class="main">
+        <dd>不具合修正や機能改善のリクエストは、設定画面の最後にある「ユーザーサポート」からメールでご連絡ください。</dd>
+        <dd>不具合を報告していただける場合は、詳しい不具合症状の説明と、再現手順の説明をメールにご記載ください。また、再現時の画面キャプチャなどを添付いただけると助かります。</dd>
+    </dl>
+
+
+    <a name="history">
+    <a href="#top">🔝</a>
+    <h2>バージョン履歴</h2>
+    <dl class="main">
+          <dt>ver.2.4</dt>
+          <dd>カテゴリーと表示フォーマットを連携させるようにしました。編集画面でカテゴリーを選択したら前回そのカテゴリーと一緒にアイテム登録した表示フォーマットに自動的に切り替えます。</dd>
+          <dd>カテゴリーの選択編集画面のコンテキストメニューで対応する表示フォーマットの確認・変更ができるようになりました。</dd>
+          <dd>編集画面で表示フォーマットを追加すると、その時にデータを入力していたフィールドをデフォルトで選択するようになりました。</dd>
+          <dd>編集画面の一番下に、選択中の表示フォーマットでは表示されないフィールドも表示できるようになりました。</dd>
+          <dd>表示フォーマット編集画面ではカテゴリーなど必要最小限のフィールドは削除できないようにしました。</dd>
+          <dd>選択リスト編集画面のコンテキストメニューで所属グループを確認・変更できるようになりました。</dd>
+          <dd>各画面のコンテキストメニューに削除ボタンを追加しました。</dd>
+          <dd>軽微な不具合を修正しました。</dd>
+
+
+          <dt>ver.2.3</dt>
+          <dd>コメントがあるURL表示はURLを直接表示するのではなく、リンク付きのコメントとして表示するようにしました。</dd>
+          <dd>アイテム編集画面の URL、日付、自由文字列、アイテム参照のデータを複製できるようになりました。</dd>
+          <dd>アイテム編集画面の日付データで２つ目以降の項目の後に予測日データを追加できるようになりました。</dd>
+          <dd>軽微な不具合を修正しました。</dd>
+    
+    
+          <dt>ver.2.2</dt>
+          <dd>アプリを出た後に少しの時間ログインを維持できるようにしました。他のアプリとの間でアカウントやパスワードのコピペを繰り返す時に便利です。設定画面のログイン設定で時間を変更できます。</dd>
+          <dd>自由文字列にコメントを付加できるようになりました。</dd>
+          <dd>軽微な不具合を修正しました。</dd>
+
+
+          <dt>ver.2.1</dt>
+          <dd>最近表示した項目にすぐアクセスできる履歴一覧をホーム画面のメニューに追加しました。</dd>
+          <dd>バックアップ作成時に暗号化しないオプションを追加しました。</dd>
+    
+          <dt>ver.2.0</dt>
+          <dd>アイテムにブックマークを設定できるようになりました。今注目しているアイテムだけをフィルター表示できます。</dd>
+          <dd>起動時のデフォルトのグルーピングとフィルタを設定できるようになりました。</dd>
+          <dd>アイテム表示画面やアイテム編集画面から選択リスト編集画面や表示フォーマット一覧画面に移動できるようになりました。</dd>
+          <dd>複数登録できるフィールド（日付、自由文字列、URL、アイテム参照）でグループを使えるようになりました。</dd>
+          <dd>iCloud 同期の動作を改善しました。</dd>
+          <dd>いろいろな画面表示の改善をしました。</dd>
+          <dd>軽微な不具合を修正しました。</dd>
+
+    
+          <dt>ver.1.9</dt>
+          <dd>使い勝手の向上のため、必要な時のみログインを要求するようになりました。<a href="#setting">設定画面</a>のログイン設定で常にログインする設定に戻すこともできます。</dd>
+          <dd><a href="#detail">アイテム詳細画面</a>や<a href="#editItem">アイテム編集画面</a>でアイテム毎にログインが必要か不要かを設定できるようになりました。</dd>
+          <dd>ホーム画面のフィルターの種類に「ログイン不要」を追加しました。</dd>
+          <dd>ホーム画面のフィルター状態の表示をわかりやすくしました。</dd>
+          <dd>ホーム画面の期限日や更新日のグルーピング時にアイテム表示にその日付を表示するようにしました。</dd>
+          <dd>アイテム詳細画面の期限以外の日付表示にも今日からの日数を表示するようにしました。</dd>
+          <dd>「パスワードをデフォルトで隠す」オプション設定をアイテム詳細画面とアイテム編集画面で別々に設定できるようになりました。</dd>
+          <dd>「タイトルのヨミ欄を隠す」オプション設定をアイテム詳細画面とアイテム編集画面で別々に設定できるようになりました。</dd>
+          <dd>アイテム編集画面で表示フォーマットを常に表示するようにしました。</dd>
+          <dd>軽微な不具合を修正しました。</dd>
+
+          <dt>ver.1.8</dt>
+          <dd>アイテム編集画面のUIを改善しました。</dd>
+          <dd>軽微な不具合を修正しました。</dd>
+    
+          <dt>ver.1.7</dt>
+          <dd>Apple の ショートカットAppに対応し、任意のアイテムの詳細画面を直接開くブックマークアイコンをデスクトップ上に置けるようになりました。</dd>
+          <dd>同じくショートカットAppによって、任意のグルーピングと保存済みフィルターの組み合わせでホーム画面を開くブックマークアイコンをデスクトップ上に置けるようになりました。</dd>
+          <dd>アイテムの期限日が後何日以内になった時にアイコンを赤く表示するかを設定できるようになりました。</dd>
+          <dd>軽微な不具合を修正しました。</dd>
+
+          <dt>ver.1.6</dt>
+          <dd>アイテムの任意の日付データを期限として扱えるようになりました。複数の日付を期限に設定すると、一番近い日付がフィルター検索対象になります。</dd>
+          <dd>アイテムの期限データを日付データにコピーできるようになりました。</dd>
+          <dd>アイテムの期限日が近づいた時に通知できるようになりました。当日、１日前、１週間前、１ヶ月前に通知します。</dd>
+          <dd>毎日1回自動的にバックアップを作成するようになりました。直近１０日分のバックアップが残ります。</dd>
+          <dd>軽微な不具合を修正しました。</dd>
+
+          <dt>ver.1.5</dt>
+          <dd>「表示フォーマット」機能を追加しました。アイテム編集画面やアイテム詳細画面のフィールドの表示順や表示有無、編集時の選択肢などを調整できます。</dd>
+          <dd>アイテム詳細画面で日付やURLなどの複数データを登録できるフィールドの表示を改善し、選択タイプ毎にまとめて表示するようにしました。</dd>
+          <dd>アイテム絞り込み表示機能に「保存ずみフィルター」機能を追加しました。いつでもフィルター設定に名前をつけて再利用することができます。</dd>
+          <dd>カテゴリーとタグのフィルター設定に任意のグループの選択肢をまとめて設定できるようになりました。</dd>
+          <dd>アイテム編集画面で日付タイプのデータが複数あるときに日付順に並べ替えできるボタンを追加しました。</dd>
+          <dd>選択リスト編集画面のコンテキストメニューに「この下に追加」ボタンを追加しました。</dd>
+          <dd>設定画面にバックアップ作成ボタンを追加しました。</dd>
+          <dd>パスワードをデフォルトで隠すオプション設定がONの時には Appを抜けるとパスワード表示を自動的に非表示にするようにしました。</dd>
+          <dd>軽微な不具合を修正しました。</dd>
+
+          <dt>ver.1.4</dt>
+          <dd>カラーにオレンジとシアンを追加しました。</dd>
+          <dd>カラーラベル機能を追加しました。選択リストのカラーラベルを編集すると、カラーに名前を付けたりメニュー上の並びを変更したりできます。</dd>
+          <dd>軽微な不具合を修正しました。</dd>
+    
+          <dt>ver.1.3</dt>
+          <dd>カテゴリーとタグの選択リスト編集画面で選択肢のグループを作れるようにしました。ホーム画面のフィルター指定やアイテム編集画面でカテゴリーやタグを選ぶときにグループの中から容易に選べるようになります。</dd>
+          <dd>アイテム編集画面でタグや日付情報など複数追加できるフィールド情報の並び替えをできるようにしました。</dd>
+          <dd>カラー選択メニュー表示を改善しました。</dd>
+          <dd>軽微な不具合を修正しました。</dd>
+
+          <dt>ver.1.2.1</dt>
+          <dd>軽微な不具合を修正しました。</dd>
+
+          <dt>ver.1.2</dt>
+          <dd>日付フィールドを追加しました。期限日以外の日付情報を複数登録できます。</dd>
+          <dd>アイテム参照フィールドを追加しました。他のアイテムへの参照を複数登録できます。</dd>
+          <dd>アイテム詳細画面のタグ表示と期限日表示を改善しました。</dd>
+          <dd>選択リスト編集画面でそれぞれの名前がアイテムに使われているかどうかを背景色で区別できるようにしました。</dd>
+          <dd>軽微な不具合を修正しました。</dd>
+
+          <dt>ver.1.1</dt>
+          <dd>タグ機能を追加しました。カテゴリーに似ていますが一つのアイテムに複数のタグを登録できます。</dd>
+          <dd>ホーム画面で絞り込み条件にタグを追加しました。指定したタグを持つアイテムのみに絞り込みできます。</dd>
+          <dd>バックアップ時にiCloud上の同期用データも自動的にバックアップするようにしました。</dd>
+          <dd>設定画面のiCloud同期用データとの比較でアイテム数とファイルフォーマットバージョンも表示するようにしました。</dd>
+          <dd>アイテム詳細画面の参照元アイテムなどの他のアイテム表示でそのアイテムのタイトルコメントも表示するようにしました。</dd>
+          <dd>軽微な不具合を修正しました。</dd>
+          
+          
+          <dt>ver.1.0</dt>
+          <dd>新規作成</dd>
+
+    </dl>
+
+    <a href="#top">🔝</a>
+
+
+  </body>
+</html>
