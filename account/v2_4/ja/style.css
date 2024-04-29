@@ -7,11 +7,11 @@
     
     a.sf {font-family: 'SF Pro'}
 
-    h1 {
-			font-size: 1rem;
+   h1 {
+      font-size: 3vmax;
     }
     h2 {
-      font-size: 1rem;
+      font-size: 3vmax;
       padding: 0.4em 0.5em;
       border-left: solid 8px #7de6b4;
     /*  border-bottom: solid 8px #3250dd; */
@@ -19,11 +19,12 @@
       color: #333333;
     }
     h3 {
-      font-size: 1rem;
+      font-size: 2.5vmax;
       padding: 0.3em;
       border-left: solid 5px #7de6b4;
     }
     
+
 
     a:link, a:visited {
           color: #333333;
