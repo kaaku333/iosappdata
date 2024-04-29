@@ -83,26 +83,7 @@
       -webkit-mask: no-repeat center / contain ;
       background: #2222FF;
     }
-    dl.main  {
-      padding: 0.2rem 0.2rem 0.2rem 1rem;
-      line-height: 1.4rem;
-    }
-    
-    dl.main dt{
-      font-weight: bold; 
-      margin-top: 0.2rem;
-      margin-bottom: 0.5rem;
-      font-size: 1rem;
-    }
-    dl.main dd{
-      font-size: 1rem;
- 	  margin-bottom: 0.6rem;
-	  padding: 0px 0px 0px 0rem;
-       display: list-item;
-       list-style-type: circle;
-       line-height: 150%;
-		}
-		
+ 
 	dl.toc  {
 		padding: 1rem 1rem 1rem 1rem;
 		font-size: 0.8rem;
@@ -115,8 +96,27 @@
     dl.toc dd{
       margin-left: 0em;
 	  display: list-item;
-	  /*padding: 0px 0px 0px -30em; */
+	  padding: 0rem 0rem 0.3rem 0rem;
       list-style-type: circle;
+    }
+
+    dl.main  {
+      padding: 10px 20px 20px 30px;
+      line-height: 1.4em;
+    }
+    
+    dl.main dt{
+      font-weight: bold; 
+      margin-top: 2vmax;
+      margin-bottom: 0.3em;
+      font-size: 2.5vmax;
+    }
+    dl.main dd{
+      font-size: 2.5vmax;
+      margin-bottom: 0.6em;
+       display: list-item;
+       list-style-type: circle;
+       line-height: 150%;
     }
 
     dl.sub0  {
@@ -126,7 +126,7 @@
       margin-top: 1vmax;
       font-size: 2.2vmax;
     }
-	dl.sub0 dd{
+    dl.sub0 dd{
       font-size: 2.2vmax;
       margin-bottom: 0.4em;
       list-style-type: circle;
