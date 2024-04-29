@@ -3,240 +3,8 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>help_mainPage</title>
-    <style type="text/css">
-    #body {
-      font-family: "Helvetica", "ヒラギノ角ゴ ProN W3";
-      font-size: 3vmax;
-      background-color: #777777;
-      color: #333333
-    }
-    
-    a.sf {font-family: 'SF Pro'}
-
-    h1 {
-      font-size: 3vmax;
-    }
-    h2 {
-      font-size: 3vmax;
-      padding: 0.4em 0.5em;
-      border-left: solid 8px #7de6b4;
-    /*  border-bottom: solid 8px #3250dd; */
-      background-color: #c2ffed;
-      color: #333333;
-    }
-    h3 {
-      font-size: 2.5vmax;
-      padding: 0.3em;
-      border-left: solid 5px #7de6b4;
-    }
-    
-
-    a:link, a:visited {
-          color: #333333;
-          background: #c2ffed;
-          padding: 0.2em;
-          text-decoration: none;
-    }
-    .img_area img{
-      width: 50%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .icon_white {
-      display: inline-block;
-      margin: 0 7 -7 7;
-      width: 1.2em;
-      height: 1.2em;
-      mask: no-repeat center / contain;
-      -webkit-mask: no-repeat center / contain ;
-      background: #EEEEEE;
-    }
-    .icon_black {
-      display: inline-block;
-      margin: 0 7 -7 7;
-      width: 1.2em;
-      height: 1.2em;
-      mask: no-repeat center / contain;
-      -webkit-mask: no-repeat center / contain ;
-      background: #111111;
-    }
-    .icon_blue {
-      display: inline-block;
-      margin: 0 7 -7 7;
-      width: 1.2em;
-      height: 1.2em;
-      mask: no-repeat center / contain;
-      -webkit-mask: no-repeat center / contain ;
-      background: #5588FF;
-    }
-    .icon_red {
-      display: inline-block;
-      margin: 0 7 -7 7;
-      width: 1.2em;
-      height: 1.2em;
-      mask: no-repeat center / contain;
-      -webkit-mask: no-repeat center / contain ;
-      background: #FF5588;
-    }
-
-    .icon_darkblue {
-      display: inline-block;
-      margin: 0 7 -7 7;
-      width: 1.2em;
-      height: 1.2em;
-      mask: no-repeat center / contain;
-      -webkit-mask: no-repeat center / contain ;
-      background: #2222FF;
-    }
-    dl.main  {
-      padding: 10px 20px 20px 30px;
-      line-height: 1.4em;
-    }
-    
-    dl.main dt{
-      font-weight: bold; 
-      margin-top: 2vmax;
-      margin-bottom: 0.3em;
-      font-size: 2.5vmax;
-    }
-    dl.main dd{
-      font-size: 2.5vmax;
-      margin-bottom: 0.6em;
-       display: list-item;
-       list-style-type: circle;
-       line-height: 150%;
-    }
-    
-    dl.sub0  {
-      padding: 0px 0px 0px 50px;
-    }
-    dl.sub0 dt{
-      margin-top: 1vmax;
-      font-size: 2.2vmax;
-    }
-    dl.sub0 dd{
-      font-size: 2.2vmax;
-      margin-bottom: 0.4em;
-      list-style-type: circle;
-    }
-    
-    dl.sub1{
-      display:flex;
-      flex-wrap: wrap;
-      text-align: left;
-      padding: 20px;
-      margin: 10px;
-      line-height: normal;
-    }
-    dl.sub1 dt{
-        font-size: 2vmax;
-        vertical-align: baseline;
-        background: #ddd;
-        padding: 20px;
-        margin: 0;
-        width: 30%;
-        box-sizing: border-box;
-        border: 1px solid #ccc; 
-    }
-    dl.sub1 dd{
-       list-style-type: none;
-       font-size: 2vmax;
-       padding: 20px;
-       margin: 0;
-       width: 70%;
-       border: 1px solid #ccc;
-       box-sizing: border-box;
-    }
-    .icon {
-        display: inline-block;
-        width: 1.0em;
-        height: 1.0em;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .icon.trash {
-        background-image: url(https://kaaku333.github.io/iosappdata/account/image/trash@2x.png);
-    }
-    .icon.threelines {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal@2x.png) ;
-    }
-    .icon.threedots {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/ellipsis@2x.png) ;
-    }
-    .icon.info {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/info.circle@2x.png) ;
-    }
-    .icon.gear {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/gear@2x.png) ;
-    }
-    .icon.updown {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.up.arrow.down.circle@2x.png) ;
-    }
-    .icon.updown_fill {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.up.arrow.down.circle.fill@2x.png) ;
-    }
-    .icon.dec3lines {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal.decrease.circle@2x.png) ;
-    }
-    .icon.dec3lines_fill {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal.decrease.circle.fill@2x.png) ;
-    }
-    .icon.wrench {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/wrench.adjustable@2x.png) ;
-    }
-    .icon.xmark {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/xmark.circle@2x.png) ;
-    }
-    .icon.plus {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/plus@2x.png) ;
-    }
-    .icon.pencil {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/pencil@2x.png) ;
-    }
-    .icon.mag {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/magnifyingglass@2x.png) ;
-    }
-    .icon.eyeslash {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/eye.slash@2x.png) ;
-    }
-    
-    .icon.icloudup {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/icloud.and.arrow.up@2x.png) ;
-    }
-    .icon.key {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/key@2x.png) ;
-    }
-    .icon.coin {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/dollarsign.circle@2x.png) ;
-    }
-    .icon.coin_fill {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/dollarsign.circle.fill@2x.png) ;
-    }
-    .icon.person2 {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/person.2@2x.png) ;
-    }
-    .icon.calendarex {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/calendar.badge.exclamationmark@2x.png) ;
-    }
-    .icon.lock {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/lock@2x.png) ;
-    }
-    .icon.lock_slash {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/lock.slash@2x.png) ;
-    }
-    .icon.lock_open {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/lock.open@2x.png) ;
-    }
-    .icon.bookmark {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark@2x.png) ;
-    }
-    .icon.bookmark_fill {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark.fill@2x.png) ;
-    }
-
-    </style>
-      <script type="text/javascript">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
       <!--
         var paramArray =[]
         window.onload = loadFinished;
@@ -274,6 +42,12 @@
           }
           colorMode = 'normal'
           colorModeSelect(colorMode)
+          
+          // goto 
+          // ex.) goto=history
+         if(paramArray.goto != null){
+              gotoName(paramArray.goto);
+          }
         }
         
         
@@ -308,6 +82,10 @@
             }
           }
         }
+        
+        function gotoName(name){
+            window.location.href = "#"+name;
+        }
     // -->
     </script>
 </head>
@@ -316,25 +94,28 @@
 <a name="top">
      <h3>Contents</h3>
      <dl class="main">
+       <dt>Overview</dt>
        <dd><a href="#welcome">Welcome</a></dd>
        <dd><a href="#about">About this app</a></dd>
        <dd><a href="#usage">Basic usage of this app</a></dd>
+       <dt>Explanation of screens</dt>
        <dd><a href="#pages">App Screen type</a></dd>
-       <dd><a href="#item">Items</a></dd>
-       <dd><a href="#field">Fields</a></dd>
-       <dd><a href="#selectList">Selection lists</a></dd>
-       <dd><a href="#displayFormat">Display format</a></dd>
        <dd><a href="#home">Home screen</a></dd>
        <dd><a href="#detail">Item details screen</a></dd>
        <dd><a href="#editItem">Item edit screen</a></dd>
        <dd><a href="#editList">Edit Selection list screen</a></dd>
        <dd><a href="#savedFilter">Saved Filter list screen</a></dd>
        <dd><a href="#displayFormatList">Display format list screen</a></dd>
-       <dd><a href="#editDisplayFormat">Display format edit screen
-</a></dd>
+       <dd><a href="#editDisplayFormat">Display format edit screen</a></dd>
        <dd><a href="#setting">Setting screen</a></dd>
        <dd><a href="#backup">Backup screen</a></dd>
+       <dt>Explanation of terms</dt>
+       <dd><a href="#item">Items</a></dd>
+       <dd><a href="#field">Fields</a></dd>
+       <dd><a href="#selectList">Selection lists</a></dd>
+       <dd><a href="#displayFormat">Display format</a></dd>
        <dd><a href="#bookmark">Bookmark icon</a></dd>
+       <dt>Others</dt>
        <dd><a href="#support">User Support</a></dd>
        <dd><a href="#history">Version history</a></dd>
      </dl>
@@ -351,8 +132,8 @@
      </dl>
 
 
-     <a name="about">
      <a href="#top">🔝</a>
+     <a name="about">
      <h2>About this app</h2>
      <dl class="main">
         <dt>Introduction</dt>
@@ -381,15 +162,15 @@
         <dd>The items to be entered and their options can be limited depending on the type of account information to be entered. </dd>
         <dd>The account string or password string can be copied to the clipboard by tapping it. </dd>
         <dd>You can also auto-generate passwords. </dd>
-        <dd>You can share data between your iPad/iPhone via iCloud. </dd>
+        <dd>You can share data between your iPad/iPhone/Mac via iCloud. </dd>
         <dd>You can always create an encrypted backup file and restore it when needed. </dd>
         <dd>You can be notified when an item with a due date is about to expire. </dd>
         <dd> With Shortcuts app from Apple, you can put an icon on your desktop that opens the details screen for any item directly. </dd>
      </dl>
 
 
-<a name="usage">
      <a href="#top">🔝</a>
+<a name="usage">
      <h2>Basic usage of this app</h2>
      <dl class="main">
          <dt>1. Item registration</dt>
@@ -432,8 +213,8 @@
 
 
 
-<a name="pages">
      <a href="#top">🔝</a>
+<a name="pages">
      <h2>App Screen type</h2>
      <dl class="main">
          <dd>Types of screens that appear in this app</dd>
@@ -478,8 +259,495 @@
 
      </dl>
 
-     <a name="item">
+
      <a href="#top">🔝</a>
+     <a name="home">
+     <h2>Home Screen</h2>
+     <dl class="main">
+         <dt>About the home screen</dt>
+         <dd>The home screen is the first thing you see when you start. </dd>
+         <dd>Look for the name of the app at the top of the screen. </dd>
+         <dd>The screen consists of two panes, the left side is the group display and the right side is the item list display. </dd>
+        
+         <dt>Group Display</dt>
+         <dd>The top of the group display on the left side of the screen is the grouping name. You can switch the grouping type by tapping the grouping name. </dd>
+         <dd>Grouping can be selected from category, title (in alphabetical order), priority, modified date, due date, and color. </dd>
+         <dd> If you change the grouping, the grouping of the item list display on the right will also be changed. </dd>
+         <dd>If you tap any group name from the group list under the grouping name, the account list in the right pane will scroll to that group. </dd>
+
+         <dt>Grouping type list</dt>
+         <dl class="sub1">
+         <dt>Category</dt>
+         <dd>Used when you want to find items in any category</dd>
+         <dt>Title</dt>
+         <dd>When you want to search for an item by name</dd>
+         <dt>Priority</dt>
+         <dd>Used when you want to find items of any priority</dd>
+         <dt>Update time</dt>
+         <dd>Used when you want to find recently updated items</dd>
+         <dt>Due date</dt>
+         <dd>Use this when you want to find items whose due date is close</dd>
+         <dt>Color</dt>
+         <dd>Used when you want to find items of any color</dd>
+         </dl>
+         
+         <dt>Filter view</dt>
+         <dd>Above the item list display on the right side of the screen is a <i class="icon dec3lines"></i> filter icon , filter status and the total number of items currently displayed. <i class="icon dec3lines"></i> Tap the filter icon to display the filter menu, where you can select various conditions to filter and display items. </dd>
+         <dd>In addition to category, tag, priority, update date, time limit, and color, you can also select account linkage, payment status, deprecated status, and No login required as filtering conditions. </dd>
+         <dd>If you select multiple filters, only items matching all conditions will be displayed. The total number of items is the total number of matched items, 0 if none match. </dd>
+         <dd>When filtering is in progress, the filter icon is displayed in a filled state <i class="icon dec3lines_fill"></i> . </dd>
+         <dd>  If you press the <i class="icon dec3lines_fill"></i> filter icon and select "Reset Filters", you can reset all filter conditions at once. </dd>
+         <dd>If you select a saved filter from the filter menu, you can save the filter condition at that time with a name, and later you can reproduce the filter condition by simply selecting the name. </d>
+         <dd>Selecting the Edit Saved Filter button displays the <a href="#savedFilter">Saved Filter list Screen</a>, where you can rename or delete the saved filter. </dd>
+         <dd>If you want to change the filtering conditions of a saved filter, change the filtering conditions after selecting that filter, and save it with the same name to overwrite it. </dd>
+         <dt>Search box</dt>
+         <dd>You can enter a search string in the search box at the top of the screen. As you enter a character string, it will automatically narrow down to only items with names, notes, comments, etc. that include that character string. </dd>
+         <dd>If you press the <i class="icon xmark"></i> icon on the right side, the character string will disappear and you can cancel the refinement state. </dd>
+         <dd>The search string is also a filter condition, so it can be reused in saved filters. </dd>
+         
+
+         <dt>Item list display</dt>
+         <dd>The account list display shows a list of items belonging to the group under the group name. If you add a comment to the item title, it will be displayed together with the item title. </dd>
+         <dd>Tap an item name to go to the <a href="#detail">Item Detail Screen</a>, which displays detailed information about the item. </dd>
+         <dd>An icon may be displayed to the right of the item name depending on the status of the item. </dd>
+         
+         <dt>List of icons displayed to the right of item names</dt>
+         <dl class="sub1">
+         <dt><i class="icon person2"></i></dt>
+         <dd>alias item</dd>
+         <dt><i class="icon coin_fill"></i></dt>
+         <dd>Item with ongoing payment</dd>
+         <dt><i class="icon coin"></i></dt>
+         <dd>Paid Item</dd>
+         <dt><i class="icon calendarex"></i></dt>
+         <dd>Item that have a due date. If it is close to the due date, it will be displayed in red</dd>
+         <dt>🪦</dt>
+         <dd>Deprecated item</dd>
+         <dt><i class="icon bookmark_fill"></i></dt>
+         <dd>Bookmarked item</dd>
+         </dl>
+
+         <dt>icons at the top of the screen</dt>
+         <dd>You can go to the settings screen or add a new account from the icons at the top of the screen. </dd>
+         <dl class="sub1">
+         <dt><i class="icon gear"></i></dt>
+         <dd>Move to the <a href="#setting">Settings screen</a> where you can make various settings and backups</dd>
+         <dt><i class="icon info"></i></dt>
+         <dd>Show this how-to screen</dd>
+        </dl>
+        
+        <dl class="sub1">
+         <dt><i class="icon threelines"></i></dt>
+         <dd>Show menu</dd>
+         <dt><i class="icon bookmark"></i></dt>
+         <dd>Turn on/off filtering by bookmark</dd>
+         <dt><i class="icon lock"></i></dt>
+         <dd>Indicates login status (not logged in <i class="icon lock"></i> / logged in <i class="icon lock_open"></i> ). If you are not logged in, tap to log in</dd>
+         <dt><i class="icon plus"></i></dt>
+         <dd>Go to the <a href="#editItem">Item edit screen</a> where you can add new items</dd>
+         </dl>
+         
+         <dt>Menu contents</dt>
+         <dl class="sub1">
+         <dt>Default settings</dt>
+         <dd>You can set default grouping and filter that are set at startup. Filter can be selected from saved filters</dd>
+         <dt>Edit selection list</dt>
+         <dd>Go to the <a href="#editList">list editing screen</a> where you can edit individual string lists</dd>
+         <dt>Edit display format</dt>
+         <dd>Go to the <a href="#displayFormatList">display format list screen</a> where you can edit the display format</dd>
+         <dt>History</dt>
+         <dd>View history for quick access to recently opened items</dd>
+         </dl>
+     </dl>
+
+
+
+     <a href="#top">🔝</a>
+    <a name="detail">
+     <h2>Item details screen</h2>
+     <dl class="main">
+         <dt>Item details screen</dt>
+         <dd>This screen displays information (<a href="#field">fields</a>) registered in one item. </dd>
+         <dd>This is a screen that you can move from the home screen by pressing the item name. </dd>
+         <dd>The item name at the top of the screen is a landmark. </dd>
+         <dd>Only the items entered on the item edit screen are displayed on the item details screen. </dd>
+         <dt>Screen configuration</dt>
+         <dd>At the top of the screen is the title in large font and the title comment in small font. </dd>
+         <dd>There are icons in the upper right corner of the screen. </dd>
+         
+         <dt>Icons at the top of the screen</dt>
+         <dl class="sub1">
+         <dt><i class="icon threelines"></i></dt>
+         <dd>Show menu</dd>
+         <dt><i class="icon bookmark"></i></dt>
+         <dd>You can switch the bookmark state of this item. If you turn on bookmarks, you can narrow down the display using the <i class="icon bookmark"></i> bookmark button on the home screen</dd>
+         <dt><i class="icon lock"></i></dt>
+         <dd>You must be logged in to view/edit this item's details (not logged in <i class="icon lock"></i> / logged in <i class="icon lock_open"></i> ) or logged in You can toggle whether <i class="icon lock_slash"></i> is required or not. Default is login required</dd>
+         <dt><i class="icon trash"></i></dt>
+         <dd>You can delete items. Just to be sure, please confirm if you really want to delete it</dd>
+         <dt>Edit</dt>
+         <dd>You can edit the item by going to the <a href="#editItem">Item edit screen</a></dd>
+         </dl>
+         
+         <dt>Menu contents</dt>
+         <dl class="sub1">
+         <dt>Options</dt>
+         <dd>Optional settings. </br>
+         You can toggle whether passwords are hidden by default. </br>
+         You can toggle whether to display the title reading field. </dd>
+         <dt>Display format</dt>
+         <dd>Displays the <a href="#displayFormat">Display Format</a> submenu. <br>If you select a registered display format name, you can temporarily switch to that display format. Selecting "All fields" will return to the default display of all fields. </dd>
+         <dt>Color</dt>
+         <dd>You can set the color of the item. The color label name can be changed on the color label selection list edit screen. Colors are used for grouping and filtering on the home screen. </dd>
+         <dt>Create Alias Item</dt>
+         <dd> Used when you want to use a different name, such as the old name of the service or the application of the service. </dd>
+         <dt>Create Duplicate Item</dt>
+         <dd>Used when you want to create another item with almost the same content. </dd>
+         <dt>Create account link item</dt>
+         <dd>Use this when you want to create an item that you want to link with this item. </dd>
+         </dl>
+         
+         <dt>Field information</dt>
+         <dd>The bottom of the screen displays the fields entered in the <a href="#editItem">Item edit screen</a>. </dd>
+         <dd>If <a href="#displayFormat">display format</a> is set, only display fields set to that display format.</dd>
+         <dd>Accounts and passwords are copied to the clipboard just by tapping. It is convenient to use while going back and forth between apps and web pages where you enter accounts and passwords. </dd>
+         <dd>Passwords and PINs are hidden by default. You can display it by tapping the <i class="icon eyeslash"></i> eyeball icon on the far right. You can also make it the default display in the option settings. </dd>
+         <dd>If the item is an alias or an account link item, a link to the referenced account will be displayed, and linking will take you to the detail screen for that item. </dd>
+         <dd> Tap a URL to open a web browser and display the corresponding URL. </dd>
+         <dd>Dates that have a due date will have a <i class="icon calendarex"></i> calendar icon. The calendar icon turns red when the due date is approaching. The default is within 7 days, but you can change the number of days on the setting screen. </dd>
+         <dd>If it is referenced by another item, the list of that item will be displayed, and you can also tap the item to move to the detail screen of that item. </dd>
+       <dl class="main">
+     </dl>
+
+
+     <a href="#top">🔝</a>
+     <a name="editItem">
+     <h2>Item edit screen</h2>
+     <dl class="main">
+         <dt>Item edit screen</dt>
+         <dd>This is the screen for editing the <a href="#field">field</a> of an item. </dd>
+         <dd>From the <a href="#home">home screen</a> press the <i class="icon plus"></i> plus icon or <a href="#detail" This screen is accessed by pressing the edit icon from the >Item details screen</a>. </dd>
+         <dd>The title "New item" or "Edit item" at the top of the screen is a landmark. </dd>
+         <dd>There are icons in the upper right corner of the screen. </dd>
+
+         <dt>Icons at the top of the screen</dt>
+         <dl class="sub1">
+         <dt><i class="icon threelines"></i></dt>
+         <dd> Display the menu. </dd>
+         <dt><i class="icon bookmark"></i></dt>
+         <dd>You can toggle the bookmark state of this item. If you turn on bookmarks, you can narrow down the display using the <i class="icon bookmark"></i> bookmark button on the home screen</dd>
+         <dt><i class="icon lock"></i></dt>
+         <dd>Toggle whether Login required ( Not logged in <i class="icon lock"></i> or Logged in <i class="icon lock_open"></i> ) or No login required <i class="icon lock_slash"></i> to view details or edit for this item. Default is login required. </dd>
+         <dt>Register</dt>
+         <dd>You can register the edited item information. </dd>
+         </dl>
+
+         <dt>Menu contents</dt>
+         <dl class="sub1">
+         <dt>Options</dt>
+         <dd>Optional settings. </br>
+         You can toggle whether passwords are hidden by default. </br>
+         You can toggle whether to display the title reading field. </dd>
+         <dt>Edit selection list</dt>
+         <dd>You can select a selection list and move to the <a href="#editList">selection list editing screen</a>. </dd>
+         <dt>Edit display format</dt>
+         <dd>Displays the <a href="#displayFormatList">display format list screen</a>. <br>You can edit the contents of the display format. </dd>
+         <dt>Color</dt>
+         <dd>You can set the color for this item. </dd>
+         <dt>Change to Alias Item</dt>
+         <dd>Can be changed to alias item in case of normal item. </dd>
+         <dt>Change to normal item</dt>
+         <dd> Can be changed to a normal item if it is an alias item. </dd>
+         </dl>
+         
+         <dt>Field information</dt>
+         <dd>You can fill in each field. Some fields are not displayed for alias items or account link items. </dd>
+         <dd>If <a href="#displayFormat">Display Format</a> is set to something other than all fields, only the fields set to that display format will be displayed, and the options will also be set to that display format. Follow the settings. There is a switch at the bottom of the screen that allows you to display hidden fields, so you can see which fields are hidden. <br>Press <i class="icon plus"></i> plus icon in the display format pull-down list to create a new display format using the fields that have already been entered. </dd>
+         <dd>In the password field, tap the <i class="icon key"></i> key icon on the far right to automatically generate a password. </dd>
+         <dd>In fields where you can select other items, you can select items from a pop-up menu when tapped. Grouping selection is displayed on the first line of the menu, and grouping names are displayed on the second and subsequent lines. Tap an item in it to select it. </dd>
+         <dd>For fields where you select from options such as two-step verification type, payment type, registered email address, etc., a selection list will appear when tapped. </dd>
+         <dd>You can add a new option by tapping the <i class="icon plus"></i> plus icon in the last line of the selection list. </dd>.
+         <dd>For fields such as date, URL, free string, and item reference, tap the <i class="icon plus"></i> plus icon to add new data. </dd>
+         <dd>Press the <i class="icon threedots"></i> three-dot icon to the right of each data to display the context menu for that data. The context menu allows you to delete data or add duplicate data directly below. For the second and subsequent data in the date field, you can add predicted date data by adding the difference from the date of the previous data. </dd>
+         </dl>
+     </dl>
+
+     <a href="#top">🔝</a>
+<a name="editList">
+     <h2>Selection list edit screen</h2>
+     <dl class="main">
+         <dt>About the selection list edit screen</dt>
+         <dd>Edit options (<a href="#selectList">selection list</a>) used in the <a href="#editItem">item edit screen</a>, such as categories and registered email addresses It's the screen.
+         <dd>You can open this screen by the menu on <a href="#home">Home screen</a>, <a href="#editItem">Item edit screen</a>. </dd>
+         <dd>Look for the Edit by Selection List title at the top of the screen. </dd>
+        
+         <dt>Screen description</dt>
+         <dd>You can add new options with the <i class="icon plus"></i> plus icon at the top of the screen. </dd>
+         <dd>Color labels cannot be added or deleted. </dd>
+         <dd>Press the <i class="icon updown"></i> up/down arrow icon at the top of the screen and drag the three lines on the right side of the option to move it up or down to rearrange the options. Press <i class="icon updown_fill"></i> again to exit move mode. </dd>
+         <dd>The background color of the option indicates how many items it is used for. Gray is unused. If it's yellow, it can be used on more than one item. If it's red, it's in use for 10 or more items. </dd>
+         <dd>Press the <i class="icon threedots"></i> three dots icon to the right of an option to display the context menu for that option. The context menu allows you to rename the option, add a new item directly below it, and display the name of the item that uses the option. </dd>
+         <dd>If you drag the option to the left, a delete button will appear and you can delete it by pressing it. If the option is used in an item, it calls attention to it. If you still delete it, the corresponding fields for items using that option will be cleared. </dd>
+         
+         <dt>Group</dt>
+<dd>Some types (categories, tags, dates, item references, URLs, free strings) are expected to increase in number, so you can create groups to make them easier to select from the selection menu. </dd>
+         <dd>When you create a group in the selection list, the option "Group" will be displayed in the filter selection menu on the home screen or the selection menu on the item editing screen, and by selecting a group, the options belonging to that group will be displayed hierarchically. You will be able to choose. You can also use this group to limit the options on the display format editing screen. </dd>         
+         <dd>You can add a group by pressing the <i class="icon plus"></i> plus icon in the group selection list that is displayed by pressing the "All data" button under the screen title on the selection list editing screen. Masu. </dd>
+         <dd>When you add a group, a check button is displayed on the left side of the option, and by turning on the check, you can specify which option belongs to that group. </dd>
+         <dd>Selecting "Group Edit" in the group selection list will move you to the group editing screen. </dd>
+         <dd>On the edit group screen, you can rename, add, delete, and rearrange groups in the same way as on the edit selection list screen. </dd>
+         <dd>Up to 30 groups can be created for each selection list. </dd>
+     </dl>
+
+
+     <a href="#top">🔝</a>
+     <a name="savedFilter">
+     <h2>Saved filter list screen</h2>
+     <dl class="main">
+         <dt>About the saved filter list screen</dt>
+         <dd>This is the screen for editing the saved filters used in the saved filter selection on the home screen and the item filter selection on the display format edit screen. </dd>
+         <dd>You can display it by selecting "Edit" under "Saved Filters" in the filter menu displayed by pressing the filter button at the top of the right pane of <a href="#home">Home Screen</a>. </dd>
+         <dd>On this screen you can rename, rearrange the order of, or delete saved filters. </dd>
+         <dd>The operation method of the screen is the same as <a href="#editList">selection list edit screen</a>. </dd>
+         <dd>You cannot change the filter condition for saved filters on this screen. Change the filter settings on the home screen and save it with the same name. </dd>
+     </dl>
+
+
+     <a name="displayFormatList">
+     <a href="#top">🔝</a>
+     <h2>Display format list screen</h2>
+     <dl class="main">
+         <dt>Display format list screen</dt>
+         <dd>You can add, rename, reorder, delete <a href="#displayFormat">display formats</a>. </dd>
+         <dd>You can display it by pressing the menu icon on the home screen, item display screen, or item editing screen and selecting "Edit display format". </dd>
+         <dd>Tap the display format name to go to the <a href="#editDisplayFormat">Display format edit screen</a> where you can edit the display format. </dd>
+         <dd>The operation method of the screen is the same as <a href="#editList">selection list edit screen</a>. </dd>
+     </dl>
+
+
+
+
+     <a href="#top">🔝</a>
+<a name="editDisplayFormat">
+     <h2>Display format edit screen</h2>
+     <dl class="main">
+         <dt>Display format edit screen</dt>
+         <dd>You can edit the <a href="#displayFormat">display format</a>. </dd>
+         <dd>Tap the display format name on the <a href="#displayFormatList">Display Format List</a> screen, or select "Edit" from the "Display Format" menu on the item detail screen or item edit screen. </dd>
+         <dd>The display format adds only the fields you want to display and edits. </dd>
+
+         <dt>Screen Description</dt>
+         <dd>A new field can be added with the <i class="icon plus"></i> plus icon at the top of the screen. The field edit sheet will be displayed, so select the field type, set the option limiting parameters as necessary, and then press the register button at the bottom of the sheet to register the field. </dd>
+         <dd>Press the <i class="icon updown"></i> up/down arrow icon at the top of the screen and drag the three lines on the right side of the option to move it up or down to rearrange the fields. Press <i class="icon updown_fill"></i> again to exit move mode. </dd>
+         <dd>Tap the field name to display the field edit sheet and change the field type and parameters. </dd>
+         <dd>Press the <i class="icon threedots"></i> three dots icon to the right of the field name to display the context menu. You can add new fields below it. </dd>
+         <dd> If you drag the field name to the left, a delete button will appear and you can delete it by pressing it. </dd>
+        
+         <dt>Menu</dt>
+         <dd>If you tap the <i class="icon threelines"></i> menu icon at the top of the screen to display the menu, you can batch add or remove fields. </dd>
+         <dl class="sub1">
+         <dt>Copy from other display format</dt>
+         <dd>This is displayed when another display format has already been registered. Copies all fields from other display formats. This is useful when you want to change some fields of a display format that has already been created. </dd>
+         <dt>Add All Fields</dt>
+         <dd> Add all fields as default. When using most fields, it is convenient to delete unnecessary fields from here. </dd>
+         <dt>Add normal minimum fields</dt>
+         <dd> Add minimal fields for items that have relationships with other items. It is usually convenient to add the necessary fields from here. </dd>
+         <dt>Add single minimum fields</dt>
+         <dd> Add minimal fields for items that have no relationship to other items. </dd>
+         <dt>Reset fields</dt>
+         <dd>Revert to minimal fields. </dd>
+         </dl>
+
+         <dt>Field editing sheet</dt>
+         <dd>This is the screen that appears when you tap the <i class="icon plus"></i> plus icon or field name at the top of the screen. </dd>
+         <dd>Only the field type must be selected. </dd>
+         <dd>It is grayed out so that the same field cannot be added to one display format, except for fields that can be registered multiple times. </dd>
+         <dd>The following parameters are displayed to further set the conditions for selecting field options according to the type of field. </dd>
+        
+<dl class="sub1">
+         <dt>Field alias</dt>
+         <dd>You can change the field names on the item edit screen and item detail screen. <br>Appears only if the field is "Account", "Password" or "PIN".</dd>
+         <dt>Selection list selection settings</dt>
+         <dd>You can set whether to limit the choices when displaying the selection list of the corresponding field on the item edit screen.<br>
+ Appears only for fields that have a selection list. </dd>
+
+         <dt>Item selection settings</dt>
+         <dd>You can set whether to limit the options when displaying the item selection list for the corresponding field on the item edit screen.<br>
+ Appears only for fields that reference other items. </dd>
+         <dt>Disable multiple registration</dt>
+         <dd>Turn it On if you want to prevent multiple data from being registered.<br>
+ It is displayed only when the field is "URL", "Date", "Free string", and "Item reference". <br>
+         This is useful when you want to "fix" a select list selection so that you can only enter data for one of the selects. </dd>
+         </dl>
+        
+         <dt>Selection list selection configuration parameters</dt>
+         <dl class="sub1">
+         <dt>Any</dt>
+         <dd>Do not limit the options when selecting from a selection list. </dd>
+         <dt>From Group</dt>
+         <dd> Only visible if the field is category and tag. Limits the choices to items in any group set in each select list. </dd>
+         <dt>Fixed</dt>
+         <dd>Make sure that only the options specified here can be selected. </dd>
+         </dl>
+        
+         <dt>Item selection configuration parameters</dt>
+         <dl class="sub1">
+         <dt>Any</dt>
+         <dd>Do not limit options when selecting items. </dd>
+         <dt>From Filter</dt>
+         <dd>Limits the selection to items that match the specified saved filter. </dd>
+         <dt>Fixed</dt>
+         <dd>Make sure that only the items specified here can be selected. </dd>
+         </dl>
+     </dl>
+
+
+     <a href="#top">🔝</a>
+     <a name="setting">
+     <h2>Setting screen</h2>
+     <dl class="main">
+         <dt>Setting screen</dt>
+         <dd>This screen allows you to make various settings. </dd>
+         <dd>From the <a href="#home">home screen</a>, press the <i class="icon gear"></i> gear button to move. </dd>
+         <dd>Look for the title "Settings" at the top of the screen. </dd>
+
+         <dt>Login Settings</dt>
+         <dd>You can set whether to require minimal login. If you minimize login requirements, you can display the home screen without logging in.</dd>
+         <dd>You can set how many seconds you want to remain logged in after leaving the app and before coming back. During this time, you won't have to log in again every time you repeatedly copy and paste accounts and passwords while going back and forth between other apps. </dd>
+         <dd>You can set whether to use a dedicated passcode to log in to the app</dd>
+         <dd>If you don't use a dedicated passcode, she will perform biometric authentication (face authentication or fingerprint authentication), and if that fails, it will perform common passcode authentication for your device. </dd>
+         <dd>Press the <i class="icon pencil"></i> pencil icon to set a 4-digit number or more for the special passcode. </dd>
+         <dd>If you do not use biometric authentication, the special password input screen will be displayed from the beginning when you log in. When used in combination with biometric authentication, biometric authentication is performed first, and if it fails, a dedicated passcode entry screen is displayed instead of the common  passcode. </dd>
+        
+         <dt>Notification Settings</dt>
+         <dd>You can set the notification when the item due date is approached. </dd>
+         <dd>If notifications are not enabled, enable them in the Settings app. </dd>
+         <dd>Notifications can be received on the day of the due date, one day before, one week before, and one month before. </dd>
+         <dd>You can specify time that you want to be notified. </dd>
+         
+        
+         <dt>Home screen settings</dt>
+         <dd>You can switch whether or not to include comments and memo information of items other than titles when narrowing down the search by entering search characters on the home screen. </dd>
+        <dd>You can set the number of days before the due date calendar icon on the home screen and item details screen to turn red. </dd>
+        
+         <dt> Detailed screen settings <dt>
+         <dd>On the item detail screen, you can toggle whether passwords are hidden by default. </dd>
+        
+         <dt> Edit screen settings <dt>
+         <dd>On the item edit screen, you can toggle whether to hide the reading input field for the title. </dd>
+
+         <dt>Backup</dt>
+         <dd>You can create a backup of your data. </dd>
+         <dd>Takes you to the <a href="#backup">Backup Management Screen</a> where you can restore from your backed up data. </dd>
+         <dd>You can enable daily backups. Create a backup at the first data save of the day. Backups for the last 10 days remain. </dd>
+
+         <dt>iPhone/iPad/Mac iCloud Settings<dt>
+         <dd>You can use iCloud to sync data between your iPhone and iPad and Mac so you can share the same data. </dd>
+         <dd>The data that is synced is item data and select list data. Other configuration information is not synchronized. </dd>
+         <dd>Synced data is shared only between devices logged in with the same Apple account through the user's own iCloud Drive folders that are not directly visible to the user. Furthermore, the item data itself is encrypted. </dd>
+         <dd>In addition to automatic synchronization, you can also explicitly upload to and download from iCloud. </dd>
+         <dt>About iCloud sync</dt>
+         <dl class="sub0">
+         <dt>Synchronization mechanism when iCloud auto-sync is ON</dt>
+         <dd>When the application is launched, this application compares the update date and time of the data on the device (iPhone/iPad/Mac) and the data on iCloud, and loads the newer data. </dd>
+         <dd>Save data to both the device and iCloud when the app is closed. </dd>
+         <dd>Data update date comparison, saving and loading are performed collectively for all items.</dd>
+         <dt>Precautions before iCloud synchronization</dt>
+         <dd>Please note that if you enter data separately for multiple devices before iCloud sync, only the data for the last updated device will be valid. </dd>
+         <dd>If you want to share data between multiple devices, please turn on iCloud sync before entering data on each device. </dd>
+         <dt>When iCloud sync is turned on</dt>
+         <dd>If you have entered data on multiple devices separately, follow the steps below. </dd>
+         <dd>1. Upload to iCloud from the device that has the data you want to share with other devices. </dd>
+         <dd>2. For devices other than the above, download from iCloud. </dd>
+         <dd>3. Turn on iCloud sync on each device. </dd>
+         <dd>This procedure is also useful during sync if you think something is not syncing. </dd>
+         <dt>Data update date and time and data communication</dt>
+         <dd>The last update date and time of the data on the device (iPhone/iPad/Mac) and iCloud is displayed, which can be used as a guideline for the synchronization status. </dd>
+         <dd>Due to the mechanism of iCloud, it may take minutes to tens of minutes to reflect the data between the device and iCloud regardless of the update time. Also, when the network environment is bad, it will be reflected collectively when the network environment recovers. </dd>
+         
+         <dt>Notes during iCloud synchronization</dt>
+         <dd>Please note that if you open this app on both iPhone and iPad and Mac at the same time and edit data on each device, the edits made on one device may be ignored. </dd>
+         <dd>If you use as above frequently, it is safer to use upload to iCloud or download from iCloud instead of turning sync ON. </dd>
+         <dd>It is a good idea to create backups from time to time, just in case, as you may unintentionally use the above when syncing with iCloud. </dd>
+         
+         <dt>Precautions when upgrading the app</dt>
+         <dd>Please try to upgrade the iPhone and iPad and Mac apps that exchange files with iCloud as much as possible at the same time. </dd>
+         <dd>If you update data while only one device is upgraded, the old version device can read the data saved by the new version device, but you cannot save the data using the new function due to the version upgrade. Therefore, you may lose data using the new features. </dd>
+         <dd>If the data file format is expanded due to the addition of functions in the app, the file format version will be increased. If a bigger version of the data was stored on iCloud, iCloud sync and upload will stop until the app on that device is updated to prevent data loss. </dd>
+         </dl>
+        
+        
+         <dt>Reset Settings</dt>
+         <dd>Resets the settings changed on this setting screen to their initial values. </dd>
+         <dd>No item data or picklist data will be deleted. </dd>
+        
+         <dt>Clear data</dt>
+         <dd>Item data and selection list data can be deleted all at once. </dd>
+         <dd>The backup file will not be deleted, so delete it on the backup management screen if necessary. </dd>
+         <dd>You can also take a backup automatically when clearing the data. </dd>
+        
+         <dt>Full Version</dt>
+         <dd>This app can create up to 50 items by default. If you want to add more items, please consider purchasing the full version as an in-app purchase. </dd>
+         <dd>Once you purchase the full version, all features added in future updates are free. </dd>
+        
+         <dt>About this app</dt>
+         <dd>You can open the AppStore page of this app, write a review, or give feedback such as problems by email to the author. </dd>
+        
+     </dl>
+
+     <a name="backup">
+     <a href="#top">🔝</a>
+     <h2>Backup management screen</h2>
+     <dl class="main">
+         <dt>Backup management screen</dt>
+         <dd>This screen allows you to back up and restore data. </dd>
+         <dd>This screen is accessed from the <a href="#setting">setting screen</a> with a link to the backup management screen. </dd>
+         <dd>Look for the Backup Management title at the top of the screen. </dd>
+
+         <dt>Screen description</dt>
+         <dd>When you press the Create Backup button, all the current item data and selection list data will be saved in one backup file. </dd>
+         <dd>The date and time of saving and the number of items at saving time are saved as comments in the backup file. </dd>
+         <dd>Encrypted backup files display a lock mark <i class="icon lock"></i> at the beginning, and unencrypted backup files display an open lock mark <i class=" icon lock_open"></i>.
+         <dd>Backup files are listed from newest to oldest. </dd>
+         <dd>You can select multiple backup files by pressing the select icon on the screen. Tap the  <i class="icon trash"></i> trash can icon if it is displayed additionally on the screen to delete it all at once. Press the Done icon to exit selection mode. </dd>
+         
+         <dd>Switch below backup button</dt>
+         <dl class="sub1">
+         <dt>Encrypt backup</dt>
+         <dd>Encrypt backups when creating them by default. Turn encryption off if you want to share backup data with devices that do not share the encryption key associated with your Apple account. Unencrypted data has a smaller file size. Leave it ON unless necessary</dd>
+         <dt>Also back up iCloud data</dt>
+         <dd>By default, sync data on iCloud is also backed up. Backups from iCloud are always encrypted. If you do not need to back up your iCloud data, please turn it off</dd>
+         <dt>Automatically back up before restoring backup</dt>
+         <dd>Automatically back up backup files before restoring them by default. We recommend leaving it ON just in case.</dd>
+         </dl>
+
+
+         <dt>File operation menu for backup file</dt>
+         <dd>Tap the backup file to display the file operation menu. </dd>
+         <dl class="sub1">
+         <dt>Edit comment</dt>
+         <dd>You can change the comment in the file. </dd>
+         <dt>Share</dt>
+         <dd>You can share files to other apps (e.g. email or notepad) for storage. </dd>
+         <dt>Restore</dt>
+         <dd>Restore item data and selection list data. </dd>
+         </dl>
+         
+         <dt>About backup files</dt>
+         <dd>Backups whose comments start with "auto" are backups created automatically by the app. </dd>
+         <dd> Backups whose comments start with "auto daily backup" are backups that are automatically created every day when the first data is saved. Only the last 10 days are retained, and older backups are automatically deleted. </dd>
+         <dd>Since the backup file is encrypted with the encryption key associated with your Apple account, it cannot be restored except by this App on your iPhone or iPad or Mac that is used with your Apple account.</dd>
+         <dd>If you want to copy data to the iPhone or iPad or Mac that is used with an Apple account other than your own, please use a backup file with encryption turned off. </dd>
+         <dd>By sharing the backup file with other apps such as Notepad, you can store your data outside of the app. If you share a backup file from that app to this app, you can move it back to the backup folder. </a>
+         <dd>Also, when you connect your iPhone/iPad to your PC, you can use iTunes (Windows) or Finder (Mac) to copy the backup file from the Account app folder to another folder and save it, or copy it back to the app folder.</dd>
+         <dd>Please note that if you change the file name, it may no longer be visible on the backup management screen. </dd>
+         <dd>Backup files with encryption OFF are compressed data with the extension .zip. The zip file can be opened on your PC. The data files in the zip file are text files in JSON format, so they can be viewed with a text editor. </dd>
+         <dd>If you place a backup file with encryption turned off on the iCloud folder, there is a risk that your password data will be leaked if your iCloud is hacked. So, do not create backup files with encryption turned off unless necessary, and even if you do, please be careful about the storage location of the shared the backup. </dd>
+     </dl>
+
+
+     <a href="#top">🔝</a>
+     <a name="item">
      <h2>Items</h2>
      <dl class="main">
          <dt>Item</dt>
@@ -519,8 +787,8 @@
 
 
 
-<a name="field">
      <a href="#top">🔝</a>
+<a name="field">
      <h2>Fields</h2>
      <dl class="main">
          <dt>About fields</dt>
@@ -693,8 +961,8 @@
 
 
 
-<a name="selectList">
      <a href="#top">🔝</a>
+<a name="selectList">
      <h2>Selection list</h2>
      <dl class="main">
          <dt>About selection list</dt>
@@ -760,17 +1028,19 @@
      </dl>
 
 
-<a name="displayFormat">
      <a href="#top">🔝</a>
+<a name="displayFormat">
      <h2>Display format</h2>
      <dl class="main">
          <dt>Display format</dt>
          <dd>On the <a href="#detail">Item detail screen</a> and <a href="#editItem">Item edit screen</a>, the display format allows you to specify the display order and whether or not to display fields. </dd>
          <dd> The main purpose of the display format is to make it easier to enter fields by limiting the fields and options to be entered when creating a new item of a specific type. </dd>
          <dd>On the item edit screen, including when creating a new item, all fields are displayed in app's default order. But by creating an display format in advance and using it, you can display only arbitrary fields in an arbitrary order. </dd>
+         <dd>The display format is remembered for each item. </dd>
+         <dd>The display format is stored in association with the category, and when you switch categories on the item editing screen, the display format associated with that item will be automatically selected. </dd>
          <dd>On the item detail screen, only the specified fields can be displayed in the order according to the display format associated with the item. </dd>
          <dd>Display formats can be named and re-used by the user. </dd>
-         <dd>Display formats can be added on the item detail screen, item edit screen, or <a href="#displayFormatList">display format list screen</a>, and edited on the <a href="#editDisplayFormat">display format edit screen</a>. </dd>
+         <dd>Display formats can be added on the item edit screen, or <a href="#displayFormatList">display format list screen</a>, and edited on the <a href="#editDisplayFormat">display format edit screen</a>. </dd>
          <dd>You can switch the display format associated with the item at any time on the item detail screen or item edit screen. </dd>
         <dd>Switching the display format only narrows down the fields to be displayed, but does not erase field data already recorded by the item itself. </dd>
 
@@ -785,494 +1055,6 @@
          <dd>Furthermore, for items that have groups of options, such as categories and tabs, you can limit the options to those that belong to a specific group. </dd>
          <dd>Also, in the select item field, you can pin the selection to any item only, or to items belonging to a specific saved filter. </dd>
          <dd> See <a href="#editDisplayFormat">Display Format Edit Screen</a> for details of the field parameters. </dd>
-     </dl>
-
-
-
-     <a name="home">
-     <a href="#top">🔝</a>
-     <h2>Home Screen</h2>
-     <dl class="main">
-         <dt>About the home screen</dt>
-         <dd>The home screen is the first thing you see when you start. </dd>
-         <dd>Look for the name of the app at the top of the screen. </dd>
-         <dd>The screen consists of two panes, the left side is the group display and the right side is the item list display. </dd>
-        
-         <dt>Group Display</dt>
-         <dd>The top of the group display on the left side of the screen is the grouping name. You can switch the grouping type by tapping the grouping name. </dd>
-         <dd>Grouping can be selected from category, title (in alphabetical order), priority, modified date, due date, and color. </dd>
-         <dd> If you change the grouping, the grouping of the item list display on the right will also be changed. </dd>
-         <dd>If you tap any group name from the group list under the grouping name, the account list in the right pane will scroll to that group. </dd>
-
-         <dt>Grouping type list</dt>
-         <dl class="sub1">
-         <dt>Category</dt>
-         <dd>Used when you want to find items in any category</dd>
-         <dt>Title</dt>
-         <dd>When you want to search for an item by name</dd>
-         <dt>Priority</dt>
-         <dd>Used when you want to find items of any priority</dd>
-         <dt>Update time</dt>
-         <dd>Used when you want to find recently updated items</dd>
-         <dt>Due date</dt>
-         <dd>Use this when you want to find items whose due date is close</dd>
-         <dt>Color</dt>
-         <dd>Used when you want to find items of any color</dd>
-         </dl>
-         
-         <dt>Filter view</dt>
-         <dd>Above the item list display on the right side of the screen is a <i class="icon dec3lines"></i> filter icon , filter status and the total number of items currently displayed. <i class="icon dec3lines"></i> Tap the filter icon to display the filter menu, where you can select various conditions to filter and display items. </dd>
-         <dd>In addition to category, tag, priority, update date, time limit, and color, you can also select account linkage, payment status, deprecated status, and No login required as filtering conditions. </dd>
-         <dd>If you select multiple filters, only items matching all conditions will be displayed. The total number of items is the total number of matched items, 0 if none match. </dd>
-         <dd>When filtering is in progress, the filter icon is displayed in a filled state <i class="icon dec3lines_fill"></i> . </dd>
-         <dd>  If you press the <i class="icon dec3lines_fill"></i> filter icon and select "Reset Filters", you can reset all filter conditions at once. </dd>
-         <dd>If you select a saved filter from the filter menu, you can save the filter condition at that time with a name, and later you can reproduce the filter condition by simply selecting the name. </d>
-         <dd>Selecting the Edit Saved Filter button displays the <a href="#savedFilter">Saved Filter list Screen</a>, where you can rename or delete the saved filter. </dd>
-         <dd>If you want to change the filtering conditions of a saved filter, change the filtering conditions after selecting that filter, and save it with the same name to overwrite it. </dd>
-         <dt>Search box</dt>
-         <dd>You can enter a search string in the search box at the top of the screen. As you enter a character string, it will automatically narrow down to only items with names, notes, comments, etc. that include that character string. </dd>
-         <dd>If you press the <i class="icon xmark"></i> icon on the right side, the character string will disappear and you can cancel the refinement state. </dd>
-         <dd>The search string is also a filter condition, so it can be reused in saved filters. </dd>
-         
-
-         <dt>Item list display</dt>
-         <dd>The account list display shows a list of items belonging to the group under the group name. If you add a comment to the item title, it will be displayed together with the item title. </dd>
-         <dd>Tap an item name to go to the <a href="#detail">Item Detail Screen</a>, which displays detailed information about the item. </dd>
-         <dd>An icon may be displayed to the right of the item name depending on the status of the item. </dd>
-         
-         <dt>List of icons displayed to the right of item names</dt>
-         <dl class="sub1">
-         <dt><i class="icon person2"></i></dt>
-         <dd>alias item</dd>
-         <dt><i class="icon coin_fill"></i></dt>
-         <dd>Item with ongoing payment</dd>
-         <dt><i class="icon coin"></i></dt>
-         <dd>Paid Item</dd>
-         <dt><i class="icon calendarex"></i></dt>
-         <dd>Item that have a due date. If it is close to the due date, it will be displayed in red</dd>
-         <dt>🪦</dt>
-         <dd>Deprecated item</dd>
-         <dt><i class="icon bookmark_fill"></i></dt>
-         <dd>Bookmarked item</dd>
-         </dl>
-
-         <dt>icons at the top of the screen</dt>
-         <dd>You can go to the settings screen or add a new account from the icons at the top of the screen. </dd>
-         <dl class="sub1">
-         <dt><i class="icon gear"></i></dt>
-         <dd>Move to the <a href="#setting">Settings screen</a> where you can make various settings and backups</dd>
-         <dt><i class="icon info"></i></dt>
-         <dd>Show this how-to screen</dd>
-        </dl>
-        
-        <dl class="sub1">
-         <dt><i class="icon threelines"></i></dt>
-         <dd>Show menu</dd>
-         <dt><i class="icon bookmark"></i></dt>
-         <dd>Turn on/off filtering by bookmark</dd>
-         <dt><i class="icon lock"></i></dt>
-         <dd>Indicates login status (not logged in <i class="icon lock"></i> / logged in <i class="icon lock_open"></i> ). If you are not logged in, tap to log in</dd>
-         <dt><i class="icon plus"></i></dt>
-         <dd>Go to the <a href="#editItem">Item edit screen</a> where you can add new items</dd>
-         </dl>
-         
-         <dt>Menu contents</dt>
-         <dl class="sub1">
-         <dt>Default settings</dt>
-         <dd>You can set default grouping and filter that are set at startup. Filter can be selected from saved filters</dd>
-         <dt>Edit selection list</dt>
-         <dd>Go to the <a href="#editList">list editing screen</a> where you can edit individual string lists</dd>
-         <dt>Edit display format</dt>
-         <dd>Go to the <a href="#displayFormatList">display format list screen</a> where you can edit the display format</dd>
-         <dt>History</dt>
-         <dd>View history for quick access to recently opened items</dd>
-         </dl>
-     </dl>
-
-
-
-    <a name="detail">
-     <a href="#top">🔝</a>
-     <h2>Item details screen</h2>
-     <dl class="main">
-         <dt>Item details screen</dt>
-         <dd>This screen displays information (<a href="#field">fields</a>) registered in one item. </dd>
-         <dd>This is a screen that you can move from the home screen by pressing the item name. </dd>
-         <dd>The item name at the top of the screen is a landmark. </dd>
-         <dd>Only the items entered on the item edit screen are displayed on the item details screen. </dd>
-         <dt>Screen configuration</dt>
-         <dd>At the top of the screen is the title in large font and the title comment in small font. </dd>
-         <dd>There are icons in the upper right corner of the screen. </dd>
-         
-         <dt>Icons at the top of the screen</dt>
-         <dl class="sub1">
-         <dt><i class="icon threelines"></i></dt>
-         <dd>Show menu</dd>
-         <dt><i class="icon bookmark"></i></dt>
-         <dd>You can switch the bookmark state of this item. If you turn on bookmarks, you can narrow down the display using the <i class="icon bookmark"></i> bookmark button on the home screen</dd>
-         <dt><i class="icon lock"></i></dt>
-         <dd>You must be logged in to view/edit this item's details (not logged in <i class="icon lock"></i> / logged in <i class="icon lock_open"></i> ) or logged in You can toggle whether <i class="icon lock_slash"></i> is required or not. Default is login required</dd>
-         <dt><i class="icon trash"></i></dt>
-         <dd>You can delete items. Just to be sure, please confirm if you really want to delete it</dd>
-         <dt>Edit</dt>
-         <dd>You can edit the item by going to the <a href="#editItem">Item edit screen</a></dd>
-         </dl>
-         
-         <dt>Menu contents</dt>
-         <dl class="sub1">
-         <dt>Options</dt>
-         <dd>Optional settings. </br>
-         You can toggle whether passwords are hidden by default. </br>
-         You can toggle whether to display the title reading field. </dd>
-         <dt>Display format</dt>
-         <dd>Displays the <a href="#displayFormat">Display Format</a> submenu. <br>If you select a registered display format name, you can temporarily switch to that display format. Selecting "All fields" will return to the default display of all fields. </dd>
-         <dt>Color</dt>
-         <dd>You can set the color of the item. The color label name can be changed on the color label selection list edit screen. Colors are used for grouping and filtering on the home screen. </dd>
-         <dt>Create Alias Item</dt>
-         <dd> Used when you want to use a different name, such as the old name of the service or the application of the service. </dd>
-         <dt>Create Duplicate Item</dt>
-         <dd>Used when you want to create another item with almost the same content. </dd>
-         <dt>Create account link item</dt>
-         <dd>Use this when you want to create an item that you want to link with this item. </dd>
-         </dl>
-         
-         <dt>Field information</dt>
-         <dd>The bottom of the screen displays the fields entered in the <a href="#editItem">Item edit screen</a>. </dd>
-         <dd>If <a href="#displayFormat">display format</a> is set, only display fields set to that display format.</dd>
-         <dd>Accounts and passwords are copied to the clipboard just by tapping. It is convenient to use while going back and forth between apps and web pages where you enter accounts and passwords. </dd>
-         <dd>Passwords and PINs are hidden by default. You can display it by tapping the <i class="icon eyeslash"></i> eyeball icon on the far right. You can also make it the default display in the option settings. </dd>
-         <dd>If the item is an alias or an account link item, a link to the referenced account will be displayed, and linking will take you to the detail screen for that item. </dd>
-         <dd> Tap a URL to open a web browser and display the corresponding URL. </dd>
-         <dd>Dates that have a due date will have a <i class="icon calendarex"></i> calendar icon. The calendar icon turns red when the due date is approaching. The default is within 7 days, but you can change the number of days on the setting screen. </dd>
-         <dd>If it is referenced by another item, the list of that item will be displayed, and you can also tap the item to move to the detail screen of that item. </dd>
-       <dl class="main">
-     </dl>
-
-
-     <a name="editItem">
-     <a href="#top">🔝</a>
-     <h2>Item edit screen</h2>
-     <dl class="main">
-         <dt>Item edit screen</dt>
-         <dd>This is the screen for editing the <a href="#field">field</a> of an item. </dd>
-         <dd>From the <a href="#home">home screen</a> press the <i class="icon plus"></i> plus icon or <a href="#detail" This screen is accessed by pressing the edit icon from the >Item details screen</a>. </dd>
-         <dd>The title "New item" or "Edit item" at the top of the screen is a landmark. </dd>
-         <dd>There are icons in the upper right corner of the screen. </dd>
-
-         <dt>Icons at the top of the screen</dt>
-         <dl class="sub1">
-         <dt><i class="icon threelines"></i></dt>
-         <dd> Display the menu. </dd>
-         <dt><i class="icon bookmark"></i></dt>
-         <dd>You can toggle the bookmark state of this item. If you turn on bookmarks, you can narrow down the display using the <i class="icon bookmark"></i> bookmark button on the home screen</dd>
-         <dt><i class="icon lock"></i></dt>
-         <dd>Toggle whether Login required ( Not logged in <i class="icon lock"></i> or Logged in <i class="icon lock_open"></i> ) or No login required <i class="icon lock_slash"></i> to view details or edit for this item. Default is login required. </dd>
-         <dt>Register</dt>
-         <dd>You can register the edited item information. </dd>
-         </dl>
-
-         <dt>Menu contents</dt>
-         <dl class="sub1">
-         <dt>Options</dt>
-         <dd>Optional settings. </br>
-         You can toggle whether passwords are hidden by default. </br>
-         You can toggle whether to display the title reading field. </dd>
-         <dt>Edit selection list</dt>
-         <dd>You can select a selection list and move to the <a href="#editList">selection list editing screen</a>. </dd>
-         <dt>Edit display format</dt>
-         <dd>Displays the <a href="#displayFormatList">display format list screen</a>. <br>You can edit the contents of the display format. </dd>
-         <dt>Color</dt>
-         <dd>You can set the color for this item. </dd>
-         <dt>Change to Alias Item</dt>
-         <dd>Can be changed to alias item in case of normal item. </dd>
-         <dt>Change to normal item</dt>
-         <dd> Can be changed to a normal item if it is an alias item. </dd>
-         </dl>
-         
-         <dt>Field information</dt>
-         <dd>You can fill in each field. Some fields are not displayed for alias items or account link items. </dd>
-         <dd>If <a href="#displayFormat">Display Format</a> is set to something other than all fields, only the fields set to that display format will be displayed, and the options will also be set to that display format. Follow the settings. There is a switch at the bottom of the screen that allows you to display hidden fields, so you can see which fields are hidden. <br>Press <i class="icon plus"></i> plus icon in the display format pull-down list to create a new display format using the fields that have already been entered. </dd>
-         <dd>In the password field, tap the <i class="icon key"></i> key icon on the far right to automatically generate a password. </dd>
-         <dd>In fields where you can select other items, you can select items from a pop-up menu when tapped. Grouping selection is displayed on the first line of the menu, and grouping names are displayed on the second and subsequent lines. Tap an item in it to select it. </dd>
-         <dd>For fields where you select from options such as two-step verification type, payment type, registered email address, etc., a selection list will appear when tapped. </dd>
-         <dd>You can add a new option by tapping the <i class="icon plus"></i> plus icon in the last line of the selection list. </dd>.
-         <dd>For fields such as date, URL, free string, and item reference, tap the <i class="icon plus"></i> plus icon to add new data. </dd>
-         <dd>Press the <i class="icon threedots"></i> three-dot icon to the right of each data to display the context menu for that data. The context menu allows you to delete data or add duplicate data directly below. For the second and subsequent data in the date field, you can add predicted date data by adding the difference from the date of the previous data. </dd>
-         </dl>
-     </dl>
-
-<a name="editList">
-     <a href="#top">🔝</a>
-     <h2>Selection list edit screen</h2>
-     <dl class="main">
-         <dt>About the selection list edit screen</dt>
-         <dd>Edit options (<a href="#selectList">selection list</a>) used in the <a href="#editItem">item edit screen</a>, such as categories and registered email addresses It's the screen.
-         <dd>You can open this screen by the menu on <a href="#home">Home screen</a>, <a href="#editItem">Item edit screen</a>. </dd>
-         <dd>Look for the Edit by Selection List title at the top of the screen. </dd>
-        
-         <dt>Screen description</dt>
-         <dd>You can add new options with the <i class="icon plus"></i> plus icon at the top of the screen. </dd>
-         <dd>Color labels cannot be added or deleted. </dd>
-         <dd>Press the <i class="icon updown"></i> up/down arrow icon at the top of the screen and drag the three lines on the right side of the option to move it up or down to rearrange the options. Press <i class="icon updown_fill"></i> again to exit move mode. </dd>
-         <dd>The background color of the option indicates how many items it is used for. Gray is unused. If it's yellow, it can be used on more than one item. If it's red, it's in use for 10 or more items. </dd>
-         <dd>Press the <i class="icon threedots"></i> three dots icon to the right of an option to display the context menu for that option. The context menu allows you to rename the option, add a new item directly below it, and display the name of the item that uses the option. </dd>
-         <dd>If you drag the option to the left, a delete button will appear and you can delete it by pressing it. If the option is used in an item, it calls attention to it. If you still delete it, the corresponding fields for items using that option will be cleared. </dd>
-         
-         <dt>Group</dt>
-<dd>Some types (categories, tags, dates, item references, URLs, free strings) are expected to increase in number, so you can create groups to make them easier to select from the selection menu. </dd>
-         <dd>When you create a group in the selection list, the option "Group" will be displayed in the filter selection menu on the home screen or the selection menu on the item editing screen, and by selecting a group, the options belonging to that group will be displayed hierarchically. You will be able to choose. You can also use this group to limit the options on the display format editing screen. </dd>         
-         <dd>You can add a group by pressing the <i class="icon plus"></i> plus icon in the group selection list that is displayed by pressing the "All data" button under the screen title on the selection list editing screen. Masu. </dd>
-         <dd>When you add a group, a check button is displayed on the left side of the option, and by turning on the check, you can specify which option belongs to that group. </dd>
-         <dd>Selecting "Group Edit" in the group selection list will move you to the group editing screen. </dd>
-         <dd>On the edit group screen, you can rename, add, delete, and rearrange groups in the same way as on the edit selection list screen. </dd>
-         <dd>Up to 30 groups can be created for each selection list. </dd>
-     </dl>
-
-
-     <a name="savedFilter">
-     <a href="#top">🔝</a>
-     <h2>Saved filter list screen</h2>
-     <dl class="main">
-         <dt>About the saved filter list screen</dt>
-         <dd>This is the screen for editing the saved filters used in the saved filter selection on the home screen and the item filter selection on the display format edit screen. </dd>
-         <dd>You can display it by selecting "Edit" under "Saved Filters" in the filter menu displayed by pressing the filter button at the top of the right pane of <a href="#home">Home Screen</a>. </dd>
-         <dd>On this screen you can rename, rearrange the order of, or delete saved filters. </dd>
-         <dd>The operation method of the screen is the same as <a href="#editList">selection list edit screen</a>. </dd>
-         <dd>You cannot change the filter condition for saved filters on this screen. Change the filter settings on the home screen and save it with the same name. </dd>
-     </dl>
-
-
-     <a name="displayFormatList">
-     <a href="#top">🔝</a>
-     <h2>Display format list screen</h2>
-     <dl class="main">
-         <dt>Display format list screen</dt>
-         <dd>You can add, rename, reorder, delete <a href="#displayFormat">display formats</a>. </dd>
-         <dd>You can display it by pressing the menu icon on the home screen, item display screen, or item editing screen and selecting "Edit display format". </dd>
-         <dd>Tap the display format name to go to the <a href="#editDisplayFormat">Display format edit screen</a> where you can edit the display format. </dd>
-         <dd>The operation method of the screen is the same as <a href="#editList">selection list edit screen</a>. </dd>
-     </dl>
-
-
-
-
-<a name="editDisplayFormat">
-     <a href="#top">🔝</a>
-     <h2>Display format edit screen</h2>
-     <dl class="main">
-         <dt>Display format edit screen</dt>
-         <dd>You can edit the <a href="#displayFormat">display format</a>. </dd>
-         <dd>Tap the display format name on the <a href="#displayFormatList">Display Format List</a> screen, or select "Edit" from the "Display Format" menu on the item detail screen or item edit screen. </dd>
-         <dd>The display format adds only the fields you want to display and edits. </dd>
-
-         <dt>Screen Description</dt>
-         <dd>A new field can be added with the <i class="icon plus"></i> plus icon at the top of the screen. The field edit sheet will be displayed, so select the field type, set the option limiting parameters as necessary, and then press the register button at the bottom of the sheet to register the field. </dd>
-         <dd>Press the <i class="icon updown"></i> up/down arrow icon at the top of the screen and drag the three lines on the right side of the option to move it up or down to rearrange the fields. Press <i class="icon updown_fill"></i> again to exit move mode. </dd>
-         <dd>Tap the field name to display the field edit sheet and change the field type and parameters. </dd>
-         <dd>Press the <i class="icon threedots"></i> three dots icon to the right of the field name to display the context menu. You can add new fields below it. </dd>
-         <dd> If you drag the field name to the left, a delete button will appear and you can delete it by pressing it. </dd>
-        
-         <dt>Menu</dt>
-         <dd>If you tap the <i class="icon threelines"></i> menu icon at the top of the screen to display the menu, you can batch add or remove fields. </dd>
-         <dl class="sub1">
-         <dt>Copy from other display format</dt>
-         <dd>This is displayed when another display format has already been registered. Copies all fields from other display formats. This is useful when you want to change some fields of a display format that has already been created. </dd>
-         <dt>Add All Fields</dt>
-         <dd> Add all fields as default. When using most fields, it is convenient to delete unnecessary fields from here. </dd>
-         <dt>Add normal minimum fields</dt>
-         <dd> Add minimal fields for items that have relationships with other items. It is usually convenient to add the necessary fields from here. </dd>
-         <dt>Add single minimum fields</dt>
-         <dd> Add minimal fields for items that have no relationship to other items. </dd>
-         <dt>Reset fields</dt>
-         <dd>Revert to minimal fields. </dd>
-         </dl>
-
-         <dt>Field editing sheet</dt>
-         <dd>This is the screen that appears when you tap the <i class="icon plus"></i> plus icon or field name at the top of the screen. </dd>
-         <dd>Only the field type must be selected. </dd>
-         <dd>It is grayed out so that the same field cannot be added to one display format, except for fields that can be registered multiple times. </dd>
-         <dd>The following parameters are displayed to further set the conditions for selecting field options according to the type of field. </dd>
-        
-<dl class="sub1">
-         <dt>Field alias</dt>
-         <dd>You can change the field names on the item edit screen and item detail screen. <br>Appears only if the field is "Account", "Password" or "PIN".</dd>
-         <dt>Selection list selection settings</dt>
-         <dd>You can set whether to limit the choices when displaying the selection list of the corresponding field on the item edit screen.<br>
- Appears only for fields that have a selection list. </dd>
-
-         <dt>Item selection settings</dt>
-         <dd>You can set whether to limit the options when displaying the item selection list for the corresponding field on the item edit screen.<br>
- Appears only for fields that reference other items. </dd>
-         <dt>Disable multiple registration</dt>
-         <dd>Turn it On if you want to prevent multiple data from being registered.<br>
- It is displayed only when the field is "URL", "Date", "Free string", and "Item reference". <br>
-         This is useful when you want to "fix" a select list selection so that you can only enter data for one of the selects. </dd>
-         </dl>
-        
-         <dt>Selection list selection configuration parameters</dt>
-         <dl class="sub1">
-         <dt>Any</dt>
-         <dd>Do not limit the options when selecting from a selection list. </dd>
-         <dt>From Group</dt>
-         <dd> Only visible if the field is category and tag. Limits the choices to items in any group set in each select list. </dd>
-         <dt>Fixed</dt>
-         <dd>Make sure that only the options specified here can be selected. </dd>
-         </dl>
-        
-         <dt>Item selection configuration parameters</dt>
-         <dl class="sub1">
-         <dt>Any</dt>
-         <dd>Do not limit options when selecting items. </dd>
-         <dt>From Filter</dt>
-         <dd>Limits the selection to items that match the specified saved filter. </dd>
-         <dt>Fixed</dt>
-         <dd>Make sure that only the items specified here can be selected. </dd>
-         </dl>
-     </dl>
-
-
-
-     <a name="setting">
-     <a href="#top">🔝</a>
-     <h2>Setting screen</h2>
-     <dl class="main">
-         <dt>Setting screen</dt>
-         <dd>This screen allows you to make various settings. </dd>
-         <dd>From the <a href="#home">home screen</a>, press the <i class="icon gear"></i> gear button to move. </dd>
-         <dd>Look for the title "Settings" at the top of the screen. </dd>
-
-         <dt>Login Settings</dt>
-         <dd>You can set whether to require minimal login. If you minimize login requirements, you can display the home screen without logging in.</dd>
-         <dd>You can set how many seconds you want to remain logged in after leaving the app and before coming back. During this time, you won't have to log in again every time you repeatedly copy and paste accounts and passwords while going back and forth between other apps. </dd>
-         <dd>You can set whether to use a dedicated passcode to log in to the app</dd>
-         <dd>If you don't use a dedicated passcode, she will perform biometric authentication (face authentication or fingerprint authentication), and if that fails, she will perform common passcode authentication for iPhone / iPad. </dd>
-         <dd>Press the <i class="icon pencil"></i> pencil icon to set a 4-digit number or more for the special passcode. </dd>
-         <dd>If you do not use biometric authentication, the special password input screen will be displayed from the beginning when you log in. When used in combination with biometric authentication, biometric authentication is performed first, and if it fails, a dedicated passcode entry screen is displayed instead of the common iPhone/iPad passcode. </dd>
-        
-         <dt>Notification Settings</dt>
-         <dd>You can set the notification when the item due date is approached. </dd>
-         <dd>If notifications are not enabled, enable them in the Settings app. </dd>
-         <dd>Notifications can be received on the day of the due date, one day before, one week before, and one month before. </dd>
-         <dd>You can specify time that you want to be notified. </dd>
-         
-        
-         <dt>Home screen settings</dt>
-         <dd>You can switch whether or not to include comments and memo information of items other than titles when narrowing down the search by entering search characters on the home screen. </dd>
-        <dd>You can set the number of days before the due date calendar icon on the home screen and item details screen to turn red. </dd>
-        
-         <dt> Detailed screen settings <dt>
-         <dd>On the item detail screen, you can toggle whether passwords are hidden by default. </dd>
-        
-         <dt> Edit screen settings <dt>
-         <dd>On the item edit screen, you can toggle whether to hide the reading input field for the title. </dd>
-
-         <dt>Backup</dt>
-         <dd>You can create a backup of your data. </dd>
-         <dd>Takes you to the <a href="#backup">Backup Management Screen</a> where you can restore from your backed up data. </dd>
-         <dd>You can enable daily backups. Create a backup at the first data save of the day. Backups for the last 10 days remain. </dd>
-
-         <dt>iPhone/iPad iCloud Settings<dt>
-         <dd>You can use iCloud to sync data between your iPhone and iPad so you can share the same data. </dd>
-         <dd>The data that is synced is item data and select list data. Other configuration information is not synchronized. </dd>
-         <dd>Synced data is shared only between devices logged in with the same Apple account through the user's own iCloud Drive folders that are not directly visible to the user. Furthermore, the item data itself is encrypted. </dd>
-         <dd>In addition to automatic synchronization, you can also explicitly upload to and download from iCloud. </dd>
-         <dt>About iCloud sync</dt>
-         <dl class="sub0">
-         <dt>Synchronization mechanism when iCloud auto-sync is ON</dt>
-         <dd>When the application is launched, this application compares the update date and time of the data on the device (iPhone/iPad) and the data on iCloud, and loads the newer data. </dd>
-         <dd>Save data to both the device and iCloud when the app is closed. </dd>
-         <dd>Data update date comparison, saving and loading are performed collectively for all items.</dd>
-         <dt>Precautions before iCloud synchronization</dt>
-         <dd>Please note that if you enter data separately for multiple devices before iCloud sync, only the data for the last updated device will be valid. </dd>
-         <dd>If you want to share data between multiple devices, please turn on iCloud sync before entering data on each device. </dd>
-         <dt>When iCloud sync is turned on</dt>
-         <dd>If you have entered data on multiple devices separately, follow the steps below. </dd>
-         <dd>1. Upload to iCloud from the device that has the data you want to share with other devices. </dd>
-         <dd>2. For devices other than the above, download from iCloud. </dd>
-         <dd>3. Turn on iCloud sync on each device. </dd>
-         <dd>This procedure is also useful during sync if you think something is not syncing. </dd>
-         <dt>Data update date and time and data communication</dt>
-         <dd>The last update date and time of the data on the device (iPhone/iPad) and iCloud is displayed, which can be used as a guideline for the synchronization status. </dd>
-         <dd>Due to the mechanism of iCloud, it may take minutes to tens of minutes to reflect the data between the device and iCloud regardless of the update time. Also, when the network environment is bad, it will be reflected collectively when the network environment recovers. </dd>
-         
-         <dt>Notes during iCloud synchronization</dt>
-         <dd>Please note that if you open this app on both iPhone and iPad at the same time and edit data on each device, the edits made on one device may be ignored. </dd>
-         <dd>If you use as above frequently, it is safer to use upload to iCloud or download from iCloud instead of turning sync ON. </dd>
-         <dd>It is a good idea to create backups from time to time, just in case, as you may unintentionally use the above when syncing with iCloud. </dd>
-         
-         <dt>Precautions when upgrading the app</dt>
-         <dd>Please try to upgrade the iPhone and iPad apps that exchange files with iCloud as much as possible at the same time. </dd>
-         <dd>If you update data while only one device is upgraded, the old version device can read the data saved by the new version device, but you cannot save the data using the new function due to the version upgrade. Therefore, you may lose data using the new features. </dd>
-         <dd>If the data file format is expanded due to the addition of functions in the app, the file format version will be increased. If a bigger version of the data was stored on iCloud, iCloud sync and upload will stop until the app on that device is updated to prevent data loss. </dd>
-         </dl>
-        
-        
-         <dt>Reset Settings</dt>
-         <dd>Resets the settings changed on this setting screen to their initial values. </dd>
-         <dd>No item data or picklist data will be deleted. </dd>
-        
-         <dt>Clear data</dt>
-         <dd>Item data and selection list data can be deleted all at once. </dd>
-         <dd>The backup file will not be deleted, so delete it on the backup management screen if necessary. </dd>
-         <dd>You can also take a backup automatically when clearing the data. </dd>
-        
-         <dt>Full Version</dt>
-         <dd>This app can create up to 50 items by default. If you want to add more items, please consider purchasing the full version as an in-app purchase. </dd>
-         <dd>Once you purchase the full version, all features added in future updates are free. </dd>
-        
-         <dt>About this app</dt>
-         <dd>You can open the AppStore page of this app, write a review, or give feedback such as problems by email to the author. </dd>
-        
-     </dl>
-
-     <a name="backup">
-     <a href="#top">🔝</a>
-     <h2>Backup management screen</h2>
-     <dl class="main">
-         <dt>Backup management screen</dt>
-         <dd>This screen allows you to back up and restore data. </dd>
-         <dd>This screen is accessed from the <a href="#setting">setting screen</a> with a link to the backup management screen. </dd>
-         <dd>Look for the Backup Management title at the top of the screen. </dd>
-
-         <dt>Screen description</dt>
-         <dd>When you press the Create Backup button, all the current item data and selection list data will be saved in one backup file. </dd>
-         <dd>The date and time of saving and the number of items at saving time are saved as comments in the backup file. </dd>
-         <dd>Encrypted backup files display a lock mark <i class="icon lock"></i> at the beginning, and unencrypted backup files display an open lock mark <i class=" icon lock_open"></i>.
-         <dd>Backup files are listed from newest to oldest. </dd>
-         <dd>You can select multiple backup files by pressing the select icon on the screen. Tap the  <i class="icon trash"></i> trash can icon if it is displayed additionally on the screen to delete it all at once. Press the Done icon to exit selection mode. </dd>
-         
-         <dd>Switch below backup button<dt>
-         <dl class="sub1">
-         <dt>Encrypt backup</dt>
-         <dd>Encrypt backups when creating them by default. Turn encryption off if you want to share backup data with devices that do not share the encryption key associated with your Apple account. Unencrypted data has a smaller file size. Leave it ON unless necessary</dd>
-         <dt>Also back up iCloud data</dt>
-         <dd>By default, sync data on iCloud is also backed up. Backups from iCloud are always encrypted. If you do not need to back up your iCloud data, please turn it off</dd>
-         <dt>Automatically back up before restoring backup</dt>
-         <dd>Automatically back up backup files before restoring them by default. We recommend leaving it ON just in case.</dd>
-         </dl>
-
-
-         <dt>File operation menu for backup file</dt>
-         <dd>Tap the backup file to display the file operation menu. </dd>
-         <dl class="sub1">
-         <dt>Edit comment</dt>
-         <dd>You can change the comment in the file. </dd>
-         <dt>Share</dt>
-         <dd>You can share files to other apps (e.g. email or notepad) for storage. </dd>
-         <dt>Restore</dt>
-         <dd>Restore item data and selection list data. </dd>
-         </dl>
-         
-         <dt>About backup files</dt>
-         <dd>Backups whose comments start with "auto" are backups created automatically by the app. </dd>
-         <dd> Backups whose comments start with "auto daily backup" are backups that are automatically created every day when the first data is saved. Only the last 10 days are retained, and older backups are automatically deleted. </dd>
-         <dd>Since the backup file is encrypted with the encryption key associated with your Apple account, it cannot be restored except by this App on your iPhone or iPad that is used with your Apple account.</dd>
-         <dd>If you want to copy data to the iPhone or iPad that is used with an Apple account other than your own, please use a backup file with encryption turned off. </dd>
-         <dd>By sharing the backup file with other apps such as Notepad, you can store your data outside of the app. If you share a backup file from that app to this app, you can move it back to the backup folder. </a>
-         <dd>Also, when you connect your iPhone/iPad to your PC, you can use iTunes (Windows) or Finder (Mac) to copy the backup file from the Account app folder to another folder and save it, or copy it back to the app folder.</dd>
-         <dd>Please note that if you change the file name, it may no longer be visible on the backup management screen. </dd>
-         <dd>Backup files with encryption OFF are compressed data with the extension .zip. The zip file can be opened on your PC. The data files in the zip file are text files in JSON format, so they can be viewed with a text editor. </dd>
-         <dd>If you place a backup file with encryption turned off on the iCloud folder, there is a risk that your password data will be leaked if your iCloud is hacked. So, do not create backup files with encryption turned off unless necessary, and even if you do, please be careful about the storage location of the shared the backup. </dd>
      </dl>
 
 
@@ -1312,13 +1094,15 @@
      </dl>
 
 
-     <a name="history">
      <a href="#top">🔝</a>
+     <a name="history">
      <h2>Version history</h2>
      <dl class="main">
            
            
            <dt>ver.2.4</dt>
+           <dd>We have released an app for Mac. You can share data between apps on your iPhone/iPad and Mac via iCloud. </dd>
+           <dd>We have made various improvements regarding the display format. </dd>
            <dd>Category and Display format are now linked. When you select a category on the editing screen, Display format  will automatically switch which was last registered as an item with that category. </dd>
            <dd>You can now check and change the corresponding Display format in the context menu of the category selection and editing screen. </dd>
            <dd>When adding a Display format on the edit screen, the field in which data was being entered at the time is now selected by default. </dd>
