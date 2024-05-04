@@ -28,7 +28,7 @@ a:link, a:visited {
 	text-decoration: none;
 }
 h1 {
-	font-size: 8vmax;
+	font-size: 6vmax;
 	font: "ヒラギノ角ゴ ProN W3";
 }
 h2 {
@@ -46,7 +46,7 @@ h3 {
 }
 
 dl.main  {
-	padding: 10px 20px 20px 30px;
+	padding: 10px 20px 20px 15px;
 	line-height: 1.4em;
 }
 
@@ -56,7 +56,7 @@ dl.main dt{
 	margin-bottom: 0.3em;
 	font-size: 2.5vmax;
 }
-	dl.main dd{
+dl.main dd{
 	font-size: 2.5vmax;
 	margin-bottom: 0.6em;
 	display: list-item;
@@ -93,7 +93,7 @@ dl.sub1 dt{
 	font-size: 2vmax;
 	vertical-align: baseline;
 	background: #cfc;
-	padding: 20px;
+	padding: 10px;
 	margin: 0;
 	width: 30%;
 	box-sizing: border-box;
@@ -103,7 +103,7 @@ dl.sub1 dd{
 	list-style-type: none;
 	background: #aca;
 	font-size: 2vmax;
-	padding: 20px;
+	padding: 10px;
 	margin: 0;
 	width: 70%;
 	border: 1px solid #242;
