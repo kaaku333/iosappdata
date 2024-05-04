@@ -7,7 +7,7 @@
     
     a.sf {font-family: 'SF Pro'}
 
-    h1 {
+   h1 {
       font-size: 3vmax;
     }
     h2 {
@@ -24,6 +24,7 @@
       border-left: solid 5px #7de6b4;
     }
     
+
 
     a:link, a:visited {
           color: #333333;
@@ -89,9 +90,9 @@
 		font-size: 2vmax;
     }
 	dl.toc dt{
-      margin-top: 0.2rem;
-	  margin-bottom: 0.5rem;
-	  margin-left: -1em;
+	  margin-top: 0.2rem;
+	  margin-top: 0.5rem;
+	  margin-left: -1rem;
       font-weight: bold;
     }
     dl.toc dd{
@@ -250,3 +251,11 @@
     .icon.bookmark_fill {
       background-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark.fill@2x.png) ;
     }
+	.icon.rect_portrait_split {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/rectangle.portrait.split.2x1.png) ;
+    }
+	.icon.clock_arrow {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/clock.arrow.circlepath.png) ;
+    }		
+		
+		
