@@ -1,14 +1,26 @@
 <style type="text/css">
 #body {
-font-family: "Helvetica", "ヒラギノ角ゴ ProN W3";
+font-family: "ヒラギノ角ゴ ProN W3";
 font-size: 22pt;
 background-color: #c5e0b4;
 }
-img {
-	max-width: 100%;
-	width: 100%;
+
+img.normal {
+	max-width: 90%;
+	margin-left: 5vmax;
+	width: 90%;
 	height: auto;
 }
+
+img.title {
+	max-width: 80%;
+	margin-left: 5vmax;
+	width: 80%;
+	height: auto;
+    box-shadow: 10px 10px 15px -10px;
+
+}
+
 a:link, a:visited {
 	color: #353;
 	background: #cfc;
@@ -16,10 +28,11 @@ a:link, a:visited {
 	text-decoration: none;
 }
 h1 {
-	font-size: 3vmax;
+	font-size: 8vmax;
+	font: "ヒラギノ角ゴ ProN W3";
 }
 h2 {
-	font-size: 3vmax;
+	font-size: 4vmax;
 	padding: 0.4em 0.5em;
 	border-left: solid 8px #7e7;
 	/*  border-bottom: solid 8px #3250dd; */
