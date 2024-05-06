@@ -25,15 +25,9 @@
         var paramArray =[]
         window.onload = loadFinished;
 
-        var colorMode = ""
-        var name = ""
-        var tagName = ""
-
         function loadFinished(){
           getUrlParams()
           initSetting()
-          updateLeft()
-          updateRight()
         }
         function getUrlParams(){
           var urlParam = location.search.substring(1);
@@ -46,21 +40,12 @@
           }
         }
         function initSetting(){
-          if(paramArray.goto != null){;
-              tagName = paramArray.goto
-          }
-          if(paramArray.name != null){
-              name = paramArray.name;
-          }
-          if(paramArray.colorMode != null){
-              colorMode = paramArray.colorMode;
+          if(paramArray.goto != null){
+              gotoName(paramArray.goto);
           }
         }
-        function updateLeft(){
-            window.left.location.href ="help_toc.html&color?colorMode="+colorMode;
-        }
-        function updateRight(){
-            window.right.location.href = "help_mainPage.html?colorMode="+colorMode+"&name="+name+"&goto="+tagName;
+        function gotoName(name){
+            window.right.location.href = "help_mainPage.html#"+ name;
         }
    // -->
   </script>
