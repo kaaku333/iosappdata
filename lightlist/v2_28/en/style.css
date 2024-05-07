@@ -24,8 +24,28 @@
       border-left: solid 5px #7db4e6;
     }
     
+	dl.toc  {
+		padding: 1rem 1rem 1rem 1rem;
+		font-size: 2vmax;
+    }
+	dl.toc dt{
+	  margin-top: 0.2rem;
+	  margin-top: 0.5rem;
+	  margin-left: -1rem;
+      font-weight: bold;
+    }
+    dl.toc dd{
+      margin-left: 0.2em;
+	  display: list-item;
+	  padding: 0rem 0rem 0.4rem 0rem;
+      list-style-type: circle;
+	}
+	button {
+			font-size: 2vmax;
+			border-style: none;
+	}
 
-    a:link, a:visited {
+    a:link, a:visited, button {
           color: #333333;
           background: #c2edff;
           padding: 0.3em;

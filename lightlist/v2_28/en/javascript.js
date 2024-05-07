@@ -1,10 +1,16 @@
 var paramArray =[]
 window.onload = loadFinished;
 
+var gotoName =""
+var colorMode ="normal";
+
 function loadFinished(){
 	getUrlParams()
 	initSetting()
+	colorModeSelect(colorMode)
 }
+
+
 function getUrlParams(){
 	var urlParam = location.search.substring(1);
 	if(urlParam) {
@@ -16,39 +22,16 @@ function getUrlParams(){
 	}
 }
 
-function initSetting(){          
-	// filter by name section
-	// ex.) name=history
-	if(paramArray.name != null){
-		filterByName(paramArray.name);
-	}
-	
+function initSetting(){ 
 	// color setting
 	// ex.) colorMode=dark
-	var colorMode
 	if (paramArray.colorMode == 'dark'){
 		colorMode = 'dark'
 	}else{
 		colorMode = 'normal'
 	}
-	colorModeSelect(colorMode)
-}
-
-	
-function filterByName(filtername){
-	var elm = document.getElementsByClassName("langSel");
-	// set displayable with block of a name tag 
-	var isDisplay = false;
-	for (var i = 0; i < elm.length; i++) {
-		var thisname = elm[i].getAttribute("name");
-		if (thisname == filtername) {
-			isDisplay = true;
-		}else if (thisname != null ){
-			isDisplay = false;
-		}
-		if (isDisplay == false) {
-			elm[i].style.display = 'none';
-		}
+	if (paramArray.goto != null){
+		gotoName = paramArray.goto
 	}
 }
 
@@ -65,4 +48,16 @@ function colorModeSelect(colorMode){
 			elements[i].classList.replace("icon_blue", "icon_darkblue")
 		}
 	}
+}
+
+function openLeft(){
+    var url = "help_toc.html?colorMode="+colorMode;
+}
+
+function openRight(tag){
+	if (tag == null ){
+		tag = gotoName;
+	}
+	var url = "help_mainPage.html?colorMode="+colorMode+"#"+tag;
+    window.open(url, "right");
 }
