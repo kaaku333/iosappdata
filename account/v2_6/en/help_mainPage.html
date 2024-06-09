@@ -294,7 +294,7 @@
          
          <dt>Filter view</dt>
          <dd>Above the item list display on the right side of the screen is a <i class="icon dec3lines"></i> filter icon , filter status and the total number of items currently displayed. <i class="icon dec3lines"></i> Tap the filter icon to display the filter menu, where you can select various conditions to filter and display items. </dd>
-         <dd>In addition to category, tag, priority, update date, time limit, and color, you can also select account linkage, payment status, deprecated status, and No login required as filtering conditions. </dd>
+         <dd>In addition to category, tag, choice string, priority, update date, time limit, and color, you can also select account linkage, payment status, deprecated status, and No login required as filtering conditions. </dd>
          <dd>If you select multiple filters, only items matching all conditions will be displayed. The total number of items is the total number of matched items, 0 if none match. </dd>
          <dd>When filtering is in progress, the filter icon is displayed in a filled state <i class="icon dec3lines_fill"></i> . </dd>
          <dd>  If you press the <i class="icon dec3lines_fill"></i> filter icon and select "Reset Filters", you can reset all filter conditions at once. </dd>
@@ -933,6 +933,18 @@
          <dd>For example, business hours or contact information. </dd>
          <dd>The free string type is one of <a href="#selectList">select list</a> and can be added or changed by the user. </dd>
 
+          <dt>Choice string</dt>
+          <dd>You can register multiple options as a field where you can select a string from multiple options. </dd>
+          
+          <dt>Choice string type</dt>
+          <dd>Select the type of choice string. </dd>
+          <dd>Choice string type is one of the <a href="#selectList">selection lists</a>, which users can add and change themselves. </dd>
+          
+          <dt>Choice string</dt>
+          <dd>Choice string is a string that is registered in advance as an option. </dd>
+          <dd>Choice string is one of the <a href="#selectList">selection lists</a>, which users can add and change themselves. </dd>
+
+
          <dt>Date</dt>
          <dd>You can register multiple dates. </dd>
          <dd> It can also be treated as due date. </dd>
@@ -970,7 +982,7 @@
          <dd>A selection list is a list of choices to fill in a field, such as a category or a registered email address. </dd>
          <dd>Selection list can be edited on <a href="#editList">Selection list editing screen</a>. </dd>
          <dd>The selection list editing screen is moved from the menu of <a href="#home">Home screen</a>, <a href="#detail">Item details screen</a> and <a href="#editItem"> Item edit screen </a>  </dd>
-         <dd>For some types of selection lists (categories, tags, dates, item references, URLs, free strings), you can create groups to make it easier to search hierarchically. </dd>
+         <dd>For some types of selection lists (categories, tags, dates, item references, URLs, free strings, choice strings), you can create groups to make it easier to search hierarchically. </dd>
          <dd>Some types of selection list (categories, tags, dates, item references, URLs, free strings) are expected to have a large number of registrations, so it is recommended to create groups to make it easier to search hierarchically. </dd>
          <dd>There are the following types of selection lists. </dd>
 
@@ -1003,6 +1015,16 @@
          <dt>Free string type</dt>
          <dd> Indicates the type of free string information. </dd>
          <dd>Used to select free character string information on the item edit screen. </dd>
+
+          <dt>Choice string type</dt>
+          <dd>Indicates the type of choice string information. </dd>
+          <dd>Used to select choice string information on the item editing screen. </dd>
+          <dd>Can be used to filter home screens. </dd>
+          
+          <dt>Choice string</dt>
+          <dd>A string that is an option. </dd>
+          <dd>Used to select choice string information on the item editing screen. </dd>
+          <dd>Can be used to filter home screens. </dd>
 
          <dt>Date type</dt>
          <dd> Indicates the type of date information. </dd>
@@ -1099,6 +1121,12 @@
      <a name="history">
      <h2>Version history</h2>
      <dl class="main">
+           <dt>ver.2.6</dt>
+           <dd>Choice strings have been added to the field type. You can select a string from multiple options. </dd>
+           <dd>Choice strings can now be set in the filter on the home screen. You can filter by type and option set. </dd>
+           <dd>Add offset setting has been added to the context menu of the date field on the item edit screen. You can add date data with any number of days added. </dd>
+           <dd>The display of fields that can be registered multiple times, such as date fields, has been improved on the item details screen and item edit screen. </dd>
+           
            <dt>ver.2.5</dt>
            <dd>Added a history button to the top of the home screen. </dd>
            <dd>Added saved filters & grouping menu icon to the top of the home screen. </dd>
