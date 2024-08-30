@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v36 2024/8/30",
+        "_version": "v35 2024/4/7",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -11,16 +11,10 @@
         "animaltype" : "パンダ",
         "birthplace" : "上野動物園",
         "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
-        
-        "returndate" : "2026-02-20",
-        "returnexpdate" : "2026-02-20",
-
+        "returnexpdate" : "2025-06-23",
         "parents" : "リーリー、シンシン",
         "brothers" : "レイレイ、シャンシャン",
         "preset" : true,
-        "events" : [
-            { "name" : "親離れ" , "date" : "2023-03-20" },
-        ],
         "relations" : [
                 [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
                 [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
@@ -30,9 +24,9 @@
             ],
         "note" : "上野動物園の双子パンダのオスの子です。わんぱくだけど甘えん坊です。",
         "_comment": "imageName は App ver1.X の互換性のため",
-        "imageName": "shaoshao3",
+        "imageName": "shaoshao1",
+        "newImageNames": [ "shaoshao3" ],
     },
-    
     {
         "name":"レイレイ",
         "category": "誕生日",
@@ -44,16 +38,10 @@
         "animaltype" : "パンダ",
         "birthplace" : "上野動物園",
         "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
-        
-        "returndate" : "2026-02-20",
-        "returnexpdate" : "2026-02-20",
-        
+        "returnexpdate" : "2025-06-23",
         "parents" : "リーリー、シンシン",
         "brothers" : "シャオシャオ、シャンシャン",
         "preset" : true,
-        "events" : [
-            { "name" : "親離れ", "date" : "2023-03-20" },
-        ],
         "relations" : [
                 [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
                 [ "UENO-PANDA YouTube パンダムービー", "https://www.youtube.com/playlist?list=PLjGbDlVyDco7Wjc26KYKPw5nOj87GCqix" ],
@@ -64,7 +52,8 @@
 
         "note" : "上野動物園の双子パンダのメスの子です。マイペースだけどシャオシャオには負けません。",
         "_comment": "imageName は App ver1.X の互換性のため. newImageNames は２号と順番を入れ替えて違う画像が選ばれるようにする",
-        "imageName": "rayray3",
+        "imageName": "rayray1",
+        "newImageNames": [ "rayray3" ],
     },
     {
         "name":"楓浜",
@@ -82,9 +71,6 @@
         "brothers" : "彩浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
         "returnexpdate" : "2028-11-22",
         "preset" : true,
-        "events" : [
-            { "name" : "親離れ", "date" : "2022-04-12" },
-        ],
         "relations" : [
                 
                 [ "アドベンチャーワールド Panda Family Site", "http://pandababy-aws.com/"],
@@ -94,9 +80,10 @@
                 [ "楓浜のYouTube", "https://www.youtube.com/results?search_query=%E6%A5%93%E6%B5%9C" ],
 
             ],
-        "note" : "アドベンチャーワールドのパンダ一家の末っ子です。お姉ちゃんたちに負けずにおてんばに育ちました。",
+        "note" : "アドベンチャーワールドのパンダ一家の末っ子です。お姉ちゃんたちに負けずにおてんばに育ちました。2022年４月から独り立ちしました。",
         "_comment": "imageName は App ver1.X の互換性のため",
-        "imageName": "fuhin2",
+        "imageName": "fuhin1",
+        "newImageNames": ["fuhin2"],
     },
     {
         "name":"彩浜",
@@ -114,9 +101,6 @@
         "brothers" : "楓浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
         "returnexpdate" : "2026-08-14",
         "preset" : true,
-        "events" : [
-            { "name" : "親離れ", "date" : "2019-10-24" },
-        ],
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
                 [ "アドベンチャーワールド 彩浜トピックス", "https://www.aws-s.com/topics/?c=16"],
@@ -145,9 +129,6 @@
         "parents" : "リーリー、シンシン",
         "brothers" : "シャオシャオ、レイレイ",
         "preset" : true,
-        "events" : [
-            { "name" : "親離れ", "date" : "2018-12-11" },
-        ],
         "relations" : [
                 [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
                 [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
@@ -178,9 +159,6 @@
         "brothers" : "楓浜、彩浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
         "returnexpdate" : "2024-09-18",
         "preset" : true,
-        "events" : [
-            { "name" : "親離れ", "date" : "2017-10-10" },
-        ],
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
                 [ "アドベンチャーワールド 結浜トピックス", "https://www.aws-s.com/topics/?c=14"],
@@ -209,9 +187,6 @@
         "returned" : true,
 
         "preset" : true,
-        "events" : [
-            { "name" : "親離れ", "date" : "2015-11-06" },
-        ],
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
                 [ "アドベンチャーワールド 桜浜・桃浜トピックス", "https://www.aws-s.com/topics/?c=12"],
@@ -238,11 +213,7 @@
         "brothers" : "楓浜、彩浜、結浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
         "returndate" : "2023-02-22",
         "returned" : true,
-        
         "preset" : true,
-        "events" : [
-            { "name" : "親離れ", "date" : "2015-11-06" },
-        ],
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
                 [ "アドベンチャーワールド 桜浜・桃浜トピックス", "https://www.aws-s.com/topics/?c=12"],
@@ -269,8 +240,8 @@
         "children" : "シャオシャオ、レイレイ、シャンシャン",
         "partners" : "シンシン",
         "comingdate" : "2011-02-21",
-        "returndate" : "2024-09-29",
-        "returnexpdate" : "2024-09-29",
+        "returndate" : "2026-02-20",
+        "returnexpdate" : "2026-02-20",
 
         "preset" : true,
         "relations" : [
@@ -303,14 +274,10 @@
         "partners" : "リーリー",
         "children" : "シャオシャオ、レイレイ、シャンシャン",
         "comingdate" : "2011-02-21",
-        "returndate" : "2024-09-29",
-        "returnexpdate" : "2024-09-29",
+        "returndate" : "2026-02-20",
+        "returnexpdate" : "2026-02-20",
 
         "preset" : true,
-        "events" : [
-                { "name" : "子供出産", "note" : "シャンシャン", "date" : "2017-06-12" },
-                { "name" : "子供出産", "note" : "レイレイとシャオシャオ", "date" : "2021-06-23" },
-        ],
         "relations" : [
                 [ "UENO-PANDA.JP", "https://www.ueno-panda.jp/"],
                 [ "UENO-PANDA プロフィール", "https://www.ueno-panda.jp/press/"],
@@ -345,7 +312,7 @@
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
             ],
-        "note" : "良浜の５番目の子供です。",
+        "note" : "海浜と共に良浜の２組目の双子です。",
 
         "imageName": "oopanda_pink",
     },
@@ -610,7 +577,7 @@
         "brothers" : "明浜、愛浜、幸浜、秋浜、隆浜、良浜、奇珍、奇縁",
         "children" : "大毛、毛桃、毛竹、毛二、双欣、双雄、双喜、星輝、星繁、小喬、茜茜、包程、包航、溜溜、順順",
         "returned" : true,
-        "returndate" : "2004-06-21",
+        "returndate" : "2004-07-21",
 
         "preset" : true,
         "relations" : [
@@ -642,15 +609,6 @@
         "returnexpdate" : "2030-09-06",
 
         "preset" : true,
-        "events" : [
-                { "name" : "子供出産", "note" : "梅浜＆永浜", "date" : "2008-09-13" },
-                { "name" : "子供出産", "note" : "陽浜＆海浜", "date" : "2010-08-11" },
-                { "name" : "子供出産", "note" : "優浜", "date" : "2012-08-10" },
-                { "name" : "子供出産", "note" : "桜浜＆桃浜", "date" : "2014-12-02" },
-                { "name" : "子供出産", "note" : "結浜", "date" : "2016-09-18" },
-                { "name" : "子供出産", "note" : "彩浜", "date" : "2018-08-14" },
-                { "name" : "子供出産", "note" : "楓浜", "date" : "2020-11-22" },
-        ],
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
                 [ "良浜のYouTube", "https://www.youtube.com/results?search_query=%E8%89%AF%E6%B5%9C" ],
