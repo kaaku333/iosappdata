@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v38 2024/9/29",
+        "_version": "v37 2024/8/30",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -269,8 +269,8 @@
         "children" : "シャオシャオ、レイレイ、シャンシャン",
         "partners" : "シンシン",
         "comingdate" : "2011-02-21",
-        "returned" : true,
         "returndate" : "2024-09-29",
+        "returnexpdate" : "2024-09-29",
 
         "preset" : true,
         "relations" : [
@@ -303,8 +303,8 @@
         "partners" : "リーリー",
         "children" : "シャオシャオ、レイレイ、シャンシャン",
         "comingdate" : "2011-02-21",
-        "returned" : true,
         "returndate" : "2024-09-29",
+        "returnexpdate" : "2024-09-29",
 
         "preset" : true,
         "events" : [
