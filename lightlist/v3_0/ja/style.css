@@ -1,32 +1,39 @@
     body {
       font-family: "Helvetica", "ヒラギノ角ゴ ProN W3";
-      font-size: 3vmax;
+	font-size: 22px;
+	//  font-size: 3vmax;
       background-color: #777777;
       color: #333333
     }
     
     a.sf {font-family: 'SF Pro'}
 
-    h1 {
-      font-size: 3vmax;
+	h1 {
+	 font-size: 26px;
+
+     // font-size: 3vmax;
     }
-    h2 {
-      font-size: 3vmax;
+	h2 {
+		font-size: 26px;
+     // font-size: 3vmax;
       padding: 0.4em 0.5em;
       border-left: solid 8px #7db4e6;
     //  border-bottom: solid 8px #3250dd;
       background-color: #c2edff;
       color: #333333;
     }
-    h3 {
-      font-size: 2.5vmax;
+	h3 {
+		font-size: 22px;
+
+     // font-size: 2.5vmax;
       padding: 0.3em;
       border-left: solid 5px #7db4e6;
     }
     
 	dl.toc  {
 		padding: 1rem 1rem 1rem 1rem;
-		font-size: 2vmax;
+			font-size: 22px;
+			//	font-size: 2vmax;
     }
 	dl.toc dt{
 	  margin-top: 0.2rem;
@@ -41,8 +48,8 @@
       list-style-type: circle;
 	}
 	button {
-			font-size: 2vmax;
-			border-style: none;
+		font-size: 2vmax;
+		border-style: none;
 	}
 
     a:link, a:visited, button {
@@ -240,10 +247,13 @@
       font-weight: bold; 
       margin-top: 2vmax;
       margin-bottom: 0.3em;
-      font-size: 2.5vmax;
+//			font-size: 2.5vmax;
+	font-size: 22px;
+
     }
     dd {
-      font-size: 2.5vmax;
+		font-size: 22px;
+		//	font-size: 2.5vmax;
       margin-bottom: 0.5em;
        display: list-item;
        list-style-type: circle;
