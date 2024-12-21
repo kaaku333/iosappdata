@@ -1,6 +1,6 @@
     body {
       font-family: "Helvetica", "ヒラギノ角ゴ ProN W3";
- 	  font-size: 32px;
+ 	  font-size: 22px;
       background-color: #777777;
       color: #333333
     }
@@ -8,24 +8,22 @@
     a.sf {font-family: 'SF Pro'}
 
 	h1 {
-	 font-size: 26px;
+	  font-size: 1.4rem;
     }
 	h2 {
-		font-size: 26px;
+	  font-size: 1.3rem;
       padding: 0.4em 0.5em;
       border-left: solid 8px #7db4e6;
       background-color: #c2edff;
       color: #333333;
     }
 	h3 {
-		font-size: 22px;
       padding: 0.3em;
       border-left: solid 5px #7db4e6;
     }
     
 	dl.toc  {
 		padding: 1rem 1rem 1rem 1rem;
-		font-size: 22px;
     }
 	dl.toc dt{
 	  margin-top: 0.2rem;
@@ -40,7 +38,6 @@
       list-style-type: circle;
 	}
 	button {
-		font-size: 22px;
 		border-style: none;
 	}
 
@@ -239,11 +236,8 @@
       font-weight: bold; 
       margin-top: 2vmax;
       margin-bottom: 0.3em;
-	font-size: 22px;
-
     }
     dd {
-		font-size: 22px;
       margin-bottom: 0.5em;
        display: list-item;
        list-style-type: circle;
