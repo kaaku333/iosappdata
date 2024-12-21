@@ -249,4 +249,8 @@ body {
 	.mask_circle_circle {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/circle.circle.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/circle.circle.png);
+	}
+	.mask_textformat_size {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/textformat.size.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/textformat.size.png);
     }
