@@ -1,5 +1,5 @@
 :root {
-  --deffontsize: 2.2vmax;
+  --deffontsize: 2.4vmax;
 }
 
 
@@ -39,7 +39,7 @@ body {
       margin-bottom: 0.3em;
     }
 	dd {
- 	   font-size: 1.0em;
+ 	   font-size: 1.1em;
       margin-bottom: 0.5em;
        display: list-item;
        list-style-type: circle;
