@@ -1,7 +1,7 @@
     body {
       font-family: "Helvetica", "ヒラギノ角ゴ ProN W3";
 	//font-size: 22px;
-	  font-size: 2vmax;
+	  font-size: medium;
 
       background-color: #777777;
       color: #333333
@@ -10,10 +10,10 @@
     a.sf {font-family: 'SF Pro'}
 
 	h1 {
-	  font-size: 1.4rem;
+	  font-size: 1.5rem;
     }
 	h2 {
-	  font-size: 1.4rem;
+	  font-size: 1.5rem;
       padding: 0.4em 0.5em;
       border-left: solid 8px #7db4e6;
       background-color: #c2edff;
