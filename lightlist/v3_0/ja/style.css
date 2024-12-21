@@ -1,6 +1,7 @@
     body {
       font-family: "Helvetica", "ヒラギノ角ゴ ProN W3";
 	//font-size: 22px;
+	  font-size: 3vmax;
 
       background-color: #777777;
       color: #333333
@@ -19,10 +20,26 @@
       color: #333333;
     }
 	h3 {
-      padding: 0.3em;
+      font-size: 1.2rem;
+	  padding: 0.3em;
       border-left: solid 5px #7db4e6;
     }
-    
+	dl  {
+      padding: 10px 20px 20px 30px;
+      line-height: 1.4em;
+    }
+    dt {
+      font-size: 1.2rem;
+      font-weight: bold; 
+      margin-top: 2vmax;
+      margin-bottom: 0.3em;
+    }
+    dd {
+      margin-bottom: 0.5em;
+       display: list-item;
+       list-style-type: circle;
+       line-height: 150%;
+    }
 	dl.toc  {
 		padding: 1rem 1rem 1rem 1rem;
     }
@@ -227,20 +244,4 @@
 	.mask_circle_circle {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/circle.circle.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/circle.circle.png);
-    }
-    dl  {
-      padding: 10px 20px 20px 30px;
-      line-height: 1.4em;
-    }
-    
-    dt {
-      font-weight: bold; 
-      margin-top: 2vmax;
-      margin-bottom: 0.3em;
-    }
-    dd {
-      margin-bottom: 0.5em;
-       display: list-item;
-       list-style-type: circle;
-       line-height: 150%;
     }
