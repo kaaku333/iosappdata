@@ -1,15 +1,16 @@
-var paramArray =[]
+var paramArray =[];
 window.onload = loadFinished;
 
-var gotoName =""
+var gotoName ="";
 var colorMode ="normal";
+var fontSize ="midium";
 
 function loadFinished(){
 	getUrlParams()
 	initSetting()
 	colorModeSelect(colorMode)
+	fontSizeSelect(fontSize)
 }
-
 
 function getUrlParams(){
 	var urlParam = location.search.substring(1);
@@ -30,6 +31,15 @@ function initSetting(){
 	}else{
 		colorMode = 'normal'
 	}
+	// ex.) fontSize=big
+	if (paramArray.fontSize == 'large'){
+		fontSize = 'large'
+	}else if(paramArray.fontSize == 'small'){
+		fontSize = 'small'
+	}else{
+		fontSize = 'midium'
+	}
+	// ex.) gotoName=hoge
 	if (paramArray.goto != null){
 		gotoName = paramArray.goto
 	}
@@ -50,6 +60,16 @@ function colorModeSelect(colorMode){
 	}
 }
 
+function fontSizeSelect(fontSize){
+	var size = "2.4vmax"; // midium
+	if(fontSize == 'large'){
+		size = "3.0vmax";
+	}else if(fontSize == 'small'){
+		size = "2.0vmax"
+	}
+	document.documentElement.style.setProperty('--deffontsize',size);
+}
+
 function openLeft(){
     var url = "help_toc.html?colorMode="+colorMode;
 }
@@ -58,6 +78,6 @@ function openRight(tag){
 	if (tag == null ){
 		tag = gotoName;
 	}
-	var url = "help_mainPage.html?colorMode="+colorMode+"#"+tag;
+	var url = "help_mainPage.html?colorMode="+colorMode+"&fontSize="+fontSize+"#"+tag;
     window.open(url, "right");
 }
