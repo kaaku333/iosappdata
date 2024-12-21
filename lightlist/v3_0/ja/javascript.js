@@ -32,8 +32,8 @@ function initSetting(){
 		colorMode = 'normal'
 	}
 	// ex.) fontSize=big
-	if (paramArray.fontSize == 'small'){
-		fontSize = 'big'
+	if (paramArray.fontSize == 'large'){
+		fontSize = 'large'
 	}else if(paramArray.fontSize == 'small'){
 		fontSize = 'small'
 	}else{
