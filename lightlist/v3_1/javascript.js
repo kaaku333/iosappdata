@@ -1,21 +1,40 @@
 var paramArray =[];
-window.onload = loadFinished;
+window.onload = _loadFinished;
 
 var gotoName ="";
 var colorMode ="normal";
 var fontSize ="midium";
 var hashTag = "";
 
-function loadFinished(){
-	getUrlParams()
-	initSetting()
-	colorModeSelect(colorMode)
-	fontSizeSelect(fontSize)
-	
-	location.hash = hashTag;
+// public function
+
+function openLeft(){
+    var url = "help_toc.html?colorMode="+colorMode;
 }
 
-function getUrlParams(){
+function openRight(tag){
+	if (tag == null ){
+		tag = gotoName;
+	}
+	var url = "help_mainPage.html?colorMode="+colorMode+"&fontSize="+fontSize+"#"+tag;
+    window.open(url, "right");
+}
+
+// private function
+
+function _loadFinished(){
+	_getUrlParams()
+	_initSetting()
+	_colorModeSelect(colorMode)
+	_fontSizeSelect(fontSize)
+	
+	if (hashTag != null && hashTag != "") {
+		location.hash = hashTag;
+	}
+}
+
+
+function _getUrlParams(){
 	var urlParam = location.search.substring(1);
 	if(urlParam) {
 		var param = urlParam.split('&');
@@ -25,10 +44,10 @@ function getUrlParams(){
 		}
 	}
 	
-	hashTag = location.hash;
+	hashTag = location.hash.substring(1);
 }
 
-function initSetting(){ 
+function _initSetting(){ 
 	// color setting
 	// ex.) colorMode=dark
 	if (paramArray.colorMode == 'dark'){
@@ -48,9 +67,13 @@ function initSetting(){
 	if (paramArray.goto != null){
 		gotoName = paramArray.goto
 	}
+	//  ex.) jump=hoge
+	if (paramArray.jump != null){
+		hashTag	= paramArray.jump
+	}
 }
 
-function colorModeSelect(colorMode){
+function _colorModeSelect(colorMode){
 	if(colorMode == 'dark'){
 		document.body.style.color = '#eeeeee';
 		document.body.style.backgroundColor = '#444444';
@@ -65,7 +88,7 @@ function colorModeSelect(colorMode){
 	}
 }
 
-function fontSizeSelect(fontSize){
+function _fontSizeSelect(fontSize){
 	var size = "2.4vmax"; // midium
 	
 	if(fontSize == 'large'){
@@ -76,14 +99,3 @@ function fontSizeSelect(fontSize){
 	document.documentElement.style.setProperty('--deffontsize',size);
 }
 
-function openLeft(){
-    var url = "help_toc.html?colorMode="+colorMode;
-}
-
-function openRight(tag){
-	if (tag == null ){
-		tag = gotoName;
-	}
-	var url = "help_mainPage.html?colorMode="+colorMode+"&fontSize="+fontSize+"#"+tag;
-    window.open(url, "right");
-}
