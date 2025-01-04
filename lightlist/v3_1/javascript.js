@@ -4,7 +4,7 @@ window.onload = _loadFinished;
 var gotoName ="";
 var colorMode ="normal";
 var fontSize ="midium";
-var hashTag = "";
+var jumpToName = "";
 
 // public function
 
@@ -16,7 +16,7 @@ function openRight(tag){
 	if (tag == null ){
 		tag = gotoName;
 	}
-	var url = "help_mainPage.html?colorMode="+colorMode+"&fontSize="+fontSize+"#"+tag;
+	var url = "help_mainPage.html?colorMode="+colorMode+"&fontSize="+fontSize+"&jumpTo="+tag;
     window.open(url, "right");
 }
 
@@ -28,8 +28,8 @@ function _loadFinished(){
 	_colorModeSelect(colorMode)
 	_fontSizeSelect(fontSize)
 	
-	if (hashTag != null && hashTag != "") {
-		location.hash = hashTag;
+	if (jumpToName != "") {
+		location.hash = jumpToName;
 	}
 }
 
@@ -44,7 +44,7 @@ function _getUrlParams(){
 		}
 	}
 	
-	hashTag = location.hash.substring(1);
+	//jumpToName = location.hash.substring(1);
 }
 
 function _initSetting(){ 
@@ -67,9 +67,9 @@ function _initSetting(){
 	if (paramArray.goto != null){
 		gotoName = paramArray.goto
 	}
-	//  ex.) jump=hoge
-	if (paramArray.jump != null){
-		hashTag	= paramArray.jump
+	//  ex.) jumpTo=hoge
+	if (paramArray.jumpTo != null){
+		jumpToName	= paramArray.jumpTo
 	}
 }
 
