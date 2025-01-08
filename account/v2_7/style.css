@@ -1,0 +1,265 @@
+:root {
+  --deffontsize: 2.4vmax;
+}
+
+
+body {
+      font-family: "Helvetica", "ヒラギノ角ゴ ProN W3";
+      font-size: 3vmax;
+      background-color: #eeeeee;
+      color: #333333
+    }
+    
+    a.sf {font-family: 'SF Pro'}
+
+   h1 {
+      font-size: 1.5em;
+    }
+    h2 {
+      font-size: 1.2em;
+      padding: 0.4em 0.5em;
+      border-left: solid 8px #7de6b4;
+    /*  border-bottom: solid 8px #3250dd; */
+      background-color: #c2ffed;
+      color: #333333;
+    }
+    h3 {
+      font-size: 1.2em;
+      padding: 0.3em;
+      border-left: solid 5px #7de6b4;
+    }
+    
+
+    a:link, a:visited {
+          color: #333333;
+          background: #c2ffed;
+          padding: 0.2em;
+          text-decoration: none;
+    }
+    .img_area img{
+      width: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .icon_white {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #EEEEEE;
+    }
+    .icon_black {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #111111;
+    }
+    .icon_blue {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #5588FF;
+    }
+    .icon_red {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #FF5588;
+    }
+
+    .icon_darkblue {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #2222FF;
+    }
+ 
+	dl.toc  {
+		padding: 1rem 1rem 1rem 1rem;
+		font-size: 2vmax;
+    }
+	dl.toc dt{
+	  margin-top: 0.2rem;
+	  margin-top: 0.5rem;
+	  margin-left: -1rem;
+      font-weight: bold;
+    }
+    dl.toc dd{
+      margin-left: 0.2em;
+	  display: list-item;
+	  padding: 0rem 0rem 0.4rem 0rem;
+      list-style-type: circle;
+    }
+
+    dl.main  {
+      padding: 10px 20px 20px 30px;
+      line-height: 1.4em;
+    }
+    
+    dl.main dt{
+      font-weight: bold; 
+      margin-top: 2vmax;
+      margin-bottom: 0.3em;
+      font-size: 2.5vmax;
+    }
+    dl.main dd{
+      font-size: 2.5vmax;
+      margin-bottom: 0.6em;
+       display: list-item;
+       list-style-type: circle;
+       line-height: 150%;
+    }
+
+    dl.sub0  {
+      padding: 0px 0px 0px 50px;
+    }
+    dl.sub0 dt{
+      margin-top: 1vmax;
+      font-size: 2.2vmax;
+    }
+    dl.sub0 dd{
+      font-size: 2.2vmax;
+      margin-bottom: 0.4em;
+      list-style-type: circle;
+    }
+    
+    dl.sub1{
+      display:flex;
+      flex-wrap: wrap;
+      text-align: left;
+      padding: 20px;
+      margin: 10px;
+      line-height: normal;
+    }
+    dl.sub1 dt{
+        font-size: 2vmax;
+        vertical-align: baseline;
+        background: #ddd;
+        padding: 20px;
+        margin: 0;
+        width: 30%;
+        box-sizing: border-box;
+        border: 1px solid #ccc; 
+    }
+    dl.sub1 dd{
+       list-style-type: none;
+       font-size: 2vmax;
+       padding: 20px;
+       margin: 0;
+       width: 70%;
+       border: 1px solid #ccc;
+       box-sizing: border-box;
+    }
+    .icon {
+        display: inline-block;
+        width: 1.0em;
+        height: 1.0em;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    /*
+     safari(webkit)では background-image の相対パスがうまく指定できないので絶対パスにしている
+     safari(webkit)では 要素の中の入れ子の &.xxx 定義がうまくできないので定義を分離している
+    */
+    .icon.trash {
+        background-image: url(https://kaaku333.github.io/iosappdata/account/image/trash@2x.png);
+    }
+    .icon.threelines {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal@2x.png) ;
+    }
+    .icon.threedots {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/ellipsis@2x.png) ;
+    }
+    .icon.info {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/info.circle@2x.png) ;
+    }
+    .icon.gear {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/gear@2x.png) ;
+    }
+    .icon.updown {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.up.arrow.down.circle@2x.png) ;
+    }
+    .icon.updown_fill {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.up.arrow.down.circle.fill@2x.png) ;
+    }
+    .icon.dec3lines {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal.decrease.circle@2x.png) ;
+    }
+    .icon.dec3lines_fill {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal.decrease.circle.fill@2x.png) ;
+    }
+    .icon.wrench {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/wrench.adjustable@2x.png) ;
+    }
+    .icon.xmark {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/xmark.circle@2x.png) ;
+    }
+    .icon.plus {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/plus@2x.png) ;
+    }
+    .icon.pencil {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/pencil@2x.png) ;
+    }
+    .icon.mag {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/magnifyingglass@2x.png) ;
+    }
+    .icon.eyeslash {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/eye.slash@2x.png) ;
+    }
+    
+    .icon.icloudup {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/icloud.and.arrow.up@2x.png) ;
+    }
+    .icon.key {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/key@2x.png) ;
+    }
+    .icon.coin {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/dollarsign.circle@2x.png) ;
+    }
+    .icon.coin_fill {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/dollarsign.circle.fill@2x.png) ;
+    }
+    .icon.person2 {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/person.2@2x.png) ;
+    }
+    .icon.calendarex {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/calendar.badge.exclamationmark@2x.png) ;
+    }
+    .icon.lock {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/lock@2x.png) ;
+    }
+    .icon.lock_slash {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/lock.slash@2x.png) ;
+    }
+    .icon.lock_open {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/lock.open@2x.png) ;
+    }
+    .icon.bookmark {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark@2x.png) ;
+    }
+    .icon.bookmark_fill {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark.fill@2x.png) ;
+    }
+	.icon.rect_portrait_split {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/rectangle.portrait.split.2x1.png) ;
+    }
+	.icon.clock_arrow {
+      background-image: url(https://kaaku333.github.io/iosappdata/account/image/clock.arrow.circlepath.png) ;
+    }		
+		
+		
