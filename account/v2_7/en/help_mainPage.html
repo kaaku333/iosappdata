@@ -3,92 +3,9 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>help_mainPage</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript">
-      <!--
-        var paramArray =[]
-        window.onload = loadFinished;
-
-        function loadFinished(){
-          getUrlParams()
-          initSetting()
-        }
-        function getUrlParams(){
-          var urlParam = location.search.substring(1);
-          if(urlParam) {
-            var param = urlParam.split('&');
-            for (i = 0; i < param.length; i++) {
-              var paramItem = param[i].split('=');
-              paramArray[paramItem[0]] = paramItem[1];
-            }
-          }
-        }
-        function initSetting(){
-
-          
-          // filter by name section
-          // ex.) name=history
-          if(paramArray.name != null){
-              filterByName(paramArray.name);
-          }
-          
-          // color setting
-          // ex.) colorMode=dark
-          var colorMode
-          if (paramArray.colorMode == 'dark'){
-            colorMode = 'dark'
-          }else{
-            colorMode = 'normal'
-          }
-          colorMode = 'normal'
-          colorModeSelect(colorMode)
-          
-          // goto 
-          // ex.) goto=history
-         if(paramArray.goto != null){
-              gotoName(paramArray.goto);
-          }
-        }
-        
-        
-        function filterByName(){
-          var filtername = "history";
-          var elm = document.getElementsByClassName("langSel");
-          var isDisplay = false;
-          for (var i = 0; i < elm.length; i++) {
-            var thisname = elm[i].getAttribute("name");
-            if (thisname == filtername) {
-              isDisplay = true;
-            }else if (thisname != null ){
-              isDisplay = false;
-            }
-            if (isDisplay == false) {
-              elm[i].style.display = 'none';
-            }
-          }
-        }
-
-        function colorModeSelect(colorMode){
-          if(colorMode == 'dark'){
-            document.body.style.color = '#eeeeee';
-            document.body.style.backgroundColor = '#444444';
-          }else{
-            document.body.style.color = '#444444';
-            document.body.style.backgroundColor = '#eeeeee';
-            var elements = document.getElementsByTagName("div");
-            for (var i = 0 ; i < elements.length; i++) {
-                elements[i].classList.replace("icon_white", "icon_black")
-                elements[i].classList.replace("icon_blue", "icon_darkblue")
-            }
-          }
-        }
-        
-        function gotoName(name){
-            window.location.href = "#"+name;
-        }
-    // -->
-    </script>
-</head>
+    <link rel="stylesheet" href="../style.css">
+    <script type="text/javascript" src="../javascript.js"></script>
+　</head>
   <body id="body">
 
 <a name="top">
@@ -301,11 +218,13 @@
          <dd>If you select a saved filter from the filter menu, you can save the filter condition at that time with a name, and later you can reproduce the filter condition by simply selecting the name. </d>
          <dd>Selecting the Edit Saved Filter button displays the <a href="#savedFilter">Saved Filter list Screen</a>, where you can rename or delete the saved filter. </dd>
          <dd>If you want to change the filtering conditions of a saved filter, change the filtering conditions after selecting that filter, and save it with the same name to overwrite it. </dd>
+         <dd>You can always hide obsolete items via the filter menu options.</dd>
+         
          <dt>Search box</dt>
          <dd>You can enter a search string in the search box at the top of the screen. As you enter a character string, it will automatically narrow down to only items with names, notes, comments, etc. that include that character string. </dd>
          <dd>If you press the <i class="icon xmark"></i> icon on the right side, the character string will disappear and you can cancel the refinement state. </dd>
          <dd>The search string is also a filter condition, so it can be reused in saved filters. </dd>
-         
+         <dd>You can choose whether to search for a string only in the title or to search for other items such as comments in the filter menu.</dd>
 
          <dt>Item list display</dt>
          <dd>The account list display shows a list of items belonging to the group under the group name. If you add a comment to the item title, it will be displayed together with the item title. </dd>
@@ -523,8 +442,6 @@
          <dd>Tap the display format name to go to the <a href="#editDisplayFormat">Display format edit screen</a> where you can edit the display format. </dd>
          <dd>The operation method of the screen is the same as <a href="#editList">selection list edit screen</a>. </dd>
      </dl>
-
-
 
 
      <a href="#top">🔝</a>
@@ -1121,6 +1038,11 @@
      <a name="history">
      <h2>Version history</h2>
      <dl class="main">
+            <dt>ver.2.7</dt>
+            <dd>You can now always hide obsolete items using the filter options on the home screen.</dd>
+            <dd>Added font size change button to online manual.</dd>
+            <dd>Minor bugs have been fixed.</dd>
+
            <dt>ver.2.6</dt>
            <dd>Choice strings have been added to the field type. You can select a string from multiple options. </dd>
            <dd>Choice strings can now be set in the filter on the home screen. You can filter by type and option set. </dd>

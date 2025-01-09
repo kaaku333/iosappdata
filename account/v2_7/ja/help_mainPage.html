@@ -5,89 +5,7 @@
     <title>help_mainPage</title>
     <link rel="stylesheet" href="../style.css">
     <script type="text/javascript" src="../javascript.js"></script>
-
-      <!--
-      <script type="text/javascript">
-        var paramArray =[]
-        window.onload = loadFinished;
-
-        function loadFinished(){
-          getUrlParams()
-          initSetting()
-        }
-        function getUrlParams(){
-          var urlParam = location.search.substring(1);
-          if(urlParam) {
-            var param = urlParam.split('&');
-            for (i = 0; i < param.length; i++) {
-              var paramItem = param[i].split('=');
-              paramArray[paramItem[0]] = paramItem[1];
-            }
-          }
-        }
-        function initSetting(){
-          // filter by name section
-          // ex.) name=history
-          if(paramArray.name != null){
-              filterByName(paramArray.name);
-          }
-          
-          // color setting
-          // ex.) colorMode=dark
-          var colorMode
-          if (paramArray.colorMode == 'dark'){
-            colorMode = 'dark'
-          }else{
-            colorMode = 'normal'
-          }
-          colorMode = 'normal'
-          colorModeSelect(colorMode)
-          
-          // goto 
-          // ex.) goto=history
-         if(paramArray.goto != null){
-              gotoName(paramArray.goto);
-          }
-        }
-        
-        function filterByName(filtername){
-          var elm = document.getElementsByClassName("main");
-          var isDisplay = false;
-          for (var i = 0; i < elm.length; i++) {
-            var thisname = elm[i].getAttribute("name");
-            if (thisname == filtername) {
-              isDisplay = true;
-            }else if (thisname != null ){
-              isDisplay = false;
-            }
-            if (isDisplay == false) {
-              elm[i].style.display = 'none';
-            }
-          }
-        }
-
-        function colorModeSelect(colorMode){
-          if(colorMode == 'dark'){
-            document.body.style.color = '#eeeeee';
-            document.body.style.backgroundColor = '#444444';
-          }else{
-            document.body.style.color = '#444444';
-            document.body.style.backgroundColor = '#eeeeee';
-            var elements = document.getElementsByTagName("div");
-            for (var i = 0 ; i < elements.length; i++) {
-                elements[i].classList.replace("icon_white", "icon_black")
-                elements[i].classList.replace("icon_blue", "icon_darkblue")
-            }
-          }
-        }
-        
-        function gotoName(name){
-            window.location.href = "#"+name;
-        }
-    </script>
-    // -->
-
-</head>
+  </head>
   <body id="body">
 
 
@@ -300,8 +218,11 @@
         <dd>絞り込みメニューで保存済みフィルターを選ぶと、その時の絞り込み条件を名前をつけて保存し、後からその名前を選ぶだけで絞り込み条件を再現することができます。</d>
         <dd>保存済みフィルターの編集ボタンを選ぶと<a href="#savedFilter">保存済みフィルター一覧画面</a>を表示して、保存済みフィルター名を変えたり削除したりできます。</dd>
         <dd>保存済みフィルターの絞り込み条件を変更したい場合は、そのフィルターを選んだ後に絞り込み条件を変更し、同じ名前で保存して上書きしてください。</dd>
+        <dd>フィルターメニューのオプションで利用廃止アイテムを常に非表示にすることができます。</dd>
+        
         <dt>検索ボックス</dt>
         <dd>画面の上にある検索ボックスには絞り込み用の文字列を入力できます。文字列を入力していくと、その文字列を含む名前やメモやコメントなどを持ったアイテムのみに自動的に絞り込まれていきます。</dd>
+        <dd>フィルターメニューのオプションで文字列検索対象をタイトルのみにするかそれ以外のコメントなども対象にするかを選択できます。</dd>
         <dd>右側の <i class="icon xmark"></i> アイコンを押すと文字列が消えて絞り込み状態を解除できます。</dd>
         <dd>検索文字列もフィルター条件の一つなので、保存済みフィルターで再利用することができます。</dd>
         
@@ -1102,6 +1023,11 @@
     <a name="history">
     <h2>バージョン履歴</h2>
     <dl class="main">
+          <dt>ver.2.7</dt>
+          <dd>ホーム画面のフィルタのオプションで利用廃止アイテムを常に非表示にすることができるようになりました。</dd>
+          <dd>オンラインマニュアルのフォントサイズを変更できるようになりました。</dd>
+          <dd>軽微な不具合を修正しました。</dd>
+    
           <dt>ver.2.6</dt>
           <dd>フィールドの種類に選択肢文字列を追加しました。複数の選択肢の中から文字列を選ぶことができます。</dd>
           <dd>ホーム画面のフィルタで選択肢文字列を設定できるようになりました。タイプと選択肢のセットでフィルターできます。</dd>

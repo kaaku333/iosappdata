@@ -91,7 +91,7 @@ body {
  
 	dl.toc  {
 		padding: 1rem 1rem 1rem 1rem;
-		font-size: 2vmax;
+		font-size: 1.0em;
     }
 	dl.toc dt{
 	  margin-top: 0.2rem;
@@ -115,10 +115,10 @@ body {
       font-weight: bold; 
       margin-top: 2vmax;
       margin-bottom: 0.3em;
-      font-size: 2.5vmax;
+      font-size: 1.2em;
     }
     dl.main dd{
-      font-size: 2.5vmax;
+      font-size: 1.2em;
       margin-bottom: 0.6em;
        display: list-item;
        list-style-type: circle;
@@ -130,10 +130,10 @@ body {
     }
     dl.sub0 dt{
       margin-top: 1vmax;
-      font-size: 2.2vmax;
+      font-size: 1.2em;
     }
     dl.sub0 dd{
-      font-size: 2.2vmax;
+      font-size: 1.2em;
       margin-bottom: 0.4em;
       list-style-type: circle;
     }
@@ -147,7 +147,7 @@ body {
       line-height: normal;
     }
     dl.sub1 dt{
-        font-size: 2vmax;
+        font-size: 1.0em;
         vertical-align: baseline;
         background: #ddd;
         padding: 20px;
@@ -158,7 +158,7 @@ body {
     }
     dl.sub1 dd{
        list-style-type: none;
-       font-size: 2vmax;
+       font-size: 1.0em;
        padding: 20px;
        margin: 0;
        width: 70%;
