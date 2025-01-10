@@ -1,5 +1,8 @@
 :root {
-  --deffontsize: 2.4vmax;
+	--deffontsize: 2.4vmax;
+	--deffgcolor: #333333;
+	--defbggray : #BBBBBB;
+	--defbglightgray: #DDDDDD;
 }
 
 
@@ -42,52 +45,7 @@ body {
       margin-left: auto;
       margin-right: auto;
     }
-    .icon_white {
-      display: inline-block;
-      margin: 0 7 -7 7;
-      width: 1.2em;
-      height: 1.2em;
-      mask: no-repeat center / contain;
-      -webkit-mask: no-repeat center / contain ;
-      background: #EEEEEE;
-    }
-    .icon_black {
-      display: inline-block;
-      margin: 0 7 -7 7;
-      width: 1.2em;
-      height: 1.2em;
-      mask: no-repeat center / contain;
-      -webkit-mask: no-repeat center / contain ;
-      background: #111111;
-    }
-    .icon_blue {
-      display: inline-block;
-      margin: 0 7 -7 7;
-      width: 1.2em;
-      height: 1.2em;
-      mask: no-repeat center / contain;
-      -webkit-mask: no-repeat center / contain ;
-      background: #5588FF;
-    }
-    .icon_red {
-      display: inline-block;
-      margin: 0 7 -7 7;
-      width: 1.2em;
-      height: 1.2em;
-      mask: no-repeat center / contain;
-      -webkit-mask: no-repeat center / contain ;
-      background: #FF5588;
-    }
 
-    .icon_darkblue {
-      display: inline-block;
-      margin: 0 7 -7 7;
-      width: 1.2em;
-      height: 1.2em;
-      mask: no-repeat center / contain;
-      -webkit-mask: no-repeat center / contain ;
-      background: #2222FF;
-    }
  
 	dl.toc  {
 		padding: 1rem 1rem 1rem 1rem;
@@ -149,7 +107,7 @@ body {
     dl.sub1 dt{
         font-size: 1.0em;
         vertical-align: baseline;
-        background: #ddd;
+		background: var(--defbggray);
         padding: 20px;
         margin: 0;
         width: 30%;
@@ -158,7 +116,8 @@ body {
     }
     dl.sub1 dd{
        list-style-type: none;
-       font-size: 1.0em;
+		font-size: 1.0em;
+		background: var(--defbglightgray);
        padding: 20px;
        margin: 0;
        width: 70%;
@@ -166,100 +125,130 @@ body {
        box-sizing: border-box;
     }
     .icon {
-        display: inline-block;
+		display: inline-block;
+	      margin: 0 7 -7 7;
         width: 1.0em;
         height: 1.0em;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
+        mask: no-repeat center / contain;
+        -webkit-mask: no-repeat center / contain ;
+        background: var(--deffgcolor);
+	}
     /*
      safari(webkit)では background-image の相対パスがうまく指定できないので絶対パスにしている
      safari(webkit)では 要素の中の入れ子の &.xxx 定義がうまくできないので定義を分離している
     */
-    .icon.trash {
-        background-image: url(https://kaaku333.github.io/iosappdata/account/image/trash@2x.png);
+    .trash {
+        mask-image: url(https://kaaku333.github.io/iosappdata/account/image/trash@2x.png);
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/trash@2x.png);
     }
-    .icon.threelines {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal@2x.png) ;
+    .threelines {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal@2x.png) ;
     }
-    .icon.threedots {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/ellipsis@2x.png) ;
+    .threedots {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/ellipsis@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/ellipsis@2x.png) ;
     }
-    .icon.info {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/info.circle@2x.png) ;
+    .info {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/info.circle@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/info.circle@2x.png) ;
     }
-    .icon.gear {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/gear@2x.png) ;
+    .gear {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/gear@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/gear@2x.png) ;
     }
-    .icon.updown {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.up.arrow.down.circle@2x.png) ;
+    .updown {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.up.arrow.down.circle@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.up.arrow.down.circle@2x.png) ;
     }
-    .icon.updown_fill {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.up.arrow.down.circle.fill@2x.png) ;
+    .updown_fill {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.up.arrow.down.circle.fill@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.up.arrow.down.circle.fill@2x.png) ;
     }
-    .icon.dec3lines {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal.decrease.circle@2x.png) ;
+    .dec3lines {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal.decrease.circle@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal.decrease.circle@2x.png) ;
     }
-    .icon.dec3lines_fill {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal.decrease.circle.fill@2x.png) ;
+    .dec3lines_fill {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal.decrease.circle.fill@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/line.3.horizontal.decrease.circle.fill@2x.png) ;
     }
-    .icon.wrench {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/wrench.adjustable@2x.png) ;
+    .wrench {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/wrench.adjustable@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/wrench.adjustable@2x.png) ;
     }
-    .icon.xmark {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/xmark.circle@2x.png) ;
+    .xmark {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/xmark.circle@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/xmark.circle@2x.png) ;
     }
-    .icon.plus {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/plus@2x.png) ;
+    .plus {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/plus@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/plus@2x.png) ;
     }
-    .icon.pencil {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/pencil@2x.png) ;
+    .pencil {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/pencil@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/pencil@2x.png) ;
     }
-    .icon.mag {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/magnifyingglass@2x.png) ;
+    .mag {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/magnifyingglass@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/magnifyingglass@2x.png) ;
     }
-    .icon.eyeslash {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/eye.slash@2x.png) ;
+    .eyeslash {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/eye.slash@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/eye.slash@2x.png) ;
     }
     
-    .icon.icloudup {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/icloud.and.arrow.up@2x.png) ;
+    .icloudup {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/icloud.and.arrow.up@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/icloud.and.arrow.up@2x.png) ;
     }
-    .icon.key {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/key@2x.png) ;
+    .key {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/key@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/key@2x.png) ;
     }
-    .icon.coin {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/dollarsign.circle@2x.png) ;
+    .coin {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/dollarsign.circle@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/dollarsign.circle@2x.png) ;
     }
-    .icon.coin_fill {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/dollarsign.circle.fill@2x.png) ;
+    .coin_fill {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/dollarsign.circle.fill@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/dollarsign.circle.fill@2x.png) ;
     }
-    .icon.person2 {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/person.2@2x.png) ;
+    .person2 {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/person.2@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/person.2@2x.png) ;
     }
-    .icon.calendarex {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/calendar.badge.exclamationmark@2x.png) ;
+    .calendarex {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/calendar.badge.exclamationmark@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/calendar.badge.exclamationmark@2x.png) ;
     }
-    .icon.lock {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/lock@2x.png) ;
+    .lock {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/lock@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/lock@2x.png) ;
     }
-    .icon.lock_slash {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/lock.slash@2x.png) ;
+    .lock_slash {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/lock.slash@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/lock.slash@2x.png) ;
     }
-    .icon.lock_open {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/lock.open@2x.png) ;
+    .lock_open {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/lock.open@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/lock.open@2x.png) ;
     }
-    .icon.bookmark {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark@2x.png) ;
+    .bookmark {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark@2x.png) ;
     }
-    .icon.bookmark_fill {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark.fill@2x.png) ;
+    .bookmark_fill {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark.fill@2x.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/bookmark.fill@2x.png) ;
     }
-	.icon.rect_portrait_split {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/rectangle.portrait.split.2x1.png) ;
+	.rect_portrait_split {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/rectangle.portrait.split.2x1.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/rectangle.portrait.split.2x1.png) ;
     }
-	.icon.clock_arrow {
-      background-image: url(https://kaaku333.github.io/iosappdata/account/image/clock.arrow.circlepath.png) ;
+	.clock_arrow {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/clock.arrow.circlepath.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/clock.arrow.circlepath.png) ;
     }		
 		
 		

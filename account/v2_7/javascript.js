@@ -74,18 +74,31 @@ function _initSetting(){
 }
 
 function _colorModeSelect(colorMode){
+	var fgcolor = "#333333";
+	var bggray = "#BBBBBB";
+	var bglightgray = "#DDDDDD";
 	if(colorMode == 'dark'){
+		fgcolor = "#eeeeee";
+		bggray = "#555555";
+		bglightgray = "#444444";
 		document.body.style.color = '#eeeeee';
 		document.body.style.backgroundColor = '#444444';
+		/*
+		var elements = document.getElementsByTagName("i");
+		for (var i = 0 ; i < elements.length; i++) {
+			elements[i].classList.replace("icon", "icon_dark")
+		}
+		*/
 	}else{
+		fgcolor = "#333333";
+		bggray = "#BBBBBB";
+		bglightgray = "#DDDDDD";
 		document.body.style.color = '#444444';
 		document.body.style.backgroundColor = '#eeeeee';
-		var elements = document.getElementsByTagName("div");
-		for (var i = 0 ; i < elements.length; i++) {
-			elements[i].classList.replace("icon_white", "icon_black")
-			elements[i].classList.replace("icon_blue", "icon_darkblue")
-		}
 	}
+	document.documentElement.style.setProperty('--deffgcolor',fgcolor);
+	document.documentElement.style.setProperty('--defbggray',bggray);
+	document.documentElement.style.setProperty('--defbglightgray',bglightgray);
 }
 
 function _fontSizeSelect(fontSize){
