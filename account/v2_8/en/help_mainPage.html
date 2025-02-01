@@ -183,9 +183,16 @@
      <dl class="main">
          <dt>About the home screen</dt>
          <dd>The home screen is the first thing you see when you start. </dd>
-         <dd>This is the screen for selecting item. You can add items and move to various setting screens. </dd>
+         <dd>This is the screen for adding new items or searching and selecting items. You can move to various setting and editing screens.</dd>
          <dd>Look for the name of the app at the top of the screen. </dd>
          <dd>The screen consists of two panes, the left side is the group display and the right side is the item list display. </dd>
+         <dd>To add a new item, click the <i class="icon plus"></i> plus icon in the top right of the screen.</dd>
+        
+        <dt>Search Box</dt>
+        <dd>At the top center of the screen is a search box where you can enter text. In the search box, you can enter a string to narrow down your search for items. As you enter a string, the search will automatically narrow down to only items that have names, notes, comments, etc. that contain that string (incremental search). </dd>
+        <dd>In the Filter menu options, you can choose whether to search for a string only in the title or to include other items such as comments. </dd>
+        <dd>Clicking the <i class="icon xmark"></i> close icon on the right will remove the string and cancel the narrowing down state. </dd>
+        
         
          <dt>Group Display</dt>
          <dd>The top of the group display on the left side of the screen is the grouping name. You can switch the grouping type by tapping the grouping name. </dd>
@@ -195,18 +202,20 @@
 
          <dt>Grouping type list</dt>
          <dl class="sub1">
-         <dt>Category</dt>
-         <dd>Used when you want to find items in any category</dd>
-         <dt>Title</dt>
-         <dd>When you want to search for an item by name</dd>
-         <dt>Priority</dt>
-         <dd>Used when you want to find items of any priority</dd>
-         <dt>Update time</dt>
-         <dd>Used when you want to find recently updated items</dd>
-         <dt>Due date</dt>
-         <dd>Use this when you want to find items whose due date is close</dd>
-         <dt>Color</dt>
-         <dd>Used when you want to find items of any color</dd>
+          <dt>Category</dt>
+          <dd>Used when you want to find items in any category</dd>
+          <dt>Title</dt>
+          <dd>When you want to search for an item by name</dd>
+          <dt>Priority</dt>
+          <dd>Used when you want to find items of any priority</dd>
+          <dt>Update time</dt>
+          <dd>Used when you want to find recently updated items</dd>
+          <dt>Due date</dt>
+          <dd>Use this when you want to find items whose due date is close</dd>
+          <dt>Color</dt>
+          <dd>Used when you want to find items of any color</dd>
+          <dt>Display format</dt>
+         <dd>Use this when searching for items in a specific display format</dd>
          </dl>
          
          <dt>Filter view</dt>
@@ -219,12 +228,7 @@
          <dd>Selecting the Edit Saved Filter button displays the <a href="#savedFilter">Saved Filter list Screen</a>, where you can rename or delete the saved filter. </dd>
          <dd>If you want to change the filtering conditions of a saved filter, change the filtering conditions after selecting that filter, and save it with the same name to overwrite it. </dd>
          <dd>You can always hide obsolete items via the filter menu options.</dd>
-         
-         <dt>Search box</dt>
-         <dd>You can enter a search string in the search box at the top of the screen. As you enter a character string, it will automatically narrow down to only items with names, notes, comments, etc. that include that character string. </dd>
-         <dd>If you press the <i class="icon xmark"></i> icon on the right side, the character string will disappear and you can cancel the refinement state. </dd>
-         <dd>The search string is also a filter condition, so it can be reused in saved filters. </dd>
-         <dd>You can choose whether to search for a string only in the title or to search for other items such as comments in the filter menu.</dd>
+         <dd>When you are in the selection mode described below, you can narrow down the display to show only the selected items.</dd>
 
          <dt>Item list display</dt>
          <dd>The account list display shows a list of items belonging to the group under the group name. If you add a comment to the item title, it will be displayed together with the item title. </dd>
@@ -277,7 +281,30 @@
          <dd>Go to the <a href="#editList">list editing screen</a> where you can edit individual string lists</dd>
          <dt>Edit display format</dt>
          <dd>Go to the <a href="#displayFormatList">display format list screen</a> where you can edit the display format</dd>
+         <dt>Start selection</dt>
+         <dd>Enter selection mode. In selection mode, select one or more items by checking the box to the left of the item, and use the menu to instruct the operation of the selected items</dd>
          </dl>
+         
+         <dt>Menu in selection mode</dt>
+
+         <dl class="sub1">
+          <dt>End selection</dt>
+          <dd>Exit selection mode</dd>
+          <dt>Change selection state</dt>
+          <dd>Change the selection state of multiple items at once. You can select all displayed items, deselect all items, or invert the selection state</dd>
+          <dt>Bookmark</dt>
+          <dd>Set or cancel bookmark for selected items</dd>
+          <dt>Importance</dt>
+          <dd>Set the importance of the selected items</dd>
+          <dt>Color</dt>
+          <dd>Set the color of the selected items</dd>
+          <dt>Category</dt>
+          <dd>Set the category of the selected items</dd>
+          <dt>Display format</dt>
+          <dd>Set the display format of the selected items</dd>
+          <dt>Delete</dt>
+          <dd>Delete the selected items</dd>
+        </dl>
      </dl>
 
 
@@ -313,8 +340,9 @@
          <dl class="sub1">
          <dt>Options</dt>
          <dd>Optional settings. </br>
-         You can toggle whether passwords are hidden by default. </br>
-         You can toggle whether to display the title reading field. </dd>
+         You can toggle whether passwords are hidden by default.</br>
+         You can toggle whether the title reading field is displayed.</br>
+         You can toggle whether item details require login by default.</dd>
          <dt>Display format</dt>
          <dd>Displays the <a href="#displayFormat">Display Format</a> submenu. <br>If you select a registered display format name, you can temporarily switch to that display format. Selecting "All fields" will return to the default display of all fields. </dd>
          <dt>Color</dt>
@@ -366,8 +394,9 @@
          <dl class="sub1">
          <dt>Options</dt>
          <dd>Optional settings. </br>
-         You can toggle whether passwords are hidden by default. </br>
-         You can toggle whether to display the title reading field. </dd>
+         You can toggle whether passwords are hidden by default.</br>
+         You can toggle whether the title reading field is displayed.</br>
+         You can toggle whether item details require login by default.</dd>
          <dt>Edit selection list</dt>
          <dd>You can select a selection list and move to the <a href="#editList">selection list editing screen</a>. </dd>
          <dt>Edit display format</dt>
@@ -387,7 +416,7 @@
          <dd>In fields where you can select other items, you can select items from a pop-up menu when tapped. Grouping selection is displayed on the first line of the menu, and grouping names are displayed on the second and subsequent lines. Tap an item in it to select it. </dd>
          <dd>For fields where you select from options such as two-step verification type, payment type, registered email address, etc., a selection list will appear when tapped. </dd>
          <dd>You can add a new option by tapping the <i class="icon plus"></i> plus icon in the last line of the selection list. </dd>.
-         <dd>For fields such as date, URL, free string, and item reference, tap the <i class="icon plus"></i> plus icon to add new data. </dd>
+         <dd>For fields such as date, URL, free string, choice string, and item reference, tap the <i class="icon plus"></i> plus icon to add new data. </dd>
          <dd>Press the <i class="icon threedots"></i> three-dot icon to the right of each data to display the context menu for that data. The context menu allows you to delete data or add duplicate data directly below. For the second and subsequent data in the date field, you can add predicted date data by adding the difference from the date of the previous data. </dd>
          </dl>
      </dl>
@@ -409,7 +438,7 @@
          <dd>If you drag the option to the left, a delete button will appear and you can delete it by pressing it. If the option is used in an item, it calls attention to it. If you still delete it, the corresponding fields for items using that option will be cleared. </dd>
          
          <dt>Group</dt>
-<dd>Some types (categories, tags, dates, item references, URLs, free strings) are expected to increase in number, so you can create groups to make them easier to select from the selection menu. </dd>
+<dd>Some types (categories, tags, dates, item references, URLs, free strings, choice strings) are expected to increase in number, so you can create groups to make them easier to select from the selection menu. </dd>
          <dd>When you create a group in the selection list, the option "Group" will be displayed in the filter selection menu on the home screen or the selection menu on the item editing screen, and by selecting a group, the options belonging to that group will be displayed hierarchically. You will be able to choose. You can also use this group to limit the options on the display format editing screen. </dd>         
          <dd>You can add a group by pressing the <i class="icon plus"></i> plus icon in the group selection list that is displayed by pressing the "All data" button under the screen title on the selection list editing screen. Masu. </dd>
          <dd>When you add a group, a check button is displayed on the left side of the option, and by turning on the check, you can specify which option belongs to that group. </dd>
@@ -493,7 +522,7 @@
  Appears only for fields that reference other items. </dd>
          <dt>Disable multiple registration</dt>
          <dd>Turn it On if you want to prevent multiple data from being registered.<br>
- It is displayed only when the field is "URL", "Date", "Free string", and "Item reference". <br>
+ It is displayed only when the field is "URL", "Date", "Free string", "Choice string", and "Item reference". <br>
          This is useful when you want to "fix" a select list selection so that you can only enter data for one of the selects. </dd>
          </dl>
         
@@ -542,16 +571,18 @@
          <dd>Notifications can be received on the day of the due date, one day before, one week before, and one month before. </dd>
          <dd>You can specify time that you want to be notified. </dd>
          
-        
          <dt>Home screen settings</dt>
          <dd>You can switch whether or not to include comments and memo information of items other than titles when narrowing down the search by entering search characters on the home screen. </dd>
         <dd>You can set the number of days before the due date calendar icon on the home screen and item details screen to turn red. </dd>
         
-         <dt> Detailed screen settings <dt>
-         <dd>On the item detail screen, you can toggle whether passwords are hidden by default. </dd>
-        
-         <dt> Edit screen settings <dt>
-         <dd>On the item edit screen, you can toggle whether to hide the reading input field for the title. </dd>
+         <dt>Details screen settings<dt>
+          <dd>You can toggle whether to hide the password by default on the item details screen. </dd>
+          <dd>You can toggle whether to hide the title reading input field on the item details screen. </dd>
+          
+          <dt>Edit screen settings<dt>
+          <dd>You can toggle whether to hide the password by default on the item edit screen. </dd>
+          <dd>You can toggle whether to hide the title reading input field on the item edit screen. </dd>
+          <dd>You can toggle whether to require login by default on the item edit screen and item details screen. </dd>
 
          <dt>Backup</dt>
          <dd>You can create a backup of your data. </dd>
@@ -1038,6 +1069,15 @@
      <a name="history">
      <h2>Version history</h2>
      <dl class="main">
+          <dt>ver.2.8</dt>
+          <dd>Selection mode can now be used in the home screen menu. You can change the bookmarks, importance, color, category, and display format of multiple items at once, or delete them. </dd>
+          <dd>By default, items that have not entered a password or PIN can display details without logging in. You can optionally revert to requiring login as the default. </dd>
+          <dd>Display format has been added to the grouping types in the left pane of the home screen. </dd>
+          <dd>Color has been added to the display format elements. You can set the default color in the display format editor. </dd>
+          <dd>The UI of the pull-down list for selecting the selection string on the editing screen has been improved. </dd>
+          <dd>Minor bugs have been fixed. </dd>
+     
+     
             <dt>ver.2.7</dt>
             <dd>You can now always hide obsolete items using the filter options on the home screen.</dd>
             <dd>Added font size change button to online manual.</dd>
