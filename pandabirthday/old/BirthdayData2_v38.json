@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v39 2025/2/14",
+        "_version": "v38 2024/9/29",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -769,8 +769,6 @@
         "comingdate" : "1994-09-06",
         "returndate" : "2023-02-22",
         "returned" : true,
-		"died" : true,
-        "dieddate":"2025-01-25",
         "preset" : true,
         "relations" : [
                 [ "アドベンチャーワールド パンダ紹介", "https://www.aws-s.com/animals/panda/"],
