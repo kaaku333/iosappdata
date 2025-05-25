@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v41 2025/5/25",
+        "_version": "v40 2025/4/24",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -80,8 +80,8 @@
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、良浜",
         "brothers" : "彩浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
-        "returndate" : "2025-06-28",
-        "returnexpdate" : "2025-06-28",
+        "returndate" : "2025-06-30",
+        "returnexpdate" : "2025-06-30",
 
         "preset" : true,
         "events" : [
@@ -114,8 +114,8 @@
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、良浜",
         "brothers" : "楓浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
-        "returndate" : "2025-06-28",
-        "returnexpdate" : "2025-06-28",
+        "returndate" : "2025-06-30",
+        "returnexpdate" : "2025-06-30",
         
         "preset" : true,
         "events" : [
@@ -180,8 +180,8 @@
         "birthplaceurl" : "https://www.aws-s.com/",
         "parents" : "永明、良浜",
         "brothers" : "楓浜、彩浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
-        "returndate" : "2025-06-28",
-        "returnexpdate" : "2025-06-28",
+        "returndate" : "2025-06-30",
+        "returnexpdate" : "2025-06-30",
         
         "preset" : true,
         "events" : [
@@ -645,8 +645,8 @@
         "brothers" : "明浜、愛浜、幸浜、秋浜、隆浜、雄浜、奇珍、奇縁",
         "partners" : "永明",
         "children" : "楓浜、彩浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
-        "returndate" : "2025-06-28",
-        "returnexpdate" : "2025-06-28",
+        "returndate" : "2025-06-30",
+        "returnexpdate" : "2025-06-30",
 
         "preset" : true,
         "events" : [
