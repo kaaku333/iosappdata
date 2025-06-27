@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v42 2025/6/28",
+        "_version": "v41 2025/5/25",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -81,7 +81,7 @@
         "parents" : "永明、良浜",
         "brothers" : "彩浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
         "returndate" : "2025-06-28",
-        "returned" : true,
+        "returnexpdate" : "2025-06-28",
 
         "preset" : true,
         "events" : [
@@ -115,7 +115,7 @@
         "parents" : "永明、良浜",
         "brothers" : "楓浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
         "returndate" : "2025-06-28",
-        "returned" : true,
+        "returnexpdate" : "2025-06-28",
         
         "preset" : true,
         "events" : [
@@ -181,8 +181,8 @@
         "parents" : "永明、良浜",
         "brothers" : "楓浜、彩浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
         "returndate" : "2025-06-28",
-        "returned" : true,
-
+        "returnexpdate" : "2025-06-28",
+        
         "preset" : true,
         "events" : [
             { "name" : "親離れ", "date" : "2017-10-10" },
@@ -646,7 +646,7 @@
         "partners" : "永明",
         "children" : "楓浜、彩浜、結浜、桃浜、桜浜、優浜、陽浜、海浜、永浜、梅浜",
         "returndate" : "2025-06-28",
-        "returned" : true,
+        "returnexpdate" : "2025-06-28",
 
         "preset" : true,
         "events" : [
