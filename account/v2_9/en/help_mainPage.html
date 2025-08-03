@@ -281,6 +281,8 @@
          <dd>Go to the <a href="#editList">list editing screen</a> where you can edit individual string lists</dd>
          <dt>Edit display format</dt>
          <dd>Go to the <a href="#displayFormatList">display format list screen</a> where you can edit the display format</dd>
+         <dt>Same password items</dt>
+         <dd>If there are items with the same password, a list of items with that password will be displayed, and you will be taken to the details screen for the selected item.</dd>
          <dt>Start selection</dt>
          <dd>Enter selection mode. In selection mode, select one or more items by checking the box to the left of the item, and use the menu to instruct the operation of the selected items</dd>
          </dl>
@@ -396,7 +398,8 @@
          <dd>Optional settings. </br>
          You can toggle whether passwords are hidden by default.</br>
          You can toggle whether the title reading field is displayed.</br>
-         You can toggle whether item details require login by default.</dd>
+         You can toggle whether item details require login by default.</br>
+         You can toggle whether or not to check if there are any items with the same password.</dd>
          <dt>Edit selection list</dt>
          <dd>You can select a selection list and move to the <a href="#editList">selection list editing screen</a>. </dd>
          <dt>Edit display format</dt>
@@ -582,6 +585,7 @@
           <dt>Edit screen settings<dt>
           <dd>You can toggle whether to hide the password by default on the item edit screen. </dd>
           <dd>You can toggle whether to hide the title reading input field on the item edit screen. </dd>
+          <dd>On the item editing screen, check whether there is an item with the same password when registering.</dd>
           <dd>You can toggle whether to require login by default on the item edit screen and item details screen. </dd>
 
          <dt>Backup</dt>
@@ -1069,6 +1073,12 @@
      <a name="history">
      <h2>Version history</h2>
      <dl class="main">
+          <dt>ver.2.9</dt>
+          <dd>You can now check items with the same password from the home screen menu.</dd>
+          <dd>When registering an item on the item editing screen, a warning will now be displayed if the password matches another item's. This can be turned off as an option.</dd>
+          <dd>You can now specify the number of digits and character type when generating a password on the item editing screen.</dd>
+          <dd>You can now copy the title on the item details screen.</dd>
+
           <dt>ver.2.8</dt>
           <dd>Selection mode can now be used in the home screen menu. You can change the bookmarks, importance, color, category, and display format of multiple items at once, or delete them. </dd>
           <dd>By default, items that have not entered a password or PIN can display details without logging in. You can optionally revert to requiring login as the default. </dd>
