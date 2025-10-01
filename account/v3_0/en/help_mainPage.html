@@ -232,7 +232,6 @@
          <dd>If you select a saved filter from the filter menu, you can save the filter condition at that time with a name, and later you can reproduce the filter condition by simply selecting the name. </d>
          <dd>Selecting the Edit Saved Filter button displays the <a href="#savedFilter">Saved Filter list Screen</a>, where you can rename or delete the saved filter. </dd>
          <dd>If you want to change the filtering conditions of a saved filter, change the filtering conditions after selecting that filter, and save it with the same name to overwrite it. </dd>
-         <dd>You can always hide obsolete items via the filter menu options.</dd>
          <dd>When you are in the selection mode described below, you can narrow down the display to show only the selected items.</dd>
 
          <dt>Item list display</dt>
@@ -271,7 +270,7 @@
          <dt><i class="icon bookmark"></i></dt>
          <dd>Turn on/off filtering by bookmark</dd>
          <dt><i class="icon rect_portrait_split"></i></dt>
-         <dd>You can save and restore filter settings and grouping settings all at once</dd>
+         <dd>You can save and restore the current filter and grouping settings together. You can set the default combination at startup.</dd>
          <dt><i class="icon clock_arrow"></i></dt>
          <dd>Get instant access to recently opened items</dd>
          <dt><i class="icon plus"></i></dt>
@@ -280,14 +279,16 @@
          
          <dt>Menu contents</dt>
          <dl class="sub1">
-         <dt>Default settings</dt>
-         <dd>You can set default grouping and filter that are set at startup. Filter can be selected from saved filters</dd>
+         <dt>Options</dt>
+         <dd>You can customize which icons appear in the menu at the top of the screen. You can also configure filter options.</dd>
          <dt>Edit selection list</dt>
          <dd>Go to the <a href="#editList">list editing screen</a> where you can edit individual string lists</dd>
          <dt>Edit display format</dt>
          <dd>Go to the <a href="#displayFormatList">display format list screen</a> where you can edit the display format</dd>
          <dt>Same password items</dt>
          <dd>If there are items with the same password, a list of items with that password will be displayed, and you will be taken to the details screen for the selected item.</dd>
+         <dt>Share</dt>
+         <dd>You can export the data of the currently displayed item to a file, or import a file to register an item. You can choose between text format (export only) and JSON format (importable).</dd>
          <dt>Start selection</dt>
          <dd>Enter selection mode. In selection mode, select one or more items by checking the box to the left of the item, and use the menu to instruct the operation of the selected items</dd>
          </dl>
@@ -299,6 +300,8 @@
           <dd>Exit selection mode</dd>
           <dt>Change selection state</dt>
           <dd>Change the selection state of multiple items at once. You can select all displayed items, deselect all items, or invert the selection state</dd>
+          <dt>Share</dt>
+          <dd>You can export the data of the selected item as a file</dd>
           <dt>Bookmark</dt>
           <dd>Set or cancel bookmark for selected items</dd>
           <dt>Importance</dt>
@@ -312,6 +315,21 @@
           <dt>Delete</dt>
           <dd>Delete the selected items</dd>
         </dl>
+        
+        <dt>Export and Import</dt>
+        <dd>Exporting is writing item data as text. </dd>
+        <dd>Importing is importing text as item data. </dd>
+        <dd>Export supports two formats: text and JSON. </dd>
+        <dd>Text format is human-readable. </dd>
+        <dd>JSON is a common file format that can express hierarchical and repetitive structures. </dd>
+        <dd>Data can be imported from external sources as long as it conforms to this app's JSON format. </dd>
+        <dd>Comparing this app's JSON format with the text output will help you understand the  meaning of tags and structure. </dd>
+        <dd>Incidentally, this app's item data uses repetitive structures, such as date data, so it is not compatible with the most common CSV format. </dd>
+        <dd>When importing a JSON file, if the file contains already registered item names, you can specify for each item whether to ignore the import, overwrite, or rename and add. </dd>
+        <dd>A backup is automatically created during import. If you import incorrectly, restore from the most recent backup. You can also turn off automatic backups in the settings screen. </dd>
+        <dd>If a JSON file cannot be imported due to an invalid file format, turning on debug mode in the settings screen will display a detailed error message, making it easier to determine the problem. </dd>
+         <dd>Exported files are not password-protected, so please handle them with care to avoid exposing them to other people. </dd>
+        
      </dl>
 
 
@@ -339,7 +357,7 @@
          <dd>You must be logged in to view/edit this item's details (not logged in <i class="icon lock"></i> / logged in <i class="icon lock_open"></i> ) or logged in You can toggle whether <i class="icon lock_slash"></i> is required or not. Default is login required</dd>
          <dt><i class="icon trash"></i></dt>
          <dd>You can delete items. Just to be sure, please confirm if you really want to delete it</dd>
-         <dt>Edit</dt>
+         <dt><i class="icon pencil"></i></dt>
          <dd>You can edit the item by going to the <a href="#editItem">Item edit screen</a></dd>
          </dl>
          
@@ -360,6 +378,8 @@
          <dd>Used when you want to create another item with almost the same content. </dd>
          <dt>Create account link item</dt>
          <dd>Use this when you want to create an item that you want to link with this item. </dd>
+         <dt>Share</dt>
+         <dd>You can share this item's data as text.</dd>
          </dl>
          
          <dt>Field information</dt>
@@ -608,6 +628,7 @@
          <dt>Home screen settings</dt>
          <dd>You can switch whether or not to include comments and memo information of items other than titles when narrowing down the search by entering search characters on the home screen. </dd>
         <dd>You can set the number of days before the due date calendar icon on the home screen and item details screen to turn red. </dd>
+        <dd>You can set how long it will take for the app to automatically return to the home screen when you exit the app while viewing something other than the home screen and then display the app again.</dd>
         
          <dt>Details screen settings<dt>
           <dd>You can toggle whether to hide the password by default on the item details screen. </dd>
@@ -659,7 +680,9 @@
          <dd>If the data file format is expanded due to the addition of functions in the app, the file format version will be increased. If a bigger version of the data was stored on iCloud, iCloud sync and upload will stop until the app on that device is updated to prevent data loss. </dd>
          </dl>
         
-        
+         <dt>Sharing Settings</dt>
+         <dd>You can turn automatic backups on or off when importing.</dd>
+
          <dt>Reset Settings</dt>
          <dd>Resets the settings changed on this setting screen to their initial values. </dd>
          <dd>No item data or picklist data will be deleted. </dd>
@@ -672,6 +695,9 @@
          <dt>Full Function Version</dt>
          <dd>This app can create up to 50 items by default. If you want to add more items, please consider purchasing the full function version as an in-app purchase. </dd>
          <dd>Once you purchase the full function version, all features added in future updates are free. </dd>
+        
+         <dt>Debug Settings</dt>
+         <dd>You can enable debug mode. This makes error messages for some functions, such as imports, more detailed, making it easier to determine the cause of errors.</dd>
         
          <dt>About this app</dt>
          <dd>You can open the AppStore page of this app, write a review, or give feedback such as problems by email to the author. </dd>
@@ -851,10 +877,12 @@
          <dd>Two-step verification type is one of the <a href="#selectList">Selection List</a> that users can add or change by themselves. </dd>
          <dd>You can also add comments. </dd>
 
+          <!---
          <dt>Refer to other accounts</dt>
          <dd>You can select other related accounts. </dd>
          <dd>Can be used when account linkage is OFF. </dd>
          <dd>You can also add comments. </dd>
+         --->
 
          <dt>Payment type</dt>
          <dd>Choose if billing is involved with your account. </dd>
@@ -877,6 +905,7 @@
          <dd>If the account has an expiration date or billing expiration date, turn it on. </dd>
          <dd>Expired status can be used in filtering on the home screen. </dd>
         
+        <!---
          <dt>Due date type</dt>
          <dd>If there is a due date, select the type of due date. </dd>
          <dd>For example, expiry date, prepaid expiry date, application date, service termination date, etc. </dd>
@@ -886,6 +915,7 @@
          <dd>If there is a due date, set the date. </dd>
          <dd>You can group and narrow down on the home screen by the number of days until the due date. </dd>
          <dd>You can also add comments. </dd>
+         --->
 
          <dt>Registered email address</dt>
          <dd>Specify your email address that is registered with your account. </dd>
@@ -930,7 +960,8 @@
 
          <dt>Date</dt>
          <dd>You can register multiple dates. </dd>
-         <dd> It can also be treated as due date. </dd>
+         <dd>Turning on the Due date flag will sort and display items on the home screen according to the number of days until the due date, and you will receive notifications when the due date approaches.</dd>
+         <dd>The previous due date field has been merged into this date field.</dd>
         
          <dt>Date type</dt>
          <dd>Choose the type of date. </dd>
@@ -939,6 +970,7 @@
 
          <dt>item reference</dt>
          <dd>You can register multiple references to other items. </dd>
+         <dd>The previous Other Item Reference field has been merged into this Item Reference field</dd>
         
          <dt>Item reference type</dt>
          <dd>Choose the type of item reference. </dd>
@@ -1104,6 +1136,17 @@
      <a name="history">
      <h2>Version history</h2>
      <dl class="main">
+          <dt>ver.3.0</dt>
+          <dd>Supported iOS has been changed to iOS 16.0 or later.</dd>
+          <dd>Data export via text and JSON files is now supported.</dd>
+          <dd>Data import via JSON files is now supported.</dd>
+          <dd>For details on exporting and importing, see the Home Screen explanation.</dd>
+          <dd>The icons displayed at the top of the Home Screen can now be customized.</dd>
+          <dd>Fields with overlapping meanings have been reorganized. Due date has been merged into Date, and Other Item References have been merged into Item References.</dd>
+          <dd>A list of items with the same password has been added below the password field on the Item Details screen.</dd>
+          <dd>The sleep time for automatically returning to the Home Screen can now be changed in the Home Screen Settings in the Settings screen.</dd>
+          <dd>Minor bugs have been fixed.</dd>
+          
           <dt>ver.2.10</dt>
           <dd>You can now display <a href="#dateList">the date information list screen</a> from the home screen menu. You can extract date information, including the due date registered for each item, and display it in chronological order.</dd>
            <dd>Minor bugs have been fixed.</dd>
