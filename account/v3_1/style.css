@@ -250,5 +250,13 @@ body {
       mask-image: url(https://kaaku333.github.io/iosappdata/account/image/clock.arrow.circlepath.png) ;
 -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/clock.arrow.circlepath.png) ;
     }		
-		
+	.calendar_circle {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/calendar.circle.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/calendar.circle.png) ;
+    }		
+	.clockex {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/clock.badge.exclamationmark.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/clock.badge.exclamationmark.png) ;
+    }		
+
 		
