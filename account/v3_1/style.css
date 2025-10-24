@@ -262,5 +262,8 @@ body {
       mask-image: url(https://kaaku333.github.io/iosappdata/account/image/checkmark.png) ;
 -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/checkmark.png) ;
     }		
-
+	.triangle_left_fill {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/arrowtriangle.left.fill.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/arrowtriangle.left.fill.png) ;
+    }		
 		
