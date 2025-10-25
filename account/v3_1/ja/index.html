@@ -63,7 +63,21 @@
         rightframeClass.style.width = "70%";
       }
     }
-
+    
+    function getCssClass(sele){
+        var i, j, sheets, rules, rule = null;
+        sheets = document.styleSheets;
+        for(i=0; i<sheets.length; i++){
+            rules = sheets[i].cssRules;
+            for(j=0; j<rules.length; j++){
+                if(sele === rules[j].selectorText){
+                    rule = rules[j];
+                    break;
+                }
+            }
+        }
+        return rule;
+    }
    // -->
   </script>
 </head>
