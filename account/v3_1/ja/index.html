@@ -13,7 +13,6 @@
   .leftframe {
     width: 30%;
   }
-  
   .rightframe {
     display: flex;
     flex-direction: column;
@@ -47,16 +46,35 @@
         function gotoName(name){
             window.right.location.href = "help_mainPage.html#"+ name;
         }
+        
+           
+    var isLeftOpen = true;
+    var leftframeClass  = getCssClass(".leftframe");
+    var rightframeClass  = getCssClass(".rightframe");
+
+    function changeTocWidth() {
+      isLeftOpen = isLeftOpen ? false : true;
+      
+      if (isLeftOpen == false) {
+        leftframeClass.style.width = "1%";
+        rightframeClass.style.width = "99%";
+      }else {
+        leftframeClass.style.width = "30%";
+        rightframeClass.style.width = "70%";
+      }
+    }
+
    // -->
   </script>
 </head>
 <body>
   <div class="baseframe">
     <div class="leftframe">
-      <iframe src="help_toc.html" width="100%" height="100%"></iframe>
+      <iframe  src="help_toc.html" width="100%" height="100%"></iframe>
     </div>
+        <button class= "onoffButton" onclick="changeTocWidth()" type="button" name="name" value="value"></button>
     <div class="rightframe">
-      <iframe src="help_mainPage.html" name="right" width="100%" height="100%"></iframe>
+      <iframe  name="irightframe" src="help_mainPage.html" name="right" width="100%" height="100%"></iframe>
     </div>
   </div>
 </body>
