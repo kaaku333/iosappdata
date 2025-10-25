@@ -19,8 +19,9 @@
     width: 70%;
   }
   .openCloseButton {
-    width: 18px;
-    background-image: url(https://kaaku333.github.io/iosappdata/account/image/vstripe.png);
+    width: 20px;
+    padding: 0;
+    margin: 0;
   }
   </style>
   <script type="text/javascript">
@@ -48,40 +49,43 @@
           }
         }
         function gotoName(name){
-            window.right.location.href = "help_mainPage.html#"+ name;
+            window.right_frame.location.href = "help_mainPage.html#"+ name;
         }
         
-           
-    var isLeftOpen = true;
-    var leftframeClass  = getCssClass(".leftframe");
-    var rightframeClass  = getCssClass(".rightframe");
+        var isLeftOpen = true;
+        let leftframeClass  = getCssClass(".leftframe");
+        let rightframeClass  = getCssClass(".rightframe");
 
-    function changeTocWidth() {
-      isLeftOpen = isLeftOpen ? false : true;
-      
-      if (isLeftOpen == false) {
-        leftframeClass.style.width = "0%";
-        rightframeClass.style.width = "100%";
-      }else {
-        leftframeClass.style.width = "30%";
-        rightframeClass.style.width = "70%";
-      }
-    }
-    
-    function getCssClass(sele){
-        var i, j, sheets, rules, rule = null;
-        sheets = document.styleSheets;
-        for(i=0; i<sheets.length; i++){
-            rules = sheets[i].cssRules;
-            for(j=0; j<rules.length; j++){
-                if(sele === rules[j].selectorText){
-                    rule = rules[j];
-                    break;
+        function changeTocWidth() {
+          let buttonElement = document.getElementById("open_close_button");
+
+          isLeftOpen = isLeftOpen ? false : true;
+          
+          if (isLeftOpen == false) {
+            leftframeClass.style.width = "0%";
+            rightframeClass.style.width = "100%";
+            buttonElement.src="https://kaaku333.github.io/iosappdata/account/image/smallRight.png";
+          }else {
+            leftframeClass.style.width = "30%";
+            rightframeClass.style.width = "70%";
+            buttonElement.src="https://kaaku333.github.io/iosappdata/account/image/smallLeft.png";
+          }
+        }
+        
+        function getCssClass(sele){
+            var i, j, sheets, rules, rule = null;
+            sheets = document.styleSheets;
+            for(i=0; i<sheets.length; i++){
+                rules = sheets[i].cssRules;
+                for(j=0; j<rules.length; j++){
+                    if(sele === rules[j].selectorText){
+                        rule = rules[j];
+                        break;
+                    }
                 }
             }
+            return rule;
         }
-        return rule;
-    }
    // -->
   </script>
 </head>
@@ -90,9 +94,9 @@
     <div class="leftframe">
       <iframe  src="help_toc.html" width="100%" height="100%"></iframe>
     </div>
-    <button class= "openCloseButton" onclick="changeTocWidth()" type="button" name="name" value="value"></button>
+    <button class= "openCloseButton" onclick="changeTocWidth()" type="button" name="name" value="value"><image id="open_close_button" src="https://kaaku333.github.io/iosappdata/account/image/smallLeft.png"></button>
     <div class="rightframe">
-      <iframe  name="irightframe" src="help_mainPage.html" name="right" width="100%" height="100%"></iframe>
+      <iframe src="help_mainPage.html" name="right_frame" width="100%" height="100%"></iframe>
     </div>
   </div>
 </body>
