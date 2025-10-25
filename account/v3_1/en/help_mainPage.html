@@ -32,6 +32,10 @@
        <dd><a href="#field">Fields</a></dd>
        <dd><a href="#selectList">Selection lists</a></dd>
        <dd><a href="#displayFormat">Display format</a></dd>
+       <dd><a href="#duedate">Due dates and Calendar Events</a></dd>
+        <dd><a href="#backup">Backup</a></dd>
+        <dd><a href="#icloudSync">iCloud Sync</a></dd>
+        <dd><a href="#export">Export and Import</a></dd>
        <dd><a href="#shortcut">Shortcut icon</a></dd>
        <dt>Others</dt>
        <dd><a href="#support">User Support</a></dd>
@@ -55,7 +59,7 @@
      <h2>About this app</h2>
      <dl class="main">
         <dt>Introduction</dt>
-        <dd>This app is an account and password management app that allows you to associate and manage various information such as internet service access information, member information, card information, and shop information as account information</dd>
+        <dd>This app is a data management app that unifies various information such as internet service access information, app login information, member information, card information, store information, service information, event information, and product information as account information, and links and securely manages it.</dd>
         <dd>Account linkage and two-factor authentication using SNS and common company accounts are common for recent internet accounts. </dd>
         <dd>It is also common for a single company to provide many services, such as online shopping and video subscription services. </dd>
         <dd>It's also common for multiple apps and games to share a single login. </dd>
@@ -64,7 +68,7 @@
         <dd>Also, in order to quickly find what you are looking for from a lot of information, you can easily combine incremental search, grouping, and narrowing down. </dd>
        
         <dt>Main Features</dt>
-        <dd>Account information, including passwords, is stored with AES256bit encryption, and encryption keys are securely managed with Apple's Keychain. </dd>
+        <dd>Account information, including passwords, is linked to the user's Apple account and stored in AES256-bit encryption, with a unique encryption key for each user securely managed in Apple's Keychain.</dd>
         <dd>You can log in securely and easily with face recognition/fingerprint recognition and a dedicated passcode. </dd>
         <dd>With a wealth of grouping and filtering functions, you can easily find the desired item from a large amount of account information. </dd>
         <dd>The list screen consists of two panes, a group list and an individual item list, so you can quickly access the item of the corresponding group. </dd>
@@ -179,7 +183,7 @@
         
         
          <dt>Backup management screen</dt>
-         <dd>The <a href="#backup">Backup management screen</a> can be accessed from the Settings screen. </dd>
+         <dd>The <a href="#backupMan">Backup management screen</a> can be accessed from the Settings screen. </dd>
          <dd>You can save the entire current user data as a backup file, share the backup file for saving to other apps, and restore from the backup file. </dd>
 
      </dl>
@@ -253,11 +257,11 @@
          <dt><i class="icon coin"></i></dt>
          <dd>Paid Item</dd>
          <dt><i class="icon calendarex"></i></dt>
-         <dd>Item that have a due date. If it is close to the due date, it will be displayed in red</dd>
+         <dd>Item that have a <a href="#duedate">due date</a>. If it is close to the due date, it will be displayed in red</dd>
          <dt><i class="icon clockex"></i></dt>
-<dd>Items with calendar events. Displayed in red when the start date is approaching.</dd>
+<dd>Items with <a href="#calendar">calendar events</a>. Displayed in red when the start date is approaching.</dd>
          <dt>🪦</dt>
-         <dd>Deprecated item</dd>
+         <dd><a href="#obsolete">Obsoleted</a> item</dd>
          <dt><i class="icon bookmark_fill"></i></dt>
          <dd>Bookmarked item</dd>
          </dl>
@@ -295,7 +299,7 @@
          <dt>Same password items</dt>
          <dd>If there are items with the same password, a list of items with that password will be displayed, and you will be taken to the details screen for the selected item.</dd>
          <dt>Share</dt>
-         <dd>You can export the data of the currently displayed item to a file, or import a file to register an item. You can choose between text format (export only) and JSON format (importable).</dd>
+         <dd>You can register items by <a href="#export">exporting</a> the data of the currently displayed item to a file, or conversely, <a href="#export">importing</a> the file. You can choose between text format, which is export-only, and JSON format, which can also be imported.</dd>
          <dt>Start selection</dt>
          <dd>Enter selection mode. In selection mode, select one or more items by checking the box to the left of the item, and use the menu to instruct the operation of the selected items</dd>
          </dl>
@@ -325,20 +329,7 @@
           <dd>Delete the selected items</dd>
         </dl>
         
-        <dt>Export and Import</dt>
-        <dd>Exporting is writing item data as text. </dd>
-        <dd>Importing is importing text as item data. </dd>
-        <dd>Export supports two formats: text and JSON. </dd>
-        <dd>Text format is human-readable. </dd>
-        <dd>JSON is a common file format that can express hierarchical and repetitive structures. </dd>
-        <dd>Data can be imported from external sources as long as it conforms to this app's JSON format. </dd>
-        <dd>Comparing this app's JSON format with the text output will help you understand the  meaning of tags and structure. </dd>
-        <dd>Incidentally, this app's item data uses repetitive structures, such as date data, so it is not compatible with the most common CSV format. </dd>
-        <dd>When importing a JSON file, if the file contains already registered item names, you can specify for each item whether to ignore the import, overwrite, or rename and add. </dd>
-        <dd>A backup is automatically created during import. If you import incorrectly, restore from the most recent backup. You can also turn off automatic backups in the settings screen. </dd>
-        <dd>If a JSON file cannot be imported due to an invalid file format, turning on debug mode in the settings screen will display a detailed error message, making it easier to determine the problem. </dd>
-         <dd>Exported files are not password-protected, so please handle them with care to avoid exposing them to other people. </dd>
-        
+
      </dl>
 
 
@@ -406,13 +397,12 @@
          <dd>Passwords and PINs are hidden by default. You can display it by tapping the <i class="icon eyeslash"></i> eyeball icon on the far right. You can also make it the default display in the option settings. </dd>
          <dd>If the item is an alias or an account link item, a link to the referenced account will be displayed, and linking will take you to the detail screen for that item. </dd>
          <dd> Tap a URL to open a web browser and display the corresponding URL. </dd>
-         <dd>Dates that have a due date will have a <i class="icon calendarex"></i> calendar icon. The calendar icon turns red when the due date is approaching. The default is within 7 days, but you can change the number of days on the setting screen. </dd>
-         <dd>Dates with calendar events will have a <i class="icon clockex"></i> clock icon. The number of days that turn red corresponds to the due date.</dd>
+         <dd>Dates with a <a href="#duedate">due date</a> display a <i class="icon calendarex"></i> calendar icon. The calendar icon turns red when the due date is approaching. By default, it's within seven days, but you can change this number in the settings screen. </dd>
+         <dd>Dates with a <a href="#calendar">calendar event</a> display a <i class="icon clockex"></i> clock icon. The number of days that turn red corresponds to the due date. </dd>
          <dd>In addition to copying text information, the date information context menu allows you to set a base date, turn deadlines on/off, and add, edit, and delete calendar events. </dd>
          <dd>The base date is the date used as the basis for the difference in days displayed next to the date in the date information. By default, it is today, but by selecting a base date in the context menu, the difference from that date will be displayed for other date information. </dd>
          <dd>Dates that have a base date are displayed with a red <i class="icon triangle_left_fill"></i>triangle icon. </dd>
          <dd>If it is referenced by another item, the list of that item will be displayed, and you can also tap the item to move to the detail screen of that item. </dd>
-       <dl class="main">
      </dl>
 
 
@@ -466,14 +456,10 @@
          <dd>For fields where you select from options such as two-step verification type, payment type, registered email address, etc., a selection list will appear when tapped. </dd>
          <dd>You can add a new option by tapping the <i class="icon plus"></i> plus icon in the last line of the selection list. </dd>.
          <dd>For fields such as date, URL, free string, choice string, and item reference, tap the <i class="icon plus"></i> plus icon to add new data. </dd>
-         <dd>Pressing the three-dot icon <i class="icon threedots"></i> to the right of each data item displays a context menu for that data item. The context menu allows you to delete the data item or add a duplicate data item immediately below it.</dd>
-        <dd>For the second or subsequent data item in a date field, you can add a predicted date by adding the difference between the date of the previous data item and the date of the previous data item, or add a date a specified number of days in the future.</dd>
+          <dd>Clicking the three-dot icon <i class="icon threedots"></i> to the right of each record will display a context menu for that record. From the context menu, you can delete the record or add a duplicate record directly below it.</dd>
+          <dd>For date information, you can add a date any number of days in the future. For subsequent records, you can also add a predicted date by adding the difference between the date of the previous record and the date of the previous record.</dd>
+          <dd>For date information, you can also turn the <a href="#duedate">due date</a> flag on/off and add, edit, or delete <a href="#calendar">calendar events</a>.</dd>
         
-        <dt>Due date Flags and Calendar Events</dt>
-        <dd>Date fields can also have attributes related to notifications, such as Due date Flags and Calendar Events.</dd>
-        <dd>Turning the Deadline Flag on will send notifications one month, one week, one day, or on the day of the date. You can set the notification time in the Notification Settings in the Settings screen.</dd>
-        <dd>By registering a calendar event, you can register the date information as an appointment in the calendar you use on your iPhone/iPad/Mac. This allows you to view the date in the calendar app and set notifications at any time. </dd>
-        <dd>Calendar events are registered through this app, but can be deleted through the Calendar app. Because they are synced separately from this app's data, inconsistencies may occur with the registered information in this app. In such cases, you can detect and correct inconsistencies in the Settings screen. You can also delete all previous calendar events in the Settings screen.</dd>
          </dl>
      </dl>
 
@@ -647,20 +633,22 @@
          <dd>Press the <i class="icon pencil"></i> pencil icon to set a 4-digit number or more for the special passcode. </dd>
          <dd>If you do not use biometric authentication, the special password input screen will be displayed from the beginning when you log in. When used in combination with biometric authentication, biometric authentication is performed first, and if it fails, a dedicated passcode entry screen is displayed instead of the common  passcode. </dd>
         
+        <a name="duedateSetting">
         <dt>Due Date Settings</dt>
-        <dd>This setting applies to data whose Due date flag is ON in the item's date information. </dd>
-        <dd>You can set how many days in advance the calendar icon will turn red when an item's due date approaches. </dd>
-        <dd>You can also set notifications to be sent when the due date approaches. </dd>
+        <dd>Settings related to the <a href="#duedate">due date</a> in the item's date information. </dd>
+        <dd>Settings related to the <i class="icon calendarex"></i> calendar icon that turns red when an item's due date approaches. </dd>
+        <dd>You can also set notifications for when the due date approaches. </dd>
         <dd>If you haven't enabled notifications for this app in the Settings app, please enable them. </dd>
-         <dd>Notifications can be received on the day of the due date, one day before, one week before, and one month before. </dd>
-         <dd>You can specify time that you want to be notified. </dd>
-         
-         <dt>Calendar Event Settings</dt>
-          <dd>Calendar event settings that can be set for item date information. </dd>
-          <dd>You can bulk delete all calendar events older than today. </dd>
-          <dd>If an inconsistency occurs between the calendar event settings in this app and the registered events in the calendar app due to some reason, such as deleting an event in the calendar app or iCloud syncing not working properly, this will notify you here and allow you to resolve the issue. </dd>
-          <dd>Pressing the Edit button will temporarily delete the events registered in this app's calendar and re-register them. </dd>
-         
+        <dd>Notifications can be received on the due date itself, one day before, one week before, or one month before the due date. </dd>
+        <dd>You can specify the time at which you want to receive notifications. </dd>
+        
+        <a name="calendarSetting">
+        <dt>Calendar Event Settings</dt>
+        <dd>Settings related to the <a href="#calendar">calendar event</a> that can be set in the item's date information. </dd>
+        <dd>You can delete all calendar events older than today in one go. </dd>
+        <dd>If an inconsistency occurs between the calendar event settings in this app and the event registration status in the calendar app due to some reason, such as deleting an event in the calendar app or iCloud sync not working properly, you will be notified here and can resolve the issue. </dd>
+        <dd>Pressing the Edit button will temporarily delete the events registered in the calendar by this app and re-register the events according to the information registered in the date information. </dd>
+      
          
          <dt>Home screen settings</dt>
          <dd>You can switch whether or not to include comments and memo information of items other than titles when narrowing down the search by entering search characters on the home screen. </dd>
@@ -677,51 +665,18 @@
           <dd>You can toggle whether to require login by default on the item edit screen and item details screen. </dd>
 
          <dt>Backup</dt>
-         <dd>You can create a backup of your data. </dd>
-         <dd>Takes you to the <a href="#backup">Backup Management Screen</a> where you can restore from your backed up data. </dd>
-         <dd>You can enable daily backups. Create a backup at the first data save of the day. Backups for the last 10 days remain. </dd>
-
+         <dd>You can <a href="#backup">backup</a> your data.</dd>
+         <dd>You can access the <a href="#backupMan">Backup Management Screen</a>, where you can restore your backed up data.</dd>
+         <dd>You can enable daily backups. A backup is created the first time data is saved that day. Backups from the last 10 days are kept.</dd>
+         <dd>For more information about backups, see <a href="#backup">Backup</a>.</dd>
 
          <dt>iCloud Sync Settings<dt>
           <dd>You can sync data between your iPhone, iPad, and Mac via iCloud Drive, sharing the same data across devices.</dd>
           <dd>The data synced includes item data, selection list data, display format data, filter data, and history data. Detailed settings such as other options are not synced.</dd>
           <dd>The synced data is shared only between devices logged in with the same Apple account through the user's own iCloud Drive folder, which is not directly visible to the user.</dd>
          <dd>In addition to automatic synchronization, you can also explicitly upload to and download from iCloud. </dd>
+         <dd>For more information about iCloud Sync, see <a href="#icloudSync">iCloud Sync</a>.</dd>
 
-         <dt>About iCloud sync</dt>
-         <dl class="sub0">
-         <dt>Synchronization mechanism when iCloud auto-sync is ON</dt>
-         <dd>When the application is launched, this application compares the update date and time of the data on the device (iPhone/iPad/Mac) and the data on iCloud, and loads the newer data. </dd>
-         <dd>Save data to both the device and iCloud when the app is closed. </dd>
-         <dd>Data update date comparison, saving and loading are performed collectively for all items.</dd>
-         
-         
-         <dt>Precautions before iCloud synchronization</dt>
-<dd>If you want to share data between multiple devices, turn on iCloud sync before entering data on each device. Data entered on each device before syncing will not be merged, and only the data on one device will be used as sync data.</dd>
-
-         <dt>When iCloud sync is turned on</dt>
-         <dd>If you have entered data on multiple devices separately, follow the steps below. </dd>
-         <dd>1. Upload the data you want to sync to iCloud from the device that contains it.</dd>
-         <dd>2. For devices other than the above, download from iCloud. </dd>
-         <dd>3. Turn on iCloud sync on each device. </dd>
-         <dd>This procedure is also useful during sync if you think something is not syncing. </dd>
-         
-         <dt>Data update date and time and data communication</dt>
-         <dd>The last updated date and time of data on your device (iPhone/iPad/Mac) and iCloud, the number of items, the device where it was saved, and the app version at the time are displayed, giving you an idea of ​​the sync status.</dd>
-          <dd>The format version is also displayed, but this number is updated when the app stores more information for syncing.</dd>
-         <dd>Due to the mechanism of iCloud, it may take minutes to tens of minutes to reflect the data between the device and iCloud regardless of the update time. Also, when the network environment is bad, it will be reflected collectively when the network environment recovers. </dd>
-         
-         <dt>Notes during iCloud synchronization</dt>
-         <dd>Please note that if you open this app on both iPhone and iPad and Mac at the same time and edit data on each device, the edits made on one device may be ignored. </dd>
-         <dd>If you use as above frequently, it is safer to use upload to iCloud or download from iCloud instead of turning sync ON. </dd>
-         <dd>It is a good idea to create backups from time to time, just in case, as you may unintentionally use the above when syncing with iCloud. </dd>
-         <dd>By the way, this app automatically backs up your data when you start syncing or when you perform the first auto-save each day, so please use it as needed.</dd>
-         
-         <dt>Precautions when upgrading the app</dt>
-         <dd>Please try to upgrade the iPhone and iPad and Mac apps that exchange files with iCloud as much as possible at the same time. </dd>
-         <dd>If you update data while only one device is upgraded, the old version device can read the data saved by the new version device, but you cannot save the data using the new function due to the version upgrade. Therefore, you may lose data using the new features. </dd>
-         <dd>If the data file format is expanded due to the addition of functions in the app, the file format version will be increased. If a bigger version of the data was stored on iCloud, iCloud sync and upload will stop until the app on that device is updated to prevent data loss. </dd>
-         </dl>
         
          <dt>Sharing Settings</dt>
          <dd>You can turn automatic backups on or off when importing.</dd>
@@ -749,17 +704,17 @@
         
      </dl>
 
-     <a name="backup">
+    <a name="backupMan">
      <a href="#top">🔝</a>
      <h2>Backup management screen</h2>
      <dl class="main">
          <dt>Backup management screen</dt>
-         <dd>This screen allows you to back up and restore data. </dd>
+         <dd>This is the screen where you can <a href="#backup">back up</a> and restore your data.</dd>
          <dd>This screen is accessed from the <a href="#setting">setting screen</a> with a link to the backup management screen. </dd>
          <dd>Look for the Backup Management title at the top of the screen. </dd>
 
          <dt>Screen description</dt>
-         <dd>When you press the Create Backup button, all the current item data and selection list data will be saved in one backup file. </dd>
+         <dd>Pressing the Create Backup button will save all current user data, including all items, to a <a href="#backupfile">backup file</a>.</dd>
          <dd>The date and time of saving and the number of items at saving time are saved as comments in the backup file. </dd>
          <dd>Encrypted backup files display a lock mark <i class="icon lock"></i> at the beginning, and unencrypted backup files display an open lock mark <i class=" icon lock_open"></i>.
          <dd>Backup files are listed from newest to oldest. </dd>
@@ -789,15 +744,7 @@
          <dd>Restore item data and selection list data. </dd>
          </dl>
          
-         <dt>About backup files</dt>
-         <dd>Backups with comments beginning with "auto" are automatically created by the app just in case. You can delete them if you decide they're unnecessary.</dd>
-         <dd>Backups with comments beginning with "auto daily backup" are automatically created each day when you first save data. Only the most recent 10 days' worth of data are retained; older daily backups are automatically deleted.</dd>
-         <dd>Backup files are encrypted with AES256 using an encryption key associated with your Apple account. Therefore, they can only be restored using this app on an iPhone, iPad, or Mac connected to your Apple account.</dd>
-          <dd>If you want to transfer data to an iPhone, iPad, or Mac connected to a different Apple account, use a backup file with encryption turned off.</dd>
-          <dd>Backup files can be copied and deleted from this app's folder using the Files app. You can also copy them back to this app's folder.</dd>
-          <dd>Please note that changing the beginning of the backup file will prevent it from appearing in the backup management screen. </dd>
-          <dd>Backup files with encryption turned off are compressed data with the extension .zip. Zip files can be opened on a PC. The data files within the zip file are text files in JSON format, so they can be viewed with a text editor. However, the detailed format is subject to change without notice. If you want to exchange data, please use the JSON file export and import functions.</dd>
-         <dd>If you place a backup file with encryption turned off on the iCloud folder, there is a risk that your password data will be leaked if your iCloud is hacked. So, do not create backup files with encryption turned off unless necessary, and even if you do, please be careful about the storage location of the shared the backup. </dd>
+
      </dl>
 
 
@@ -879,7 +826,8 @@
          <dd>The color can be set from the menu on the item detail screen or item edit screen. </dd>
          <dd>Color can be used for grouping and filtering on the home screen. </dd>
 
-         <dt>Deprecated state</dt>
+        <a name="obsolete">
+         <dt>Obsoleted state</dt>
          <dd>Turn on when the item is no longer in use. </dd>
          <dd>Use this when you don't want to use the item anymore but want to keep it just in case. </dd>
          <dd>When ON, a 🪦grave icon will be displayed next to the item name in the item list on the home screen. </dd>
@@ -922,13 +870,6 @@
          <dd>Two-step verification type is one of the <a href="#selectList">Selection List</a> that users can add or change by themselves. </dd>
          <dd>You can also add comments. </dd>
 
-          <!---
-         <dt>Refer to other accounts</dt>
-         <dd>You can select other related accounts. </dd>
-         <dd>Can be used when account linkage is OFF. </dd>
-         <dd>You can also add comments. </dd>
-         --->
-
          <dt>Payment type</dt>
          <dd>Choose if billing is involved with your account. </dd>
          <dd>For example, subscription, prepaid, postpaid, etc. </dd>
@@ -950,17 +891,6 @@
          <dd>If the account has an expiration date or billing expiration date, turn it on. </dd>
          <dd>Expired status can be used in filtering on the home screen. </dd>
         
-        <!---
-         <dt>Due date type</dt>
-         <dd>If there is a due date, select the type of due date. </dd>
-         <dd>For example, expiry date, prepaid expiry date, application date, service termination date, etc. </dd>
-         <dd>The due date type is one of the <a href="#selectList">select list</a> and can be added or changed by the user. </dd>
-        
-         <dt>Due date</dt>
-         <dd>If there is a due date, set the date. </dd>
-         <dd>You can group and narrow down on the home screen by the number of days until the due date. </dd>
-         <dd>You can also add comments. </dd>
-         --->
 
          <dt>Registered email address</dt>
          <dd>Specify your email address that is registered with your account. </dd>
@@ -1003,10 +933,11 @@
           <dd>Choice string is one of the <a href="#selectList">selection lists</a>, which users can add and change themselves. </dd>
 
 
-         <dt>Date</dt>
-         <dd>You can register multiple dates. </dd>
-         <dd>Turning on the Due date flag will sort and display items on the home screen according to the number of days until the due date, and you will receive notifications when the due date approaches.</dd>
-         <dd>Adding a calendar event lets you view it on your calendar and receive last-minute reminders.</dd>
+         <a name="dateInfo">
+          <dt>Date Information</dt>
+          <dd>You can register multiple date-related information. </dd>
+           <dd>Turning on the <a href="#duedate">Due Date</a> flag will sort and display items on the home screen according to the number of days until the due date, and you will receive notifications when the due date approaches. </dd>
+          <dd>Adding a <a href="#calendar">Calendar Event</a> will display the event on your calendar and notify you immediately before it occurs. </dd>
          <dd>Date information is displayed in chronological order.</dd>
          <dd>The previous due date field has been merged into this date field.</dd>
         
@@ -1043,7 +974,7 @@
          <dt>About selection list</dt>
          <dd>A selection list is a list of choices to fill in a field, such as a category or a registered email address. </dd>
          <dd>Selection list can be edited on <a href="#editList">Selection list editing screen</a>. </dd>
-         <dd>The selection list editing screen is moved from the menu of <a href="#home">Home screen</a>, <a href="#detail">Item details screen</a> and <a href="#editItem"> Item edit screen </a>  </dd>
+         <dd>The selection list editing screen can be displayed by selecting Edit Selection List from the menu on the <a href="#home">Home screen</a> or the <a href="#editItem">Item editing screen</a>.</a>
          <dd>For some types of selection lists (categories, tags, dates, item references, URLs, free strings, choice strings), you can create groups to make it easier to search hierarchically. </dd>
          <dd>Some types of selection list (categories, tags, dates, item references, URLs, free strings) are expected to have a large number of registrations, so it is recommended to create groups to make it easier to search hierarchically. </dd>
          <dd>There are the following types of selection lists. </dd>
@@ -1065,15 +996,19 @@
          <dt>Payment type</dt>
          <dd> Indicates the type of payment. </dd>
          <dd>Used to select the payment type on the item edit screen. </dd>
-         <!---
-         <dt>Due date type</dt>
-         <dd>Indicates the type of due date, such as expiration date. </dd>
-         <dd>Used to select the due date type on the item edit screen. </dd>
-         --->
+
 
          <dt>URL type</dt>
          <dd> Indicates the type of URL information. </dd>
          <dd>Used in selecting the URL type on the item edit screen. </dd>
+         
+         <dt>Date type</dt>
+         <dd> Indicates the type of date information. </dd>
+         <dd>Used to select date information on the item edit screen. </dd>
+
+         <dt>Item reference type</dt>
+         <dd> Indicates the type of item reference information. </dd>
+         <dd>Used to select item reference information on the item edit screen. </dd>
 
          <dt>Free string type</dt>
          <dd> Indicates the type of free string information. </dd>
@@ -1089,13 +1024,6 @@
           <dd>Used to select choice string information on the item editing screen. </dd>
           <dd>Can be used to filter home screens. </dd>
 
-         <dt>Date type</dt>
-         <dd> Indicates the type of date information. </dd>
-         <dd>Used to select date information on the item edit screen. </dd>
-
-         <dt>Item reference type</dt>
-         <dd> Indicates the type of item reference information. </dd>
-         <dd>Used to select item reference information on the item edit screen. </dd>
 
          <dt>Email address</dt>
          <dd>Indicate your email address to subscribe to the item. </dd>
@@ -1115,23 +1043,24 @@
 
 
      <a href="#top">🔝</a>
-<a name="displayFormat">
+     <a name="displayFormat">
      <h2>Display format</h2>
      <dl class="main">
          <dt>Display format</dt>
-         <dd>On the <a href="#detail">Item detail screen</a> and <a href="#editItem">Item edit screen</a>, the display format allows you to specify the display order and whether or not to display fields. </dd>
-         <dd> The main purpose of the display format is to make it easier to enter fields by limiting the fields and options to be entered when creating a new item of a specific type. </dd>
+         <dd>Display formats allow you to specify the display order and visibility of <a href="#field">fields</a> on the <a href="#detail">Item Details</a> and <a href="#editItem">Item Edit</a> screens.</dd>
+         <dd>The main purpose of display formats is to make it easier to enter fields by limiting the fields and options available when creating a new item of a specific type.</dd>
+         <dd>Display formats are added on the Item Edit screen or the <a href="#displayFormatList">Display Format List screen</a>, and edited on the <a href="#editDisplayFormat">Display Format Edit screen</a>.</dd>
          <dd>On the item edit screen, including when creating a new item, all fields are displayed in app's default order. But by creating an display format in advance and using it, you can display only arbitrary fields in an arbitrary order. </dd>
          <dd>The display format is remembered for each item. </dd>
          <dd>The display format is stored in association with the category, and when you switch categories on the item editing screen, the display format associated with that item will be automatically selected. </dd>
          <dd>On the item detail screen, only the specified fields can be displayed in the order according to the display format associated with the item. </dd>
          <dd>Display formats can be named and re-used by the user. </dd>
-         <dd>Display formats can be added on the item edit screen, or <a href="#displayFormatList">display format list screen</a>, and edited on the <a href="#editDisplayFormat">display format edit screen</a>. </dd>
+
          <dd>You can switch the display format associated with the item at any time on the item detail screen or item edit screen. </dd>
         <dd>Switching the display format only narrows down the fields to be displayed, but does not erase field data already recorded by the item itself. </dd>
 
          <dt>About fields</dt>
-         <dd>Create the display format by arranging the desired fields in the desired order on the <a href="#editDisplayFormat">Display Format Edit Screen</a>. </dd>
+         <dd>Display formats are created by arranging your desired <a href="#field">fields</a> in the desired order on the <a href="#editDisplayFormat">Display Format Edit Screen</a>.</dd>
          <dd>Category, tag, priority, and notes are the minimum required fields. </dd>
          <dd> Some fields group together multiple directly related fields, such as payment information. </dd>
          <dd>Some fields, such as the reading of the title, the creation date for the update date, and the list of items that refer to the item, are displayed at fixed positions on the item details screen and item display screen. </dd>
@@ -1144,6 +1073,133 @@
      </dl>
 
 
+      <a href="#top">🔝</a>
+      <a name="duedate">
+      <h2>Due dates and Calendar Events</h2>
+      <dl class="main">
+        <dt>Deadlines and Calendar Events</dt>
+        <dd>The Deadlines and Calendar Events feature allows you to add notifications to each item's <a href="#dateInfo">date information field</a> and highlight it in the list by adding an icon. </dd>
+        
+        <dt>About Deadlines</dt>
+        <dd>The deadline date is the date information's deadline flag. </dd>
+        <dd>You can turn the deadline flag on/off for any date information on the <a href="#detail">Item Details screen</a> or <a href="#editItem">Item Edit screen</a>. </dd>
+        <dd>When the deadline flag is on, notifications will be sent one month, one week, one day, and on the day of the date. You can also set the notification time in the <a href="#duedateSetting">Due Date Settings</a> in the Settings screen. </dd>
+        <dd>Items with the due date flag turned ON will have a <i class="icon calendarex"></i> calendar icon added to the list view. </dd>
+        <dd>The icon will turn red and become more noticeable as the due date approaches or passes. </dd>
+        <dd>You can also set the number of days before the due date that the icon will turn red in the <a href="#duedateSetting">Due Date Settings</a> in the Settings screen. </dd>
+        <dd>Due dates are also included in the grouping types on the Home screen. </dd>
+        <dd>When grouped by due date on the Home screen, items are displayed in order of the oldest due date. By setting a due date for an important task, you won't miss it. </dd>
+        
+        <a name="calendar">
+        <dt>About Calendar Events</dt>
+        <dd>You can add calendar events to date information. </dd>
+        <dd>You can add, edit, and delete calendar events for any date on the <a href="#detail">Item Details</a> or <a href="#editItem">Item Edit</a> screen. </dd>
+        <dd>Like calendar appointments, you can set the start and end dates and the number of minutes before the event. </dd>
+        <dd>Adding a calendar event registers the date information as an appointment on the calendar you use on your iPhone/iPad/Mac. This allows you to view the date information as an appointment in the Calendar app and set notifications at any time. </dd>
+        <dd>Items with added calendar events will have a clock icon <i class="icon clockex"></i> added to them in the list view. </dd>
+        <dd>Like the calendar icon for the due date, the clock icon turns red when the start date approaches or is exceeded. </dd>
+        <dd>Calendar events are registered from this app to the default calendar set in the Calendar app, but they can also be deleted from the Calendar app. Since they are synced with the calendar server separately from this app's data, inconsistencies with the information registered in this app may occur. </dd>
+        <dd>Calendar events set in this app should be deleted from this app, not the Calendar app. </dd>
+        <dd>Just to be safe, you can automatically detect inconsistencies with the registered calendar information in the <a href="#calendarSetting">Calendar Event Settings</a> on the Settings screen. You can also easily resolve inconsistencies. </dd>
+        <dd>Calendar Event Settings also allows you to clear all old calendar events. </dd>
+      </dl>
+
+
+      <a href="#top">🔝</a>
+      <a name="backup">
+      <h2>Backup</h2>
+      <dl class="main">
+        <dt>About Backups</dt>
+        <dd>User-entered item data, selection lists, display formats, and filter data can be saved together in a single backup file. </dd>
+        <dd>Backups can be created and restored from the <a href="#setting">Settings</a> screen and the <a href="#backupMan">Backup Management screen</a> accessible from there. </dd>
+        <dd>This app backs up daily (the same content is backed up with the first save of the day) just in case. </dd>
+        <dd>It also automatically backs up before performing operations that risk losing all of your item data, such as restoring a backup, erasing all data, starting iCloud sync, and importing. </dd>
+        
+        <a name="backupfile">
+        <dt>About Backup Files</dt>
+        <dd>When you perform a backup, a single backup file is created. </dd>
+        <dd>Backup files are saved in the Account folder created on your iPhone/iPad/Mac. You can copy or delete them from this app's folder using the Files app. You can also copy them back to this app's folder. </dd>
+        <dd>Backup files with the .dat extension are encrypted with AES256 encryption using an encryption key associated with your Apple account. Therefore, they cannot be restored using any device other than this app on an iPhone, iPad, or Mac connected to your Apple account. </dd>
+        <dd>If you want to transfer data to a device under a different Apple account, use a backup file with encryption turned off. </dd>
+        <dd>When you back up with encryption turned off in the Backup Management screen, the data is compressed and has a .zip extension. The zip file can be opened on a PC. The data file in the zip file is a text file in JSON format, so it can be viewed in a text editor. However, the detailed format is subject to change without notice. To exchange data, use the <a href="#export">export and import functions</a>. </dd>
+        
+        <dd>Backups with comments beginning with "auto" are automatically created by the app just in case. You can delete them if you deem them unnecessary. </dd>
+        <dd>Backups with comments beginning with "auto daily backup" are automatically created the first time data is saved each day. Only the most recent 10 days' worth of backups are retained; older daily backups are automatically deleted. </dd>
+        <dd>Please note that changing the beginning of the backup file name will make it invisible in the backup management screen. </dd>
+        <dd>If you place a backup file with encryption turned off in the iCloud folder, there is a risk that your password data may be leaked if your iCloud account is hacked. Do not create backup files with encryption turned off unless necessary, and if you do create one, be careful about the storage location of the shared destination. </dd>
+      </dl>
+
+
+      <a href="#top">🔝</a>
+      <a name="icloudSync">
+      <h2>iCloud Sync</h2>
+        <dl class="main">
+        <dt>About iCloud Sync</dt>
+        <dd>When a user logs in to multiple Apple devices, such as an iPhone, iPad, and Mac, with the same Apple account, they can sync user-entered data, such as item data, via iCloud Drive. </dd>
+        <dd>The data synced is the same as backups, including item data, selection lists, display formats, filter data, and history information. </dd>
+        <dd>Options set in the settings screen, etc., are not synced, so you can configure them to suit your device. </dd>
+        <dd>If you turn on automatic sync in the iCloud Sync settings in the settings screen, syncing will occur automatically when you open the app, edit an item, or close it. </dd>
+        <dd>If automatic syncing is inconvenient for you—for example, if you frequently open this app on multiple devices at the same time, or if you don't want this app to use your mobile data—you can leave automatic syncing OFF and manually upload and download data to and from iCloud in the settings screen. </dd>
+        
+        <dt>How iCloud Automatic Sync Works</dt>
+        <dd>When you open this app, the app compares the update dates of the data on your device with the synced data on iCloud Drive and loads the newer data. </dd>
+        <dd>When you close the app or edit an item, data is saved to both your device and iCloud Drive. </dd>
+        <dd>Data update dates are compared and saved and loaded for all data at the same time. </dd>
+        
+        <dt>Notes before using iCloud automatic syncing</dt>
+        <dd>If you want to share data between multiple devices, turn on iCloud sync before entering data on each device. Data entered on each device before syncing will not be merged; only the data from one device will be used for syncing. </dd>
+        
+        <dt>When Turning on iCloud Automatic Sync</dt>
+        <dd>If you have entered data on multiple devices, follow the steps below.</dd>
+        <dd>1. Upload data to iCloud from the device containing the data you want to sync.</dd>
+        <dd>2. Download data from iCloud on devices other than those listed above.</dd>
+        <dd>3. Turn on iCloud Automatic Sync on each device.</dd>
+        <dd>This procedure is also effective if you suspect automatic syncing is not working properly.</dd>
+        
+        <dt>Data Update Time and Data Usage</dt>
+        <dd>The last update time of data on your device (iPhone/iPad/Mac) and iCloud, the number of items, the device where it was saved, and the app version at the time are displayed, providing a rough indication of the sync status.</dd>
+        <dd>The format version is also displayed; this is a number that updates when the app stores more information for syncing. </dd>
+        <dd>Due to the nature of iCloud, it may take several minutes or even several tens of minutes for data to be updated between your device and iCloud. Also, if your internet connection is poor, all data will be updated at once once your connection is restored. </dd>
+        
+        <dt>Caution during iCloud automatic sync</dt>
+        <dd>If you open this app simultaneously on your iPhone, iPad, and Mac and edit data on each device, please note that edits on one device may be ignored. </dd>
+        <dd>If you frequently use this app, it is safer to explicitly upload to and download from iCloud in the settings screen rather than turning on automatic sync. </dd>
+        <dd>When using iCloud automatic sync, there is a risk of unintentionally using the above methods, so it is a good idea to create backups from time to time just to be safe. </dd>
+        <dd>By the way, this app automatically backs up your data when you start syncing and during the first daily autosave. Please use this as needed. </dd>
+        
+        <dt>Notes on Updating Apps</dt>
+        <dd>Please try to update apps for iPhone, iPad, and Mac that share files via iCloud at the same time whenever possible. </dd>
+        <dd>If you update data on only one device while the older version is still up to date, the older version device will be able to read data saved on the newer version, but will not be able to save data using the new features of the upgrade, which could result in data loss. </dd>
+        <dd>If the file format of data is expanded due to new app features, the file format version will be upgraded. If data with a larger format version is stored in iCloud, disable iCloud automatic sync and upload until the app on that device is updated to prevent data loss. </dd>
+        <dd>In this case, turn on iCloud automatic sync after updating the app. </dd>
+      </dl>
+
+
+      <a href="#top">🔝</a>
+      <a name="export">
+      <h2>Export and Import</h2>
+        <dl class="main">
+        <dt>About Export and Import</dt>
+        <dd>Exporting is writing item data to a file. </dd>
+        <dd>Importing is importing item data from a file. </dd>
+        
+        <dt>Export</dt>
+        <dd>You can export the currently displayed item (or the selected item in selection mode) from the home screen menu. You can also export the item as text from the item details screen. </dd>
+        <dd>Export formats available are text and JSON. </dd>
+        <dd>Text format is human-readable. </dd>
+        <dd>JSON (JavaScript Object Notation) is a common file exchange format on the web, allowing for hierarchical and repetitive structures. </dd>
+        <dd>The meaning and structure of the tags in this app's JSON format can be understood by comparing it with the text output. However, if you need further clarification, please contact user support. </dd>
+        <dd>Exported files, including passwords, are not hidden, so please handle sensitive information with care to prevent it from being seen by others. </dd>
+        
+        <a name="import">
+        <dt>Import</dt>
+        <dd>You can import JSON files from the home screen menu. </dd>
+        <dd>You can import data from external sources as long as the data conforms to this app's JSON format. </dd>
+        <dd>When importing a JSON file, if the file contains already registered item names, you can specify whether to ignore, overwrite, or rename and add the item for each item. </dd>
+        <dd>A backup is automatically created during import. If you make a mistake while importing, restore from your most recent backup. </dd>
+        <dd>If you are unable to import a JSON file due to an invalid file format, turning on debug mode in the settings screen will display a more detailed error message, helping you pinpoint the problem. </dd>
+        <dd>For your information, this app's item data uses a variable-size repeating structure for date information and other data, making it difficult to support standard CSV formats. However, if partial support is acceptable, we will consider it upon request. </dd>
+      </dl>
 
       <a name="shortcut">
       <a href="#top">🔝</a>
@@ -1184,12 +1240,10 @@
      <a name="history">
      <h2>Version history</h2>
      <dl class="main">
-          
           <dt>ver.3.1</dt>
           <dd>Improved the stability of data syncing with iCloud.</dd>
-          <dd>You can now register calendar app events for date information.</dd>
-          <dd>When you register a calendar event, it will appear as an appointment on your calendar and you can set a notification time.</dd>
-          <dd>You can register, edit, and delete calendar events for date information on the item editing screen or details screen.</dd>
+          <dd>You can now add <a href="#calendar">Calendar events</a> to date information.</dd>
+          <dd>When you register a calendar event, it will appear as an appointment in the Calendar app and you can set a notification at any time.</dd>
           <dd>Items with registered calendar events will display a clock icon on the home screen and details screen.</dd>
           <dd>A filter based on whether or not a calendar event is present has been added to the home screen filter selection.</dd>
           <dd>Created date and time has been added to home screen groupings.</dd>
