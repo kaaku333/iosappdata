@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>help_index</title>
+  <style type="text/css">
+  .baseframe {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+  }
+  .leftframe {
+    width: 30%;
+  }
+  .rightframe {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  .openCloseButton {
+    width: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  </style>
+  <script type="text/javascript">
+      <!--
+        var paramArray =[]
+        window.onload = loadFinished;
+
+        function loadFinished(){
+          getUrlParams()
+          initSetting()
+        }
+        function getUrlParams(){
+          var urlParam = location.search.substring(1);
+          if(urlParam) {
+            var param = urlParam.split('&');
+            for (i = 0; i < param.length; i++) {
+              var paramItem = param[i].split('=');
+              paramArray[paramItem[0]] = paramItem[1];
+            }
+          }
+        }
+        function initSetting(){
+          if(paramArray.goto != null){
+              gotoName(paramArray.goto);
+          }
+        }
+        function gotoName(name){
+            window.right_frame.location.href = "help_mainPage.html#"+ name;
+        }
+        
+        var isLeftOpen = true;
+        let leftframeClass  = getCssClass(".leftframe");
+        let rightframeClass  = getCssClass(".rightframe");
+
+        function changeTocWidth() {
+          let buttonElement = document.getElementById("open_close_button");
+
+          isLeftOpen = isLeftOpen ? false : true;
+          
+          if (isLeftOpen == false) {
+            leftframeClass.style.width = "0%";
+            rightframeClass.style.width = "100%";
+            buttonElement.src="https://kaaku333.github.io/iosappdata/account/image/smallRight.png";
+          }else {
+            leftframeClass.style.width = "30%";
+            rightframeClass.style.width = "70%";
+            buttonElement.src="https://kaaku333.github.io/iosappdata/account/image/smallLeft.png";
+          }
+        }
+        
+        function getCssClass(sele){
+            var i, j, sheets, rules, rule = null;
+            sheets = document.styleSheets;
+            for(i=0; i<sheets.length; i++){
+                rules = sheets[i].cssRules;
+                for(j=0; j<rules.length; j++){
+                    if(sele === rules[j].selectorText){
+                        rule = rules[j];
+                        break;
+                    }
+                }
+            }
+            return rule;
+        }
+   // -->
+  </script>
+</head>
+<body>
+  <div class="baseframe">
+    <div class="leftframe">
+      <iframe  src="help_toc.html" width="100%" height="100%"></iframe>
+    </div>
+    <button class= "openCloseButton" onclick="changeTocWidth()" type="button" name="name" value="value"><image id="open_close_button" src="https://kaaku333.github.io/iosappdata/account/image/smallLeft.png"></button>
+    <div class="rightframe">
+      <iframe src="help_mainPage.html" name="right_frame" width="100%" height="100%"></iframe>
+    </div>
+  </div>
+</body>
+</html>
