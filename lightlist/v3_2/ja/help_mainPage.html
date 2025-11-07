@@ -227,9 +227,9 @@
           <dd >画面の下にある追加ボタン <div class="icon_blue mask_plus"></div> の右側をタップすると新しい項目名が入力でき、Enter入力で新しい項目として追加できます。
 </dd>
           <dd >その右端にある 参照アイコン <div class="icon_blue mask_greaterthan_circle_fill"></div> を押すと、他のリストやWebページなどへの参照を項目として追加することができます。</dd>
-          <dd >項目として追加できるのは、<div class="icon_white mask_greaterthan_circle_fill"></div> 他のリストへの参照、<div class="icon_white mask_greaterthan_circle"></div> 他のサイト(URL)への参照、<div class="icon_white mask_greaterthan_square"></div>Account App (本アプリ作者作の情報管理アプリ)のアイテムの参照の３種類です。</dd>
-          <dd> 他のリストへの参照は名前を選んでください。URLとAccountの参照はそれぞれ項目名と URLもしくはAccount のアイテム名を入力してください。</dd>
-           <dd >参照として追加された項目には、種類による参照アイコン <div class="icon_white mask_greaterthan_circle_fill"></div><div class="icon_white mask_greaterthan_circle"></div>、<div class="icon_white mask_greaterthan_square"></div> が追加表示され、参照アイコンをタップすると該当する情報に移動できます。</dd>
+          <dd >項目として追加できるのは、<div class="icon_white mask_greaterthan_circle_fill"></div> 他のリストへの参照、<div class="icon_white mask_greaterthan_circle"></div> 他のサイト(URL)への参照、<div class="icon_white mask_greaterthan_square"></div> <a href="https://apps.apple.com/jp/app/id6446798088">Account App (本アプリ作者作の情報管理アプリ)</a>のアイテムへの参照の３種類です。</dd>
+          <dd> 他のリストへの参照は名前を選んでください。URL と Accountの参照はそれぞれ項目名と URL もしくは Accountアイテム名を入力してください。</dd>
+           <dd >参照として追加された項目には、種類による参照アイコン（ <div class="icon_white mask_greaterthan_circle_fill"></div>、<div class="icon_white mask_greaterthan_circle"></div>、<div class="icon_white mask_greaterthan_square"></div> ）が追加表示され、参照アイコンをタップすると該当する情報に移動できます。</dd>
           <dd >各項目のコンテキストメニューの「この下に項目追加」を選ぶと、任意の場所に項目を追加できます。</dd>
           <dd >画面の一番下にある「一括登録」を開いてその枠内をタップするとそこに改行で区切った複数の項目名をまとめて入力できます。「各行を項目として追加」ボタンや決定ボタン <div class="icon_blue mask_checkmark"></div> を押すとまとめて登録されます。</dd>
           <dd >項目名として + で始まる名前を入力すると、その項目をラベルにできます。任意の項目を後からラベル化することもできます。</dd>
@@ -247,6 +247,7 @@
           <dt >他のリストを参照する項目に変更</dt>
           <dd >コンテキストメニューを開き、「項目情報変更」の「参照を設定」ボタンを押すとその項目に後から参照を設定することができます。</dd>
           <dd>項目の参照は「参照を削除」で項目名はそのままで参照だけ削除することができます。</dd>
+          <dd>「参照」については「項目の追加」の説明を参照してください。</dd>
           
           <dt >項目の優先度変更</dt>
           <dd >項目を右にスワイプするかコンテキストメニューを開くと「優先度」ボタンが表示されます。このボタンを押すと優先度を高・中・低から選び、項目の優先度を設定できます。</dd>
@@ -317,7 +318,7 @@
           <dd >メニューの「貼り付け」からクリップボードの中身を参照したり、クリップボードをクリアすることもできます。</dd>
           
           <dd>項目の複製</dd>
-          <dd>各項目のコンテキストメニューの「この下に複製」を選ぶと、項目を複製できます。</dd>          
+          <dd>各項目のコンテキストメニューの「この下に複製」を選ぶと、項目を複製できます。</dd>
           
           <dt >一括処理の取り消し</dt>
           <dd >メニューから「取り消し」を選ぶと、直前にメニューやコンテキストメニューから行った並べ替えや削除などの一操作を1回だけ取り消すことができます。</dd>
@@ -467,6 +468,7 @@
           <dd> 絞り込み表示状態で項目をタップした時に表示が消えるまでの時間を設定することができます。</dd>
           <dd >絞り込み表示状態でも全ラベルを表示するかどうかを設定することができます。</dd>
           <dd >項目を共有やコピーする時にラベルを含めるかどうか設定することができます。</dd>
+          <dd >項目を共有やコピーする時に参照情報を埋め込むかどうか設定することができます。</dd>
           <dd >項目の貼り付けや一括登録時に既存項目のチェック状態を変えるかどうか設定することができます。</dd>
           <dd >項目名変更時にリンクされた他のリストにも同名の項目があった場合はまとめて名前変更するかどうか設定することができます。</dd>
           <dd >インクリメンタルサーチの文字を入力するたびに発生する効果音を止めるかどうか設定することができます。</dd>
@@ -756,8 +758,9 @@
         <dl>
           <dt>ver.3.2</dt>
           <dd>リストアイテムにURLの参照を設定できるようになりました。関連する他のサイトを開くことができます。</dd>
-          <dd>リストアイテムに Account App (本アプリ作者作) のアイテムの参照を設定できるようになりました。関連する Account App のアイテムを開くことができます。</dd>
+          <dd>リストアイテムに <a href="https://apps.apple.com/jp/app/id6446798088">Account App (本アプリ作者作の情報管理アプリ)</a> のアイテムの参照を設定できるようになりました。関連する Account App のアイテムを開くことができます。</dd>
           <dd>バックアップ管理画面で古い自動バックアップをまとめて削除できるようになりました。</dd>
+          <dd>iOS 26 のリキッドグラスUIに適応させました。</dd>
           <dd >軽微な不具合を修正しました。</dd>
 
           

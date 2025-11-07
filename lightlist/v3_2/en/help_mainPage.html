@@ -225,8 +225,13 @@
           
            <dt >Add Item</dt>
            <dd >Tap the right side of the add button <div class="icon_blue mask_plus"></div> at the bottom of the screen to enter a new item name, and enter the new item name by entering Enter. </dd>
-           <dd >Press the reference icon <div class="icon_blue mask_greaterthan_circle_fill"></div> on the far right to select another list and add a list reference. </dd>
-            <dd >To browse the another list, tap the reference  the reference icon <div class="icon_white mask_greaterthan_circle_fill"></div> displayed at the end of the item name of the list reference. You can then move to the item editing screen for the list. </dd>
+           
+           <dd>Click the reference icon <div class="icon_blue mask_greaterthan_circle_fill"></div> to the far right to add a reference to another list, web page, etc.</dd>
+            <dd>You can add three types of items: <div class="icon_white mask_greaterthan_circle_fill"></div> a reference to another list, <div class="icon_white mask_greaterthan_circle"></div> a reference to another site (URL), and <div class="icon_white mask_greaterthan_square"></div> a reference to an item in the <a href="https://apps.apple.com/app/id6446798088">Account App (an information management app created by this app's author)</a>.</dd>
+            <dd>To reference another list, select the name. To reference a URL or Account, enter the item name and URL or Account item name, respectively. </dd>
+            <dd>Items added as references will display a reference icon based on their type ( <div class="icon_white mask_greaterthan_circle_fill"></div>, <div class="icon_white mask_greaterthan_circle"></div>, <div class="icon_white mask_greaterthan_square"></div>). Tapping the reference icon will take you to the corresponding information.</dd>
+           
+
            <dd >You can add an item anywhere by selecting "Add item below this" from the context menu of each item. </dd>
            <dd >Open "Batch registration" at the bottom of the screen and tap inside the frame to enter multiple item names separated by line breaks. When you press the "Add each line as an item" button or checkmark button <div class="icon_blue mask_checkmark"></div>, it will be registered all at once. </dd>
            <dd >If you enter a name starting with + as the item name, you can make that item a label. You can also label any item later. </dd>
@@ -242,11 +247,10 @@
            <dd >When you confirm the name change, if there are items with the same name in other lists linked to this list, you can choose whether to rename them all at once. If you don't want to change the linked list item names together, you can stop it in the settings screen. </dd>
           
           <dt >Change item that refers to another list</dt>
-           <dd >Open the context menu and press the "Change to other list reference" button under "Change item info." to display other list names. If you tap the name of the list you want to refer to, that item will become a reference to the specified list. </dd>
-           <dd >By using references to other lists, you can use it like a checklist that combines multiple checklists. </dd>
-           <dd >Tap reference icon <div class="icon_white mask_greaterthan_circle_fill"></div> displayed after the item name to open the item edit screen for the list to be referenced. </dd>
-           <dd >If you change the item name and remove the ">" that appears after the item name, it will no longer be a reference to another list. </dd>
-          
+          <dd>You can later set a reference for an item by opening the context menu and clicking the "Set Reference" button under "Change Item Information."</dd>
+          <dd>You can delete an item reference by clicking "Delete Reference" while leaving the item name unchanged.</dd>
+          <dd>For information on "Reference," see the explanation for "Add Item"</dd>
+                    
 
           <dt >Change item priority</dt>
            <dd >Swipe the item to the right or open the context menu to see the "Priority" button. By pressing this button, you can select the priority from high, medium, and low to set the priority of the item. </dd>
@@ -474,7 +478,8 @@
            <dd> You can set whether to display all labels even when the display is filtered.</dd>
            <dd > You can set whether to always display all labels. </ dd>
            <dd > You can set whether to include labels when sharing or copying items. </ dd>
-           <dd >You can set whether to change the check status of existing items when pasting items or batch registration. </dd>
+           <dd> You can set whether to embed reference information when sharing or copying an item.</dd>
+           <dd > You can set whether to change the check status of existing items when pasting items or batch registration. </dd>
            <dd >If there are items with the same name in other linked lists when renaming an item, you can set whether to rename them all at once. </dd>
            <dd >You can set whether to stop the sound effect that occurs each time you enter a character for incremental search. </dd>
            
@@ -773,6 +778,14 @@
 
         <h2 > Version History </h2>
         <dl>
+          <dt>ver.3.2</dt>
+          <dd>You can now set URL references for list items. This allows you to open other related sites.</dd>
+          <dd>You can now set references to items in the <a href="https://apps.apple.com/app/id6446798088">Account App (an information management app created by this app's author)</a> for list items. This allows you to open related items in the Account App.</dd>
+          <dd>You can now delete old automatic backups in bulk from the backup management screen.</dd>
+          <dd>Adapted to iOS 26 Liquid Glass UI.</dd>
+          <dd>Minor bugs have been fixed.</dd>
+
+
           <dt>ver.3.1</dt>
           <dd>You can now add a new list directly below each list on the home screen in the context menu. </dd>
           <dd>Added the ability to duplicate items to the context menu on the item editing screen. </dd>
