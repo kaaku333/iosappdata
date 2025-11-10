@@ -291,7 +291,8 @@
          <dt>Menu contents</dt>
          <dl class="sub1">
          <dt>Options</dt>
-         <dd>You can customize which icons appear in the menu at the top of the screen. You can also configure filter options.</dd>
+          <dd>You can customize which icons are included in the menu at the top of the screen. You can also set optional behavior for filters and the number of days difference display format.</dd>
+
          <dt>Edit selection list</dt>
          <dd>Go to the <a href="#editList">list editing screen</a> where you can edit individual string lists</dd>
          <dt>Edit display format</dt>
@@ -367,7 +368,8 @@
          <dd>Optional settings. </br>
          You can toggle whether passwords are hidden by default.</br>
          You can toggle whether the title reading field is displayed.</br>
-         You can toggle whether item details require login by default.</dd>
+         You can toggle whether item details require login by default.</br>
+         You can switch the display format for the difference in days.</dd>
          <dt>Share</dt>
          <dd>You can share this item's data as text.</dd>
          
@@ -459,7 +461,7 @@
           <dd>Clicking the three-dot icon <i class="icon threedots"></i> to the right of each record will display a context menu for that record. From the context menu, you can delete the record or add a duplicate record directly below it.</dd>
           <dd>For date information, you can add a date any number of days in the future. For subsequent records, you can also add a predicted date by adding the difference between the date of the previous record and the date of the previous record.</dd>
           <dd>For date information, you can also turn the <a href="#duedate">due date</a> flag on/off and add, edit, or delete <a href="#calendar">calendar events</a>.</dd>
-        
+          <dd>For URL information, you can create a URL link that will take you directly to the list in the <a href="https://apps.apple.com/app/id1591791713">lightlist app</a> by selecting Lightlist List Reference in the context menu.</d>
          </dl>
      </dl>
 
@@ -652,6 +654,8 @@
          
          <dt>Home screen settings</dt>
          <dd>You can switch whether or not to include comments and memo information of items other than titles when narrowing down the search by entering search characters on the home screen. </dd>
+         <dd>You can toggle whether or not to display items with deprecation turned on on the home screen.</dd>
+         <dd>On the home screen and item details screen, you can toggle whether to display the difference in date information from today as a year/month/day or as a number of days.</dd>
         <dd>You can set how long it will take for the app to automatically return to the home screen when you exit the app while viewing something other than the home screen and then display the app again.</dd>
         
          <dt>Details screen settings<dt>
@@ -719,6 +723,7 @@
          <dd>Encrypted backup files display a lock mark <i class="icon lock"></i> at the beginning, and unencrypted backup files display an open lock mark <i class=" icon lock_open"></i>.
          <dd>Backup files are listed from newest to oldest. </dd>
          <dd>You can select multiple backup files by pressing the select icon on the screen. Tap the  <i class="icon trash"></i> trash can icon if it is displayed additionally on the screen to delete it all at once. Press the Done icon to exit selection mode. </dd>
+         <dd>You can delete old automatically created backups by pressing the Purge button at the top of the screen.</dd>
          
          <dt>Switch below backup button</dt>
          <dl class="sub1">
@@ -729,7 +734,6 @@
          <dt>Automatically back up before restoring backup</dt>
          <dd>Automatically back up backup files before restoring them by default. We recommend leaving it ON just in case.</dd>
          </dl>
-
 
          <dt>File operation menu for backup file</dt>
          <dd>Tap the backup file to display the file operation menu. </dd>
@@ -742,6 +746,8 @@
          <dd>You can share files to other apps (e.g. email or notepad) for storage. </dd>
          <dt>Restore</dt>
          <dd>Restore item data and selection list data. </dd>
+         <dt>Partial Restore</dt>
+         <dd>Select the type of data you want to restore. Use this when you want to restore only specific types of data.</dd>
          </dl>
          
 
@@ -1240,6 +1246,14 @@
      <a name="history">
      <h2>Version history</h2>
      <dl class="main">
+          <dt>ver.3.2</dt>
+          <dd>Date information on the home screen and details screen now displays the difference from today in years, months, and days. You can also display only the number of days as before.</dd>
+          <dd>You can now specify a list in the <a href="https://apps.apple.com/jp/app/id1591791713">lightlist App (a list management app created by this app's author)</a> in the URL field and open it directly. This can be set in the context menu of the URL field on the item editing screen.</dd>
+          <dd>You can now delete old automatic backups in bulk in the backup management screen.</dd>
+          <dd>You can now restore backups by type in the backup management screen's restore function.</dd>
+          <dd>You can now return to the previous page by swiping the left edge of the screen.</dd>
+          <dd>Minor bugs have been fixed.</dd>
+     
           <dt>ver.3.1</dt>
           <dd>Improved the stability of data syncing with iCloud.</dd>
           <dd>You can now add <a href="#calendar">Calendar events</a> to date information.</dd>
