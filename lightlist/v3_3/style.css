@@ -1,0 +1,264 @@
+:root {
+  --deffontsize: 2.4vmax;
+}
+
+
+body {
+      font-family: "Helvetica", "ヒラギノ角ゴ ProN W3";
+	  font-size: var(--deffontsize);
+
+      background-color: #777777;
+      color: #333333
+    }
+    
+    a.sf {font-family: 'SF Pro'}
+
+	h1 {
+	  font-size: 1.5em;
+    }
+    h2 {
+	 font-size: 1.2em; 
+      padding: 0.4em 0.5em;
+      border-left: solid 8px #7db4e6;
+      background-color: #c2edff;
+      color: #333333;
+    }
+	h3 {
+      font-size: 1.2em;
+	  padding: 0.3em;
+      border-left: solid 5px #7db4e6;
+    }
+	dl  {
+      padding: 10px 20px 20px 30px;
+      line-height: 1.4em;
+    }
+    dt {
+      font-size: 1.2em;
+      font-weight: bold; 
+      margin-top: 2vmax;
+      margin-bottom: 0.3em;
+    }
+	dd {
+ 	   font-size: 1.1em;
+      margin-bottom: 0.5em;
+       display: list-item;
+       list-style-type: circle;
+       line-height: 150%;
+    }
+	dl.toc  {
+		padding: 1rem 1rem 1rem 1rem;
+    }
+	dl.toc dt{
+	  margin-top: 0.2rem;
+	  margin-top: 0.5rem;
+	  margin-left: -1rem;
+      font-weight: bold;
+    }
+    dl.toc dd{
+      margin-left: 0.2em;
+	  display: list-item;
+	  padding: 0rem 0rem 0.4rem 0rem;
+      list-style-type: circle;
+	}
+	button {
+		border-style: none;
+	}
+
+    a:link, a:visited, button {
+          color: #333333;
+          background: #c2edff;
+          padding: 0.3em;
+          text-decoration: none;
+    }
+    .img_area img{
+      width: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .icon_white {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #EEEEEE;
+    }
+    .icon_black {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #111111;
+    }
+    .icon_blue {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #77AAFF;
+    }
+    .icon_red {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #FF5588;
+    }
+
+    .icon_darkblue {
+      display: inline-block;
+      margin: 0 7 -7 7;
+      width: 1.2em;
+      height: 1.2em;
+      mask: no-repeat center / contain;
+      -webkit-mask: no-repeat center / contain ;
+      background: #2222FF;
+    }
+    .mask_chevron_down{
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/chevron.down@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/chevron.down@2x.png);
+    }
+    .mask_chevron_up{
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/chevron.up@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/chevron.up@2x.png);
+    }
+    .mask_ellipsis{
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/ellipsis@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/ellipsis@2x.png);
+    }
+    .mask_pencil {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.circle.fill@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.circle.fill@2x.png);
+    }
+    .mask_pencil_slash {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.circle@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.circle@2x.png);
+    }
+    .mask_pencil_old {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil@2x.png);
+    }
+    .mask_pencil_slash_old {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.slash@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/pencil.slash@2x.png);
+    }
+    .mask_line_3 {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/line.3.horizontal@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/line.3.horizontal@2x.png);
+    }
+    .mask_gear {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/gear@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/gear@2x.png);
+    }
+    .mask_arrow_up_down {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrow.up.arrow.down.circle@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrow.up.arrow.down.circle@2x.png);
+    }
+    .mask_arrow_up_down_fill {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrow.up.arrow.down.circle.fill@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrow.up.arrow.down.circle.fill@2x.png);
+    }
+    .mask_tag {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/tag@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/tag@2x.png);
+    }
+    .mask_plus {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/plus@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/plus@2x.png);
+    }
+    .mask_info {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/info.circle@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/info.circle@2x.png);
+    }
+    .mask_square {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/square@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/square@2x.png);
+    }
+    .mask_checkmark_square {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.square.fill@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.square.fill@2x.png);
+    }
+    .mask_arrow_clockwise {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrow.clockwise@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrow.clockwise@2x.png);
+    }
+    .mask_link {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/link@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/link@2x.png);
+    }
+    .mask_magglass {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/magnifyingglass@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/magnifyingglass@2x.png);
+    }
+    .mask_checkmark_seal {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.seal@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.seal@2x.png);
+    }
+    .mask_checkmark_seal_fill {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.seal.fill@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark.seal.fill@2x.png);
+    }
+    .mask_checkmark {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark@2x.png);
+    }
+    .mask_xmark {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/xmark.circle@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/xmark.circle@2x.png);
+    }
+    .mask_chevron_left {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/chevron.left@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/chevron.left@2x.png);
+    }
+    .mask_chevron_right {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/chevron.right@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/chevron.right@2x.png);
+    }
+    .mask_triangle_up {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrowtriangle.up@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrowtriangle.up@2x.png);
+    }
+    .mask_triangle_up_fill {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrowtriangle.up.fill@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrowtriangle.up.fill@2x.png);
+    }
+    .mask_triangle_down_fill {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrowtriangle.down.fill@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrowtriangle.down.fill@2x.png);
+    }
+    .mask_applewatch {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/applewatch@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/applewatch@2x.png);
+    }
+    .mask_circle_arrow_2 {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrow.triangle.2.circlepath@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/arrow.triangle.2.circlepath@2x.png);
+    }
+    .mask_greaterthan_circle_fill {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/greaterthan.circle.fill@2x.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/greaterthan.circle.fill@2x.png);
+	}
+	.mask_greaterthan_circle {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/greaterthan.circle.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/greaterthan.circle.png);
+	}
+	.mask_greaterthan_square {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/greaterthan.square.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/greaterthan.square.png);
+	}
+	.mask_circle_circle {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/circle.circle.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/circle.circle.png);
+	}
+	.mask_textformat_size {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/textformat.size.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/textformat.size.png);
+    }
