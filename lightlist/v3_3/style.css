@@ -262,3 +262,11 @@ body {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/textformat.size.png);
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/textformat.size.png);
     }
+	.mask_a_square {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/a.square.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/a.square.png);
+	}
+	.mask_u_square {
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/u.square.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/u.square.png);
+	}
