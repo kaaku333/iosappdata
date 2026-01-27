@@ -1,6 +1,6 @@
 [
     {
-        "_version": "v44 2026/1/26",
+        "_version": "v45 2026/1/27",
         "name":"シャオシャオ",
         "category": "誕生日",
         "date":"2021-06-23",
@@ -13,7 +13,7 @@
         "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
         
         "returndate" : "2026-01-27",
-        "returnexpdate" : "2026-01-27",
+        "returned" : true,
 
         "parents" : "リーリー、シンシン",
         "brothers" : "レイレイ、シャンシャン",
@@ -46,7 +46,7 @@
         "birthplaceurl" : "https://www.tokyo-zoo.net/zoo/ueno/",
         
         "returndate" : "2026-01-27",
-        "returnexpdate" : "2026-01-27",
+        "returned" : true,
         
         "parents" : "リーリー、シンシン",
         "brothers" : "シャオシャオ、シャンシャン",
