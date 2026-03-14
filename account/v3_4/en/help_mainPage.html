@@ -301,6 +301,10 @@
          <dd>If there are items with the same password, a list of items with that password will be displayed, and you will be taken to the details screen for the selected item.</dd>
          <dt>Share</dt>
          <dd>You can register items by <a href="#export">exporting</a> the data of the currently displayed item to a file, or conversely, <a href="#export">importing</a> the file. You can choose between text format, which is export-only, and JSON format, which can also be imported.</dd>
+         
+         <dt>Sample</dt>
+         <dd>You can import and delete sample item data. This will be helpful for entering item data.</dd>
+         
          <dt>Start selection</dt>
          <dd>Enter selection mode. In selection mode, select one or more items by checking the box to the left of the item, and use the menu to instruct the operation of the selected items</dd>
          </dl>
@@ -441,7 +445,7 @@
          <dt>Edit selection list</dt>
          <dd>You can select a selection list and move to the <a href="#editList">selection list editing screen</a>. </dd>
          <dt>Edit display format</dt>
-         <dd>Displays the <a href="#displayFormatList">display format list screen</a>. <br>You can edit the contents of the display format. </dd>
+         <dd><a href="#editDisplayFormat">Display format editing screen</a> is displayed. <br>You can edit the contents of the selected display format.</dd>
          <dt>Color</dt>
          <dd>You can set the color for this item. </dd>
          <dt>Change to Alias Item</dt>
@@ -867,14 +871,29 @@
          <dd>This is a 4-6 digit personal identification number that is used separately from the password. </dd>
          <dd>In the item detail screen, you can hide the display. </dd>
 
+          <dt>Passkey Status</dt>
+          <dd>Turn ON if you want to use a passkey.</dd>
+          
+          <dt>Passkey Type</dt>
+          <dd>Select the type of passkey you want to use.</dd>
+          <dd>For example, Google or Apple.</dd>
+          <dd>The passkey type is one of the <a href="#selectList">selection lists</a> that users can add and change themselves.</dd>
+          
+          <dt>Passkey Reference Items</dt>
+          <dd>Select any other items related to the passkey.</dd>
+
+
          <dt>Two-factor authentication usage status</dt>
          <dd>Turn on if you use two-factor authentication. </dd>
 
-         <dt>Two-step verification type</dt>
+         <dt>Two-factor verification type</dt>
          <dd>If you use two-factor authentication, select its type. </dd>
          <dd>For example, SMS, email, authentication apps, etc. </dd>
          <dd>Two-step verification type is one of the <a href="#selectList">Selection List</a> that users can add or change by themselves. </dd>
          <dd>You can also add comments. </dd>
+
+          <dt>Two-factor Verification Reference Item</dt>
+          <dd>Select any other items related to two-step verification.</dd>
 
          <dt>Payment type</dt>
          <dd>Choose if billing is involved with your account. </dd>
@@ -1246,6 +1265,13 @@
      <a name="history">
      <h2>Version history</h2>
      <dl class="main">
+          <dt>ver.3.4</dt>
+          <dd>Added the ability to add passkey information on the item editing screen.</dd>
+          <dd>Added the ability to add references to other items for two-factor authentication on the item editing screen.</dd>
+          <dd>Added the ability to display simple help for each field on the item editing screen.</dd>
+          <dd>Added the ability to import sample data from the home screen menu.</dd>
+          <dd>Fixed minor bugs.</dd>
+
           <dt>ver.3.3</dt>
           <dd>Fixed a bug that prevented automatic daily backups from working. </dd>
           <dd>Fixed a minor bug. </dd>
