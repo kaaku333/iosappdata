@@ -211,8 +211,8 @@ body {
          -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/checkmark@2x.png);
     }
     .mask_xmark {
-         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/xmark.circle@2x.png);
-         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/xmark.circle@2x.png);
+         mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/xmark.png);
+         -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/xmark.png);
     }
     .mask_chevron_left {
          mask-image: url(https://kaaku333.github.io/iosappdata/lightlist/image/chevron.left@2x.png);
