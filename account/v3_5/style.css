@@ -266,4 +266,8 @@ body {
       mask-image: url(https://kaaku333.github.io/iosappdata/account/image/arrowtriangle.left.fill.png) ;
 -webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/arrowtriangle.left.fill.png) ;
     }		
-		
+	
+	.arrow_clockwise {
+      mask-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.trianglehead.clockwise.png) ;
+-webkit-mask-image: url(https://kaaku333.github.io/iosappdata/account/image/arrow.trianglehead.clockwise.png) ;
+	}

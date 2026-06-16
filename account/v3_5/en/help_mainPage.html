@@ -60,24 +60,25 @@
      <dl class="main">
         <dt>Introduction</dt>
         <dd>This app is a data management app that unifies various information such as internet service access information, app login information, member information, card information, store information, service information, event information, and product information as account information, and links and securely manages it.</dd>
-        <dd>Account linkage and two-factor authentication using SNS and common company accounts are common for recent internet accounts. </dd>
+        <dd>Account linkage and two-factor authentication using SNS and common company accounts are common for recent internet service accounts. </dd>
         <dd>It is also common for a single company to provide many services, such as online shopping and video subscription services. </dd>
         <dd>It's also common for multiple apps and games to share a single login. </dd>
-        <dd>This application does not manage those related service names, application names, product names, account names, etc. as one account information with a lot of attached information, but as multiple account information linked with each other. make it manageable. </dd>
-        <dd>By doing this, you can search for the names of the services and apps you are using in a list, and finally, you can treat common login account information as one account information. </dd>
-        <dd>Also, in order to quickly find what you are looking for from a lot of information, you can easily combine incremental search, grouping, and narrowing down. </dd>
+        <dd>This app manages related service names, app names, product names, account names, etc., not as independent pieces of information with a lot of attached data, but as multiple interconnected items.</dd>
+        <dd>This allows you to search for service names, app names, content names, etc. in a list, and ultimately, common login account information can be treated as a single account, reducing the effort required for re-entering information or changing passwords.</dd>
+        <dd>Furthermore, to quickly find what you're looking for from a large amount of information, you can easily combine incremental search, grouping, and filtering. Grouping and filtering can also be saved with names.</dd>
+        <dd>You can share data for items filtered by tags, or for any selected items, as text files or password-protected PDF files, allowing you to share important account information with family members for purposes such as end-of-life planning.</dd>
        
         <dt>Main Features</dt>
-        <dd>Account information, including passwords, is linked to the user's Apple account and stored in AES256-bit encryption, with a unique encryption key for each user securely managed in Apple's Keychain.</dd>
+        <dd>Account information, including passwords, is linked to the user's Apple account, stored using AES256-bit encryption, and the encryption key is securely managed in Apple's Keychain.</dd>
         <dd>You can log in securely and easily with face recognition/fingerprint recognition and a dedicated passcode. </dd>
         <dd>With a wealth of grouping and filtering functions, you can easily find the desired item from a large amount of account information. </dd>
         <dd>The list screen consists of two panes, a group list and an individual item list, so you can quickly access the item of the corresponding group. </dd>
         <dd>You can prioritize and color individual item to make it easier to find item. </dd>
-        <dd>You can also register the due date of the item and display only the ones that are about to expire. </dd>
+        <dd>You can register multiple date information such as expiration date, release date, purchase date, etc. of an item and display the information with the closest expiration date. Additionally, all date information for all items can be displayed in a chronological list on a dedicated screen. </dd>
         <dd>Date information can be registered as a calendar event, and can be displayed and timed in a calendar app.</dd>
         <dd>You can give your item an alias. You can jump to this item from an alias. </dd>
         <dd>You can link the login information of other item. You can jump to linked item. </dd>
-        <dd>You can manage your two-factor authentication information. </dd>
+        <dd>You can manage information such as what you are using for two-factor authentication and passkeys.</dd>
         <dd>You can manage payment-related information such as subscription billing and prepaid billing. You can jump by linking your payment instrument item. </dd>
         <dd>Items that are no longer in use, expired items, items with continuous billing, etc. can be displayed as easy-to-understand icons, and you can narrow down your search. </dd>
         <dd>You can freely add and edit categories and tags yourself. </dd>
@@ -88,7 +89,7 @@
         <dd>You can share data between your iPad/iPhone/Mac via iCloud. </dd>
         <dd>You can always create an encrypted backup file and restore it when needed. </dd>
         <dd>Your data is backed up daily, and you can back it up at any time you like.</dd>
-        <dd>Data can be exported in JSON or text format. Data can also be imported in JSON format.</dd>
+        <dd>Data can be shared (exported) in various formats such as text, HTML, PDF, Markdown, and JSON. Importing in JSON format is also possible.</dd>
         <dd>You can be notified when an item with a due date is about to expire. </dd>
         <dd> With Shortcuts app from Apple, you can put an icon on your desktop that opens the details screen for any item directly. </dd>
      </dl>
@@ -270,22 +271,22 @@
          <dd>You can go to the settings screen or add a new account from the icons at the top of the screen. </dd>
          <dl class="sub1">
          <dt><i class="icon gear"></i></dt>
-         <dd>Move to the <a href="#setting">Settings screen</a> where you can make various settings and backups</dd>
+         <dd><b>Settings button</b><br>This will take you to the <a href="#setting">settings screen</a> where you can configure various settings and back up your data.</dd>
          <dt><i class="icon info"></i></dt>
-         <dd>Show this how-to screen</dd>
+         <dd><b>How to Use Button</b><br>Displays this how-to screen</dd>
         </dl>
         
         <dl class="sub1">
          <dt><i class="icon threelines"></i></dt>
-         <dd>Show menu</dd>
+         <dd><b>Menu Button</b><br>Show Menu</dd>
          <dt><i class="icon bookmark"></i></dt>
-         <dd>Turn on/off filtering by bookmark</dd>
+         <dd><b>Bookmark button</b><br>Toggles bookmark filtering on/off</dd>
          <dt><i class="icon rect_portrait_split"></i></dt>
-         <dd>You can save and restore the current filter and grouping settings together. If you overwrite and save it under the name "default", you can set the combination that will be used at startup.</dd>
+         <dd><b>Filter Grouping Selection Button</b><br>You can save and restore the current filter and grouping settings together. Saving with the name "Default" will set the default combination at startup.</dd>
          <dt><i class="icon clock_arrow"></i></dt>
-         <dd>Get instant access to recently opened items</dd>
+         <dd><b>Update History Button</b><br>Quick access to recently opened items</dd>
          <dt><i class="icon plus"></i></dt>
-         <dd>Go to the <a href="#editItem">Item edit screen</a> where you can add new items</dd>
+         <dd><b>Add New Item Button</b><br>This button will take you to the <a href="#editItem">Item Editing Screen</a> where you can add a new item</dd>
          </dl>
          
          <dt>Menu contents</dt>
@@ -300,7 +301,7 @@
          <dt>Same password items</dt>
          <dd>If there are items with the same password, a list of items with that password will be displayed, and you will be taken to the details screen for the selected item.</dd>
          <dt>Share</dt>
-         <dd>You can register items by <a href="#export">exporting</a> the data of the currently displayed item to a file, or conversely, <a href="#export">importing</a> the file. You can choose between text format, which is export-only, and JSON format, which can also be imported.</dd>
+         <dd>You can export the data of the currently displayed item to a file for sharing, or conversely, import the file. For more details on this feature, see <a href="#export">Export and Import</a></dd>
          
          <dt>Sample</dt>
          <dd>You can import and delete sample item data. This will be helpful for entering item data.</dd>
@@ -354,16 +355,20 @@
          
          <dt>Icons at the top of the screen</dt>
          <dl class="sub1">
-         <dt><i class="icon threelines"></i></dt>
-         <dd>Show menu</dd>
-         <dt><i class="icon bookmark"></i></dt>
-         <dd>You can switch the bookmark state of this item. If you turn on bookmarks, you can narrow down the display using the <i class="icon bookmark"></i> bookmark button on the home screen</dd>
-         <dt><i class="icon lock"></i></dt>
-         <dd>You must be logged in to view/edit this item's details (not logged in <i class="icon lock"></i> / logged in <i class="icon lock_open"></i> ) or logged in You can toggle whether <i class="icon lock_slash"></i> is required or not. Default is login required</dd>
-         <dt><i class="icon calendar_circle"></i></dt>
-<dd>Displayed when date information is included. You can switch between displaying date information categorized by type or displayed chronologically.</dd>
-         <dt><i class="icon pencil"></i></dt>
-         <dd>You can edit the item by going to the <a href="#editItem">Item edit screen</a></dd>
+            <dt><i class="icon threelines"></i></dt>
+            <dd><b>Menu Button</b><br>Displays the menu</dd>
+            
+            <dt><i class="icon bookmark"></i></dt>
+            <dd><b>Bookmark Button</b><br>You can toggle the bookmark status of this item. When bookmarked on, you can filter the display using the <i class="icon bookmark"></i> bookmark button on the home screen</dd>
+            
+            <dt><i class="icon lock"></i></dt>
+            <dd><b>Login Button</b><br>You can toggle whether login is required to view and edit the details of this item (not logged in <i class="icon lock"></i> / logged in <i class="icon lock_open"></i>) or whether login is not required <i class="icon lock_slash"></i>. By default, login is required.</dd>
+            
+            <dt><i class="icon calendar_circle"></i></dt>
+            <dd><b>Date Information Display Toggle Button</b><br>Displays when date information is included. You can switch between displaying date information categorized by type or displaying it chronologically.</dd>
+            
+            <dt><i class="icon pencil"></i></dt>
+            <dd><b>Item Edit Button</b><br>You can edit the item by going to the <a href="#editItem">item editing screen</a>.</dd>
          </dl>
          
          <dt>Menu contents</dt>
@@ -375,7 +380,7 @@
          You can toggle whether item details require login by default.</br>
          You can switch the display format for the difference in days.</dd>
          <dt>Share</dt>
-         <dd>You can share this item's data as text.</dd>
+         <dd>You can share the data of this item with other apps. You can paste the text directly into email, notepad, etc. For more information on this feature, see <a href="#export">Export and Import</a>. </dd>
          
          <dt>Display format</dt>
          <dd>Displays the <a href="#displayFormat">Display Format</a> submenu. <br>If you select a registered display format name, you can temporarily switch to that display format. Selecting "All fields" will return to the default display of all fields. </dd>
@@ -405,7 +410,7 @@
          <dd> Tap a URL to open a web browser and display the corresponding URL. </dd>
          <dd>Dates with a <a href="#duedate">due date</a> display a <i class="icon calendarex"></i> calendar icon. The calendar icon turns red when the due date is approaching. By default, it's within seven days, but you can change this number in the settings screen. </dd>
          <dd>Dates with a <a href="#calendar">calendar event</a> display a <i class="icon clockex"></i> clock icon. The number of days that turn red corresponds to the due date. </dd>
-         <dd>In addition to copying text information, the date information context menu allows you to set a base date, turn deadlines on/off, and add, edit, and delete calendar events. </dd>
+         <dd>In addition to copying text information, the context menu for date information allows you to jump to the <a href="#dateList">date information list screen</a>, set a reference date, turn due dates on/off, and add, edit, and delete calendar events</dd>
          <dd>The base date is the date used as the basis for the difference in days displayed next to the date in the date information. By default, it is today, but by selecting a base date in the context menu, the difference from that date will be displayed for other date information. </dd>
          <dd>Dates that have a base date are displayed with a red <i class="icon triangle_left_fill"></i>triangle icon. </dd>
          <dd>If it is referenced by another item, the list of that item will be displayed, and you can also tap the item to move to the detail screen of that item. </dd>
@@ -424,14 +429,17 @@
 
          <dt>Icons at the top of the screen</dt>
          <dl class="sub1">
-         <dt><i class="icon threelines"></i></dt>
-         <dd> Display the menu. </dd>
-         <dt><i class="icon bookmark"></i></dt>
-         <dd>You can toggle the bookmark state of this item. If you turn on bookmarks, you can narrow down the display using the <i class="icon bookmark"></i> bookmark button on the home screen</dd>
-         <dt><i class="icon lock"></i></dt>
-         <dd>Toggle whether Login required ( Not logged in <i class="icon lock"></i> or Logged in <i class="icon lock_open"></i> ) or No login required <i class="icon lock_slash"></i> to view details or edit for this item. Default is login required. </dd>
-         <dt>Register</dt>
-         <dd>You can register the edited item information. </dd>
+            <dt><i class="icon threelines"></i></dt>
+            <dd><b>Menu Button</b><br>Displays the menu.</dd>
+            
+            <dt><i class="icon bookmark"></i></dt>
+            <dd><b>Bookmark Button</b><br>Toggles the bookmark status of this item. When bookmarked, you can filter the display using the <i class="icon bookmark"></i> bookmark button on the home screen.</dd>
+            
+            <dt><i class="icon lock"></i></dt>
+            <dd><b>Login Button</b><br>Toggles whether login is required to view and edit this item.<i class="icon lock"></i> or not.<i class="icon lock_slash"></i>By default, login is required.</dd>
+            
+            <dt><i class="icon checkmark"></i></dt>
+            <dd><b>Register Button</b><br>Registers the edited item information. To cancel editing, press the back button in the upper left corner. </dd>
          </dl>
 
          <dt>Menu contents</dt>
@@ -478,7 +486,7 @@ Also, you can display the <a href="#editDisplayFormat">Display Format Editing Sc
       <dt>About the Date Information List Screen</dt>
       <dd>Date information, including expiration dates, for each account is extracted and displayed in chronological order. </dd>
       <dd>Click the menu icon on the home screen and select "Date Information List." </dd>
-      <dd>Only date information for filtered items on the home screen is displayed. </dd>
+      <dd>Initially, only the date information of filtered items will be displayed on the home screen, but you can also press <i class="icon dec3lines_fill"></i> the item filter button to display the date information of all items. </dd>
       
       <dt>Year-Month View</dt>
       <dd>The left side of the screen is a year-month index of date information. </dd>
@@ -491,6 +499,17 @@ Also, you can display the <a href="#editDisplayFormat">Display Format Editing Sc
       <dd>Clicking on the title of the date information display will display the date information filter menu. </dd>
       <dd>The filter menu allows you to filter by due date and/or any date type. </dd>
       <dd>If you have created groups for date types, you can set the date type for any group at once or select a date type from within the group. </dd>
+
+      <dt>Icons at the top of the screen</dt>
+      <dd>Icons are lined up in the upper right corner of the screen.</dd>
+      <dl class="sub1">
+      <dt><i class="icon dec3lines_fill"></i></dt>
+      <dd><b>Item filter button</b><br>Allows you to turn the item filter status set on the home screen ON/OFF. Use this when you want to display all date information.</dd>
+      
+      <dt><i class="icon arrow_clockwise"></i></dt>
+      <dd><b>Reload button</b><br>Reloads the data. Use this when you want to reflect the changes made on the item editing screen you moved to from this screen.</dd>
+    </dl>
+
     </dl>
 
 
@@ -673,6 +692,12 @@ Also, you can display the <a href="#editDisplayFormat">Display Format Editing Sc
           <dd>On the item editing screen, check whether there is an item with the same password when registering.</dd>
           <dd>You can toggle whether to require login by default on the item edit screen and item details screen. </dd>
 
+          <dt>Sharing Settings</dt>
+          <dd>You can set whether to password-protect and encrypt PDF files when sharing (exporting) them from the home screen and item details screen. Please specify a password of 8 characters or more.</dd>
+          
+          <dd>You can toggle whether to automatically create a backup during import.</dd>
+
+
          <dt>Backup</dt>
          <dd>You can <a href="#backup">backup</a> your data.</dd>
          <dd>You can access the <a href="#backupMan">Backup Management Screen</a>, where you can restore your backed up data.</dd>
@@ -686,9 +711,6 @@ Also, you can display the <a href="#editDisplayFormat">Display Format Editing Sc
          <dd>In addition to automatic synchronization, you can also explicitly upload to and download from iCloud. </dd>
          <dd>For more information about iCloud Sync, see <a href="#icloudSync">iCloud Sync</a>.</dd>
 
-        
-         <dt>Sharing Settings</dt>
-         <dd>You can turn automatic backups on or off when importing.</dd>
 
          <dt>Reset Settings</dt>
          <dd>Resets the settings changed on this setting screen to their initial values. </dd>
@@ -1210,21 +1232,24 @@ Also, you can display the <a href="#editDisplayFormat">Display Format Editing Sc
         <dd>Importing is importing item data from a file. </dd>
         
         <dt>Export</dt>
-        <dd>You can export the currently displayed item (or the selected item in selection mode) from the home screen menu. You can also export the item as text from the item details screen. </dd>
-        <dd>Export formats available are text and JSON. </dd>
-        <dd>Text format is human-readable. </dd>
-        <dd>JSON (JavaScript Object Notation) is a common file exchange format on the web, allowing for hierarchical and repetitive structures. </dd>
-        <dd>The meaning and structure of the tags in this app's JSON format can be understood by comparing it with the text output. However, if you need further clarification, please contact user support. </dd>
-        <dd>Exported files, including passwords, are not hidden, so please handle sensitive information with care to prevent it from being seen by others. </dd>
-        
+        <dd>You can export and share the currently displayed item (or the selected item in selection mode) to a file from the share menu on the home screen or item details screen.</dd>
+        <dd>The exported file can be directly attached to apps such as email or notepad.</dd>
+        <dd>The file formats that can be specified for export are text, JSON, Markdown, HTML, and PDF.</dd>
+        <dd>Text format is a human-readable and writable format that can be displayed in text editors, etc. It is convenient for sharing by pasting it directly into email text.</dd>
+        <dd>JSON (JavaScript Object Notation) is one of the common file exchange formats on the web that can express hierarchical and repeating structures. It is convenient for sharing as data.</dd>
+        <dd>Markdown is a human-readable and writable tagged text format that can be displayed in Markdown-compatible editors, etc. It is convenient for adding and editing later.</dd>
+        <dd>HTML is a format used for web pages and can be displayed in web browsers. It's convenient for sharing as an easy-to-view file.
+        <dd>PDF is a commonly used format for sharing documents. It can be viewed with a PDF viewer. It's convenient for sharing after encrypting it with a password as needed.</dd>
+        <dd>PDF passwords can be set in the sharing settings of the <a href="#setting">settings screen</a>.</dd>
+        <dd>Exported files are not encrypted except for PDFs with a password set, so please handle highly confidential information with care to prevent it from being seen by others.</dd>
+
         <a name="import">
         <dt>Import</dt>
-        <dd>You can import JSON files from the home screen menu. </dd>
-        <dd>You can import data from external sources as long as the data conforms to this app's JSON format. </dd>
-        <dd>When importing a JSON file, if the file contains already registered item names, you can specify whether to ignore, overwrite, or rename and add the item for each item. </dd>
-        <dd>A backup is automatically created during import. If you make a mistake while importing, restore from your most recent backup. </dd>
-        <dd>If you are unable to import a JSON file due to an invalid file format, turning on debug mode in the settings screen will display a more detailed error message, helping you pinpoint the problem. </dd>
-        <dd>For your information, this app's item data uses a variable-size repeating structure for date information and other data, making it difficult to support standard CSV formats. However, if partial support is acceptable, we will consider it upon request. </dd>
+        <dd>You can import a JSON file from the share menu on the home screen and register it as data.</dd>
+        <dd>You can import data from external sources as long as it is data exported from this app in JSON format, or data in that format.</dd>
+        <dd>When importing from a file, the import item selection window will open, allowing you to select the items to actually import from the file. If the file contains item names already registered within the app, you can specify for each item whether to overwrite the existing item or add it with a different name.</dd>
+        <dd>A backup is automatically created during import. If you accidentally overwrite an item during import, you can restore from the previous backup.</dd>
+        <dd>If the JSON file import fails due to an invalid file format, turning on debug mode in the settings screen will provide more detailed error messages, helping to pinpoint the problem.</dd>
       </dl>
 
       <a name="shortcut">
@@ -1266,6 +1291,26 @@ Also, you can display the <a href="#editDisplayFormat">Display Format Editing Sc
      <a name="history">
      <h2>Version history</h2>
      <dl class="main">
+
+          <dt>ver.3.5</dt>
+          <dd>Sharing functionality has been significantly enhanced.</dd>
+          <dd>PDF, HTML, and Markdown have been added as file formats when exporting data from the home screen and item details screen. </dd>
+          
+          <dd>When sharing as a PDF file, you can encrypt it with a password. This makes it easier to share some information with family members for purposes such as end-of-life planning.</dd>
+          
+          <dd>In addition to saving shared data to a file, you can now directly share the file to other apps.</dd>
+          
+          <dd>You can now select the items to import when importing a JSON file.</dd>
+          
+          <dd>The content of shared text files has been reviewed and made easier to read.</dd>
+          
+          <dd>You can now jump to the corresponding date on the date information list screen from the context menu of the date information on the item details screen. You can check the date information of other items on the corresponding date.</dd>
+          
+          <dd>You can now turn off the item filter on the date information list screen to display all date information.</dd>
+          
+          <dd>Minor bugs have been fixed.</dd>
+
+
           <dt>ver.3.4</dt>
           <dd>Added the ability to add passkey information on the item editing screen.</dd>
           <dd>Added the ability to add references to other items for two-factor authentication on the item editing screen.</dd>
