@@ -274,8 +274,13 @@
           <dd>The entered note will be displayed below the item name in the list.</dd>
           You can change how memos are displayed in the "Notes Display Mode" option in the menu's options settings.
           <dd>In the memo editing window, you can save and recall memo content as a template. Templates are saved per list.</dd>
-          <dd>You can save multiple memo templates and select and load them later. Saved templates can be overwritten in other memos. They can also be deleted individually.</dd>
-          
+          <dd>You can save multiple note templates and select and load them later. Saved templates can be overwritten with new content from other notes. You can also edit or delete individual templates, or copy them to other lists.</dd>
+          <dd>In addition to editing notes and templates as simple text, you can edit them as pairs of names and values ​​separated by spaces on each line. For example, when comparing the prices of a product sold at multiple stores, you can save the store names as the "name" part of a template; then, when applying it to a product item, you can simply enter or update the corresponding price values.</dd>
+          <dd>The separator between the name and the value is the last space on the line; however, if a space within the name causes part of it to be split into the value field, you can press the << button to move that text back into the name field.</dd>
+          <dd>On the iPhone, you can also switch the keyboard to a numeric-only layout when entering data into the value field. This is convenient when entering numerical data, such as prices.</dd>
+          <dd>You can apply templates to multiple items at once via the "Change Item Info" menu option. For instance, by selecting items (other than labels) in selection mode and applying a template, you can set the initial note content for each item based on that template.</dd>
+
+
           <dt > Check item </ dt>
           <dd > You can check or uncheck by tapping the check box <div class="icon_white mask_square"></div> of each item. </ dd>
           <dd > check all items at once or uncheck all items at once. You can also invert check status of all items.</ dd>
@@ -788,6 +793,12 @@
 
         <h2 > Version History </h2>
         <dl>
+          <dt>ver.3.7</dt>
+          <dd>Expanded the notes template functionality; notes can now also be copied to other lists.</dd>
+          <dd>Added the ability to edit nots not just as plain text, but as name-value pairs separated by whitespace on each line—useful for recording details such as the price of a specific product at different stores.</dd>
+          <dd>In the item editing screen's selection mode, you can now batch-update the selection status based on criteria such as whether an item is a label or contains a notes.</dd>
+          <dd>Fixed minor bugs.</dd>
+
           <dt>ver.3.6</dt>
           <dd>Added the ability to save and recall notes as templates when editing them.</dd>
           <dd>Fixed minor bugs. </dd>
