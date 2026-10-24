@@ -227,6 +227,8 @@
           <dd>Use this to search for items by the date they were created</dd>
           <dt>Due date</dt>
           <dd>Use this when you want to find items whose due date is close</dd>
+          <dt>Security update date</dt>
+          <dd>Used when you want to find items that haven't had a security update recently</dd>
           <dt>Color</dt>
           <dd>Used when you want to find items of any color</dd>
           <dt>Display format</dt>
@@ -296,8 +298,8 @@
          <dd>Go to the <a href="#editList">list editing screen</a> where you can edit individual string lists</dd>
          <dt>Edit display format</dt>
          <dd>Go to the <a href="#displayFormatList">display format list screen</a> where you can edit the display format</dd>
-         <dt>Same password items</dt>
-         <dd>If there are items with the same password, a list of items with that password will be displayed, and you will be taken to the details screen for the selected item.</dd>
+         <dt>Security Check</dt>
+         <dd>You can view items grouped by password if they share the same password. You can also filter to display items that have a password but lack two-step verification or a passkey.</dd>
          <dt>Share</dt>
          <dd>You can export the data of the currently displayed item to a file for sharing, or conversely, import the file. For more details on this feature, see <a href="#export">Export and Import</a></dd>
          
@@ -1302,6 +1304,13 @@ Also, you can display the <a href="#editDisplayFormat">Display Format Editing Sc
      <a name="history">
      <h2>Version history</h2>
      <dl class="main">
+          <dt>ver.3.7</dt>
+          <dd>Added a "Security Check" feature to the home screen menu.</dd>
+          <dd>In addition to identifying items that share the same password, you can now filter for items that have a password but lack two-factor authentication or a passkey.</dd>
+          <dd>When you update password, PIN, 2FA, or passkey information for an item, a "Security Update" entry is now automatically added to its dates information.</dd>
+          <dd>Added "Security Update" as a grouping option on the home screen, allowing you to categorize items based on when they were last updated for security.</dd>
+          <dd>Fixed minor bugs.</dd>
+
           <dt>ver.3.6</dt>
           <dd>Added support for iOS 27, iPadOS 27, and macOS 27.</dd>
           <dd>The supported OS have been changed to iOS 17, iPadOS 17, and macOS Sonoma 14 or later.</dd>
